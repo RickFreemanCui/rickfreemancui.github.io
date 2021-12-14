@@ -1,4 +1,3 @@
-Homepage of Hongrui Cui (RICK)
 
 ## Academic Interests
 
