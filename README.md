@@ -25,6 +25,19 @@ Applied and Theoretical Cryptography
 
 - 3 or more parties distributed point function with sublinear key size / setup communication. (work-in-progress) [Slide](./Slides/Auth-Triples.pptx)
 
+## Notes
+
+I like taking notes on lectures and organizing them.
+
+### CIS 2019
+
+- [Chris Peikert](./Notes/cpeikert.pdf)
+- [Elette Boyle](./Notes/eboyle.pdf)
+- [Hoeteck Wee](./Notes/hwee.pdf)
+- [Phong Q. Nguyen](./Notes/pnguyen.pdf)
+- [Vadim Lyubashevsky](./Notes/vlyubashevsky.pdf)
+
+
 
 ## Useful Links
 
