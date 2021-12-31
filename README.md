@@ -19,6 +19,8 @@ Applied and Theoretical Cryptography
 
 - Boyle, E., Couteau, G., Gilboa, N., Ishai, Y., Kohl, L., & Scholl, P. (2020, August). Efficient pseudorandom correlation generators from ring-LPN. In Annual International Cryptology Conference (pp. 387-416). Springer, Cham. [Slide](./Slides/Ring-LPN%20PCG.pptx) [Paper](https://cs.idc.ac.il/~elette/Ring-LPN.pdf)
 
+- A Mysterious Paper (with password) [Slide](Slides/Auth-GC-from-VOLE.pdf) 
+
 ### Projects
 
 - Facial Template Protection via Lattice-based Fuzzy Extractors (work-in-progress) [Slide](./Slides/PokerFace-Kaiyi%20Zhang.pptx) [ePrint](https://ia.cr/2021/1559)
