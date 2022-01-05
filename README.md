@@ -27,7 +27,7 @@ Applied and Theoretical Cryptography
 
 - 3 or more parties distributed point function with sublinear key size / setup communication. (work-in-progress) [Slide](./Slides/Auth-Triples.pptx)
 
-- An on-going project trying to use LPN to implement half-gate garbled circuit (work-in-progress) [Notes](https://latex.sjtu.edu.cn/read/kkpgkwczgvpq)
+- An on-going project trying to use LPN to implement half-gate garbled circuit (work-in-progress) [Notes](https://latex.sjtu.edu.cn/read/kkpgkwczgvpq) (Update: This approach seems terrible compared to the Hash based construction [ePrint](https://ia.cr/2020/233))
 
 ## Notes
 
