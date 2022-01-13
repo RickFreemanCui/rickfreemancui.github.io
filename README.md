@@ -45,7 +45,12 @@ I like taking notes on lectures and organizing them.
 
 ## Useful Links
 
-Search Eprint using Google.
+### Search Eprint using Google.
 
 <script async src="https://cse.google.com/cse.js?cx=a88e214d6eaead633"></script>
 <div class="gcse-search"></div>
+
+### CCF Tiers
+
+[The List](https://www.ccf.org.cn/ccf/contentcore/resource/download?ID=144845)
+[The DDL](https://ccfddl.github.io)
