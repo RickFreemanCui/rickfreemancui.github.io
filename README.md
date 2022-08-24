@@ -52,10 +52,10 @@ I like taking notes on lectures and organizing them.
 
 ### CCF Tiers
 
-[The List](https://www.ccf.org.cn/ccf/contentcore/resource/download?ID=144845)
-[The DDL](https://ccfddl.github.io)
+- [The List](https://www.ccf.org.cn/ccf/contentcore/resource/download?ID=144845)
+- [The DDL](https://ccfddl.github.io)
 
-### My GPG Key
+## My GPG Key
 
 - You can find my key through the [public service of OpenPGP](https://keys.openpgp.org/)   using the key fingerprint:
 
