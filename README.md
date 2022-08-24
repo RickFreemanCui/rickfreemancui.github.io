@@ -54,3 +54,29 @@ I like taking notes on lectures and organizing them.
 
 [The List](https://www.ccf.org.cn/ccf/contentcore/resource/download?ID=144845)
 [The DDL](https://ccfddl.github.io)
+
+### My GPG Key
+
+- You can find my key through the public service https://keys.openpgp.org/ using the key fingerprint:
+
+> 4B39 F042 5859 A20E 49C9 
+> D9D2 13CF 0D22 0E1A CE3C
+
+- Or you can use the key directly:
+ 
+> -----BEGIN PGP PUBLIC KEY BLOCK-----
+> 
+> mDMEYwWKYBYJKwYBBAHaRw8BAQdAmdLSjWmnd2uipgR8J0l/PEwp/Z273rVIXz63
+> kXU3xM60KEhvbmdydWkgQ3VpIDxmcmVlbWFucmlja2N1aUBvdXRsb29rLmNvbT6I
+> mQQTFgoAQRYhBEs58EJYWaIOScnZ0hPPDSIOGs48BQJjBYpgAhsDBQkDwmcABQsJ
+> CAcCAiICBhUKCQgLAgQWAgMBAh4HAheAAAoJEBPPDSIOGs48vT4BAMOLOmKGrUgd
+> CiM7WmsZ70egOYbx0rGt+JXBmebzjI6ZAP9iV5J2NBKA5P0Qcl8CnRN/9ts2XwFe
+> 5Ze9eumAcrFAC7g4BGMFimASCisGAQQBl1UBBQEBB0A88806b0Ungz2t/JTfRz3+
+> x/ydLTh6iB0GCkeWJvCdWQMBCAeIfgQYFgoAJhYhBEs58EJYWaIOScnZ0hPPDSIO
+> Gs48BQJjBYpgAhsMBQkDwmcAAAoJEBPPDSIOGs48ksoA/jLfu3AMYxAAisL53zRu
+> +h0EziCMd3rRNSK8eoazE88SAP94lPowe7WtGK/ufdrkL9ld2ceNDr0LJ85iWGA/
+> okQCAA==
+> =0Kjo
+> -----END PGP PUBLIC KEY BLOCK-----
+> 
+> 
