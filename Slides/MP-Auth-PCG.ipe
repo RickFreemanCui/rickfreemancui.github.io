@@ -1,0 +1,1389 @@
+<?xml version="1.0"?>
+<!DOCTYPE ipe SYSTEM "ipe.dtd">
+<ipe version="70218" creator="Ipe 7.2.24">
+<info created="D:20090429144355" modified="D:20220310110838" title="MP-Auth-PCG" author="Hongrui Cui" numberpages="yes"/>
+<preamble>\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{pifont}
+% settings %%%%%%%%%%%%%%%
+\newcommand{\hl}[1]{\textbf{\textcolor{kitred}{#1}}}
+\newcommand{\itemcolor}{ac-lightblue}
+\newcommand{\name}{Hongrui Cui}
+\newcommand{\prestitle}{MP-Auth-PCG}
+  </preamble>
+<ipestyle name="basic">
+<symbol name="arrow/arc(spx)">
+<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/farc(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/ptarc(spx)">
+<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-0.8 0 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/fptarc(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-0.8 0 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="mark/circle(sx)" transformations="translations">
+<path fill="sym-stroke">
+0.6 0 0 0.6 0 0 e
+0.4 0 0 0.4 0 0 e
+</path>
+</symbol>
+<symbol name="mark/disk(sx)" transformations="translations">
+<path fill="sym-stroke">
+0.6 0 0 0.6 0 0 e
+</path>
+</symbol>
+<symbol name="mark/fdisk(sfx)" transformations="translations">
+<group>
+<path fill="sym-fill">
+0.5 0 0 0.5 0 0 e
+</path>
+<path fill="sym-stroke" fillrule="eofill">
+0.6 0 0 0.6 0 0 e
+0.4 0 0 0.4 0 0 e
+</path>
+</group>
+</symbol>
+<symbol name="mark/box(sx)" transformations="translations">
+<path fill="sym-stroke" fillrule="eofill">
+-0.6 -0.6 m
+0.6 -0.6 l
+0.6 0.6 l
+-0.6 0.6 l
+h
+-0.4 -0.4 m
+0.4 -0.4 l
+0.4 0.4 l
+-0.4 0.4 l
+h
+</path>
+</symbol>
+<symbol name="mark/square(sx)" transformations="translations">
+<path fill="sym-stroke">
+-0.6 -0.6 m
+0.6 -0.6 l
+0.6 0.6 l
+-0.6 0.6 l
+h
+</path>
+</symbol>
+<symbol name="mark/fsquare(sfx)" transformations="translations">
+<group>
+<path fill="sym-fill">
+-0.5 -0.5 m
+0.5 -0.5 l
+0.5 0.5 l
+-0.5 0.5 l
+h
+</path>
+<path fill="sym-stroke" fillrule="eofill">
+-0.6 -0.6 m
+0.6 -0.6 l
+0.6 0.6 l
+-0.6 0.6 l
+h
+-0.4 -0.4 m
+0.4 -0.4 l
+0.4 0.4 l
+-0.4 0.4 l
+h
+</path>
+</group>
+</symbol>
+<symbol name="mark/cross(sx)" transformations="translations">
+<group>
+<path fill="sym-stroke">
+-0.43 -0.57 m
+0.57 0.43 l
+0.43 0.57 l
+-0.57 -0.43 l
+h
+</path>
+<path fill="sym-stroke">
+-0.43 0.57 m
+0.57 -0.43 l
+0.43 -0.57 l
+-0.57 0.43 l
+h
+</path>
+</group>
+</symbol>
+<symbol name="arrow/fnormal(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/pointed(spx)">
+<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-0.8 0 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/fpointed(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-0.8 0 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/linear(spx)">
+<path stroke="sym-stroke" pen="sym-pen">
+-1 0.333 m
+0 0 l
+-1 -0.333 l
+</path>
+</symbol>
+<symbol name="arrow/fdouble(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+-1 0 m
+-2 0.333 l
+-2 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/double(spx)">
+<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+-1 0 m
+-2 0.333 l
+-2 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/mid-normal(spx)">
+<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
+0.5 0 m
+-0.5 0.333 l
+-0.5 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/mid-fnormal(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0.5 0 m
+-0.5 0.333 l
+-0.5 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/mid-pointed(spx)">
+<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
+0.5 0 m
+-0.5 0.333 l
+-0.3 0 l
+-0.5 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/mid-fpointed(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0.5 0 m
+-0.5 0.333 l
+-0.3 0 l
+-0.5 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/mid-double(spx)">
+<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
+1 0 m
+0 0.333 l
+0 -0.333 l
+h
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/mid-fdouble(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+1 0 m
+0 0.333 l
+0 -0.333 l
+h
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<anglesize name="22.5 deg" value="22.5"/>
+<anglesize name="30 deg" value="30"/>
+<anglesize name="45 deg" value="45"/>
+<anglesize name="60 deg" value="60"/>
+<anglesize name="90 deg" value="90"/>
+<arrowsize name="large" value="10"/>
+<arrowsize name="small" value="5"/>
+<arrowsize name="tiny" value="3"/>
+<color name="blue" value="0 0 1"/>
+<color name="brown" value="0.647 0.165 0.165"/>
+<color name="darkblue" value="0 0 0.545"/>
+<color name="darkcyan" value="0 0.545 0.545"/>
+<color name="darkgray" value="0.663"/>
+<color name="darkgreen" value="0 0.392 0"/>
+<color name="darkmagenta" value="0.545 0 0.545"/>
+<color name="darkorange" value="1 0.549 0"/>
+<color name="darkred" value="0.545 0 0"/>
+<color name="gold" value="1 0.843 0"/>
+<color name="gray" value="0.745"/>
+<color name="green" value="0 1 0"/>
+<color name="lightblue" value="0.678 0.847 0.902"/>
+<color name="lightcyan" value="0.878 1 1"/>
+<color name="lightgray" value="0.827"/>
+<color name="lightgreen" value="0.565 0.933 0.565"/>
+<color name="lightyellow" value="1 1 0.878"/>
+<color name="navy" value="0 0 0.502"/>
+<color name="orange" value="1 0.647 0"/>
+<color name="pink" value="1 0.753 0.796"/>
+<color name="purple" value="0.627 0.125 0.941"/>
+<color name="red" value="1 0 0"/>
+<color name="seagreen" value="0.18 0.545 0.341"/>
+<color name="turquoise" value="0.251 0.878 0.816"/>
+<color name="violet" value="0.933 0.51 0.933"/>
+<color name="yellow" value="1 1 0"/>
+<dashstyle name="dash dot dotted" value="[4 2 1 2 1 2] 0"/>
+<dashstyle name="dash dotted" value="[4 2 1 2] 0"/>
+<dashstyle name="dashed" value="[4] 0"/>
+<dashstyle name="dotted" value="[1 3] 0"/>
+<gridsize name="10 pts (~3.5 mm)" value="10"/>
+<gridsize name="14 pts (~5 mm)" value="14"/>
+<gridsize name="16 pts (~6 mm)" value="16"/>
+<gridsize name="20 pts (~7 mm)" value="20"/>
+<gridsize name="28 pts (~10 mm)" value="28"/>
+<gridsize name="32 pts (~12 mm)" value="32"/>
+<gridsize name="4 pts" value="4"/>
+<gridsize name="56 pts (~20 mm)" value="56"/>
+<gridsize name="8 pts (~3 mm)" value="8"/>
+<opacity name="10%" value="0.1"/>
+<opacity name="30%" value="0.3"/>
+<opacity name="50%" value="0.5"/>
+<opacity name="75%" value="0.75"/>
+<pen name="fat" value="1.2"/>
+<pen name="heavier" value="0.8"/>
+<pen name="ultrafat" value="2"/>
+<symbolsize name="large" value="5"/>
+<symbolsize name="small" value="2"/>
+<symbolsize name="tiny" value="1.1"/>
+<textsize name="Huge" value="\Huge"/>
+<textsize name="LARGE" value="\LARGE"/>
+<textsize name="Large" value="\Large"/>
+<textsize name="footnote" value="\footnotesize"/>
+<textsize name="huge" value="\huge"/>
+<textsize name="large" value="\large"/>
+<textsize name="small" value="\small"/>
+<textsize name="tiny" value="\tiny"/>
+<textstyle name="center" begin="\begin{center}" end="\end{center}"/>
+<textstyle name="item" begin="\begin{itemize}\item{}" end="\end{itemize}"/>
+<textstyle name="itemize" begin="\begin{itemize}" end="\end{itemize}"/>
+<tiling name="falling" angle="-60" step="4" width="1"/>
+<tiling name="rising" angle="30" step="4" width="1"/>
+</ipestyle>
+<ipestyle name="AC-Presentation">
+<symbol name="Background">
+<group>
+<group>
+<path matrix="0.441455 0 0 -0.441455 692.49 570.984" fill="black">
+25.443 68.687 m
+26.82 68.687
+28.134 68.66
+29.386 68.601 c
+30.637 68.542
+31.638 68.456
+32.389 68.339 c
+32.389 58.505 l
+31.826 58.39
+30.981 58.273
+29.855 58.157 c
+28.729 58.042
+27.696 57.983
+26.757 57.983 c
+25.443 57.983
+24.207 58.055
+23.049 58.2 c
+21.891 58.346
+20.875 58.62
+19.999 59.028 c
+19.123 59.434
+18.435 59.985
+17.934 60.68 c
+17.434 61.377
+17.183 62.246
+17.183 63.291 c
+17.183 65.322
+17.919 66.729
+19.39 67.512 c
+20.859 68.296
+22.878 68.687
+25.443 68.687 c
+25.443 68.687 l
+h
+24.316 30.742 m
+28.446 30.742
+31.888 31.177
+34.641 32.048 c
+37.394 32.918
+39.6 34.165
+41.259 35.79 c
+42.917 37.415
+44.091 39.388
+44.779 41.708 c
+45.467 44.029
+45.811 46.61
+45.811 49.454 c
+45.811 76.433 l
+43.809 76.839
+41.024 77.318
+37.457 77.871 c
+33.891 78.422
+29.573 78.697
+24.504 78.697 c
+21.313 78.697
+18.419 78.435
+15.822 77.914 c
+13.225 77.393
+10.988 76.535
+9.111 75.348 c
+7.234 74.159
+5.795 72.606
+4.794 70.692 c
+3.793 68.776
+3.292 66.426
+3.292 63.641 c
+3.292 60.973
+3.871 58.709
+5.028 56.852 c
+6.186 54.997
+7.735 53.518
+9.674 52.414 c
+11.613 51.311
+13.835 50.514
+16.338 50.02 c
+18.841 49.527
+21.439 49.281
+24.129 49.281 c
+25.943 49.281
+27.555 49.353
+28.963 49.498 c
+30.372 49.644
+31.513 49.832
+32.389 50.064 c
+32.389 48.845 l
+32.389 46.64
+31.669 44.87
+30.23 43.536 c
+28.791 42.201
+26.288 41.534
+22.721 41.534 c
+20.343 41.534
+17.997 41.694
+15.682 42.013 c
+13.367 42.333
+11.364 42.783
+9.675 43.363 c
+7.891 32.918 l
+8.704 32.686
+9.722 32.439
+10.942 32.178 c
+12.162 31.917
+13.491 31.685
+14.931 31.482 c
+16.37 31.279
+17.888 31.105
+19.483 30.96 c
+21.078 30.815
+22.69 30.742
+24.316 30.742 c
+24.316 30.742 l
+h
+51.328 54.851 m
+51.328 51.542
+51.907 48.424
+53.064 45.495 c
+54.222 42.564
+55.895 40.012
+58.085 37.836 c
+60.275 35.661
+62.935 33.935
+66.064 32.658 c
+69.193 31.381
+72.76 30.743
+76.764 30.743 c
+79.393 30.743
+81.802 30.961
+83.992 31.396 c
+86.182 31.831
+88.31 32.454
+90.375 33.267 c
+87.465 43.624 l
+86.151 43.16
+84.711 42.754
+83.147 42.406 c
+81.583 42.056
+79.831 41.883
+77.891 41.883 c
+73.761 41.883
+70.679 43.072
+68.645 45.451 c
+66.612 47.83
+65.595 50.963
+65.595 54.851 c
+65.595 58.97
+66.55 62.162
+68.458 64.423 c
+70.366 66.687
+73.699 67.818
+78.454 67.818 c
+80.144 67.818
+81.959 67.673
+83.898 67.382 c
+85.838 67.093
+87.622 66.628
+89.249 65.989 c
+91.219 76.608 l
+89.593 77.245
+87.559 77.796
+85.118 78.26 c
+82.677 78.724
+79.987 78.957
+77.046 78.957 c
+72.541 78.957
+68.661 78.334
+65.407 77.084 c
+62.153 75.838
+59.478 74.141
+57.382 71.994 c
+55.286 69.848
+53.753 67.308
+52.782 64.379 c
+51.812 61.45
+51.328 58.272
+51.328 54.851 c
+51.328 54.851 l
+h
+</path>
+<path matrix="0.441455 0 0 -0.441455 692.49 570.984" fill="ac-darkblue">
+175.579 42.84 m
+163.299 42.84 l
+163.299 6.24 l
+175.579 6.24 l
+175.579 42.84 l
+h
+</path>
+<path matrix="0.441455 0 0 -0.441455 692.49 570.984" fill="ac-darkblue">
+135.12 62.802 m
+122.87 62.802 l
+122.87 2.228 l
+135.12 2.228 l
+135.12 62.802 l
+h
+</path>
+<path matrix="0.441455 0 0 -0.441455 692.49 570.984" fill="ac-lightblue">
+114.842 54.708 m
+102.561 54.708 l
+102.561 14.616 l
+114.842 14.616 l
+114.842 54.708 l
+h
+</path>
+<path matrix="0.441455 0 0 -0.441455 692.49 570.984" fill="ac-darkblue">
+155.399 54.708 m
+143.122 54.708 l
+143.122 14.616 l
+155.399 14.616 l
+155.399 54.708 l
+h
+</path>
+</group>
+<text pos="0 2" stroke="black" type="minipage" width="760" height="6.926" depth="1.93" valign="baseline" size="10">\flushright \name \ $\cdot$ \prestitle</text>
+</group>
+</symbol>
+<symbol name="TUitem(f)">
+<path fill="sym-fill">
+-0.4 -0.5 m
+0.1 0 0 -0.1 -0.4 -0.4 -0.5 -0.4 a
+-0.5 0.4 l
+0.1 0 0 -0.1 -0.4 0.4 -0.4 0.5 a
+0.4 0.5 l
+0.1 0 0 -0.1 0.4 0.4 0.5 0.4 a
+0.5 -0.4 l
+0.1 0 0 -0.1 0.4 -0.4 0.4 -0.5 a
+h
+</path>
+</symbol>
+<symbol name="deco/KIT box [blue]">
+<group matrix="1 0 0 1 776 -104">
+<path stroke="black" fill="KITblue15">
+0 440 m
+728 440 l
+8 0 0 -8 728 432 736 432 a
+736 288 l
+8 288 l
+8 0 0 -8 8 296 0 296 a
+h
+</path>
+<path stroke="black">
+8 296 m
+8 432 l
+728 432 l
+728 296 l
+h
+</path>
+</group>
+</symbol>
+<symbol name="deco/KIT box [red]">
+<group matrix="1 0 0 1 776 -104">
+<path stroke="black" fill="KITred15">
+0 440 m
+728 440 l
+8 0 0 -8 728 432 736 432 a
+736 288 l
+8 288 l
+8 0 0 -8 8 296 0 296 a
+h
+</path>
+<path stroke="black">
+8 296 m
+8 432 l
+728 432 l
+728 296 l
+h
+</path>
+</group>
+</symbol>
+<symbol name="deco/KIT box [palegreen]">
+<group matrix="1 0 0 1 776 -104">
+<path stroke="black" fill="KITpalegreen15">
+0 440 m
+728 440 l
+8 0 0 -8 728 432 736 432 a
+736 288 l
+8 288 l
+8 0 0 -8 8 296 0 296 a
+h
+</path>
+<path stroke="black">
+8 296 m
+8 432 l
+728 432 l
+728 296 l
+h
+</path>
+</group>
+</symbol>
+<symbol name="deco/KIT box [yellow]">
+<group matrix="1 0 0 1 776 -104">
+<path stroke="black" fill="KITyellow15">
+0 440 m
+728 440 l
+8 0 0 -8 728 432 736 432 a
+736 288 l
+8 288 l
+8 0 0 -8 8 296 0 296 a
+h
+</path>
+<path stroke="black">
+8 296 m
+8 432 l
+728 432 l
+728 296 l
+h
+</path>
+</group>
+</symbol>
+<symbol name="deco/KIT box [green]">
+<group matrix="1 0 0 1 776 -104">
+<path stroke="black" fill="KITgreen15">
+0 440 m
+728 440 l
+8 0 0 -8 728 432 736 432 a
+736 288 l
+8 288 l
+8 0 0 -8 8 296 0 296 a
+h
+</path>
+<path stroke="black">
+8 296 m
+8 432 l
+728 432 l
+728 296 l
+h
+</path>
+</group>
+</symbol>
+<arrowsize name="large" value="20"/>
+<arrowsize name="normal" value="15"/>
+<arrowsize name="small" value="10"/>
+<arrowsize name="tiny" value="6"/>
+<color name="KITblack" value="0"/>
+<color name="KITblack15" value="0.85"/>
+<color name="KITblack30" value="0.7"/>
+<color name="KITblack50" value="0.5"/>
+<color name="KITblack70" value="0.3"/>
+<color name="KITblue" value="0.274 0.392 0.666"/>
+<color name="KITblue15" value="0.891 0.908 0.95"/>
+<color name="KITblue30" value="0.782 0.817 0.9"/>
+<color name="KITblue50" value="0.637 0.696 0.833"/>
+<color name="KITblue70" value="0.492 0.574 0.766"/>
+<color name="KITbrown" value="0.627 0.509 0.196"/>
+<color name="KITbrown15" value="0.944 0.926 0.879"/>
+<color name="KITbrown30" value="0.888 0.852 0.758"/>
+<color name="KITbrown50" value="0.813 0.754 0.598"/>
+<color name="KITbrown70" value="0.739 0.656 0.437"/>
+<color name="KITcyanblue" value="0.313 0.666 0.901"/>
+<color name="KITcyanblue15" value="0.897 0.95 0.985"/>
+<color name="KITcyanblue30" value="0.794 0.9 0.97"/>
+<color name="KITcyanblue50" value="0.656 0.833 0.95"/>
+<color name="KITcyanblue70" value="0.519 0.766 0.931"/>
+<color name="KITgreen" value="0 0.588 0.509"/>
+<color name="KITgreen15" value="0.85 0.938 0.926"/>
+<color name="KITgreen30" value="0.7 0.876 0.852"/>
+<color name="KITgreen50" value="0.5 0.794 0.754"/>
+<color name="KITgreen70" value="0.3 0.711 0.656"/>
+<color name="KITlilac" value="0.627 0 0.47"/>
+<color name="KITlilac15" value="0.944 0.85 0.92"/>
+<color name="KITlilac30" value="0.888 0.7 0.841"/>
+<color name="KITlilac50" value="0.813 0.5 0.735"/>
+<color name="KITlilac70" value="0.739 0.3 0.629"/>
+<color name="KITorange" value="0.862 0.627 0.117"/>
+<color name="KITorange15" value="0.979 0.944 0.867"/>
+<color name="KITorange30" value="0.958 0.888 0.735"/>
+<color name="KITorange50" value="0.931 0.813 0.558"/>
+<color name="KITorange70" value="0.903 0.739 0.382"/>
+<color name="KITpalegreen" value="0.509 0.745 0.235"/>
+<color name="KITpalegreen15" value="0.926 0.961 0.885"/>
+<color name="KITpalegreen30" value="0.852 0.923 0.77"/>
+<color name="KITpalegreen50" value="0.754 0.872 0.617"/>
+<color name="KITpalegreen70" value="0.656 0.821 0.464"/>
+<color name="KITred" value="0.627 0.117 0.156"/>
+<color name="KITred15" value="0.944 0.867 0.873"/>
+<color name="KITred30" value="0.888 0.735 0.747"/>
+<color name="KITred50" value="0.813 0.558 0.578"/>
+<color name="KITred70" value="0.739 0.382 0.409"/>
+<color name="KITseablue" value="0.196 0.313 0.549"/>
+<color name="KITseablue15" value="0.879 0.897 0.932"/>
+<color name="KITseablue30" value="0.758 0.794 0.864"/>
+<color name="KITseablue50" value="0.598 0.656 0.774"/>
+<color name="KITseablue70" value="0.437 0.519 0.684"/>
+<color name="KITyellow" value="0.98 0.901 0.078"/>
+<color name="KITyellow15" value="0.997 0.985 0.861"/>
+<color name="KITyellow30" value="0.994 0.97 0.723"/>
+<color name="KITyellow50" value="0.99 0.95 0.539"/>
+<color name="KITyellow70" value="0.986 0.931 0.354"/>
+<color name="TUblack" value="0"/>
+<color name="TUblue" value="0 0.4 0.6"/>
+<color name="TUgray" value="0.4"/>
+<color name="TUred" value="0.839 0.066 0.113"/>
+<color name="TUwhite" value="1"/>
+<color name="ac-darkblue" value="0.102 0.18 0.239"/>
+<color name="ac-darkgray" value="0.2"/>
+<color name="ac-lightblue" value="0.435 0.529 0.596"/>
+<color name="ac-lightgray" value="0.6"/>
+<color name="algoblau" value="0.098 0.098 0.549"/>
+<color name="dblue" value="0 0.2 0.6"/>
+<color name="dgreen" value="0 0.6 0"/>
+<color name="dred" value="0.8 0 0"/>
+<color name="kitblack" value="0"/>
+<color name="kitblue" value="0.274 0.392 0.666"/>
+<color name="kitblue15" value="0.89 0.909 0.949"/>
+<color name="kitblue30" value="0.78 0.815 0.898"/>
+<color name="kitblue50" value="0.635 0.694 0.831"/>
+<color name="kitblue70" value="0.49 0.572 0.764"/>
+<color name="kitbrown" value="0.706 0.51 0.122"/>
+<color name="kitcyan" value="0 0.639 0.886"/>
+<color name="kitgray15" value="0.85"/>
+<color name="kitgray30" value="0.7"/>
+<color name="kitgray50" value="0.5"/>
+<color name="kitgray70" value="0.3"/>
+<color name="kitgreen" value="0 0.588 0.51"/>
+<color name="kitgreen15" value="0.85 0.937 0.925"/>
+<color name="kitgreen30" value="0.698 0.874 0.85"/>
+<color name="kitgreen50" value="0.498 0.792 0.752"/>
+<color name="kitgreen70" value="0.298 0.709 0.654"/>
+<color name="kitmaygreen" value="0.467 0.718 0.173"/>
+<color name="kitorange" value="0.957 0.608 0"/>
+<color name="kitred" value="0.733 0.09 0.09"/>
+<color name="kitviolet" value="0.745 0 0.494"/>
+<color name="kityellow" value="1 0.898 0"/>
+<dashstyle name="dashed-narrow" value="[2] 0"/>
+<dashstyle name="dashed-narrower" value="[1] 0"/>
+<dashstyle name="dense dashed" value="[8 3] 0"/>
+<dashstyle name="dense dotted" value="[0.5 0.5] 0"/>
+<dashstyle name="dotted-narrow" value="[1 1] 0"/>
+<dashstyle name="dotted-narrower" value="[0.5 0.5] 0"/>
+<dashstyle name="long dash dotted" value="[12 6 1 6] 0"/>
+<dashstyle name="long dashed" value="[12] 0"/>
+<dashstyle name="medium dotted" value="[1 1.5] 0"/>
+<gridsize name="1 pts" value="1"/>
+<gridsize name="2 pts" value="2"/>
+<gridsize name="3 pts" value="3"/>
+<pen name="fat" value="3.6"/>
+<pen name="heavier" value="2.4"/>
+<pen name="normal" value="1.2"/>
+<pen name="ultrafat" value="6"/>
+<symbolsize name="large" value="12"/>
+<symbolsize name="normal" value="9"/>
+<symbolsize name="small" value="6"/>
+<symbolsize name="tiny" value="4"/>
+<textsize name="largebf" value="\bf\large"/>
+<textsize name="small" value="\normalsize"/>
+<textsize name="verytiny" value="\tiny"/>
+<textstretch name="Huge" value="2.8"/>
+<textstretch name="LARGE" value="2.8"/>
+<textstretch name="Large" value="2.8"/>
+<textstretch name="footnote" value="2.8"/>
+<textstretch name="huge" value="2.8"/>
+<textstretch name="large" value="2.8"/>
+<textstretch name="largebf" value="2.8"/>
+<textstretch name="normal" value="2.8"/>
+<textstretch name="small" value="2.4"/>
+<textstretch name="tiny" value="2.4"/>
+<textstretch name="verytiny" value="2.3"/>
+<textstyle name="center" begin="\begin{center}" end="\end{center}"/>
+<textstyle name="default" begin="\begin{flushleft}" end="\end{flushleft}"/>
+<textstyle name="item" begin="\begin{flushleft}\begin{itemize}\item{}" end="\end{itemize}\end{flushleft}"/>
+<textstyle name="itemize" begin="\begin{flushleft}\begin{itemize}" end="\end{itemize}\end{flushleft}"/>
+<preamble>
+    \usepackage{ucs}
+	\usepackage{color}
+    \usepackage{pgf}
+    \usepackage[utf8]{inputenc}
+	\usepackage[vlined]{algorithm2e}
+	\DontPrintSemicolon
+	
+
+    
+    % language settings
+    \newif\ifgerman%
+    \newcommand{\german}{\germantrue}%
+    \newcommand{\group}{%
+      Algorithms and Complexity Group%
+    }
+    \newcommand{\aclogo}{%
+      \ipesymbol{ACLogo}{}{}{}\hspace{950pt}%
+    }%
+    \newcommand{\tulogo}{%
+      \ipesymbol{TULogo}{}{}{}\hspace{950pt}%
+    }%
+
+	\newcommand{\kitlogo}{}
+	\newcommand{\chair}{}
+	\newcommand{\helmholz}{}
+	
+	\newcommand{\algoinst}{%
+      \ifgerman%
+      {\sc Institut für Theoretische Informatik $\cdot$
+        \chair}%
+      \else%
+      {\sc Institute of Theoretical Informatics $\cdot$
+        \chair}%
+      \fi%
+    }%
+    \newcommand{\algoinstfoot}{%
+      \ifgerman%
+      Institut für Theoretische Informatik\\
+      \chair%
+      \else%
+      Institute of Theoretical Informatics\\
+      \chair% 
+      \fi%
+    }%
+
+%    \renewcommand{\familydefault}{\sfdefault}
+%    \usepackage[scaled=.92]{helvet}
+%    \usepackage[EULERGREEK,eulergreek]{sansmath}
+%    \sansmath
+%    \usepackage[scaled=.92]{helvet}
+
+    \renewcommand{\familydefault}{\sfdefault}
+%    \def\rmdefault{phv}
+%    \DeclareSymbolFont{operators}{OT1}{phv}{m}{n}
+%    \DeclareSymbolFont{letters}{OT1}{phv}{m}{it}
+%    \DeclareSymbolFont{bold}{OT1}{phv}{bx}{n}
+%    \DeclareSymbolFont{italic}{OT1}{phv}{m}{it}
+
+\setlength{\algomargin}{2ex}
+\SetArgSty{}
+\SetKw{KwNot}{not}
+\SetKw{KwAnd}{and}
+\SetKw{KwOr}{or}
+\SetKw{KwDownTo}{downto}
+\SetKw{KwReturn}{return}
+\SetKw{KwRequire}{Require:}
+\SetKw{KwInvariant}{Invariant:}
+\SetKwRepeat{KwRepeat}{repeat}{until}
+
+%\renewcommand\rmdefault{cmss}
+\makeatletter
+\leftmargini 1.5em
+\leftmargin \leftmargini
+\leftmarginii  1.2em
+\leftmarginiii 1em
+\def\@listI{\leftmargin\leftmargini
+            \parsep \z@
+            \partopsep 3pt
+            \topsep \z@
+            \itemsep \z@}
+\@listI
+\def\@listii {\leftmargin\leftmarginii
+              \labelwidth\leftmarginii
+              \advance\labelwidth-\labelsep
+              \topsep    \z@
+              \parsep    \z@
+              \itemsep   \parsep}
+\def\@listiii{\leftmargin\leftmarginiii
+              \labelwidth\leftmarginiii
+              \advance\labelwidth-\labelsep
+              \topsep    \z@
+              \parsep    \z@
+              \partopsep \z@
+              \itemsep   \topsep}
+\makeatother
+%\def\labelitemi{\raisebox{0.5ex}{\hbox to 0.3em%
+%      {\ipesymbol{mark/kit-item}{}{}{}}}}
+%\def\labelitemii{\raisebox{0.5ex}{\hbox to 0.3em%
+%      {\ipesymbol{mark/kit-item}{}{}{}}}}
+
+
+%    \makeatletter
+%    \def\@listI{
+%    \leftmargin 1.5em
+%    \itemsep 0.2em
+%    \parsep 0.2em
+%    \topsep 0.2em
+%    \partopsep 0.2em}
+%    \def\@listii{
+%    \leftmargin 1em
+%    \itemsep 0.1em
+%    \parsep 0.1em
+%    \topsep 0.1em
+%    \partopsep 0.1em}
+%    \makeatother
+%
+    \def\labelitemi{\raisebox{0.5ex}{\hbox to 0.6em{\scalebox{1.2}{\ipesymbol{TUitem(f)}{}{\itemcolor}{}}}}}
+%
+    \def\labelitemii{\raisebox{0.5ex}{\hbox to 0.4em{\scalebox{1.0}{\ipesymbol{TUitem(f)}{}{\itemcolor}{}}}}}
+  </preamble>
+<layout paper="800 600" origin="20 6" frame="760 524" skip="16" crop="no"/>
+<pagenumberstyle pos="-12 2" color="0" size="9" valign="baseline"></pagenumberstyle>
+<titlestyle pos="0 550" size="large" color="black"  valign="baseline"/>
+</ipestyle>
+<ipestyle name="transparency">
+<opacity name="10%" value="0.1"/>
+<opacity name="20%" value="0.2"/>
+<opacity name="25%" value="0.25"/>
+<opacity name="30%" value="0.3"/>
+<opacity name="40%" value="0.4"/>
+<opacity name="50%" value="0.5"/>
+<opacity name="60%" value="0.6"/>
+<opacity name="70%" value="0.7"/>
+<opacity name="75%" value="0.75"/>
+<opacity name="80%" value="0.8"/>
+<opacity name="90%" value="0.9"/>
+</ipestyle>
+<ipestyle name="alt-presentation">
+<color name="algoblau" value="0.098 0.098 0.549"/>
+<color name="algogelb" value="1 0.862 0"/>
+<color name="algohellblau" value="0.576 0.576 0.776"/>
+<color name="altblack" value="0"/>
+<color name="altblack15" value="0.85"/>
+<color name="altblack30" value="0.7"/>
+<color name="altblack50" value="0.5"/>
+<color name="altblack70" value="0.3"/>
+<color name="altblue" value="0.274 0.392 0.666"/>
+<color name="altblue15" value="0.891 0.908 0.95"/>
+<color name="altblue30" value="0.782 0.817 0.9"/>
+<color name="altblue50" value="0.637 0.696 0.833"/>
+<color name="altblue70" value="0.492 0.574 0.766"/>
+<color name="altbrown" value="0.627 0.509 0.196"/>
+<color name="altbrown15" value="0.944 0.926 0.879"/>
+<color name="altbrown30" value="0.888 0.852 0.758"/>
+<color name="altbrown50" value="0.813 0.754 0.598"/>
+<color name="altbrown70" value="0.739 0.656 0.437"/>
+<color name="altcyan" value="0 0.639 0.886"/>
+<color name="altcyanblue" value="0.313 0.666 0.901"/>
+<color name="altcyanblue15" value="0.897 0.95 0.985"/>
+<color name="altcyanblue30" value="0.794 0.9 0.97"/>
+<color name="altcyanblue50" value="0.656 0.833 0.95"/>
+<color name="altcyanblue70" value="0.519 0.766 0.931"/>
+<color name="altgray" value="0.858"/>
+<color name="altgray15" value="0.85"/>
+<color name="altgray30" value="0.7"/>
+<color name="altgray50" value="0.5"/>
+<color name="altgray70" value="0.3"/>
+<color name="altgreen" value="0 0.588 0.509"/>
+<color name="altgreen15" value="0.85 0.938 0.926"/>
+<color name="altgreen30" value="0.7 0.876 0.852"/>
+<color name="altgreen50" value="0.5 0.794 0.754"/>
+<color name="altgreen70" value="0.3 0.711 0.656"/>
+<color name="altlilac" value="0.627 0 0.47"/>
+<color name="altlilac15" value="0.944 0.85 0.92"/>
+<color name="altlilac30" value="0.888 0.7 0.841"/>
+<color name="altlilac50" value="0.813 0.5 0.735"/>
+<color name="altlilac70" value="0.739 0.3 0.629"/>
+<color name="altmaygreen" value="0.467 0.718 0.173"/>
+<color name="altorange" value="0.862 0.627 0.117"/>
+<color name="altorange15" value="0.979 0.944 0.867"/>
+<color name="altorange30" value="0.958 0.888 0.735"/>
+<color name="altorange50" value="0.931 0.813 0.558"/>
+<color name="altorange70" value="0.903 0.739 0.382"/>
+<color name="altpalegreen" value="0.509 0.745 0.235"/>
+<color name="altpalegreen15" value="0.926 0.961 0.885"/>
+<color name="altpalegreen30" value="0.852 0.923 0.77"/>
+<color name="altpalegreen50" value="0.754 0.872 0.617"/>
+<color name="altpalegreen70" value="0.656 0.821 0.464"/>
+<color name="altred" value="0.733 0.09 0.09"/>
+<color name="altred15" value="0.944 0.867 0.873"/>
+<color name="altred30" value="0.888 0.735 0.747"/>
+<color name="altred50" value="0.813 0.558 0.578"/>
+<color name="altred70" value="0.739 0.382 0.409"/>
+<color name="altseablue" value="0.196 0.313 0.549"/>
+<color name="altseablue15" value="0.879 0.897 0.932"/>
+<color name="altseablue30" value="0.758 0.794 0.864"/>
+<color name="altseablue50" value="0.598 0.656 0.774"/>
+<color name="altseablue70" value="0.437 0.519 0.684"/>
+<color name="altviolet" value="0.745 0 0.494"/>
+<color name="altyellow" value="0.98 0.901 0.078"/>
+<color name="altyellow15" value="0.997 0.985 0.861"/>
+<color name="altyellow30" value="0.994 0.97 0.723"/>
+<color name="altyellow50" value="0.99 0.95 0.539"/>
+<color name="altyellow70" value="0.986 0.931 0.354"/>
+<color name="blue" value="0 0 1"/>
+<color name="brown" value="0.647 0.165 0.165"/>
+<color name="darkblue" value="0 0 0.545"/>
+<color name="darkcyan" value="0 0.545 0.545"/>
+<color name="darkgray" value="0.663"/>
+<color name="darkgreen" value="0 0.392 0"/>
+<color name="darkmagenta" value="0.545 0 0.545"/>
+<color name="darkorange" value="1 0.549 0"/>
+<color name="darkred" value="0.545 0 0"/>
+<color name="dblue" value="0 0.2 0.6"/>
+<color name="dgreen" value="0 0.6 0"/>
+<color name="dred" value="0.8 0 0"/>
+<color name="gold" value="1 0.843 0"/>
+<color name="gray" value="0.745"/>
+<color name="gray6" value="0.75"/>
+<color name="green" value="0 1 0"/>
+<color name="lightblue" value="0.678 0.847 0.902"/>
+<color name="lightcyan" value="0.878 1 1"/>
+<color name="lightgray" value="0.827"/>
+<color name="lightgreen" value="0.565 0.933 0.565"/>
+<color name="lightyellow" value="1 1 0.878"/>
+<color name="navy" value="0 0 0.502"/>
+<color name="orange" value="1 0.647 0"/>
+<color name="pink" value="1 0.753 0.796"/>
+<color name="purple" value="0.627 0.125 0.941"/>
+<color name="red" value="1 0 0"/>
+<color name="seagreen" value="0.18 0.545 0.341"/>
+<color name="title" value="0.274 0.392 0.666"/>
+<color name="titleold" value="0.274 0.392 0.666"/>
+<color name="turquoise" value="0.251 0.878 0.816"/>
+<color name="uniblue" value="0.125 0.337 0.682"/>
+<color name="unigray" value="0.521 0.509 0.439"/>
+<color name="violet" value="0.933 0.51 0.933"/>
+<color name="yellow" value="1 1 0"/>
+<pen name="ultraultrafat" value="8"/>
+</ipestyle>
+<ipestyle name="kit-colors">
+<symbol name="arrow/arc(spx)">
+<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/farc(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="mark/circle(sx)" transformations="translations">
+<path fill="sym-stroke">
+0.6 0 0 0.6 0 0 e
+0.4 0 0 0.4 0 0 e
+</path>
+</symbol>
+<symbol name="mark/disk(sx)" transformations="translations">
+<path fill="sym-stroke">
+0.6 0 0 0.6 0 0 e
+</path>
+</symbol>
+<symbol name="mark/fdisk(sfx)" transformations="translations">
+<group>
+<path fill="sym-stroke" fillrule="eofill">
+0.6 0 0 0.6 0 0 e
+0.4 0 0 0.4 0 0 e
+</path>
+<path fill="sym-fill">
+0.4 0 0 0.4 0 0 e
+</path>
+</group>
+</symbol>
+<symbol name="mark/box(sx)" transformations="translations">
+<path fill="sym-stroke" fillrule="eofill">
+-0.6 -0.6 m
+0.6 -0.6 l
+0.6 0.6 l
+-0.6 0.6 l
+h
+-0.4 -0.4 m
+0.4 -0.4 l
+0.4 0.4 l
+-0.4 0.4 l
+h
+</path>
+</symbol>
+<symbol name="mark/square(sx)" transformations="translations">
+<path fill="sym-stroke">
+-0.6 -0.6 m
+0.6 -0.6 l
+0.6 0.6 l
+-0.6 0.6 l
+h
+</path>
+</symbol>
+<symbol name="mark/fsquare(sfx)" transformations="translations">
+<group>
+<path fill="sym-stroke" fillrule="eofill">
+-0.6 -0.6 m
+0.6 -0.6 l
+0.6 0.6 l
+-0.6 0.6 l
+h
+-0.4 -0.4 m
+0.4 -0.4 l
+0.4 0.4 l
+-0.4 0.4 l
+h
+</path>
+<path fill="sym-fill">
+-0.4 -0.4 m
+0.4 -0.4 l
+0.4 0.4 l
+-0.4 0.4 l
+h
+</path>
+</group>
+</symbol>
+<symbol name="mark/cross(sx)" transformations="translations">
+<group>
+<path fill="sym-stroke">
+-0.43 -0.57 m
+0.57 0.43 l
+0.43 0.57 l
+-0.57 -0.43 l
+h
+</path>
+<path fill="sym-stroke">
+-0.43 0.57 m
+0.57 -0.43 l
+0.43 -0.57 l
+-0.57 0.43 l
+h
+</path>
+</group>
+</symbol>
+<symbol name="arrow/fnormal(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/pointed(spx)">
+<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-0.8 0 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/fpointed(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-0.8 0 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/linear(spx)">
+<path stroke="sym-stroke" pen="sym-pen">
+-1 0.333 m
+0 0 l
+-1 -0.333 l
+</path>
+</symbol>
+<symbol name="arrow/fdouble(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+-1 0 m
+-2 0.333 l
+-2 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/double(spx)">
+<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+-1 0 m
+-2 0.333 l
+-2 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="mark/smfdisk(sfx)" transformations="translations">
+<group>
+<path fill="sym-stroke" fillrule="eofill">
+0.4 0 0 0.4 0 0 e
+0.2 0 0 0.2 0 0 e
+</path>
+<path fill="sym-fill">
+0.2 0 0 0.2 0 0 e
+</path>
+</group>
+</symbol>
+<symbol name="mark/kit-item">
+<path matrix="1 0 0 1 -0.4 -0.4" fill="kitblue">
+0.2 0 m
+0.2 0 0 -0.2 0.2 0.2 0 0.2 a
+0 0.8 l
+0.6 0.8 l
+0.2 0 0 -0.2 0.6 0.6 0.8 0.6 a
+0.8 0 l
+h
+</path>
+</symbol>
+<symbol name="sphere">
+<path matrix="0.04 0 0 0.04 0 0" fill="kitgreen" gradient="ball">
+18 0 0 18 0 0 e
+</path>
+</symbol>
+<symbol name="mark/sphere(sx)" transformations="translations">
+<path matrix="0.04 0 0 0.04 0 0" fill="sym-stroke" gradient="ball">
+18 0 0 18 0 0 e
+</path>
+</symbol>
+<anglesize name="22.5 deg" value="22.5"/>
+<anglesize name="30 deg" value="30"/>
+<anglesize name="45 deg" value="45"/>
+<anglesize name="60 deg" value="60"/>
+<anglesize name="90 deg" value="90"/>
+<color name="KITblack15" value="0.85"/>
+<color name="KITblack30" value="0.7"/>
+<color name="KITblack50" value="0.5"/>
+<color name="KITblack70" value="0.3"/>
+<color name="KITblue" value="0.274 0.392 0.666"/>
+<color name="KITblue15" value="0.891 0.908 0.95"/>
+<color name="KITblue30" value="0.782 0.817 0.9"/>
+<color name="KITblue50" value="0.637 0.696 0.833"/>
+<color name="KITblue70" value="0.492 0.574 0.766"/>
+<color name="KITbrown" value="0.627 0.509 0.196"/>
+<color name="KITbrown15" value="0.944 0.926 0.879"/>
+<color name="KITbrown30" value="0.888 0.852 0.758"/>
+<color name="KITbrown50" value="0.813 0.754 0.598"/>
+<color name="KITbrown70" value="0.739 0.656 0.437"/>
+<color name="KITcyanblue" value="0.313 0.666 0.901"/>
+<color name="KITcyanblue15" value="0.897 0.95 0.985"/>
+<color name="KITcyanblue30" value="0.794 0.9 0.97"/>
+<color name="KITcyanblue50" value="0.656 0.833 0.95"/>
+<color name="KITcyanblue70" value="0.519 0.766 0.931"/>
+<color name="KITgreen" value="0 0.588 0.509"/>
+<color name="KITgreen15" value="0.85 0.938 0.926"/>
+<color name="KITgreen30" value="0.7 0.876 0.852"/>
+<color name="KITgreen50" value="0.5 0.794 0.754"/>
+<color name="KITgreen70" value="0.3 0.711 0.656"/>
+<color name="KITlilac" value="0.627 0 0.47"/>
+<color name="KITlilac15" value="0.944 0.85 0.92"/>
+<color name="KITlilac30" value="0.888 0.7 0.841"/>
+<color name="KITlilac50" value="0.813 0.5 0.735"/>
+<color name="KITlilac70" value="0.739 0.3 0.629"/>
+<color name="KITorange" value="0.862 0.627 0.117"/>
+<color name="KITorange15" value="0.979 0.944 0.867"/>
+<color name="KITorange30" value="0.958 0.888 0.735"/>
+<color name="KITorange50" value="0.931 0.813 0.558"/>
+<color name="KITorange70" value="0.903 0.739 0.382"/>
+<color name="KITpalegreen" value="0.509 0.745 0.235"/>
+<color name="KITpalegreen15" value="0.926 0.961 0.885"/>
+<color name="KITpalegreen30" value="0.852 0.923 0.77"/>
+<color name="KITpalegreen50" value="0.754 0.872 0.617"/>
+<color name="KITpalegreen70" value="0.656 0.821 0.464"/>
+<color name="KITred15" value="0.944 0.867 0.873"/>
+<color name="KITred30" value="0.888 0.735 0.747"/>
+<color name="KITred50" value="0.813 0.558 0.578"/>
+<color name="KITred70" value="0.739 0.382 0.409"/>
+<color name="KITseablue" value="0.196 0.313 0.549"/>
+<color name="KITseablue15" value="0.879 0.897 0.932"/>
+<color name="KITseablue30" value="0.758 0.794 0.864"/>
+<color name="KITseablue50" value="0.598 0.656 0.774"/>
+<color name="KITseablue70" value="0.437 0.519 0.684"/>
+<color name="KITyellow" value="0.98 0.901 0.078"/>
+<color name="KITyellow15" value="0.997 0.985 0.861"/>
+<color name="KITyellow30" value="0.994 0.97 0.723"/>
+<color name="KITyellow50" value="0.99 0.95 0.539"/>
+<color name="KITyellow70" value="0.986 0.931 0.354"/>
+<color name="algoblau" value="0.098 0.098 0.549"/>
+<color name="algogelb" value="1 0.862 0"/>
+<color name="algohellblau" value="0.576 0.576 0.776"/>
+<color name="blue" value="0 0 1"/>
+<color name="brown" value="0.647 0.165 0.165"/>
+<color name="darkblue" value="0 0 0.545"/>
+<color name="darkcyan" value="0 0.545 0.545"/>
+<color name="darkgray" value="0.663"/>
+<color name="darkgreen" value="0 0.392 0"/>
+<color name="darkmagenta" value="0.545 0 0.545"/>
+<color name="darkorange" value="1 0.549 0"/>
+<color name="darkred" value="0.545 0 0"/>
+<color name="dblue" value="0 0.2 0.6"/>
+<color name="dgreen" value="0 0.6 0"/>
+<color name="dred" value="0.8 0 0"/>
+<color name="gold" value="1 0.843 0"/>
+<color name="gray" value="0.745"/>
+<color name="gray6" value="0.75"/>
+<color name="green" value="0 1 0"/>
+<color name="kitblack" value="0"/>
+<color name="kitblue" value="0.274 0.392 0.666"/>
+<color name="kitblue15" value="0.89 0.909 0.949"/>
+<color name="kitblue30" value="0.78 0.815 0.898"/>
+<color name="kitblue50" value="0.635 0.694 0.831"/>
+<color name="kitblue70" value="0.49 0.572 0.764"/>
+<color name="kitbrown" value="0.706 0.51 0.122"/>
+<color name="kitcyan" value="0 0.639 0.886"/>
+<color name="kitgray" value="0.858"/>
+<color name="kitgray15" value="0.85"/>
+<color name="kitgray30" value="0.7"/>
+<color name="kitgray50" value="0.5"/>
+<color name="kitgray70" value="0.3"/>
+<color name="kitgreen" value="0 0.588 0.51"/>
+<color name="kitgreen15" value="0.85 0.937 0.925"/>
+<color name="kitgreen30" value="0.698 0.874 0.85"/>
+<color name="kitgreen50" value="0.498 0.792 0.752"/>
+<color name="kitgreen70" value="0.298 0.709 0.654"/>
+<color name="kitmaygreen" value="0.467 0.718 0.173"/>
+<color name="kitorange" value="0.957 0.608 0"/>
+<color name="kitred" value="0.733 0.09 0.09"/>
+<color name="kitviolet" value="0.745 0 0.494"/>
+<color name="kityellow" value="1 0.898 0"/>
+<color name="lightblue" value="0.678 0.847 0.902"/>
+<color name="lightcyan" value="0.878 1 1"/>
+<color name="lightgray" value="0.827"/>
+<color name="lightgreen" value="0.565 0.933 0.565"/>
+<color name="lightyellow" value="1 1 0.878"/>
+<color name="navy" value="0 0 0.502"/>
+<color name="orange" value="1 0.647 0"/>
+<color name="pink" value="1 0.753 0.796"/>
+<color name="purple" value="0.627 0.125 0.941"/>
+<color name="red" value="1 0 0"/>
+<color name="seagreen" value="0.18 0.545 0.341"/>
+<color name="title" value="0.274 0.392 0.666"/>
+<color name="turquoise" value="0.251 0.878 0.816"/>
+<color name="violet" value="0.933 0.51 0.933"/>
+<color name="yellow" value="1 1 0"/>
+<gridsize name="1 pts" value="1"/>
+<gridsize name="10 pts (~3.5 mm)" value="10"/>
+<gridsize name="14 pts (~5 mm)" value="14"/>
+<gridsize name="16 pts (~6 mm)" value="16"/>
+<gridsize name="2 pts" value="2"/>
+<gridsize name="20 pts (~7 mm)" value="20"/>
+<gridsize name="28 pts (~10 mm)" value="28"/>
+<gridsize name="3 pts" value="3"/>
+<gridsize name="32 pts (~12 mm)" value="32"/>
+<gridsize name="4 pts" value="4"/>
+<gridsize name="56 pts (~20 mm)" value="56"/>
+<gridsize name="8 pts (~3 mm)" value="8"/>
+<opacity name="10%" value="0.1"/>
+<opacity name="25%" value="0.25"/>
+<opacity name="33%" value="0.333"/>
+<opacity name="50%" value="0.5"/>
+<opacity name="66%" value="0.666"/>
+<opacity name="75%" value="0.75"/>
+<opacity name="90%" value="0.9"/>
+<preamble>
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+</preamble>
+<gradient name="ball" type="radial" coords="-4 10 2 0 0 18">
+ <stop offset="0" color="1"/>
+ <stop offset="1" color="0 0 1"/>
+</gradient>
+<tiling name="falling" angle="-60" step="12" width="3"/>
+<tiling name="rising" angle="30" step="12" width="3"/>
+<tiling name="bricklines" angle="40" step="3" width="1"/>
+<tiling name="bricklines-large" angle="40" step="9" width="3"/>
+</ipestyle>
+<ipestyle name="dashstyles">
+<dashstyle name="dashed-narrow" value="[2] 0"/>
+<dashstyle name="dashed-narrower" value="[1] 0"/>
+<dashstyle name="dotted-narrow" value="[1 1] 0"/>
+<dashstyle name="dotted-narrower" value="[0.5 0.5] 0"/>
+</ipestyle>
+<page>
+<layer name="title"/>
+<layer name="BACKGROUND"/>
+<view layers="title" active="title"/>
+<text layer="title" matrix="1 0 0 1 -213 -26" pos="213 427" stroke="black" type="label" width="665.064" height="27.8936" depth="7.812" valign="baseline" size="Large">Multiparty PCG for Authenticated Triple</text>
+<text matrix="1 0 0 1 -213 -164.704" pos="213 427" stroke="ac-lightblue" type="label" width="111.581" height="15.6744" depth="0" valign="bottom" size="small">2021 12 12</text>
+<text matrix="1 0 0 1 -213 -131" pos="213 427" stroke="ac-lightblue" type="label" width="171.713" height="19.3704" depth="0" valign="baseline">Practical MPC</text>
+<text matrix="1 0 0 1 -213 -60.812" pos="213 427" stroke="ac-lightblue" type="label" width="486.125" height="20.9244" depth="6.972" valign="baseline">Achieving $O(\log(N))$ communication size</text>
+</page>
+<page title="Authenticated Triples Functionality" section="">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<text layer="alpha" pin="h" pos="0 524" stroke="black" type="minipage" width="760" height="148.786" depth="135.128" valign="top" style="itemize">\item Parties $P_1,..., P_m$
+\item Each $P_i$ holds $x^i [j], y^i[j], z^i [j], m_x^i [j], m_y^i [j], m_z^i [j], \Delta^j$ for $j \in \{0,...,N-1\}$
+\item Constraint: 
+$$ \forall j \in [N], (\sum_{i \in [m]} x^i [j]) \cdot (\sum_{i \in [m]} y^i [j]) = (\sum_{i \in [m]} z^i [j])$$
+\item use \textbackslash hl command to \hl{highlight}</text>
+</page>
+</ipe>
