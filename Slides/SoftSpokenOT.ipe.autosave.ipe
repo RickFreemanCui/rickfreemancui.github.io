@@ -16579,7 +16579,7 @@ h
 601.772 472.703 l
 h
 </path>
-<text matrix="1 0 0 1 -168.258 -228.626" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="24.8584" height="20.0284" depth="0.196" valign="baseline">U&apos;</text>
+<text matrix="1 0 0 1 -168.258 -228.626" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="21.3072" height="17.1672" depth="0.168" valign="baseline">U&apos;</text>
 </group>
 <group matrix="1 0 0 1 -61.0114 31.4644">
 <path matrix="3.19114 0 0 1.00415 -1612.12 -227.649" stroke="black" pen="heavier">
@@ -16599,9 +16599,9 @@ h
 601.772 472.703 l
 h
 </path>
-<text matrix="1 0 0 1 -468.411 -228.711" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="13.5672" height="15.468" depth="0" valign="baseline">V</text>
+<text matrix="1 0 0 1 -468.411 -228.711" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="15.8284" height="18.046" depth="0" valign="baseline">V</text>
 </group>
-<text matrix="1 0 0 1 -89.5648 25.5816" transformations="translations" pos="486.705 161" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" style="math">\times</text>
+<text matrix="1 0 0 1 -89.5648 25.5816" transformations="translations" pos="486.705 161" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
 <path matrix="1 0 0 1 52.9619 -181.382" stroke="black" pen="heavier" arrow="normal/normal">
 78.6912 238.897 m
 278.54 238.897 l
@@ -16644,7 +16644,7 @@ h
 601.772 472.703 l
 h
 </path>
-<text matrix="1 0 0 1 -330.924 -230.711" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="24.8164" height="18.046" depth="0" valign="baseline">W</text>
+<text matrix="1 0 0 1 -330.924 -230.711" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="21.2712" height="15.468" depth="0" valign="baseline">W</text>
 </group>
 <group matrix="1 0 0 1 36.9701 236.126">
 <path matrix="3.19114 0 0 1.00415 -1754.1 -225.648" stroke="black" pen="heavier">
@@ -16654,9 +16654,9 @@ h
 601.772 472.703 l
 h
 </path>
-<text matrix="1 0 0 1 -468.411 -228.711" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="13.5672" height="15.468" depth="0" valign="baseline">V</text>
+<text matrix="1 0 0 1 -468.411 -228.711" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="15.8284" height="18.046" depth="0" valign="baseline">V</text>
 </group>
-<text matrix="1 0 0 1 47.5163 232.243" transformations="translations" pos="486.705 161" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" style="math">\times</text>
+<text matrix="1 0 0 1 47.5163 232.243" transformations="translations" pos="486.705 161" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
 <group matrix="1 0 0 1 -332.373 15.1177">
 <path matrix="1 0 0 1 128.04 -3.02871" stroke="black" pen="heavier">
 576.64 472.703 m
@@ -16667,7 +16667,7 @@ h
 </path>
 <text matrix="1 0 0 1 123.895 -5.35441" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="14.9688" height="13.3504" depth="0.196" valign="baseline">\vecu</text>
 </group>
-<text matrix="1 0 0 1 -77.8914 234.218" transformations="translations" pos="486.705 161" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" style="math">\times</text>
+<text matrix="1 0 0 1 -77.8914 234.218" transformations="translations" pos="486.705 161" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
 <group matrix="1 0 0 1 87.1236 308.37">
 <path matrix="3.22133 0 0 0.167209 -1502.79 26.9496" stroke="black" pen="heavier">
 576.64 472.703 m
@@ -16760,7 +16760,7 @@ h
 601.772 472.703 l
 h
 </path>
-<text matrix="1 0 0 1 -168.258 -228.626" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="24.8584" height="20.0284" depth="0.196" valign="baseline">U&apos;</text>
+<text matrix="1 0 0 1 -168.258 -228.626" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="21.3072" height="17.1672" depth="0.168" valign="baseline">U&apos;</text>
 </group>
 <group matrix="1 0 0 1 328.488 9.43117">
 <path matrix="3.19114 0 0 1.00415 -1612.12 -227.649" stroke="black" pen="heavier">
@@ -16780,9 +16780,9 @@ h
 601.772 472.703 l
 h
 </path>
-<text matrix="1 0 0 1 -468.411 -228.711" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="13.5672" height="15.468" depth="0" valign="baseline">V</text>
+<text matrix="1 0 0 1 -468.411 -228.711" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="15.8284" height="18.046" depth="0" valign="baseline">V</text>
 </group>
-<text matrix="1 0 0 1 299.934 3.54837" transformations="translations" pos="486.705 161" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" style="math">\times</text>
+<text matrix="1 0 0 1 299.934 3.54837" transformations="translations" pos="486.705 161" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
 <path stroke="black" pen="heavier" arrow="normal/normal">
 179.873 70.608 m
 240.408 0 0 240.408 326.581 261.062 480.254 76.1819 a
@@ -17004,7 +17004,7 @@ h
 601.772 472.703 l
 h
 </path>
-<text matrix="1 0 0 1 -330.924 -230.711" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="24.8164" height="18.046" depth="0" valign="baseline" size="small">W</text>
+<text matrix="1 0 0 1 -330.924 -230.711" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="21.2712" height="15.468" depth="0" valign="baseline" size="small">W</text>
 </group>
 <group matrix="1 0 0 1 -63.3444 225.95">
 <path matrix="3.19114 0 0 1.00415 -1754.1 -225.648" stroke="black" pen="heavier">
@@ -17014,10 +17014,10 @@ h
 601.772 472.703 l
 h
 </path>
-<text matrix="1 0 0 1 -468.411 -228.711" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="13.5672" height="15.468" depth="0" valign="baseline" size="small">V</text>
+<text matrix="1 0 0 1 -468.411 -228.711" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="15.8284" height="18.046" depth="0" valign="baseline" size="small">V</text>
 </group>
-<text matrix="1 0 0 1 -21.0814 222.067" transformations="translations" pos="486.705 161" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">\times</text>
-<text matrix="1 0 0 1 -146.489 222.067" transformations="translations" pos="486.705 161" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">\times</text>
+<text matrix="1 0 0 1 -21.0814 222.067" transformations="translations" pos="486.705 161" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" size="small" style="math">\times</text>
+<text matrix="1 0 0 1 -146.489 222.067" transformations="translations" pos="486.705 161" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" size="small" style="math">\times</text>
 <group matrix="1 0 0 1 -161.106 -33.1484">
 <path matrix="1.90233 0 0 1 -663.863 35.0604" stroke="black" pen="heavier">
 576.64 472.703 m
@@ -17026,7 +17026,7 @@ h
 601.772 472.703 l
 h
 </path>
-<text matrix="1 0 0 1 -138.577 30.4807" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="15.3408" height="15.4752" depth="0.168" valign="baseline" size="small">U</text>
+<text matrix="1 0 0 1 -138.577 30.4807" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="17.8976" height="18.0544" depth="0.196" valign="baseline" size="small">U</text>
 </group>
 <group matrix="1 0 0 1 -161.106 -24.7942">
 <path matrix="3.22671 0 0 0.268628 -1326.4 310.573" stroke="black" pen="heavier">
@@ -17089,9 +17089,9 @@ h
 601.772 472.703 l
 h
 </path>
-<text matrix="1 0 0 1 -468.411 -228.711" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="13.5672" height="15.468" depth="0" valign="baseline" size="small">V</text>
+<text matrix="1 0 0 1 -468.411 -228.711" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="15.8284" height="18.046" depth="0" valign="baseline" size="small">V</text>
 </group>
-<text matrix="1 0 0 1 -128.97 -45.7076" transformations="translations" pos="486.705 161" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">\times</text>
+<text matrix="1 0 0 1 -128.97 -45.7076" transformations="translations" pos="486.705 161" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" size="small" style="math">\times</text>
 <group matrix="1 0 0 1 -272.904 -299.746">
 <text matrix="1 0 0 1 73.1937 59.1047" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="30.012" height="16.6152" depth="3.576" valign="baseline" size="small" style="math">\Delta_1</text>
 <path matrix="1.10231 0 0 1.05495 105.17 199.811" stroke="black" pen="heavier">
@@ -17113,7 +17113,7 @@ h
 601.772 472.703 l
 h
 </path>
-<text matrix="1 0 0 1 -138.577 30.4807" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="15.3408" height="15.4752" depth="0.168" valign="baseline" size="small">U</text>
+<text matrix="1 0 0 1 -138.577 30.4807" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="17.8976" height="18.0544" depth="0.196" valign="baseline" size="small">U</text>
 </group>
 <group matrix="1 0 0 1 96.9118 -247.685">
 <path matrix="3.22671 0 0 0.268628 -1326.4 310.573" stroke="black" pen="heavier">
@@ -17126,7 +17126,7 @@ h
 <text matrix="1 0 0 1 181.879 322.087" transformations="translations" pos="377.305 85.7853" stroke="black" type="label" width="31.234" height="18.0992" depth="4.172" valign="baseline" size="small" style="math">G_{\mathcal{C}}</text>
 </group>
 <group matrix="1 0 0 1 536.077 -67.0423">
-<text matrix="1 0 0 1 -76.1256 141.591" transformations="translations" pos="377.305 85.7853" stroke="black" type="label" width="26.5824" height="15.2592" depth="3.576" valign="baseline" size="small" style="math">H_{\mathcal{C}}</text>
+<text matrix="1 0 0 1 -76.1256 141.591" transformations="translations" pos="377.305 85.7853" stroke="black" type="label" width="31.0128" height="17.8024" depth="4.172" valign="baseline" size="small" style="math">H_{\mathcal{C}}</text>
 <path matrix="3.22671 0 0 0.235595 -1584.51 142.751" stroke="black" pen="heavier">
 576.64 472.703 m
 576.64 303.556 l
@@ -17143,11 +17143,11 @@ h
 601.772 472.703 l
 h
 </path>
-<text matrix="1 0 0 1 -138.577 30.4807" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="14.8736" height="18.0544" depth="0.196" valign="baseline" size="small">C</text>
+<text matrix="1 0 0 1 -138.577 30.4807" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="12.7488" height="15.4752" depth="0.168" valign="baseline" size="small">C</text>
 </group>
-<text matrix="1 0 0 1 117.689 -0.824772" transformations="translations" pos="486.705 161" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">\times</text>
-<text matrix="1 0 0 1 298.745 -0.824772" transformations="translations" pos="486.705 161" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">\times</text>
-<text matrix="1 0 0 1 36.7362 11.2665" transformations="translations" pos="680.59 148.909" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">+</text>
+<text matrix="1 0 0 1 117.689 -0.824772" transformations="translations" pos="486.705 161" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" size="small" style="math">\times</text>
+<text matrix="1 0 0 1 298.745 -0.824772" transformations="translations" pos="486.705 161" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" size="small" style="math">\times</text>
+<text matrix="1 0 0 1 36.7362 11.2665" transformations="translations" pos="680.59 148.909" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" size="small" style="math">+</text>
 </group>
 <path matrix="1 0 0 1 0 -6.54675" stroke="black" pen="heavier" arrow="normal/normal">
 351.584 196.536 m
@@ -17162,7 +17162,7 @@ h
 601.772 472.703 l
 h
 </path>
-<text matrix="1 0 0 1 -288.711 -265.011" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="24.8584" height="20.0284" depth="0.196" valign="baseline" size="small">U&apos;</text>
+<text matrix="1 0 0 1 -288.711 -265.011" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="21.3072" height="17.1672" depth="0.168" valign="baseline" size="small">U&apos;</text>
 </group>
 <group matrix="1 0 0 1 0 -6.54675">
 <group matrix="1 0 0 1 254.158 10.794">
@@ -17176,7 +17176,7 @@ h
 <text matrix="1 0 0 1 181.879 322.087" transformations="translations" pos="377.305 85.7853" stroke="black" type="label" width="31.234" height="18.0992" depth="4.172" valign="baseline" size="small" style="math">G_{\mathcal{C}}</text>
 </group>
 <group matrix="1 0 0 1 512.268 148.378">
-<text matrix="1 0 0 1 -76.1256 141.591" transformations="translations" pos="377.305 85.7853" stroke="black" type="label" width="26.5824" height="15.2592" depth="3.576" valign="baseline" size="small" style="math">H_{\mathcal{C}}</text>
+<text matrix="1 0 0 1 -76.1256 141.591" transformations="translations" pos="377.305 85.7853" stroke="black" type="label" width="31.0128" height="17.8024" depth="4.172" valign="baseline" size="small" style="math">H_{\mathcal{C}}</text>
 <path matrix="3.22671 0 0 0.235595 -1584.51 142.751" stroke="black" pen="heavier">
 576.64 472.703 m
 576.64 303.556 l
@@ -17216,9 +17216,9 @@ h
 601.772 472.703 l
 h
 </path>
-<text matrix="1 0 0 1 -468.411 -228.711" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="13.5672" height="15.468" depth="0" valign="baseline">V</text>
+<text matrix="1 0 0 1 -468.411 -228.711" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="15.8284" height="18.046" depth="0" valign="baseline">V</text>
 </group>
-<text matrix="1 0 0 1 194.308 106.31" transformations="translations" pos="486.705 161" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" style="math">\times</text>
+<text matrix="1 0 0 1 194.308 106.31" transformations="translations" pos="486.705 161" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
 <group matrix="1 0 0 1 50.3745 -146.925">
 <text matrix="1 0 0 1 73.1937 59.1047" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="30.012" height="16.6152" depth="3.576" valign="baseline" style="math">\Delta_1</text>
 <path matrix="1.10231 0 0 1.05495 105.17 199.811" stroke="black" pen="heavier">
@@ -17243,7 +17243,7 @@ h
 601.772 472.703 l
 h
 </path>
-<text matrix="1 0 0 1 -138.577 30.4807" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="15.3408" height="15.4752" depth="0.168" valign="baseline">U</text>
+<text matrix="1 0 0 1 -138.577 30.4807" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="17.8976" height="18.0544" depth="0.196" valign="baseline">U</text>
 </group>
 <group matrix="1 0 0 1 96.9118 -247.685">
 <path matrix="3.22671 0 0 0.268628 -1326.4 310.573" stroke="black" pen="heavier">
@@ -17256,7 +17256,7 @@ h
 <text matrix="1 0 0 1 181.879 322.087" transformations="translations" pos="377.305 85.7853" stroke="black" type="label" width="31.234" height="18.0992" depth="4.172" valign="baseline" style="math">G_{\mathcal{C}}</text>
 </group>
 <group matrix="1 0 0 1 536.077 -67.0423">
-<text matrix="1 0 0 1 -76.1256 141.591" transformations="translations" pos="377.305 85.7853" stroke="black" type="label" width="26.5824" height="15.2592" depth="3.576" valign="baseline" style="math">H_{\mathcal{C}}</text>
+<text matrix="1 0 0 1 -76.1256 141.591" transformations="translations" pos="377.305 85.7853" stroke="black" type="label" width="31.0128" height="17.8024" depth="4.172" valign="baseline" style="math">H_{\mathcal{C}}</text>
 <path matrix="3.22671 0 0 0.235595 -1584.51 142.751" stroke="black" pen="heavier">
 576.64 472.703 m
 576.64 303.556 l
@@ -17273,11 +17273,11 @@ h
 601.772 472.703 l
 h
 </path>
-<text matrix="1 0 0 1 -138.577 30.4807" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="14.8736" height="18.0544" depth="0.196" valign="baseline">C</text>
+<text matrix="1 0 0 1 -138.577 30.4807" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="12.7488" height="15.4752" depth="0.168" valign="baseline">C</text>
 </group>
-<text matrix="1 0 0 1 117.689 -0.824772" transformations="translations" pos="486.705 161" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" style="math">\times</text>
-<text matrix="1 0 0 1 298.745 -0.824772" transformations="translations" pos="486.705 161" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" style="math">\times</text>
-<text matrix="1 0 0 1 36.7362 11.2665" transformations="translations" pos="680.59 148.909" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" style="math">+</text>
+<text matrix="1 0 0 1 117.689 -0.824772" transformations="translations" pos="486.705 161" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
+<text matrix="1 0 0 1 298.745 -0.824772" transformations="translations" pos="486.705 161" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
+<text matrix="1 0 0 1 36.7362 11.2665" transformations="translations" pos="680.59 148.909" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">+</text>
 </group>
 <text matrix="1.07738 0 0 1.06797 -37.7999 -43.805" transformations="translations" pos="469.183 443.382" stroke="black" type="label" width="429.918" height="79.7636" depth="45.164" valign="baseline" size="Huge" style="math">\Big(\quad\quad\quad\quad\quad\Big)</text>
 </group>
@@ -17291,9 +17291,9 @@ h
 601.772 472.703 l
 h
 </path>
-<text matrix="1 0 0 1 -330.924 -230.711" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="24.8164" height="18.046" depth="0" valign="baseline">W</text>
+<text matrix="1 0 0 1 -330.924 -230.711" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="21.2712" height="15.468" depth="0" valign="baseline">W</text>
 </group>
-<text matrix="1 0 0 1 -9.96143 -74.9428" transformations="translations" pos="486.705 161" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" style="math">\times</text>
+<text matrix="1 0 0 1 -9.96143 -74.9428" transformations="translations" pos="486.705 161" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
 <group matrix="1 0 0 1 -153.895 -328.177">
 <text matrix="1 0 0 1 73.1937 59.1047" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="30.012" height="16.6152" depth="3.576" valign="baseline" style="math">\Delta_1</text>
 <path matrix="1.10231 0 0 1.05495 105.17 199.811" stroke="black" pen="heavier">
@@ -17314,7 +17314,7 @@ h
 601.772 472.703 l
 h
 </path>
-<text matrix="1 0 0 1 -138.577 30.4807" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="15.3408" height="15.4752" depth="0.168" valign="baseline">U</text>
+<text matrix="1 0 0 1 -138.577 30.4807" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="17.8976" height="18.0544" depth="0.196" valign="baseline">U</text>
 </group>
 <group matrix="1 0 0 1 -159.641 -321.803">
 <path matrix="3.22671 0 0 0.268628 -1326.4 310.573" stroke="black" pen="heavier">
@@ -17326,7 +17326,7 @@ h
 </path>
 <text matrix="1 0 0 1 181.879 322.087" transformations="translations" pos="377.305 85.7853" stroke="black" type="label" width="31.234" height="18.0992" depth="4.172" valign="baseline" style="math">G_{\mathcal{C}}</text>
 </group>
-<text matrix="1 0 0 1 -138.864 -74.9428" transformations="translations" pos="486.705 161" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" style="math">\times</text>
+<text matrix="1 0 0 1 -138.864 -74.9428" transformations="translations" pos="486.705 161" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
 </page>
 <page title="Step 2-2: Consistency Checking">
 <layer name="alpha"/>
@@ -17357,10 +17357,10 @@ $\tilde{V} := R V$</text>
 601.772 472.703 l
 h
 </path>
-<text matrix="1 0 0 1 -138.577 30.4807" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="15.3408" height="15.4752" depth="0.168" valign="baseline">U</text>
+<text matrix="1 0 0 1 -138.577 30.4807" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="17.8976" height="18.0544" depth="0.196" valign="baseline">U</text>
 </group>
 <text matrix="1 0 0 1 -269.044 -15.1363" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="21.6972" height="10.3208" depth="0" valign="baseline" style="math">=</text>
-<text matrix="1 0 0 1 136.204 211.155" transformations="translations" pos="486.705 161" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" style="math">\times</text>
+<text matrix="1 0 0 1 136.204 211.155" transformations="translations" pos="486.705 161" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
 <group>
 <path matrix="1.83103 0 0 0.210925 -704.917 297.264" stroke="black" pen="heavier">
 576.64 472.703 m

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20090429144355" modified="D:20220328142052" title="AC wide presentation template" author="Martin Nöllenburg" numberpages="yes"/>
+<ipe version="70218" creator="Ipe 7.2.26">
+<info created="D:20090429144355" modified="D:20230301104220" title="AC wide presentation template" author="Martin Nöllenburg" numberpages="yes"/>
 <preamble>\usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb}
 \usepackage{pifont}
