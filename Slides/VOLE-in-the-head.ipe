@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.24">
-<info created="D:20090429144355" modified="D:20230301225038" title="Publicly Verifiable Zero-Knowledge and Post-Quantum Signatures From VOLE-in-the-Head" author="Anonymous Authors" numberpages="yes"/>
+<ipe version="70218" creator="Ipe 7.2.26">
+<info created="D:20090429144355" modified="D:20230302131312" title="Publicly Verifiable Zero-Knowledge and Post-Quantum Signatures From VOLE-in-the-Head" author="Anonymous Authors" numberpages="yes"/>
 <preamble>
 \usepackage[sfdefault,lf]{carlito}
 
@@ -21508,15 +21508,15 @@ h
 <view layers="title" active="title"/>
 <text layer="title" matrix="1 0 0 1 -213 -2.06082" pos="213 427" stroke="black" type="minipage" width="920.858" height="49.3136" depth="35.448" valign="baseline" size="Large">Publicly Verifiable Zero-Knowledge and \\
 Post-Quantum Signatures From VOLE-in-the-Head</text>
-<text matrix="1 0 0 1 -213 -164.704" pos="213 427" stroke="ac-lightblue" type="label" width="394.092" height="16.4616" depth="4.104" valign="bottom" size="small">\today $\cdot$ Presented by Hongrui Cui</text>
+<text matrix="1 0 0 1 -213 -164.704" pos="213 427" stroke="ac-lightblue" type="label" width="397.85" height="16.4616" depth="4.104" valign="bottom" size="small">\today $\cdot$ Presented by Hongrui Cui</text>
 <text matrix="1 0 0 1 -213 -131" pos="213 427" stroke="ac-lightblue" type="label" width="230.798" height="19.2108" depth="4.48" valign="baseline">Anonymous Authors</text>
 <text matrix="1 0 0 1 -213 -74.8743" pos="213 427" stroke="ac-lightblue" type="label" width="293.877" height="19.7372" depth="4.48" valign="baseline">Crypto&apos;23 Submission 482</text>
 </page>
 <page title="Motivations">
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<text layer="alpha" pin="h" transformations="translations" pos="0 524" stroke="black" type="minipage" width="920" height="33.4012" depth="19.488" valign="top" style="itemize">\item Efficient VOLE-based DVZK
-\item How to transform DVZK to ZK?</text>
+<text layer="alpha" pin="h" transformations="translations" pos="0 524" stroke="black" type="minipage" width="920" height="35.2324" depth="21.308" valign="top" style="itemize">\item Efficient VOLE-based DVZK
+\item How to transform DVZK to (NI)ZK?</text>
 <text matrix="1 0 0 1 0 -85.6183" pin="h" transformations="translations" pos="0 524" stroke="black" type="minipage" width="920" height="18.9812" depth="5.012" valign="top" style="item">P.S.~Landscape of Efficient Zero Knowledge</text>
 <text matrix="1 0 0 1 0 -358.329" pin="h" transformations="translations" pos="0 483.203" stroke="black" type="minipage" width="920" height="52.9452" depth="39.06" valign="top">Main techniques (of DVZK):
 \begin{itemize}
@@ -21553,7 +21553,7 @@ Polynomials</text>
 </group>
 <group>
 <text matrix="1 0 0 1 244.818 -45.1569" transformations="translations" pos="128.333 414.423" stroke="black" type="minipage" width="287.47" height="18.368" depth="4.396" halign="center" valign="baseline" style="center">zk-SNARK, GKR, etc.</text>
-<text matrix="1 0 0 1 330.436 -44.3461" transformations="translations" pos="42.7148 377.956" stroke="black" type="label" width="164.508" height="20.9244" depth="6.972" halign="center" valign="baseline" style="math">\Omega(|C| \log(|C|))</text>
+<text matrix="1 0 0 1 330.436 -44.3461" transformations="translations" pos="42.7148 377.956" stroke="black" type="label" width="72.5284" height="20.9244" depth="6.972" halign="center" valign="baseline" style="math">\Omega(|C|)</text>
 <text matrix="1 0 0 1 313.788 -17.7633" transformations="translations" pos="59.3629 316.913" stroke="black" type="label" width="72.5284" height="20.9244" depth="6.972" halign="center" valign="baseline" style="math">\Omega(|C|)</text>
 <text matrix="1 0 0 1 298.726 -22.5562" transformations="translations" pos="74.4254 289.959" stroke="black" type="label" width="127.277" height="20.9244" depth="6.972" halign="center" valign="baseline" style="math">O(\log(|C|))</text>
 <text matrix="1 0 0 1 330.436 -37.1932" transformations="translations" pos="42.7148 270.14" stroke="black" type="label" width="105.084" height="19.2192" depth="0.196" halign="center" valign="baseline">Universal</text>
@@ -21661,16 +21661,17 @@ h
 148.749 437.493 m
 321.053 437.493 l
 </path>
-<text matrix="1 0 0 1 -110.429 61.0173" transformations="translations" pos="173.842 440.351" stroke="black" type="label" width="114.125" height="16.6128" depth="1.008" valign="baseline" size="small">Receiver/\VVV</text>
+<text matrix="1 0 0 1 -70.5359 61.0173" transformations="translations" pos="173.842 440.351" stroke="black" type="label" width="114.125" height="16.6128" depth="1.008" valign="baseline" size="small">Receiver/\VVV</text>
 <text matrix="1 0 0 1 466.515 60.2245" transformations="translations" pos="173.842 440.351" stroke="black" type="label" width="101.479" height="16.6128" depth="1.008" valign="baseline" size="small">Sender/\PPP</text>
-<text matrix="1 0 0 1 -79.8 10.7756" transformations="translations" pos="173.842 440.351" stroke="black" type="minipage" width="132.653" height="17.4192" depth="5.472" valign="baseline" size="small" style="center">$\Delta \in \mathbb{F}_{p^r}$</text>
-<text matrix="1 0 0 1 51.9187 21.1918" transformations="translations" pos="555.781 443.714" stroke="black" type="minipage" width="229.907" height="32.988" depth="21.048" valign="top" size="small" style="center">$\veca \in \mathbb{F}_{p^r}^n$ \\
-$\vecb  \in \mathbb{F}_{p^r}^n$</text>
+<text matrix="1 0 0 1 -79.8 10.7756" transformations="translations" pos="173.842 440.351" stroke="black" type="minipage" width="132.653" height="30.6624" depth="18.744" valign="baseline" size="small" style="center">$\Delta \in \mathbb{F}_{p^r}$ (global key)</text>
+<text matrix="1 0 0 1 51.9187 21.1918" transformations="translations" pos="555.781 443.714" stroke="black" type="minipage" width="229.907" height="33.2856" depth="21.384" valign="top" size="small" style="center">$\veca \in \mathbb{F}_{p^r}^n$ (message)\\
+$\vecb  \in \mathbb{F}_{p^r}^n$ (MAC Tag)</text>
 <path matrix="0.377853 0 0 3.00164 189.381 -902.198" stroke="black" pen="heavier" rarrow="normal/normal">
 148.749 437.493 m
 321.053 437.493 l
 </path>
-<text matrix="1.07064 0 0 1 -534.564 -23.2525" transformations="translations" pos="555.781 443.714" stroke="black" type="minipage" width="199.782" height="18.648" depth="6.696" valign="top" size="small" style="center">$\vecv \in \FF_{p^r}^{n}$</text>
+<text matrix="1.07064 0 0 1 -534.811 -10.8102" transformations="translations" pos="555.781 443.714" stroke="black" type="minipage" width="199.782" height="30.6048" depth="18.672" valign="top" size="small" style="center">$\vecv \in \FF_{p^r}^{n}$\\
+ (MAC Key)</text>
 <path matrix="0.39209 0 0 0.00162175 472.234 410.289" stroke="black" pen="heavier" arrow="normal/normal">
 148.749 437.493 m
 321.053 437.493 l
@@ -21712,7 +21713,7 @@ $\vecb  \in \mathbb{F}_{p^r}^n$</text>
 <view layers="alpha beta" active="beta"/>
 <view layers="alpha beta gamma" active="gamma"/>
 <view layers="alpha beta gamma delta" active="delta"/>
-<text layer="alpha" matrix="1 0 0 1 -245.757 -38.0527" transformations="translations" pos="305.797 424.642" stroke="black" type="label" width="116.976" height="16.7136" depth="1.992" valign="baseline" size="small" style="math">\vecv = \veca \Delta + \vecb</text>
+<text layer="alpha" matrix="1 0 0 1 -247.106 -34.0086" transformations="translations" pos="305.797 424.642" stroke="black" type="label" width="131.587" height="16.6704" depth="37.248" valign="baseline" size="small" style="math">\underbrace{\vecv = \Delta}_{\VVV} \cdot \underbrace{\veca + \vecb}_{\PPP}</text>
 <text matrix="1 0 0 1 -28.5396 48.3587" transformations="translations" pos="303.419 398.48" stroke="black" type="minipage" width="645.632" height="74.2344" depth="62.4" valign="baseline" size="small">\begin{align*}
 f(\veca) &amp;= f_d(\veca) + f_{d-1}(\veca) ... + f_0 \\
 f(\vecv) &amp;= f_d(\vecv) + f_{d-1} (\vecv) + ... + f_0 \\
@@ -21781,10 +21782,10 @@ h
 <view layers="alpha" active="alpha"/>
 <text layer="alpha" matrix="1 0 0 1 0 145.173" pin="h" transformations="translations" pos="0 376.67" stroke="black" type="minipage" width="920" height="21" depth="9.024" valign="top" size="small" style="itemize">\item For public-coin $\VVV$, we have public-coin $\binom{2}{1}$-OT</text>
 <text matrix="1 0 0 1 -9.37091 -12.9522" transformations="translations" pos="418.19 412.872" stroke="black" type="label" width="18.5976" height="11.2368" depth="0" valign="baseline" size="small" style="math">\equiv</text>
-<text matrix="1 0 0 1 0 -110.6" pin="h" transformations="translations" pos="0 383.92" stroke="black" type="minipage" width="920" height="21.8184" depth="9.888" valign="top" size="small" style="itemize">\item More generally, we have public-coin $\binom{N}{N-1}$-OT</text>
+<text matrix="1 0 0 1 0 -110.6" pin="h" transformations="translations" pos="0 383.92" stroke="black" type="minipage" width="920" height="21.8184" depth="9.888" valign="top" size="small" style="itemize">\item In particular, we have public-coin $\binom{N}{N-1}$-OT with $O(\log N)$ comm.</text>
 <text matrix="1 0 0 1 -13.9646 -272.118" transformations="translations" pos="418.19 412.872" stroke="black" type="label" width="18.5976" height="11.2368" depth="0" valign="baseline" size="small" style="math">\equiv</text>
 <group>
-<text matrix="1 0 0 1 -80.5135 22.1805" transformations="translations" pos="128 432" stroke="black" type="label" width="18.5976" height="16.6032" depth="0" valign="baseline" size="small" style="math">\PPP</text>
+<text matrix="1 0 0 1 -80.5135 22.1805" transformations="translations" pos="128 432" stroke="black" type="label" width="21.6972" height="19.3704" depth="0" valign="baseline" size="small" style="math">\PPP</text>
 <text matrix="1 0 0 1 152.364 22.2674" transformations="translations" pos="128 432" stroke="black" type="label" width="16.728" height="16.6032" depth="0" valign="baseline" size="small" style="math">\VVV</text>
 <text matrix="1 0 0 1 -49.6432 25.3583" transformations="translations" pos="72.2465 398.76" stroke="black" type="label" width="69.0264" height="11.808" depth="3.576" valign="baseline" size="small" style="math">\vecm_0, \vecm_1</text>
 <text matrix="1 0 0 1 -170.735 25.0877" transformations="translations" pos="438.967 400.537" stroke="black" type="label" width="100.486" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">b \in \bool</text>
@@ -21831,7 +21832,7 @@ $(c_1, d_1) \gets \Com(\vecm_1)$</text>
 871.202 534.219 l
 h
 </path>
-<text matrix="1 0 0 1 383.804 -29.7553" transformations="translations" pos="128 432" stroke="black" type="label" width="18.5976" height="16.6032" depth="0" valign="baseline" size="small" style="math">\PPP</text>
+<text matrix="1 0 0 1 383.804 -29.7553" transformations="translations" pos="128 432" stroke="black" type="label" width="21.6972" height="19.3704" depth="0" valign="baseline" size="small" style="math">\PPP</text>
 <text matrix="1 0 0 1 616.681 -29.7553" transformations="translations" pos="128 432" stroke="black" type="label" width="16.728" height="16.6032" depth="0" valign="baseline" size="small" style="math">\VVV</text>
 <path matrix="0.584469 0 0 1 282.06 -23.5135" stroke="black" arrow="normal/normal">
 480 400 m
@@ -21852,7 +21853,7 @@ h
 $\Open(c_b, d_b) \neq \bot$</text>
 </group>
 <group>
-<text matrix="1 0 0 1 -85.1072 -236.985" transformations="translations" pos="128 432" stroke="black" type="label" width="18.5976" height="16.6032" depth="0" valign="baseline" size="small" style="math">\PPP</text>
+<text matrix="1 0 0 1 -85.1072 -236.985" transformations="translations" pos="128 432" stroke="black" type="label" width="21.6972" height="19.3704" depth="0" valign="baseline" size="small" style="math">\PPP</text>
 <text matrix="1 0 0 1 147.77 -236.898" transformations="translations" pos="128 432" stroke="black" type="label" width="16.728" height="16.6032" depth="0" valign="baseline" size="small" style="math">\VVV</text>
 <text matrix="1 0 0 1 -65.2553 -222.879" transformations="translations" pos="72.2465 398.76" stroke="black" type="label" width="122.282" height="11.808" depth="5.568" valign="baseline" size="small" style="math">\vecm_0, ..., \vecm_{N-1}</text>
 <text matrix="1 0 0 1 -175.329 -234.078" transformations="translations" pos="438.967 400.537" stroke="black" type="label" width="68.9544" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">x \in [N]</text>
@@ -21896,7 +21897,7 @@ h
 871.202 534.219 l
 h
 </path>
-<text matrix="1 0 0 1 428.308 -290.611" transformations="translations" pos="128 432" stroke="black" type="label" width="18.5976" height="16.6032" depth="0" valign="baseline" size="small" style="math">\PPP</text>
+<text matrix="1 0 0 1 428.308 -290.611" transformations="translations" pos="128 432" stroke="black" type="label" width="21.6972" height="19.3704" depth="0" valign="baseline" size="small" style="math">\PPP</text>
 <text matrix="1 0 0 1 630.661 -288.921" transformations="translations" pos="128 432" stroke="black" type="label" width="16.728" height="16.6032" depth="0" valign="baseline" size="small" style="math">\VVV</text>
 <path matrix="0.584469 0 0 1 329.389 -277.736" stroke="black" arrow="normal/normal">
 480 400 m
@@ -21921,7 +21922,7 @@ h
 <view layers="alpha" active="alpha"/>
 <image layer="alpha" matrix="0.186935 0 0 0.186935 0.119661 275.987" rect="0 0 2112 1324" bitmap="7"/>
 <text matrix="1 0 0 1 382.726 47.0568" transformations="translations" pos="128 432" stroke="black" type="label" width="21.6972" height="19.3704" depth="0" valign="baseline" style="math">\PPP</text>
-<text matrix="1 0 0 1 632.09 47.1437" transformations="translations" pos="128 432" stroke="black" type="label" width="19.516" height="19.3704" depth="0" valign="baseline" style="math">\VVV</text>
+<text matrix="1 0 0 1 632.09 47.1437" transformations="translations" pos="128 432" stroke="black" type="label" width="16.728" height="16.6032" depth="0" valign="baseline" style="math">\VVV</text>
 <text matrix="1 0 0 1 387.472 38.9064" transformations="translations" pos="72.2465 398.76" stroke="black" type="label" width="91.2456" height="17.9352" depth="8.688" valign="baseline" size="small" style="math">\{m_i\}_{i \in [2^k]}</text>
 <text matrix="1 0 0 1 318.341 32.603" transformations="translations" pos="438.967 400.537" stroke="black" type="label" width="74.0832" height="17.9328" depth="6.84" valign="baseline" size="small" style="math">\{ m_i \}_{i \neq x}</text>
 <text matrix="1 0 0 1 328.03 23.0046" transformations="translations" pos="116.65 344.056" stroke="black" type="minipage" width="198.762" height="32.8704" depth="20.928" valign="baseline" size="small">$\veca := \sum_i m_i $ \\
@@ -22028,7 +22029,7 @@ h
 235.102 443.68 m
 431.193 444.723 l
 </path>
-<text matrix="1 0 0 1 223.611 -199.227" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="30.012" height="16.6152" depth="3.576" valign="baseline" size="small" style="math">\Delta_1</text>
+<text matrix="1 0 0 1 223.611 -199.227" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="35.014" height="19.3844" depth="4.172" valign="baseline" size="small" style="math">\Delta_1</text>
 <path matrix="1.04715 0 0 1.02748 283.345 -51.6554" stroke="black" pen="heavier">
 583.353 249.966 m
 583.353 169.766 l
@@ -22246,7 +22247,7 @@ h
 601.772 472.703 l
 h
 </path>
-<text matrix="1 0 0 1 -330.924 -230.711" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="13.5672" height="15.2544" depth="0" valign="baseline" size="small">V</text>
+<text matrix="1 0 0 1 -330.924 -230.711" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="15.8284" height="17.7968" depth="0" valign="baseline" size="small">V</text>
 </group>
 <group matrix="1 0 0 1 -63.3444 238.246">
 <path matrix="3.19114 0 0 1.00415 -1754.1 -225.648" stroke="black" pen="heavier">
@@ -22278,10 +22279,10 @@ h
 601.772 472.703 l
 h
 </path>
-<text matrix="1 0 0 1 181.879 322.087" transformations="translations" pos="377.305 85.7853" stroke="black" type="label" width="26.772" height="15.5136" depth="3.576" valign="baseline" size="small" style="math">G_{\mathcal{C}}</text>
+<text matrix="1 0 0 1 181.879 322.087" transformations="translations" pos="377.305 85.7853" stroke="black" type="label" width="31.234" height="18.0992" depth="4.172" valign="baseline" size="small" style="math">G_{\mathcal{C}}</text>
 </group>
 <group matrix="1 0 0 1 -161.106 -18.8714">
-<text matrix="1 0 0 1 73.1937 59.1047" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="30.012" height="16.6152" depth="3.576" valign="baseline" size="small" style="math">\Delta_1</text>
+<text matrix="1 0 0 1 73.1937 59.1047" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="35.014" height="19.3844" depth="4.172" valign="baseline" size="small" style="math">\Delta_1</text>
 <path matrix="1.10231 0 0 1.05495 105.17 199.811" stroke="black" pen="heavier">
 583.353 249.966 m
 583.353 169.766 l
@@ -22292,12 +22293,12 @@ h
 <text matrix="1 0 0 1 146.698 186.524" transformations="translations" pos="533.81 225.525" stroke="black" type="label" width="26.076" height="36.1704" depth="0" valign="baseline" size="small" style="math">\ddots</text>
 <text matrix="1 0 0 1 115.188 4.78169" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="39.2688" height="16.6056" depth="5.976" valign="baseline" size="small" style="math">\Delta_{n_{\mathcal{C}}}</text>
 </group>
-<text matrix="1 0 0 1 -162.196 -15.456" transformations="translations" pos="162.631 404.597" stroke="black" type="label" width="9.4656" height="16.6032" depth="0" valign="baseline" size="small" style="math">\ell</text>
+<text matrix="1 0 0 1 -162.196 -15.456" transformations="translations" pos="162.631 404.597" stroke="black" type="label" width="11.0432" height="19.3704" depth="0" valign="baseline" size="small" style="math">\ell</text>
 <text matrix="1 0 0 1 -172.493 -36.2186" transformations="translations" pos="219.136 329.215" stroke="black" type="label" width="23.9808" height="11.5176" depth="3.576" valign="baseline" size="small" style="math">n_{\mathcal{C}}</text>
 <text matrix="1 0 0 1 -172.493 -33.3867" transformations="translations" pos="354.465 326.383" stroke="black" type="label" width="23.9808" height="11.5176" depth="3.576" valign="baseline" size="small" style="math">\nc</text>
-<text matrix="1 0 0 1 -172.493 -33.3964" transformations="translations" pos="454.334 323.51" stroke="black" type="label" width="22.5552" height="16.4592" depth="3.576" valign="baseline" size="small">\kc</text>
-<text matrix="1 0 0 1 -172.255 -11.6453" transformations="translations" pos="574.194 367.105" stroke="black" type="label" width="23.9808" height="11.5176" depth="3.576" valign="baseline" size="small">\nc</text>
-<text matrix="1 0 0 1 0 231.068" pin="h" transformations="translations" pos="0 290.793" stroke="black" type="minipage" width="920" height="16.1784" depth="4.2" valign="top" size="small" style="item">Goal: $2^{- d}$-sound IT-MAC</text>
+<text matrix="1 0 0 1 -172.493 -33.3964" transformations="translations" pos="454.334 323.51" stroke="black" type="label" width="26.3144" height="19.2024" depth="4.172" valign="baseline" size="small">\kc</text>
+<text matrix="1 0 0 1 -172.255 -11.6453" transformations="translations" pos="574.194 367.105" stroke="black" type="label" width="27.9776" height="13.4372" depth="4.172" valign="baseline" size="small">\nc</text>
+<text matrix="1 0 0 1 0 231.068" pin="h" transformations="translations" pos="0 290.793" stroke="black" type="minipage" width="920" height="16.1784" depth="4.2" valign="top" size="small" style="item">Goal: $N^{- d}$-sound IT-MAC</text>
 <text matrix="1 0 0 1 0 5.74963" pin="h" transformations="translations" pos="0 264.192" stroke="black" type="minipage" width="920" height="16.1304" depth="4.176" valign="top" size="small" style="item">Send Syndrome</text>
 <text matrix="1 0 0 1 -563.78 -260.507" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" size="small" style="math">=</text>
 <text matrix="1 0 0 1 -446.827 -260.768" transformations="translations" pos="685.392 387.553" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">-</text>
@@ -22323,7 +22324,7 @@ h
 </group>
 <text matrix="1 0 0 1 -128.97 -33.4113" transformations="translations" pos="486.705 161" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">\times</text>
 <group matrix="1 0 0 1 -272.904 -287.45">
-<text matrix="1 0 0 1 73.1937 59.1047" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="30.012" height="16.6152" depth="3.576" valign="baseline" size="small" style="math">\Delta_1</text>
+<text matrix="1 0 0 1 73.1937 59.1047" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="35.014" height="19.3844" depth="4.172" valign="baseline" size="small" style="math">\Delta_1</text>
 <path matrix="1.10231 0 0 1.05495 105.17 199.811" stroke="black" pen="heavier">
 583.353 249.966 m
 583.353 169.766 l
@@ -22349,39 +22350,6 @@ h
 </path>
 <text matrix="1 0 0 1 -288.711 -265.011" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="18.888" height="16.9056" depth="0" valign="baseline" size="small">A&apos;</text>
 </group>
-<group matrix="1 0 0 1 4.53444 -12.6">
-<path matrix="1 0 0 0.737445 0 130.362" stroke="black">
-596.947 496.034 m
-596.947 295.268 l
-915.241 295.268 l
-915.241 496.034 l
-h
-</path>
-<text matrix="1 0 0 1 1.0277 0.423633" transformations="translations" pos="610.331 448.085" stroke="black" type="label" width="109.176" height="16.6152" depth="3.576" valign="baseline" size="small" style="math">\Delta \in \FF_{2^{\kappa}} \equiv </text>
-<text matrix="1 0 0 1 291.406 241.985" transformations="translations" pos="486.705 161" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">\times</text>
-<group matrix="1 0 0 1 151.382 -11.2494">
-<text matrix="1 0 0 1 73.1937 59.1047" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="30.012" height="16.6152" depth="3.576" valign="baseline" size="small" style="math">\Delta_1</text>
-<path matrix="1.10231 0 0 1.05495 105.17 199.811" stroke="black" pen="heavier">
-583.353 249.966 m
-583.353 169.766 l
-503.153 169.766 l
-503.153 249.966 l
-h
-</path>
-<text matrix="1 0 0 1 146.698 186.524" transformations="translations" pos="533.81 225.525" stroke="black" type="label" width="26.076" height="36.1704" depth="0" valign="baseline" size="small" style="math">\ddots</text>
-<text matrix="1 0 0 1 115.188 4.78169" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="32.1912" height="16.6152" depth="3.576" valign="baseline" size="small" style="math">\Delta_{\kappa}</text>
-</group>
-<group matrix="1 0 0 1 61.5444 11.5793">
-<path matrix="4.22422 0 0 0.12209 -1835.07 350.113" stroke="black" pen="heavier">
-576.64 472.703 m
-576.64 303.556 l
-601.772 303.556 l
-601.772 472.703 l
-h
-</path>
-<text matrix="1 0 0 1 241.977 305.735" transformations="translations" pos="377.305 85.7853" stroke="black" type="label" width="69.1728" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">Rep(\kappa)</text>
-</group>
-</group>
 <group matrix="1 0 0 1 0 5.74963">
 <group matrix="1 0 0 1 130.147 -272.817">
 <path matrix="1.90233 0 0 1 -663.863 35.0604" stroke="black" pen="heavier">
@@ -22401,7 +22369,7 @@ h
 601.772 472.703 l
 h
 </path>
-<text matrix="1 0 0 1 181.879 322.087" transformations="translations" pos="377.305 85.7853" stroke="black" type="label" width="26.772" height="15.5136" depth="3.576" valign="baseline" size="small" style="math">G_{\mathcal{C}}</text>
+<text matrix="1 0 0 1 181.879 322.087" transformations="translations" pos="377.305 85.7853" stroke="black" type="label" width="31.234" height="18.0992" depth="4.172" valign="baseline" size="small" style="math">G_{\mathcal{C}}</text>
 </group>
 <group matrix="1 0 0 1 547.806 -83.819">
 <text matrix="1 0 0 1 -76.1256 141.591" transformations="translations" pos="377.305 85.7853" stroke="black" type="label" width="26.5824" height="15.2592" depth="3.576" valign="baseline" size="small" style="math">H_{\mathcal{C}}</text>
@@ -22425,7 +22393,41 @@ h
 </group>
 <text matrix="1 0 0 1 129.417 -17.6015" transformations="translations" pos="486.705 161" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">\times</text>
 <text matrix="1 0 0 1 310.474 -17.6015" transformations="translations" pos="486.705 161" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">\times</text>
-<text matrix="1 0 0 1 48.4647 -5.5102" transformations="translations" pos="680.59 148.909" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">+</text>
+<text matrix="1 0 0 1 48.4647 -5.5102" transformations="translations" pos="680.59 148.909" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" size="small" style="math">+</text>
+</group>
+<group>
+<path matrix="1 0 0 0.737445 4.53444 117.762" stroke="black">
+596.947 496.034 m
+596.947 295.268 l
+915.241 295.268 l
+915.241 496.034 l
+h
+</path>
+<text matrix="1 0 0 1 5.56214 -12.1764" transformations="translations" pos="610.331 448.085" stroke="black" type="label" width="109.176" height="16.6152" depth="3.576" valign="baseline" size="small" style="math">\Delta \in \FF_{2^{\kappa}} \equiv </text>
+<text matrix="1 0 0 1 295.94 229.385" transformations="translations" pos="486.705 161" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">\times</text>
+<group matrix="1 0 0 1 155.916 -23.8494">
+<text matrix="1 0 0 1 73.1937 59.1047" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="35.014" height="19.3844" depth="4.172" valign="baseline" size="small" style="math">\Delta_1</text>
+<path matrix="1.10231 0 0 1.05495 105.17 199.811" stroke="black" pen="heavier">
+583.353 249.966 m
+583.353 169.766 l
+503.153 169.766 l
+503.153 249.966 l
+h
+</path>
+<text matrix="1 0 0 1 146.698 186.524" transformations="translations" pos="533.81 225.525" stroke="black" type="label" width="26.076" height="36.1704" depth="0" valign="baseline" size="small" style="math">\ddots</text>
+<text matrix="1 0 0 1 115.188 4.78169" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="32.1912" height="16.6152" depth="3.576" valign="baseline" size="small" style="math">\Delta_{\kappa}</text>
+</group>
+<group matrix="1 0 0 1 66.0788 -1.0207">
+<path matrix="4.22422 0 0 0.12209 -1835.07 350.113" stroke="black" pen="heavier">
+576.64 472.703 m
+576.64 303.556 l
+601.772 303.556 l
+601.772 472.703 l
+h
+</path>
+<text matrix="1 0 0 1 241.977 305.735" transformations="translations" pos="377.305 85.7853" stroke="black" type="label" width="69.1728" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">Rep(\kappa)</text>
+</group>
+<text matrix="1 0 0 1 95.4282 -38.8291" transformations="translations" pos="606.31 498.682" stroke="black" type="label" width="117.78" height="39.5208" depth="0" valign="baseline" size="small" style="blue-white-round">$\FF_{2^\kappa} \equiv \FF_2^{\kappa}$</text>
 </group>
 </page>
 <page title="From $\Func[\bar{1}\text{-}OT]$ to Subspace $\Func[VOLE]$ (SoftSpokenOT), Continued">
@@ -22455,7 +22457,7 @@ h
 </group>
 <text matrix="1 0 0 1 205.86 230.359" transformations="translations" pos="486.705 161" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">\times</text>
 <group matrix="1 0 0 1 61.9263 -22.8764">
-<text matrix="1 0 0 1 73.1937 59.1047" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="30.012" height="16.6152" depth="3.576" valign="baseline" size="small" style="math">\Delta_1</text>
+<text matrix="1 0 0 1 73.1937 59.1047" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="35.014" height="19.3844" depth="4.172" valign="baseline" size="small" style="math">\Delta_1</text>
 <path matrix="1.10231 0 0 1.05495 105.17 199.811" stroke="black" pen="heavier">
 583.353 249.966 m
 583.353 169.766 l
@@ -22476,11 +22478,11 @@ h
 601.772 472.703 l
 h
 </path>
-<text matrix="1 0 0 1 -330.924 -230.711" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="13.5672" height="15.2544" depth="0" valign="baseline" size="small">V</text>
+<text matrix="1 0 0 1 -330.924 -230.711" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="15.8284" height="17.7968" depth="0" valign="baseline" size="small">V</text>
 </group>
 <text matrix="1 0 0 1 -2.52434 49.4981" transformations="translations" pos="486.705 161" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">\times</text>
 <group matrix="1 0 0 1 -146.458 -203.736">
-<text matrix="1 0 0 1 73.1937 59.1047" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="30.012" height="16.6152" depth="3.576" valign="baseline" size="small" style="math">\Delta_1</text>
+<text matrix="1 0 0 1 73.1937 59.1047" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="35.014" height="19.3844" depth="4.172" valign="baseline" size="small" style="math">\Delta_1</text>
 <path matrix="1.10231 0 0 1.05495 105.17 199.811" stroke="black" pen="heavier">
 583.353 249.966 m
 583.353 169.766 l
@@ -22509,7 +22511,7 @@ h
 601.772 472.703 l
 h
 </path>
-<text matrix="1 0 0 1 181.879 322.087" transformations="translations" pos="377.305 85.7853" stroke="black" type="label" width="26.772" height="15.5136" depth="3.576" valign="baseline" size="small" style="math">G_{\mathcal{C}}</text>
+<text matrix="1 0 0 1 181.879 322.087" transformations="translations" pos="377.305 85.7853" stroke="black" type="label" width="31.234" height="18.0992" depth="4.172" valign="baseline" size="small" style="math">G_{\mathcal{C}}</text>
 </group>
 <text matrix="1 0 0 1 -131.427 49.4981" transformations="translations" pos="486.705 161" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">\times</text>
 <group>
@@ -22532,7 +22534,7 @@ h
 601.772 472.703 l
 h
 </path>
-<text matrix="1 0 0 1 181.879 322.087" transformations="translations" pos="377.305 85.7853" stroke="black" type="label" width="26.772" height="15.5136" depth="3.576" valign="baseline" size="small" style="math">G_{\mathcal{C}}</text>
+<text matrix="1 0 0 1 181.879 322.087" transformations="translations" pos="377.305 85.7853" stroke="black" type="label" width="31.234" height="18.0992" depth="4.172" valign="baseline" size="small" style="math">G_{\mathcal{C}}</text>
 </group>
 <group matrix="1 0 0 1 301.012 166.305">
 <text matrix="1 0 0 1 -76.1256 141.591" transformations="translations" pos="377.305 85.7853" stroke="black" type="label" width="26.5824" height="15.2592" depth="3.576" valign="baseline" size="small" style="math">H_{\mathcal{C}}</text>
@@ -22554,8 +22556,8 @@ h
 </path>
 <text matrix="1 0 0 1 -138.577 30.4807" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="12.7488" height="15.6744" depth="0.144" valign="baseline" size="small">C</text>
 </group>
-<text matrix="1 0 0 1 -117.376 232.522" transformations="translations" pos="486.705 161" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
-<text matrix="1 0 0 1 63.68 232.522" transformations="translations" pos="486.705 161" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
+<text matrix="1 0 0 1 -117.376 232.522" transformations="translations" pos="486.705 161" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" style="math">\times</text>
+<text matrix="1 0 0 1 63.68 232.522" transformations="translations" pos="486.705 161" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" style="math">\times</text>
 <text matrix="1 0 0 1 -198.329 244.613" transformations="translations" pos="680.59 148.909" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">+</text>
 </group>
 <text matrix="1 0 0 1 0 -72.9982" pin="h" transformations="translations" pos="0 192.506" stroke="black" type="minipage" width="920" height="16.2072" depth="4.248" valign="top" size="small" style="itemize">\item Consistency Check: Use Linear-UHF to hash and reveal some rows to check $\CCC$-$\Delta$-relations</text>
@@ -22597,17 +22599,6 @@ h
 h
 </path>
 <text matrix="1 0 0 1 -20.0206 2.95366" transformations="translations" pos="117.105 147.745" stroke="black" type="label" width="121.687" height="16.6152" depth="3.84" valign="baseline" size="small">$\Func[Com]$-hybrid</text>
-</group>
-<group>
-<text matrix="1 0 0 1 662.295 99.8015" transformations="translations" pos="87.819 158.065" stroke="black" type="label" width="165.444" height="43.2192" depth="0" valign="baseline" size="small" style="blue-white-round">ZK for $\FF_2^k$-mult</text>
-<path matrix="1 0 0 0.665719 662.295 155.001" stroke="black">
-69.4498 231.663 m
-69.4498 92.1468 l
-269.169 92.1468 l
-269.169 231.663 l
-h
-</path>
-<text matrix="1 0 0 1 660.447 80.5145" transformations="translations" pos="117.105 147.745" stroke="black" type="label" width="97.788" height="16.4664" depth="3.84" valign="baseline" size="small">RO-hybrid</text>
 </group>
 <group>
 <group matrix="1 0 0 1 -24.0597 -96.5725">
@@ -22683,6 +22674,17 @@ PQ-Sig</text>
 Code Switching};</text>
 <text matrix="1 0 0 1 -34.019 -64.5262" transformations="translations" pos="229.634 449.56" stroke="black" type="label" width="80.5728" height="88.764" depth="0" valign="baseline" size="small" style="tikz">\node[arrowlabel,align=center]{Ferret, \\Silver, \\etc.};</text>
 </group>
+<group>
+<text matrix="1 0 0 1 743.785 99.8015" transformations="translations" pos="87.819 158.065" stroke="black" type="label" width="186.905" height="43.2192" depth="0" halign="center" valign="baseline" size="small" style="blue-white-round">NIZK for $\FF_2^k$-mult</text>
+<path matrix="1 0 0 0.665719 662.295 155.001" stroke="black">
+69.4498 231.663 m
+69.4498 92.1468 l
+269.169 92.1468 l
+269.169 231.663 l
+h
+</path>
+<text matrix="1 0 0 1 714.499 80.5145" transformations="translations" pos="117.105 147.745" stroke="black" type="label" width="97.788" height="16.4664" depth="3.84" halign="center" valign="baseline" size="small">RO-hybrid</text>
+</group>
 </page>
 <page title="The 3-Round Protocol">
 <layer name="alpha"/>
@@ -22700,8 +22702,8 @@ Code Switching};</text>
 <text matrix="1 0 0 1 0 104.053" pin="h" transformations="translations" pos="0 139.394" stroke="black" type="minipage" width="920" height="16.4808" depth="4.536" valign="top" size="small" style="itemize">\item Solution: Simulate VOLE in $\PPP$&apos;s head once again</text>
 <text matrix="1 0 0 1 328.853 165.891" transformations="translations" pos="252.255 182.898" stroke="black" type="label" width="195.797" height="40.8048" depth="0" valign="baseline" size="small" style="blue-white-round">In $Rep(\kappa)$, $k_\CCC = 1$</text>
 <group>
-<text matrix="1 0 0 1 -565.288 -25.8977" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="21.6972" height="10.3208" depth="0" valign="baseline" style="math">=</text>
-<text matrix="1 0 0 1 -455.512 -26.1591" transformations="translations" pos="685.392 387.553" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">-</text>
+<text matrix="1 0 0 1 -565.288 -25.8977" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" style="math">=</text>
+<text matrix="1 0 0 1 -455.512 -26.1591" transformations="translations" pos="685.392 387.553" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" style="math">-</text>
 <group matrix="1 0 0 1 -87.676 206.278">
 <path matrix="3.19114 0 0 1.00415 -1612.12 -227.649" stroke="black" pen="heavier">
 576.64 472.703 m
@@ -22720,10 +22722,10 @@ h
 601.772 472.703 l
 h
 </path>
-<text matrix="1 0 0 1 -468.411 -228.711" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="15.1732" height="17.7968" depth="0" valign="baseline">B</text>
+<text matrix="1 0 0 1 -468.411 -228.711" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="13.0056" height="15.2544" depth="0" valign="baseline">B</text>
 </group>
-<text matrix="1 0 0 1 -50.2788 259.33" transformations="translations" pos="486.705 161" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
-<text matrix="1 0 0 1 -168.644 259.33" transformations="translations" pos="486.705 161" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
+<text matrix="1 0 0 1 -50.2788 259.33" transformations="translations" pos="486.705 161" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" style="math">\times</text>
+<text matrix="1 0 0 1 -168.644 259.33" transformations="translations" pos="486.705 161" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" style="math">\times</text>
 <group matrix="1 0 0 1 -172.182 -54.4698">
 <path matrix="1.90233 0 0 1 -663.863 35.0604" stroke="black" pen="heavier">
 576.64 472.703 m
@@ -22732,7 +22734,7 @@ h
 601.772 472.703 l
 h
 </path>
-<text matrix="1 0 0 1 -138.577 30.4807" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="16.1392" height="17.7968" depth="0" valign="baseline">A</text>
+<text matrix="1 0 0 1 -138.577 30.4807" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="13.8336" height="15.2544" depth="0" valign="baseline">A</text>
 </group>
 <group matrix="1 0 0 1 -188.255 15.7394">
 <path matrix="3.22671 0 0 0.268628 -1326.4 310.573" stroke="black" pen="heavier">
@@ -22753,11 +22755,11 @@ h
 503.153 249.966 l
 h
 </path>
-<text matrix="1 0 0 1 146.698 186.524" transformations="translations" pos="533.81 225.525" stroke="black" type="label" width="30.422" height="42.1988" depth="0" valign="baseline" style="math">\ddots</text>
-<text matrix="1 0 0 1 115.188 4.78169" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="45.8136" height="19.3732" depth="6.972" valign="baseline" style="math">\Delta_{n_{\mathcal{C}}}</text>
+<text matrix="1 0 0 1 146.698 186.524" transformations="translations" pos="533.81 225.525" stroke="black" type="label" width="26.076" height="36.1704" depth="0" valign="baseline" style="math">\ddots</text>
+<text matrix="1 0 0 1 115.188 4.78169" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="39.2688" height="16.6056" depth="5.976" valign="baseline" style="math">\Delta_{n_{\mathcal{C}}}</text>
 </group>
 <text matrix="1 0 0 1 -162.019 -49.4251" transformations="translations" pos="162.631 404.597" stroke="black" type="label" width="11.0432" height="19.3704" depth="0" valign="baseline" style="math">\ell</text>
-<text matrix="1 0 0 1 -171.708 -70.1877" transformations="translations" pos="219.136 329.215" stroke="black" type="label" width="27.9776" height="13.4372" depth="4.172" valign="baseline" style="math">n_{\mathcal{C}}</text>
+<text matrix="1 0 0 1 -171.708 -70.1877" transformations="translations" pos="219.136 329.215" stroke="black" type="label" width="23.9808" height="11.5176" depth="3.576" valign="baseline" style="math">n_{\mathcal{C}}</text>
 <text matrix="1 0 0 1 -182.801 -67.3655" transformations="translations" pos="454.334 323.51" stroke="black" type="label" width="26.3144" height="19.2024" depth="4.172" valign="baseline">\kc</text>
 <text matrix="1 0 0 1 -201.658 16.9146" transformations="translations" pos="574.194 367.105" stroke="black" type="label" width="27.9776" height="13.4372" depth="4.172" valign="baseline">\nc</text>
 </group>
@@ -22769,7 +22771,7 @@ h
 913.499 274.964 l
 h
 </path>
-<text matrix="1 0 0 1 -475.485 -52.7031" transformations="translations" pos="577.688 238.912" stroke="black" type="label" width="18.5976" height="16.6032" depth="0" valign="baseline" size="small" style="math">\PPP</text>
+<text matrix="1 0 0 1 -475.485 -52.7031" transformations="translations" pos="577.688 238.912" stroke="black" type="label" width="21.6972" height="19.3704" depth="0" valign="baseline" size="small" style="math">\PPP</text>
 <text matrix="1 0 0 1 -148.934 -51.3194" transformations="translations" pos="577.688 238.912" stroke="black" type="label" width="16.728" height="16.6032" depth="0" valign="baseline" size="small" style="math">\VVV</text>
 <text matrix="1 0 0 1 -519.005 -57.6729" transformations="translations" pos="537.368 215.444" stroke="black" type="label" width="273.041" height="17.976" depth="5.976" valign="baseline" size="small">Prepares $(2\ell+2)$ rows in $A&apos;$</text>
 <text matrix="1 0 0 1 -13.823 -25.2218" transformations="translations" pos="39.3012 138.554" stroke="black" type="label" width="90.8736" height="34.6584" depth="22.728" valign="baseline" size="small">
