@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.26">
-<info created="D:20090429144355" modified="D:20230124162310" title="EA-Code Half-Tree" author="Hongrui Cui" numberpages="yes"/>
+<info created="D:20090429144355" modified="D:20230329195143" title="EA-Code Half-Tree" author="Hongrui Cui" numberpages="yes"/>
 <preamble>\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
@@ -22,7 +22,7 @@
 \usetikzlibrary{matrix}
 
 % settings %%%%%%%%%%%%%%%
-\newcommand{\hl}[1]{{\bf \color{kitred} {#1}}}
+\newcommand{\hl}[1]{\textbf{\textcolor{kitred}{#1}}}
 \newcommand{\hll}[1]{{\color{kitred} {#1}}}
 \newcommand{\itemcolor}{ac-lightblue}
 \newcommand{\name}{Hongrui Cui}
@@ -7063,64 +7063,6 @@ h
 h
 </path>
 </symbol>
-<symbol name="arrow/mid-normal(spx)">
-<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
-0.5 0 m
--0.5 0.333 l
--0.5 -0.333 l
-h
-</path>
-</symbol>
-<symbol name="arrow/mid-fnormal(spx)">
-<path stroke="sym-stroke" fill="white" pen="sym-pen">
-0.5 0 m
--0.5 0.333 l
--0.5 -0.333 l
-h
-</path>
-</symbol>
-<symbol name="arrow/mid-pointed(spx)">
-<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
-0.5 0 m
--0.5 0.333 l
--0.3 0 l
--0.5 -0.333 l
-h
-</path>
-</symbol>
-<symbol name="arrow/mid-fpointed(spx)">
-<path stroke="sym-stroke" fill="white" pen="sym-pen">
-0.5 0 m
--0.5 0.333 l
--0.3 0 l
--0.5 -0.333 l
-h
-</path>
-</symbol>
-<symbol name="arrow/mid-double(spx)">
-<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
-1 0 m
-0 0.333 l
-0 -0.333 l
-h
-0 0 m
--1 0.333 l
--1 -0.333 l
-h
-</path>
-</symbol>
-<symbol name="arrow/mid-fdouble(spx)">
-<path stroke="sym-stroke" fill="white" pen="sym-pen">
-1 0 m
-0 0.333 l
-0 -0.333 l
-h
-0 0 m
--1 0.333 l
--1 -0.333 l
-h
-</path>
-</symbol>
 <anglesize name="22.5 deg" value="22.5"/>
 <anglesize name="30 deg" value="30"/>
 <anglesize name="45 deg" value="45"/>
@@ -7129,6 +7071,7 @@ h
 <arrowsize name="large" value="10"/>
 <arrowsize name="small" value="5"/>
 <arrowsize name="tiny" value="3"/>
+<color name="CB dark red" value="0.89 0.101 0.109"/>
 <color name="blue" value="0 0 1"/>
 <color name="brown" value="0.647 0.165 0.165"/>
 <color name="darkblue" value="0 0 0.545"/>
@@ -7168,10 +7111,6 @@ h
 <gridsize name="4 pts" value="4"/>
 <gridsize name="56 pts (~20 mm)" value="56"/>
 <gridsize name="8 pts (~3 mm)" value="8"/>
-<opacity name="10%" value="0.1"/>
-<opacity name="30%" value="0.3"/>
-<opacity name="50%" value="0.5"/>
-<opacity name="75%" value="0.75"/>
 <pen name="fat" value="1.2"/>
 <pen name="heavier" value="0.8"/>
 <pen name="ultrafat" value="2"/>
@@ -7184,7 +7123,6 @@ h
 <textsize name="footnote" value="\footnotesize"/>
 <textsize name="huge" value="\huge"/>
 <textsize name="large" value="\large"/>
-<textsize name="script" value="\scriptsize"/>
 <textsize name="small" value="\small"/>
 <textsize name="tiny" value="\tiny"/>
 <textstyle name="center" begin="\begin{center}" end="\end{center}"/>
@@ -7778,7 +7716,7 @@ h
     \def\labelitemii{\raisebox{0.5ex}{\hbox to 0.4em{\scalebox{1.0}{\ipesymbol{TUitem(f)}{}{\itemcolor}{}}}}}
   </preamble>
 <layout paper="960 600" origin="20 6" frame="920 524" skip="16" crop="no"/>
-<pagenumberstyle pos="-12 2" color="0" size="9" valign="baseline"></pagenumberstyle>
+<pagenumberstyle pos="-12 2" color="0" size="9" valign="baseline">\arabic{ipePage}</pagenumberstyle>
 <titlestyle pos="0 550" size="large" color="black"  valign="baseline"/>
 </ipestyle>
 <ipestyle name="transparency">
@@ -8022,454 +7960,6 @@ h
 		\setlist[itemize,3]{label={\tikz{\fill[rounded corners=0.6pt, fill=\itemcolor] (0, 0) rectangle (0.15, 0.15) {};}}}
 	</preamble>
 </ipestyle>
-<ipestyle name="alt-presentation">
-<color name="algoblau" value="0.098 0.098 0.549"/>
-<color name="algogelb" value="1 0.862 0"/>
-<color name="algohellblau" value="0.576 0.576 0.776"/>
-<color name="altblack" value="0"/>
-<color name="altblack15" value="0.85"/>
-<color name="altblack30" value="0.7"/>
-<color name="altblack50" value="0.5"/>
-<color name="altblack70" value="0.3"/>
-<color name="altblue" value="0.274 0.392 0.666"/>
-<color name="altblue15" value="0.891 0.908 0.95"/>
-<color name="altblue30" value="0.782 0.817 0.9"/>
-<color name="altblue50" value="0.637 0.696 0.833"/>
-<color name="altblue70" value="0.492 0.574 0.766"/>
-<color name="altbrown" value="0.627 0.509 0.196"/>
-<color name="altbrown15" value="0.944 0.926 0.879"/>
-<color name="altbrown30" value="0.888 0.852 0.758"/>
-<color name="altbrown50" value="0.813 0.754 0.598"/>
-<color name="altbrown70" value="0.739 0.656 0.437"/>
-<color name="altcyan" value="0 0.639 0.886"/>
-<color name="altcyanblue" value="0.313 0.666 0.901"/>
-<color name="altcyanblue15" value="0.897 0.95 0.985"/>
-<color name="altcyanblue30" value="0.794 0.9 0.97"/>
-<color name="altcyanblue50" value="0.656 0.833 0.95"/>
-<color name="altcyanblue70" value="0.519 0.766 0.931"/>
-<color name="altgray" value="0.858"/>
-<color name="altgray15" value="0.85"/>
-<color name="altgray30" value="0.7"/>
-<color name="altgray50" value="0.5"/>
-<color name="altgray70" value="0.3"/>
-<color name="altgreen" value="0 0.588 0.509"/>
-<color name="altgreen15" value="0.85 0.938 0.926"/>
-<color name="altgreen30" value="0.7 0.876 0.852"/>
-<color name="altgreen50" value="0.5 0.794 0.754"/>
-<color name="altgreen70" value="0.3 0.711 0.656"/>
-<color name="altlilac" value="0.627 0 0.47"/>
-<color name="altlilac15" value="0.944 0.85 0.92"/>
-<color name="altlilac30" value="0.888 0.7 0.841"/>
-<color name="altlilac50" value="0.813 0.5 0.735"/>
-<color name="altlilac70" value="0.739 0.3 0.629"/>
-<color name="altmaygreen" value="0.467 0.718 0.173"/>
-<color name="altorange" value="0.862 0.627 0.117"/>
-<color name="altorange15" value="0.979 0.944 0.867"/>
-<color name="altorange30" value="0.958 0.888 0.735"/>
-<color name="altorange50" value="0.931 0.813 0.558"/>
-<color name="altorange70" value="0.903 0.739 0.382"/>
-<color name="altpalegreen" value="0.509 0.745 0.235"/>
-<color name="altpalegreen15" value="0.926 0.961 0.885"/>
-<color name="altpalegreen30" value="0.852 0.923 0.77"/>
-<color name="altpalegreen50" value="0.754 0.872 0.617"/>
-<color name="altpalegreen70" value="0.656 0.821 0.464"/>
-<color name="altred" value="0.733 0.09 0.09"/>
-<color name="altred15" value="0.944 0.867 0.873"/>
-<color name="altred30" value="0.888 0.735 0.747"/>
-<color name="altred50" value="0.813 0.558 0.578"/>
-<color name="altred70" value="0.739 0.382 0.409"/>
-<color name="altseablue" value="0.196 0.313 0.549"/>
-<color name="altseablue15" value="0.879 0.897 0.932"/>
-<color name="altseablue30" value="0.758 0.794 0.864"/>
-<color name="altseablue50" value="0.598 0.656 0.774"/>
-<color name="altseablue70" value="0.437 0.519 0.684"/>
-<color name="altviolet" value="0.745 0 0.494"/>
-<color name="altyellow" value="0.98 0.901 0.078"/>
-<color name="altyellow15" value="0.997 0.985 0.861"/>
-<color name="altyellow30" value="0.994 0.97 0.723"/>
-<color name="altyellow50" value="0.99 0.95 0.539"/>
-<color name="altyellow70" value="0.986 0.931 0.354"/>
-<color name="blue" value="0 0 1"/>
-<color name="brown" value="0.647 0.165 0.165"/>
-<color name="darkblue" value="0 0 0.545"/>
-<color name="darkcyan" value="0 0.545 0.545"/>
-<color name="darkgray" value="0.663"/>
-<color name="darkgreen" value="0 0.392 0"/>
-<color name="darkmagenta" value="0.545 0 0.545"/>
-<color name="darkorange" value="1 0.549 0"/>
-<color name="darkred" value="0.545 0 0"/>
-<color name="dblue" value="0 0.2 0.6"/>
-<color name="dgreen" value="0 0.6 0"/>
-<color name="dred" value="0.8 0 0"/>
-<color name="gold" value="1 0.843 0"/>
-<color name="gray" value="0.745"/>
-<color name="gray6" value="0.75"/>
-<color name="green" value="0 1 0"/>
-<color name="lightblue" value="0.678 0.847 0.902"/>
-<color name="lightcyan" value="0.878 1 1"/>
-<color name="lightgray" value="0.827"/>
-<color name="lightgreen" value="0.565 0.933 0.565"/>
-<color name="lightyellow" value="1 1 0.878"/>
-<color name="navy" value="0 0 0.502"/>
-<color name="orange" value="1 0.647 0"/>
-<color name="pink" value="1 0.753 0.796"/>
-<color name="purple" value="0.627 0.125 0.941"/>
-<color name="red" value="1 0 0"/>
-<color name="seagreen" value="0.18 0.545 0.341"/>
-<color name="title" value="0.274 0.392 0.666"/>
-<color name="titleold" value="0.274 0.392 0.666"/>
-<color name="turquoise" value="0.251 0.878 0.816"/>
-<color name="uniblue" value="0.125 0.337 0.682"/>
-<color name="unigray" value="0.521 0.509 0.439"/>
-<color name="violet" value="0.933 0.51 0.933"/>
-<color name="yellow" value="1 1 0"/>
-<pen name="ultraultrafat" value="8"/>
-</ipestyle>
-<ipestyle name="dashstyles">
-<dashstyle name="dashed-narrow" value="[2] 0"/>
-<dashstyle name="dashed-narrower" value="[1] 0"/>
-<dashstyle name="dotted-narrow" value="[1 1] 0"/>
-<dashstyle name="dotted-narrower" value="[0.5 0.5] 0"/>
-</ipestyle>
-<ipestyle name="kit-colors">
-<symbol name="arrow/arc(spx)">
-<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
-0 0 m
--1 0.333 l
--1 -0.333 l
-h
-</path>
-</symbol>
-<symbol name="arrow/farc(spx)">
-<path stroke="sym-stroke" fill="white" pen="sym-pen">
-0 0 m
--1 0.333 l
--1 -0.333 l
-h
-</path>
-</symbol>
-<symbol name="mark/circle(sx)" transformations="translations">
-<path fill="sym-stroke">
-0.6 0 0 0.6 0 0 e
-0.4 0 0 0.4 0 0 e
-</path>
-</symbol>
-<symbol name="mark/disk(sx)" transformations="translations">
-<path fill="sym-stroke">
-0.6 0 0 0.6 0 0 e
-</path>
-</symbol>
-<symbol name="mark/fdisk(sfx)" transformations="translations">
-<group>
-<path fill="sym-stroke" fillrule="eofill">
-0.6 0 0 0.6 0 0 e
-0.4 0 0 0.4 0 0 e
-</path>
-<path fill="sym-fill">
-0.4 0 0 0.4 0 0 e
-</path>
-</group>
-</symbol>
-<symbol name="mark/box(sx)" transformations="translations">
-<path fill="sym-stroke" fillrule="eofill">
--0.6 -0.6 m
-0.6 -0.6 l
-0.6 0.6 l
--0.6 0.6 l
-h
--0.4 -0.4 m
-0.4 -0.4 l
-0.4 0.4 l
--0.4 0.4 l
-h
-</path>
-</symbol>
-<symbol name="mark/square(sx)" transformations="translations">
-<path fill="sym-stroke">
--0.6 -0.6 m
-0.6 -0.6 l
-0.6 0.6 l
--0.6 0.6 l
-h
-</path>
-</symbol>
-<symbol name="mark/fsquare(sfx)" transformations="translations">
-<group>
-<path fill="sym-stroke" fillrule="eofill">
--0.6 -0.6 m
-0.6 -0.6 l
-0.6 0.6 l
--0.6 0.6 l
-h
--0.4 -0.4 m
-0.4 -0.4 l
-0.4 0.4 l
--0.4 0.4 l
-h
-</path>
-<path fill="sym-fill">
--0.4 -0.4 m
-0.4 -0.4 l
-0.4 0.4 l
--0.4 0.4 l
-h
-</path>
-</group>
-</symbol>
-<symbol name="mark/cross(sx)" transformations="translations">
-<group>
-<path fill="sym-stroke">
--0.43 -0.57 m
-0.57 0.43 l
-0.43 0.57 l
--0.57 -0.43 l
-h
-</path>
-<path fill="sym-stroke">
--0.43 0.57 m
-0.57 -0.43 l
-0.43 -0.57 l
--0.57 0.43 l
-h
-</path>
-</group>
-</symbol>
-<symbol name="arrow/fnormal(spx)">
-<path stroke="sym-stroke" fill="white" pen="sym-pen">
-0 0 m
--1 0.333 l
--1 -0.333 l
-h
-</path>
-</symbol>
-<symbol name="arrow/pointed(spx)">
-<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
-0 0 m
--1 0.333 l
--0.8 0 l
--1 -0.333 l
-h
-</path>
-</symbol>
-<symbol name="arrow/fpointed(spx)">
-<path stroke="sym-stroke" fill="white" pen="sym-pen">
-0 0 m
--1 0.333 l
--0.8 0 l
--1 -0.333 l
-h
-</path>
-</symbol>
-<symbol name="arrow/linear(spx)">
-<path stroke="sym-stroke" pen="sym-pen">
--1 0.333 m
-0 0 l
--1 -0.333 l
-</path>
-</symbol>
-<symbol name="arrow/fdouble(spx)">
-<path stroke="sym-stroke" fill="white" pen="sym-pen">
-0 0 m
--1 0.333 l
--1 -0.333 l
-h
--1 0 m
--2 0.333 l
--2 -0.333 l
-h
-</path>
-</symbol>
-<symbol name="arrow/double(spx)">
-<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
-0 0 m
--1 0.333 l
--1 -0.333 l
-h
--1 0 m
--2 0.333 l
--2 -0.333 l
-h
-</path>
-</symbol>
-<symbol name="mark/smfdisk(sfx)" transformations="translations">
-<group>
-<path fill="sym-stroke" fillrule="eofill">
-0.4 0 0 0.4 0 0 e
-0.2 0 0 0.2 0 0 e
-</path>
-<path fill="sym-fill">
-0.2 0 0 0.2 0 0 e
-</path>
-</group>
-</symbol>
-<symbol name="mark/kit-item">
-<path matrix="1 0 0 1 -0.4 -0.4" fill="kitblue">
-0.2 0 m
-0.2 0 0 -0.2 0.2 0.2 0 0.2 a
-0 0.8 l
-0.6 0.8 l
-0.2 0 0 -0.2 0.6 0.6 0.8 0.6 a
-0.8 0 l
-h
-</path>
-</symbol>
-<symbol name="sphere">
-<path matrix="0.04 0 0 0.04 0 0" fill="kitgreen" gradient="ball">
-18 0 0 18 0 0 e
-</path>
-</symbol>
-<symbol name="mark/sphere(sx)" transformations="translations">
-<path matrix="0.04 0 0 0.04 0 0" fill="sym-stroke" gradient="ball">
-18 0 0 18 0 0 e
-</path>
-</symbol>
-<anglesize name="22.5 deg" value="22.5"/>
-<anglesize name="30 deg" value="30"/>
-<anglesize name="45 deg" value="45"/>
-<anglesize name="60 deg" value="60"/>
-<anglesize name="90 deg" value="90"/>
-<color name="KITblack15" value="0.85"/>
-<color name="KITblack30" value="0.7"/>
-<color name="KITblack50" value="0.5"/>
-<color name="KITblack70" value="0.3"/>
-<color name="KITblue" value="0.274 0.392 0.666"/>
-<color name="KITblue15" value="0.891 0.908 0.95"/>
-<color name="KITblue30" value="0.782 0.817 0.9"/>
-<color name="KITblue50" value="0.637 0.696 0.833"/>
-<color name="KITblue70" value="0.492 0.574 0.766"/>
-<color name="KITbrown" value="0.627 0.509 0.196"/>
-<color name="KITbrown15" value="0.944 0.926 0.879"/>
-<color name="KITbrown30" value="0.888 0.852 0.758"/>
-<color name="KITbrown50" value="0.813 0.754 0.598"/>
-<color name="KITbrown70" value="0.739 0.656 0.437"/>
-<color name="KITcyanblue" value="0.313 0.666 0.901"/>
-<color name="KITcyanblue15" value="0.897 0.95 0.985"/>
-<color name="KITcyanblue30" value="0.794 0.9 0.97"/>
-<color name="KITcyanblue50" value="0.656 0.833 0.95"/>
-<color name="KITcyanblue70" value="0.519 0.766 0.931"/>
-<color name="KITgreen" value="0 0.588 0.509"/>
-<color name="KITgreen15" value="0.85 0.938 0.926"/>
-<color name="KITgreen30" value="0.7 0.876 0.852"/>
-<color name="KITgreen50" value="0.5 0.794 0.754"/>
-<color name="KITgreen70" value="0.3 0.711 0.656"/>
-<color name="KITlilac" value="0.627 0 0.47"/>
-<color name="KITlilac15" value="0.944 0.85 0.92"/>
-<color name="KITlilac30" value="0.888 0.7 0.841"/>
-<color name="KITlilac50" value="0.813 0.5 0.735"/>
-<color name="KITlilac70" value="0.739 0.3 0.629"/>
-<color name="KITorange" value="0.862 0.627 0.117"/>
-<color name="KITorange15" value="0.979 0.944 0.867"/>
-<color name="KITorange30" value="0.958 0.888 0.735"/>
-<color name="KITorange50" value="0.931 0.813 0.558"/>
-<color name="KITorange70" value="0.903 0.739 0.382"/>
-<color name="KITpalegreen" value="0.509 0.745 0.235"/>
-<color name="KITpalegreen15" value="0.926 0.961 0.885"/>
-<color name="KITpalegreen30" value="0.852 0.923 0.77"/>
-<color name="KITpalegreen50" value="0.754 0.872 0.617"/>
-<color name="KITpalegreen70" value="0.656 0.821 0.464"/>
-<color name="KITred15" value="0.944 0.867 0.873"/>
-<color name="KITred30" value="0.888 0.735 0.747"/>
-<color name="KITred50" value="0.813 0.558 0.578"/>
-<color name="KITred70" value="0.739 0.382 0.409"/>
-<color name="KITseablue" value="0.196 0.313 0.549"/>
-<color name="KITseablue15" value="0.879 0.897 0.932"/>
-<color name="KITseablue30" value="0.758 0.794 0.864"/>
-<color name="KITseablue50" value="0.598 0.656 0.774"/>
-<color name="KITseablue70" value="0.437 0.519 0.684"/>
-<color name="KITyellow" value="0.98 0.901 0.078"/>
-<color name="KITyellow15" value="0.997 0.985 0.861"/>
-<color name="KITyellow30" value="0.994 0.97 0.723"/>
-<color name="KITyellow50" value="0.99 0.95 0.539"/>
-<color name="KITyellow70" value="0.986 0.931 0.354"/>
-<color name="algoblau" value="0.098 0.098 0.549"/>
-<color name="algogelb" value="1 0.862 0"/>
-<color name="algohellblau" value="0.576 0.576 0.776"/>
-<color name="blue" value="0 0 1"/>
-<color name="brown" value="0.647 0.165 0.165"/>
-<color name="darkblue" value="0 0 0.545"/>
-<color name="darkcyan" value="0 0.545 0.545"/>
-<color name="darkgray" value="0.663"/>
-<color name="darkgreen" value="0 0.392 0"/>
-<color name="darkmagenta" value="0.545 0 0.545"/>
-<color name="darkorange" value="1 0.549 0"/>
-<color name="darkred" value="0.545 0 0"/>
-<color name="dblue" value="0 0.2 0.6"/>
-<color name="dgreen" value="0 0.6 0"/>
-<color name="dred" value="0.8 0 0"/>
-<color name="gold" value="1 0.843 0"/>
-<color name="gray" value="0.745"/>
-<color name="gray6" value="0.75"/>
-<color name="green" value="0 1 0"/>
-<color name="kitblack" value="0"/>
-<color name="kitblue" value="0.274 0.392 0.666"/>
-<color name="kitblue15" value="0.89 0.909 0.949"/>
-<color name="kitblue30" value="0.78 0.815 0.898"/>
-<color name="kitblue50" value="0.635 0.694 0.831"/>
-<color name="kitblue70" value="0.49 0.572 0.764"/>
-<color name="kitbrown" value="0.706 0.51 0.122"/>
-<color name="kitcyan" value="0 0.639 0.886"/>
-<color name="kitgray" value="0.858"/>
-<color name="kitgray15" value="0.85"/>
-<color name="kitgray30" value="0.7"/>
-<color name="kitgray50" value="0.5"/>
-<color name="kitgray70" value="0.3"/>
-<color name="kitgreen" value="0 0.588 0.51"/>
-<color name="kitgreen15" value="0.85 0.937 0.925"/>
-<color name="kitgreen30" value="0.698 0.874 0.85"/>
-<color name="kitgreen50" value="0.498 0.792 0.752"/>
-<color name="kitgreen70" value="0.298 0.709 0.654"/>
-<color name="kitmaygreen" value="0.467 0.718 0.173"/>
-<color name="kitorange" value="0.957 0.608 0"/>
-<color name="kitred" value="0.733 0.09 0.09"/>
-<color name="kitviolet" value="0.745 0 0.494"/>
-<color name="kityellow" value="1 0.898 0"/>
-<color name="lightblue" value="0.678 0.847 0.902"/>
-<color name="lightcyan" value="0.878 1 1"/>
-<color name="lightgray" value="0.827"/>
-<color name="lightgreen" value="0.565 0.933 0.565"/>
-<color name="lightyellow" value="1 1 0.878"/>
-<color name="navy" value="0 0 0.502"/>
-<color name="orange" value="1 0.647 0"/>
-<color name="pink" value="1 0.753 0.796"/>
-<color name="purple" value="0.627 0.125 0.941"/>
-<color name="red" value="1 0 0"/>
-<color name="seagreen" value="0.18 0.545 0.341"/>
-<color name="title" value="0.274 0.392 0.666"/>
-<color name="turquoise" value="0.251 0.878 0.816"/>
-<color name="violet" value="0.933 0.51 0.933"/>
-<color name="yellow" value="1 1 0"/>
-<gridsize name="1 pts" value="1"/>
-<gridsize name="10 pts (~3.5 mm)" value="10"/>
-<gridsize name="14 pts (~5 mm)" value="14"/>
-<gridsize name="16 pts (~6 mm)" value="16"/>
-<gridsize name="2 pts" value="2"/>
-<gridsize name="20 pts (~7 mm)" value="20"/>
-<gridsize name="28 pts (~10 mm)" value="28"/>
-<gridsize name="3 pts" value="3"/>
-<gridsize name="32 pts (~12 mm)" value="32"/>
-<gridsize name="4 pts" value="4"/>
-<gridsize name="56 pts (~20 mm)" value="56"/>
-<gridsize name="8 pts (~3 mm)" value="8"/>
-<opacity name="10%" value="0.1"/>
-<opacity name="25%" value="0.25"/>
-<opacity name="33%" value="0.333"/>
-<opacity name="50%" value="0.5"/>
-<opacity name="66%" value="0.666"/>
-<opacity name="75%" value="0.75"/>
-<opacity name="90%" value="0.9"/>
-<preamble>
-\usepackage[ngerman]{babel}
-\usepackage[utf8]{inputenc}
-</preamble>
-<gradient name="ball" type="radial" coords="-4 10 2 0 0 18">
- <stop offset="0" color="1"/>
- <stop offset="1" color="0 0 1"/>
-</gradient>
-<tiling name="falling" angle="-60" step="12" width="3"/>
-<tiling name="rising" angle="30" step="12" width="3"/>
-<tiling name="bricklines" angle="40" step="3" width="1"/>
-<tiling name="bricklines-large" angle="40" step="9" width="3"/>
-</ipestyle>
 <ipestyle name="tikz-shapes">
 <textstyle name="ball" type="label" begin="\begin{tikzpicture}\node at (0,0) [circle,ball color=blue!50, text=white] {" end="};\end{tikzpicture}"/>
 <textstyle name="blue-white-round" type="label" begin="\begin{tikzpicture}\node at (0,0) [rounded rectangle, draw=black!50, top color=white, bottom color=blue!50] {" end="};\end{tikzpicture}"/>
@@ -8489,7 +7979,7 @@ h
 <text layer="title" matrix="1 0 0 1 -213 -26" pos="213 427" stroke="black" type="minipage" width="910.36" height="48.9496" depth="35.056" valign="baseline" size="Large">Correlated Pseudorandomness from\\
  Expand-Accumulate Codes
 </text>
-<text matrix="1 0 0 1 -213.741 -230.822" pos="213 427" stroke="ac-lightblue" type="label" width="411.655" height="16.2816" depth="4.104" valign="bottom" size="small">\today $\cdot$ Presented by Hongrui Cui</text>
+<text matrix="1 0 0 1 -213.741 -230.822" pos="213 427" stroke="ac-lightblue" type="label" width="409.445" height="16.2816" depth="4.104" valign="bottom" size="small">\today $\cdot$ Presented by Hongrui Cui</text>
 <text matrix="1 0 0 1 -212.227 -164.157" pos="213 427" stroke="ac-lightblue" type="minipage" width="910.252" height="33.2948" depth="19.376" valign="baseline">Elette Boyle $\cdot$ Geoffroy Couteau $\cdot$
 Niv Gilboa $\cdot$ \\
 Yuval Ishai $\cdot$
@@ -8686,7 +8176,7 @@ h
 759.489 407.263 l
 h
 </path>
-<text matrix="1 0 0 1 -4.51447 -6.53648" transformations="translations" pos="532.582 386.313" stroke="black" type="label" width="11.2536" height="11.5248" depth="3.84" valign="baseline" size="small" style="math">y</text>
+<text matrix="1 0 0 1 -4.51447 -6.53648" transformations="translations" pos="532.582 386.313" stroke="black" type="label" width="13.1292" height="13.4456" depth="4.48" valign="baseline" size="small" style="math">y</text>
 </group>
 <group matrix="1 0 0 1 42.2052 -30.9854">
 <path stroke="black">
@@ -8696,7 +8186,7 @@ h
 732.792 407.432 l
 h
 </path>
-<text matrix="1 0 0 1 18.0971 -11.7557" transformations="translations" pos="622.036 387.387" stroke="black" type="label" width="14.8968" height="15.2472" depth="0" valign="baseline" size="small" style="math">H</text>
+<text matrix="1 0 0 1 18.0971 -11.7557" transformations="translations" pos="622.036 387.387" stroke="black" type="label" width="17.3796" height="17.7884" depth="0" valign="baseline" size="small" style="math">H</text>
 </group>
 <group matrix="1 0 0 1 93.2664 19.3003">
 <path matrix="1.27544 0 0 0.993157 -205.247 2.7869" stroke="black">
@@ -8706,7 +8196,7 @@ h
 759.489 407.263 l
 h
 </path>
-<text matrix="1 0 0 1 -5.05991 -14.3422" transformations="translations" pos="752.695 341.965" stroke="black" type="label" width="11.4168" height="11.5128" depth="0.168" valign="baseline" size="small" style="math">e</text>
+<text matrix="1 0 0 1 -5.05991 -14.3422" transformations="translations" pos="752.695 341.965" stroke="black" type="label" width="13.3196" height="13.4316" depth="0.196" valign="baseline" size="small" style="math">e</text>
 </group>
 <text matrix="1 0 0 1 13.473 -22.9524" transformations="translations" pos="551.026 371.333" stroke="black" type="label" width="21.6972" height="10.3208" depth="0" valign="baseline" size="small" style="math">=</text>
 <text matrix="1 0 0 1 62.6239 1.59255" transformations="translations" pos="733.235 344.973" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" size="small" style="math">\times</text>
@@ -8720,7 +8210,7 @@ h
 759.489 407.263 l
 h
 </path>
-<text matrix="1 0 0 1 -4.51447 -6.53648" transformations="translations" pos="532.582 386.313" stroke="black" type="label" width="11.2536" height="11.5248" depth="3.84" valign="baseline" size="small" style="math">y</text>
+<text matrix="1 0 0 1 -4.51447 -6.53648" transformations="translations" pos="532.582 386.313" stroke="black" type="label" width="13.1292" height="13.4456" depth="4.48" valign="baseline" size="small" style="math">y</text>
 </group>
 <text matrix="1 0 0 1 14.2226 -96.606" transformations="translations" pos="551.026 371.333" stroke="black" type="label" width="55.6944" height="15.2592" depth="3.576" valign="baseline" size="small" style="math">\gets U_n</text>
 </group>
@@ -8748,7 +8238,7 @@ h
 <text matrix="1 0 0 1 75.0145 -12.9243" transformations="translations" pos="278.269 485.564" stroke="black" type="label" width="27.7844" height="19.3928" depth="5.404" valign="baseline" style="math">\beta_2</text>
 <text matrix="1 0 0 1 73.8534 -50.0511" transformations="translations" pos="278.269 485.564" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" style="math">\alpha_2</text>
 <text matrix="1 0 0 1 248.728 -12.1555" transformations="translations" pos="278.269 485.564" stroke="black" type="label" width="25.7208" height="19.3928" depth="5.404" valign="baseline" style="math">\beta_\ell</text>
-<text matrix="1 0 0 1 247.566 -49.2823" transformations="translations" pos="278.269 485.564" stroke="black" type="label" width="28.2352" height="12.4096" depth="4.172" valign="baseline" style="math">\alpha_\ell</text>
+<text matrix="1 0 0 1 247.566 -49.2823" transformations="translations" pos="278.269 485.564" stroke="black" type="label" width="24.2016" height="10.6368" depth="3.576" valign="baseline" style="math">\alpha_\ell</text>
 </group>
 <text matrix="1 0 0 1 -18.2319 -17.9259" transformations="translations" pos="41.1448 474.57" stroke="black" type="label" width="73.9116" height="18.0404" depth="4.48" valign="baseline">Step 1:</text>
 <text matrix="1 0 0 1 -20.5658 -89.1153" transformations="translations" pos="41.1448 474.57" stroke="black" type="label" width="77.8484" height="18.0404" depth="4.48" valign="baseline">Step 2:</text>
@@ -8773,7 +8263,7 @@ h
 <text matrix="1 0 0 1 -391.147 -103.252" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.8224" depth="0" valign="baseline">\begin{tikzpicture}
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 -3.41295 -101.338" transformations="translations" pos="143.946 263.828" stroke="black" type="label" width="478.033" height="23.6964" depth="7.14" valign="baseline" style="math">w := H \cdot (FullEval(k_0^1) + ... + FullEval(k_0^\ell))</text>
+<text matrix="1 0 0 1 -3.41295 -101.338" transformations="translations" pos="143.946 263.828" stroke="black" type="label" width="409.742" height="20.3112" depth="6.12" valign="baseline" style="math">w := H \cdot (FullEval(k_0^1) + ... + FullEval(k_0^\ell))</text>
 <text matrix="1 0 0 1 -389.629 -153.9" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
@@ -8821,7 +8311,7 @@ h
 759.489 407.263 l
 h
 </path>
-<text matrix="1.0664 0 0 1.90639 -205.086 -364.854" transformations="translations" pos="752.695 341.965" stroke="black" type="label" width="11.4168" height="11.5128" depth="0.168" halign="center" valign="center" style="math">e</text>
+<text matrix="1.0664 0 0 1.90639 -205.086 -364.854" transformations="translations" pos="752.695 341.965" stroke="black" type="label" width="13.3196" height="13.4316" depth="0.196" halign="center" valign="center" style="math">e</text>
 </group>
 <group>
 <path matrix="1.46385 0 0 3.24161 -542.542 -959.42" stroke="black">
@@ -8831,7 +8321,7 @@ h
 732.792 407.432 l
 h
 </path>
-<text matrix="1.46385 0 0 3.24161 -503.331 -968.694" transformations="translations" pos="622.036 387.387" stroke="black" type="label" width="14.8968" height="15.2472" depth="0" halign="center" valign="center" style="math">H</text>
+<text matrix="1.46385 0 0 3.24161 -503.331 -968.694" transformations="translations" pos="622.036 387.387" stroke="black" type="label" width="17.3796" height="17.7884" depth="0" halign="center" valign="center" style="math">H</text>
 </group>
 <group>
 <path matrix="1.21538 0 0 0.976633 -702.758 -38.8753" stroke="black">
@@ -8841,7 +8331,7 @@ h
 759.489 407.263 l
 h
 </path>
-<text matrix="0.96756 0 0 3.23466 -303.708 -962.528" transformations="translations" pos="532.582 386.313" stroke="black" type="label" width="11.2536" height="11.5248" depth="3.84" halign="center" valign="center" style="math">y</text>
+<text matrix="0.96756 0 0 3.23466 -303.708 -962.528" transformations="translations" pos="532.582 386.313" stroke="black" type="label" width="13.1292" height="13.4456" depth="4.48" halign="center" valign="center" style="math">y</text>
 </group>
 </group>
 </page>
@@ -8858,7 +8348,7 @@ h
 732.792 407.432 l
 h
 </path>
-<text matrix="0.877218 0 0 1.01962 -355.989 35.7718" transformations="translations" pos="622.036 387.387" stroke="black" type="label" width="14.8968" height="15.2472" depth="0" valign="baseline" style="math">H</text>
+<text matrix="0.877218 0 0 1.01962 -355.989 35.7718" transformations="translations" pos="622.036 387.387" stroke="black" type="label" width="17.3796" height="17.7884" depth="0" valign="baseline" style="math">H</text>
 </group>
 <text matrix="1 0 0 1 0 -5.40524" transformations="translations" pos="500.539 441.04" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
 <group>
@@ -8932,7 +8422,7 @@ h
 732.792 407.432 l
 h
 </path>
-<text matrix="0.877218 0 0 1.01962 -355.989 35.7718" transformations="translations" pos="622.036 387.387" stroke="black" type="label" width="14.8968" height="15.2472" depth="0" valign="baseline" style="math">H</text>
+<text matrix="0.877218 0 0 1.01962 -355.989 35.7718" transformations="translations" pos="622.036 387.387" stroke="black" type="label" width="17.3796" height="17.7884" depth="0" valign="baseline" style="math">H</text>
 </group>
 <text matrix="1 0 0 1 184.398 -17.904" transformations="translations" pos="500.539 441.04" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
 <group matrix="1 0 0 1 13.7642 100.706">
@@ -9070,7 +8560,7 @@ h
 </path>
 <text matrix="0.880387 0 0 0.310354 -356.751 233.698" transformations="translations" pos="622.036 387.387" stroke="black" type="label" width="26.0344" height="22.5764" depth="0" valign="baseline" style="math">h^T</text>
 <text matrix="0.880387 0 0 0.310354 -122.447 146.332" transformations="translations" pos="622.036 387.387" stroke="black" type="label" width="16.1392" height="17.7884" depth="0" valign="baseline" style="math">A</text>
-<text matrix="0.880387 0 0 0.310354 22.4555 145.442" transformations="translations" pos="622.036 387.387" stroke="black" type="label" width="11.4168" height="11.5128" depth="0.168" valign="baseline" style="math">e</text>
+<text matrix="0.880387 0 0 0.310354 22.4555 145.442" transformations="translations" pos="622.036 387.387" stroke="black" type="label" width="13.3196" height="13.4316" depth="0.196" valign="baseline" style="math">e</text>
 <text matrix="1 0 0 1 -194.702 -124.614" transformations="translations" pos="240.135 325.635" stroke="black" type="label" width="14.3444" height="13.4316" depth="0.196" valign="baseline" style="math">u</text>
 <group>
 <path matrix="0.972894 0 0 1.02435 -204.754 -14.0346" stroke="black">
@@ -9082,7 +8572,7 @@ h
 </path>
 <text matrix="1 0 0 1 51.2125 206.16" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_1</text>
 <text matrix="1 0 0 1 52.1503 162.546" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_2</text>
-<text matrix="1 0 0 1 52.8996 91.1555" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="28.2352" height="12.4096" depth="4.172" valign="baseline" size="small" style="math">\alpha_\ell</text>
+<text matrix="1 0 0 1 52.8996 91.1555" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="24.2016" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_\ell</text>
 <text matrix="1 0 0 1 46.7997 180.346" transformations="translations" pos="554.141 170.319" stroke="black" type="label" width="6.036" height="36.3048" depth="0.168" valign="baseline" size="small" style="math">\vdots</text>
 <path matrix="-0.337278 0 0 0.460234 799.373 325.119" fill="CB dark red" opacity="60%" stroke-opacity="opaque">
 633.646 245.699 m
@@ -9147,7 +8637,7 @@ h
 <text matrix="1 0 0 1 -286.56 -77.1372" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_3</text>
 <text matrix="1 0 0 1 -237.713 -77.1372" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_4</text>
 <text matrix="1 0 0 1 -177.687 -76.1412" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="47.5056" height="10.6368" depth="5.568" valign="baseline" size="small" style="math">\alpha_{\ell - 1}</text>
-<text matrix="1 0 0 1 -121.387 -77.1372" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="28.2352" height="12.4096" depth="4.172" valign="baseline" size="small" style="math">\alpha_\ell</text>
+<text matrix="1 0 0 1 -121.387 -77.1372" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="24.2016" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_\ell</text>
 <text matrix="1 0 0 1 -20.9933 -301.279" transformations="translations" pos="500.539 441.04" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
 <text matrix="1 0 0 1 -27.3834 -68.6493" transformations="translations" pos="539.835 205.79" stroke="black" type="label" width="14.3444" height="19.1912" depth="0" valign="baseline" style="math">h</text>
 <text matrix="1 0 0 1 41.4734 -301.279" transformations="translations" pos="500.539 441.04" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
@@ -9187,7 +8677,7 @@ h
 <text matrix="1 0 0 1 -290.463 -18.3655" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_3</text>
 <text matrix="1 0 0 1 -241.616 -16.9889" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_4</text>
 <text matrix="1 0 0 1 -181.59 -16.4947" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="47.5056" height="10.6368" depth="5.568" valign="baseline" size="small" style="math">\alpha_{\ell - 1}</text>
-<text matrix="1 0 0 1 -125.29 -18.9816" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="28.2352" height="12.4096" depth="4.172" valign="baseline" size="small" style="math">\alpha_\ell</text>
+<text matrix="1 0 0 1 -125.29 -18.9816" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="24.2016" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_\ell</text>
 <text matrix="1 0 0 1 -24.896 -239.854" transformations="translations" pos="500.539 441.04" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
 <text matrix="1 0 0 1 -31.2861 -5.97401" transformations="translations" pos="539.835 205.79" stroke="black" type="label" width="14.3444" height="19.1912" depth="0" valign="baseline" style="math">h</text>
 </group>
@@ -9235,7 +8725,7 @@ h
 <text matrix="1 0 0 1 -391.147 -65.6738" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.8224" depth="0" valign="baseline" size="small">\begin{tikzpicture}
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 -3.41295 -63.7598" transformations="translations" pos="143.946 263.828" stroke="black" type="label" width="478.033" height="23.6964" depth="7.14" valign="baseline" size="small" style="math">w := H \cdot (FullEval(k_0^1) + ... + FullEval(k_0^\ell))</text>
+<text matrix="1 0 0 1 -3.41295 -63.7598" transformations="translations" pos="143.946 263.828" stroke="black" type="label" width="409.742" height="20.3112" depth="6.12" valign="baseline" size="small" style="math">w := H \cdot (FullEval(k_0^1) + ... + FullEval(k_0^\ell))</text>
 <text matrix="1 0 0 1 -389.629 -116.322" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline" size="small">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
@@ -9386,7 +8876,7 @@ h
 288.067 480.926 l
 h
 </path>
-<text matrix="1 0 0 1 -7.92174 -12.1021" transformations="translations" pos="271.555 469.54" stroke="black" type="label" width="11.7628" height="12.3984" depth="0" valign="baseline" size="small" style="math">\epsilon</text>
+<text matrix="1 0 0 1 -7.92174 -12.1021" transformations="translations" pos="271.555 469.54" stroke="black" type="label" width="10.0824" height="10.6272" depth="0" valign="baseline" size="small" style="math">\epsilon</text>
 </group>
 <text matrix="1 0 0 1 -40.6161 -11.8502" transformations="translations" pos="262.341 391.42" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small">\xor</text>
 <text matrix="1 0 0 1 182.512 -14.1732" transformations="translations" pos="262.341 391.42" stroke="black" type="label" width="45.1632" height="16.6032" depth="0" valign="baseline" size="small" style="math">= \Delta</text>
@@ -9464,7 +8954,7 @@ h
 288.067 480.926 l
 h
 </path>
-<text matrix="1 0 0 1 -7.92174 -12.1021" transformations="translations" pos="271.555 469.54" stroke="black" type="label" width="11.7628" height="12.3984" depth="0" valign="baseline" size="small" style="math">\epsilon</text>
+<text matrix="1 0 0 1 -7.92174 -12.1021" transformations="translations" pos="271.555 469.54" stroke="black" type="label" width="10.0824" height="10.6272" depth="0" valign="baseline" size="small" style="math">\epsilon</text>
 </group>
 <text matrix="1 0 0 1 -40.6161 -11.8502" transformations="translations" pos="262.341 391.42" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small">\xor</text>
 <text matrix="1 0 0 1 182.512 -14.1732" transformations="translations" pos="262.341 391.42" stroke="black" type="label" width="45.1632" height="16.6032" depth="0" valign="baseline" size="small" style="math">= \Delta</text>
@@ -9483,12 +8973,12 @@ h
 </group>
 <text matrix="1 0 0 1 0.805891 101.33" transformations="translations" pos="-0.397052 260.677" stroke="black" type="minipage" width="437.592" height="31.6776" depth="19.752" valign="top" size="small" style="itemize">\item Setup: $\Func[COT]$ with $\Delta$ global key
 \item Prepare $[r_1],...,[r_n] \in \FF_2^n$</text>
-<text layer="alpha" matrix="1 0 0 1 1.53291 -4.6776" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="27.8448" height="15.2592" depth="3.576" valign="baseline" size="small">\Party[0]</text>
+<text layer="alpha" matrix="1 0 0 1 1.53291 -4.6776" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline" size="small">\Party[0]</text>
 <text matrix="1 0 0 1 340.446 -3.19629" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline" size="small">\Party[1]</text>
 <text layer="beta" matrix="1 0 0 1 -359.858 -11.9736" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.8224" depth="0" valign="baseline" size="small">\begin{tikzpicture}
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 16.1384 -217.796" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="27.8448" height="15.2592" depth="3.576" valign="baseline" size="small">\Party[0]</text>
+<text matrix="1 0 0 1 16.1384 -217.796" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline" size="small">\Party[0]</text>
 <text matrix="1 0 0 1 -6.13849 45.0339" transformations="translations" pos="10.5219 169.581" stroke="black" type="label" width="261.991" height="20.2032" depth="6.12" valign="baseline" size="small" style="math">K_0^i := \bigoplus G_{*0}, K_1^i := \bigoplus G_{*1}</text>
 <text matrix="1 0 0 1 -38.525 49.6052" transformations="translations" pos="151.731 207.245" stroke="black" type="label" width="125.141" height="17.9352" depth="5.976" valign="baseline" size="small">For $i \in [1, n]$ </text>
 <text matrix="1 0 0 1 89.9477 43.1272" transformations="translations" pos="9.10903 133.01" stroke="black" type="label" width="148.891" height="20.2032" depth="6.12" valign="baseline" size="small" style="math">c_i := K_0^i \xor \key[r_i]</text>
@@ -9586,12 +9076,12 @@ h
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 -18.7344 -1.71123" transformations="translations" pos="25.1823 402.264" stroke="black" type="label" width="148.812" height="19.3608" depth="3.048" valign="baseline" size="small" style="math">\Delta \in \mathbb{K}, \vecv \in \mathbb{K}^N</text>
 <text matrix="1 0 0 1 248.067 29.6464" transformations="translations" pos="25.1823 402.264" stroke="black" type="label" width="156.218" height="19.3608" depth="3.048" valign="baseline" size="small" style="math">\vecu \in \FF^N, \vecw \in \KK^N</text>
-<text matrix="1 0 0 1 1.53291 -4.6776" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="27.8448" height="15.2592" depth="3.576" valign="baseline">\Party[0]</text>
+<text matrix="1 0 0 1 1.53291 -4.6776" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline">\Party[0]</text>
 <text matrix="1 0 0 1 340.446 -3.19629" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline">\Party[1]</text>
 <text layer="beta" matrix="1 0 0 1 -362.413 1.64088" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.8224" depth="0" valign="baseline">\begin{tikzpicture}
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 13.5836 -204.182" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="27.8448" height="15.2592" depth="3.576" valign="baseline">\Party[0]</text>
+<text matrix="1 0 0 1 13.5836 -204.182" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline">\Party[0]</text>
 <text matrix="1 0 0 1 3.27573 -1.79086" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
@@ -9678,7 +9168,7 @@ G_{x} &amp; x \ne \alpha \\
 288.067 480.926 l
 h
 </path>
-<text matrix="1 0 0 1 -7.92174 -12.1021" transformations="translations" pos="271.555 469.54" stroke="black" type="label" width="11.7628" height="12.3984" depth="0" valign="baseline" style="math">\epsilon</text>
+<text matrix="1 0 0 1 -7.92174 -12.1021" transformations="translations" pos="271.555 469.54" stroke="black" type="label" width="10.0824" height="10.6272" depth="0" valign="baseline" style="math">\epsilon</text>
 </group>
 <text matrix="1 0 0 1 434.575 29.9832" transformations="translations" pos="262.341 391.42" stroke="black" type="label" width="11.9064" height="13.1448" depth="0" valign="baseline" size="small">+</text>
 <text matrix="1 0 0 1 572.124 30.576" transformations="translations" pos="262.341 391.42" stroke="black" type="label" width="70.4328" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">= \key[\beta] </text>
@@ -9708,7 +9198,7 @@ h
 288.067 480.926 l
 h
 </path>
-<text matrix="1 0 0 1 -63.3465 30.4901" transformations="translations" pos="271.555 469.54" stroke="black" type="label" width="11.7628" height="12.3984" depth="0" valign="baseline" style="math">\epsilon</text>
+<text matrix="1 0 0 1 -63.3465 30.4901" transformations="translations" pos="271.555 469.54" stroke="black" type="label" width="10.0824" height="10.6272" depth="0" valign="baseline" style="math">\epsilon</text>
 </group>
 <path matrix="10.4706 0 0 0.745993 -2590.5 -15.9091" fill="white">
 247.632 480.926 m
@@ -9736,7 +9226,7 @@ h
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 421.735 -5.99116" transformations="translations" pos="25.1823 402.264" stroke="black" type="label" width="148.812" height="19.3608" depth="3.048" valign="baseline" size="small" style="math">\Delta \in \mathbb{K}, \vecv \in \mathbb{K}^N</text>
 <text matrix="1 0 0 1 688.536 25.3665" transformations="translations" pos="25.1823 402.264" stroke="black" type="label" width="156.218" height="19.3608" depth="3.048" valign="baseline" size="small" style="math">\vecu \in \FF^N, \vecw \in \KK^N</text>
-<text matrix="1 0 0 1 442.002 -8.95753" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="27.8448" height="15.2592" depth="3.576" valign="baseline">\Party[0]</text>
+<text matrix="1 0 0 1 442.002 -8.95753" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline">\Party[0]</text>
 <text matrix="1 0 0 1 780.915 -7.47622" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline">\Party[1]</text>
 <group matrix="1 0 0 1 407.928 -5.18184">
 <path matrix="1 0 0 1 88.8673 46.5428" stroke="black" arrow="normal/normal">
@@ -9765,7 +9255,7 @@ h
 <text matrix="1 0 0 1 142.482 -27.5143" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 68.2811 -234.188" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="27.8448" height="15.2592" depth="3.576" valign="baseline">\Party[0]</text>
+<text matrix="1 0 0 1 68.2811 -234.188" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline">\Party[0]</text>
 <text matrix="1 0 0 1 526.535 -232.265" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline">\Party[1]</text>
 <path matrix="1 0 0 1 71.7758 -0.871177" stroke="black" arrow="normal/small" opacity="40%" stroke-opacity="opaque">
 405.395 242.649 m
@@ -9803,7 +9293,7 @@ G_{x} &amp; x \ne \alpha \\
 <text matrix="1 0 0 1 -6.91996 202.943" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 38.22 -3.28837" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="27.8448" height="15.2592" depth="3.576" valign="baseline">\Party[0]</text>
+<text matrix="1 0 0 1 38.22 -3.28837" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline">\Party[0]</text>
 <text matrix="1 0 0 1 377.133 -1.80706" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline">\Party[1]</text>
 <text matrix="1 0 0 1 82.2822 -20.0925" transformations="translations" pos="140.855 461.986" stroke="black" type="label" width="61.2248" height="19.3844" depth="4.172" valign="baseline" style="math">\Func[DPF]</text>
 <path matrix="1.17368 0 0 0.971521 -76.4935 13.0171" stroke="black">
@@ -9990,8 +9480,8 @@ h
 135.858 311.432 l
 h
 </path>
-<text matrix="1 0 0 1 8.11393 5.30178" transformations="translations" pos="789.099 385.806" stroke="black" type="label" width="115.73" height="16.6104" depth="0.168" valign="baseline" size="small">: share of $\Delta$</text>
-<text matrix="1 0 0 1 8.11344 -19.8046" transformations="translations" pos="789.099 385.806" stroke="black" type="label" width="120.029" height="16.2864" depth="0.168" valign="baseline" size="small">: share of $0^\secparam$</text>
+<text matrix="1 0 0 1 8.11393 5.30178" transformations="translations" pos="789.099 385.806" stroke="black" type="label" width="116.633" height="16.6104" depth="0.168" valign="baseline" size="small">: share of $\Delta$</text>
+<text matrix="1 0 0 1 8.11344 -19.8046" transformations="translations" pos="789.099 385.806" stroke="black" type="label" width="120.929" height="16.2864" depth="0.168" valign="baseline" size="small">: share of $0^\secparam$</text>
 </group>
 </page>
 <page title="Example 5: Distributed DCF from pcGGM">
@@ -10137,8 +9627,8 @@ h
 135.858 311.432 l
 h
 </path>
-<text matrix="1 0 0 1 8.11393 5.30178" transformations="translations" pos="789.099 385.806" stroke="black" type="label" width="115.73" height="16.6104" depth="0.168" valign="baseline" size="small">: share of $\Delta$</text>
-<text matrix="1 0 0 1 8.11344 -19.8046" transformations="translations" pos="789.099 385.806" stroke="black" type="label" width="120.029" height="16.2864" depth="0.168" valign="baseline" size="small">: share of $0^\secparam$</text>
+<text matrix="1 0 0 1 8.11393 5.30178" transformations="translations" pos="789.099 385.806" stroke="black" type="label" width="116.633" height="16.6104" depth="0.168" valign="baseline" size="small">: share of $\Delta$</text>
+<text matrix="1 0 0 1 8.11344 -19.8046" transformations="translations" pos="789.099 385.806" stroke="black" type="label" width="120.929" height="16.2864" depth="0.168" valign="baseline" size="small">: share of $0^\secparam$</text>
 </group>
 </page>
 </ipe>

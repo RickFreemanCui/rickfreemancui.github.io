@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.26">
-<info created="D:20090429144355" modified="D:20230302085521" title="Publicly Verifiable Zero-Knowledge and Post-Quantum Signatures From VOLE-in-the-Head" author="Anonymous Authors" numberpages="yes"/>
+<info created="D:20090429144355" modified="D:20230302131312" title="Publicly Verifiable Zero-Knowledge and Post-Quantum Signatures From VOLE-in-the-Head" author="Anonymous Authors" numberpages="yes"/>
 <preamble>
 \usepackage[sfdefault,lf]{carlito}
 
@@ -21478,7 +21478,7 @@ h
 h
 </path>
 </group>
-<text pos="0 2" stroke="black" type="minipage" width="760" height="6.779" depth="1.79" valign="baseline" size="10">\flushright \name \ $\cdot$ \prestitle</text>
+<text pos="0 2" stroke="black" type="minipage" width="760" valign="baseline" size="10">\flushright \name \ $\cdot$ \prestitle</text>
 </group>
 </symbol>
 <preamble>
@@ -21508,7 +21508,7 @@ h
 <view layers="title" active="title"/>
 <text layer="title" matrix="1 0 0 1 -213 -2.06082" pos="213 427" stroke="black" type="minipage" width="920.858" height="49.3136" depth="35.448" valign="baseline" size="Large">Publicly Verifiable Zero-Knowledge and \\
 Post-Quantum Signatures From VOLE-in-the-Head</text>
-<text matrix="1 0 0 1 -213 -164.704" pos="213 427" stroke="ac-lightblue" type="label" width="397.85" height="16.4616" depth="4.104" valign="bottom" size="small">\today $\cdot$ Presented by Hongrui Cui</text>
+<text matrix="1 0 0 1 -213 -164.704" pos="213 427" stroke="ac-lightblue" type="label" width="409.445" height="16.4616" depth="4.104" valign="bottom" size="small">\today $\cdot$ Presented by Hongrui Cui</text>
 <text matrix="1 0 0 1 -213 -131" pos="213 427" stroke="ac-lightblue" type="label" width="230.798" height="19.2108" depth="4.48" valign="baseline">Anonymous Authors</text>
 <text matrix="1 0 0 1 -213 -74.8743" pos="213 427" stroke="ac-lightblue" type="label" width="293.877" height="19.7372" depth="4.48" valign="baseline">Crypto&apos;23 Submission 482</text>
 </page>
@@ -21553,7 +21553,7 @@ Polynomials</text>
 </group>
 <group>
 <text matrix="1 0 0 1 244.818 -45.1569" transformations="translations" pos="128.333 414.423" stroke="black" type="minipage" width="287.47" height="18.368" depth="4.396" halign="center" valign="baseline" style="center">zk-SNARK, GKR, etc.</text>
-<text matrix="1 0 0 1 330.436 -44.3461" transformations="translations" pos="42.7148 377.956" stroke="black" type="label" width="164.508" height="20.9244" depth="6.972" halign="center" valign="baseline" style="math">\Omega(|C| \log(|C|))</text>
+<text matrix="1 0 0 1 330.436 -44.3461" transformations="translations" pos="42.7148 377.956" stroke="black" type="label" width="72.5284" height="20.9244" depth="6.972" halign="center" valign="baseline" style="math">\Omega(|C|)</text>
 <text matrix="1 0 0 1 313.788 -17.7633" transformations="translations" pos="59.3629 316.913" stroke="black" type="label" width="72.5284" height="20.9244" depth="6.972" halign="center" valign="baseline" style="math">\Omega(|C|)</text>
 <text matrix="1 0 0 1 298.726 -22.5562" transformations="translations" pos="74.4254 289.959" stroke="black" type="label" width="127.277" height="20.9244" depth="6.972" halign="center" valign="baseline" style="math">O(\log(|C|))</text>
 <text matrix="1 0 0 1 330.436 -37.1932" transformations="translations" pos="42.7148 270.14" stroke="black" type="label" width="105.084" height="19.2192" depth="0.196" halign="center" valign="baseline">Universal</text>
