@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.26">
-<info created="D:20090429144355" modified="D:20230329195143" title="EA-Code Half-Tree" author="Hongrui Cui" numberpages="yes"/>
+<info created="D:20090429144355" modified="D:20230329225840" title="EA-Code Half-Tree" author="Hongrui Cui" numberpages="yes"/>
 <preamble>\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
@@ -8073,7 +8073,7 @@ Peter Scholl</text>
 <text layer="alpha" matrix="1 0 0 1 -323.899 135.829" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.8224" depth="0" valign="baseline" size="small">\begin{tikzpicture}
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 -78.9328 135.563" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline" size="small">\begin{tikzpicture}
+<text matrix="1 0 0 1 -78.9328 135.563" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <group matrix="1 0 0 1 -51.1144 39.7901">
@@ -8176,7 +8176,7 @@ h
 759.489 407.263 l
 h
 </path>
-<text matrix="1 0 0 1 -4.51447 -6.53648" transformations="translations" pos="532.582 386.313" stroke="black" type="label" width="13.1292" height="13.4456" depth="4.48" valign="baseline" size="small" style="math">y</text>
+<text matrix="1 0 0 1 -4.51447 -6.53648" transformations="translations" pos="532.582 386.313" stroke="black" type="label" width="11.2536" height="11.5248" depth="3.84" valign="baseline" size="small" style="math">y</text>
 </group>
 <group matrix="1 0 0 1 42.2052 -30.9854">
 <path stroke="black">
@@ -8210,7 +8210,7 @@ h
 759.489 407.263 l
 h
 </path>
-<text matrix="1 0 0 1 -4.51447 -6.53648" transformations="translations" pos="532.582 386.313" stroke="black" type="label" width="13.1292" height="13.4456" depth="4.48" valign="baseline" size="small" style="math">y</text>
+<text matrix="1 0 0 1 -4.51447 -6.53648" transformations="translations" pos="532.582 386.313" stroke="black" type="label" width="11.2536" height="11.5248" depth="3.84" valign="baseline" size="small" style="math">y</text>
 </group>
 <text matrix="1 0 0 1 14.2226 -96.606" transformations="translations" pos="551.026 371.333" stroke="black" type="label" width="55.6944" height="15.2592" depth="3.576" valign="baseline" size="small" style="math">\gets U_n</text>
 </group>
@@ -8233,10 +8233,10 @@ h
 h
 </path>
 <text matrix="1 0 0 1 -10.8497 -12.9286" transformations="translations" pos="278.269 485.564" stroke="black" type="label" width="27.7844" height="19.3928" depth="5.404" valign="baseline" style="math">\beta_1</text>
-<text matrix="1 0 0 1 -12.0108 -50.0554" transformations="translations" pos="278.269 485.564" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" style="math">\alpha_1</text>
+<text matrix="1 0 0 1 -12.0108 -50.0554" transformations="translations" pos="278.269 485.564" stroke="black" type="label" width="30.2988" height="12.4096" depth="4.172" valign="baseline" style="math">\alpha_1</text>
 <text matrix="1 0 0 1 -9.41406 -6.27996" transformations="translations" pos="169.863 478.245" stroke="black" type="label" width="42.7644" height="13.4316" depth="0.196" valign="baseline" style="math">e = </text>
 <text matrix="1 0 0 1 75.0145 -12.9243" transformations="translations" pos="278.269 485.564" stroke="black" type="label" width="27.7844" height="19.3928" depth="5.404" valign="baseline" style="math">\beta_2</text>
-<text matrix="1 0 0 1 73.8534 -50.0511" transformations="translations" pos="278.269 485.564" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" style="math">\alpha_2</text>
+<text matrix="1 0 0 1 73.8534 -50.0511" transformations="translations" pos="278.269 485.564" stroke="black" type="label" width="30.2988" height="12.4096" depth="4.172" valign="baseline" style="math">\alpha_2</text>
 <text matrix="1 0 0 1 248.728 -12.1555" transformations="translations" pos="278.269 485.564" stroke="black" type="label" width="25.7208" height="19.3928" depth="5.404" valign="baseline" style="math">\beta_\ell</text>
 <text matrix="1 0 0 1 247.566 -49.2823" transformations="translations" pos="278.269 485.564" stroke="black" type="label" width="24.2016" height="10.6368" depth="3.576" valign="baseline" style="math">\alpha_\ell</text>
 </group>
@@ -8249,7 +8249,7 @@ h
 <text matrix="1 0 0 1 384.722 66.0592" transformations="translations" pos="146.975 365.641" stroke="black" type="label" width="21.1232" height="3.304" depth="0.196" valign="baseline">...</text>
 <text matrix="1 0 0 1 0 56.8452" pin="h" transformations="translations" pos="0 168.327" stroke="black" type="minipage" width="920" height="18.7096" depth="4.76" valign="top" style="itemize">\item Expand:</text>
 <group matrix="1 0 0 1 357.177 66.0083">
-<text matrix="1 0 0 1 -339.365 -72.4405" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline">\begin{tikzpicture}
+<text matrix="1 0 0 1 -339.365 -72.4405" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 -1.81653 -60.6147" transformations="translations" pos="143.946 263.828" stroke="black" type="label" width="240.45" height="23.6964" depth="7.14" valign="baseline" style="math">key_1 := \{ k_1^1,...,k_1^\ell \}, e</text>
@@ -8264,7 +8264,7 @@ h
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 -3.41295 -101.338" transformations="translations" pos="143.946 263.828" stroke="black" type="label" width="409.742" height="20.3112" depth="6.12" valign="baseline" style="math">w := H \cdot (FullEval(k_0^1) + ... + FullEval(k_0^\ell))</text>
-<text matrix="1 0 0 1 -389.629 -153.9" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline">\begin{tikzpicture}
+<text matrix="1 0 0 1 -389.629 -153.9" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 3.94483 -140.701" transformations="translations" pos="143.946 263.828" stroke="black" type="label" width="592.309" height="23.6964" depth="7.14" valign="baseline" style="math">v := H \cdot (FullEval(k_1^1) + ... + FullEval(k_1^\ell)), u := H \cdot e</text>
@@ -8331,7 +8331,7 @@ h
 759.489 407.263 l
 h
 </path>
-<text matrix="0.96756 0 0 3.23466 -303.708 -962.528" transformations="translations" pos="532.582 386.313" stroke="black" type="label" width="13.1292" height="13.4456" depth="4.48" halign="center" valign="center" style="math">y</text>
+<text matrix="0.96756 0 0 3.23466 -303.708 -962.528" transformations="translations" pos="532.582 386.313" stroke="black" type="label" width="11.2536" height="11.5248" depth="3.84" halign="center" valign="center" style="math">y</text>
 </group>
 </group>
 </page>
@@ -8570,8 +8570,8 @@ h
 812.208 470.055 l
 h
 </path>
-<text matrix="1 0 0 1 51.2125 206.16" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_1</text>
-<text matrix="1 0 0 1 52.1503 162.546" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_2</text>
+<text matrix="1 0 0 1 51.2125 206.16" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="30.2988" height="12.4096" depth="4.172" valign="baseline" size="small" style="math">\alpha_1</text>
+<text matrix="1 0 0 1 52.1503 162.546" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="30.2988" height="12.4096" depth="4.172" valign="baseline" size="small" style="math">\alpha_2</text>
 <text matrix="1 0 0 1 52.8996 91.1555" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="24.2016" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_\ell</text>
 <text matrix="1 0 0 1 46.7997 180.346" transformations="translations" pos="554.141 170.319" stroke="black" type="label" width="6.036" height="36.3048" depth="0.168" valign="baseline" size="small" style="math">\vdots</text>
 <path matrix="-0.337278 0 0 0.460234 799.373 325.119" fill="CB dark red" opacity="60%" stroke-opacity="opaque">
@@ -8632,8 +8632,8 @@ h
 681.176 245.699 l
 h
 </path>
-<text matrix="1 0 0 1 -391.06 -77.1372" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_1</text>
-<text matrix="1 0 0 1 -335.439 -77.1372" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_2</text>
+<text matrix="1 0 0 1 -391.06 -77.1372" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="30.2988" height="12.4096" depth="4.172" valign="baseline" size="small" style="math">\alpha_1</text>
+<text matrix="1 0 0 1 -335.439 -77.1372" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="30.2988" height="12.4096" depth="4.172" valign="baseline" size="small" style="math">\alpha_2</text>
 <text matrix="1 0 0 1 -286.56 -77.1372" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_3</text>
 <text matrix="1 0 0 1 -237.713 -77.1372" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_4</text>
 <text matrix="1 0 0 1 -177.687 -76.1412" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="47.5056" height="10.6368" depth="5.568" valign="baseline" size="small" style="math">\alpha_{\ell - 1}</text>
@@ -8672,8 +8672,8 @@ h
 681.176 245.699 l
 h
 </path>
-<text matrix="1 0 0 1 -394.963 -19.1032" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_1</text>
-<text matrix="1 0 0 1 -339.342 -17.1223" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_2</text>
+<text matrix="1 0 0 1 -394.963 -19.1032" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="30.2988" height="12.4096" depth="4.172" valign="baseline" size="small" style="math">\alpha_1</text>
+<text matrix="1 0 0 1 -339.342 -17.1223" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="30.2988" height="12.4096" depth="4.172" valign="baseline" size="small" style="math">\alpha_2</text>
 <text matrix="1 0 0 1 -290.463 -18.3655" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_3</text>
 <text matrix="1 0 0 1 -241.616 -16.9889" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_4</text>
 <text matrix="1 0 0 1 -181.59 -16.4947" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="47.5056" height="10.6368" depth="5.568" valign="baseline" size="small" style="math">\alpha_{\ell - 1}</text>
@@ -8726,7 +8726,7 @@ h
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 -3.41295 -63.7598" transformations="translations" pos="143.946 263.828" stroke="black" type="label" width="409.742" height="20.3112" depth="6.12" valign="baseline" size="small" style="math">w := H \cdot (FullEval(k_0^1) + ... + FullEval(k_0^\ell))</text>
-<text matrix="1 0 0 1 -389.629 -116.322" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline" size="small">\begin{tikzpicture}
+<text matrix="1 0 0 1 -389.629 -116.322" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 3.94483 -103.123" transformations="translations" pos="143.946 263.828" stroke="black" type="label" width="592.309" height="23.6964" depth="7.14" valign="baseline" size="small" style="math">v := H \cdot (FullEval(k_1^1) + ... + FullEval(k_1^\ell)), u := H \cdot e</text>
@@ -8761,7 +8761,7 @@ $
 <text matrix="1 0 0 1 -60.5448 208.033" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.8224" depth="0" valign="baseline">\begin{tikzpicture}
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 230.146 206.008" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline">\begin{tikzpicture}
+<text matrix="1 0 0 1 230.146 206.008" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 -4.67173 -6.72713" transformations="translations" pos="423.273 483.701" stroke="black" type="label" width="231.042" height="22.9404" depth="6.972" valign="baseline" style="math">{\sf Expand}(k^0) \mapsto \alpha, y^0</text>
@@ -8773,7 +8773,7 @@ $
 <text matrix="1 0 0 1 -400.267 -215.239" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.8224" depth="0" valign="baseline">\begin{tikzpicture}
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 -398.639 -147.639" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline">\begin{tikzpicture}
+<text matrix="1 0 0 1 -398.639 -147.639" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 0 -37.9661" transformations="translations" pos="79.4954 160.818" stroke="black" type="label" width="255.158" height="22.9544" depth="7.756" valign="baseline" style="math">f^1(x) = G_{x_1 x_2 x_3} + \sum c^1_i</text>
@@ -8786,7 +8786,7 @@ B_j + c_{j+1}^1 + ... + c_{m}^1 &amp; x \neq \alpha
 \end{cases}
 $</text>
 <group matrix="1 0 0 1 -0.80804 58.1514">
-<text matrix="1 0 0 1 -425.429 -58.0563" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline">\begin{tikzpicture}
+<text matrix="1 0 0 1 -425.429 -58.0563" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 -11.8029 -22.2842" transformations="translations" pos="59.3846 235.68" stroke="black" type="label" width="87.29" height="22.946" depth="0.196" valign="baseline" style="math">k^1 := G</text>
@@ -8920,7 +8920,7 @@ h
 <text layer="alpha" matrix="1 0 0 1 -374.464 201.145" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.8224" depth="0" valign="baseline" size="small">\begin{tikzpicture}
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 -43.607 201.554" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline" size="small">\begin{tikzpicture}
+<text matrix="1 0 0 1 -43.607 201.554" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 -18.7344 -1.71123" transformations="translations" pos="25.1823 402.264" stroke="black" type="label" width="169.214" height="19.3632" depth="6.12" valign="baseline" size="small" style="math">\Delta \in \FF_{2^\secparam}, \vecv \in \FF_{2^\secparam}^N</text>
@@ -8973,21 +8973,21 @@ h
 </group>
 <text matrix="1 0 0 1 0.805891 101.33" transformations="translations" pos="-0.397052 260.677" stroke="black" type="minipage" width="437.592" height="31.6776" depth="19.752" valign="top" size="small" style="itemize">\item Setup: $\Func[COT]$ with $\Delta$ global key
 \item Prepare $[r_1],...,[r_n] \in \FF_2^n$</text>
-<text layer="alpha" matrix="1 0 0 1 1.53291 -4.6776" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline" size="small">\Party[0]</text>
+<text layer="alpha" matrix="1 0 0 1 1.53291 -4.6776" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="27.8448" height="15.2592" depth="3.576" valign="baseline" size="small">\Party[0]</text>
 <text matrix="1 0 0 1 340.446 -3.19629" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline" size="small">\Party[1]</text>
 <text layer="beta" matrix="1 0 0 1 -359.858 -11.9736" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.8224" depth="0" valign="baseline" size="small">\begin{tikzpicture}
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 16.1384 -217.796" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline" size="small">\Party[0]</text>
+<text matrix="1 0 0 1 16.1384 -217.796" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="27.8448" height="15.2592" depth="3.576" valign="baseline" size="small">\Party[0]</text>
 <text matrix="1 0 0 1 -6.13849 45.0339" transformations="translations" pos="10.5219 169.581" stroke="black" type="label" width="261.991" height="20.2032" depth="6.12" valign="baseline" size="small" style="math">K_0^i := \bigoplus G_{*0}, K_1^i := \bigoplus G_{*1}</text>
 <text matrix="1 0 0 1 -38.525 49.6052" transformations="translations" pos="151.731 207.245" stroke="black" type="label" width="125.141" height="17.9352" depth="5.976" valign="baseline" size="small">For $i \in [1, n]$ </text>
 <text matrix="1 0 0 1 89.9477 43.1272" transformations="translations" pos="9.10903 133.01" stroke="black" type="label" width="148.891" height="20.2032" depth="6.12" valign="baseline" size="small" style="math">c_i := K_0^i \xor \key[r_i]</text>
-<text matrix="1 0 0 1 -85.5644 -16.1494" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline" size="small">\begin{tikzpicture}
+<text matrix="1 0 0 1 -85.5644 -16.1494" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 298.489 -220.9" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline" size="small">\Party[1]</text>
 <text matrix="1 0 0 1 -24.9312 51.1278" transformations="translations" pos="271.771 87.0952" stroke="black" type="label" width="203.782" height="17.9352" depth="5.976" valign="baseline" size="small">For $i \in [1, n]$, $\alpha_i := \bar{r}_i$</text>
-<text matrix="1 0 0 1 -4.32095 5.51092" transformations="translations" pos="251.559 103.6" stroke="black" type="label" width="154.003" height="20.1888" depth="8.304" valign="baseline" size="small" style="math">K^i_{\bar{\alpha}_i } = c_i \xor \mac[r_i]</text>
+<text matrix="1 0 0 1 -4.32095 5.51092" transformations="translations" pos="251.559 103.6" stroke="black" type="label" width="429.768" height="20.1888" depth="8.304" valign="baseline" size="small" style="math">K^i_{\bar{\alpha}_i } = c_i \xor \mac[r_i] = K_0^i \xor r_i \cdot \Delta = K_0^i \xor \bar{\alpha_i} \cdot \Delta</text>
 <text matrix="1 0 0 1 8.07606 -1.52948" transformations="translations" pos="6.04322 66.0528" stroke="black" type="label" width="127.87" height="17.9352" depth="5.976" valign="baseline" size="small">For $x \in [1, N]$</text>
 <text matrix="1 0 0 1 8.07606 -7.08841" transformations="translations" pos="6.17353 38.3336" stroke="black" type="label" width="91.1472" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\vecv[x] = G_{x}</text>
 <text matrix="1 0 0 1 217.327 10.4388" transformations="translations" pos="6.17353 38.3336" stroke="black" type="label" width="288.538" height="41.8272" depth="29.904" valign="baseline" size="small" style="math">\vecw[x] = 
@@ -9065,24 +9065,25 @@ h
 <layer name="alpha"/>
 <layer name="beta"/>
 <layer name="gamma"/>
-<view layers="alpha" active="alpha"/>
+<layer name="delta"/>
+<view layers="alpha delta" active="alpha"/>
 <view layers="alpha beta" active="beta"/>
 <view layers="alpha beta gamma" active="gamma"/>
 <text layer="alpha" matrix="1 0 0 1 -374.464 201.145" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.8224" depth="0" valign="baseline">\begin{tikzpicture}
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 -43.607 201.554" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline">\begin{tikzpicture}
+<text matrix="1 0 0 1 -43.607 201.554" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 -18.7344 -1.71123" transformations="translations" pos="25.1823 402.264" stroke="black" type="label" width="148.812" height="19.3608" depth="3.048" valign="baseline" size="small" style="math">\Delta \in \mathbb{K}, \vecv \in \mathbb{K}^N</text>
 <text matrix="1 0 0 1 248.067 29.6464" transformations="translations" pos="25.1823 402.264" stroke="black" type="label" width="156.218" height="19.3608" depth="3.048" valign="baseline" size="small" style="math">\vecu \in \FF^N, \vecw \in \KK^N</text>
-<text matrix="1 0 0 1 1.53291 -4.6776" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline">\Party[0]</text>
+<text matrix="1 0 0 1 1.53291 -4.6776" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="27.8448" height="15.2592" depth="3.576" valign="baseline">\Party[0]</text>
 <text matrix="1 0 0 1 340.446 -3.19629" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline">\Party[1]</text>
 <text layer="beta" matrix="1 0 0 1 -362.413 1.64088" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.8224" depth="0" valign="baseline">\begin{tikzpicture}
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 13.5836 -204.182" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline">\Party[0]</text>
-<text matrix="1 0 0 1 3.27573 -1.79086" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline">\begin{tikzpicture}
+<text matrix="1 0 0 1 13.5836 -204.182" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="27.8448" height="15.2592" depth="3.576" valign="baseline">\Party[0]</text>
+<text matrix="1 0 0 1 3.27573 -1.79086" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 387.329 -206.541" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline">\Party[1]</text>
@@ -9182,6 +9183,67 @@ h
 819.928 295.831 m
 73.8495 0 0 73.8495 848.701 363.845 903.22 413.659 a
 </path>
+<group layer="delta" matrix="1 0 0 1 -551.203 -134.457">
+<group matrix="1 0 0 1 59.6618 48.3127">
+<path stroke="black" pen="heavier">
+576.64 472.703 m
+576.64 303.556 l
+601.772 303.556 l
+601.772 472.703 l
+h
+</path>
+<text matrix="1 0 0 1 -7.81706 -2.32512" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="11.3112" height="11.4432" depth="0" valign="baseline" size="small">\vecv</text>
+</group>
+<text matrix="1 0 0 1 -12.889 42.9109" transformations="translations" pos="747.16 383.846" stroke="black" type="label" width="38.5224" height="16.6056" depth="1.992" valign="baseline" size="small" style="math"> \times \Delta</text>
+<text matrix="1 0 0 1 -74.344 42.1756" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="21.6972" height="10.3208" depth="0" valign="baseline" size="small" style="math">=</text>
+<group matrix="1 0 0 1 -63.0932 48.431">
+<path matrix="1 0 0 1 53.4211 -0.227929" stroke="black" pen="heavier">
+576.64 472.703 m
+576.64 303.556 l
+601.772 303.556 l
+601.772 472.703 l
+h
+</path>
+<text matrix="1 0 0 1 49.3979 -2.55363" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="17.8152" height="11.4432" depth="0" valign="baseline" size="small">\vecw</text>
+</group>
+<text matrix="1 0 0 1 -12.706 41.9146" transformations="translations" pos="685.392 387.553" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">+</text>
+<group matrix="1 0 0 1 0.956111 51.3416">
+<path matrix="1 0 0 1 128.04 -3.02871" stroke="black" pen="heavier">
+576.64 472.703 m
+576.64 303.556 l
+601.772 303.556 l
+601.772 472.703 l
+h
+</path>
+<text matrix="1 0 0 1 123.895 -5.35441" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="12.8304" height="11.4432" depth="0.168" valign="baseline" size="small">\vecu</text>
+</group>
+<path matrix="1 0 0 1 -115.719 14.1048" fill="red" opacity="40%" stroke-opacity="opaque">
+821.355 469.314 m
+821.355 454.66 l
+846.487 454.66 l
+846.487 469.314 l
+h
+</path>
+<path matrix="1 0 0 1 -115.719 14.1048" stroke="black" arrow="normal/small">
+874.976 461.708 m
+846.487 461.708 l
+</path>
+<text matrix="1 0 0 1 -123.257 8.23038" transformations="translations" pos="865.123 477.38" stroke="black" type="label" width="143.494" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha = \alpha_1 \alpha_2 ... \alpha_n</text>
+<path matrix="1 0 0 7.97709 -115.719 -3275" fill="blue" opacity="20%" stroke-opacity="opaque">
+821.355 469.314 m
+821.355 454.66 l
+846.487 454.66 l
+846.487 469.314 l
+h
+</path>
+<path matrix="1 0 0 2.56532 -115.719 -682.929" fill="blue" opacity="20%" stroke-opacity="opaque">
+821.355 469.314 m
+821.355 454.66 l
+846.487 454.66 l
+846.487 469.314 l
+h
+</path>
+</group>
 </page>
 <page title="Example 3: Single Point sVOLE from Pseudorandom cGGM">
 <layer name="alpha"/>
@@ -9221,12 +9283,12 @@ h
 <text matrix="1 0 0 1 66.0053 196.865" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.8224" depth="0" valign="baseline">\begin{tikzpicture}
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 396.862 197.274" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline">\begin{tikzpicture}
+<text matrix="1 0 0 1 396.862 197.274" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 421.735 -5.99116" transformations="translations" pos="25.1823 402.264" stroke="black" type="label" width="148.812" height="19.3608" depth="3.048" valign="baseline" size="small" style="math">\Delta \in \mathbb{K}, \vecv \in \mathbb{K}^N</text>
 <text matrix="1 0 0 1 688.536 25.3665" transformations="translations" pos="25.1823 402.264" stroke="black" type="label" width="156.218" height="19.3608" depth="3.048" valign="baseline" size="small" style="math">\vecu \in \FF^N, \vecw \in \KK^N</text>
-<text matrix="1 0 0 1 442.002 -8.95753" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline">\Party[0]</text>
+<text matrix="1 0 0 1 442.002 -8.95753" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="27.8448" height="15.2592" depth="3.576" valign="baseline">\Party[0]</text>
 <text matrix="1 0 0 1 780.915 -7.47622" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline">\Party[1]</text>
 <group matrix="1 0 0 1 407.928 -5.18184">
 <path matrix="1 0 0 1 88.8673 46.5428" stroke="black" arrow="normal/normal">
@@ -9247,15 +9309,15 @@ h
 </path>
 </group>
 <text matrix="1 0 0 1 -86.2134 -77.688" transformations="translations" pos="551.313 445.209" stroke="black" type="minipage" width="365.47" height="45.9336" depth="34.032" valign="top" size="small" style="itemize">\item Setup: $\Func[sVOLE]$ with $\Gamma$ global key, $\Func[COT]$ with $\Delta$ global key
-\item Prepare $[r_1],...,[r_n] \in \FF_2, [s] \in \FF$</text>
+\item Prepare $[r_1],...,[r_n]_{\Delta}, [s]_{\Gamma}$</text>
 <text matrix="1 0 0 1 235.612 11.327" transformations="translations" pos="465.641 384.983" stroke="black" type="label" width="223.546" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\| \vecu \| = 1, \vecu[\alpha] = \beta \in \FF</text>
 <text matrix="1 0 0 1 -307.716 -28.3657" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.8224" depth="0" valign="baseline">\begin{tikzpicture}
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 142.482 -27.5143" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline">\begin{tikzpicture}
+<text matrix="1 0 0 1 142.482 -27.5143" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 68.2811 -234.188" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline">\Party[0]</text>
+<text matrix="1 0 0 1 68.2811 -234.188" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="27.8448" height="15.2592" depth="3.576" valign="baseline">\Party[0]</text>
 <text matrix="1 0 0 1 526.535 -232.265" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline">\Party[1]</text>
 <path matrix="1 0 0 1 71.7758 -0.871177" stroke="black" arrow="normal/small" opacity="40%" stroke-opacity="opaque">
 405.395 242.649 m
@@ -9265,13 +9327,13 @@ h
 <text matrix="1 0 0 1 -87.9279 -0.768169" transformations="translations" pos="116.834 210.095" stroke="black" type="label" width="85.464" height="17.9352" depth="5.976" valign="baseline" size="small">Get $\key[\beta]$</text>
 <text matrix="1 0 0 1 424.986 -4.73617" transformations="translations" pos="116.834 210.095" stroke="black" type="label" width="89.7816" height="17.9352" depth="5.976" valign="baseline" size="small">Get $\mac[\beta]$</text>
 <text matrix="1 0 0 1 -65.6441 3.86828" transformations="translations" pos="68.7416 175.064" stroke="black" type="label" width="224.026" height="17.9352" depth="5.976" valign="baseline" size="small">Run pcGGM using $\key[\beta]$</text>
-<text layer="beta" matrix="1 0 0 1 282.107 45.7886" transformations="translations" pos="9.10903 133.01" stroke="black" type="label" width="175.411" height="13.0656" depth="5.328" valign="baseline" size="tiny">$c_i := K_0^i + \key[r_i]$ for $i \in [1, n-1]$</text>
+<text layer="beta" matrix="1 0 0 1 282.107 45.7886" transformations="translations" pos="9.10903 133.01" stroke="black" type="label" width="200.22" height="13.0656" depth="5.328" valign="baseline" size="tiny">COT: $c_i := K_0^i + \key[r_i]$ for $i \in [1, n-1]$</text>
 <path matrix="1.80197 0 0 0.140979 137.674 147.091" stroke="black" arrow="normal/small" opacity="40%" stroke-opacity="opaque">
 80.3567 157.434 m
 194.135 157.434 l
 </path>
-<text matrix="1 0 0 1 -23.6315 -8.72077" transformations="translations" pos="293.606 158.682" stroke="black" type="label" width="253.675" height="12.6864" depth="5.328" valign="baseline" size="tiny" style="math">c_n^0 := H(\key[r_n]) + K^n_0, c_n^1 := H(\key[r_n] \xor \Delta) + K^n_1</text>
-<text matrix="1 0 0 1 -8.91624 -8.59389" transformations="translations" pos="277.814 138.336" stroke="black" type="label" width="118.166" height="10.5936" depth="5.328" valign="baseline" size="tiny" style="math">\phi := K^n_0 + K^n_1 - \key[\beta]</text>
+<text matrix="1 0 0 1 -2.38997 -8.72077" transformations="translations" pos="293.606 158.682" stroke="black" type="label" width="272.215" height="12.6864" depth="5.328" valign="baseline" size="tiny">OT: $c_n^0 := H(\key[r_n]) + K^n_0, c_n^1 := H(\key[r_n] \xor \Delta) + K^n_1$</text>
+<text matrix="1 0 0 1 13.402 -8.59389" transformations="translations" pos="277.814 138.336" stroke="black" type="label" width="141.593" height="10.5936" depth="5.328" valign="baseline" size="tiny">Diff: $\phi := K^n_0 + K^n_1 - \key[\beta]$</text>
 <text matrix="1 0 0 1 32.4857 17.5821" transformations="translations" pos="6.04322 66.0528" stroke="black" type="label" width="127.87" height="17.9352" depth="5.976" valign="baseline" size="small">For $x \in [1, N]$</text>
 <text matrix="1 0 0 1 32.4857 12.0232" transformations="translations" pos="6.17353 38.3336" stroke="black" type="label" width="91.1472" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\vecv[x] = G_{x}</text>
 <text matrix="1 0 0 1 241.736 29.5504" transformations="translations" pos="6.17353 38.3336" stroke="black" type="label" width="410.551" height="41.8272" depth="29.904" valign="baseline" size="small" style="math">\vecw[x] = 
@@ -9290,10 +9352,10 @@ G_{x} &amp; x \ne \alpha \\
 <text layer="alpha" matrix="1 0 0 1 -337.777 202.534" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.8224" depth="0" valign="baseline">\begin{tikzpicture}
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 -6.91996 202.943" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline">\begin{tikzpicture}
+<text matrix="1 0 0 1 -6.91996 202.943" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 38.22 -3.28837" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline">\Party[0]</text>
+<text matrix="1 0 0 1 38.22 -3.28837" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="27.8448" height="15.2592" depth="3.576" valign="baseline">\Party[0]</text>
 <text matrix="1 0 0 1 377.133 -1.80706" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline">\Party[1]</text>
 <text matrix="1 0 0 1 82.2822 -20.0925" transformations="translations" pos="140.855 461.986" stroke="black" type="label" width="61.2248" height="19.3844" depth="4.172" valign="baseline" style="math">\Func[DPF]</text>
 <path matrix="1.17368 0 0 0.971521 -76.4935 13.0171" stroke="black">
