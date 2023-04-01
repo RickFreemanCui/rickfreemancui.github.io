@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.26">
-<info created="D:20090429144355" modified="D:20230401104512" title="Actively Secure Half-Gates with Minimum Overhead under Duplex Networks" author="Hongrui Cui \and Xiao Wang \and Kang Yang \and Yu Yu" subject="MPC" keywords="MPC" numberpages="yes"/>
+<info created="D:20090429144355" modified="D:20230401145752" title="Actively Secure Half-Gates with Minimum Overhead under Duplex Networks" author="Hongrui Cui \and Xiao Wang \and Kang Yang \and Yu Yu" subject="MPC" keywords="MPC" numberpages="yes"/>
 <preamble>\usepackage[utf8]{inputenc}
 \usepackage[sfdefault,lf]{carlito}
 \usepackage{sfmath}
@@ -896,10 +896,10 @@ h
 <layer name="title"/>
 <layer name="BACKGROUND"/>
 <view layers="title" active="title"/>
-<text layer="title" matrix="1 0 0 1 -213 -26" pos="213 427" stroke="black" type="label" width="310.226" height="27.7676" depth="6.888" valign="baseline" size="Large">My title goes here$^\star$</text>
-<text matrix="1 0 0 1 -213 -164.704" pos="213 427" stroke="ac-lightblue" type="label" width="551.887" height="16.4616" depth="4.104" valign="bottom" size="small">DD.MM.YYYY $\cdot$ Conference for Things 2099 $\cdot$ or other info</text>
-<text matrix="1 0 0 1 -213 -131" pos="213 427" stroke="ac-lightblue" type="label" width="228.11" height="19.2192" depth="0.196" valign="baseline">Firstname Lastname</text>
-<text matrix="1 0 0 1 -213 -60.812" pos="213 427" stroke="ac-lightblue" type="label" width="304.856" height="19.2192" depth="0.196" valign="baseline">And there can be a subtitle</text>
+<text layer="title" matrix="1 0 0 1 -213 -12" pos="213 427" stroke="black" type="minipage" width="921.16" height="49.1036" depth="35.224" valign="baseline" size="Large">Actively Secure Half-Gates with Minimum Overhead \\ under Duplex Networks</text>
+<text matrix="1 0 0 1 -213 -178.704" pos="213 427" stroke="ac-lightblue" type="label" width="292.582" height="15.672" depth="3.84" valign="bottom" size="small">Apr.~25, 2023 $\cdot$ Eurocrypt 2023</text>
+<text matrix="1 0 0 1 -213 -131" pos="213 427" stroke="ac-lightblue" type="label" width="532.927" height="19.5048" depth="4.788" valign="baseline">\hl{Hongrui Cui} \quad Xiao Wang \quad Kang Yang \quad Yu Yu</text>
+<text matrix="1 0 0 1 -213 -74.812" pos="213 427" stroke="ac-lightblue" type="label" width="304.856" height="19.2192" depth="0.196" valign="baseline">And there can be a subtitle</text>
 <group>
 <path matrix="2 0 0 -2 -6.814 201.78" fill="black">
 37.817 2.144 m
