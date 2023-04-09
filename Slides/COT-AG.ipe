@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.26">
-<info created="D:20090429144355" modified="D:20230407212911" title="Authenticated Garbling from Correlated OT" author="Hongrui Cui" numberpages="yes"/>
+<info created="D:20090429144355" modified="D:20230409150526" title="Authenticated Garbling from Correlated OT" author="Hongrui Cui" numberpages="yes"/>
 <preamble>\usepackage[utf8]{inputenc}
 
 \usepackage[T1]{fontenc}
@@ -4860,7 +4860,7 @@ h
 <layer name="title"/>
 <layer name="BACKGROUND"/>
 <view layers="title BACKGROUND" active="BACKGROUND"/>
-<text layer="title" matrix="1 0 0 1 -213 -164.704" pos="213 427" stroke="ac-lightblue" type="label" width="377.474" height="16.2816" depth="4.104" valign="bottom" size="small">\today $\cdot$ Presented by Hongrui Cui</text>
+<text layer="title" matrix="1 0 0 1 -213 -164.704" pos="213 427" stroke="ac-lightblue" type="label" width="380.873" height="16.2816" depth="4.104" valign="bottom" size="small">\today $\cdot$ Presented by Hongrui Cui</text>
 <text matrix="1 0 0 1 -213 -131" pos="213 427" stroke="ac-lightblue" type="label" width="194.432" height="18.9952" depth="4.788" valign="baseline">Work-in-Progress</text>
 <text matrix="1 0 0 1 0 -17" pos="0 24" stroke="black" type="label" width="196.516" height="12.434" depth="3.08" valign="baseline" size="18">$^\star$ Some acknowledgments?</text>
 <text layer="BACKGROUND" matrix="1 0 0 1 0 480" pin="h" transformations="translations" pos="0 -12.08" stroke="black" type="minipage" width="920" height="70.9492" depth="57.12" valign="top" size="Large">Constant-Round Maliciously Secure Two-Party\\
@@ -5264,8 +5264,8 @@ z_k =&amp; \lsb(L_{k, z_k}) + \lsb(L_{k, 0})
 <layer name="beta"/>
 <layer name="gamma"/>
 <view layers="alpha" active="alpha"/>
-<view layers="alpha beta" active="gamma"/>
-<view layers="alpha beta gamma" active="beta"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
 <text layer="alpha" matrix="1 0 0 1 0 -64.4103" pin="h" transformations="translations" pos="0 524" stroke="black" type="minipage" width="920" height="21.2016" depth="7.252" valign="top" style="itemize">\item For each \qquad \qquad \qquad \qquad, checks $(z_i + \lambda_i) \cdot (z_j + \lambda_j) = (z_k + \lambda_k)$</text>
 <text matrix="1 0 0 1 0 -104.399" pin="h" transformations="translations" pos="0 446.306" stroke="black" type="minipage" width="920" height="59.108" depth="45.22" valign="top" style="center">$z_i z_j + z_i (s_j + r_j) + z_j (s_i + r_i) + (\hat s_k + \hat r_k) - z_k - (s_k + r_k) = 0$ \\
 $ \underbrace{z_i z_j + z_i r_j + z_j r_i + \hat r_k + z_k + r_k}_{c_B} = \underbrace{z_i s_j + z_j s_i + \hat s_k + s_k}_{c_A} $

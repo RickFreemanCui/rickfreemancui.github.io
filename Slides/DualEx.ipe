@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.26">
-<info created="D:20090429144355" modified="D:20230406221240" title="Actively Secure Half-Gates with Minimum Overhead under Duplex Networks" author="Hongrui Cui \and Xiao Wang \and Kang Yang \and Yu Yu" subject="MPC" keywords="MPC" numberpages="yes"/>
+<info created="D:20090429144355" modified="D:20230409174910" title="Actively Secure Half-Gates with Minimum Overhead under Duplex Networks" author="Hongrui Cui \and Xiao Wang \and Kang Yang \and Yu Yu" subject="MPC" keywords="MPC" numberpages="yes"/>
 <preamble>\usepackage[utf8]{inputenc}
 \usepackage[sfdefault,lf]{carlito}
 \usepackage{sfmath}
@@ -13,22 +13,17 @@
 \usepackage{pifont}
 \usepackage{tabularx}
 \usepackage[secparam=\kappa]{crypto/crypto}
+\usetikzlibrary{arrows,shapes.gates.logic.US,shapes.gates.logic.IEC,calc}
+\usepackage{tikzpeople}
 % settings %%%%%%%%%%%%%%%
 \newcommand{\hl}[1]{\textbf{\textcolor{kitred}{#1}}}
 \newcommand{\hll}[1]{{\color{kitred} {#1}}}
 \newcommand{\itemcolor}{ac-lightblue}
 \newcommand{\name}{Hongrui Cui}
 \newcommand{\prestitle}{Actively Secure Half-Gates with Minimum Overhead under Duplex Networks}
-  
-
-\newcommand{\nc}{\ensuremath{n_{\mathcal{C}}}}
-\newcommand{\kc}{\ensuremath{k_{\mathcal{C}}}}
-\newcommand{\dc}{\ensuremath{d_{\mathcal{C}}}}
-\newcommand{\tc}{\ensuremath{T_{\mathcal{C}}}}
-\newcommand{\gc}{\ensuremath{G_{\mathcal{C}}}}
-\newcommand{\hc}{\ensuremath{H_{\mathcal{C}}}}
-
 \tikzstyle{arrowlabel}=[rectangle, fill=white, fill opacity=.5, text opacity=1]
+
+
   </preamble>
 <bitmap id="1" width="2805" height="2806" BitsPerComponent="8" ColorSpace="DeviceRGBAlpha" Filter="FlateDecode" length="215192" alphaLength="139086" encoding="base64">
 eNrs3e1R40q3NuANGNsqW4CHoYCpqfenAyABJ0AAToAEHAAJEAAJkMAEMAGcrN5Vp+u4KGBm
@@ -9164,6 +9159,107 @@ h
 		\setlist[itemize,3]{label={\tikz{\fill[rounded corners=0.6pt, fill=\itemcolor] (0, 0) rectangle (0.15, 0.15) {};}}}
 	</preamble>
 </ipestyle>
+<ipestyle name="tikz-shapes">
+<textstyle name="ball" type="label" begin="\begin{tikzpicture}\node at (0,0) [circle,ball color=blue!50, text=white] {" end="};\end{tikzpicture}"/>
+<textstyle name="blue-white-round" type="label" begin="\begin{tikzpicture}\node at (0,0) [rounded rectangle, draw=black!50, top color=white, bottom color=blue!50] {" end="};\end{tikzpicture}"/>
+<textstyle name="green-disk" type="label" begin="\begin{tikzpicture}\node at (0,0) [circle, draw=green!75!black,fill=green!50] {" end="};\end{tikzpicture}"/>
+<textstyle name="purple-box" type="label" begin="\begin{tikzpicture}\node at (0,0) [rectangle, draw=purple!50,fill=purple!25] {" end="};\end{tikzpicture}"/>
+<textstyle name="red-ball" type="label" begin="\begin{tikzpicture}\node at (0,0) [circle,ball color=red!50!black, text=white] {" end="};\end{tikzpicture}"/>
+<textstyle name="tikz" type="label" begin="\begin{tikzpicture}" end="\end{tikzpicture}"/>
+<preamble>
+\usepackage{tikz}
+\usetikzlibrary{shapes.misc}
+</preamble>
+</ipestyle>
+<ipestyle name="COTAG-Preamble">
+<symbol name="Background">
+<group matrix="1 0 0 1 160 0">
+<text pos="0 2" stroke="black" type="minipage" width="760" height="6.779" depth="1.79" valign="baseline" size="10">\flushright \name \ $\cdot$ \prestitle</text>
+</group>
+</symbol>
+<preamble>
+\newcommand{\mylen}{{\ensuremath{\ceil{\ssp \log(\frac{2en}{\ssp}) + \frac{\log \ssp}{2}}}\xspace}}
+\newcommand{\totalgates}{{\ensuremath{\ell}\xspace}}
+\newcommand{\mac}{{\ensuremath{\sf M}\xspace}}
+\newcommand{\key}{{\ensuremath{\sf K}\xspace}}
+\newcommand{\XOR}{\ensuremath{\sf XOR}\xspace}
+\newcommand{\AND}{\ensuremath{\sf AND}\xspace}
+\newcommand{\LSB}{\ensuremath{{\sf lsb}}\xspace}
+\newcommand{\MSB}{\ensuremath{{\sf msb}}\xspace}
+\newcommand{\ftk}{\ensuremath{\FF_{2^\secparam}}\xspace}
+\newcommand{\ftv}{\ensuremath{\FF_2^\secparam}\xspace}
+\newcommand{\ftp}{\ensuremath{\FF_{2^\ssp}}\xspace}
+\newcommand{\hash}{\ensuremath{{\sf H}}\xspace}
+\newcommand{\sole}{\ensuremath{{\sf sVOLE}}\xspace}
+\newcommand{\shortsection}[1]{\smallskip\noindent{\bf #1}}
+\newcommand{\shortpart}[1]{\smallskip\noindent{\bf #1}}
+\newcommand{\ignore}[1]{}
+\newcommand{\inwire}{\ensuremath{\III_{\sf in}}\xspace}
+\newcommand{\open}{\ensuremath{{\sf Open}}\xspace}
+\newcommand{\bck}{\ensuremath{{\sf BatchCheck}}\xspace} 
+\newcommand{\ztest}{\ensuremath{{\sf CheckZero}}\xspace} 
+\newcommand{\auth}{\ensuremath{{\sf Auth}}\xspace} 
+\newcommand{\A}{\ensuremath{\mathsf{A}}\xspace}
+\newcommand{\B}{\ensuremath{\mathsf{B}}\xspace}
+\newcommand{\sd}{\ensuremath{{\sf seed}}\xspace}
+\newcommand{\prg}{\ensuremath{{\sf PRG}}\xspace}
+\newcommand{\prf}{\ensuremath{{\sf PRF}}\xspace}
+\newcommand{\mand}{\ensuremath{\CCC_\mathsf{and}}\xspace}
+\newcommand{\abort}{\ensuremath{{\sf abort}}\xspace}
+\newcommand{\continue}{\ensuremath{{\sf continue}}\xspace}
+\newcommand{\success}{\ensuremath{{\sf success}}\xspace}
+\newcommand{\true}{\ensuremath{{\sf true}}\xspace}
+\newcommand{\false}{\ensuremath{{\sf false}}\xspace}
+\newcommand{\gc}{\ensuremath{\mathcal{GC}}\xspace}
+\newcommand{\ml}{\ensuremath{{\sf L}}\xspace}
+\newcommand{\feval}{\ensuremath{{\sf GGM}}\xspace}
+\newcommand{\calpha}[1]{\ensuremath{\bar{\alpha}_{#1}}\xspace}
+\newcommand{\etal}{et al.\@\xspace}
+\newcommand{\citdual}{\cite{CCS:BCGIKRS19}\xspace}
+\newcommand{\citprim}{\cite{CCS:SGRR19}\xspace}
+
+\newcommand{\dmac}{{\ensuremath{\sf D}\xspace}}
+\newcommand{\cskey}[1][]{\ifthenelse{\isempty{#1}}{{\Delta}}{{\Delta}_{#1}}}
+\newcommand{\sskey}{\ensuremath{\Gamma \xspace}}
+\newcommand{\funcfont}{\sf}
+\newcommand{\cotinit}{\ensuremath{{\funcfont init}}\xspace}
+\newcommand{\cotgen}{\ensuremath{{\funcfont gen}}\xspace}
+\newcommand{\cotextend}{\ensuremath{{\funcfont extend}}\xspace}
+\newcommand{\cotoutput}{\ensuremath{{\funcfont output}}\xspace}
+\newcommand{\cotmult}{\ensuremath{{\funcfont mult}}\xspace}
+\newcommand{\cmdeq}{\ensuremath{{\funcfont eq}}\xspace}
+\newcommand{\cmdcheckzero}{\ensuremath{{\funcfont checkzero}}\xspace}
+\newcommand{\cmdprove}{\ensuremath{{\funcfont prove}}\xspace}
+\newcommand{\cbit}{\ensuremath{\Lambda}}
+
+\newcommand{\dealinit}{\cotinit}
+\newcommand{\dealskext}{\cotextend}
+\newcommand{\dealskinv}{\ensuremath{{\funcfont inverse}}\xspace}
+\newcommand{\dealdkext}{\ensuremath{{\funcfont dual extend}}\xspace}
+\newcommand{\dealdkmult}{\ensuremath{{\funcfont dual mult}}\xspace}
+\newcommand{\dealprove}{\ensuremath{{\funcfont dvzk}}\xspace}
+\newcommand{\dealskcheckeq}{\cmdeq}
+
+\newcommand{\LPNNoiseSamp}{\ensuremath{\mathcal{D}}}
+\newcommand{\LPNMatrixSamp}{\ensuremath{\mathcal{M}}}
+\newcommand{\matcp}{\ensuremath{{\bf M}}}
+
+\newcommand{\citeagsc}{\cite{C:DILO22}\xspace}
+
+\newcommand{\fix}{\ensuremath{{\funcfont Fix}}\xspace}
+\newcommand{\bittofield}{\ensuremath{{\funcfont B2F}}\xspace}
+\newcommand{\fieldtobit}{\ensuremath{{\funcfont F2B}}\xspace}
+\newcommand{\checkzero}{\ensuremath{{\funcfont CheckZero}}\xspace}
+\newcommand{\checkzerotwo}{\ensuremath{{\funcfont CheckZero2}}\xspace}
+\newcommand{\inverse}{\ensuremath{{\funcfont Invert}}\xspace}
+\newcommand{\checkio}{\ensuremath{{\funcfont EQCheck}}\xspace}
+\newcommand{\convert}{\ensuremath{{\funcfont Convert1}_{[\cdot]\to\bsh{\cdot}}}\xspace}
+\newcommand{\converttwo}{\ensuremath{{\funcfont Convert2}_{[\cdot]\to\bsh{\cdot}}}\xspace}
+\newcommand{\extbit}{\ensuremath{{\funcfont ExtBit}}\xspace}
+\newcommand{\SA}{\Sim[\A]}
+\newcommand{\SB}{\Sim[\B]}
+	</preamble>
+</ipestyle>
 <page>
 <layer name="title"/>
 <layer name="BACKGROUND"/>
@@ -10301,7 +10397,132 @@ h
 </group>
 </group>
 </page>
-<page title="Introduction">
+<page title="Semi-Honest Garbled Circuit">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<group layer="alpha">
+<path stroke="black" fill="KITblue15">
+64 320 m
+264 320 l
+8 0 0 -8 264 312 272 312 a
+272 181.919 l
+72 181.919 l
+8 0 0 -8 72 189.919 64 189.919 a
+h
+</path>
+</group>
+<group matrix="1 0 0 1 64 40">
+<text matrix="1 0 0 1 0 -40" transformations="translations" pos="96 480" stroke="black" type="label" width="58.5576" height="35.388" depth="0" valign="baseline" size="small" style="tikz">\node[and gate US, draw] at (0,0) (and1) {};
+\draw ($(and1.input 1) - (0.1,0)$) -- (and1.input 1);
+\draw ($(and1.input 2) - (0.1,0)$) -- (and1.input 2);
+\draw ($(and1.output) + (0.1,0)$) -- (and1.output);</text>
+<text transformations="translations" pos="88 464" stroke="black" type="label" width="5.4864" height="16.4496" depth="0" valign="baseline" size="small">$i$</text>
+<text matrix="1 0 0 1 0 -24" transformations="translations" pos="88 464" stroke="black" type="label" width="5.7216" height="16.4664" depth="4.08" valign="baseline" size="small" style="math">j</text>
+<text matrix="1 0 0 1 -8 -8" transformations="translations" pos="168 456" stroke="black" type="label" width="11.1264" height="16.4496" depth="0" valign="baseline" size="small">$k$</text>
+</group>
+<text matrix="1 0 0 1 -144 -56" transformations="translations" pos="160 480" stroke="black" type="label" width="128.086" height="91.2864" depth="79.512" valign="baseline" size="small">\begin{tabular}{c c | c}
+\toprule
+i &amp; j &amp; k \\
+\midrule
+0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+1 &amp; 0 &amp; 0 \\
+1 &amp; 1 &amp; 1 \\
+\bottomrule
+\end{tabular}</text>
+<text matrix="1 0 0 1 80 -56" transformations="translations" pos="160 480" stroke="black" type="label" width="318.989" height="93.7728" depth="81.984" valign="baseline" size="small">\begin{tabular}{c c | c}
+\toprule
+$\Lambda_i$ &amp; $\Lambda_j$ &amp; ciphertext \\ \midrule
+$\lambda_i$ &amp; $\lambda_j$ &amp; $\hash( \ml_{i, \lambda_i}, \ml_{j, \lambda_j} ) \xor \ml_{k, \lambda_k}$ \\
+$\lambda_i$ &amp; $\bar{\lambda}_j $ &amp; $\hash( \ml_{i, \lambda_i}, \ml_{j, \bar{\lambda}_j} ) \xor \ml_{k, \lambda_k}$ \\
+$\bar{\lambda}_i$ &amp; $\lambda_j$ &amp; $\hash( \ml_{i, \bar{\lambda}_i}, \ml_{j, \lambda_j} ) \xor \ml_{k, \lambda_k}$ \\
+$\bar{\lambda}_i$ &amp; $\bar{\lambda}_j$ &amp; $\hash( \ml_{i, \bar{\lambda}_i}, \ml_{j, \bar{\lambda}_j} ) \xor \ml_{k, \bar{\lambda}_k}$ \\
+\bottomrule
+\end{tabular}</text>
+<text matrix="1 0 0 1 -264 72" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
+<text matrix="1 0 0 1 392 72" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small" style="tikz">\node[bob] {};</text>
+<path matrix="1 0 0 1 -8 24" stroke="black" arrow="normal/normal">
+160 352 m
+240 352 l
+</path>
+<text matrix="1 0 0 1 -8 16" transformations="translations" pos="160 448" stroke="black" type="minipage" width="80" height="44.3256" depth="32.424" valign="top" size="small">Encrypt AND gate</text>
+<text matrix="1 0 0 1 -24 88" transformations="translations" pos="96 224" stroke="black" type="minipage" width="192" height="29.364" depth="17.448" valign="top" size="small">Sample $\{ \lambda_w, \ml_{w, 0} \}$ and $\Delta$</text>
+<text matrix="1 0 0 1 -32 112" transformations="translations" pos="104 128" stroke="black" type="minipage" width="192" height="31.0008" depth="19.08" valign="top" size="small">Free-XOR: $\ml_{w,0} \xor \ml_{w, 1} = \Delta$</text>
+<path stroke="black" arrow="normal/normal">
+264 304 m
+352 304 l
+352 336 l
+</path>
+<path matrix="1 0 0 1 0 64" stroke="black" arrow="normal/normal">
+264 208 m
+512 208 l
+</path>
+<path stroke="black" arrow="normal/normal">
+672 272 m
+576 272 l
+</path>
+<path stroke="black" arrow="normal/normal">
+544 256 m
+544 240 l
+680 240 l
+</path>
+<path stroke="black">
+659.415 294.613 m
+659.415 244.024 l
+659.415 239.024
+654.415 234.024
+649.415 234.024 c
+386 234.024 l
+381 234.024
+376 239.024
+376 244.024 c
+376 294.613 l
+376 299.613
+381 304.613
+386 304.613 c
+649.415 304.613 l
+654.415 304.613
+659.415 299.613
+659.415 294.613 c
+h
+</path>
+<text matrix="1 0 0 1 -64 32" transformations="translations" pos="576 224" stroke="black" type="label" width="66.4488" height="37.0848" depth="0" valign="baseline" size="small" style="blue-white-round">\Func[OT]</text>
+<text matrix="1 0 0 1 16 64" transformations="translations" pos="368 216" stroke="black" type="label" width="112.663" height="16.6128" depth="8.352" valign="baseline" size="small">$\ml_{w, \lambda_w}, \ml_{w,  \bar{\lambda}_w }$</text>
+<text transformations="translations" pos="600 280" stroke="black" type="label" width="22.9056" height="11.5176" depth="3.576" valign="baseline" size="small">$z_w$</text>
+<text transformations="translations" pos="600 248" stroke="black" type="label" width="51.4152" height="16.6056" depth="5.976" valign="baseline" size="small">$\ml_{w, \cbit_w}$</text>
+<group>
+<path matrix="1 0 0 1 -184 -72" stroke="black" fill="white">
+666.322 318.615 m
+666.322 302.424 l
+666.322 297.424
+661.322 292.424
+656.322 292.424 c
+554 292.424 l
+549 292.424
+544 297.424
+544 302.424 c
+544 318.615 l
+544 323.615
+549 328.615
+554 328.615 c
+656.322 328.615 l
+661.322 328.615
+666.322 323.615
+666.322 318.615 c
+h
+</path>
+<text matrix="1 0 0 1 -232 -48" transformations="translations" pos="600 280" stroke="black" type="label" width="106.322" height="16.6152" depth="3.576" valign="baseline" size="small"> for $w \in \III_\B$</text>
+</group>
+</page>
+<page title="AG from Simple Correlations">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+</page>
+<page title="Optimizing the Compressed Preprocessing Protocol">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+</page>
+<page title="Optimizing the One-way Communication Via Dual Execution">
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
 </page>
