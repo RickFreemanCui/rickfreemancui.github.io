@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.26">
-<info created="D:20090429144355" modified="D:20230409174910" title="Actively Secure Half-Gates with Minimum Overhead under Duplex Networks" author="Hongrui Cui \and Xiao Wang \and Kang Yang \and Yu Yu" subject="MPC" keywords="MPC" numberpages="yes"/>
+<info created="D:20090429144355" modified="D:20230410212638" title="Actively Secure Half-Gates with Minimum Overhead under Duplex Networks" author="Hongrui Cui \and Xiao Wang \and Kang Yang \and Yu Yu" subject="MPC" keywords="MPC" numberpages="yes"/>
 <preamble>\usepackage[utf8]{inputenc}
 \usepackage[sfdefault,lf]{carlito}
 \usepackage{sfmath}
@@ -9178,6 +9178,7 @@ h
 </group>
 </symbol>
 <preamble>
+\usepackage{multicol,multirow}
 \newcommand{\mylen}{{\ensuremath{\ceil{\ssp \log(\frac{2en}{\ssp}) + \frac{\log \ssp}{2}}}\xspace}}
 \newcommand{\totalgates}{{\ensuremath{\ell}\xspace}}
 \newcommand{\mac}{{\ensuremath{\sf M}\xspace}}
@@ -10397,21 +10398,78 @@ h
 </group>
 </group>
 </page>
-<page title="Semi-Honest Garbled Circuit">
+<page title="Our Contributions">
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<group layer="alpha">
-<path stroke="black" fill="KITblue15">
-64 320 m
-264 320 l
-8 0 0 -8 264 312 272 312 a
-272 181.919 l
-72 181.919 l
-8 0 0 -8 72 189.919 64 189.919 a
+<text layer="alpha" pin="h" transformations="translations" pos="0 524" stroke="black" type="minipage" width="920" height="16.2696" depth="4.296" valign="top" size="small" style="itemize">\item Authenticated garbling with one-way comm. as small as semi-honest half-gates</text>
+<text matrix="1 0 0 1 -160 104" transformations="translations" pos="192 240" stroke="black" type="label" width="825.946" height="146.369" depth="134.736" valign="baseline" size="small">\begin{tabular}{c@{\hskip 10pt}c@{\hskip 10pt}cc@{\hskip 10pt}c}
+    \toprule
+    \multirow{2}{*}{2PC} &amp; \multicolumn{2}{c}{Rounds} &amp; \multicolumn{2}{c}{Communication per AND gate} \\
+    \cmidrule(lr){2-3} \cmidrule(lr){4-5} 
+    &amp; Prep. &amp; Online &amp; one-way (bits) &amp; two-way (bits) \\ \midrule
+    Half-gates &amp; 1 &amp; 2  &amp; $2\csp$ &amp; $2\csp$ \\ \midrule
+    HSS-PCG &amp;  8 &amp; 2 &amp; $8\csp + 11$ ($4.04 \times$) &amp; $16\csp + 22$ ($8.09 \times$) \\
+    KRRW-PCG &amp; 4 &amp; 4 &amp; $5\csp + 7$ ($2.53 \times$) &amp; $8\csp + 14$ ($4.05 \times$) \\
+    DILO &amp; 7 &amp; 2 &amp; $2\csp + 8\ssp + 1$ ($2.25 \times$) &amp; $2\csp + 8\ssp + 5$ ($2.27 \times$) \\
+    This work &amp; 8 &amp; 3 &amp; $2\csp + 5$ ($\bf \approx 1 \times$) &amp; $4\csp + 10$ ($2.04 \times$) \\ 
+    This work+DILO &amp; 8 &amp; 2 &amp; $2\secparam + 3\rho + 2$ ($1.48 \times$) &amp; $2\secparam + 3\rho + 4$ ($\bf \approx 1.48 \times$)\\
+    \bottomrule   
+    \end{tabular}</text>
+<text matrix="1 0 0 1 -194.61 0" transformations="translations" pos="224 144" stroke="black" type="label" width="77.8104" height="37.0848" depth="0" valign="baseline" size="small" style="blue-white-round">\Func[COT]</text>
+<text matrix="1 0 0 1 -216 -24" transformations="translations" pos="304 104" stroke="black" type="label" width="88.5912" height="37.0848" depth="0" valign="baseline" size="small" style="blue-white-round">\Func[DVZK]</text>
+<group matrix="1 0 0 1 -96 -64">
+<group>
+<path stroke="black" fill="KITred15">
+288 128.615 m
+373.208 128.615 l
+8 0 0 -8 373.208 120.615 381.208 120.615 a
+381.208 92.424 l
+296 92.424 l
+8 0 0 -8 296 100.424 288 100.424 a
 h
 </path>
 </group>
-<group matrix="1 0 0 1 64 40">
+<text matrix="1 0 0 1 -8 0" transformations="translations" pos="304 104" stroke="black" type="label" width="77.208" height="16.6152" depth="3.576" valign="baseline" size="small">\Prot[DualEx]</text>
+</group>
+<group matrix="1 0 0 1 -104 112">
+<group>
+<path stroke="black" fill="KITred15">
+320 64.6056 m
+382.108 64.6056 l
+8 0 0 -8 382.108 56.6056 390.108 56.6056 a
+390.108 25.16 l
+328 25.16 l
+8 0 0 -8 328 33.16 320 33.16 a
+h
+</path>
+</group>
+<text matrix="1 0 0 1 24 -64" transformations="translations" pos="304 104" stroke="black" type="label" width="54.108" height="16.6056" depth="6.84" valign="baseline" size="small">\Prot[cpre]</text>
+</group>
+<path matrix="1 0 0 1 -104 16" stroke="black" arrow="normal/normal">
+168 128 m
+168 80 l
+192 80 l
+</path>
+<path matrix="1 0 0 1 -104 16" stroke="black" arrow="normal/normal">
+208 144 m
+320 144 l
+</path>
+<path matrix="1 0 0 1 -104 16" stroke="black" arrow="normal/normal">
+280 80 m
+352 80 l
+352 120 l
+</path>
+<text matrix="1 0 0 1 -112 -16" transformations="translations" pos="408 168" stroke="black" type="label" width="504.216" height="16.6056" depth="6.84" valign="baseline" size="small">Contribution 1: \Prot[cpre] with 2-bit comm.~per AND gate</text>
+<path stroke="black" arrow="normal/normal">
+264 136 m
+264 64 l
+</path>
+<text matrix="1 0 0 1 -112 -128" transformations="translations" pos="408 168" stroke="black" type="label" width="538.579" height="16.4616" depth="4.104" valign="baseline" size="small">Contribution 2: Consistency checking via dual execution</text>
+</page>
+<page title="Semi-Honest Garbled Circuit">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<group layer="alpha" matrix="1 0 0 1 64 24">
 <text matrix="1 0 0 1 0 -40" transformations="translations" pos="96 480" stroke="black" type="label" width="58.5576" height="35.388" depth="0" valign="baseline" size="small" style="tikz">\node[and gate US, draw] at (0,0) (and1) {};
 \draw ($(and1.input 1) - (0.1,0)$) -- (and1.input 1);
 \draw ($(and1.input 2) - (0.1,0)$) -- (and1.input 2);
@@ -10439,34 +10497,33 @@ $\bar{\lambda}_i$ &amp; $\lambda_j$ &amp; $\hash( \ml_{i, \bar{\lambda}_i}, \ml_
 $\bar{\lambda}_i$ &amp; $\bar{\lambda}_j$ &amp; $\hash( \ml_{i, \bar{\lambda}_i}, \ml_{j, \bar{\lambda}_j} ) \xor \ml_{k, \bar{\lambda}_k}$ \\
 \bottomrule
 \end{tabular}</text>
-<text matrix="1 0 0 1 -264 72" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
-<text matrix="1 0 0 1 392 72" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small" style="tikz">\node[bob] {};</text>
-<path matrix="1 0 0 1 -8 24" stroke="black" arrow="normal/normal">
+<text matrix="1 0 0 1 -264 8" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
+<text matrix="1 0 0 1 392 0" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small" style="tikz">\node[bob] {};</text>
+<path matrix="1 0 0 1 -8 8" stroke="black" arrow="normal/normal">
 160 352 m
 240 352 l
 </path>
-<text matrix="1 0 0 1 -8 16" transformations="translations" pos="160 448" stroke="black" type="minipage" width="80" height="44.3256" depth="32.424" valign="top" size="small">Encrypt AND gate</text>
-<text matrix="1 0 0 1 -24 88" transformations="translations" pos="96 224" stroke="black" type="minipage" width="192" height="29.364" depth="17.448" valign="top" size="small">Sample $\{ \lambda_w, \ml_{w, 0} \}$ and $\Delta$</text>
-<text matrix="1 0 0 1 -32 112" transformations="translations" pos="104 128" stroke="black" type="minipage" width="192" height="31.0008" depth="19.08" valign="top" size="small">Free-XOR: $\ml_{w,0} \xor \ml_{w, 1} = \Delta$</text>
+<text matrix="1 0 0 1 -8 -16" transformations="translations" pos="160 448" stroke="black" type="minipage" width="80" height="28.0296" depth="16.104" valign="top" size="small" style="center">Encrypt \&amp; Sort</text>
 <path stroke="black" arrow="normal/normal">
-264 304 m
-352 304 l
-352 336 l
+224 256 m
+224 304 l
+336 304 l
+336 336 l
 </path>
-<path matrix="1 0 0 1 0 64" stroke="black" arrow="normal/normal">
+<path matrix="1 0 0 1 0 -8" stroke="black" arrow="normal/normal">
 264 208 m
 512 208 l
 </path>
-<path stroke="black" arrow="normal/normal">
+<path matrix="1 0 0 1 0 -72" stroke="black" arrow="normal/normal">
 672 272 m
 576 272 l
 </path>
-<path stroke="black" arrow="normal/normal">
+<path matrix="1 0 0 1 0 -72" stroke="black" arrow="normal/normal">
 544 256 m
 544 240 l
 680 240 l
 </path>
-<path stroke="black">
+<path matrix="1 0 0 1 0 -72" stroke="black">
 659.415 294.613 m
 659.415 244.024 l
 659.415 239.024
@@ -10486,11 +10543,11 @@ $\bar{\lambda}_i$ &amp; $\bar{\lambda}_j$ &amp; $\hash( \ml_{i, \bar{\lambda}_i}
 659.415 294.613 c
 h
 </path>
-<text matrix="1 0 0 1 -64 32" transformations="translations" pos="576 224" stroke="black" type="label" width="66.4488" height="37.0848" depth="0" valign="baseline" size="small" style="blue-white-round">\Func[OT]</text>
-<text matrix="1 0 0 1 16 64" transformations="translations" pos="368 216" stroke="black" type="label" width="112.663" height="16.6128" depth="8.352" valign="baseline" size="small">$\ml_{w, \lambda_w}, \ml_{w,  \bar{\lambda}_w }$</text>
-<text transformations="translations" pos="600 280" stroke="black" type="label" width="22.9056" height="11.5176" depth="3.576" valign="baseline" size="small">$z_w$</text>
-<text transformations="translations" pos="600 248" stroke="black" type="label" width="51.4152" height="16.6056" depth="5.976" valign="baseline" size="small">$\ml_{w, \cbit_w}$</text>
-<group>
+<text matrix="1 0 0 1 -64 -40" transformations="translations" pos="576 224" stroke="black" type="label" width="66.4488" height="37.0848" depth="0" valign="baseline" size="small" style="blue-white-round">\Func[OT]</text>
+<text matrix="1 0 0 1 16 -8" transformations="translations" pos="368 216" stroke="black" type="label" width="112.663" height="16.6128" depth="8.352" valign="baseline" size="small">$\ml_{w, \lambda_w}, \ml_{w,  \bar{\lambda}_w }$</text>
+<text matrix="1 0 0 1 0 -72" transformations="translations" pos="600 280" stroke="black" type="label" width="22.9056" height="11.5176" depth="3.576" valign="baseline" size="small">$z_w$</text>
+<text matrix="1 0 0 1 0 -72" transformations="translations" pos="600 248" stroke="black" type="label" width="51.4152" height="16.6056" depth="5.976" valign="baseline" size="small">$\ml_{w, \cbit_w}$</text>
+<group matrix="1 0 0 1 0 -72">
 <path matrix="1 0 0 1 -184 -72" stroke="black" fill="white">
 666.322 318.615 m
 666.322 302.424 l
@@ -10513,6 +10570,98 @@ h
 </path>
 <text matrix="1 0 0 1 -232 -48" transformations="translations" pos="600 280" stroke="black" type="label" width="106.322" height="16.6152" depth="3.576" valign="baseline" size="small"> for $w \in \III_\B$</text>
 </group>
+<path matrix="1 0 0 1 0 -72" stroke="black" arrow="normal/normal">
+264 200 m
+680 200 l
+</path>
+<text matrix="1 0 0 1 40 -64" transformations="translations" pos="480 200" stroke="black" type="label" width="139.14" height="16.6152" depth="3.576" valign="baseline" size="small">$\lambda_w$ for $w \in \III_\B$</text>
+<text matrix="1 0 0 1 -16 -72" transformations="translations" pos="480 176" stroke="black" type="label" width="201.168" height="16.6056" depth="5.976" valign="baseline" size="small">$\cbit_w, \ml_{w, \cbit_w}$ for $w \in \III_\A$</text>
+<path stroke="black" arrow="normal/normal">
+696 240 m
+696 384 l
+560 384 l
+</path>
+<text matrix="1 0 0 1 144 -176" transformations="translations" pos="568 424" stroke="black" type="minipage" width="118.24" height="31.1784" depth="19.224" valign="baseline" size="small" style="center">Decrypt $(\cbit_i, \cbit_j)$ row</text>
+<group matrix="1 0 0 1 0 -64">
+<group>
+<path stroke="black" fill="KITblue15">
+64 320 m
+264 320 l
+8 0 0 -8 264 312 272 312 a
+272 181.919 l
+72 181.919 l
+8 0 0 -8 72 189.919 64 189.919 a
+h
+</path>
+</group>
+<text matrix="1 0 0 1 -24 88" transformations="translations" pos="96 224" stroke="black" type="minipage" width="192" height="29.364" depth="17.448" valign="top" size="small">Sample $\{ \lambda_w, \ml_{w, 0} \}$ and $\Delta$</text>
+<text matrix="1 0 0 1 -40 120" transformations="translations" pos="104 128" stroke="black" type="minipage" width="192" height="31.5936" depth="19.68" valign="top" size="small" style="itemize">\item $\ml_{w,0} \xor \ml_{w, 1} = \Delta$
+\item $\LSB(\Delta) = 1$</text>
+</group>
+<text matrix="1 0 0 1 136 -248" transformations="translations" pos="576 416" stroke="black" type="minipage" width="200.571" height="31.5936" depth="19.68" valign="baseline" size="small" style="center">Get $\ml_{k, \cbit_k}$,
+$\cbit_k = \LSB(\ml_{k, \cbit_k}) \xor c_k$</text>
+<group matrix="1 0 0 1 0 -8">
+<group>
+<path stroke="black" fill="KITred15">
+576 464 m
+888 464 l
+8 0 0 -8 888 456 896 456 a
+896 423.611 l
+584 423.611 l
+8 0 0 -8 584 431.611 576 431.611 a
+h
+</path>
+</group>
+<text matrix="1 0 0 1 -24 -56" transformations="translations" pos="608 512" stroke="black" type="minipage" width="304" height="18.1728" depth="6.216" valign="top" size="small">$\cbit_k := \lambda_k \xor (\cbit_i \xor \lambda_i) \cdot (\cbit_j \xor \lambda_j) $</text>
+</group>
+<path stroke="black" arrow="normal/normal">
+352 336 m
+352 304 l
+680 304 l
+</path>
+<text matrix="1 0 0 1 -80 -208" transformations="translations" pos="528 520" stroke="black" type="label" width="138.283" height="17.9352" depth="5.976" valign="baseline" size="small">$c_k := \LSB(\ml_{k, 0} )$</text>
+<path matrix="1 0 0 1 0 16" stroke="black" dash="dense dashed" pen="heavier">
+0 272 m
+920 272 l
+</path>
+<path stroke="black" arrow="normal/normal">
+560 400 m
+864 400 l
+864 200 l
+</path>
+<path matrix="1 0 0 1 0 -176" stroke="black" dash="dense dashed" pen="heavier">
+0 272 m
+920 272 l
+</path>
+<path stroke="black" arrow="normal/normal">
+224 120 m
+224 64 l
+680 64 l
+</path>
+<text matrix="1 0 0 1 64 -24" transformations="translations" pos="464 64" stroke="black" type="label" width="132.185" height="16.6152" depth="3.576" valign="baseline" size="small">$\lambda_w$ for $w \in \OOO$</text>
+<group>
+<group>
+<path stroke="black" fill="KITred15">
+696 88 m
+896 88 l
+8 0 0 -8 896 80 904 80 a
+904 24.06 l
+704 24.06 l
+8 0 0 -8 704 32.06 696 32.06 a
+h
+</path>
+</group>
+<text matrix="1 0 0 1 0 8" transformations="translations" pos="704 72" stroke="black" type="minipage" width="192" height="29.94" depth="18" valign="top" size="small" style="center">Get output \\
+$z_w = \cbit_w \xor \lambda_w$</text>
+</group>
+<path stroke="black" arrow="normal/normal">
+864 144 m
+864 88 l
+</path>
+</page>
+<page title="Authenticated Garbling = Distributed Garbling + Checking">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
 </page>
 <page title="AG from Simple Correlations">
 <layer name="alpha"/>
