@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.26">
-<info created="D:20090429144355" modified="D:20230413212219" title="Actively Secure Half-Gates with Minimum Overhead under Duplex Networks" author="Hongrui Cui \and Xiao Wang \and Kang Yang \and Yu Yu" subject="MPC" keywords="MPC" numberpages="yes"/>
+<info created="D:20090429144355" modified="D:20230413232958" title="Actively Secure Half-Gates with Minimum Overhead under Duplex Networks" author="Hongrui Cui \and Xiao Wang \and Kang Yang \and Yu Yu" subject="MPC" keywords="MPC" numberpages="yes"/>
 <preamble>\usepackage[utf8]{inputenc}
 \usepackage[sfdefault,lf]{carlito}
 \usepackage{sfmath}
@@ -8295,6 +8295,16 @@ k/9c4GWIzez046Hd8aud3y6sduv77s/Ala9twJQp0vloAwxf3yCidv1HKbR1mxU8z30QYq2N
 1lGctAF6zdlUrUrbXHioYI92UXNk+ezhjLvtolj/NMLDNadx0tG1IHb4iVp6VCg9ll3UPYqd
 mfHmxs/3e/7XgkOFtD+PhJ+CY/wXihu1XA==
 </bitmap>
+<ipestyle name="QuickStyles">
+<arrowsize name="QuickFArrow1" value="15"/>
+<arrowsize name="QuickRArrow1" value="15"/>
+<color name="QuickColor1" value="0"/>
+<color name="QuickFill1" value="1"/>
+<dashstyle name="QuickDash1" value="[]0"/>
+<opacity name="QuickFlag1" value="5"/>
+<opacity name="QuickOpacity1" value="1"/>
+<pen name="QuickWidth1" value="1.2"/>
+</ipestyle>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -11031,7 +11041,7 @@ h
 824 160 m
 672 160 l
 </path>
-<text matrix="1 0 0 1 32 -24" transformations="translations" pos="688 168" stroke="black" type="label" width="47.5056" height="17.9352" depth="5.976" valign="baseline" size="small">$ \{ \cbit_k \} $</text>
+<text matrix="1 0 0 1 32 -24" transformations="translations" pos="688 168" stroke="black" type="label" width="47.5056" height="17.9352" depth="5.976" valign="baseline" size="small" style="math"> \{ \cbit_k \} </text>
 <text matrix="1 0 0 1 0 16" transformations="translations" pos="672 104" stroke="black" type="minipage" width="160" height="47.1864" depth="35.304" valign="top" size="small" style="center">Defines $[e_k]$ \\
 and checks $\sum_k \chi^k e_k = 0$</text>
 </page>
@@ -11099,12 +11109,12 @@ h
 </path>
 <text matrix="1 0 0 1 232 48" transformations="translations" pos="144 304" stroke="black" type="label" width="70.932" height="16.6152" depth="3.576" valign="baseline" size="small">\Func[DVZK]</text>
 </group>
-<text matrix="1 0 0 1 40 -8" transformations="translations" pos="344 344" stroke="black" type="label" width="50.3016" height="17.9352" depth="5.976" valign="baseline" size="small">$[\vecu], \CCC$</text>
+<text matrix="1 0 0 1 40 -8" transformations="translations" pos="344 344" stroke="black" type="label" width="50.3016" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">[\vecu], \CCC</text>
 <path matrix="1 0 0 1 0 -8" stroke="black" arrow="normal/normal">
 456 312 m
 512 312 l
 </path>
-<text matrix="1 0 0 1 56 0" transformations="translations" pos="464 296" stroke="black" type="label" width="100.26" height="17.9352" depth="5.976" valign="baseline" size="small">$\CCC(\vecu) = 0?$</text>
+<text matrix="1 0 0 1 56 0" transformations="translations" pos="464 296" stroke="black" type="label" width="100.26" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\CCC(\vecu) = 0?</text>
 </group>
 <text matrix="1 0 0 1 0 -80" pin="h" transformations="translations" pos="0 223.384" stroke="black" type="minipage" width="920" height="57.7416" depth="45.888" valign="top" size="small" style="itemize">\item In DILO, those PCG correlations are called ``simple correlations&apos;&apos;
 \item Unfortunately, we still don&apos;t have a direct $\Func[pre]$ PCG construction
@@ -11112,7 +11122,7 @@ h
 <group>
 <group matrix="1 0 0 1 56 16">
 <text matrix="1 0 0 1 -596.889 -51.448" transformations="translations" pos="747.16 383.846" stroke="black" type="label" width="38.5224" height="16.6056" depth="1.992" valign="baseline" size="small" style="math"> \times \Delta</text>
-<text matrix="1 0 0 1 -634.344 -53.8244" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" size="small" style="math">=</text>
+<text matrix="1 0 0 1 -634.344 -53.8244" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="21.6972" height="10.3208" depth="0" valign="baseline" size="small" style="math">=</text>
 <text matrix="1 0 0 1 -588.706 -53.8266" transformations="translations" pos="685.392 387.553" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">+</text>
 <group>
 <path matrix="1 0 0 1 -561.672 -47.7969" stroke="black" pen="heavier">
@@ -11122,7 +11132,7 @@ h
 601.772 472.703 l
 h
 </path>
-<text matrix="1 0 0 1 -569.558 -51.749" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="20.9208" height="16.6032" depth="0" valign="baseline" size="small">$\mac$</text>
+<text matrix="1 0 0 1 -569.558 -51.749" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="20.9208" height="16.6032" depth="0" valign="baseline" size="small" style="math">\mac</text>
 </group>
 <group matrix="1 0 0 1 -16 0">
 <path matrix="1 0 0 1 -492.338 -47.6873" stroke="black" pen="heavier">
@@ -11145,7 +11155,7 @@ h
 <text matrix="1 0 0 1 -426.844 -48.9752" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="12.8304" height="11.4432" depth="0.168" valign="baseline" size="small">\vecu</text>
 </group>
 </group>
-<text matrix="1 0 0 1 -8 -8" transformations="translations" pos="184 256" stroke="black" type="label" width="24.4128" height="20.2944" depth="8.616" valign="baseline" size="small">$\FF_p^\ell$</text>
+<text matrix="1 0 0 1 -8 -8" transformations="translations" pos="184 256" stroke="black" type="label" width="24.4128" height="20.2944" depth="8.616" valign="baseline" size="small" style="math">\FF_p^\ell</text>
 <text matrix="1 0 0 1 -56 -8" transformations="translations" pos="184 256" stroke="black" type="label" width="24.4128" height="20.2944" depth="8.616" valign="baseline" size="small" style="math">\FF_q^\ell</text>
 <text matrix="1 0 0 1 -112 -8" transformations="translations" pos="184 256" stroke="black" type="label" width="24.4128" height="20.2944" depth="8.616" valign="baseline" size="small" style="math">\FF_q^\ell</text>
 <text matrix="1 0 0 1 40 64" transformations="translations" pos="184 256" stroke="black" type="label" width="24.4128" height="16.4928" depth="6.288" valign="baseline" size="small" style="math">\FF_q</text>
@@ -11195,8 +11205,8 @@ h
 432 344 m
 560 344 l
 </path>
-<text matrix="1 0 0 1 8 8" transformations="translations" pos="432 352" stroke="black" type="label" width="102.211" height="16.6056" depth="1.992" valign="baseline" size="small">$\delta := x \xor u$</text>
-<text matrix="1 0 0 1 -120 -40" transformations="translations" pos="656 360" stroke="black" type="label" width="200.244" height="17.9352" depth="5.976" valign="baseline" size="small">$\key[x] := \key[u] \xor \delta \cdot \Delta$</text>
+<text matrix="1 0 0 1 8 8" transformations="translations" pos="432 352" stroke="black" type="label" width="102.211" height="16.6056" depth="1.992" valign="baseline" size="small" style="math">\delta := x \xor u</text>
+<text matrix="1 0 0 1 -120 -40" transformations="translations" pos="656 360" stroke="black" type="label" width="200.244" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\key[x] := \key[u] \xor \delta \cdot \Delta</text>
 <text matrix="1 0 0 1 -8 8" transformations="translations" pos="336 328" stroke="black" type="minipage" width="144" height="17.9352" depth="5.976" valign="top" size="small">$\mac[x] := \mac[u]$</text>
 </group>
 </page>
@@ -11232,7 +11242,7 @@ h
 56 464 m
 192 464 l
 </path>
-<text matrix="1 0 0 1 0 -8" transformations="translations" pos="64 472" stroke="black" type="label" width="108.132" height="17.9352" depth="5.976" valign="baseline" size="small">$\{ G_{k, 0}, G_{k, 1} \}$</text>
+<text matrix="1 0 0 1 0 -8" transformations="translations" pos="64 472" stroke="black" type="label" width="108.132" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\{ G_{k, 0}, G_{k, 1} \}</text>
 <text matrix="1 0 0 1 -40 0" transformations="translations" pos="64 432" stroke="black" type="label" width="179.376" height="16.4664" depth="3.84" valign="baseline" size="small">Possibly corrupted</text>
 <group>
 <group>
@@ -11392,7 +11402,7 @@ h
 </group>
 </group>
 <group>
-<text matrix="1 0 0 1 51.3694 -182.443" transformations="translations" pos="314.125 261.932" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" style="math">=</text>
+<text matrix="1 0 0 1 51.3694 -182.443" transformations="translations" pos="314.125 261.932" stroke="black" type="label" width="21.6972" height="10.3208" depth="0" valign="baseline" style="math">=</text>
 <text matrix="1 0 0 1 70.8943 -179.254" transformations="translations" pos="381.421 256.191" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
 <text matrix="1 0 0 1 119.258 -181.369" transformations="translations" pos="285.308 255.596" stroke="black" type="label" width="27.2748" height="19.3704" depth="0" valign="baseline" style="math">\matcp</text>
 <text matrix="1 0 0 1 78.6438 -266.612" transformations="translations" pos="415.843 337.636" stroke="black" type="label" width="27.174" height="19.4992" depth="0.196" valign="baseline" style="math">\vecb^{*}</text>
@@ -11438,7 +11448,7 @@ h
 <page title="DILO Implementation of $\Func[cpre]$: Encoding ${\vecb}^*$ as Global Keys">
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<text layer="alpha" matrix="1 0 0 1 96 -264" transformations="translations" pos="272 352" stroke="black" type="label" width="23.9112" height="8.8464" depth="0" valign="baseline" size="small">$\Leftrightarrow$</text>
+<text layer="alpha" matrix="1 0 0 1 96 -264" transformations="translations" pos="272 352" stroke="black" type="label" width="23.9112" height="8.8464" depth="0" valign="baseline" size="small" style="math">\Leftrightarrow</text>
 <group matrix="1 0 0 1 -120 184">
 <path stroke="black" fill="KITblue15">
 198.174 318.606 m
@@ -11536,7 +11546,7 @@ h
 <text matrix="1 0 0 1 -136.374 -8" transformations="translations" pos="184 256" stroke="black" type="label" width="39.816" height="19.344" depth="7.56" valign="baseline" size="small" style="math">\FF_{2^{L\csp}}^N</text>
 <text matrix="1 0 0 1 16 64" transformations="translations" pos="184 256" stroke="black" type="label" width="39.816" height="16.5096" depth="3.888" valign="baseline" size="small" style="math">\FF_{2^{L\csp}}</text>
 <text matrix="1 0 0 1 -556.889 -35.448" transformations="translations" pos="747.16 383.846" stroke="black" type="label" width="38.5224" height="16.6056" depth="1.992" valign="baseline" size="small" style="math"> \times \Delta</text>
-<text matrix="1 0 0 1 -594.344 -37.8244" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" size="small" style="math">=</text>
+<text matrix="1 0 0 1 -594.344 -37.8244" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="21.6972" height="10.3208" depth="0" valign="baseline" size="small" style="math">=</text>
 <text matrix="1 0 0 1 -548.706 -37.8266" transformations="translations" pos="685.392 387.553" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">+</text>
 <group matrix="1 0 0 1 40 16">
 <path matrix="1 0 0 1 -561.672 -47.7969" stroke="black" pen="heavier">
@@ -11606,7 +11616,7 @@ h
 \Delta_1 &amp;  \ldots &amp; \Delta_L 
 \end{array}
 \right]</text>
-<text matrix="1 0 0 1 -282.344 -29.8244" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" size="small" style="math">=</text>
+<text matrix="1 0 0 1 -282.344 -29.8244" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="21.6972" height="10.3208" depth="0" valign="baseline" size="small" style="math">=</text>
 <text matrix="1 0 0 1 -212.706 -29.8266" transformations="translations" pos="685.392 387.553" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">+</text>
 <group matrix="1 0 0 1 344 24">
 <path matrix="1 0 0 1 -423.004 -47.6871" stroke="black" pen="heavier">
@@ -11723,7 +11733,7 @@ h
 {b}_1^{*} \cdot \Delta_\B + \gamma, &amp;  \ldots, &amp; {b}^{*}_L \cdot \Delta_\B + \gamma, &amp; \Delta_\B + \gamma, &amp; \gamma 
 \end{array}
 \right]</text>
-<text matrix="1 0 0 1 -578.344 2.1756" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" size="small" style="math">=</text>
+<text matrix="1 0 0 1 -578.344 2.1756" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="21.6972" height="10.3208" depth="0" valign="baseline" size="small" style="math">=</text>
 <text matrix="1 0 0 1 -508.706 2.1734" transformations="translations" pos="685.392 387.553" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">+</text>
 <path matrix="1 0 0 1 -312 32" stroke="black" pen="heavier">
 352 440 m
@@ -11761,8 +11771,8 @@ h
 64 224 m
 224 224 l
 </path>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="80 240" stroke="black" type="label" width="107.688" height="17.9328" depth="6.456" valign="baseline" size="small">$\fix( \{ a_i a_j \} )$</text>
-<text matrix="1 0 0 1 -378.332 -33.1528" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="11.8056" height="17.7744" depth="0.168" valign="baseline" size="small">$\hat{\veca}$</text>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="80 240" stroke="black" type="label" width="107.688" height="17.9328" depth="6.456" valign="baseline" size="small" style="math">\fix( \{ a_i a_j \} )</text>
+<text matrix="1 0 0 1 -378.332 -33.1528" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="11.8056" height="17.7744" depth="0.168" valign="baseline" size="small" style="math">\hat{\veca}</text>
 <path stroke="black">
 201.636 384.419 m
 226.768 384.419 l
@@ -11860,9 +11870,9 @@ h
 <text matrix="1 0 0 1 -56 192" transformations="translations" pos="144 304" stroke="black" type="label" width="60.1512" height="16.6152" depth="3.576" valign="baseline" size="small">\Func[COT]</text>
 </group>
 <text matrix="1 0 0 1 -308.889 44.552" transformations="translations" pos="747.16 383.846" stroke="black" type="label" width="51.5736" height="16.6152" depth="3.576" valign="baseline" size="small" style="math"> \times \Delta_\A</text>
-<text matrix="1 0 0 1 -346.344 42.1756" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" size="small" style="math">=</text>
+<text matrix="1 0 0 1 -346.344 42.1756" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="21.6972" height="10.3208" depth="0" valign="baseline" size="small" style="math">=</text>
 <text matrix="1 0 0 1 -300.706 42.1734" transformations="translations" pos="685.392 387.553" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">+</text>
-<text matrix="1 0 0 1 -176.075 44.3896" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="23.292" height="16.7136" depth="0.168" valign="baseline" size="small">$\vecb^*$</text>
+<text matrix="1 0 0 1 -176.075 44.3896" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="23.292" height="16.7136" depth="0.168" valign="baseline" size="small" style="math">\vecb^*</text>
 <text matrix="1 0 0 1 -226.066 44.3606" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="16.6056" height="16.6032" depth="0" valign="baseline" size="small">\key</text>
 <path matrix="1 0 0 1 -96.4666 276.333" stroke="black" pen="heavier">
 400 192 m
@@ -12168,7 +12178,7 @@ h
 </group>
 <text matrix="1 0 0 1 16 176" transformations="translations" pos="440 288" stroke="black" type="label" width="33.0344" height="38.1976" depth="3.92" valign="baseline" size="huge">{\color{red} \ding{55}}</text>
 <group>
-<text matrix="1 0 0 1 305.079 185.557" transformations="translations" pos="314.125 261.932" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" style="math">=</text>
+<text matrix="1 0 0 1 305.079 185.557" transformations="translations" pos="314.125 261.932" stroke="black" type="label" width="21.6972" height="10.3208" depth="0" valign="baseline" style="math">=</text>
 <text matrix="1 0 0 1 275.717 188.746" transformations="translations" pos="381.421 256.191" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" style="math">\xor</text>
 <text matrix="1 0 0 1 316.75 188.746" transformations="translations" pos="381.421 256.191" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" style="math">\xor</text>
 <group>
@@ -12213,7 +12223,7 @@ h
 </group>
 </group>
 <group>
-<text matrix="1 0 0 1 476.446 185.557" transformations="translations" pos="314.125 261.932" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" style="math">=</text>
+<text matrix="1 0 0 1 476.446 185.557" transformations="translations" pos="314.125 261.932" stroke="black" type="label" width="21.6972" height="10.3208" depth="0" valign="baseline" style="math">=</text>
 <text matrix="1 0 0 1 485.818 188.746" transformations="translations" pos="381.421 256.191" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
 <group>
 <text matrix="1.06612 0 0 3.36416 326.712 -693.6" transformations="translations" pos="415.843 337.636" stroke="black" type="label" width="14.9688" height="19.4992" depth="0.196" valign="baseline" style="math">\vecb</text>
@@ -12263,7 +12273,7 @@ h
 h
 </path>
 </group>
-<text matrix="1 0 0 1 8 -16" transformations="translations" pos="384 264" stroke="black" type="label" width="435.329" height="17.9328" depth="6.456" valign="baseline" size="small">$\cbit_i (a_j \xor b_j) \Delta_\B = \cbit_i b_j \Delta_\B \xor \cbit_i \key[a_j] \xor \cbit_i \mac[a_j]$</text>
+<text matrix="1 0 0 1 8 -16" transformations="translations" pos="384 264" stroke="black" type="label" width="435.329" height="17.9328" depth="6.456" valign="baseline" size="small" style="math">\cbit_i (a_j \xor b_j) \Delta_\B = \cbit_i b_j \Delta_\B \xor \cbit_i \key[a_j] \xor \cbit_i \mac[a_j]</text>
 </group>
 <group matrix="1 0 0 1 -392 -1048">
 <path stroke="black" fill="KITred15">
@@ -12386,7 +12396,7 @@ h
 <page>
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<text layer="alpha" matrix="1 0 0 1 -152 24" transformations="translations" pos="608 152" stroke="black" type="minipage" width="440" height="78.2712" depth="66.48" valign="top" size="small" style="itemize">\item $\cbit_k = \cbit_i \cbit_j \xor \cbit_i b_j \xor \cbit_j b_i \xor (\hash&apos;(\ml_{i,\cbit_i}) \xor \cbit_i G&apos;_{k,1} \xor \hash&apos;(\ml_{j, \cbit_j}) \xor \cbit_j G&apos;_{k,2} \xor G&apos;_{k,0} \xor \cbit_i \mac[b_j] \xor \cbit_j \mac[b_i] \xor \mac[b_k] \xor \mac[\hat{r}_k] ) \cdot \Delta_\B^{-1}$
+<text layer="alpha" matrix="1 0 0 1 -161 38" transformations="translations" pos="608 152" stroke="black" type="minipage" width="440" height="78.2712" depth="66.48" valign="top" size="small" style="itemize">\item $\cbit_k = \cbit_i \cbit_j \xor \cbit_i b_j \xor \cbit_j b_i \xor (\hash&apos;(\ml_{i,\cbit_i}) \xor \cbit_i G&apos;_{k,1} \xor \hash&apos;(\ml_{j, \cbit_j}) \xor \cbit_j G&apos;_{k,2} \xor G&apos;_{k,0} \xor \cbit_i \mac[b_j] \xor \cbit_j \mac[b_i] \xor \mac[b_k] \xor \mac[\hat{r}_k] ) \cdot \Delta_\B^{-1}$
 \item $\ml_{k, \cbit_k} = \hash(\ml_{i, \cbit_i}) \xor \cbit_i (G_0 \xor \mac[b_j]) \xor \hash(\ml_{j, \cbit_{j}}) \xor \cbit_j (G_1 \xor \mac[b_i] \xor \ml_{i, \cbit_i} )$</text>
 </page>
 <page title="Optimizing the Compressed Preprocessing Protocol">
@@ -12651,7 +12661,7 @@ h
 481.97 360.637 c
 h
 </path>
-<text transformations="translations" pos="448 352" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" size="small">$\alpha_0$</text>
+<text transformations="translations" pos="448 352" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_0</text>
 </group>
 <group matrix="1 0 0 1 104 -4.4792">
 <path stroke="black" fill="KITred15">
@@ -12726,10 +12736,10 @@ h
 <text matrix="1 0 0 1 161.246 -40" transformations="translations" pos="544 352" stroke="black" type="label" width="90.468" height="17.9472" depth="6.648" valign="baseline" size="small" style="math">\mac[b^*_i \Delta_\B]</text>
 <text layer="alpha" matrix="1 0 0 1 0 -40" transformations="translations" pos="656 352" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">\xor</text>
 <text matrix="1 0 0 1 -40 -48" transformations="translations" pos="840 360" stroke="black" type="label" width="113.947" height="16.62" depth="6.648" valign="baseline" size="small" style="math"> = b^*_i \Delta_\A \Delta_\B</text>
-<text layer="gamma" matrix="1 0 0 1 -8 0" transformations="translations" pos="544 352" stroke="black" type="label" width="63.396" height="17.9352" depth="5.976" valign="baseline" size="small">$\key[\Delta_\B]$</text>
+<text layer="gamma" matrix="1 0 0 1 -8 0" transformations="translations" pos="544 352" stroke="black" type="label" width="63.396" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\key[\Delta_\B]</text>
 <text matrix="1 0 0 1 184 0" transformations="translations" pos="544 352" stroke="black" type="label" width="67.7136" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\mac[\Delta_\B]</text>
-<text layer="alpha" transformations="translations" pos="656 352" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small">$\xor$</text>
-<text matrix="1 0 0 1 -40 -8" transformations="translations" pos="840 360" stroke="black" type="label" width="91.1928" height="16.6152" depth="3.576" valign="baseline" size="small">$ = \Delta_\A \Delta_\B$</text>
+<text layer="alpha" transformations="translations" pos="656 352" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">\xor</text>
+<text matrix="1 0 0 1 -40 -8" transformations="translations" pos="840 360" stroke="black" type="label" width="91.1928" height="16.6152" depth="3.576" valign="baseline" size="small" style="math"> = \Delta_\A \Delta_\B</text>
 <text layer="beta" matrix="1 0 0 1 -270 150" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
 <group matrix="1 0 0 1 0 -72">
 <group matrix="1 0 0 1 -312 16">
@@ -12777,11 +12787,11 @@ h
 240 328 l
 h
 </path>
-<text matrix="1 0 0 1 -570.344 -221.824" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" size="small" style="math">=</text>
+<text matrix="1 0 0 1 -570.344 -221.824" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="21.6972" height="10.3208" depth="0" valign="baseline" size="small" style="math">=</text>
 <text matrix="1 0 0 1 -500.706 -221.827" transformations="translations" pos="685.392 387.553" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">+</text>
-<text matrix="1 0 0 1 -1.9028 -125.815" transformations="translations" pos="216 288" stroke="black" type="label" width="11.8056" height="17.7744" depth="0.168" valign="baseline" size="small">$\hat\veca$</text>
-<text matrix="1 0 0 1 -9.5352 -135.072" transformations="translations" pos="144 296" stroke="black" type="label" width="42.2232" height="17.9352" depth="5.976" valign="baseline" size="small">$\key[\hat\veca]$</text>
-<text matrix="1 0 0 1 -91.694 -135.072" transformations="translations" pos="144 296" stroke="black" type="label" width="46.5408" height="17.9352" depth="5.976" valign="baseline" size="small">$\mac[\hat{\veca}]$</text>
+<text matrix="1 0 0 1 -1.9028 -125.815" transformations="translations" pos="216 288" stroke="black" type="label" width="11.8056" height="17.7744" depth="0.168" valign="baseline" size="small" style="math">\hat\veca</text>
+<text matrix="1 0 0 1 -9.5352 -135.072" transformations="translations" pos="144 296" stroke="black" type="label" width="42.2232" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\key[\hat\veca]</text>
+<text matrix="1 0 0 1 -91.694 -135.072" transformations="translations" pos="144 296" stroke="black" type="label" width="46.5408" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\mac[\hat{\veca}]</text>
 </group>
 <text matrix="1 0 0 1 -22 150" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small" style="tikz">\node[bob] {};</text>
 <group matrix="1 0 0 1 0 -32">
@@ -12828,15 +12838,15 @@ h
 191.929 371.24 c
 h
 </path>
-<text matrix="1 0 0 1 -24 48" transformations="translations" pos="144 304" stroke="black" type="label" width="63.9288" height="21.24" depth="6.936" valign="baseline" size="small">$\Func[bCOT]^{L+1}$</text>
+<text matrix="1 0 0 1 -24 48" transformations="translations" pos="144 304" stroke="black" type="label" width="63.9288" height="21.24" depth="6.936" valign="baseline" size="small" style="math">\Func[bCOT]^{L+1}</text>
 </group>
-<text matrix="1 0 0 1 -570.344 -93.8244" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" size="small" style="math">=</text>
+<text matrix="1 0 0 1 -570.344 -93.8244" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="21.6972" height="10.3208" depth="0" valign="baseline" size="small" style="math">=</text>
 <text matrix="1 0 0 1 -500.706 -93.8266" transformations="translations" pos="685.392 387.553" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">+</text>
 <text matrix="1 0 0 1 -1.9028 2.1848" transformations="translations" pos="216 288" stroke="black" type="label" width="11.8056" height="11.7984" depth="0.168" valign="baseline" size="small">\veca</text>
 <text matrix="1 0 0 1 -9.5352 -7.0716" transformations="translations" pos="144 296" stroke="black" type="label" width="43.0704" height="17.3832" depth="3.24" valign="baseline" size="small">\key[\veca]</text>
 <text matrix="1 0 0 1 -91.694 -7.0716" transformations="translations" pos="144 296" stroke="black" type="label" width="47.388" height="17.3832" depth="3.24" valign="baseline" size="small">\mac[\veca]</text>
 </group>
-<text layer="delta" matrix="1 0 0 1 16 -16" transformations="translations" pos="472 256" stroke="black" type="label" width="23.9112" height="8.8464" depth="0" valign="baseline" size="small">$\Leftrightarrow$</text>
+<text layer="delta" matrix="1 0 0 1 16 -16" transformations="translations" pos="472 256" stroke="black" type="label" width="23.9112" height="8.8464" depth="0" valign="baseline" size="small" style="math">\Leftrightarrow</text>
 <text matrix="1 0 0 1 -71.0144 -112" transformations="translations" pos="472 256" stroke="black" type="label" width="110.926" height="17.9784" depth="6.768" valign="baseline" size="small">By $\fix(\Delta&apos;_\A)$</text>
 <group matrix="1 0 0 1 0 -8">
 <group>
@@ -12946,7 +12956,7 @@ h
 <text matrix="1 0 0 1 -40 -136" transformations="translations" pos="840 360" stroke="black" type="label" width="80.9712" height="16.62" depth="6.648" valign="baseline" size="small" style="math"> = b^*_i  \Delta_\B</text>
 <text matrix="1 0 0 1 0 -88" transformations="translations" pos="656 352" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">\xor</text>
 <text matrix="1 0 0 1 -40 -96" transformations="translations" pos="840 360" stroke="black" type="label" width="58.2144" height="16.6152" depth="3.576" valign="baseline" size="small" style="math"> = \Delta_\B</text>
-<text matrix="1 0 0 1 -24 8" transformations="translations" pos="768 256" stroke="black" type="label" width="51.0672" height="21.4896" depth="6.936" valign="baseline" size="small">$\cdot \Delta_\A\inv$</text>
+<text matrix="1 0 0 1 -24 8" transformations="translations" pos="768 256" stroke="black" type="label" width="51.0672" height="21.4896" depth="6.936" valign="baseline" size="small" style="math">\cdot \Delta_\A\inv</text>
 <text matrix="1 0 0 1 -24 -32" transformations="translations" pos="768 256" stroke="black" type="label" width="51.0672" height="21.4896" depth="6.936" valign="baseline" size="small" style="math">\cdot \Delta_\A\inv</text>
 <text matrix="1 0 0 1 -176 8" transformations="translations" pos="768 256" stroke="black" type="label" width="51.0672" height="21.4896" depth="6.936" valign="baseline" size="small" style="math">\cdot \Delta_\A\inv</text>
 <text matrix="1 0 0 1 -176 -32" transformations="translations" pos="768 256" stroke="black" type="label" width="51.0672" height="21.4896" depth="6.936" valign="baseline" size="small" style="math">\cdot \Delta_\A\inv</text>
@@ -13021,9 +13031,208 @@ h
 <text matrix="1 0 0 1 -224 -192" transformations="translations" pos="768 256" stroke="black" type="label" width="49.1832" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\key[\beta_i]</text>
 </group>
 </page>
-<page>
+<page title="Optimizing the Compressed Preprocessing Protocol, Completed">
 <layer name="alpha"/>
+<layer name="beta"/>
 <view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<path layer="alpha" matrix="1 0 0 1 -456 112.531" stroke="black" arrow="normal/normal">
+688 224 m
+512 224 l
+</path>
+<text matrix="1 0 0 1 -272 208.623" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
+<text matrix="1 0 0 1 -48 208.623" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small" style="tikz">\node[bob] {};</text>
+<text matrix="1 0 0 1 -654.028 152.623" transformations="translations" pos="696 232" stroke="black" type="label" width="205.296" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\fix( \vecb^*, \{ \Delta_\B, \vecb^* \Delta_\B \} )</text>
+<group matrix="1 0 0 1 24 -63.3766">
+<path stroke="black" fill="KITblue15">
+156.151 510.615 m
+156.151 494.424 l
+156.151 489.424
+151.151 484.424
+146.151 484.424 c
+90 484.424 l
+85 484.424
+80 489.424
+80 494.424 c
+80 510.615 l
+80 515.615
+85 520.615
+90 520.615 c
+146.151 520.615 l
+151.151 520.615
+156.151 515.615
+156.151 510.615 c
+h
+</path>
+<text matrix="1 0 0 1 -56 192" transformations="translations" pos="144 304" stroke="black" type="label" width="60.1512" height="16.6152" depth="3.576" valign="baseline" size="small">\Func[COT]</text>
+</group>
+<group matrix="1 0 0 1 530.486 130.424">
+<path stroke="black" fill="KITblue15">
+191.929 371.24 m
+191.929 347.064 l
+191.929 342.064
+186.929 337.064
+181.929 337.064 c
+122 337.064 l
+117 337.064
+112 342.064
+112 347.064 c
+112 371.24 l
+112 376.24
+117 381.24
+122 381.24 c
+181.929 381.24 l
+186.929 381.24
+191.929 376.24
+191.929 371.24 c
+h
+</path>
+<text matrix="1 0 0 1 -24 48" transformations="translations" pos="144 304" stroke="black" type="label" width="63.9288" height="21.24" depth="6.936" valign="baseline" size="small" style="math">\Func[bCOT]^{L+1}</text>
+</group>
+<group matrix="1 0 0 1 218.486 142.719">
+<path matrix="1 0 0 1 312 -144" stroke="black" fill="KITblue15">
+191.929 371.24 m
+191.929 347.064 l
+191.929 342.064
+186.929 337.064
+181.929 337.064 c
+122 337.064 l
+117 337.064
+112 342.064
+112 347.064 c
+112 371.24 l
+112 376.24
+117 381.24
+122 381.24 c
+181.929 381.24 l
+186.929 381.24
+191.929 376.24
+191.929 371.24 c
+h
+</path>
+<text matrix="1 0 0 1 288 -96" transformations="translations" pos="144 304" stroke="black" type="label" width="63.9288" height="19.6632" depth="6.768" valign="baseline" size="small" style="math">\Func[bCOT]^{2}</text>
+</group>
+<group matrix="1 0 0 1 524.375 146.424">
+<text matrix="1 0 0 1 -508.889 -107.448" transformations="translations" pos="747.16 383.846" stroke="black" type="label" width="159.12" height="17.9352" depth="5.976" valign="baseline" size="small" style="math"> \times [\beta_1,...,\beta_L,\Delta_\B]</text>
+<path matrix="1 0 0 1 0 -16" stroke="black" pen="heavier">
+48 328 m
+48 264 l
+104 264 l
+104 328 l
+h
+</path>
+<path matrix="1 0 0 1 0 -16" stroke="black" pen="heavier">
+128 328 m
+128 264 l
+184 264 l
+184 328 l
+h
+</path>
+<path matrix="1 0 0 1 -8 -16" stroke="black" pen="heavier">
+216 328 m
+216 264 l
+240 264 l
+240 328 l
+h
+</path>
+<text matrix="1 0 0 1 -570.344 -109.824" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="21.6972" height="10.3208" depth="0" valign="baseline" size="small" style="math">=</text>
+<text matrix="1 0 0 1 -500.706 -109.827" transformations="translations" pos="685.392 387.553" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">+</text>
+<text matrix="1 0 0 1 -1.9028 -13.8152" transformations="translations" pos="216 288" stroke="black" type="label" width="11.8056" height="11.7984" depth="0.168" valign="baseline" size="small">\veca</text>
+<text matrix="1 0 0 1 -9.5352 -23.0716" transformations="translations" pos="144 296" stroke="black" type="label" width="43.0704" height="17.3832" depth="3.24" valign="baseline" size="small">\key[\veca]</text>
+<text matrix="1 0 0 1 -91.694 -23.0716" transformations="translations" pos="144 296" stroke="black" type="label" width="47.388" height="17.3832" depth="3.24" valign="baseline" size="small">\mac[\veca]</text>
+</group>
+<group matrix="1 0 0 1 524.375 198.719">
+<text matrix="1 0 0 1 -508.889 -291.448" transformations="translations" pos="747.16 383.846" stroke="black" type="label" width="99.1536" height="17.9352" depth="5.976" valign="baseline" size="small" style="math"> \times [\beta_0, \Delta_\B]</text>
+<path matrix="1 0 0 1 0 -200" stroke="black" pen="heavier">
+48 328 m
+48 264 l
+104 264 l
+104 328 l
+h
+</path>
+<path matrix="1 0 0 1 0 -200" stroke="black" pen="heavier">
+128 328 m
+128 264 l
+184 264 l
+184 328 l
+h
+</path>
+<path matrix="1 0 0 1 -8 -200" stroke="black" pen="heavier">
+216 328 m
+216 264 l
+240 264 l
+240 328 l
+h
+</path>
+<text matrix="1 0 0 1 -570.344 -293.824" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="21.6972" height="10.3208" depth="0" valign="baseline" size="small" style="math">=</text>
+<text matrix="1 0 0 1 -500.706 -293.827" transformations="translations" pos="685.392 387.553" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">+</text>
+<text matrix="1 0 0 1 -1.9028 -197.815" transformations="translations" pos="216 288" stroke="black" type="label" width="11.8056" height="17.7744" depth="0.168" valign="baseline" size="small" style="math">\hat\veca</text>
+<text matrix="1 0 0 1 -9.5352 -207.072" transformations="translations" pos="144 296" stroke="black" type="label" width="42.2232" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\key[\hat\veca]</text>
+<text matrix="1 0 0 1 -91.694 -207.072" transformations="translations" pos="144 296" stroke="black" type="label" width="46.5408" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\mac[\hat{\veca}]</text>
+</group>
+<group matrix="1 0 0 1 -101.492 -58.7359">
+<path stroke="black" fill="KITblue15">
+454.932 366.615 m
+454.932 350.424 l
+454.932 345.424
+449.932 340.424
+444.932 340.424 c
+378 340.424 l
+373 340.424
+368 345.424
+368 350.424 c
+368 366.615 l
+368 371.615
+373 376.615
+378 376.615 c
+444.932 376.615 l
+449.932 376.615
+454.932 371.615
+454.932 366.615 c
+h
+</path>
+<text matrix="1 0 0 1 232 48" transformations="translations" pos="144 304" stroke="black" type="label" width="70.932" height="16.6152" depth="3.576" valign="baseline" size="small">\Func[DVZK]</text>
+</group>
+<text matrix="1 0 0 1 0.507937 133.264" transformations="translations" pos="32 160" stroke="black" type="label" width="224.321" height="16.4664" depth="3.84" valign="baseline" size="small">Verify mult.~correlation</text>
+<text matrix="1 0 0 1 -31.4921 29.2641" transformations="translations" pos="64 224" stroke="black" type="label" width="367.788" height="17.9784" depth="6.768" valign="baseline" size="small">Check $\{ \beta_i \}$ consistency using $\fix( \Delta_\A&apos;)$</text>
+<group matrix="1 0 0 1 -99.3016 11.3304">
+<path stroke="black" fill="KITblue15">
+184.394 498.652 m
+184.394 479.206 l
+184.394 474.206
+179.394 469.206
+174.394 469.206 c
+113.128 469.206 l
+108.128 469.206
+103.128 474.206
+103.128 479.206 c
+103.128 498.652 l
+103.128 503.652
+108.128 508.652
+113.128 508.652 c
+174.394 508.652 l
+179.394 508.652
+184.394 503.652
+184.394 498.652 c
+h
+</path>
+<text matrix="1 0 0 1 -32.8719 180.046" transformations="translations" pos="144 304" stroke="black" type="label" width="65.2656" height="16.6056" depth="6.84" valign="baseline" size="small">\Prot[Samp]</text>
+</group>
+<text matrix="1 0 0 1 86.2857 13.0736" transformations="translations" pos="3.7316 479.209" stroke="black" type="label" width="320.398" height="17.9352" depth="5.976" valign="baseline" size="small">$\Delta_\A, \Delta_\B \gets \$ $ s.t.~$\LSB(\Delta_\A \Delta_\B) = 1$</text>
+<text matrix="1 0 0 1 -655.2 122.99" transformations="translations" pos="696 232" stroke="black" type="label" width="206.602" height="17.9328" depth="6.456" valign="baseline" size="small" style="math">\fix( r, r \cdot \Delta_\B \} , \{ b_i b_j \} )</text>
+<path layer="beta" matrix="1 0 0 1 540.375 188.26" stroke="black" arrow="normal/normal">
+45.5671 38.1934 m
+236.442 38.1934 l
+</path>
+<text matrix="1 0 0 1 529.99 181.287" transformations="translations" pos="56.026 53.0101" stroke="black" type="label" width="190.728" height="22.0008" depth="5.976" valign="baseline" size="small">$m_{k,1} := \LSB(\dmac_\A[\tilde{b}_k])$</text>
+<text matrix="1 0 0 1 260.531 287.936" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
+<text matrix="1 0 0 1 484.531 287.936" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small" style="tikz">\node[bob] {};</text>
+<text matrix="1 0 0 1 -79.3131 -6.97258" transformations="translations" pos="757.642 195.948" stroke="black" type="label" width="239.993" height="22.0008" depth="5.976" valign="baseline" size="small">$\tilde{b}_k = m_{k,1} \xor \LSB(\dmac_\A[\tilde{b}_k])$ </text>
+<path matrix="1 0 0 1 -456 -25.1772" stroke="black" arrow="normal/normal">
+688 224 m
+512 224 l
+</path>
+<text matrix="1 0 0 1 16.9957 -16.9957" transformations="translations" pos="71.7143 225.582" stroke="black" type="label" width="70.2288" height="22.0008" depth="5.976" valign="baseline" size="small">$\fix(\tilde{b}_k)$</text>
 </page>
 <page title="Dual-Key Authentication">
 <layer name="alpha"/>
