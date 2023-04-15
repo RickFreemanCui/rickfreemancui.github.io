@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.26">
-<info created="D:20090429144355" modified="D:20230413231841" title="Actively Secure Half-Gates with Minimum Overhead under Duplex Networks" author="Hongrui Cui \and Xiao Wang \and Kang Yang \and Yu Yu" subject="MPC" keywords="MPC" numberpages="yes"/>
+<info created="D:20090429144355" modified="D:20230415184118" title="Actively Secure Half-Gates with Minimum Overhead under Duplex Networks" author="Hongrui Cui \and Xiao Wang \and Kang Yang \and Yu Yu" subject="MPC" keywords="MPC" numberpages="yes"/>
 <preamble>\usepackage[utf8]{inputenc}
 \usepackage[sfdefault,lf]{carlito}
 \usepackage{sfmath}
@@ -11,6 +11,7 @@
 \usepackage{sansmathaccent}
 \usepackage{amsmath,amssymb}
 \usepackage{pifont}
+\usepackage{frcursive}
 \usepackage{tabularx}
 \usepackage[secparam=\kappa]{crypto/crypto}
 \usetikzlibrary{arrows,shapes.gates.logic.US,shapes.gates.logic.IEC,calc}
@@ -23,7 +24,309 @@
 \newcommand{\prestitle}{Actively Secure Half-Gates with Minimum Overhead under Duplex Networks}
 \tikzstyle{arrowlabel}=[rectangle, fill=white, fill opacity=.5, text opacity=1]
 </preamble>
-<bitmap id="1" width="2805" height="2806" BitsPerComponent="8" ColorSpace="DeviceRGBAlpha" Filter="FlateDecode" length="215192" alphaLength="139086" encoding="base64">
+<bitmap id="1" width="512" height="512" BitsPerComponent="8" ColorSpace="DeviceGrayAlpha" Filter="FlateDecode" length="277" alphaLength="15883" encoding="base64">
+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
+GAwGg8FgMFT4PxkHonI=
+</bitmap>
+<bitmap id="2" width="2805" height="2806" BitsPerComponent="8" ColorSpace="DeviceRGBAlpha" Filter="FlateDecode" length="215192" alphaLength="139086" encoding="base64">
 eNrs3e1R40q3NuANGNsqW4CHoYCpqfenAyABJ0AAToAEHAAJEAAJkMAEMAGcrN5Vp+u4KGBm
 +JBaaum6qn89zx7Asj5a6ltr/fcfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -6586,7 +6889,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcBj/AaRaUcQ=
 </bitmap>
-<bitmap id="2" width="220" height="220" BitsPerComponent="8" ColorSpace="DeviceRGB" Filter="FlateDecode" length="84672" encoding="base64">
+<bitmap id="3" width="220" height="220" BitsPerComponent="8" ColorSpace="DeviceRGB" Filter="FlateDecode" length="84672" encoding="base64">
 eNrMfQdcVUfztknsxi52Bem9CtIRpElVECwgFrB3BQtYURNLrIklRo2JGrvG2GOJvffeW+yi
 Uu69p5/9dmbPvaIpr8mb/L+X3wlBOPeU3dkpzzwzqygKIURVVUVRVPxiPygf8KUav/78nPdO
 Zr8x3fS92xFi+if9kagyUdihwCGrEjvoj6Kq0IOIhEjvncmuKSuKpF1TUWVRIir9jKTIvCTy
@@ -8157,7 +8460,7 @@ qRIIac4BKRta4XxKhfBIbmfqaHSA3C0NwSONW8dwHAZUBeDPhqF7MnhaKuAnYxWYRT+z0XBS
 wBG/RDFA3OxU4Y5MZAqEjxcax6qi8TaNKZKD+6tjThA24+zfYEHPcMn+8/XwMnzy/wEU3AJW
 
 </bitmap>
-<bitmap id="3" width="366" height="93" BitsPerComponent="8" ColorSpace="DeviceRGBAlpha" Filter="FlateDecode" length="4823" alphaLength="2492" encoding="base64">
+<bitmap id="4" width="366" height="93" BitsPerComponent="8" ColorSpace="DeviceRGBAlpha" Filter="FlateDecode" length="4823" alphaLength="2492" encoding="base64">
 eNrtnXlcE1cewOfzKUlA0ExCIBhiZRXbVapuS6t2axVrb90eVlp7qLvVbtv9WO2aSUJAJHgf
 FZR6FK/1QiuuWqsiaPHWj0c9Vin1xtb7PqqYgJh9kyClHGGSefPyZua9z/vwJ5k383vf97ve
 70dRZJBBBhmYjsYGu0JnUdCmIDWjkNxUapiqlerAMiH92zA9A/crqLRmdK+FTiJiTwaUEaxO
@@ -9282,9 +9585,9 @@ h
 <text matrix="1 0 0 1 0 -16" transformations="translations" pos="0 224" stroke="black" type="label" width="295.806" height="22.9516" depth="4.48" valign="baseline">$^2$ Northwestern University</text>
 <text matrix="1 0 0 1 0 -48" transformations="translations" pos="0 224" stroke="black" type="label" width="410.214" height="22.946" depth="4.788" valign="baseline">$^3$ State Key Laboratory of Cryptology</text>
 <text matrix="1 0 0 1 0 -80" transformations="translations" pos="0 224" stroke="black" type="label" width="294.087" height="22.946" depth="4.788" valign="baseline">$^4$ Shanghai Qi Zhi Institute</text>
-<image matrix="0.580442 0 0 0.580442 633.488 94.4543" rect="0 0 366 93" bitmap="3"/>
-<image matrix="0.476473 0 0 0.476473 513.745 43.6114" rect="0 0 220 220" bitmap="2"/>
-<image matrix="0.0393849 0 0 0.0393849 395.704 40.7664" rect="0 0 2805 2806" bitmap="1"/>
+<image matrix="0.580442 0 0 0.580442 633.488 94.4543" rect="0 0 366 93" bitmap="4"/>
+<image matrix="0.476473 0 0 0.476473 513.745 43.6114" rect="0 0 220 220" bitmap="3"/>
+<image matrix="0.0393849 0 0 0.0393849 395.704 40.7664" rect="0 0 2805 2806" bitmap="2"/>
 <group matrix="1 0 0 -1 633.488 87.3114">
 <group>
 <path fill="0">
@@ -10406,7 +10709,132 @@ h
 </group>
 </group>
 </page>
-<page title="Our Contributions">
+<page title="Background on Constant Round 2PC" section="Introduction">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<text layer="alpha" pin="h" transformations="translations" pos="0 524" stroke="black" type="minipage" width="440" height="28.6296" depth="16.704" valign="top" size="small" style="itemize">\item Garbled circuit is the canonical technique in constant round 2PC</text>
+<text matrix="1 0 0 1 -176 56" transformations="translations" pos="192 240" stroke="black" type="label" width="429.401" height="148.601" depth="136.968" valign="baseline" size="small">\begin{tabular}{ccc}
+    \toprule
+    Scheme &amp; XOR &amp;AND~(bits) \\ \midrule
+    Textbook Yao &amp; $8\csp$ &amp; $8\csp$ \\
+    Point\&amp;Permute &amp; $4\csp$ &amp; $4\csp$ \\
+    GRR3 &amp; $3\csp$ &amp; $3\csp$ \\
+    GRR2 &amp; $2\csp$ &amp; $2\csp$ \\
+    Free-XOR &amp; $0$ &amp; $3\csp$ \\
+    fleXOR &amp; $\{ 0, 1, 2 \} \csp$ &amp; 2\csp \\
+    Half-gates &amp; 0 &amp; $2\csp$ \\
+    Three-halves &amp; 0 &amp; $1.5\csp+5$ \\
+    \bottomrule   
+\end{tabular}</text>
+<text layer="beta" matrix="1 0 0 1 464 166.784" transformations="translations" pos="0 357.216" stroke="black" type="minipage" width="456" height="16.1304" depth="4.176" valign="top" size="small" style="itemize">\item How to boost GC to malicious security?</text>
+<text matrix="1 0 0 1 464 118.784" transformations="translations" pos="0 357.216" stroke="black" type="minipage" width="456" height="16.3032" depth="4.32" valign="top" size="small" style="itemize">\item AG [KRW17]: Use IT-MAC</text>
+<text layer="alpha" matrix="1 0 0 1 640 -96" transformations="translations" pos="512 384" stroke="black" type="label" width="46.2024" height="16.6056" depth="6.84" valign="baseline" size="small">\Prot[pre]</text>
+<text layer="beta" matrix="1 0 0 1 -40 0" transformations="translations" pos="592 384" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small">$+$</text>
+<group matrix="1 0 0 1 0 8">
+<path stroke="black" fill="KITyellow15">
+920 414 m
+920 344.003 l
+920 339.003
+915 334.003
+910 334.003 c
+722 334.003 l
+717 334.003
+712 339.003
+712 344.003 c
+712 414 l
+712 419
+717 424
+722 424 c
+910 424 l
+915 424
+920 419
+920 414 c
+h
+</path>
+<text matrix="1 0 0 1 -48 16" transformations="translations" pos="768 400" stroke="black" type="minipage" width="192" height="42.9408" depth="31.056" valign="top" size="small" style="center">Actively-secure \\
+constant-round \\
+2PC</text>
+</group>
+<path layer="gamma" stroke="black" fill="white">
+697.592 406.615 m
+697.592 294.232 l
+697.592 289.232
+692.592 284.232
+687.592 284.232 c
+579.592 284.232 l
+574.592 284.232
+569.592 289.232
+569.592 294.232 c
+569.592 406.615 l
+569.592 411.615
+574.592 416.615
+579.592 416.615 c
+687.592 416.615 l
+692.592 416.615
+697.592 411.615
+697.592 406.615 c
+h
+</path>
+<group layer="beta" matrix="1 0 0 1 -8 0">
+<group>
+<path stroke="black" fill="KITblue15">
+600 408.615 m
+675.183 408.615 l
+8 0 0 -8 675.183 400.615 683.183 400.615 a
+683.183 372.424 l
+608 372.424 l
+8 0 0 -8 608 380.424 600 380.424 a
+h
+</path>
+</group>
+<text matrix="1 0 0 1 96 0" transformations="translations" pos="512 384" stroke="black" type="label" width="67.1832" height="16.6152" depth="3.576" valign="baseline" size="small">\Prot[online]</text>
+</group>
+<text layer="gamma" matrix="1 0 0 1 -14.4084 48" transformations="translations" pos="592 320" stroke="black" type="minipage" width="112" height="43.824" depth="31.944" valign="top" size="small" style="center">[KRRW18]\\
+$2\csp+1$ bits/AND </text>
+<path stroke="black" fill="white">
+550.202 406.606 m
+550.202 334.16 l
+550.202 329.16
+545.202 324.16
+540.202 324.16 c
+466 324.16 l
+461 324.16
+456 329.16
+456 334.16 c
+456 406.606 l
+456 411.606
+461 416.606
+466 416.606 c
+540.202 416.606 l
+545.202 416.606
+550.202 411.606
+550.202 406.606 c
+h
+</path>
+<group layer="beta" matrix="1 0 0 1 -24 0">
+<group>
+<path stroke="black" fill="KITred15">
+504 408.606 m
+558.202 408.606 l
+8 0 0 -8 558.202 400.606 566.202 400.606 a
+566.202 369.16 l
+512 369.16 l
+8 0 0 -8 512 377.16 504 377.16 a
+h
+</path>
+</group>
+<text transformations="translations" pos="512 384" stroke="black" type="label" width="46.2024" height="16.6056" depth="6.84" valign="baseline" size="small">\Prot[pre]</text>
+</group>
+<text layer="gamma" matrix="1 0 0 1 -16 16" transformations="translations" pos="480 320" stroke="black" type="label" width="77.3784" height="16.5936" depth="3.84" valign="baseline" size="small">TinyOT$^*$</text>
+<text matrix="1 0 0 1 -48 0" transformations="translations" pos="736 384" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" size="small">$=$</text>
+</page>
+<page title="Our Contributions" section="Introduction">
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
 <text layer="alpha" pin="h" transformations="translations" pos="0 524" stroke="black" type="minipage" width="920" height="16.2696" depth="4.296" valign="top" size="small" style="itemize">\item Authenticated garbling with one-way comm. as small as semi-honest half-gates</text>
@@ -10518,9 +10946,17 @@ h
 <text matrix="1 0 0 1 -216 -24" transformations="translations" pos="304 104" stroke="black" type="label" width="70.932" height="16.6152" depth="3.576" valign="baseline" size="small">\Func[DVZK]</text>
 </group>
 </page>
-<page title="Semi-Honest Garbled Circuit">
+<page title="Semi-Honest Garbled Circuit" section="Preliminary">
 <layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
 <view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
 <group layer="alpha" matrix="1 0 0 1 64 24">
 <text matrix="1 0 0 1 0 -40" transformations="translations" pos="96 480" stroke="black" type="label" width="58.5576" height="35.388" depth="0" valign="baseline" size="small" style="tikz">\node[and gate US, draw] at (0,0) (and1) {};
 \draw ($(and1.input 1) - (0.1,0)$) -- (and1.input 1);
@@ -10551,9 +10987,9 @@ i &amp; j &amp; k \\
 224 256 m
 224 304 l
 336 304 l
-336 336 l
+336 344 l
 </path>
-<path matrix="1 0 0 1 0 -8" stroke="black" arrow="normal/normal">
+<path layer="beta" matrix="1 0 0 1 0 -8" stroke="black" arrow="normal/normal">
 264 208 m
 512 208 l
 </path>
@@ -10612,18 +11048,18 @@ h
 </path>
 <text matrix="1 0 0 1 -232 -48" transformations="translations" pos="600 280" stroke="black" type="label" width="106.322" height="16.6152" depth="3.576" valign="baseline" size="small"> for $w \in \III_\B$</text>
 </group>
-<path matrix="1 0 0 1 0 -72" stroke="black" arrow="normal/normal">
+<path layer="gamma" matrix="1 0 0 1 0 -72" stroke="black" arrow="normal/normal">
 264 200 m
 680 200 l
 </path>
 <text matrix="1 0 0 1 40 -64" transformations="translations" pos="480 200" stroke="black" type="label" width="139.14" height="16.6152" depth="3.576" valign="baseline" size="small">$\lambda_w$ for $w \in \III_\B$</text>
 <text matrix="1 0 0 1 -16 -72" transformations="translations" pos="480 176" stroke="black" type="label" width="201.168" height="16.6056" depth="5.976" valign="baseline" size="small">$\cbit_w, \ml_{w, \cbit_w}$ for $w \in \III_\A$</text>
-<path stroke="black" arrow="normal/normal">
+<path layer="delta" stroke="black" arrow="normal/normal">
 696 240 m
 696 344 l
 </path>
 <text matrix="1 0 0 1 144 -176" transformations="translations" pos="568 424" stroke="black" type="minipage" width="118.24" height="31.1784" depth="19.224" valign="baseline" size="small" style="center">Decrypt $(\cbit_i, \cbit_j)$ row</text>
-<group matrix="1 0 0 1 0 -64">
+<group layer="alpha" matrix="1 0 0 1 0 -64">
 <group>
 <path stroke="black" fill="KITblue15">
 64 320 m
@@ -10639,9 +11075,9 @@ h
 <text matrix="1 0 0 1 -40 120" transformations="translations" pos="104 128" stroke="black" type="minipage" width="192" height="31.5936" depth="19.68" valign="top" size="small" style="itemize">\item $\ml_{w,0} \xor \ml_{w, 1} = \Delta$
 \item $\LSB(\Delta) = 1$</text>
 </group>
-<text matrix="1 0 0 1 136 -248" transformations="translations" pos="576 416" stroke="black" type="minipage" width="200.571" height="31.5936" depth="19.68" valign="baseline" size="small" style="center">Get $\ml_{k, \cbit_k}$,
+<text layer="delta" matrix="1 0 0 1 136 -248" transformations="translations" pos="576 416" stroke="black" type="minipage" width="200.571" height="31.5936" depth="19.68" valign="baseline" size="small" style="center">Get $\ml_{k, \cbit_k}$,
 $\cbit_k = \LSB(\ml_{k, \cbit_k}) \xor c_k$</text>
-<group matrix="1 0 0 1 -72 112">
+<group layer="alpha" matrix="1 0 0 1 -72 112">
 <group>
 <path stroke="black" fill="KITred15">
 576 464 m
@@ -10662,16 +11098,16 @@ h
 688 240 l
 </path>
 <text matrix="1 0 0 1 -104 -216" transformations="translations" pos="528 520" stroke="black" type="label" width="138.283" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">c_k := \LSB(\ml_{k, 0} )</text>
-<path matrix="1 0 0 1 0 16" stroke="black" dash="dense dashed" pen="heavier">
+<path layer="beta" matrix="1 0 0 1 0 16" stroke="black" dash="dense dashed" pen="heavier">
 0 272 m
 920 272 l
 </path>
-<path stroke="black" arrow="normal/normal">
+<path layer="delta" stroke="black" arrow="normal/normal">
 728 400 m
 864 400 l
 864 200 l
 </path>
-<path matrix="1 0 0 1 0 -176" stroke="black" dash="dense dashed" pen="heavier">
+<path layer="epsilon" matrix="1 0 0 1 0 -176" stroke="black" dash="dense dashed" pen="heavier">
 0 272 m
 920 272 l
 </path>
@@ -10700,7 +11136,7 @@ $z_w = \cbit_w \xor \lambda_w$</text>
 864 144 m
 864 88 l
 </path>
-<group matrix="1 0 0 1 8 8">
+<group layer="beta" matrix="1 0 0 1 8 8">
 <path stroke="black" fill="KITblue15">
 568.79 198.615 m
 568.79 182.424 l
@@ -10723,7 +11159,7 @@ h
 </path>
 <text matrix="1 0 0 1 -64 -40" transformations="translations" pos="576 224" stroke="black" type="label" width="48.7896" height="16.6152" depth="3.576" valign="baseline" size="small">\Func[OT]</text>
 </group>
-<text matrix="1 0 0 1 80 -56" transformations="translations" pos="160 480" stroke="black" type="label" width="486.833" height="91.9704" depth="80.184" valign="baseline" size="small">\begin{tabular}{c c | c}
+<text layer="alpha" matrix="1 0 0 1 80 -56" transformations="translations" pos="160 480" stroke="black" type="label" width="486.833" height="91.9704" depth="80.184" valign="baseline" size="small">\begin{tabular}{c c | c}
 \toprule
 $\Lambda_i$ &amp; $\Lambda_j$ &amp; ciphertext \\ \midrule
 $0$ &amp; $0$ &amp; $\hash( \ml_{i, 0}, \ml_{j, 0} ) \xor \ml_{k, 0} \xor ( \lambda_i \cdot \lambda_j \xor \lambda_k ) \Delta_\A$ \\
@@ -10733,17 +11169,23 @@ $1$ &amp; $1$ &amp; $\hash( \ml_{i, 1}, \ml_{j, 1} ) \xor \ml_{k, 0} \xor ( \bar
 \bottomrule
 \end{tabular}</text>
 </page>
-<page title="Authenticated Garbling = {\color{KITblue} Distributed Garbling} + {\color{KITred} Checking}">
+<page title="Authenticated Garbling = {\color{KITblue} Distributed Garbling} + {\color{KITred} Checking}" section="Preliminary">
 <layer name="alpha"/>
 <layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
 <view layers="alpha" active="alpha"/>
 <view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
 <text layer="alpha" matrix="1 0 0 1 160 120" transformations="translations" pos="128 384" stroke="black" type="minipage" width="616" height="59.2056" depth="47.328" valign="top" size="small">\begin{itemize}
 \item mount selective-failure attack on $\cbit := z \xor \lambda$ $\Rightarrow$ {\color{KITblue} Secret share $\lambda := a \xor b$} 
 \item garble a different circuit without detection $\Rightarrow$ {\color{KITred} enforce AND correlation by IT-MAC, equality check, etc.} 
 \end{itemize}</text>
 <text matrix="1 0 0 1 -224 -8" transformations="translations" pos="224 496" stroke="black" type="label" width="281.705" height="38.4264" depth="4.104" valign="baseline" size="small"> \begin{tikzpicture} \node[alice] {}; \end{tikzpicture} controls garbling so it can</text>
-<text matrix="1 0 0 1 0 16" transformations="translations" pos="288 384" stroke="black" type="minipage" width="632" height="27.2424" depth="15.288" valign="top" size="small">\begin{tikzpicture} \node[alice] {}; \end{tikzpicture} needs preprocessing information to complete garbling</text>
+<text layer="beta" matrix="1 0 0 1 0 16" transformations="translations" pos="288 384" stroke="black" type="minipage" width="632" height="27.2424" depth="15.288" valign="top" size="small">\begin{tikzpicture} \node[alice] {}; \end{tikzpicture} needs preprocessing information to complete garbling</text>
 <group matrix="1 0 0 1 192 0">
 <path stroke="black" fill="KITblue15">
 198.174 318.606 m
@@ -10774,7 +11216,7 @@ $[\veca], [\hat{\veca}], [\vecb], [\hat{\vecb}]$\\
 $\Delta_\A, \Delta_\B$</text>
 <text matrix="1 0 0 1 24 24" transformations="translations" pos="576 328" stroke="black" type="minipage" width="336" height="20.316" depth="8.352" valign="top" size="small" style="center">gets $\veca, \hat{\veca}, \mac[\veca]$, $\mac[\hat{\veca}]$, $\key[\vecb], \key[\hat{\vecb}]$</text>
 <text matrix="1 0 0 1 24 -24" transformations="translations" pos="576 328" stroke="black" type="minipage" width="336" height="20.316" depth="8.352" valign="top" size="small" style="center">gets $\vecb, \hat{\vecb}, \key[\veca]$, $\key[\hat{\veca}]$, $\mac[\vecb], \mac[\hat{\vecb}]$</text>
-<group layer="beta">
+<group layer="gamma">
 <path stroke="black" fill="KITblue15">
 856 350 m
 856 246.403 l
@@ -10833,7 +11275,7 @@ $1$ &amp; $0$ &amp; $  \ml_{k, 0} \xor ( \bar{\lambda}_i \cdot \lambda_j \xor \l
 $1$ &amp; $1$ &amp; $  \ml_{k, 0} \xor ( \bar{\lambda}_i \cdot \bar{\lambda}_j \xor \lambda_k ) \Delta_\A$ \\
 \bottomrule
 \end{tabular}</text>
-<text layer="beta" matrix="1 0 0 1 -152 -336" transformations="translations" pos="160 480" stroke="black" type="label" width="261.979" height="55.7352" depth="49.848" valign="baseline" size="tiny">\begin{tabular}{c c | c | c }
+<text layer="delta" matrix="1 0 0 1 -152 -336" transformations="translations" pos="160 480" stroke="black" type="label" width="261.979" height="55.7352" depth="49.848" valign="baseline" size="tiny">\begin{tabular}{c c | c | c }
 \toprule
 $\Lambda_i$ &amp; $\Lambda_j$ &amp; Alice&apos;s GC &amp; Bob&apos;s GC \\ \midrule
 $0$ &amp; $0$ &amp; $ \ml_{k, 0} \xor \key[\cbit_{00}]$ &amp; $ \mac[\cbit_{00}] $\\
@@ -10860,7 +11302,7 @@ h
 &amp;= \lambda_k \cdot \Delta_\A \xor ... \xor (\hat{a}_k \xor \hat{b}_k ) \cdot \Delta_\A
 \end{align*}</text>
 </group>
-<group matrix="1 0 0 1 128 0">
+<group layer="epsilon" matrix="1 0 0 1 128 0">
 <group>
 <path stroke="black" fill="KITred15">
 472 176 m
@@ -10887,13 +11329,13 @@ $1$ &amp; $0$ &amp; $  \ml_{k, 0} \xor \mac[\cbit_{10}]$ &amp; $ \key[\cbit_{10}
 $1$ &amp; $1$ &amp; $  \ml_{k, 0} \xor \mac[\cbit_{11}]$ &amp; $ \key[\cbit_{11}] $ \\
 \bottomrule
 \end{tabular}</text>
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 104" stroke="black" type="minipage" width="248" height="31.1304" depth="19.2" valign="top" size="small" style="center">Free-XOR GC $\Rightarrow$ \\
+<text layer="delta" matrix="1 0 0 1 0 -32" transformations="translations" pos="16 104" stroke="black" type="minipage" width="248" height="31.1304" depth="19.2" valign="top" size="small" style="center">Free-XOR GC $\Rightarrow$ \\
 $|\Delta_\A| = \csp \approx 128 $</text>
-<text matrix="1 0 0 1 288 -32" transformations="translations" pos="16 104" stroke="black" type="minipage" width="248" height="31.5168" depth="19.608" valign="top" size="small" style="center">IT-MAC Soundness $\Rightarrow$ \\
+<text layer="epsilon" matrix="1 0 0 1 288 -32" transformations="translations" pos="16 104" stroke="black" type="minipage" width="248" height="31.5168" depth="19.608" valign="top" size="small" style="center">IT-MAC Soundness $\Rightarrow$ \\
 $|\Delta_\B| = \ssp \approx 40 $</text>
-<text matrix="1 0 0 1 -16 0" transformations="translations" pos="320 240" stroke="black" type="label" width="320.546" height="22.4256" depth="6.456" valign="baseline" size="small">s.t.~$\hat{a}_k \xor \hat{b}_k = (a_i \xor b_i) \cdot (a_j \xor b_j) $</text>
+<text layer="beta" matrix="1 0 0 1 -16 0" transformations="translations" pos="320 240" stroke="black" type="label" width="320.546" height="22.4256" depth="6.456" valign="baseline" size="small">s.t.~$\hat{a}_k \xor \hat{b}_k = (a_i \xor b_i) \cdot (a_j \xor b_j) $</text>
 </page>
-<page title="KRRW18: {\color{KITblue}Distributed Half-Gates Garbling} + {\color{KITred} Equality Checking}">
+<page title="KRRW18: {\color{KITblue}Distributed Half-Gates Garbling} + {\color{KITred} Equality Checking}" section="Preliminary">
 <layer name="alpha"/>
 <layer name="beta"/>
 <view layers="alpha" active="alpha"/>
@@ -10948,7 +11390,7 @@ h
 <text matrix="1 0 0 1 -80 176" transformations="translations" pos="88 232" stroke="black" type="label" width="44.9064" height="16.4736" depth="0.168" valign="baseline" size="small">Eval:</text>
 </group>
 </group>
-<group layer="beta" matrix="1 0 0 1 8 88">
+<group matrix="1 0 0 1 8 88">
 <group matrix="1 0 0 1 496 16">
 <path stroke="black" fill="KITblue15">
 198.174 318.606 m
@@ -10975,11 +11417,11 @@ h
 <text transformations="translations" pos="576 328" stroke="black" type="minipage" width="312" height="57.3648" depth="45.504" valign="top" size="small">With \quad\quad\quad $G_{k,0}, G_{k, 1}, \ml_{k, 0}$  \\ 
 are already shared $\Rightarrow$ Evaluator can get $\{ \cbit_w, \ml_{w, \cbit_w} \} $ with $2\csp + 1$ bits amortized comm.</text>
 </group>
-<path layer="alpha" matrix="1 0 0 1 0 24" stroke="black" dash="dense dashed" pen="heavier">
+<path layer="beta" matrix="1 0 0 1 0 24" stroke="black" dash="dense dashed" pen="heavier">
 0 272 m
 920 272 l
 </path>
-<text layer="beta" matrix="1 0 0 1 0 32" pin="h" transformations="translations" pos="0 215.611" stroke="black" type="minipage" width="920" height="18.1728" depth="6.216" valign="top" size="small" style="center">$\cbit_k \xor \lambda_k =  (\cbit_i \xor \lambda_i) \cdot (\cbit_j \xor \lambda_j) \Leftrightarrow 
+<text matrix="1 0 0 1 0 32" pin="h" transformations="translations" pos="0 215.611" stroke="black" type="minipage" width="920" height="18.1728" depth="6.216" valign="top" size="small" style="center">$\cbit_k \xor \lambda_k =  (\cbit_i \xor \lambda_i) \cdot (\cbit_j \xor \lambda_j) \Leftrightarrow 
 e_k := \cbit_k \xor \lambda_k \xor  \cbit_i \cbit_j \xor \cbit_i \lambda_j \xor \lambda_i \cbit_j \xor \lambda_i \lambda_j  = 0$</text>
 <group matrix="1 0 0 1 -16 96">
 <group matrix="1 0 0 1 -512 -304">
@@ -11045,9 +11487,13 @@ h
 <text matrix="1 0 0 1 0 16" transformations="translations" pos="672 104" stroke="black" type="minipage" width="160" height="47.1864" depth="35.304" valign="top" size="small" style="center">Defines $[e_k]$ \\
 and checks $\sum_k \chi^k e_k = 0$</text>
 </page>
-<page title="Efficient COT/VOLE and Designated Verifier Zero Knowledge">
+<page title="Efficient COT/VOLE and Designated Verifier Zero Knowledge" section="Preliminary">
 <layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
 <view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
 <text layer="alpha" matrix="1 0 0 1 -272 288" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
 <text matrix="1 0 0 1 -48 288" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small" style="tikz">\node[bob] {};</text>
 <group matrix="1 0 0 1 -48 48">
@@ -11075,7 +11521,7 @@ h
 </group>
 <text transformations="translations" pos="288 504" stroke="black" type="minipage" width="632" height="46.0752" depth="34.2" valign="top" size="small" style="itemize">\item Efficient protocol for $\Func[COT], \Func[sVOLE]$ with sublinear comm.~and linear comp.~from LPN [YWL+20,CRR21,...]
 \item We refer the $\FF_p = \FF_2$ variant of $\Func[sVOLE]$ as $\Func[COT]$</text>
-<group matrix="1 0 0 1 128 -112">
+<group layer="beta" matrix="1 0 0 1 128 -112">
 <text matrix="1 0 0 1 0 128" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
 <text matrix="1 0 0 1 224 128" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small" style="tikz">\node[bob] {};</text>
 <path matrix="1 0 0 1 256 -168" stroke="black" rarrow="normal/normal">
@@ -11116,10 +11562,10 @@ h
 </path>
 <text matrix="1 0 0 1 56 0" transformations="translations" pos="464 296" stroke="black" type="label" width="100.26" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\CCC(\vecu) = 0?</text>
 </group>
-<text matrix="1 0 0 1 0 -80" pin="h" transformations="translations" pos="0 223.384" stroke="black" type="minipage" width="920" height="57.7416" depth="45.888" valign="top" size="small" style="itemize">\item In DILO, those PCG correlations are called ``simple correlations&apos;&apos;
+<text layer="gamma" matrix="1 0 0 1 0 -80" pin="h" transformations="translations" pos="0 223.384" stroke="black" type="minipage" width="920" height="45.6552" depth="33.744" valign="top" size="small" style="itemize">\item In DILO, those PCG correlations are called ``simple correlations&apos;&apos;
 \item Unfortunately, we still don&apos;t have a direct $\Func[pre]$ PCG construction
-\item The closest is the $\Func[DAMT]$ correlation generated from Ring-LPN, but this has $\rho$-time overhead</text>
-<group>
+\item The closest is the $\Func[DAMT]$ correlation generated from Ring-LPN, but with $\rho$-time overhead</text>
+<group layer="alpha">
 <group matrix="1 0 0 1 56 16">
 <text matrix="1 0 0 1 -596.889 -51.448" transformations="translations" pos="747.16 383.846" stroke="black" type="label" width="38.5224" height="16.6056" depth="1.992" valign="baseline" size="small" style="math"> \times \Delta</text>
 <text matrix="1 0 0 1 -634.344 -53.8244" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" size="small" style="math">=</text>
@@ -11185,8 +11631,8 @@ h
 80 448 l
 </path>
 </group>
-<text matrix="1 0 0 1 0 -56" transformations="translations" pos="288 344" stroke="black" type="minipage" width="632" height="16.7232" depth="4.752" valign="top" size="small" style="itemize">\item Efficient proof for deg-$d$ relations on $\vecu$ [DIO21, YSWW21, ...]</text>
-<group matrix="1 0 0 1 40 0">
+<text layer="beta" matrix="1 0 0 1 0 -56" transformations="translations" pos="288 344" stroke="black" type="minipage" width="632" height="16.7232" depth="4.752" valign="top" size="small" style="itemize">\item Efficient proof for deg-$d$ relations on $\vecu$ [DIO21, YSWW21, ...]</text>
+<group layer="alpha" matrix="1 0 0 1 40 0">
 <group>
 <path stroke="black" fill="KITred15">
 320 416.615 m
@@ -11210,9 +11656,19 @@ h
 <text matrix="1 0 0 1 -8 8" transformations="translations" pos="336 328" stroke="black" type="minipage" width="144" height="17.9352" depth="5.976" valign="top" size="small">$\mac[x] := \mac[u]$</text>
 </group>
 </page>
-<page title="AG from Simple Correlations">
+<page title="AG from Simple Correlations" section="DILO">
 <layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
 <view layers="alpha" active="alpha"/>
+<view layers="alpha zeta" active="zeta"/>
+<view layers="alpha beta zeta" active="beta"/>
+<view layers="alpha beta gamma zeta" active="gamma"/>
+<view layers="alpha beta gamma delta zeta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon zeta" active="epsilon"/>
 <text layer="alpha" matrix="1 0 0 1 -272 272" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
 <text matrix="1 0 0 1 -80 272" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small" style="tikz">\node[bob] {};</text>
 <group matrix="1 0 0 1 -40 200">
@@ -11307,10 +11763,8 @@ h
 </path>
 </group>
 <text transformations="translations" pos="248 440" stroke="black" type="label" width="236.513" height="16.6104" depth="4.104" valign="baseline" size="small">Equivalent to guessing $\cbit$</text>
-<text matrix="1 0 0 1 0 264" pin="h" transformations="translations" pos="0 137.734" stroke="black" type="minipage" width="920" height="59.1288" depth="47.256" valign="top" size="small" style="itemize">\item Garbler can only guess once
-\item If $\vecb$ is uniformly random, then guessing leaks no information
-\item If \#Guess is too large, then abort happens overwhelmingly, if \#Guess is too little, then we don&apos;t require much entropy from $\vecb$</text>
-<group matrix="1 0 0 1 456 72">
+<text layer="zeta" matrix="1 0 0 1 0 280" pin="h" transformations="translations" pos="0 137.734" stroke="black" type="minipage" width="920" height="16.2696" depth="4.296" valign="top" size="small" style="itemize">\item Garbler can only guess once</text>
+<group layer="delta" matrix="1 0 0 1 456 72">
 <group>
 <path stroke="black" fill="KITblue15">
 8 176 m
@@ -11364,7 +11818,7 @@ h
 <text matrix="1 0 0 1 -80 96" transformations="translations" pos="88 168" stroke="black" type="label" width="203.448" height="16.4736" depth="0.168" valign="baseline" size="small">DILO Oberservation 1</text>
 </group>
 </group>
-<group>
+<group layer="epsilon">
 <group>
 <path stroke="black" fill="KITblue15">
 32 120 m
@@ -11444,12 +11898,19 @@ h
 <text matrix="1 0 0 1 -8 8" transformations="translations" pos="544 128" stroke="black" type="minipage" width="368" height="59.8608" depth="48" valign="top" size="small" style="itemize">\item For $L = O(\rho \cdot \log(\frac{n}{\rho} ) )$, a uniformly random $\matcp$ suffices
 \item We can encode $\vecb^{*}$ in \Func[COT] global keys</text>
 </group>
+<text layer="beta" matrix="1 0 0 1 0 16" pin="h" transformations="translations" pos="0 365.168" stroke="black" type="minipage" width="920" height="16.4064" depth="4.416" valign="top" size="small" style="itemize">\item If $\vecb$ is uniformly random, then guessing leaks no information
+</text>
+<text layer="gamma" matrix="1 0 0 1 0 16" pin="h" transformations="translations" pos="0 328.346" stroke="black" type="minipage" width="920" height="30.4704" depth="18.528" valign="top" size="small" style="itemize">\item If \#Guess is too large, then abort happens overwhelmingly, if \#Guess is too little, then we don&apos;t require much entropy from $\vecb$</text>
 </page>
-<page title="DILO Implementation of $\Func[cpre]$: Encoding ${\vecb}^*$ as Global Keys">
+<page title="DILO Implementation of $\Func[cpre]$: Encoding ${\vecb}^*$ as Global Keys" section="DILO">
 <layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
 <view layers="alpha" active="alpha"/>
-<text layer="alpha" matrix="1 0 0 1 96 -264" transformations="translations" pos="272 352" stroke="black" type="label" width="23.9112" height="8.8464" depth="0" valign="baseline" size="small" style="math">\Leftrightarrow</text>
-<group matrix="1 0 0 1 -120 184">
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<text layer="gamma" matrix="1 0 0 1 96 -264" transformations="translations" pos="272 352" stroke="black" type="label" width="23.9112" height="8.8464" depth="0" valign="baseline" size="small" style="math">\Leftrightarrow</text>
+<group layer="alpha" matrix="1 0 0 1 -120 184">
 <path stroke="black" fill="KITblue15">
 198.174 318.606 m
 198.174 299.16 l
@@ -11481,7 +11942,7 @@ $\Delta_\A, \Delta_\B$</text>
 &amp;= a_i a_j \xor a_i b_j \xor a_j b_i \xor b_i b_j
 \end{align*}
 </text>
-<path stroke="black" arrow="normal/normal">
+<path layer="beta" stroke="black" arrow="normal/normal">
 256 384 m
 608 384 l
 608 448 l
@@ -11490,7 +11951,7 @@ $\Delta_\A, \Delta_\B$</text>
 544 384 m
 544 448 l
 </path>
-<group matrix="1 0 0 1 -256 -16">
+<group layer="gamma" matrix="1 0 0 1 -256 -16">
 <text matrix="1 0 0 1 -32 96" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
 <text matrix="1 0 0 1 192 96" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small" style="tikz">\node[bob] {};</text>
 <group matrix="1 0 0 1 240 -192">
@@ -11662,7 +12123,7 @@ h
 <text matrix="1 0 0 1 0 32" transformations="translations" pos="320 216" stroke="black" type="minipage" width="160" height="45.9408" depth="34.032" valign="top" size="small" style="center">Using isomorphism\\
  $\FF_{2^{\csp L}} \equiv \FF_{2^\csp}^L$</text>
 </group>
-<group>
+<group layer="beta">
 <group matrix="1 0 0 1 -16 8">
 <path stroke="black" fill="KITred15">
 24 424 m
@@ -11701,9 +12162,17 @@ h
 <text matrix="1 0 0 1 -56 0" transformations="translations" pos="328 400" stroke="black" type="label" width="259.903" height="16.7232" depth="3.84" valign="baseline" size="small">suffices to compute $\veca \otimes {\vecb}^{*}$</text>
 </group>
 </page>
-<page title="DILO Implementation of $\Func[cpre]$: Encoding ${\vecb}^*$ as Global Keys (Continued)">
+<page title="DILO Implementation of $\Func[cpre]$: Generating $\tilde{b}_k$" section="DILO">
 <layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
 <view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
 <group layer="alpha" matrix="1 0 0 1 16 0">
 <path stroke="black" fill="KITblue15">
 165.334 510.615 m
@@ -11761,7 +12230,7 @@ h
 h
 </path>
 <text matrix="1 0 0 1 -378.332 38.8472" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="11.8056" height="11.7984" depth="0.168" valign="baseline" size="small">\veca</text>
-<text matrix="1 0 0 1 -278 46" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
+<text layer="gamma" matrix="1 0 0 1 -278 46" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
 <text matrix="1 0 0 1 -30 46" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small" style="tikz">\node[bob] {};</text>
 <path matrix="1 0 0 1 0 16" stroke="black" dash="dense dashed" pen="heavier">
 0 272 m
@@ -11772,12 +12241,12 @@ h
 224 224 l
 </path>
 <text matrix="1 0 0 1 0 -16" transformations="translations" pos="80 240" stroke="black" type="label" width="107.688" height="17.9328" depth="6.456" valign="baseline" size="small" style="math">\fix( \{ a_i a_j \} )</text>
-<text matrix="1 0 0 1 -378.332 -33.1528" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="11.8056" height="17.7744" depth="0.168" valign="baseline" size="small" style="math">\hat{\veca}</text>
+<text layer="alpha" matrix="1 0 0 1 -378.332 -33.1528" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="11.8056" height="17.7744" depth="0.168" valign="baseline" size="small" style="math">\hat{\veca}</text>
 <path stroke="black">
 201.636 384.419 m
 226.768 384.419 l
 </path>
-<group matrix="1 0 0 1 -368 -168">
+<group layer="gamma" matrix="1 0 0 1 -368 -168">
 <path stroke="black" fill="KITblue15">
 454.932 366.615 m
 454.932 350.424 l
@@ -11830,7 +12299,7 @@ h
 <text matrix="1 0 0 1 232 48" transformations="translations" pos="144 304" stroke="black" type="label" width="70.932" height="16.6152" depth="3.576" valign="baseline" size="small">\Func[DVZK]</text>
 </group>
 <text matrix="1 0 0 1 -32 -64" transformations="translations" pos="32 160" stroke="black" type="label" width="246.662" height="16.7232" depth="3.84" valign="baseline" size="small">Verify $\vecb^* \cdot \Delta_\B$ correlation</text>
-<group matrix="1 0 0 1 -8 0">
+<group layer="beta" matrix="1 0 0 1 -8 0">
 <group>
 <path stroke="black" fill="KITblue15">
 512 496 m
@@ -11845,7 +12314,7 @@ h
 <text matrix="1 0 0 1 200 -16" transformations="translations" pos="320 504" stroke="black" type="minipage" width="400" height="60.4896" depth="48.648" valign="top" size="small" style="itemize">\item By linearlity on $\mac$ and $\key$, we can get $[\vecb^* \otimes \veca]_\B$
 \item By linearlity on IT-MAC, we can get $[a_i b_j]_\B$ for any $i,j$</text>
 </group>
-<group>
+<group layer="alpha">
 <group matrix="1 0 0 1 264 0">
 <path stroke="black" fill="KITblue15">
 156.151 510.615 m
@@ -11910,7 +12379,7 @@ h
 272 352 l
 </path>
 </group>
-<text matrix="1 0 0 1 218 46" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
+<text layer="delta" matrix="1 0 0 1 218 46" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
 <text matrix="1 0 0 1 506 46" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small" style="tikz">\node[bob] {};</text>
 <group matrix="1 0 0 1 -80 0">
 <group>
@@ -11926,7 +12395,7 @@ h
 </group>
 <text matrix="1 0 0 1 56 40" transformations="translations" pos="488 152" stroke="black" type="label" width="395.88" height="21.9984" depth="6.456" valign="baseline" size="small"> Define $[\tilde{b}_k]_\B := [  \hat{a}_k \xor a_i a_j \xor a_i b_j \xor a_j b_i ]_\B$</text>
 </group>
-<path matrix="1 0 0 1 0 8" stroke="black" arrow="normal/normal">
+<path layer="epsilon" matrix="1 0 0 1 0 8" stroke="black" arrow="normal/normal">
 544 128 m
 792 128 l
 </path>
@@ -11947,9 +12416,13 @@ h
 \item Compute $\hat{b}_k = b_i b_j \xor \tilde{b}_k$
 </text>
 </page>
-<page title="DILO Implementation of \Func[cpre]: Generating $[\tilde{b}_k]_\A$">
+<page title="DILO Implementation of \Func[cpre]: Generating $[\tilde{b}_k]_\A$" section="DILO">
 <layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
 <view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
 <path layer="alpha" matrix="1 0 0 1 -416 168" stroke="black" arrow="normal/normal">
 688 224 m
 512 224 l
@@ -12005,7 +12478,7 @@ h
 </path>
 <text matrix="1 0 0 1 -56 192" transformations="translations" pos="144 304" stroke="black" type="label" width="60.1512" height="16.6152" depth="3.576" valign="baseline" size="small">\Func[COT]</text>
 </group>
-<group matrix="1 0 0 1 64 -224">
+<group layer="beta" matrix="1 0 0 1 64 -224">
 <path stroke="black" fill="KITblue15">
 165.334 510.615 m
 165.334 494.424 l
@@ -12034,9 +12507,9 @@ h
 96 200 m
 272 200 l
 </path>
-<text transformations="translations" pos="384 448" stroke="black" type="minipage" width="528" height="34.5384" depth="22.608" valign="top" size="small" style="itemize">\item $ \tilde{b}_k = \hat{a}_k \xor a_i a_j \xor a_i b_j \xor a_j b_i $
+<text layer="alpha" transformations="translations" pos="384 448" stroke="black" type="minipage" width="528" height="34.5384" depth="22.608" valign="top" size="small" style="itemize">\item $ \tilde{b}_k = \hat{a}_k \xor a_i a_j \xor a_i b_j \xor a_j b_i $
 \item $\mac[\tilde{b}_k] \xor \key[\tilde{b}_k] = ( \hat{a}_k \xor a_i a_j \xor a_i b_j \xor a_j b_i ) \cdot \Delta_\A $</text>
-<path matrix="1 0 0 1 0 40" stroke="black" dash="dense dashed" pen="heavier">
+<path layer="beta" matrix="1 0 0 1 0 40" stroke="black" dash="dense dashed" pen="heavier">
 0 272 m
 920 272 l
 </path>
@@ -12052,7 +12525,7 @@ h
 272 200 l
 </path>
 <text matrix="1 0 0 1 -16 0" transformations="translations" pos="72 80" stroke="black" type="label" width="250.114" height="17.4984" depth="5.712" valign="baseline" size="small">Generate mask $\hat{a}_{k,2} \in \FF_{2^{\csp}}$</text>
-<text matrix="1 0 0 1 146 14" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
+<text layer="gamma" matrix="1 0 0 1 146 14" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
 <text matrix="1 0 0 1 482 14" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small" style="tikz">\node[bob] {};</text>
 <path matrix="1 0 0 1 -56 64" stroke="black" arrow="normal/normal">
 544 128 m
@@ -12105,7 +12578,7 @@ h
 </path>
 <text matrix="1 0 0 1 -112 24" transformations="translations" pos="672 96" stroke="black" type="label" width="363.996" height="22.0104" depth="6.936" valign="top" size="small">Define $\mac[\tilde{b}_k] := ( m_{k,2} \xor \key[v_k] ) \cdot \Delta_\B\inv$</text>
 </group>
-<group matrix="1 0 0 1 0 32">
+<group layer="beta" matrix="1 0 0 1 0 32">
 <group matrix="1 0 0 1 0 56">
 <path stroke="black" fill="KITred15">
 400 214.001 m
@@ -12119,7 +12592,7 @@ h
 </group>
 <text matrix="1 0 0 1 -80 88" transformations="translations" pos="488 152" stroke="black" type="label" width="410.172" height="22.0008" depth="5.976" valign="baseline" size="small"> Locally comptue $[v_k]_\B := [\tilde{b}_k \cdot \Delta_\A \xor \hat{a}_{k,2} ]_\B $</text>
 </group>
-<group matrix="1 0 0 1 0 32">
+<group layer="gamma" matrix="1 0 0 1 0 32">
 <group>
 <path stroke="black" fill="KITblue15">
 344 70.4256 m
@@ -12134,9 +12607,17 @@ h
 <text matrix="1 0 0 1 0 -24" transformations="translations" pos="352 64" stroke="black" type="label" width="484.111" height="22.4256" depth="6.456" valign="baseline" size="small">By the linearity of IT-MAC, $[\hat{b}_k]_\A := [b_i b_j]_\A \xor [\tilde{b}_k]_\A$</text>
 </group>
 </page>
-<page title="The Online Protocol">
+<page title="The Online Protocol	" section="DILO">
 <layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
 <view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
 <group layer="alpha" matrix="1 0 0 1 -40 16">
 <group matrix="1 0 0 1 40 280">
 <path stroke="black" fill="KITred15">
@@ -12176,11 +12657,11 @@ h
 <text matrix="1 0 0 1 8 264" transformations="translations" pos="40 216" stroke="black" type="label" width="129.444" height="16.4736" depth="0.168" valign="baseline" size="small">KRRW Check:</text>
 </group>
 </group>
-<text matrix="1 0 0 1 16 176" transformations="translations" pos="440 288" stroke="black" type="label" width="33.0344" height="38.1976" depth="3.92" valign="baseline" size="huge">{\color{red} \ding{55}}</text>
-<group>
+<text layer="beta" matrix="1 0 0 1 16 176" transformations="translations" pos="440 288" stroke="black" type="label" width="33.0344" height="38.1976" depth="3.92" valign="baseline" size="huge">{\color{red} \ding{55}}</text>
+<group layer="alpha">
 <text matrix="1 0 0 1 305.079 185.557" transformations="translations" pos="314.125 261.932" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" style="math">=</text>
-<text matrix="1 0 0 1 275.717 188.746" transformations="translations" pos="381.421 256.191" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\xor</text>
-<text matrix="1 0 0 1 316.75 188.746" transformations="translations" pos="381.421 256.191" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\xor</text>
+<text matrix="1 0 0 1 275.717 188.746" transformations="translations" pos="381.421 256.191" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" style="math">\xor</text>
+<text matrix="1 0 0 1 316.75 188.746" transformations="translations" pos="381.421 256.191" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" style="math">\xor</text>
 <group>
 <path matrix="1 0 0 1 273.536 303.912" stroke="black">
 448 216 m
@@ -12222,7 +12703,7 @@ h
 <text matrix="1.06612 0 0 3.36416 156.822 -693.635" transformations="translations" pos="415.843 337.636" stroke="black" type="label" width="18.7516" height="19.3704" depth="0" valign="baseline" style="math">{\bm \Lambda}</text>
 </group>
 </group>
-<group>
+<group layer="beta">
 <text matrix="1 0 0 1 476.446 185.557" transformations="translations" pos="314.125 261.932" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" style="math">=</text>
 <text matrix="1 0 0 1 485.818 188.746" transformations="translations" pos="381.421 256.191" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
 <group>
@@ -12256,12 +12737,12 @@ h
 </path>
 </group>
 </group>
-<text matrix="1 0 0 1 0 200" pin="h" transformations="translations" pos="0 152.823" stroke="black" type="minipage" width="712" height="44.8992" depth="33" valign="top" size="small">\vspace{-1em}
+<text layer="gamma" matrix="1 0 0 1 0 200" pin="h" transformations="translations" pos="0 152.823" stroke="black" type="minipage" width="712" height="44.8992" depth="33" valign="top" size="small">\vspace{-1em}
 \begin{align*}
 \cbit_{k} \cdot \Delta_\B &amp;:= \lambda_k \cdot \Delta_\B \xor (\cbit_i \xor \lambda_i) \cdot (\cbit_j \xor \lambda_j) \cdot \Delta_\B \\
 &amp;= \lambda_k \cdot \Delta_\B \xor \cbit_i \cbit_j \cdot \Delta_\B \xor \cbit_i \lambda_j \cdot \Delta_\B \xor \cbit_j \lambda_i \cdot \Delta_\B \xor (\hat{a}_k \xor \hat{b}_k ) \cdot \Delta_\B
 \end{align*}</text>
-<group matrix="1 0 0 1 104 80">
+<group layer="delta" matrix="1 0 0 1 96 80">
 <group>
 <path stroke="black" fill="KITblue15">
 384 273.933 m
@@ -12275,7 +12756,7 @@ h
 </group>
 <text matrix="1 0 0 1 8 -16" transformations="translations" pos="384 264" stroke="black" type="label" width="435.329" height="17.9328" depth="6.456" valign="baseline" size="small" style="math">\cbit_i (a_j \xor b_j) \Delta_\B = \cbit_i b_j \Delta_\B \xor \cbit_i \key[a_j] \xor \cbit_i \mac[a_j]</text>
 </group>
-<group matrix="1 0 0 1 -392 -1048">
+<group layer="alpha" matrix="1 0 0 1 -392 -1048">
 <path stroke="black" fill="KITred15">
 24 200 m
 576 200 l
@@ -12286,7 +12767,7 @@ h
 h
 </path>
 </group>
-<text matrix="1 0 0 1 16 -32" transformations="translations" pos="-8 64" stroke="black" type="label" width="533.952" height="22.4256" depth="6.456" valign="baseline" size="small">$\ml_{k,0} = \hash(\ml_{i,0}) \xor \hash(\ml_{j,0}) \xor {(a_k \xor \hat{a}_k)  \cdot \Delta_A \xor \key[b_k \xor \hat{b}_k]} $ </text>
+<text layer="epsilon" matrix="1 0 0 1 16 -32" transformations="translations" pos="-8 64" stroke="black" type="label" width="533.952" height="22.4256" depth="6.456" valign="baseline" size="small">$\ml_{k,0} = \hash(\ml_{i,0}) \xor \hash(\ml_{j,0}) \xor {(a_k \xor \hat{a}_k)  \cdot \Delta_A \xor \key[b_k \xor \hat{b}_k]} $ </text>
 <group matrix="1 0 0 1 16 0">
 <group>
 <path stroke="black" fill="KITblue15">
@@ -12369,7 +12850,7 @@ h
 <text transformations="translations" pos="824 176" stroke="black" type="label" width="74.8032" height="16.4736" depth="0.168" valign="baseline" size="small">AuthGC</text>
 </group>
 </group>
-<group>
+<group layer="gamma">
 <path stroke="black" fill="white">
 179.685 374.469 m
 179.685 361.856 l
@@ -12393,19 +12874,17 @@ h
 <text matrix="1 0 0 1 -32 144" transformations="translations" pos="40 216" stroke="black" type="label" width="163.685" height="16.4688" depth="0.144" valign="baseline" size="small">DILO-WRK Check</text>
 </group>
 </page>
-<page>
-<layer name="alpha"/>
-<view layers="alpha" active="alpha"/>
-<text layer="alpha" matrix="1 0 0 1 -161 38" transformations="translations" pos="608 152" stroke="black" type="minipage" width="440" height="78.2712" depth="66.48" valign="top" size="small" style="itemize">\item $\cbit_k = \cbit_i \cbit_j \xor \cbit_i b_j \xor \cbit_j b_i \xor (\hash&apos;(\ml_{i,\cbit_i}) \xor \cbit_i G&apos;_{k,1} \xor \hash&apos;(\ml_{j, \cbit_j}) \xor \cbit_j G&apos;_{k,2} \xor G&apos;_{k,0} \xor \cbit_i \mac[b_j] \xor \cbit_j \mac[b_i] \xor \mac[b_k] \xor \mac[\hat{r}_k] ) \cdot \Delta_\B^{-1}$
-\item $\ml_{k, \cbit_k} = \hash(\ml_{i, \cbit_i}) \xor \cbit_i (G_0 \xor \mac[b_j]) \xor \hash(\ml_{j, \cbit_{j}}) \xor \cbit_j (G_1 \xor \mac[b_i] \xor \ml_{i, \cbit_i} )$</text>
-</page>
-<page title="Optimizing the Compressed Preprocessing Protocol">
+<page title="Optimizing the Compressed Preprocessing Protocol" section="Construction1">
 <layer name="alpha"/>
 <layer name="beta"/>
 <layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
 <view layers="alpha" active="alpha"/>
 <view layers="alpha beta" active="beta"/>
 <view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
 <text layer="alpha" transformations="translations" pos="0 504" stroke="black" type="minipage" width="272" height="30.8616" depth="18.936" valign="top" size="small" style="center">The overhead of DILO is \\
 $5\ssp + 2$ bits per AND gate</text>
 <text matrix="1 0 0 1 -280 216" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
@@ -12544,8 +13023,8 @@ h
 <text layer="gamma" matrix="1 0 0 1 0 -48" transformations="translations" pos="320 480" stroke="black" type="minipage" width="544" height="46.5912" depth="34.704" valign="top" size="small" style="itemize">\item $[\veca \Delta_\A]_\B \equiv [\veca]_{\Delta_\A \cdot \Delta_\B}$
 \item $\mac[\veca \Delta_\A] \xor \key[\veca \Delta_\A] = \veca \Delta_\A \Delta_\B$
 \item We denote it as $\bsh{\veca}$</text>
-<text layer="alpha" matrix="1 0 0 1 0 32" transformations="translations" pos="320 480" stroke="black" type="minipage" width="544" height="19.9608" depth="8.016" valign="top" size="small" style="itemize">\item Why not call $\fix(\tilde{b}_k)$ directly?</text>
-<text layer="beta" matrix="1 0 0 1 0 24" transformations="translations" pos="320 456" stroke="black" type="minipage" width="544" height="17.9352" depth="5.976" valign="top" size="small" style="itemize">\item We need to detect against dishonest $\fix()$ input</text>
+<text layer="beta" matrix="1 0 0 1 0 32" transformations="translations" pos="320 480" stroke="black" type="minipage" width="544" height="19.9608" depth="8.016" valign="top" size="small" style="itemize">\item Why not call $\fix(\tilde{b}_k)$ directly?</text>
+<text matrix="1 0 0 1 0 24" transformations="translations" pos="320 456" stroke="black" type="minipage" width="544" height="17.9352" depth="5.976" valign="top" size="small" style="itemize">\item We need to detect against dishonest $\fix()$ input</text>
 <path layer="gamma" stroke="black" arrow="normal/normal">
 184 80 m
 288 80 l
@@ -12566,10 +13045,10 @@ h
 </group>
 <text transformations="translations" pos="600 408" stroke="black" type="label" width="233.746" height="16.4664" depth="3.84" valign="baseline" size="small">Dual Key Authentication</text>
 </group>
-<text matrix="1 0 0 1 0 24" transformations="translations" pos="320 288" stroke="black" type="minipage" width="600" height="75.5712" depth="63.768" valign="top" size="small" style="itemize">\item Suppose we generate $\bsh{\tilde{b}_k}$ and $\bsh{r}, [r]_\B$ (mask for \begin{tikzpicture} \node[bob] {}; \end{tikzpicture} )
+<text layer="delta" matrix="1 0 0 1 0 24" transformations="translations" pos="320 288" stroke="black" type="minipage" width="600" height="75.5712" depth="63.768" valign="top" size="small" style="itemize">\item Suppose we generate $\bsh{\tilde{b}_k}$ and $\bsh{r}, [r]_\B$ (mask for \begin{tikzpicture} \node[bob] {}; \end{tikzpicture} )
 \item \begin{tikzpicture} \node[bob] {}; \end{tikzpicture} can open $y := \sum_k \chi^k \cdot \tilde{b}_k  \xor {r} $ and convince \begin{tikzpicture} \node[alice] {}; \end{tikzpicture}
 \item \begin{tikzpicture} \node[bob] {}; \end{tikzpicture} calls $\fix(\tilde{b}_k)$ and checks $\sum_k \chi^k [\tilde{b}_k] \xor [r] \xor y = 0$</text>
-<group matrix="1 0 0 1 0 -32">
+<group layer="epsilon" matrix="1 0 0 1 0 -32">
 <group>
 <path stroke="black" fill="KITblue15">
 312 152.471 m
@@ -12585,14 +13064,17 @@ h
 <text matrix="1 0 0 1 0 -40" transformations="translations" pos="320 128" stroke="black" type="label" width="580.92" height="21.9984" depth="6.456" valign="baseline" size="small">Our goal is to enerate $\bsh{\tilde{b}_k} := \bsh{\hat{a}_k} \xor \bsh{a_i a_j} \xor \bsh{a_i b_j} \xor \bsh{a_j b_i}$</text>
 </group>
 </page>
-<page title="Optimizing the Compressed Preprocessing Protocol, Continued">
+<page title="Optimizing the Compressed Preprocessing Protocol, Continued" section="Construction 1">
 <layer name="alpha"/>
 <layer name="beta"/>
 <layer name="gamma"/>
 <layer name="delta"/>
-<view layers="alpha gamma" active="alpha"/>
+<layer name="epsilon"/>
+<view layers="alpha" active="alpha"/>
 <view layers="alpha beta" active="beta"/>
-<view layers="alpha beta delta" active="delta"/>
+<view layers="alpha gamma" active="gamma"/>
+<view layers="alpha gamma delta" active="delta"/>
+<view layers="alpha gamma delta epsilon" active="epsilon"/>
 <text layer="alpha" matrix="1 0 0 1 0 328" pin="h" transformations="translations" pos="0 191.458" stroke="black" type="minipage" width="448" height="20.1984" depth="8.256" valign="top" size="small" style="itemize">\item $\bsh{\tilde{b}_k} := \bsh{\hat{a}_k} \xor \bsh{a_i a_j} \xor \bsh{a_i b_j} \xor \bsh{a_j b_i}$</text>
 <group>
 <group>
@@ -12640,7 +13122,7 @@ h
 </path>
 <text matrix="1 0 0 1 -56 192" transformations="translations" pos="144 304" stroke="black" type="label" width="60.1512" height="16.6152" depth="3.576" valign="baseline" size="small">\Func[COT]</text>
 </group>
-<group layer="beta" matrix="1 0 0 1 104 0">
+<group layer="gamma" matrix="1 0 0 1 104 0">
 <path stroke="black" fill="KITred15">
 481.97 360.637 m
 481.97 350.424 l
@@ -12732,15 +13214,15 @@ h
 </path>
 <text matrix="1 0 0 1 368 24" transformations="translations" pos="448 352" stroke="black" type="label" width="23.8152" height="16.6224" depth="4.632" valign="baseline" size="small" style="math">\beta_0</text>
 </group>
-<text layer="gamma" matrix="1 0 0 1 -8 -40" transformations="translations" pos="544 352" stroke="black" type="label" width="86.1504" height="17.9472" depth="6.648" valign="baseline" size="small" style="math">\key[b^*_i \Delta_\B]</text>
+<text layer="beta" matrix="1 0 0 1 -8 -40" transformations="translations" pos="544 352" stroke="black" type="label" width="86.1504" height="17.9472" depth="6.648" valign="baseline" size="small" style="math">\key[b^*_i \Delta_\B]</text>
 <text matrix="1 0 0 1 161.246 -40" transformations="translations" pos="544 352" stroke="black" type="label" width="90.468" height="17.9472" depth="6.648" valign="baseline" size="small" style="math">\mac[b^*_i \Delta_\B]</text>
-<text layer="alpha" matrix="1 0 0 1 0 -40" transformations="translations" pos="656 352" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" size="small" style="math">\xor</text>
+<text matrix="1 0 0 1 0 -40" transformations="translations" pos="656 352" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">\xor</text>
 <text matrix="1 0 0 1 -40 -48" transformations="translations" pos="840 360" stroke="black" type="label" width="113.947" height="16.62" depth="6.648" valign="baseline" size="small" style="math"> = b^*_i \Delta_\A \Delta_\B</text>
-<text layer="gamma" matrix="1 0 0 1 -8 0" transformations="translations" pos="544 352" stroke="black" type="label" width="63.396" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\key[\Delta_\B]</text>
+<text matrix="1 0 0 1 -8 0" transformations="translations" pos="544 352" stroke="black" type="label" width="63.396" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\key[\Delta_\B]</text>
 <text matrix="1 0 0 1 184 0" transformations="translations" pos="544 352" stroke="black" type="label" width="67.7136" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\mac[\Delta_\B]</text>
-<text layer="alpha" transformations="translations" pos="656 352" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" size="small" style="math">\xor</text>
+<text transformations="translations" pos="656 352" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">\xor</text>
 <text matrix="1 0 0 1 -40 -8" transformations="translations" pos="840 360" stroke="black" type="label" width="91.1928" height="16.6152" depth="3.576" valign="baseline" size="small" style="math"> = \Delta_\A \Delta_\B</text>
-<text layer="beta" matrix="1 0 0 1 -270 150" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
+<text layer="gamma" matrix="1 0 0 1 -270 150" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
 <group matrix="1 0 0 1 0 -72">
 <group matrix="1 0 0 1 -312 16">
 <path matrix="1 0 0 1 312 -144" stroke="black" fill="KITblue15">
@@ -12952,18 +13434,18 @@ h
 </path>
 <text matrix="1 0 0 1 368 24" transformations="translations" pos="448 352" stroke="black" type="label" width="23.8152" height="16.6224" depth="4.632" valign="baseline" size="small" style="math">\beta_0</text>
 </group>
-<text matrix="1 0 0 1 0 -128" transformations="translations" pos="656 352" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" size="small" style="math">\xor</text>
+<text matrix="1 0 0 1 0 -128" transformations="translations" pos="656 352" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">\xor</text>
 <text matrix="1 0 0 1 -40 -136" transformations="translations" pos="840 360" stroke="black" type="label" width="80.9712" height="16.62" depth="6.648" valign="baseline" size="small" style="math"> = b^*_i  \Delta_\B</text>
-<text matrix="1 0 0 1 0 -88" transformations="translations" pos="656 352" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" size="small" style="math">\xor</text>
+<text matrix="1 0 0 1 0 -88" transformations="translations" pos="656 352" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">\xor</text>
 <text matrix="1 0 0 1 -40 -96" transformations="translations" pos="840 360" stroke="black" type="label" width="58.2144" height="16.6152" depth="3.576" valign="baseline" size="small" style="math"> = \Delta_\B</text>
 <text matrix="1 0 0 1 -24 8" transformations="translations" pos="768 256" stroke="black" type="label" width="51.0672" height="21.4896" depth="6.936" valign="baseline" size="small" style="math">\cdot \Delta_\A\inv</text>
 <text matrix="1 0 0 1 -24 -32" transformations="translations" pos="768 256" stroke="black" type="label" width="51.0672" height="21.4896" depth="6.936" valign="baseline" size="small" style="math">\cdot \Delta_\A\inv</text>
 <text matrix="1 0 0 1 -176 8" transformations="translations" pos="768 256" stroke="black" type="label" width="51.0672" height="21.4896" depth="6.936" valign="baseline" size="small" style="math">\cdot \Delta_\A\inv</text>
 <text matrix="1 0 0 1 -176 -32" transformations="translations" pos="768 256" stroke="black" type="label" width="51.0672" height="21.4896" depth="6.936" valign="baseline" size="small" style="math">\cdot \Delta_\A\inv</text>
 </group>
-<text matrix="1 0 0 1 -168 -120" transformations="translations" pos="544 168" stroke="black" type="minipage" width="424.87" height="31.0416" depth="19.128" valign="baseline" size="small" style="center">[DIO22] gives a modular way of \\
+<text layer="epsilon" matrix="1 0 0 1 -168 -120" transformations="translations" pos="544 168" stroke="black" type="minipage" width="424.87" height="31.0416" depth="19.128" valign="baseline" size="small" style="center">[DIO22] gives a modular way of \\
 proving equality under independent keys</text>
-<group matrix="1 0 0 1 0 48">
+<group layer="delta" matrix="1 0 0 1 0 48">
 <group matrix="1 0 0 1 0 -40">
 <path stroke="black" fill="KITpalegreen15">
 536 177.678 m
@@ -13021,50 +13503,45 @@ h
 </path>
 <text matrix="1 0 0 1 368 24" transformations="translations" pos="448 352" stroke="black" type="label" width="23.8152" height="16.6224" depth="4.632" valign="baseline" size="small" style="math">\beta_0</text>
 </group>
-<text matrix="1 0 0 1 0 -288" transformations="translations" pos="656 352" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" size="small" style="math">\xor</text>
+<text matrix="1 0 0 1 0 -288" transformations="translations" pos="656 352" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">\xor</text>
 <text matrix="1 0 0 1 -40 -296" transformations="translations" pos="840 360" stroke="black" type="label" width="78.7392" height="17.9352" depth="5.976" valign="baseline" size="small" style="math"> = \mac[\beta_i]</text>
-<text matrix="1 0 0 1 0 -248" transformations="translations" pos="656 352" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" size="small" style="math">\xor</text>
+<text matrix="1 0 0 1 0 -248" transformations="translations" pos="656 352" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">\xor</text>
 <text matrix="1 0 0 1 -40 -256" transformations="translations" pos="840 360" stroke="black" type="label" width="83.7888" height="17.9352" depth="5.976" valign="baseline" size="small" style="math"> = \mac[\beta_0]</text>
 <text matrix="1 0 0 1 -24 -152" transformations="translations" pos="768 256" stroke="black" type="label" width="39.6192" height="17.9784" depth="6.768" valign="baseline" size="small" style="math">\cdot \Delta&apos;_\A</text>
 <text matrix="1 0 0 1 -24 -192" transformations="translations" pos="768 256" stroke="black" type="label" width="39.6192" height="17.9784" depth="6.768" valign="baseline" size="small" style="math">\cdot \Delta&apos;_\A</text>
 <text matrix="1 0 0 1 -224 -152" transformations="translations" pos="768 256" stroke="black" type="label" width="54.2352" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\key[\beta_0]</text>
 <text matrix="1 0 0 1 -224 -192" transformations="translations" pos="768 256" stroke="black" type="label" width="49.1832" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\key[\beta_i]</text>
 </group>
+<text matrix="1 0 0 1 0 -40" transformations="translations" pos="656 352" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">\xor</text>
+<text matrix="1 0 0 1 -40 -48" transformations="translations" pos="840 360" stroke="black" type="label" width="113.947" height="16.62" depth="6.648" valign="baseline" size="small" style="math"> = b^*_i \Delta_\A \Delta_\B</text>
+<text transformations="translations" pos="656 352" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">\xor</text>
+<text matrix="1 0 0 1 -40 -8" transformations="translations" pos="840 360" stroke="black" type="label" width="91.1928" height="16.6152" depth="3.576" valign="baseline" size="small" style="math"> = \Delta_\A \Delta_\B</text>
+<text layer="gamma" matrix="1 0 0 1 0 -40" transformations="translations" pos="656 352" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">\xor</text>
+<text matrix="1 0 0 1 -40 -48" transformations="translations" pos="840 360" stroke="black" type="label" width="113.947" height="16.62" depth="6.648" valign="baseline" size="small" style="math"> = b^*_i \Delta_\A \Delta_\B</text>
+<text transformations="translations" pos="656 352" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">\xor</text>
+<text matrix="1 0 0 1 -40 -8" transformations="translations" pos="840 360" stroke="black" type="label" width="91.1928" height="16.6152" depth="3.576" valign="baseline" size="small" style="math"> = \Delta_\A \Delta_\B</text>
 </page>
-<page title="Optimizing the Compressed Preprocessing Protocol, Completed">
+<page title="Optimizing the Compressed Preprocessing Protocol, Completed	" section="Construction 1">
 <layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
 <view layers="alpha" active="alpha"/>
-<path layer="alpha" matrix="1 0 0 1 -456 119.504" stroke="black" arrow="normal/normal">
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
+<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
+<path layer="beta" matrix="1 0 0 1 -464 80.531" stroke="black" arrow="normal/normal">
 688 224 m
 512 224 l
 </path>
-<text matrix="1 0 0 1 -272 208.623" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
-<text matrix="1 0 0 1 -48 208.623" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small" style="tikz">\node[bob] {};</text>
-<text matrix="1 0 0 1 -654.028 152.623" transformations="translations" pos="696 232" stroke="black" type="label" width="205.296" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\fix( \vecb^*, \{ \Delta_\B, \vecb^* \Delta_\B \} )</text>
-<group matrix="1 0 0 1 24 -63.3766">
-<path stroke="black" fill="KITblue15">
-156.151 510.615 m
-156.151 494.424 l
-156.151 489.424
-151.151 484.424
-146.151 484.424 c
-90 484.424 l
-85 484.424
-80 489.424
-80 494.424 c
-80 510.615 l
-80 515.615
-85 520.615
-90 520.615 c
-146.151 520.615 l
-151.151 520.615
-156.151 515.615
-156.151 510.615 c
-h
-</path>
-<text matrix="1 0 0 1 -56 192" transformations="translations" pos="144 304" stroke="black" type="label" width="60.1512" height="16.6152" depth="3.576" valign="baseline" size="small">\Func[COT]</text>
-</group>
-<group matrix="1 0 0 1 -9.889 -57.8355">
+<text layer="alpha" matrix="1 0 0 1 -272 256.623" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
+<text matrix="1 0 0 1 -80 256.623" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small" style="tikz">\node[bob] {};</text>
+<text layer="beta" matrix="1 0 0 1 -662.028 120.623" transformations="translations" pos="696 232" stroke="black" type="label" width="172.056" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\fix( \{ \Delta_\B, \vecb^* \Delta_\B \} )</text>
+<group matrix="1 0 0 1 218.486 58.424">
 <path stroke="black" fill="KITblue15">
 191.929 371.24 m
 191.929 347.064 l
@@ -13087,7 +13564,7 @@ h
 </path>
 <text matrix="1 0 0 1 -24 48" transformations="translations" pos="144 304" stroke="black" type="label" width="63.9288" height="21.24" depth="6.936" valign="baseline" size="small" style="math">\Func[bCOT]^{L+1}</text>
 </group>
-<group matrix="1 0 0 1 -321.889 -45.5411">
+<group matrix="1 0 0 1 274.486 206.719">
 <path matrix="1 0 0 1 312 -144" stroke="black" fill="KITblue15">
 191.929 371.24 m
 191.929 347.064 l
@@ -13110,7 +13587,7 @@ h
 </path>
 <text matrix="1 0 0 1 288 -96" transformations="translations" pos="144 304" stroke="black" type="label" width="63.9288" height="19.6632" depth="6.768" valign="baseline" size="small" style="math">\Func[bCOT]^{2}</text>
 </group>
-<group matrix="1 0 0 1 -16 -41.8355">
+<group matrix="1 0 0 1 212.375 74.424">
 <text matrix="1 0 0 1 -508.889 -107.448" transformations="translations" pos="747.16 383.846" stroke="black" type="label" width="159.12" height="17.9352" depth="5.976" valign="baseline" size="small" style="math"> \times [\beta_1,...,\beta_L,\Delta_\B]</text>
 <path matrix="1 0 0 1 0 -16" stroke="black" pen="heavier">
 48 328 m
@@ -13139,7 +13616,7 @@ h
 <text matrix="1 0 0 1 -9.5352 -23.0716" transformations="translations" pos="144 296" stroke="black" type="label" width="43.0704" height="17.3832" depth="3.24" valign="baseline" size="small">\key[\veca]</text>
 <text matrix="1 0 0 1 -91.694 -23.0716" transformations="translations" pos="144 296" stroke="black" type="label" width="47.388" height="17.3832" depth="3.24" valign="baseline" size="small">\mac[\veca]</text>
 </group>
-<group matrix="1 0 0 1 -16 10.4589">
+<group matrix="1 0 0 1 580.375 262.719">
 <text matrix="1 0 0 1 -508.889 -291.448" transformations="translations" pos="747.16 383.846" stroke="black" type="label" width="99.1536" height="17.9352" depth="5.976" valign="baseline" size="small" style="math"> \times [\beta_0, \Delta_\B]</text>
 <path matrix="1 0 0 1 0 -200" stroke="black" pen="heavier">
 48 328 m
@@ -13168,32 +13645,7 @@ h
 <text matrix="1 0 0 1 -9.5352 -207.072" transformations="translations" pos="144 296" stroke="black" type="label" width="42.2232" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\key[\hat\veca]</text>
 <text matrix="1 0 0 1 -91.694 -207.072" transformations="translations" pos="144 296" stroke="black" type="label" width="46.5408" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\mac[\hat{\veca}]</text>
 </group>
-<group matrix="1 0 0 1 294.202 99.0188">
-<path stroke="black" fill="KITblue15">
-454.932 366.615 m
-454.932 350.424 l
-454.932 345.424
-449.932 340.424
-444.932 340.424 c
-378 340.424 l
-373 340.424
-368 345.424
-368 350.424 c
-368 366.615 l
-368 371.615
-373 376.615
-378 376.615 c
-444.932 376.615 l
-449.932 376.615
-454.932 371.615
-454.932 366.615 c
-h
-</path>
-<text matrix="1 0 0 1 232 48" transformations="translations" pos="144 304" stroke="black" type="label" width="70.932" height="16.6152" depth="3.576" valign="baseline" size="small">\Func[DVZK]</text>
-</group>
-<text matrix="1 0 0 1 396.202 291.019" transformations="translations" pos="32 160" stroke="black" type="label" width="224.321" height="16.4664" depth="3.84" valign="baseline" size="small">Verify mult.~correlation</text>
-<text matrix="1 0 0 1 364.202 187.019" transformations="translations" pos="64 224" stroke="black" type="label" width="367.788" height="17.9784" depth="6.768" valign="baseline" size="small">Check $\{ \beta_i \}$ consistency using $\fix( \Delta_\A&apos;)$</text>
-<group matrix="1 0 0 1 -99.3016 11.3304">
+<group layer="alpha" matrix="1 0 0 1 204.698 11.3304">
 <path stroke="black" fill="KITblue15">
 184.394 498.652 m
 184.394 479.206 l
@@ -13216,35 +13668,496 @@ h
 </path>
 <text matrix="1 0 0 1 -32.8719 180.046" transformations="translations" pos="144 304" stroke="black" type="label" width="65.2656" height="16.6056" depth="6.84" valign="baseline" size="small">\Prot[Samp]</text>
 </group>
-<text matrix="1 0 0 1 86.2857 13.0736" transformations="translations" pos="3.7316 479.209" stroke="black" type="label" width="320.398" height="17.9352" depth="5.976" valign="baseline" size="small">$\Delta_\A, \Delta_\B \gets \$ $ s.t.~$\LSB(\Delta_\A \Delta_\B) = 1$</text>
-<text matrix="1 0 0 1 -653.156 127.348" transformations="translations" pos="696 232" stroke="black" type="label" valign="baseline" size="small" style="math">\fix( \vecb^*, \{ \Delta_\B, \vecb^* \Delta_\B \} )</text>
+<text matrix="1 0 0 1 390.286 13.0736" transformations="translations" pos="3.7316 479.209" stroke="black" type="label" width="320.398" height="17.9352" depth="5.976" valign="baseline" size="small">$\Delta_\A, \Delta_\B \gets \$ $ s.t.~$\LSB(\Delta_\A \Delta_\B) = 1$</text>
+<text layer="beta" matrix="1 0 0 1 -663.2 90.99" transformations="translations" pos="696 232" stroke="black" type="label" width="206.602" height="17.9328" depth="6.456" valign="baseline" size="small" style="math">\fix( r, r \cdot \Delta_\B \} , \{ b_i b_j \} )</text>
+<path layer="delta" matrix="1 0 0 1 0 16" stroke="black" arrow="normal/normal">
+48 208 m
+224 208 l
+</path>
+<text matrix="1 0 0 1 -30.01 181.287" transformations="translations" pos="56.026 53.0101" stroke="black" type="label" width="190.728" height="22.0008" depth="5.976" valign="baseline" size="small" style="math">m_{k,1} := \LSB(\dmac_\A[\tilde{b}_k])</text>
+<path layer="epsilon" matrix="1 0 0 1 -464 -105.177" stroke="black" arrow="normal/normal">
+688 224 m
+512 224 l
+</path>
+<text matrix="1 0 0 1 21.1713 -96.9957" transformations="translations" pos="71.7143 225.582" stroke="black" type="label" width="70.2288" height="22.0008" depth="5.976" valign="baseline" size="small" style="math">\fix(\tilde{b}_k)</text>
+<group layer="alpha" matrix="1 0 0 1 -248 -24">
+<group matrix="1 0 0 1 264 0">
+<path stroke="black" fill="KITblue15">
+156.151 510.615 m
+156.151 494.424 l
+156.151 489.424
+151.151 484.424
+146.151 484.424 c
+90 484.424 l
+85 484.424
+80 489.424
+80 494.424 c
+80 510.615 l
+80 515.615
+85 520.615
+90 520.615 c
+146.151 520.615 l
+151.151 520.615
+156.151 515.615
+156.151 510.615 c
+h
+</path>
+<text matrix="1 0 0 1 -56 192" transformations="translations" pos="144 304" stroke="black" type="label" width="60.1512" height="16.6152" depth="3.576" valign="baseline" size="small">\Func[COT]</text>
+</group>
+<text matrix="1 0 0 1 -308.889 44.552" transformations="translations" pos="747.16 383.846" stroke="black" type="label" width="51.5736" height="16.6152" depth="3.576" valign="baseline" size="small" style="math"> \times \Delta_\A</text>
+<text matrix="1 0 0 1 -346.344 42.1756" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" size="small" style="math">=</text>
+<text matrix="1 0 0 1 -300.706 42.1734" transformations="translations" pos="685.392 387.553" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">+</text>
+<text matrix="1 0 0 1 -176.075 44.3896" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="23.292" height="16.7136" depth="0.168" valign="baseline" size="small" style="math">\vecb^*</text>
+<text matrix="1 0 0 1 -226.066 44.3606" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="16.6056" height="16.6032" depth="0" valign="baseline" size="small">\key</text>
+<path matrix="1 0 0 1 -96.4666 276.333" stroke="black" pen="heavier">
+400 192 m
+400 128 l
+424 128 l
+424 192 l
+h
+</path>
+<text matrix="1 0 0 1 -281.558 44.251" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="20.9208" height="16.6032" depth="0" valign="baseline" size="small" style="math">\mac</text>
+<path matrix="1 0 0 1 -43.1322 276.442" stroke="black" pen="heavier">
+400 192 m
+400 128 l
+424 128 l
+424 192 l
+h
+</path>
+<path matrix="1 0 0 1 10.2022 276.442" stroke="black" pen="heavier">
+400 192 m
+400 128 l
+424 128 l
+424 192 l
+h
+</path>
+</group>
+<path layer="beta" matrix="1 0 0 1 0 -32" stroke="black" arrow="normal/normal">
+688 328 m
+800 328 l
+</path>
+<text matrix="1 0 0 1 24 -32" transformations="translations" pos="664 336" stroke="black" type="label" width="107.688" height="17.9328" depth="6.456" valign="baseline" size="small" style="math">\fix( \{ a_i a_j \} )</text>
+<group layer="gamma" matrix="1 0 0 1 56 -8">
+<group>
+<path stroke="black" fill="KITred15">
+192 293.998 m
+635.132 293.998 l
+8 0 0 -8 635.132 285.998 643.132 285.998 a
+643.132 249.544 l
+200 249.544 l
+8 0 0 -8 200 257.544 192 257.544 a
+h
+</path>
+</group>
+<text matrix="1 0 0 1 72 -24" transformations="translations" pos="128 288" stroke="black" type="label" width="435.132" height="21.9984" depth="6.456" valign="baseline" size="small">Define $\bsh{\tilde{b}_k} :=  \bsh{a_i b_j} \xor \bsh{a_j b_i} \xor \bsh{\hat{a}_k} \xor \bsh{a_i a_j} $</text>
+</group>
+<text layer="zeta" matrix="1 0 0 1 -70.4388 -72" transformations="translations" pos="104 160" stroke="black" type="label" width="188.878" height="21.996" depth="7.176" valign="baseline" size="small" style="math">y := r + \sum_k \chi^k \cdot \tilde{b}_k</text>
+<group layer="delta" matrix="1 0 0 1 -232 -40">
+<group>
+<path stroke="black" fill="KITred15">
+246.329 250.976 m
+494.322 250.976 l
+8 0 0 -8 494.322 242.976 502.322 242.976 a
+502.322 206.999 l
+254.329 206.999 l
+8 0 0 -8 254.329 214.999 246.329 214.999 a
+h
+</path>
+</group>
+<text matrix="1 0 0 1 -503.313 25.0274" transformations="translations" pos="757.642 195.948" stroke="black" type="label" width="239.993" height="22.0008" depth="5.976" valign="baseline" size="small">$\tilde{b}_k = m_{k,1} \xor \LSB(\dmac_\A[\tilde{b}_k])$ </text>
+</group>
+<group layer="zeta" matrix="1 0 0 1 8 -32">
+<group>
+<path stroke="black" fill="KITyellow15">
+344 200 m
+896 200 l
+8 0 0 -8 896 192 904 192 a
+904 73.9696 l
+352 73.9696 l
+8 0 0 -8 352 81.9696 344 81.9696 a
+h
+</path>
+</group>
+<text matrix="1 0 0 1 96 16" transformations="translations" pos="256 176" stroke="black" type="minipage" width="544" height="60.9504" depth="49.08" valign="top" size="small" style="itemize">\item Check $\{ \beta_i \}$ consistency by $\fix( \Delta&apos;_\A )$
+\item Check $\vecb^* \Delta_\B, \{a_i a_j\}, \{b_i b_j\}$ consistency by \Func[DVZK]
+\item Check $m_{k,1}$ consistency by $\checkzero(\bsh{y} - y)$
+\item Check $\fix(\tilde{b}_k)$ consistency by $\checkzero([y]_\B - y) $ </text>
+</group>
+<path matrix="1 0 0 1 -464 -153.177" stroke="black" arrow="normal/normal">
+688 224 m
+512 224 l
+</path>
 </page>
-<page title="Dual-Key Authentication">
+<page title="Optimizing the One-way Communication Via Dual Execution" section="Construction 2">
 <layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
 <view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<text layer="alpha" pin="h" transformations="translations" pos="0 524" stroke="black" type="minipage" width="920" height="28.6056" depth="16.656" valign="top" size="small" style="itemize">\item Optimized $\Func[cpre]$ + DILO-WRK = \begin{tikzpicture} \node[alice] {}; \end{tikzpicture} $\to$ \begin{tikzpicture} \node[bob] {}; \end{tikzpicture}: $2\csp + 3\ssp + 2$ bits, \begin{tikzpicture} \node[bob] {}; \end{tikzpicture} $\to$ \begin{tikzpicture} \node[alice] {}; \end{tikzpicture}: $ 2$  bits
+</text>
+<text pin="h" transformations="translations" pos="0 462.738" stroke="black" type="minipage" width="920" height="16.2696" depth="4.296" valign="top" size="small" style="itemize">\item How about optimizing one-way communication? Maybe dual execution?</text>
+<text layer="beta" matrix="1 0 0 1 -248 208.623" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
+<text matrix="1 0 0 1 -56 208.623" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small" style="tikz">\node[bob] {};</text>
+<text matrix="1 0 0 1 440 208.623" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
+<text matrix="1 0 0 1 248 208.623" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small" style="tikz">\node[bob] {};</text>
+<text layer="gamma" matrix="1 0 0 1 0 208" pin="h" transformations="translations" pos="0 16.248" stroke="black" type="minipage" width="920" height="17.9352" depth="5.952" valign="top" size="small" style="itemize">\item Semi-honest GC + DualEx [HEK12, HsV20]
+: Check $z_w = z&apos;_w$ for $w \in \OOO$</text>
+<text layer="delta" matrix="1 0 0 1 -48 -32" transformations="translations" pos="64 112" stroke="black" type="label" width="376.86" height="57.5712" depth="45.72" valign="baseline" size="small">$\Adv$ may
+$
+\begin{cases}
+\mbox{garble a different circuit } \CCC&apos; \\
+\mbox{use different input } \vecx \mbox{ or } \vecy\\
+\mbox{launch selective failure}
+\end{cases}
+$</text>
+<text matrix="1 0 0 1 0 -8" transformations="translations" pos="408 88" stroke="black" type="label" width="23.9112" height="8.8464" depth="0" valign="baseline" size="small" style="math">\Rightarrow</text>
+<text matrix="1 0 0 1 0 8" transformations="translations" pos="448 104" stroke="black" type="minipage" width="416" height="30.6624" depth="18.744" valign="top" size="small" style="itemize">\item Even if we use a secure $\Func[EQ]$ 
+\item $\Adv$ can still gain 1-bit leakage</text>
+<group layer="beta" matrix="1 0 0 1 0 8">
+<path stroke="black" fill="KITred15">
+177.678 366.615 m
+177.678 350.424 l
+177.678 345.424
+172.678 340.424
+167.678 340.424 c
+124.921 340.424 l
+119.921 340.424
+114.921 345.424
+114.921 350.424 c
+114.921 366.615 l
+114.921 371.615
+119.921 376.615
+124.921 376.615 c
+167.678 376.615 l
+172.678 376.615
+177.678 371.615
+177.678 366.615 c
+h
+</path>
+<text matrix="1 0 0 1 2.9208 104" transformations="translations" pos="120 248" stroke="black" type="label" width="46.7568" height="16.6152" depth="3.576" valign="baseline" size="small">\Prot[GC]</text>
+</group>
+<group matrix="1 0 0 1 504 8">
+<path stroke="black" fill="KITred15">
+177.678 366.615 m
+177.678 350.424 l
+177.678 345.424
+172.678 340.424
+167.678 340.424 c
+124.921 340.424 l
+119.921 340.424
+114.921 345.424
+114.921 350.424 c
+114.921 366.615 l
+114.921 371.615
+119.921 376.615
+124.921 376.615 c
+167.678 376.615 l
+172.678 376.615
+177.678 371.615
+177.678 366.615 c
+h
+</path>
+<text matrix="1 0 0 1 2.9208 104" transformations="translations" pos="120 248" stroke="black" type="label" width="46.7568" height="16.6152" depth="3.576" valign="baseline" size="small">\Prot[GC]</text>
+</group>
+<text matrix="1 0 0 1 -16 0" transformations="translations" pos="32 384" stroke="black" type="label" width="75.9696" height="16.6152" depth="3.576" valign="baseline" size="small" style="math">\vecx \text{ for } \III_\A</text>
+<text matrix="1 0 0 1 176 0" transformations="translations" pos="32 384" stroke="black" type="label" width="76.3056" height="16.62" depth="3.744" valign="baseline" size="small" style="math">\vecy \text{ for } \III_\B</text>
+<text matrix="1 0 0 1 680 0" transformations="translations" pos="32 384" stroke="black" type="label" width="75.9696" height="16.6152" depth="3.576" valign="baseline" size="small" style="math">\vecx \text{ for } \III_\A</text>
+<text matrix="1 0 0 1 488 0" transformations="translations" pos="32 384" stroke="black" type="label" width="76.3056" height="16.62" depth="3.744" valign="baseline" size="small" style="math">\vecy \text{ for } \III_\B</text>
+<text matrix="1 0 0 1 0 24" transformations="translations" pos="8 296" stroke="black" type="label" width="136.747" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\{ \lambda_k, \ml_{k,0}, \ml_{k,1} \}</text>
+<text transformations="translations" pos="200 320" stroke="black" type="label" width="101.194" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\{ \cbit_k, \ml_{k,\cbit_k} \}</text>
+<text matrix="1 0 0 1 -8 8" transformations="translations" pos="320 312" stroke="black" type="label" width="99.1896" height="16.6176" depth="1.128" valign="baseline" size="small">for $k \in \WWW$</text>
+<text transformations="translations" pos="200 288" stroke="black" type="label" width="151.591" height="17.9352" depth="5.976" valign="baseline" size="small">$ \{ z_w \} $ for $w \in \OOO$</text>
+<text matrix="1 0 0 1 -112 0" transformations="translations" pos="600 320" stroke="black" type="label" width="136.747" height="17.9712" depth="8.808" valign="baseline" size="small" style="math">\{ \lambda&apos;_k, \ml&apos;_{k,0}, \ml&apos;_{k,1} \}</text>
+<text matrix="1 0 0 1 -112 0" transformations="translations" pos="800 320" stroke="black" type="label" width="205.788" height="17.9688" depth="13.272" valign="baseline" size="small">$\{ \cbit&apos;_k, \ml&apos;_{k,\cbit&apos;_k} \}$ for $k \in \WWW$</text>
+<text matrix="1 0 0 1 488 0" transformations="translations" pos="200 288" stroke="black" type="label" width="151.591" height="17.976" depth="5.976" valign="baseline" size="small">$ \{ z&apos;_w \} $ for $w \in \OOO$</text>
 </page>
-<page title="Optimizing the One-way Communication Via Dual Execution">
-<layer name="alpha"/>
-<view layers="alpha" active="alpha"/>
-</page>
-<page title="Conclusion">
-<layer name="alpha"/>
-<view layers="alpha" active="alpha"/>
-</page>
-<page title="Introduction" section="">
+<page title="Optimizing the One-way Communication Via Dual Execution" section="Construction 2">
 <layer name="alpha"/>
 <layer name="beta"/>
 <view layers="alpha" active="alpha"/>
 <view layers="alpha beta" active="beta"/>
-<text layer="alpha" pin="h" pos="0 524" stroke="black" type="minipage" width="920" height="70.2016" depth="56.392" valign="top" style="itemize">\item edit title using ctrl-P
-\item add new textfield with F10
-\item change name and title for the footer in the document properties ctrl-shift-P
-\item use \textbackslash hl command to \hl{highlight}</text>
+<text layer="alpha" pin="h" transformations="translations" pos="0 524" stroke="black" type="minipage" width="920" height="28.6056" depth="16.656" valign="top" size="small" style="itemize">\item Optimized $\Func[cpre]$ + DILO-WRK = \begin{tikzpicture} \node[alice] {}; \end{tikzpicture} $\to$ \begin{tikzpicture} \node[bob] {}; \end{tikzpicture}: $2\csp + 3\ssp + 2$ bits, \begin{tikzpicture} \node[bob] {}; \end{tikzpicture} $\to$ \begin{tikzpicture} \node[alice] {}; \end{tikzpicture}: $ 2$  bits
+</text>
+<text pin="h" transformations="translations" pos="0 462.738" stroke="black" type="minipage" width="920" height="16.2696" depth="4.296" valign="top" size="small" style="itemize">\item How about optimizing one-way communication? Maybe dual execution?</text>
+<group matrix="1 0 0 1 56 0">
+<path stroke="black" fill="KITblue15">
+126.079 398.606 m
+126.079 379.16 l
+126.079 374.16
+121.079 369.16
+116.079 369.16 c
+66 369.16 l
+61 369.16
+56 374.16
+56 379.16 c
+56 398.606 l
+56 403.606
+61 408.606
+66 408.606 c
+116.079 408.606 l
+121.079 408.606
+126.079 403.606
+126.079 398.606 c
+h
+</path>
+<text matrix="1 0 0 1 -80 80" transformations="translations" pos="144 304" stroke="black" type="label" width="54.0792" height="16.6056" depth="6.84" valign="baseline" size="small">\Func[cpre]</text>
+</group>
+<group matrix="1 0 0 1 560 0">
+<path stroke="black" fill="KITblue15">
+126.079 398.606 m
+126.079 379.16 l
+126.079 374.16
+121.079 369.16
+116.079 369.16 c
+66 369.16 l
+61 369.16
+56 374.16
+56 379.16 c
+56 398.606 l
+56 403.606
+61 408.606
+66 408.606 c
+116.079 408.606 l
+121.079 408.606
+126.079 403.606
+126.079 398.606 c
+h
+</path>
+<text matrix="1 0 0 1 -80 80" transformations="translations" pos="144 304" stroke="black" type="label" width="54.0792" height="16.6056" depth="6.84" valign="baseline" size="small">\Func[cpre]</text>
+</group>
+<text matrix="1 0 0 1 -248 208.623" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
+<text matrix="1 0 0 1 -56 208.623" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small" style="tikz">\node[bob] {};</text>
+<text matrix="1 0 0 1 248 208.623" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small" style="tikz">\node[bob] {};</text>
+<text matrix="1 0 0 1 440 208.623" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
+<text matrix="1 0 0 1 -336 24" transformations="translations" pos="352 320" stroke="black" type="minipage" width="282.99" height="20.316" depth="8.352" valign="baseline" size="small" style="center">$ [\veca], [\hat{\veca}], [\vecb], [\hat{\vecb}],\Delta_\A, \Delta_\B \gets \$ $</text>
+<text matrix="1 0 0 1 -312 64" transformations="translations" pos="320 240" stroke="black" type="label" width="320.546" height="22.4256" depth="6.456" valign="baseline" size="small">s.t.~$\hat{a}_k \xor \hat{b}_k = (a_i \xor b_i) \cdot (a_j \xor b_j) $</text>
+<text matrix="1 0 0 1 152 24" transformations="translations" pos="352 320" stroke="black" type="minipage" width="314.99" height="20.7024" depth="8.76" valign="baseline" size="small" style="center">$ [\veca&apos; ], [\hat{\veca}&apos; ], [\vecb&apos; ], [\hat{\vecb}&apos; ],\Delta&apos;_\A, \Delta&apos;_\B \gets \$ $</text>
+<text matrix="1 0 0 1 184 64" transformations="translations" pos="320 240" stroke="black" type="label" width="320.546" height="22.4256" depth="6.456" valign="baseline" size="small">s.t.~$\hat{a}_k \xor \hat{b}_k = (a_i \xor b_i) \cdot (a_j \xor b_j) $</text>
+<group matrix="1 0 0 1 2.9208 16">
+<path stroke="black" fill="KITred15">
+176.238 262.615 m
+176.238 246.424 l
+176.238 241.424
+171.238 236.424
+166.238 236.424 c
+122 236.424 l
+117 236.424
+112 241.424
+112 246.424 c
+112 262.615 l
+112 267.615
+117 272.615
+122 272.615 c
+166.238 272.615 l
+171.238 272.615
+176.238 267.615
+176.238 262.615 c
+h
+</path>
+<text transformations="translations" pos="120 248" stroke="black" type="label" width="48.2376" height="16.6152" depth="3.576" valign="baseline" size="small">\Prot[DG]</text>
+</group>
+<group matrix="1 0 0 1 506.92 16">
+<path stroke="black" fill="KITred15">
+176.238 262.615 m
+176.238 246.424 l
+176.238 241.424
+171.238 236.424
+166.238 236.424 c
+122 236.424 l
+117 236.424
+112 241.424
+112 246.424 c
+112 262.615 l
+112 267.615
+117 272.615
+122 272.615 c
+166.238 272.615 l
+171.238 272.615
+176.238 267.615
+176.238 262.615 c
+h
+</path>
+<text transformations="translations" pos="120 248" stroke="black" type="label" width="48.2376" height="16.6152" depth="3.576" valign="baseline" size="small">\Prot[DG]</text>
+</group>
+<text matrix="1 0 0 1 8 -64" transformations="translations" pos="8 296" stroke="black" type="label" width="136.747" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\{ \lambda_k, \ml_{k,0}, \ml_{k,1} \}</text>
+<text matrix="1 0 0 1 8 -88" transformations="translations" pos="200 320" stroke="black" type="label" width="101.194" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\{ \cbit_k, \ml_{k,\cbit_k} \}</text>
+<text matrix="1 0 0 1 0 -80" transformations="translations" pos="320 312" stroke="black" type="label" width="99.1896" height="16.6176" depth="1.128" valign="baseline" size="small">for $k \in \WWW$</text>
+<text matrix="1 0 0 1 -104 -88" transformations="translations" pos="600 320" stroke="black" type="label" width="136.747" height="17.9712" depth="8.808" valign="baseline" size="small" style="math">\{ \lambda&apos;_k, \ml&apos;_{k,0}, \ml&apos;_{k,1} \}</text>
+<text matrix="1 0 0 1 -104 -88" transformations="translations" pos="800 320" stroke="black" type="label" width="205.788" height="17.9688" depth="13.272" valign="baseline" size="small">$\{ \cbit&apos;_k, \ml&apos;_{k,\cbit&apos;_k} \}$ for $k \in \WWW$</text>
+<text layer="beta" matrix="1 0 0 1 144 24" transformations="translations" pos="64 176" stroke="black" type="label" width="213.684" height="16.6056" depth="5.976" valign="baseline" size="small" style="math">\ml_{k,\cbit_k} = \ml_{k, 0} \xor \cbit_k \cdot \Delta_\A</text>
+<text matrix="1 0 0 1 632 24" transformations="translations" pos="64 176" stroke="black" type="label" width="213.684" height="17.9688" depth="13.272" valign="baseline" size="small" style="math">\ml&apos;_{k,\cbit&apos;_k} = \ml&apos;_{k, 0} \xor \cbit&apos;_k \cdot \Delta&apos;_\B</text>
+<text matrix="1 0 0 1 0 112" pin="h" transformations="translations" pos="0 43.896" stroke="black" type="minipage" width="920" height="30.5856" depth="18.672" valign="top" size="small" style="itemize">\item Color bits and wire masks are authenticated for every wire
+\item This enables checking equality for every wire across two executions</text>
+<group matrix="1 0 0 1 664 80">
+<group>
+<path stroke="black" fill="KITblue15">
+8 89.3712 m
+238.886 89.3712 l
+8 0 0 -8 238.886 81.3712 246.886 81.3712 a
+246.886 51.896 l
+16 51.896 l
+8 0 0 -8 16 59.896 8 59.896 a
+h
+</path>
+</group>
+<text matrix="1 0 0 1 -48 -280" transformations="translations" pos="64 344" stroke="black" type="label" width="222.886" height="17.3712" depth="4.104" valign="baseline" size="small">[HK21] Garbled Sharing</text>
+</group>
 </page>
-<page>
+<page title="Optimizing the One-way Communication Via Dual Execution" section="Construction 2">
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<text layer="alpha" matrix="1 0 0 1 -104 -160" transformations="translations" pos="160 480" stroke="black" type="label" width="318.989" height="93.7728" depth="81.984" valign="baseline" size="small">\begin{tabular}{c c | c}
+<group layer="alpha" matrix="1 0 0 1 56 80">
+<path stroke="black" fill="KITblue15">
+126.079 398.606 m
+126.079 379.16 l
+126.079 374.16
+121.079 369.16
+116.079 369.16 c
+66 369.16 l
+61 369.16
+56 374.16
+56 379.16 c
+56 398.606 l
+56 403.606
+61 408.606
+66 408.606 c
+116.079 408.606 l
+121.079 408.606
+126.079 403.606
+126.079 398.606 c
+h
+</path>
+<text matrix="1 0 0 1 -80 80" transformations="translations" pos="144 304" stroke="black" type="label" width="54.0792" height="16.6056" depth="6.84" valign="baseline" size="small">\Func[cpre]</text>
+</group>
+<group matrix="1 0 0 1 560 80">
+<path stroke="black" fill="KITblue15">
+126.079 398.606 m
+126.079 379.16 l
+126.079 374.16
+121.079 369.16
+116.079 369.16 c
+66 369.16 l
+61 369.16
+56 374.16
+56 379.16 c
+56 398.606 l
+56 403.606
+61 408.606
+66 408.606 c
+116.079 408.606 l
+121.079 408.606
+126.079 403.606
+126.079 398.606 c
+h
+</path>
+<text matrix="1 0 0 1 -80 80" transformations="translations" pos="144 304" stroke="black" type="label" width="54.0792" height="16.6056" depth="6.84" valign="baseline" size="small">\Func[cpre]</text>
+</group>
+<text matrix="1 0 0 1 -248 288.623" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
+<text matrix="1 0 0 1 -56 288.623" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small" style="tikz">\node[bob] {};</text>
+<text matrix="1 0 0 1 248 288.623" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small" style="tikz">\node[bob] {};</text>
+<text matrix="1 0 0 1 440 288.623" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
+<text matrix="1 0 0 1 -336 104" transformations="translations" pos="352 320" stroke="black" type="minipage" width="282.99" height="20.316" depth="8.352" valign="baseline" size="small" style="center">$ [\veca], [\hat{\veca}], [\vecb], [\hat{\vecb}],\Delta_\A, \Delta_\B \gets \$ $</text>
+<text matrix="1 0 0 1 -312 144" transformations="translations" pos="320 240" stroke="black" type="label" width="320.546" height="22.4256" depth="6.456" valign="baseline" size="small">s.t.~$\hat{a}_k \xor \hat{b}_k = (a_i \xor b_i) \cdot (a_j \xor b_j) $</text>
+<text matrix="1 0 0 1 152 104" transformations="translations" pos="352 320" stroke="black" type="minipage" width="314.99" height="20.316" depth="8.352" valign="baseline" size="small" style="center">$ [\veca&apos; ], [\hat{\veca}&apos; ], [\vecb&apos; ], [\hat{\vecb}&apos; ],\Delta_\A, \Delta_\B \gets \$ $</text>
+<text matrix="1 0 0 1 184 144" transformations="translations" pos="320 240" stroke="black" type="label" width="320.546" height="22.4256" depth="6.456" valign="baseline" size="small">s.t.~$\hat{a}_k \xor \hat{b}_k = (a_i \xor b_i) \cdot (a_j \xor b_j) $</text>
+<group matrix="1 0 0 1 2.9208 96">
+<path stroke="black" fill="KITred15">
+176.238 262.615 m
+176.238 246.424 l
+176.238 241.424
+171.238 236.424
+166.238 236.424 c
+122 236.424 l
+117 236.424
+112 241.424
+112 246.424 c
+112 262.615 l
+112 267.615
+117 272.615
+122 272.615 c
+166.238 272.615 l
+171.238 272.615
+176.238 267.615
+176.238 262.615 c
+h
+</path>
+<text transformations="translations" pos="120 248" stroke="black" type="label" width="48.2376" height="16.6152" depth="3.576" valign="baseline" size="small">\Prot[DG]</text>
+</group>
+<group matrix="1 0 0 1 506.92 96">
+<path stroke="black" fill="KITred15">
+176.238 262.615 m
+176.238 246.424 l
+176.238 241.424
+171.238 236.424
+166.238 236.424 c
+122 236.424 l
+117 236.424
+112 241.424
+112 246.424 c
+112 262.615 l
+112 267.615
+117 272.615
+122 272.615 c
+166.238 272.615 l
+171.238 272.615
+176.238 267.615
+176.238 262.615 c
+h
+</path>
+<text transformations="translations" pos="120 248" stroke="black" type="label" width="48.2376" height="16.6152" depth="3.576" valign="baseline" size="small">\Prot[DG]</text>
+</group>
+<text matrix="1 0 0 1 8 16" transformations="translations" pos="8 296" stroke="black" type="label" width="136.747" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\{ \lambda_k, \ml_{k,0}, \ml_{k,1} \}</text>
+<text matrix="1 0 0 1 8 -8" transformations="translations" pos="200 320" stroke="black" type="label" width="101.194" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\{ \cbit_k, \ml_{k,\cbit_k} \}</text>
+<text transformations="translations" pos="320 312" stroke="black" type="label" width="99.1896" height="16.6176" depth="1.128" valign="baseline" size="small">for $k \in \WWW$</text>
+<text matrix="1 0 0 1 -104 -8" transformations="translations" pos="600 320" stroke="black" type="label" width="136.747" height="17.9712" depth="8.808" valign="baseline" size="small" style="math">\{ \lambda&apos;_k, \ml&apos;_{k,0}, \ml&apos;_{k,1} \}</text>
+<text matrix="1 0 0 1 -104 -8" transformations="translations" pos="800 320" stroke="black" type="label" width="205.788" height="17.9688" depth="13.272" valign="baseline" size="small">$\{ \cbit&apos;_k, \ml&apos;_{k,\cbit&apos;_k} \}$ for $k \in \WWW$</text>
+<text matrix="1 0 0 1 144 104" transformations="translations" pos="64 176" stroke="black" type="label" width="213.684" height="16.6056" depth="5.976" valign="baseline" size="small" style="math">\ml_{k,\cbit_k} = \ml_{k, 0} \xor \cbit_k \cdot \Delta_\A</text>
+<text matrix="1 0 0 1 632 104" transformations="translations" pos="64 176" stroke="black" type="label" width="213.684" height="17.9688" depth="13.272" valign="baseline" size="small" style="math">\ml&apos;_{k,\cbit&apos;_k} = \ml&apos;_{k, 0} \xor \cbit&apos;_k \cdot \Delta&apos;_\B</text>
+<text matrix="1 0 0 1 0 -24" pin="h" transformations="translations" pos="0 250.728" stroke="black" type="minipage" width="920" height="17.952" depth="6" valign="top" size="small" style="center">Checks $(a_w \xor b_w \xor \cbit_w) \cdot (\Delta_\A \xor \Delta_\B) = (a&apos;_w \xor b&apos;_w \xor \cbit&apos;_w) \cdot (\Delta_\A \xor \Delta_\B) $</text>
+<text matrix="1 0 0 1 0 -48" pin="h" transformations="translations" pos="0 210.776" stroke="black" type="minipage" width="920" height="44.424" depth="32.544" valign="top" size="small">\vspace{-1em}
+\begin{align*}
+         V_w^\A &amp;= (a_w \xor a_w&apos; \xor \cbit_w&apos;) \Delta_\A \xor \mac_{\A}[a_w] \xor \mac_{\A}[a_w&apos;] \xor \mac_{\A}[\cbit_w&apos;] \xor \key_{\A}[b_w] \xor \key_{\A}[b_w&apos;] \xor \key_{\A}[\cbit_w],  \\
+        V_w^\B &amp;= (b_w \xor b_w&apos; \xor \cbit_w) \Delta_\B \xor \mac_{\B}[b_w] \xor \mac_{\B}[b_w&apos;] \xor \mac_{\B}[\cbit_w] \xor \key_{\B}[a_w] \xor \key_{\B}[a_w&apos;] \xor \key_{\B}[\cbit_w&apos;].
+\end{align*}</text>
+</page>
+<page title="Conclusion" section="Conclusion">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<text layer="alpha" pin="h" transformations="translations" pos="0 524" stroke="black" type="minipage" width="920" height="59.9736" depth="48.12" valign="top" size="small" style="itemize">\item Further optimization on the compression technique of [DILO22]
+\item Dual-key authentication and efficient generation
+\item Dual execution upon distribution garbling eliminates 1-bit leakage
+\item Malicious 2PC with one-way comm.~of $2\csp + 5$ bits, two way comm.~of $2\csp + 3\ssp + 2$ bits</text>
+<text matrix="1 0 0 1 -152 0" transformations="translations" pos="192 240" stroke="black" type="label" width="825.946" height="146.369" depth="134.736" valign="baseline" size="small">\begin{tabular}{c@{\hskip 10pt}c@{\hskip 10pt}cc@{\hskip 10pt}c}
+    \toprule
+    \multirow{2}{*}{2PC} &amp; \multicolumn{2}{c}{Rounds} &amp; \multicolumn{2}{c}{Communication per AND gate} \\
+    \cmidrule(lr){2-3} \cmidrule(lr){4-5} 
+    &amp; Prep. &amp; Online &amp; one-way (bits) &amp; two-way (bits) \\ \midrule
+    Half-gates &amp; 1 &amp; 2  &amp; $2\csp$ &amp; $2\csp$ \\ \midrule
+    HSS-PCG &amp;  8 &amp; 2 &amp; $8\csp + 11$ ($4.04 \times$) &amp; $16\csp + 22$ ($8.09 \times$) \\
+    KRRW-PCG &amp; 4 &amp; 4 &amp; $5\csp + 7$ ($2.53 \times$) &amp; $8\csp + 14$ ($4.05 \times$) \\
+    DILO &amp; 7 &amp; 2 &amp; $2\csp + 8\ssp + 1$ ($2.25 \times$) &amp; $2\csp + 8\ssp + 5$ ($2.27 \times$) \\
+    This work &amp; 8 &amp; 3 &amp; $2\csp + 5$ ($\bf \approx 1 \times$) &amp; $4\csp + 10$ ($2.04 \times$) \\ 
+    This work+DILO &amp; 8 &amp; 2 &amp; $2\secparam + 3\rho + 2$ ($1.48 \times$) &amp; $2\secparam + 3\rho + 4$ ($\bf \approx 1.48 \times$)\\
+    \bottomrule   
+    \end{tabular}</text>
+</page>
+<page section="Conclusion">
+<notes>Concluding Page</notes>
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<text layer="alpha" matrix="1 0 0 1 0 -128" pin="h" transformations="translations" pos="0 419.224" stroke="black" type="minipage" width="920" height="38.9592" depth="25.032" valign="top" size="Large" style="center">{\fontfamily{frc}\selectfont Merci beaucoup}</text>
+<text matrix="1 0 0 1 0 184" pin="h" transformations="translations" pos="0 187.233" stroke="black" type="minipage" width="920" height="24.2452" depth="10.304" valign="top" size="Large" style="center">Thanks for your listening</text>
+</page>
+<page>
+<notes>ABC</notes>
+<layer name="alpha"/>
+<layer name="NOPDF"/>
+<view layers="alpha" active="alpha"/>
+<text layer="alpha" matrix="1 0 0 1 -160 -88" transformations="translations" pos="160 480" stroke="black" type="label" width="318.989" height="93.7728" depth="81.984" valign="baseline" size="small">\begin{tabular}{c c | c}
 \toprule
 $\Lambda_i$ &amp; $\Lambda_j$ &amp; ciphertext \\ \midrule
 $\lambda_i$ &amp; $\lambda_j$ &amp; $\hash( \ml_{i, \lambda_i}, \ml_{j, \lambda_j} ) \xor \ml_{k, \lambda_k}$ \\
@@ -13253,5 +14166,8 @@ $\bar{\lambda}_i$ &amp; $\lambda_j$ &amp; $\hash( \ml_{i, \bar{\lambda}_i}, \ml_
 $\bar{\lambda}_i$ &amp; $\bar{\lambda}_j$ &amp; $\hash( \ml_{i, \bar{\lambda}_i}, \ml_{j, \bar{\lambda}_j} ) \xor \ml_{k, \bar{\lambda}_k}$ \\
 \bottomrule
 \end{tabular}</text>
+<text matrix="1 0 0 1 -609 126" transformations="translations" pos="608 152" stroke="black" type="minipage" width="440" height="78.2712" depth="66.48" valign="top" size="small" style="itemize">\item $\cbit_k = \cbit_i \cbit_j \xor \cbit_i b_j \xor \cbit_j b_i \xor (\hash&apos;(\ml_{i,\cbit_i}) \xor \cbit_i G&apos;_{k,1} \xor \hash&apos;(\ml_{j, \cbit_j}) \xor \cbit_j G&apos;_{k,2} \xor G&apos;_{k,0} \xor \cbit_i \mac[b_j] \xor \cbit_j \mac[b_i] \xor \mac[b_k] \xor \mac[\hat{r}_k] ) \cdot \Delta_\B^{-1}$
+\item $\ml_{k, \cbit_k} = \hash(\ml_{i, \cbit_i}) \xor \cbit_i (G_0 \xor \mac[b_j]) \xor \hash(\ml_{j, \cbit_{j}}) \xor \cbit_j (G_1 \xor \mac[b_i] \xor \ml_{i, \cbit_i} )$</text>
+<image matrix="1 0 0 1 408 8" rect="0 0 512 512" bitmap="1"/>
 </page>
 </ipe>
