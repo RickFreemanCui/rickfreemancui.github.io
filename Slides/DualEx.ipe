@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.26">
-<info created="D:20090429144355" modified="D:20230416193759" title="Actively Secure Half-Gates with Minimum Overhead under Duplex Networks" author="Hongrui Cui \and Xiao Wang \and Kang Yang \and Yu Yu" subject="MPC" keywords="MPC" numberpages="yes"/>
+<info created="D:20090429144355" modified="D:20230417205055" title="Actively Secure Half-Gates with Minimum Overhead under Duplex Networks" author="Hongrui Cui \and Xiao Wang \and Kang Yang \and Yu Yu" subject="MPC" keywords="MPC" numberpages="yes"/>
 <preamble>\usepackage[utf8]{inputenc}
 \usepackage[sfdefault,lf]{carlito}
 \usepackage{sfmath}
@@ -11388,11 +11388,9 @@ h
 </page>
 <page title="DILO Implementation of $\Func[cpre]$: Encoding ${\vecb}^*$ as Global Keys" subsection="">
 <layer name="alpha"/>
-<layer name="beta"/>
 <layer name="gamma"/>
 <view layers="alpha" active="alpha"/>
-<view layers="alpha beta" active="beta"/>
-<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha gamma" active="gamma"/>
 <text layer="gamma" matrix="1 0 0 1 96 -264" transformations="translations" pos="272 352" stroke="black" type="label" width="23.9112" height="8.8464" depth="0" valign="baseline" size="small" style="math">\Leftrightarrow</text>
 <group layer="alpha" matrix="1 0 0 1 -120 184">
 <path stroke="black" fill="KITblue15">
@@ -11426,7 +11424,7 @@ $\Delta_\A, \Delta_\B$</text>
 &amp;= a_i a_j \xor a_i b_j \xor a_j b_i \xor b_i b_j
 \end{align*}
 </text>
-<path layer="beta" stroke="black" arrow="normal/normal">
+<path stroke="black" arrow="normal/normal">
 256 384 m
 608 384 l
 608 448 l
@@ -11435,163 +11433,7 @@ $\Delta_\A, \Delta_\B$</text>
 544 384 m
 544 448 l
 </path>
-<group layer="gamma" matrix="1 0 0 1 -256 -16">
-<text matrix="1 0 0 1 -32 96" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
-<text matrix="1 0 0 1 192 96" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small" style="tikz">\node[bob] {};</text>
-<group matrix="1 0 0 1 240 -192">
-<path stroke="black" arrow="normal/normal">
-136 440 m
-136 456 l
-256 456 l
-256 480 l
-</path>
-<path stroke="black">
-232 368 m
-232 456 l
-</path>
-</group>
-<group matrix="1 0 0 1 240 -192">
-<path stroke="black" arrow="normal/normal">
-80 440 m
-80 448 l
-32 448 l
-32 480 l
-</path>
-<path stroke="black">
-192 440 m
-192 448 l
-80 448 l
-</path>
-</group>
-<group matrix="1 0 0 1 264 -192">
-<path stroke="black" fill="KITblue15">
-156.151 510.615 m
-156.151 494.424 l
-156.151 489.424
-151.151 484.424
-146.151 484.424 c
-90 484.424 l
-85 484.424
-80 489.424
-80 494.424 c
-80 510.615 l
-80 515.615
-85 520.615
-90 520.615 c
-146.151 520.615 l
-151.151 520.615
-156.151 515.615
-156.151 510.615 c
-h
-</path>
-<text matrix="1 0 0 1 -56 192" transformations="translations" pos="144 304" stroke="black" type="label" width="60.1512" height="16.6152" depth="3.576" valign="baseline" size="small">\Func[COT]</text>
-</group>
-<group matrix="1 0 0 1 256 -192">
-<text matrix="1 0 0 1 -23.0952 -8" transformations="translations" pos="184 256" stroke="black" type="label" width="26.5944" height="19.3632" depth="6.12" valign="baseline" size="small" style="math">\FF_2^N</text>
-<text matrix="1 0 0 1 -136.374 -8" transformations="translations" pos="184 256" stroke="black" type="label" width="39.816" height="19.344" depth="7.56" valign="baseline" size="small" style="math">\FF_{2^{L\csp}}^N</text>
-<text matrix="1 0 0 1 16 64" transformations="translations" pos="184 256" stroke="black" type="label" width="39.816" height="16.5096" depth="3.888" valign="baseline" size="small" style="math">\FF_{2^{L\csp}}</text>
-<text matrix="1 0 0 1 -556.889 -35.448" transformations="translations" pos="747.16 383.846" stroke="black" type="label" width="38.5224" height="16.6056" depth="1.992" valign="baseline" size="small" style="math"> \times \Delta</text>
-<text matrix="1 0 0 1 -594.344 -37.8244" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" size="small" style="math">=</text>
-<text matrix="1 0 0 1 -548.706 -37.8266" transformations="translations" pos="685.392 387.553" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">+</text>
-<group matrix="1 0 0 1 40 16">
-<path matrix="1 0 0 1 -561.672 -47.7969" stroke="black" pen="heavier">
-576.64 472.703 m
-576.64 303.556 l
-601.772 303.556 l
-601.772 472.703 l
-h
-</path>
-<text matrix="1 0 0 1 -569.558 -51.749" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="20.9208" height="16.6032" depth="0" valign="baseline" size="small" style="math">\mac</text>
-</group>
-<group matrix="1 0 0 1 24 16">
-<path matrix="1 0 0 1 -492.338 -47.6873" stroke="black" pen="heavier">
-576.64 472.703 m
-576.64 303.556 l
-601.772 303.556 l
-601.772 472.703 l
-h
-</path>
-<text matrix="1 0 0 1 -498.066 -51.6394" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="16.6056" height="16.6032" depth="0" valign="baseline" size="small">\key</text>
-</group>
-<group matrix="1 0 0 1 8 16">
-<path matrix="1 0 0 1 -423.004 -47.6871" stroke="black" pen="heavier">
-576.64 472.703 m
-576.64 303.556 l
-601.772 303.556 l
-601.772 472.703 l
-h
-</path>
-<text matrix="1 0 0 1 -426.844 -48.9752" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="12.8304" height="11.4432" depth="0.168" valign="baseline" size="small">\vecu</text>
-</group>
-<text matrix="1 0 0 1 -83.04 -8" transformations="translations" pos="184 256" stroke="black" type="label" width="39.816" height="19.344" depth="7.56" valign="baseline" size="small" style="math">\FF_{2^{L\csp}}^N</text>
-</group>
-</group>
-<text matrix="1 0 0 1 0 208" pin="h" transformations="translations" pos="0 144" stroke="black" type="minipage" width="920" height="16.2696" depth="4.296" valign="top" size="small" style="itemize">\item COT can be extended to block COT, preserving PCG efficiency</text>
-<group matrix="1 0 0 1 120 0">
-<group matrix="1 0 0 1 384 -208">
-<path stroke="black" fill="KITblue15">
-165.334 510.615 m
-165.334 494.424 l
-165.334 489.424
-160.334 484.424
-155.334 484.424 c
-90 484.424 l
-85 484.424
-80 489.424
-80 494.424 c
-80 510.615 l
-80 515.615
-85 520.615
-90 520.615 c
-155.334 520.615 l
-160.334 520.615
-165.334 515.615
-165.334 510.615 c
-h
-</path>
-<text matrix="1 0 0 1 -56 192" transformations="translations" pos="144 304" stroke="black" type="label" width="69.3336" height="16.6152" depth="3.576" valign="baseline" size="small">\Func[bCOT]</text>
-</group>
-<group matrix="1 0 0 1 72 -208">
-<text matrix="1 0 0 1 312.905 0" transformations="translations" pos="184 256" stroke="black" type="label" width="26.5944" height="19.3632" depth="6.12" valign="baseline" size="small" style="math">\FF_2^N</text>
-<text matrix="1 0 0 1 156.028 0" transformations="translations" pos="184 256" stroke="black" type="label" width="48.0432" height="21.1632" depth="6.312" valign="baseline" size="small" style="math">\FF_{2^{\csp}}^{N \times L}</text>
-<text matrix="1 0 0 1 400 72" transformations="translations" pos="184 256" stroke="black" type="label" width="44.292" height="21.1632" depth="6.312" valign="baseline" size="small" style="math">\FF_{2^{\csp}}^{L \times L}</text>
-<text matrix="1 0 0 1 -220.889 -27.448" transformations="translations" pos="747.16 383.846" stroke="black" type="label" width="133.128" height="20.316" depth="8.376" valign="baseline" size="small" style="math"> \times 
-\setlength\arraycolsep{1pt}
-\left[ \begin{array}{ccc}
-\Delta_1 &amp;  \ldots &amp; \Delta_L 
-\end{array}
-\right]</text>
-<text matrix="1 0 0 1 -282.344 -29.8244" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" size="small" style="math">=</text>
-<text matrix="1 0 0 1 -212.706 -29.8266" transformations="translations" pos="685.392 387.553" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">+</text>
-<group matrix="1 0 0 1 344 24">
-<path matrix="1 0 0 1 -423.004 -47.6871" stroke="black" pen="heavier">
-576.64 472.703 m
-576.64 303.556 l
-601.772 303.556 l
-601.772 472.703 l
-h
-</path>
-<text matrix="1 0 0 1 -426.844 -48.9752" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="12.8304" height="11.4432" depth="0.168" valign="baseline" size="small">\vecu</text>
-</group>
-<path matrix="1 0 0 1 -16 8" stroke="black" pen="heavier">
-352 440 m
-352 272 l
-408.1 271.759 l
-408 440 l
-h
-</path>
-<text matrix="1 0 0 1 -233.041 -27.749" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="20.9208" height="16.6032" depth="0" valign="baseline" size="small" style="math">\mac</text>
-<text matrix="1 0 0 1 -148.783 -27.6394" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="16.6056" height="16.6032" depth="0" valign="baseline" size="small">\key</text>
-<text matrix="1 0 0 1 238.129 0" transformations="translations" pos="184 256" stroke="black" type="label" width="48.0432" height="21.1632" depth="6.312" valign="baseline" size="small" style="math">\FF_{2^{\csp}}^{N \times L}</text>
-<path matrix="1 0 0 1 64 8" stroke="black" pen="heavier">
-352 440 m
-352 272 l
-408.1 271.759 l
-408 440 l
-h
-</path>
-</group>
-</group>
+<text layer="gamma" matrix="1 0 0 1 0 208" pin="h" transformations="translations" pos="0 144" stroke="black" type="minipage" width="920" height="16.2696" depth="4.296" valign="top" size="small" style="itemize">\item COT can be extended to block COT, preserving PCG efficiency</text>
 <group matrix="1 0 0 1 -16 -40">
 <group>
 <path stroke="black" fill="KITblue15">
@@ -11607,7 +11449,7 @@ h
 <text matrix="1 0 0 1 0 32" transformations="translations" pos="320 216" stroke="black" type="minipage" width="160" height="45.9408" depth="34.032" valign="top" size="small" style="center">Using isomorphism\\
  $\FF_{2^{\csp L}} \equiv \FF_{2^\csp}^L$</text>
 </group>
-<group layer="beta">
+<group layer="alpha">
 <group matrix="1 0 0 1 -16 8">
 <path stroke="black" fill="KITred15">
 24 424 m
@@ -11644,6 +11486,162 @@ h
 h
 </path>
 <text matrix="1 0 0 1 -56 0" transformations="translations" pos="328 400" stroke="black" type="label" width="259.903" height="16.7232" depth="3.84" valign="baseline" size="small">suffices to compute $\veca \otimes {\vecb}^{*}$</text>
+</group>
+<group layer="gamma">
+<text matrix="1 0 0 1 -288 80" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
+<text matrix="1 0 0 1 -64 80" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small" style="tikz">\node[bob] {};</text>
+<group matrix="1 0 0 1 -16 -208">
+<path stroke="black" arrow="normal/normal">
+136 440 m
+136 456 l
+256 456 l
+256 480 l
+</path>
+<path stroke="black">
+232 368 m
+232 456 l
+</path>
+</group>
+<group matrix="1 0 0 1 -16 -208">
+<path stroke="black" arrow="normal/normal">
+80 440 m
+80 448 l
+32 448 l
+32 480 l
+</path>
+<path stroke="black">
+192 440 m
+192 448 l
+80 448 l
+</path>
+</group>
+<group matrix="1 0 0 1 8 -208">
+<path stroke="black" fill="KITblue15">
+156.151 510.615 m
+156.151 494.424 l
+156.151 489.424
+151.151 484.424
+146.151 484.424 c
+90 484.424 l
+85 484.424
+80 489.424
+80 494.424 c
+80 510.615 l
+80 515.615
+85 520.615
+90 520.615 c
+146.151 520.615 l
+151.151 520.615
+156.151 515.615
+156.151 510.615 c
+h
+</path>
+<text matrix="1 0 0 1 -56 192" transformations="translations" pos="144 304" stroke="black" type="label" width="60.1512" height="16.6152" depth="3.576" valign="baseline" size="small">\Func[COT]</text>
+</group>
+<group>
+<text matrix="1 0 0 1 -23.0952 -216" transformations="translations" pos="184 256" stroke="black" type="label" width="26.5944" height="19.3632" depth="6.12" valign="baseline" size="small" style="math">\FF_2^N</text>
+<text matrix="1 0 0 1 -136.374 -216" transformations="translations" pos="184 256" stroke="black" type="label" width="39.816" height="19.344" depth="7.56" valign="baseline" size="small" style="math">\FF_{2^{L\csp}}^N</text>
+<text matrix="1 0 0 1 16 -144" transformations="translations" pos="184 256" stroke="black" type="label" width="39.816" height="16.5096" depth="3.888" valign="baseline" size="small" style="math">\FF_{2^{L\csp}}</text>
+<text matrix="1 0 0 1 -556.889 -243.448" transformations="translations" pos="747.16 383.846" stroke="black" type="label" width="38.5224" height="16.6056" depth="1.992" valign="baseline" size="small" style="math"> \times \Delta</text>
+<text matrix="1 0 0 1 -594.344 -245.824" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" size="small" style="math">=</text>
+<text matrix="1 0 0 1 -548.706 -245.827" transformations="translations" pos="685.392 387.553" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">+</text>
+<group matrix="1 0 0 1 40 -192">
+<path matrix="1 0 0 1 -561.672 -47.7969" stroke="black" pen="heavier">
+576.64 472.703 m
+576.64 303.556 l
+601.772 303.556 l
+601.772 472.703 l
+h
+</path>
+<text matrix="1 0 0 1 -569.558 -51.749" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="20.9208" height="16.6032" depth="0" valign="baseline" size="small" style="math">\mac</text>
+</group>
+<group matrix="1 0 0 1 24 -192">
+<path matrix="1 0 0 1 -492.338 -47.6873" stroke="black" pen="heavier">
+576.64 472.703 m
+576.64 303.556 l
+601.772 303.556 l
+601.772 472.703 l
+h
+</path>
+<text matrix="1 0 0 1 -498.066 -51.6394" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="16.6056" height="16.6032" depth="0" valign="baseline" size="small">\key</text>
+</group>
+<text matrix="1 0 0 1 -83.04 -216" transformations="translations" pos="184 256" stroke="black" type="label" width="39.816" height="19.344" depth="7.56" valign="baseline" size="small" style="math">\FF_{2^{L\csp}}^N</text>
+<group>
+<path matrix="1 0 0 1 -415.004 -239.687" stroke="black" pen="heavier">
+576.64 472.703 m
+576.64 303.556 l
+601.772 303.556 l
+601.772 472.703 l
+h
+</path>
+<text matrix="1 0 0 1 -418.332 -241.153" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="11.8056" height="11.7984" depth="0.168" valign="baseline" size="small">\veca</text>
+</group>
+</group>
+</group>
+<group>
+<group matrix="1 0 0 1 504 -208">
+<path stroke="black" fill="KITblue15">
+165.334 510.615 m
+165.334 494.424 l
+165.334 489.424
+160.334 484.424
+155.334 484.424 c
+90 484.424 l
+85 484.424
+80 489.424
+80 494.424 c
+80 510.615 l
+80 515.615
+85 520.615
+90 520.615 c
+155.334 520.615 l
+160.334 520.615
+165.334 515.615
+165.334 510.615 c
+h
+</path>
+<text matrix="1 0 0 1 -56 192" transformations="translations" pos="144 304" stroke="black" type="label" width="69.3336" height="16.6152" depth="3.576" valign="baseline" size="small">\Func[bCOT]</text>
+</group>
+<group>
+<text matrix="1 0 0 1 504.905 -208" transformations="translations" pos="184 256" stroke="black" type="label" width="26.5944" height="19.3632" depth="6.12" valign="baseline" size="small" style="math">\FF_2^N</text>
+<text matrix="1 0 0 1 348.028 -208" transformations="translations" pos="184 256" stroke="black" type="label" width="48.0432" height="21.1632" depth="6.312" valign="baseline" size="small" style="math">\FF_{2^{\csp}}^{N \times L}</text>
+<text matrix="1 0 0 1 592 -136" transformations="translations" pos="184 256" stroke="black" type="label" width="44.292" height="21.1632" depth="6.312" valign="baseline" size="small" style="math">\FF_{2^{\csp}}^{L \times L}</text>
+<text matrix="1 0 0 1 -28.889 -235.448" transformations="translations" pos="747.16 383.846" stroke="black" type="label" width="133.128" height="20.316" depth="8.376" valign="baseline" size="small" style="math"> \times 
+\setlength\arraycolsep{1pt}
+\left[ \begin{array}{ccc}
+\Delta_1 &amp;  \ldots &amp; \Delta_L 
+\end{array}
+\right]</text>
+<text matrix="1 0 0 1 -90.344 -237.824" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" size="small" style="math">=</text>
+<text matrix="1 0 0 1 -20.706 -237.827" transformations="translations" pos="685.392 387.553" stroke="black" type="label" width="18.5976" height="13.9488" depth="1.992" valign="baseline" size="small" style="math">+</text>
+<path matrix="1 0 0 1 176 -200" stroke="black" pen="heavier">
+352 440 m
+352 272 l
+408.1 271.759 l
+408 440 l
+h
+</path>
+<text matrix="1 0 0 1 -41.041 -235.749" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="20.9208" height="16.6032" depth="0" valign="baseline" size="small" style="math">\mac</text>
+<text matrix="1 0 0 1 43.217 -235.639" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="16.6056" height="16.6032" depth="0" valign="baseline" size="small">\key</text>
+<text matrix="1 0 0 1 430.129 -208" transformations="translations" pos="184 256" stroke="black" type="label" width="48.0432" height="21.1632" depth="6.312" valign="baseline" size="small" style="math">\FF_{2^{\csp}}^{N \times L}</text>
+<path matrix="1 0 0 1 256 -200" stroke="black" pen="heavier">
+352 440 m
+352 272 l
+408.1 271.759 l
+408 440 l
+h
+</path>
+<group>
+<path matrix="1 0 0 1 112.996 -231.687" stroke="black" pen="heavier">
+576.64 472.703 m
+576.64 303.556 l
+601.772 303.556 l
+601.772 472.703 l
+h
+</path>
+<text matrix="1 0 0 1 109.668 -233.153" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="11.8056" height="11.7984" depth="0.168" valign="baseline" size="small">\veca</text>
+</group>
+</group>
 </group>
 </page>
 <page title="DILO Implementation of $\Func[cpre]$: Generating $\tilde{b}_k$" subsection="">
@@ -12008,7 +12006,7 @@ h
 96 200 m
 272 200 l
 </path>
-<text matrix="1 0 0 1 -16 0" transformations="translations" pos="72 80" stroke="black" type="label" width="250.114" height="17.4984" depth="5.712" valign="baseline" size="small">Generate mask $\hat{a}_{k,2} \in \FF_{2^{\csp}}$</text>
+<text matrix="1 0 0 1 -16 0" transformations="translations" pos="72 80" stroke="black" type="label" width="248.539" height="17.4984" depth="5.712" valign="baseline" size="small">Generate mask $\hat{a}_{k,2} \in \FF_{2^{\ssp}}$</text>
 <text layer="gamma" matrix="1 0 0 1 146 14" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small" style="tikz">\node[alice] {};</text>
 <text matrix="1 0 0 1 482 14" transformations="translations" pos="288 192" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small" style="tikz">\node[bob] {};</text>
 <path matrix="1 0 0 1 -56 64" stroke="black" arrow="normal/normal">
@@ -12532,8 +12530,8 @@ h
 <text layer="delta" matrix="1 0 0 1 0 24" transformations="translations" pos="320 288" stroke="black" type="minipage" width="600" height="75.5712" depth="63.768" valign="top" size="small" style="itemize">\item Suppose we generate $\bsh{\tilde{b}_k}$ and $\bsh{r}, [r]_\B$ (mask for \begin{tikzpicture} \node[bob] {}; \end{tikzpicture} )
 \item \begin{tikzpicture} \node[bob] {}; \end{tikzpicture} can open $y := \sum_k \chi^k \cdot \tilde{b}_k  \xor {r} $ and convince \begin{tikzpicture} \node[alice] {}; \end{tikzpicture}
 \item \begin{tikzpicture} \node[bob] {}; \end{tikzpicture} calls $\fix(\tilde{b}_k)$ and checks $\sum_k \chi^k [\tilde{b}_k] \xor [r] \xor y = 0$</text>
-<group layer="epsilon" matrix="1 0 0 1 0 -32">
-<group>
+<group layer="epsilon">
+<group matrix="1 0 0 1 0 -32">
 <path stroke="black" fill="KITblue15">
 312 152.471 m
 900.92 152.471 l
@@ -12544,8 +12542,8 @@ h
 h
 </path>
 </group>
-<text transformations="translations" pos="320 128" stroke="black" type="label" width="331.526" height="16.4712" depth="4.632" valign="baseline" size="small">If so we can reduce $4\rho$ bits to $1$ bit</text>
-<text matrix="1 0 0 1 0 -40" transformations="translations" pos="320 128" stroke="black" type="label" width="580.92" height="21.9984" depth="6.456" valign="baseline" size="small">Our goal is to enerate $\bsh{\tilde{b}_k} := \bsh{\hat{a}_k} \xor \bsh{a_i a_j} \xor \bsh{a_i b_j} \xor \bsh{a_j b_i}$</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="320 128" stroke="black" type="label" width="331.526" height="16.4712" depth="4.632" valign="baseline" size="small">If so we can reduce $4\rho$ bits to $1$ bit</text>
+<text matrix="1 0 0 1 0 -72" transformations="translations" pos="320 128" stroke="black" type="label" width="591.977" height="21.9984" depth="6.456" valign="baseline" size="small">Our goal is to generate $\bsh{\tilde{b}_k} := \bsh{\hat{a}_k} \xor \bsh{a_i a_j} \xor \bsh{a_i b_j} \xor \bsh{a_j b_i}$</text>
 </group>
 </page>
 <page title="Optimizing the Compressed Preprocessing Protocol, Continued" subsection="">
@@ -12558,7 +12556,6 @@ h
 <view layers="alpha beta" active="beta"/>
 <view layers="alpha gamma" active="gamma"/>
 <view layers="alpha gamma delta" active="delta"/>
-<view layers="alpha gamma delta epsilon" active="epsilon"/>
 <text layer="alpha" matrix="1 0 0 1 0 328" pin="h" transformations="translations" pos="0 191.458" stroke="black" type="minipage" width="448" height="20.1984" depth="8.256" valign="top" size="small" style="itemize">\item $\bsh{\tilde{b}_k} := \bsh{\hat{a}_k} \xor \bsh{a_i a_j} \xor \bsh{a_i b_j} \xor \bsh{a_j b_i}$</text>
 <group>
 <group>
@@ -12927,9 +12924,9 @@ h
 <text matrix="1 0 0 1 -176 8" transformations="translations" pos="768 256" stroke="black" type="label" width="51.0672" height="21.4896" depth="6.936" valign="baseline" size="small" style="math">\cdot \Delta_\A\inv</text>
 <text matrix="1 0 0 1 -176 -32" transformations="translations" pos="768 256" stroke="black" type="label" width="51.0672" height="21.4896" depth="6.936" valign="baseline" size="small" style="math">\cdot \Delta_\A\inv</text>
 </group>
-<text layer="epsilon" matrix="1 0 0 1 -168 -120" transformations="translations" pos="544 168" stroke="black" type="minipage" width="424.87" height="31.0416" depth="19.128" valign="baseline" size="small" style="center">[DIO22] gives a modular way of \\
+<text matrix="1 0 0 1 -168 -120" transformations="translations" pos="544 168" stroke="black" type="minipage" width="424.87" height="31.0416" depth="19.128" valign="baseline" size="small" style="center">[DIO22] gives a modular way of \\
 proving equality under independent keys</text>
-<group layer="delta" matrix="1 0 0 1 0 48">
+<group matrix="1 0 0 1 0 48">
 <group matrix="1 0 0 1 0 -40">
 <path stroke="black" fill="KITpalegreen15">
 536 177.678 m
