@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.26">
-<info created="D:20090429144355" modified="D:20230418213453" title="Actively Secure Half-Gates with Minimum Overhead under Duplex Networks" author="Hongrui Cui \and Xiao Wang \and Kang Yang \and Yu Yu" subject="MPC" keywords="MPC" numberpages="yes"/>
+<info created="D:20090429144355" modified="D:20230419194532" title="Actively Secure Half-Gates with Minimum Overhead under Duplex Networks" author="Hongrui Cui \and Xiao Wang \and Kang Yang \and Yu Yu" subject="MPC" keywords="MPC" numberpages="yes"/>
 <preamble>\usepackage[utf8]{inputenc}
 \usepackage[sfdefault,lf]{carlito}
 \usepackage{sfmath}
@@ -10110,7 +10110,7 @@ h
 <view layers="title" active="title"/>
 <text layer="title" matrix="1 0 0 1 -213 4" pos="213 427" stroke="black" type="minipage" width="921.16" height="49.1036" depth="35.224" valign="baseline" size="Large">Actively Secure Half-Gates with Minimum Overhead \\ under Duplex Networks</text>
 <text matrix="1 0 0 1 -211.302 -425.6" pos="213 427" stroke="ac-lightblue" type="label" width="292.582" height="15.672" depth="3.84" valign="bottom" size="small">Apr.~25, 2023 $\cdot$ Eurocrypt 2023</text>
-<group matrix="1 0 0 1 0 29.4268">
+<group matrix="1 0 0 1 0 13.4268">
 <image matrix="0.423986 0 0 0.423986 120.08 95.7007" rect="0 0 366 93" bitmap="9"/>
 <text matrix="1 0 0 1 -12.5599 -180.526" pin="h" transformations="translations" pos="10.6982 379.959" stroke="black" type="minipage" width="399.062" height="35.1792" depth="21.28" valign="top" style="center">\textbf{Kang Yang} \\
 State Key Laboratory of Cryptology</text>
@@ -10125,7 +10125,7 @@ Shanghai Jiao Tong University</text>
 <text matrix="1 0 0 1 508.696 -5.83947" pin="h" transformations="translations" pos="10.6982 379.959" stroke="black" type="minipage" width="399.062" height="35.6832" depth="21.784" valign="top" style="center">\textbf{Xiao Wang} \\
 Northwestern University</text>
 </group>
-<group matrix="1 0 0 1 0 29.4268">
+<group matrix="1 0 0 1 0 13.4268">
 <text matrix="1 0 0 1 508.696 -180.526" pin="h" transformations="translations" pos="10.6982 379.959" stroke="black" type="minipage" width="399.062" height="51.912" depth="38.024" valign="top" style="center">\textbf{Yu Yu} \\
 Shanghai Jiao Tong University \\
 Shanghai Qi Zhi Institute</text>
@@ -10377,11 +10377,11 @@ h
 <text matrix="1 0 0 1 24 -64" transformations="translations" pos="304 104" stroke="black" type="label" width="54.108" height="16.6056" depth="6.84" valign="baseline" size="small">\Prot[cpre]</text>
 </group>
 <path stroke="black" arrow="normal/normal">
-90 160 m
+85.5416 159.543 m
 216 160 l
 </path>
 <path stroke="black" arrow="normal/normal">
-208 96 m
+200 95.4825 m
 248 96 l
 248 136 l
 </path>
@@ -10432,7 +10432,7 @@ Auth.</text>
 <path stroke="black" arrow="normal/normal">
 40 140 m
 40 100 l
-90 100 l
+86.8998 100 l
 </path>
 </page>
 <page title="Semi-Honest Garbled Circuit" section="Preliminary" subsection="">
@@ -10546,23 +10546,7 @@ h
 696 344 l
 </path>
 <text matrix="1 0 0 1 144 -176" transformations="translations" pos="568 424" stroke="black" type="minipage" width="118.24" height="31.1784" depth="19.224" valign="baseline" size="small" style="center">Decrypt $(\cbit_i, \cbit_j)$ row</text>
-<group layer="alpha" matrix="1 0 0 1 0 -64">
-<group>
-<path stroke="black" fill="KITblue15">
-64 320 m
-264 320 l
-8 0 0 -8 264 312 272 312 a
-272 181.919 l
-72 181.919 l
-8 0 0 -8 72 189.919 64 189.919 a
-h
-</path>
-</group>
-<text matrix="1 0 0 1 -24 88" transformations="translations" pos="96 224" stroke="black" type="minipage" width="192" height="29.364" depth="17.448" valign="top" size="small">Sample $\{ \lambda_w, \ml_{w, 0} \}$ and $\Delta$</text>
-<text matrix="1 0 0 1 -40 120" transformations="translations" pos="104 128" stroke="black" type="minipage" width="192" height="31.5936" depth="19.68" valign="top" size="small" style="itemize">\item $\ml_{w,0} \xor \ml_{w, 1} = \Delta$
-\item $\LSB(\Delta) = 1$</text>
-</group>
-<text layer="delta" matrix="1 0 0 1 136 -248" transformations="translations" pos="576 416" stroke="black" type="minipage" width="200.571" height="31.5936" depth="19.68" valign="baseline" size="small" style="center">Get $\ml_{k, \cbit_k}$,
+<text matrix="1 0 0 1 136 -248" transformations="translations" pos="576 416" stroke="black" type="minipage" width="200.571" height="31.5936" depth="19.68" valign="baseline" size="small" style="center">Get $\ml_{k, \cbit_k}$,
 $\cbit_k = \LSB(\ml_{k, \cbit_k}) \xor c_k$</text>
 <group layer="alpha" matrix="1 0 0 1 -72 112">
 <group>
@@ -10655,19 +10639,21 @@ $1$ &amp; $0$ &amp; $\hash( \ml_{i, 1}, \ml_{j, 0} ) \xor \ml_{k, 0} \xor ( \bar
 $1$ &amp; $1$ &amp; $\hash( \ml_{i, 1}, \ml_{j, 1} ) \xor \ml_{k, 0} \xor ( \bar{\lambda}_i \cdot \bar{\lambda}_j \xor \lambda_k ) \Delta_\A$ \\
 \bottomrule
 \end{tabular}</text>
-<group matrix="1 0 0 1 0 16">
 <group>
+<group matrix="1 0 0 1 0 -64">
 <path stroke="black" fill="KITblue15">
-744 488.615 m
-891.495 488.615 l
-8 0 0 -8 891.495 480.615 899.495 480.615 a
-899.495 452.424 l
-752 452.424 l
-8 0 0 -8 752 460.424 744 460.424 a
+64 320 m
+264 320 l
+8 0 0 -8 264 312 272 312 a
+272 181.919 l
+72 181.919 l
+8 0 0 -8 72 189.919 64 189.919 a
 h
 </path>
 </group>
-<text matrix="1 0 0 1 -16 0" transformations="translations" pos="768 464" stroke="black" type="label" width="139.495" height="16.6152" depth="3.576" valign="baseline" size="small" style="math">\cbit_w = \lambda_w \xor z_w</text>
+<text matrix="1 0 0 1 -24 24" transformations="translations" pos="96 224" stroke="black" type="minipage" width="192" height="31.0608" depth="19.152" valign="top" size="small">Sample $\{ \lambda_w, \ml_{w, 0} \}$ and $\Delta_\A$</text>
+<text matrix="1 0 0 1 -40 56" transformations="translations" pos="104 128" stroke="black" type="minipage" width="204" height="31.5936" depth="19.68" valign="top" size="small" style="itemize">\item $\ml_{w,0} \xor \ml_{w, 1} = \Delta_\A$
+\item $\LSB(\Delta_\A) = 1$</text>
 </group>
 </page>
 <page title="Authenticated Garbling = {\color{KITblue} Distributed Garbling} + {\color{KITred} Checking}" subsection="">
@@ -10988,7 +10974,7 @@ h
 <text matrix="1 0 0 1 0 16" transformations="translations" pos="672 104" stroke="black" type="minipage" width="160" height="47.1864" depth="35.304" valign="top" size="small" style="center">Defines $[e_k]$ \\
 and checks $\sum_k \chi^k e_k = 0$</text>
 </page>
-<page title="Efficient COT/VOLE and Designated Verifier Zero Knowledge" subsection="">
+<page title="Efficient COT/sVOLE and Designated Verifier Zero Knowledge" subsection="">
 <layer name="alpha"/>
 <layer name="beta"/>
 <layer name="gamma"/>
@@ -11064,7 +11050,7 @@ h
 <text matrix="1 0 0 1 56 0" transformations="translations" pos="464 296" stroke="black" type="label" width="100.26" height="17.9352" depth="5.976" valign="baseline" size="small" style="math">\CCC(\vecu) = 0?</text>
 </group>
 <text layer="gamma" matrix="1 0 0 1 0 -80" pin="h" transformations="translations" pos="0 223.384" stroke="black" type="minipage" width="920" height="45.6552" depth="33.744" valign="top" size="small" style="itemize">\item In DILO, those PCG correlations are called ``simple correlations&apos;&apos;
-\item Unfortunately, we still don&apos;t have a direct $\Func[pre]$ PCG construction
+\item Unfortunately, we still don&apos;t have an efficient direct $\Func[pre]$ PCG construction
 \item The closest is the $\Func[DAMT]$ correlation generated from Ring-LPN, but with $\rho$-time overhead</text>
 <group layer="alpha">
 <group matrix="1 0 0 1 56 16">
@@ -11157,13 +11143,10 @@ h
 <text matrix="1 0 0 1 -8 8" transformations="translations" pos="336 328" stroke="black" type="minipage" width="144" height="17.9352" depth="5.976" valign="top" size="small">$\mac[x] := \mac[u]$</text>
 </group>
 </page>
-<page title="AG from Simple Correlations" section="DILO" subsection="">
+<page title="Previous State-of-the-Art: DILO" section="DILO" subsection="">
 <layer name="alpha"/>
 <layer name="beta"/>
 <layer name="gamma"/>
-<layer name="delta"/>
-<layer name="epsilon"/>
-<layer name="zeta"/>
 <view layers="alpha" active="alpha"/>
 <view layers="alpha beta" active="beta"/>
 <view layers="alpha beta gamma" active="gamma"/>
@@ -11795,21 +11778,6 @@ h
 <text matrix="1 0 0 1 232 48" transformations="translations" pos="144 304" stroke="black" type="label" width="70.932" height="16.6152" depth="3.576" valign="baseline" size="small">\Func[DVZK]</text>
 </group>
 <text matrix="1 0 0 1 -32 -64" transformations="translations" pos="32 160" stroke="black" type="label" width="246.662" height="16.7232" depth="3.84" valign="baseline" size="small">Verify $\vecb^* \cdot \Delta_\B$ correlation</text>
-<group layer="beta" matrix="1 0 0 1 -8 0">
-<group>
-<path stroke="black" fill="KITblue15">
-512 496 m
-920 496 l
-8 0 0 -8 920 488 928 488 a
-928 370.862 l
-520 370.862 l
-8 0 0 -8 520 378.862 512 378.862 a
-h
-</path>
-</group>
-<text matrix="1 0 0 1 200 -16" transformations="translations" pos="320 504" stroke="black" type="minipage" width="400" height="60.4896" depth="48.648" valign="top" size="small" style="itemize">\item By linearlity on $\mac$ and $\key$, we can get $[\vecb^* \otimes \veca]_\B$
-\item By linearlity on IT-MAC, we can get $[a_i b_j]_\B$ for any $i,j$</text>
-</group>
 <group layer="alpha">
 <group matrix="1 0 0 1 264 0">
 <path stroke="black" fill="KITblue15">
@@ -11910,6 +11878,21 @@ h
 </path>
 </group>
 <text matrix="1 0 0 1 -24 40" transformations="translations" pos="488 152" stroke="black" type="label" width="421.135" height="21.9984" depth="6.456" valign="baseline" size="small"> Define $[\tilde{b}_k]_{\Delta_\B} := [  \hat{a}_k \xor a_i a_j \xor a_i b_j \xor a_j b_i ]_{\Delta_\B}$</text>
+</group>
+<group layer="beta">
+<group matrix="1 0 0 1 -8 0">
+<path stroke="black" fill="KITblue15">
+512 496 m
+920 496 l
+8 0 0 -8 920 488 928 488 a
+928 370.862 l
+520 370.862 l
+8 0 0 -8 520 378.862 512 378.862 a
+h
+</path>
+</group>
+<text matrix="1 0 0 1 192 -16" transformations="translations" pos="320 504" stroke="black" type="minipage" width="400" height="60.4896" depth="48.648" valign="top" size="small" style="itemize">\item By linearlity on $\mac$ and $\key$, we can get $[\vecb^* \otimes \veca]_{\Delta_\B}$
+\item By linearlity on IT-MAC, we can get $[a_i b_j]_{\Delta_\B}$ for any $i,j$</text>
 </group>
 </page>
 <page title="DILO Implementation of \Func[cpre]: Generating $[\tilde{b}_k]_{\Delta_\A}$" subsection="">
@@ -12074,21 +12057,7 @@ h
 </path>
 <text matrix="1 0 0 1 -112 24" transformations="translations" pos="672 96" stroke="black" type="label" width="363.996" height="22.0104" depth="6.936" valign="top" size="small">Define $\mac[\tilde{b}_k] := ( m_{k,2} \xor \key[v_k] ) \cdot \Delta_\B\inv$</text>
 </group>
-<group layer="beta" matrix="1 0 0 1 0 32">
-<group matrix="1 0 0 1 0 56">
-<path stroke="black" fill="KITred15">
-400 214.001 m
-818.172 214.001 l
-8 0 0 -8 818.172 206.001 826.172 206.001 a
-826.172 170.024 l
-408 170.024 l
-8 0 0 -8 408 178.024 400 178.024 a
-h
-</path>
-</group>
-<text matrix="1 0 0 1 -80 88" transformations="translations" pos="488 152" stroke="black" type="label" width="410.172" height="22.0008" depth="5.976" valign="baseline" size="small"> Locally comptue $[v_k]_\B := [\tilde{b}_k \cdot \Delta_\A \xor \hat{a}_{k,2} ]_\B $</text>
-</group>
-<group layer="gamma" matrix="1 0 0 1 0 32">
+<group matrix="1 0 0 1 0 32">
 <group>
 <path stroke="black" fill="KITblue15">
 344 70.4256 m
@@ -12101,6 +12070,20 @@ h
 </path>
 </group>
 <text matrix="1 0 0 1 0 -24" transformations="translations" pos="352 64" stroke="black" type="label" width="484.111" height="22.4256" depth="6.456" valign="baseline" size="small">By the linearity of IT-MAC, $[\hat{b}_k]_\A := [b_i b_j]_\A \xor [\tilde{b}_k]_\A$</text>
+</group>
+<group layer="beta">
+<group>
+<path stroke="black" fill="KITred15">
+400 302.001 m
+843.427 302.001 l
+8 0 0 -8 843.427 294.001 851.427 294.001 a
+851.427 258.024 l
+408 258.024 l
+8 0 0 -8 408 266.024 400 266.024 a
+h
+</path>
+</group>
+<text matrix="1 0 0 1 -80 120" transformations="translations" pos="488 152" stroke="black" type="label" width="435.427" height="22.0008" depth="5.976" valign="baseline" size="small"> Locally comptue $[v_k]_{\Delta_\B} := [\tilde{b}_k \cdot \Delta_\A \xor \hat{a}_{k,2} ]_{\Delta_\B} $</text>
 </group>
 </page>
 <page title="The Online Protocol	" subsection="">
@@ -12516,7 +12499,7 @@ h
 </path>
 <text matrix="1 0 0 1 -632 -72" transformations="translations" pos="664 464" stroke="black" type="label" width="43.4208" height="16.4736" depth="0.168" valign="baseline" size="small">$1$ bit</text>
 </group>
-<text layer="gamma" matrix="1 0 0 1 0 -48" transformations="translations" pos="320 480" stroke="black" type="minipage" width="544" height="46.5912" depth="34.704" valign="top" size="small" style="itemize">\item $[\veca \Delta_\A]_\B \equiv [\veca]_{\Delta_\A \cdot \Delta_\B}$
+<text layer="gamma" matrix="1 0 0 1 0 -48" transformations="translations" pos="320 480" stroke="black" type="minipage" width="544" height="46.5912" depth="34.704" valign="top" size="small" style="itemize">\item $[\veca \Delta_\A]_{\Delta_\B} \equiv [\veca]_{\Delta_\A \cdot \Delta_\B}$
 \item $\mac[\veca \Delta_\A] \xor \key[\veca \Delta_\A] = \veca \Delta_\A \Delta_\B$
 \item We denote it as $\bsh{\veca}$</text>
 <text layer="beta" matrix="1 0 0 1 0 32" transformations="translations" pos="320 480" stroke="black" type="minipage" width="544" height="19.9608" depth="8.016" valign="top" size="small" style="itemize">\item Why not call $\fix(\tilde{b}_k)$ directly?</text>
@@ -12545,14 +12528,14 @@ h
 \item \begin{tikzpicture} \node[bob] {}; \end{tikzpicture} can open $y := \sum_k \chi^k \cdot \tilde{b}_k  \xor {r} $ and convince \begin{tikzpicture} \node[alice] {}; \end{tikzpicture}
 \item \begin{tikzpicture} \node[bob] {}; \end{tikzpicture} calls $\fix(\tilde{b}_k)$ and checks $\sum_k \chi^k [\tilde{b}_k] \xor [r] \xor y = 0$</text>
 <group layer="epsilon">
-<group matrix="1 0 0 1 0 -32">
+<group>
 <path stroke="black" fill="KITblue15">
-312 152.471 m
-900.92 152.471 l
-8 0 0 -8 900.92 144.471 908.92 144.471 a
-908.92 73.544 l
-320 73.544 l
-8 0 0 -8 320 81.544 312 81.544 a
+312 120.471 m
+911.977 120.471 l
+8 0 0 -8 911.977 112.471 919.977 112.471 a
+919.977 41.544 l
+320 41.544 l
+8 0 0 -8 320 49.544 312 49.544 a
 h
 </path>
 </group>
