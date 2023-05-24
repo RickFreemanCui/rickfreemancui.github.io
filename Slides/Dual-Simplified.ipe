@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.26">
-<info created="D:20090429144355" modified="D:20230422144630" title="Actively Secure Half-Gates with Minimum Overhead under Duplex Networks" author="Hongrui Cui \and Xiao Wang \and Kang Yang \and Yu Yu" subject="MPC" keywords="MPC" numberpages="yes"/>
+<ipe version="70218" creator="Ipe 7.2.27">
+<info created="D:20090429144355" modified="D:20230523153919" title="Actively Secure Half-Gates with Minimum Overhead under Duplex Networks" author="Hongrui Cui \and Xiao Wang \and Kang Yang \and Yu Yu" subject="MPC" keywords="MPC" numberpages="yes"/>
 <preamble>\usepackage[utf8]{inputenc}
 \usepackage[sfdefault,lf]{carlito}
 \usepackage{sfmath}
@@ -13585,7 +13585,7 @@ h
 <layer name="BACKGROUND"/>
 <view layers="title" active="title"/>
 <text layer="title" matrix="1 0 0 1 -213 4" pos="213 427" stroke="black" type="minipage" width="921.16" height="49.1036" depth="35.224" valign="baseline" size="Large">Actively Secure Half-Gates with Minimum Overhead \\ under Duplex Networks</text>
-<text matrix="1 0 0 1 -211.302 -425.6" pos="213 427" stroke="ac-lightblue" type="label" width="292.582" height="15.672" depth="3.84" valign="bottom" size="small">Apr.~25, 2023 $\cdot$ Eurocrypt 2023</text>
+<text matrix="1 0 0 1 -211.302 -425.6" pos="213 427" stroke="ac-lightblue" type="label" width="293.957" height="15.672" depth="3.84" valign="bottom" size="small">Apr.~24, 2023 $\cdot$ Eurocrypt 2023</text>
 <group matrix="1 0 0 1 0 13.4268">
 <image matrix="0.423986 0 0 0.423986 120.08 95.7007" rect="0 0 366 93" bitmap="12"/>
 <text matrix="1 0 0 1 -12.5599 -180.526" pin="h" transformations="translations" pos="10.6982 379.959" stroke="black" type="minipage" width="399.062" height="35.1792" depth="21.28" valign="top" style="center">\textbf{Kang Yang} \\
