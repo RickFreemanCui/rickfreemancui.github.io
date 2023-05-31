@@ -5,9 +5,13 @@ Applied and Theoretical Cryptography
 
 ## Publications
 
-- Cui, H., Zhang, K., Chen, Y., Liu, Z., & Yu, Y. (2021, October). MPC-in-Multi-Heads: A Multi-Prover Zero-Knowledge Proof System. In European Symposium on Research in Computer Security (pp. 332-351). Springer, Cham. [Paper](https://link.springer.com/content/pdf/10.1007%2F978-3-030-88428-4_17.pdf) [Slide](./Slides/esorics-slides.pdf)
+- **Cui, H.**, Zhang, K., Chen, Y., Liu, Z., & Yu, Y. (2021, October). MPC-in-Multi-Heads: A Multi-Prover Zero-Knowledge Proof System. In European Symposium on Research in Computer Security (pp. 332-351). Springer, Cham. [Paper](https://link.springer.com/content/pdf/10.1007%2F978-3-030-88428-4_17.pdf) [Slide](./Slides/esorics-slides.pdf)
 
-- Cui, H., & Zhang, K. (2021, August). A Simple Post-Quantum Non-interactive Zero-Knowledge Proof from Garbled Circuits. In International Conference on Information Security and Cryptology (pp. 269-280). Springer, Cham. [Paper](https://eprint.iacr.org/2021/1068) [Slide](./Slides/inscrypt%202021%20slides.pptx)
+- **Cui, H.**, & Zhang, K. (2021, August). A Simple Post-Quantum Non-interactive Zero-Knowledge Proof from Garbled Circuits. In International Conference on Information Security and Cryptology (pp. 269-280). Springer, Cham. [Paper](https://eprint.iacr.org/2021/1068) [Slide](./Slides/inscrypt%202021%20slides.pptx)
+
+- **Cui, H.**, Wang, X., Yang, K., & Yu, Y. (2023, April). Actively Secure Half-Gates with Minimum Overhead under Duplex Networks. In Advances in Cryptology–EUROCRYPT 2023: 42nd Annual International Conference on the Theory and Applications of Cryptographic Techniques, Lyon, France, April 23–27, 2023, Proceedings, Part II (pp. 35-67). Cham: Springer Nature Switzerland. [Paper](https://eprint.iacr.org/2023/278) [Slide](./Slides/DualEx.pdf)
+
+- Zhang, K., **Cui, H.**, & Yu, Y. (2023, August). Revisiting the Constant-sum Winternitz One-time Signature with Applications to SPHINCS+ and XMSS. In Advances in Cryptology–CRYPTO 2023: 43st Annual International Cryptology Conference, CRYPTO 2023, Santa Barbara, August 19–24, 2023, Proceedings, Part x xx (pp. xxx-xxx). Springer International Publishing.
 
 ## Talks
 
