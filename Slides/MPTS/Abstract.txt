@@ -1,0 +1,10 @@
+Actively secure two-party computation (2PC) is one of the canonical building blocks
+in modern cryptography. One main goal for designing actively secure 2PC protocols is to reduce the communication overhead, compared to semi-honest 2PC protocols. In this talk, we introduce our recent progress in closing this gap by proposing two new actively secure constant-round 2PC protocols, one with one-way communication of $2\kappa+5$ bits per AND gate (for $\kappa$-bit computational security and any statistical security) and one with total communication of $2\kappa+\rho+5$ bits per AND gate (for $\rho$-bit statistical security).
+
+In particular, our first protocol essentially matches the one-way communication of semi-honest half-gates protocol. Our optimization is achieved by three new techniques:
+
+1. Building on the recent compression technique by Dittmer et al. (Crypto'22), we introduce a new form of authenticated bits and propose a new technique of generating authenticated AND triples to reduce the one-way communication of preprocessing from $5\ssp+1$ bits to $2$ bits per AND gate for $\rho$-bit statistical security.
+
+2. Unfortunately, the above compressing technique is only compatible with a less compact AG (CCS'17). We designed a new checking method using dual execution which allows us to use a more compact AG (Crypto'15), and meanwhile keep compatible with the compression technique. Our new technique can achieve one-way communication of $2\kappa+5$ bits per AND gate.
+
+3. In terms of total communication, we notice that the communication overhead of the consistency checking method by Dittmer et al. (Crypto'22) can be optimized with additional one-round of interaction. This reduces the online communication from $2\kappa+3\rho$ bits down to $2\kappa+\rho+1$ bits per AND gate. Combined with our first contribution, this yields total amortized communication of $2\kappa+\rho+5$ bits.

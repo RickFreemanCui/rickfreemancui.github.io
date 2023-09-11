@@ -1,0 +1,28 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[color,reflinks,secparam=\kappa]{../crypto/crypto}
+\usepackage[margin=1in]{geometry}
+
+\usepackage[
+    backend=biber,
+    style=alphabetic,
+    natbib=true,
+    url=false, 
+    doi=true,
+    eprint=false
+]{biblatex}
+\addbibresource{../crypto/abbrev3.bib}
+\addbibresource{../crypto/crypto.bib}
+
+\begin{document}
+
+\begin{enumerate}
+    \item    \fullcite{EC:ZahRosEva15}
+    \item    \fullcite{CCS:WanRanKat17a}
+    \item    \fullcite{C:KRRW18}
+    \item    \fullcite{C:DILO22}
+    \item    \fullcite{EC:CWYY23}
+\end{enumerate}
+
+\printbibliography
+
+\end{document}

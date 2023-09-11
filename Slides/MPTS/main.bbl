@@ -1,0 +1,343 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{anyt/global//global/global}
+    \entry{EC:CWYY23}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=6e2e6e8095c229381aa55323b5675edd}{%
+           family={Cui},
+           familyi={C\bibinitperiod},
+           given={Hongrui},
+           giveni={H\bibinitperiod}}}%
+        {{hash=bd7d15d79ca36b953d99a1a0aaccb94a}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xiao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=b0750e17850d5d0de82617ebb71777ec}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Kang},
+           giveni={K\bibinitperiod}}}%
+        {{hash=11fc0bc808d13e04b24e464c22683290}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=58f09925d8eae2b6c6e1d31c206d92c1}{%
+           family={Hazay},
+           familyi={H\bibinitperiod},
+           given={Carmit},
+           giveni={C\bibinitperiod}}}%
+        {{hash=1706694ea96be584f4821da9512a19e5}{%
+           family={Stam},
+           familyi={S\bibinitperiod},
+           given={Martijn},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer, Heidelberg}%
+      }
+      \strng{namehash}{0b0a38ab5c6bd3a82b6b85583f1d73b9}
+      \strng{fullhash}{563683de2ada48bea39cb1ee68dc87e6}
+      \strng{bibnamehash}{0b0a38ab5c6bd3a82b6b85583f1d73b9}
+      \strng{authorbibnamehash}{0b0a38ab5c6bd3a82b6b85583f1d73b9}
+      \strng{authornamehash}{0b0a38ab5c6bd3a82b6b85583f1d73b9}
+      \strng{authorfullhash}{563683de2ada48bea39cb1ee68dc87e6}
+      \strng{editorbibnamehash}{e7bd8d2c77ba4b07718a58977d93741d}
+      \strng{editornamehash}{e7bd8d2c77ba4b07718a58977d93741d}
+      \strng{editorfullhash}{e7bd8d2c77ba4b07718a58977d93741d}
+      \field{labelalpha}{Cui+23}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{EUROCRYPT~2023, Part~II}
+      \field{month}{4}
+      \field{series}{{LNCS}}
+      \field{title}{Actively Secure Half-Gates with Minimum Overhead Under Duplex Networks}
+      \field{volume}{14005}
+      \field{year}{2023}
+      \field{pages}{35\bibrangedash 67}
+      \range{pages}{33}
+      \verb{doi}
+      \verb 10.1007/978-3-031-30617-4_2
+      \endverb
+    \endentry
+    \entry{C:DILO22}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=0213eac74cb05ce8c8e17eb18b1f1744}{%
+           family={Dittmer},
+           familyi={D\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5d2e4cfa73650faa445e88497717a0ec}{%
+           family={Ishai},
+           familyi={I\bibinitperiod},
+           given={Yuval},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=166c060186376221b9d6aa6dc79ab096}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a9721cf40a3150cd65a1b3d65d86fe94}{%
+           family={Ostrovsky},
+           familyi={O\bibinitperiod},
+           given={Rafail},
+           giveni={R\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=21ac2ee1e3dbf5809549b834bf94ba2e}{%
+           family={Dodis},
+           familyi={D\bibinitperiod},
+           given={Yevgeniy},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=200dd40d78c989e605b9581ccf1420ed}{%
+           family={Shrimpton},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer, Heidelberg}%
+      }
+      \strng{namehash}{d04952dec1057bb828d3ba5f4923d16c}
+      \strng{fullhash}{71b5ee8e6b556a1694693d22944400de}
+      \strng{bibnamehash}{d04952dec1057bb828d3ba5f4923d16c}
+      \strng{authorbibnamehash}{d04952dec1057bb828d3ba5f4923d16c}
+      \strng{authornamehash}{d04952dec1057bb828d3ba5f4923d16c}
+      \strng{authorfullhash}{71b5ee8e6b556a1694693d22944400de}
+      \strng{editorbibnamehash}{aeee668778e97817737c7f4d0dfef3f8}
+      \strng{editornamehash}{aeee668778e97817737c7f4d0dfef3f8}
+      \strng{editorfullhash}{aeee668778e97817737c7f4d0dfef3f8}
+      \field{labelalpha}{Dit+22}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{CRYPTO~2022, Part~IV}
+      \field{month}{8}
+      \field{series}{{LNCS}}
+      \field{title}{Authenticated Garbling from Simple Correlations}
+      \field{volume}{13510}
+      \field{year}{2022}
+      \field{pages}{57\bibrangedash 87}
+      \range{pages}{31}
+      \verb{doi}
+      \verb 10.1007/978-3-031-15985-5_3
+      \endverb
+    \endentry
+    \entry{C:KRRW18}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=85053e14c4a72772970b91a572b9b9c1}{%
+           family={Katz},
+           familyi={K\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9feb5edcc96e97c2a88f672bebc48153}{%
+           family={Ranellucci},
+           familyi={R\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod}}}%
+        {{hash=98419613b7fd8103780e4fc807177469}{%
+           family={Rosulek},
+           familyi={R\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod}}}%
+        {{hash=bd7d15d79ca36b953d99a1a0aaccb94a}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xiao},
+           giveni={X\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=8e72ae85d346fe6dea613a2090664c28}{%
+           family={Shacham},
+           familyi={S\bibinitperiod},
+           given={Hovav},
+           giveni={H\bibinitperiod}}}%
+        {{hash=4203a914c6d4972afacbd9d4f9352db1}{%
+           family={Boldyreva},
+           familyi={B\bibinitperiod},
+           given={Alexandra},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer, Heidelberg}%
+      }
+      \strng{namehash}{bb04ccc958409625c0990919c2ed7c8f}
+      \strng{fullhash}{ac885f8df4832d3c5bf3b32c24091b9d}
+      \strng{bibnamehash}{bb04ccc958409625c0990919c2ed7c8f}
+      \strng{authorbibnamehash}{bb04ccc958409625c0990919c2ed7c8f}
+      \strng{authornamehash}{bb04ccc958409625c0990919c2ed7c8f}
+      \strng{authorfullhash}{ac885f8df4832d3c5bf3b32c24091b9d}
+      \strng{editorbibnamehash}{d03c06950be59a9229b42ddf912b1aa7}
+      \strng{editornamehash}{d03c06950be59a9229b42ddf912b1aa7}
+      \strng{editorfullhash}{d03c06950be59a9229b42ddf912b1aa7}
+      \field{labelalpha}{Kat+18}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{CRYPTO~2018, Part~III}
+      \field{month}{8}
+      \field{series}{{LNCS}}
+      \field{title}{Optimizing Authenticated Garbling for Faster Secure Two-Party Computation}
+      \field{volume}{10993}
+      \field{year}{2018}
+      \field{pages}{365\bibrangedash 391}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1007/978-3-319-96878-0_13
+      \endverb
+    \endentry
+    \entry{CCS:WanRanKat17a}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=bd7d15d79ca36b953d99a1a0aaccb94a}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xiao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=9feb5edcc96e97c2a88f672bebc48153}{%
+           family={Ranellucci},
+           familyi={R\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod}}}%
+        {{hash=85053e14c4a72772970b91a572b9b9c1}{%
+           family={Katz},
+           familyi={K\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=76c4389b55d9f3279444653c59a95a0b}{%
+           family={Thuraisingham},
+           familyi={T\bibinitperiod},
+           given={Bhavani\bibnamedelima M.},
+           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=fdf60d29316eacfbd0fdc22e786afd78}{%
+           family={Evans},
+           familyi={E\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d6e5aae18526c6a1569ba8a8000a84d6}{%
+           family={Malkin},
+           familyi={M\bibinitperiod},
+           given={Tal},
+           giveni={T\bibinitperiod}}}%
+        {{hash=3ef6b69482a18357987464040ea00810}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Dongyan},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{ACM} Press}%
+      }
+      \strng{namehash}{ae72747ad662d0fbeed3bc7171516741}
+      \strng{fullhash}{ae72747ad662d0fbeed3bc7171516741}
+      \strng{bibnamehash}{ae72747ad662d0fbeed3bc7171516741}
+      \strng{authorbibnamehash}{ae72747ad662d0fbeed3bc7171516741}
+      \strng{authornamehash}{ae72747ad662d0fbeed3bc7171516741}
+      \strng{authorfullhash}{ae72747ad662d0fbeed3bc7171516741}
+      \strng{editorbibnamehash}{26f1d3c2c329d4244ce4ed40954081d1}
+      \strng{editornamehash}{26f1d3c2c329d4244ce4ed40954081d1}
+      \strng{editorfullhash}{193257b8cd3bdb30fae51740ce921987}
+      \field{labelalpha}{WRK17}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{ACM CCS 2017}
+      \field{month}{10~/~11}
+      \field{title}{Authenticated Garbling and Efficient Maliciously Secure Two-Party Computation}
+      \field{year}{2017}
+      \field{pages}{21\bibrangedash 37}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1145/3133956.3134053
+      \endverb
+    \endentry
+    \entry{EC:ZahRosEva15}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=6e8a906a7fed49b7c05def835469f91a}{%
+           family={Zahur},
+           familyi={Z\bibinitperiod},
+           given={Samee},
+           giveni={S\bibinitperiod}}}%
+        {{hash=98419613b7fd8103780e4fc807177469}{%
+           family={Rosulek},
+           familyi={R\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fdf60d29316eacfbd0fdc22e786afd78}{%
+           family={Evans},
+           familyi={E\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=cf7c0382045f06385a28d0235a0bbc97}{%
+           family={Oswald},
+           familyi={O\bibinitperiod},
+           given={Elisabeth},
+           giveni={E\bibinitperiod}}}%
+        {{hash=23091f1713beeb72d7a1d501b5d5923e}{%
+           family={Fischlin},
+           familyi={F\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer, Heidelberg}%
+      }
+      \strng{namehash}{e95aea88db12769be6796dbf7368f379}
+      \strng{fullhash}{e95aea88db12769be6796dbf7368f379}
+      \strng{bibnamehash}{e95aea88db12769be6796dbf7368f379}
+      \strng{authorbibnamehash}{e95aea88db12769be6796dbf7368f379}
+      \strng{authornamehash}{e95aea88db12769be6796dbf7368f379}
+      \strng{authorfullhash}{e95aea88db12769be6796dbf7368f379}
+      \strng{editorbibnamehash}{9ea6fcd5ce4fef03eedf71c589ed1bb3}
+      \strng{editornamehash}{9ea6fcd5ce4fef03eedf71c589ed1bb3}
+      \strng{editorfullhash}{9ea6fcd5ce4fef03eedf71c589ed1bb3}
+      \field{labelalpha}{ZRE15}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{EUROCRYPT~2015, Part~II}
+      \field{month}{4}
+      \field{series}{{LNCS}}
+      \field{title}{Two Halves Make a Whole - Reducing Data Transfer in Garbled Circuits Using Half Gates}
+      \field{volume}{9057}
+      \field{year}{2015}
+      \field{pages}{220\bibrangedash 250}
+      \range{pages}{31}
+      \verb{doi}
+      \verb 10.1007/978-3-662-46803-6_8
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

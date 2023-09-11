@@ -1,0 +1,20 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'main.blg'
+[39] biber-darwin:340> INFO - === Sun Sep 10, 2023, 11:47:39
+[49] Biber.pm:419> INFO - Reading 'main.bcf'
+[95] Biber.pm:979> INFO - Found 5 citekeys in bib section 0
+[103] Biber.pm:4419> INFO - Processing section 0
+[108] Biber.pm:4610> INFO - Looking for bibtex file '../crypto/abbrev3.bib' for section 0
+[129] bibtex.pm:1713> INFO - LaTeX decoding ...
+[344] bibtex.pm:1519> INFO - Found BibTeX data source '../crypto/abbrev3.bib'
+[1066] Biber.pm:4610> INFO - Looking for bibtex file '../crypto/crypto.bib' for section 0
+[2710] bibtex.pm:1713> INFO - LaTeX decoding ...
+[44566] bibtex.pm:1519> INFO - Found BibTeX data source '../crypto/crypto.bib'
+[47290] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[47290] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[47290] Biber.pm:4239> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'en-US'
+[47290] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[47293] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[47297] bbl.pm:763> INFO - Output to main.bbl
+[47298] Biber.pm:131> WARN - legacy month field '10~/~11' in entry 'CCS:WanRanKat17a' is not an integer - this will probably not sort properly.
+[47298] Biber.pm:133> INFO - WARNINGS: 1
