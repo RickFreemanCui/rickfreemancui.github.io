@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage{pgfplotstable}
+\usepackage{pgfplots}
+\pagestyle{empty}
+
+
+\pgfplotstableread[col sep=comma]{ours.csv}\ourdata
+\makeatletter
+\pgfplotsset{
+    /pgfplots/flexible xticklabels from table/.code n args={3}{%
+        \pgfplotstableread[#3]{#1}\coordinate@table
+        \pgfplotstablegetcolumn{#2}\of{\coordinate@table}\to\pgfplots@xticklabels
+        \let\pgfplots@xticklabel=\pgfplots@user@ticklabel@list@x
+    }
+}
+\pgfplotstableread[col sep=comma]{faest.csv}\faestdata
+\makeatletter
+\pgfplotsset{
+    /pgfplots/flexible xticklabels from table/.code n args={3}{%
+        \pgfplotstableread[#3]{#1}\coordinate@table
+        \pgfplotstablegetcolumn{#2}\of{\coordinate@table}\to\pgfplots@xticklabels
+        \let\pgfplots@xticklabel=\pgfplots@user@ticklabel@list@x
+    }
+}
+
+\pgfplotstableread[col sep=comma]{em.csv}\emdata
+\makeatletter
+\pgfplotsset{
+    /pgfplots/flexible xticklabels from table/.code n args={3}{%
+        \pgfplotstableread[#3]{#1}\coordinate@table
+        \pgfplotstablegetcolumn{#2}\of{\coordinate@table}\to\pgfplots@xticklabels
+        \let\pgfplots@xticklabel=\pgfplots@user@ticklabel@list@x
+    }
+}
+
+
+
+\begin{document}
+
+\vspace{1cm}
+
+\begin{tikzpicture}
+  \begin{axis}
+  \addplot table [x expr=\coordindex, y=pk, col sep=comma] {ours.csv};
+  \end{axis}
+\end{tikzpicture}
+
+
+\begin{tikzpicture}
+  \begin{axis}[
+    width=.9\linewidth,
+    legend style={at={(0.5,-0.1)},
+    anchor=north,legend columns=-1},
+  ybar, ymin=0,
+  xlabel=,
+  ylabel=Signing Time,
+  flexible xticklabels from table={ours.csv}{name}{col sep=comma},
+  xticklabel style={text height=1.5ex}, % To make sure the text labels are nicely aligned
+  xtick=data,
+  nodes near coords,
+  nodes near coords align={vertical}]
+  \addplot table[x expr=\coordindex,y=sign]{\ourdata};
+  \addplot table[x expr=\coordindex,y=sign]{\faestdata};
+  \addplot table[x expr=\coordindex,y=sign]{\emdata};
+  \legend{Ours,FAEST,FAEST-EM}
+  \end{axis}
+\end{tikzpicture}
+
+
+\end{document}
