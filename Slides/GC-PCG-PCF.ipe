@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20090429144355" modified="D:20231223194206" title="PCG and PCF for Garbled Circuit Correlation" author="Hongrui Cui" numberpages="yes"/>
+<info created="D:20090429144355" modified="D:20231226212027" title="PCG and PCF for Garbled Circuit Correlation" author="Hongrui Cui" numberpages="yes"/>
 <preamble>\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
@@ -16404,7 +16404,7 @@ h
 <text layer="title" matrix="1 0 0 1 -213 -26" pos="213 427" stroke="black" type="minipage" width="910.36" height="48.9496" depth="35.056" valign="baseline" size="Large">Pseudorandom Correlation Functions for \\
 Garbled Circuits and Applications
 </text>
-<text matrix="1 0 0 1 -213.741 -230.822" pos="213 427" stroke="ac-lightblue" type="label" width="447.118" height="16.2816" depth="4.104" valign="bottom" size="small">\today $\cdot$ Presented by Hongrui Cui</text>
+<text matrix="1 0 0 1 -213.741 -230.822" pos="213 427" stroke="ac-lightblue" type="label" width="447.948" height="16.2816" depth="4.104" valign="bottom" size="small">\today $\cdot$ Presented by Hongrui Cui</text>
 <text matrix="1 0 0 1 -212.227 -164.157" pos="213 427" stroke="ac-lightblue" type="minipage" width="910.252" height="16.7468" depth="2.8" valign="baseline">No Author Given \( ^\star \)</text>
 <text matrix="1 0 0 1 -213 -108.812" pos="213 427" stroke="ac-lightblue" type="label" width="381.242" height="18.9896" depth="4.48" valign="baseline"> Eurocrypt 2024 $\cdot$ Submission \#145</text>
 <text matrix="1 0 0 1 0 -17" pos="0 24" stroke="black" type="label" width="552.111" height="12.434" depth="3.08" valign="baseline" size="18">$^\star$ For the Purpose of Reviewing and Internal Discussion \hl{DO NOT DISTRIBUTE}</text>
@@ -17349,61 +17349,6 @@ h
 <text matrix="1 0 0 1 4.2764 204.132" transformations="translations" pos="80 160" stroke="black" type="label" width="7.4472" height="7.7352" depth="0" valign="baseline" size="tiny">H</text>
 <text matrix="1 0 0 1 -312 -77.405" transformations="translations" pos="500.539 441.04" stroke="black" type="label" width="9.8808" height="4.56" depth="0" valign="baseline" size="tiny" style="math">=</text>
 <text matrix="1 0 0 1 -344 -77.405" transformations="translations" pos="500.539 441.04" stroke="black" type="label" width="11.6232" height="7.9704" depth="1.992" valign="baseline" size="tiny" style="math">\times</text>
-<group matrix="1 0 0 1 0 -24">
-<path stroke="black" fill="KITyellow15">
-919.823 526.721 m
-919.823 421.72 l
-919.823 416.72
-914.823 411.72
-909.823 411.72 c
-571.855 411.72 l
-566.855 411.72
-561.855 416.72
-561.855 421.72 c
-561.855 526.721 l
-561.855 531.721
-566.855 536.721
-571.855 536.721 c
-909.823 536.721 l
-914.823 536.721
-919.823 531.721
-919.823 526.721 c
-h
-</path>
-<group matrix="1 0 0 1 136 16">
-<path matrix="1 0 0 1 408 56" stroke="black" arrow="normal/tiny">
-128 400 m
-96 440 l
-</path>
-<text matrix="1 0 0 1 188.233 134.001" transformations="translations" pos="245.622 330.056" stroke="black" type="label" width="62.928" height="32.1" depth="0" valign="baseline" size="tiny" style="tikz">\node[align=center] {Ring-LPN \\ {[BCGIKS20]} };</text>
-<text matrix="1 0 0 1 193.383 89.152" transformations="translations" pos="245.622 330.056" stroke="black" type="label" width="60.6936" height="31.692" depth="0" valign="baseline" size="tiny" style="tikz">\node[align=center] {LPN \\ {[BCGIKS19]} };</text>
-<text matrix="1 0 0 1 354.887 90.103" transformations="translations" pos="245.622 330.056" stroke="black" type="label" width="62.928" height="31.692" depth="0" valign="baseline" size="tiny" style="tikz">\node[align=center] { VD-LPN \\ {[BCGIKS20]} };</text>
-<text matrix="1 0 0 1 353.848 131.006" transformations="translations" pos="245.622 330.056" stroke="black" type="label" width="68.3856" height="31.6488" depth="0" valign="baseline" size="tiny" style="tikz">\node[align=center] { \hl{EA-LPN} \\ {[BCGIKRS22]} };</text>
-<text matrix="1 0 0 1 456.643 128.826" transformations="translations" pos="245.622 330.056" stroke="black" type="label" width="73.5576" height="32.484" depth="0" valign="baseline" size="tiny" style="tikz">\node[align=center] { \hl{Half-Tree} \\ {[GYWZXZL22]} };</text>
-<text matrix="1 0 0 1 42.2911 127.148" transformations="translations" pos="400 368" stroke="black" type="label" width="69.2136" height="17.1528" depth="0" valign="baseline" size="tiny" style="blue-white-round">PCG for OLE</text>
-<text matrix="1 0 0 1 190.827 127.148" transformations="translations" pos="400 368" stroke="black" type="label" width="97.4736" height="17.5728" depth="0" valign="baseline" size="tiny" style="blue-white-round">PCF for VOLE/OLE</text>
-<text matrix="1 0 0 1 304.596 35.7198" transformations="translations" pos="400 368" stroke="black" type="label" width="55.5216" height="47.7" depth="0" valign="baseline" size="tiny" style="tikz">\node[align=center] { Reduce \\ $\frac{1}{4} \sim\frac{1}{2}$ \\ Overhead};</text>
-<text matrix="1 0 0 1 190.827 35.9418" transformations="translations" pos="400 368" stroke="black" type="label" width="73.896" height="17.1528" depth="0" valign="baseline" size="tiny" style="blue-white-round">PCF for VOLE</text>
-<text matrix="1 0 0 1 34.2921 35.9418" transformations="translations" pos="400 368" stroke="black" type="label" width="75.84" height="17.1528" depth="0" valign="baseline" size="tiny" style="blue-white-round">PCG for VOLE</text>
-<path matrix="1 0 0 1 408 56" stroke="black" arrow="normal/tiny">
-160 408 m
-184 440 l
-</path>
-<path matrix="1 0 0 1 408 56" stroke="black" arrow="normal/tiny">
-120 400 m
-96 368 l
-</path>
-<path matrix="1 0 0 1 408 56" stroke="black" arrow="normal/tiny">
-160 400 m
-184 360 l
-</path>
-<text matrix="1 0 0 1 95.7752 83.7201" transformations="translations" pos="400 368" stroke="black" type="label" width="106.639" height="17.5728" depth="0" valign="baseline" size="tiny" style="blue-white-round">DPF/DCF from OWF</text>
-<path stroke="black" arrow="normal/tiny">
-712 456 m
-600 456 l
-</path>
-</group>
-</group>
 <path stroke="black">
 168 400 m
 184 400 l
@@ -17609,6 +17554,61 @@ h
 536 256 l
 </path>
 <text matrix="1 0 0 1 82.8544 37.666" transformations="translations" pos="536 208" stroke="black" type="label" width="10.2912" height="8.244" depth="3.576" valign="baseline" size="tiny">\(i_4\)</text>
+</group>
+<group layer="alpha">
+<path matrix="1 0 0 1 0 -24" stroke="black" fill="KITyellow15">
+919.823 526.721 m
+919.823 421.72 l
+919.823 416.72
+914.823 411.72
+909.823 411.72 c
+571.855 411.72 l
+566.855 411.72
+561.855 416.72
+561.855 421.72 c
+561.855 526.721 l
+561.855 531.721
+566.855 536.721
+571.855 536.721 c
+909.823 536.721 l
+914.823 536.721
+919.823 531.721
+919.823 526.721 c
+h
+</path>
+<group>
+<path matrix="1 0 0 1 544 48" stroke="black" arrow="normal/tiny">
+128 400 m
+96 440 l
+</path>
+<text matrix="1 0 0 1 324.233 126.001" transformations="translations" pos="245.622 330.056" stroke="black" type="label" width="62.928" height="32.1" depth="0" valign="baseline" size="tiny" style="tikz">\node[align=center] {Ring-LPN \\ {[BCGIKS20]} };</text>
+<text matrix="1 0 0 1 329.383 81.152" transformations="translations" pos="245.622 330.056" stroke="black" type="label" width="60.6936" height="31.692" depth="0" valign="baseline" size="tiny" style="tikz">\node[align=center] {LPN \\ {[BCGIKS19]} };</text>
+<text matrix="1 0 0 1 490.887 82.103" transformations="translations" pos="245.622 330.056" stroke="black" type="label" width="62.928" height="31.692" depth="0" valign="baseline" size="tiny" style="tikz">\node[align=center] { VD-LPN \\ {[BCGIKS20]} };</text>
+<text matrix="1 0 0 1 489.848 123.006" transformations="translations" pos="245.622 330.056" stroke="black" type="label" width="68.3856" height="31.6488" depth="0" valign="baseline" size="tiny" style="tikz">\node[align=center] { \hl{EA-LPN} \\ {[BCGIKRS22]} };</text>
+<text matrix="1 0 0 1 592.643 120.826" transformations="translations" pos="245.622 330.056" stroke="black" type="label" width="73.5576" height="32.484" depth="0" valign="baseline" size="tiny" style="tikz">\node[align=center] { \hl{Half-Tree} \\ {[GYWZXZL23]} };</text>
+<text matrix="1 0 0 1 178.291 119.148" transformations="translations" pos="400 368" stroke="black" type="label" width="69.2136" height="17.1528" depth="0" valign="baseline" size="tiny" style="blue-white-round">PCG for OLE</text>
+<text matrix="1 0 0 1 326.827 119.148" transformations="translations" pos="400 368" stroke="black" type="label" width="97.4736" height="17.5728" depth="0" valign="baseline" size="tiny" style="blue-white-round">PCF for VOLE/OLE</text>
+<text matrix="1 0 0 1 440.596 27.7198" transformations="translations" pos="400 368" stroke="black" type="label" width="55.5216" height="47.7" depth="0" valign="baseline" size="tiny" style="tikz">\node[align=center] { Reduce \\ $\frac{1}{4} \sim\frac{1}{2}$ \\ Overhead};</text>
+<text matrix="1 0 0 1 326.827 27.9418" transformations="translations" pos="400 368" stroke="black" type="label" width="73.896" height="17.1528" depth="0" valign="baseline" size="tiny" style="blue-white-round">PCF for VOLE</text>
+<text matrix="1 0 0 1 170.292 27.9418" transformations="translations" pos="400 368" stroke="black" type="label" width="75.84" height="17.1528" depth="0" valign="baseline" size="tiny" style="blue-white-round">PCG for VOLE</text>
+<path matrix="1 0 0 1 544 48" stroke="black" arrow="normal/tiny">
+160 408 m
+184 440 l
+</path>
+<path matrix="1 0 0 1 544 48" stroke="black" arrow="normal/tiny">
+120 400 m
+96 368 l
+</path>
+<path matrix="1 0 0 1 544 48" stroke="black" arrow="normal/tiny">
+160 400 m
+184 360 l
+</path>
+<text matrix="1 0 0 1 231.775 75.7201" transformations="translations" pos="400 368" stroke="black" type="label" width="106.639" height="17.5728" depth="0" valign="baseline" size="tiny" style="blue-white-round">DPF/DCF from OWF</text>
+<path matrix="1 0 0 1 136 -8" stroke="black" arrow="normal/tiny">
+712 456 m
+600 456 l
+</path>
+</group>
 </group>
 </page>
 <page title="Garbling Pseudorandom Correlation Function">
@@ -19103,7 +19103,7 @@ h
 <text matrix="1 0 0 1 0.805891 101.33" transformations="translations" pos="-0.397052 260.677" stroke="black" type="minipage" width="437.592" height="31.6776" depth="19.752" valign="top" size="small" style="itemize">\item Setup: $\Func[COT]$ with $\Delta$ global key
 \item Prepare $[r_1],...,[r_n] \in \FF_2^n$</text>
 <text layer="alpha" matrix="1 0 0 1 1.53291 -4.6776" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="27.8448" height="15.2592" depth="3.576" valign="baseline" size="small">\Party[0]</text>
-<text matrix="1 0 0 1 340.446 -3.19629" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="27.8448" height="15.2592" depth="3.576" valign="baseline" size="small">\Party[1]</text>
+<text matrix="1 0 0 1 340.446 -3.19629" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline" size="small">\Party[1]</text>
 <text layer="beta" matrix="1 0 0 1 -359.858 -11.9736" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline" size="small">\begin{tikzpicture}
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
@@ -19114,7 +19114,7 @@ h
 <text matrix="1 0 0 1 -85.5644 -16.1494" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline" size="small">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 298.489 -220.9" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="27.8448" height="15.2592" depth="3.576" valign="baseline" size="small">\Party[1]</text>
+<text matrix="1 0 0 1 298.489 -220.9" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline" size="small">\Party[1]</text>
 <text matrix="1 0 0 1 -24.9312 51.1278" transformations="translations" pos="271.771 87.0952" stroke="black" type="label" width="203.782" height="17.9352" depth="5.976" valign="baseline" size="small">For $i \in [1, n]$, $\alpha_i := \bar{r}_i$</text>
 <text matrix="1 0 0 1 -4.32095 5.51092" transformations="translations" pos="251.559 103.6" stroke="black" type="label" width="429.768" height="20.1888" depth="8.304" valign="baseline" size="small" style="math">K^i_{\bar{\alpha}_i } = c_i \xor \mac[r_i] = K_0^i \xor r_i \cdot \Delta = K_0^i \xor \bar{\alpha_i} \cdot \Delta</text>
 <text matrix="1 0 0 1 8.07606 -1.52948" transformations="translations" pos="6.04322 66.0528" stroke="black" type="label" width="127.87" height="17.9352" depth="5.976" valign="baseline" size="small">For $x \in [1, N]$</text>
@@ -19207,7 +19207,7 @@ h
 <text matrix="1 0 0 1 -18.7344 -1.71123" transformations="translations" pos="25.1823 402.264" stroke="black" type="label" width="148.812" height="19.3608" depth="3.048" valign="baseline" size="small" style="math">\Delta \in \mathbb{K}, \vecv \in \mathbb{K}^N</text>
 <text matrix="1 0 0 1 248.067 29.6464" transformations="translations" pos="25.1823 402.264" stroke="black" type="label" width="156.218" height="19.3608" depth="3.048" valign="baseline" size="small" style="math">\vecu \in \FF^N, \vecw \in \KK^N</text>
 <text matrix="1 0 0 1 1.53291 -4.6776" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="27.8448" height="15.2592" depth="3.576" valign="baseline">\Party[0]</text>
-<text matrix="1 0 0 1 340.446 -3.19629" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="27.8448" height="15.2592" depth="3.576" valign="baseline">\Party[1]</text>
+<text matrix="1 0 0 1 340.446 -3.19629" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline">\Party[1]</text>
 <text layer="beta" matrix="1 0 0 1 -362.413 1.64088" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="38.4192" depth="0" valign="baseline">\begin{tikzpicture}
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
@@ -19215,7 +19215,7 @@ h
 <text matrix="1 0 0 1 3.27573 -1.79086" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 387.329 -206.541" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="27.8448" height="15.2592" depth="3.576" valign="baseline">\Party[1]</text>
+<text matrix="1 0 0 1 387.329 -206.541" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline">\Party[1]</text>
 <group layer="alpha" matrix="1 0 0 1 -32.5409 -0.901912">
 <path matrix="1 0 0 1 88.8673 46.5428" stroke="black" arrow="normal/normal">
 106.817 425.275 m
@@ -19418,7 +19418,7 @@ h
 <text matrix="1 0 0 1 421.735 -5.99116" transformations="translations" pos="25.1823 402.264" stroke="black" type="label" width="148.812" height="19.3608" depth="3.048" valign="baseline" size="small" style="math">\Delta \in \mathbb{K}, \vecv \in \mathbb{K}^N</text>
 <text matrix="1 0 0 1 688.536 25.3665" transformations="translations" pos="25.1823 402.264" stroke="black" type="label" width="156.218" height="19.3608" depth="3.048" valign="baseline" size="small" style="math">\vecu \in \FF^N, \vecw \in \KK^N</text>
 <text matrix="1 0 0 1 442.002 -8.95753" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="27.8448" height="15.2592" depth="3.576" valign="baseline">\Party[0]</text>
-<text matrix="1 0 0 1 780.915 -7.47622" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="27.8448" height="15.2592" depth="3.576" valign="baseline">\Party[1]</text>
+<text matrix="1 0 0 1 780.915 -7.47622" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline">\Party[1]</text>
 <group matrix="1 0 0 1 407.928 -5.18184">
 <path matrix="1 0 0 1 88.8673 46.5428" stroke="black" arrow="normal/normal">
 106.817 425.275 m
@@ -19447,7 +19447,7 @@ h
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 68.2811 -234.188" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="27.8448" height="15.2592" depth="3.576" valign="baseline">\Party[0]</text>
-<text matrix="1 0 0 1 526.535 -232.265" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="27.8448" height="15.2592" depth="3.576" valign="baseline">\Party[1]</text>
+<text matrix="1 0 0 1 526.535 -232.265" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline">\Party[1]</text>
 <path matrix="1 0 0 1 71.7758 -0.871177" stroke="black" arrow="normal/small" opacity="40%" stroke-opacity="opaque">
 405.395 242.649 m
 220.88 242.649 l
@@ -19485,7 +19485,7 @@ G_{x} &amp; x \ne \alpha \\
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 38.22 -3.28837" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="27.8448" height="15.2592" depth="3.576" valign="baseline">\Party[0]</text>
-<text matrix="1 0 0 1 377.133 -1.80706" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="27.8448" height="15.2592" depth="3.576" valign="baseline">\Party[1]</text>
+<text matrix="1 0 0 1 377.133 -1.80706" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline">\Party[1]</text>
 <text matrix="1 0 0 1 82.2822 -20.0925" transformations="translations" pos="140.855 461.986" stroke="black" type="label" width="61.2248" height="19.3844" depth="4.172" valign="baseline" style="math">\Func[DPF]</text>
 <path matrix="1.17368 0 0 0.971521 -76.4935 13.0171" stroke="black">
 233.827 467.78 m
