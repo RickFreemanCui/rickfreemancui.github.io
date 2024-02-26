@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20090429144355" modified="D:20240224203837" title="PCG and PCF for Garbled Circuit Correlation" author="Hongrui Cui" numberpages="yes"/>
+<info created="D:20090429144355" modified="D:20240226230836" title="PCG and PCF for Garbled Circuit Correlation" author="Hongrui Cui" numberpages="yes"/>
 <preamble>\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
@@ -27141,7 +27141,7 @@ h
 <text layer="title" matrix="1 0 0 1 -213 -26" pos="213 427" stroke="black" type="minipage" width="910.36" height="48.9496" depth="35.056" valign="baseline" size="Large">Pseudorandom Correlation Functions for \\
 Garbled Circuits and Applications
 </text>
-<text matrix="1 0 0 1 -213.741 -246.822" pos="213 427" stroke="ac-lightblue" type="label" width="434.892" height="16.2816" depth="4.104" valign="bottom" size="small">\today $\cdot$ Presented by Hongrui Cui</text>
+<text matrix="1 0 0 1 -213.741 -246.822" pos="213 427" stroke="ac-lightblue" type="label" width="434.779" height="16.2816" depth="4.104" valign="bottom" size="small">\today $\cdot$ Presented by Hongrui Cui</text>
 <text matrix="1 0 0 1 -212.227 -180.157" pos="213 427" stroke="ac-lightblue" type="minipage" width="910.252" height="16.7468" depth="2.8" valign="baseline">No Author Given \( ^\star \)</text>
 <text matrix="1 0 0 1 -213 -108.812" pos="213 427" stroke="ac-lightblue" type="label" width="511.949" height="18.9896" depth="4.48" valign="baseline">Eurocrypt 2024 $\cdot$ Submission \#145 $\cdot$ REJECTED</text>
 <text matrix="1 0 0 1 0 -17" pos="0 24" stroke="black" type="label" width="552.111" height="12.434" depth="3.08" valign="baseline" size="18">$^\star$ For the Purpose of Reviewing and Internal Discussion \hl{DO NOT DISTRIBUTE}</text>
@@ -27161,7 +27161,7 @@ Garbled Circuits and Applications
 <text matrix="1 0 0 1 -380.488 205.96" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.8224" depth="0" valign="baseline" size="small">\begin{tikzpicture}
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 -4.3605 207.981" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small">\begin{tikzpicture}
+<text matrix="1 0 0 1 -4.3605 207.981" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline" size="small">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <path matrix="1 0 0 1 17.7628 78.1993" stroke="black" arrow="normal/small">
@@ -27240,7 +27240,7 @@ h
 <text matrix="1 0 0 1 97.8 206.815" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.8224" depth="0" valign="baseline" size="small">\begin{tikzpicture}
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 473.928 208.836" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small">\begin{tikzpicture}
+<text matrix="1 0 0 1 473.928 208.836" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline" size="small">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <path matrix="1 0 0 1 496.051 79.0542" stroke="black" arrow="normal/small">
@@ -27272,7 +27272,7 @@ h
 h
 </path>
 </group>
-<text matrix="1 0 0 1 -18.4152 26.054" transformations="translations" pos="17.2199 296.702" stroke="black" type="label" width="240.159" height="18.9896" depth="4.48" valign="baseline">Correlation Examples</text>
+<text matrix="1 0 0 1 -18.4152 35.707" transformations="translations" pos="17.2199 296.702" stroke="black" type="label" width="240.159" height="18.9952" depth="10.052" valign="baseline">\underline{Correlation Examples}</text>
 <group matrix="1 0 0 1 663.48 210.134">
 <path matrix="1 0 0 1 -136.186 -137.67" stroke="black" fill="KITblue15">
 396.678 354.247 m
@@ -27345,7 +27345,7 @@ h
 \item \(y_1^A = (w_1, \Delta), y_2^B = (u_1, v_1), \text{ s.t. } w_1 = v_1 + u_1 \cdot \Delta \)
 \item \( y_1^A + y_1^B = (a, b, a \cdot b) \)</text>
 <text matrix="1 0 0 1 74.2377 62.8775" transformations="translations" pos="275.049 342.119" stroke="black" type="label" width="82.272" height="17.9352" depth="5.976" valign="baseline" size="small">\( \mathsf{Eval} (k_B) \)</text>
-<text pin="h" transformations="translations" pos="0 215.945" stroke="black" type="minipage" width="920" height="18.7096" depth="4.76" valign="top" style="itemize">\item Technical contributions of this paper</text>
+<text pin="h" transformations="translations" pos="0 215.945" stroke="black" type="minipage" width="920" height="21.5152" depth="7.532" valign="top">\underline{Technical contributions of this paper}</text>
 <group>
 <group>
 <path stroke="black" fill="KITblue15">
@@ -27436,9 +27436,9 @@ h
 </path>
 </group>
 <text matrix="1 0 0 1 -16 -16" transformations="translations" pos="32 288" stroke="black" type="label" width="148.728" height="16.2792" depth="6.288" valign="baseline" size="small">\(a \in R_q \) is public</text>
-<text transformations="translations" pos="192 272" stroke="black" type="label" width="142.55" height="13.9584" depth="3.576" valign="baseline" size="small">\( \vecx = a \cdot s_1 + e_1 \)</text>
-<text matrix="1 0 0 1 160 0" transformations="translations" pos="192 272" stroke="black" type="label" width="142.889" height="13.9632" depth="3.744" valign="baseline" size="small">\( \vecy = a \cdot s_2 + e_2 \)</text>
-<text matrix="1 0 0 1 320 0" transformations="translations" pos="192 272" stroke="black" type="label" width="396.974" height="17.9352" depth="5.976" valign="baseline" size="small">\( \vecx * \vecy =  (a,1) \otimes (a,1) \cdot  (s_1, e_1) \otimes (s_2, e_2) \)</text>
+<text transformations="translations" pos="192 272" stroke="black" type="label" width="147.864" height="13.9584" depth="3.576" valign="baseline" size="small">\( \vecx \Leftrightarrow a \cdot s_1 + e_1 \)</text>
+<text matrix="1 0 0 1 160 0" transformations="translations" pos="192 272" stroke="black" type="label" width="148.202" height="13.9632" depth="3.744" valign="baseline" size="small">\( \vecy \Leftrightarrow a \cdot s_2 + e_2 \)</text>
+<text matrix="1 0 0 1 320 0" transformations="translations" pos="192 272" stroke="black" type="label" width="402.286" height="17.9352" depth="5.976" valign="baseline" size="small">\( \vecx * \vecy \Leftrightarrow  (a,1) \otimes (a,1) \cdot  (s_1, e_1) \otimes (s_2, e_2) \)</text>
 <group matrix="1 0 0 1 -16 -47.1218">
 <path stroke="black" fill="KITblue15">
 237.214 145.668 m
@@ -29426,7 +29426,7 @@ With \( \langle \hat{C} \rangle \) and \( \mathsf{L}_{j, y_j}^{A/B} \), one can 
 <text matrix="1 0 0 1 -4.488 157.96" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.8224" depth="0" valign="baseline" size="small">\begin{tikzpicture}
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 363.639 167.981" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small">\begin{tikzpicture}
+<text matrix="1 0 0 1 363.639 167.981" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline" size="small">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <path matrix="1 0 0 1 385.763 6.1993" stroke="black" arrow="normal/small">
@@ -29944,7 +29944,7 @@ h
 <text layer="alpha" matrix="1 0 0 1 -323.899 135.829" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.8224" depth="0" valign="baseline" size="small">\begin{tikzpicture}
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 -78.9328 135.563" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small">\begin{tikzpicture}
+<text matrix="1 0 0 1 -78.9328 135.563" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline" size="small">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <group matrix="1 0 0 1 -51.1144 39.7901">
@@ -30047,7 +30047,7 @@ h
 759.489 407.263 l
 h
 </path>
-<text matrix="1 0 0 1 -4.51447 -6.53648" transformations="translations" pos="532.582 386.313" stroke="black" type="label" width="13.1292" height="13.4456" depth="4.48" valign="baseline" size="small" style="math">y</text>
+<text matrix="1 0 0 1 -4.51447 -6.53648" transformations="translations" pos="532.582 386.313" stroke="black" type="label" width="11.2536" height="11.5248" depth="3.84" valign="baseline" size="small" style="math">y</text>
 </group>
 <group matrix="1 0 0 1 42.2052 -30.9854">
 <path stroke="black">
@@ -30057,7 +30057,7 @@ h
 732.792 407.432 l
 h
 </path>
-<text matrix="1 0 0 1 18.0971 -11.7557" transformations="translations" pos="622.036 387.387" stroke="black" type="label" width="14.8968" height="15.2472" depth="0" valign="baseline" size="small" style="math">H</text>
+<text matrix="1 0 0 1 18.0971 -11.7557" transformations="translations" pos="622.036 387.387" stroke="black" type="label" width="17.3796" height="17.7884" depth="0" valign="baseline" size="small" style="math">H</text>
 </group>
 <group matrix="1 0 0 1 93.2664 19.3003">
 <path matrix="1.27544 0 0 0.993157 -205.247 2.7869" stroke="black">
@@ -30067,9 +30067,9 @@ h
 759.489 407.263 l
 h
 </path>
-<text matrix="1 0 0 1 -5.05991 -14.3422" transformations="translations" pos="752.695 341.965" stroke="black" type="label" width="11.4168" height="11.5128" depth="0.168" valign="baseline" size="small" style="math">e</text>
+<text matrix="1 0 0 1 -5.05991 -14.3422" transformations="translations" pos="752.695 341.965" stroke="black" type="label" width="13.3196" height="13.4316" depth="0.196" valign="baseline" size="small" style="math">e</text>
 </group>
-<text matrix="1 0 0 1 13.473 -22.9524" transformations="translations" pos="551.026 371.333" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" size="small" style="math">=</text>
+<text matrix="1 0 0 1 13.473 -22.9524" transformations="translations" pos="551.026 371.333" stroke="black" type="label" width="21.6972" height="10.3208" depth="0" valign="baseline" size="small" style="math">=</text>
 <text matrix="1 0 0 1 62.6239 1.59255" transformations="translations" pos="733.235 344.973" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" size="small" style="math">\times</text>
 </group>
 <group matrix="1 0 0 1 0 -9.07673">
@@ -30081,7 +30081,7 @@ h
 759.489 407.263 l
 h
 </path>
-<text matrix="1 0 0 1 -4.51447 -6.53648" transformations="translations" pos="532.582 386.313" stroke="black" type="label" width="13.1292" height="13.4456" depth="4.48" valign="baseline" size="small" style="math">y</text>
+<text matrix="1 0 0 1 -4.51447 -6.53648" transformations="translations" pos="532.582 386.313" stroke="black" type="label" width="11.2536" height="11.5248" depth="3.84" valign="baseline" size="small" style="math">y</text>
 </group>
 <text matrix="1 0 0 1 14.2226 -96.606" transformations="translations" pos="551.026 371.333" stroke="black" type="label" width="55.6944" height="15.2592" depth="3.576" valign="baseline" size="small" style="math">\gets U_n</text>
 </group>
@@ -30107,7 +30107,7 @@ h
 <text matrix="1 0 0 1 -12.0108 -50.0554" transformations="translations" pos="278.269 485.564" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" style="math">\alpha_1</text>
 <text matrix="1 0 0 1 -9.41406 -6.27996" transformations="translations" pos="169.863 478.245" stroke="black" type="label" width="42.7644" height="13.4316" depth="0.196" valign="baseline" style="math">e = </text>
 <text matrix="1 0 0 1 75.0145 -12.9243" transformations="translations" pos="278.269 485.564" stroke="black" type="label" width="27.7844" height="19.3928" depth="5.404" valign="baseline" style="math">\beta_2</text>
-<text matrix="1 0 0 1 73.8534 -50.0511" transformations="translations" pos="278.269 485.564" stroke="black" type="label" width="30.2988" height="12.4096" depth="4.172" valign="baseline" style="math">\alpha_2</text>
+<text matrix="1 0 0 1 73.8534 -50.0511" transformations="translations" pos="278.269 485.564" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" style="math">\alpha_2</text>
 <text matrix="1 0 0 1 248.728 -12.1555" transformations="translations" pos="278.269 485.564" stroke="black" type="label" width="25.7208" height="19.3928" depth="5.404" valign="baseline" style="math">\beta_\ell</text>
 <text matrix="1 0 0 1 247.566 -49.2823" transformations="translations" pos="278.269 485.564" stroke="black" type="label" width="24.2016" height="10.6368" depth="3.576" valign="baseline" style="math">\alpha_\ell</text>
 </group>
@@ -30120,7 +30120,7 @@ h
 <text matrix="1 0 0 1 384.722 66.0592" transformations="translations" pos="146.975 365.641" stroke="black" type="label" width="21.1232" height="3.304" depth="0.196" valign="baseline">...</text>
 <text matrix="1 0 0 1 0 56.8452" pin="h" transformations="translations" pos="0 168.327" stroke="black" type="minipage" width="920" height="18.7096" depth="4.76" valign="top" style="itemize">\item Expand:</text>
 <group matrix="1 0 0 1 357.177 66.0083">
-<text matrix="1 0 0 1 -339.365 -72.4405" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline">\begin{tikzpicture}
+<text matrix="1 0 0 1 -339.365 -72.4405" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 -1.81653 -60.6147" transformations="translations" pos="143.946 263.828" stroke="black" type="label" width="240.45" height="23.6964" depth="7.14" valign="baseline" style="math">key_1 := \{ k_1^1,...,k_1^\ell \}, e</text>
@@ -30135,7 +30135,7 @@ h
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 -3.41295 -101.338" transformations="translations" pos="143.946 263.828" stroke="black" type="label" width="409.742" height="20.3112" depth="6.12" valign="baseline" style="math">w := H \cdot (FullEval(k_0^1) + ... + FullEval(k_0^\ell))</text>
-<text matrix="1 0 0 1 -389.629 -153.9" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline">\begin{tikzpicture}
+<text matrix="1 0 0 1 -389.629 -153.9" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 3.94483 -140.701" transformations="translations" pos="143.946 263.828" stroke="black" type="label" width="592.309" height="23.6964" depth="7.14" valign="baseline" style="math">v := H \cdot (FullEval(k_1^1) + ... + FullEval(k_1^\ell)), u := H \cdot e</text>
@@ -30172,7 +30172,7 @@ h
 <text matrix="1 0 0 1 -97.2239 -35.9578" transformations="translations" pos="171.643 312.102" stroke="black" type="label" width="110.278" height="24.7688" depth="0" valign="baseline" style="math">n = \kappa^{\omega(1)}</text>
 <text matrix="1 0 0 1 15.9215 -7.4881" transformations="translations" pos="345.062 385.363" stroke="black" type="label" width="69.5156" height="17.8052" depth="1.316" valign="baseline" style="math">N &gt; n</text>
 <group>
-<text matrix="1 0 0 1 -309.268 -89.4305" transformations="translations" pos="551.026 371.333" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" style="math">=</text>
+<text matrix="1 0 0 1 -309.268 -89.4305" transformations="translations" pos="551.026 371.333" stroke="black" type="label" width="21.6972" height="10.3208" depth="0" valign="baseline" style="math">=</text>
 <text matrix="1 0 0 1 -187.954 -64.8845" transformations="translations" pos="733.235 344.973" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
 <group>
 <path matrix="1.36013 0 0 1.89335 -425.665 -344.816" stroke="black">
@@ -30182,7 +30182,7 @@ h
 759.489 407.263 l
 h
 </path>
-<text matrix="1.0664 0 0 1.90639 -205.086 -364.854" transformations="translations" pos="752.695 341.965" stroke="black" type="label" width="11.4168" height="11.5128" depth="0.168" halign="center" valign="center" style="math">e</text>
+<text matrix="1.0664 0 0 1.90639 -205.086 -364.854" transformations="translations" pos="752.695 341.965" stroke="black" type="label" width="13.3196" height="13.4316" depth="0.196" halign="center" valign="center" style="math">e</text>
 </group>
 <group>
 <path matrix="1.46385 0 0 3.24161 -542.542 -959.42" stroke="black">
@@ -30192,7 +30192,7 @@ h
 732.792 407.432 l
 h
 </path>
-<text matrix="1.46385 0 0 3.24161 -503.331 -968.694" transformations="translations" pos="622.036 387.387" stroke="black" type="label" width="14.8968" height="15.2472" depth="0" halign="center" valign="center" style="math">H</text>
+<text matrix="1.46385 0 0 3.24161 -503.331 -968.694" transformations="translations" pos="622.036 387.387" stroke="black" type="label" width="17.3796" height="17.7884" depth="0" halign="center" valign="center" style="math">H</text>
 </group>
 <group>
 <path matrix="1.21538 0 0 0.976633 -702.758 -38.8753" stroke="black">
@@ -30202,7 +30202,7 @@ h
 759.489 407.263 l
 h
 </path>
-<text matrix="0.96756 0 0 3.23466 -303.708 -962.528" transformations="translations" pos="532.582 386.313" stroke="black" type="label" width="13.1292" height="13.4456" depth="4.48" halign="center" valign="center" style="math">y</text>
+<text matrix="0.96756 0 0 3.23466 -303.708 -962.528" transformations="translations" pos="532.582 386.313" stroke="black" type="label" width="11.2536" height="11.5248" depth="3.84" halign="center" valign="center" style="math">y</text>
 </group>
 </group>
 </page>
@@ -30210,7 +30210,7 @@ h
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
 <text layer="alpha" pin="h" transformations="translations" pos="0 524" stroke="black" type="minipage" width="920" height="16.1224" depth="2.128" valign="top" style="itemize">\item Structure:</text>
-<text matrix="1 0 0 1 -441.42 91.0982" transformations="translations" pos="733.235 344.973" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" style="math">=</text>
+<text matrix="1 0 0 1 -441.42 91.0982" transformations="translations" pos="733.235 344.973" stroke="black" type="label" width="21.6972" height="10.3208" depth="0" valign="baseline" style="math">=</text>
 <group>
 <path matrix="0.877218 0 0 1.01962 -370.797 47.5831" stroke="black">
 564.853 407.432 m
@@ -30219,7 +30219,7 @@ h
 732.792 407.432 l
 h
 </path>
-<text matrix="0.877218 0 0 1.01962 -355.989 35.7718" transformations="translations" pos="622.036 387.387" stroke="black" type="label" width="14.8968" height="15.2472" depth="0" valign="baseline" style="math">H</text>
+<text matrix="0.877218 0 0 1.01962 -355.989 35.7718" transformations="translations" pos="622.036 387.387" stroke="black" type="label" width="17.3796" height="17.7884" depth="0" valign="baseline" style="math">H</text>
 </group>
 <text matrix="1 0 0 1 0 -5.40524" transformations="translations" pos="500.539 441.04" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
 <group>
@@ -30284,7 +30284,7 @@ h
 <page title="Proving Theorem 3.10 Using Random Walk">
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<text layer="alpha" matrix="1 0 0 1 -411.62 79.9774" transformations="translations" pos="733.235 344.973" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" style="math">=</text>
+<text layer="alpha" matrix="1 0 0 1 -411.62 79.9774" transformations="translations" pos="733.235 344.973" stroke="black" type="label" width="21.6972" height="10.3208" depth="0" valign="baseline" style="math">=</text>
 <group matrix="1 0 0 1 29.7997 -9.54266">
 <path matrix="0.877218 0 0 1.01962 -370.797 47.5831" stroke="black">
 564.853 407.432 m
@@ -30293,7 +30293,7 @@ h
 732.792 407.432 l
 h
 </path>
-<text matrix="0.877218 0 0 1.01962 -355.989 35.7718" transformations="translations" pos="622.036 387.387" stroke="black" type="label" width="14.8968" height="15.2472" depth="0" valign="baseline" style="math">H</text>
+<text matrix="0.877218 0 0 1.01962 -355.989 35.7718" transformations="translations" pos="622.036 387.387" stroke="black" type="label" width="17.3796" height="17.7884" depth="0" valign="baseline" style="math">H</text>
 </group>
 <text matrix="1 0 0 1 184.398 -17.904" transformations="translations" pos="500.539 441.04" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
 <group matrix="1 0 0 1 13.7642 100.706">
@@ -30334,7 +30334,7 @@ h
 <text matrix="1 0 0 1 -4.05981 -17.4709" transformations="translations" pos="88.0543 440.651" stroke="black" type="label" width="23.9484" height="22.5764" depth="0" valign="baseline" style="math">x^T</text>
 </group>
 <text matrix="1 0 0 1 -39.6749 -15.9292" transformations="translations" pos="500.539 441.04" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
-<text matrix="1 0 0 1 -409.945 17.9703" transformations="translations" pos="733.235 344.973" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" style="math">=</text>
+<text matrix="1 0 0 1 -409.945 17.9703" transformations="translations" pos="733.235 344.973" stroke="black" type="label" width="21.6972" height="10.3208" depth="0" valign="baseline" style="math">=</text>
 <text matrix="1 0 0 1 23.3937 -78.8446" transformations="translations" pos="500.539 441.04" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
 <text matrix="1 0 0 1 2.16131 44.2157" transformations="translations" pos="559.354 316.06" stroke="black" type="label" width="16.1392" height="17.7884" depth="0" valign="baseline" style="math">A</text>
 <text matrix="1 0 0 1 0 174.243" pin="h" transformations="translations" pos="0 343.871" stroke="black" type="minipage" width="920" height="18.8832" depth="4.9" valign="top" style="item">Differentiate between different hamming weight of $x$</text>
@@ -30401,7 +30401,7 @@ $ \ln\binom{n}{r} \le \ln (2^{RN}) = RN \ln (2) $</text>
 <view layers="alpha" active="alpha"/>
 <text layer="alpha" pin="h" transformations="translations" pos="0 524" stroke="black" type="minipage" width="920" height="37.0776" depth="23.156" valign="top" style="itemize">\item Sample one row of $H$: ${\sf Samp}(x) \mapsto h^T$
 \item Define $u := h^T \cdot A \cdot e \in \FF_2$</text>
-<text matrix="1 0 0 1 -641.006 51.5594" transformations="translations" pos="733.235 344.973" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" style="math">=</text>
+<text matrix="1 0 0 1 -641.006 51.5594" transformations="translations" pos="733.235 344.973" stroke="black" type="label" width="21.6972" height="10.3208" depth="0" valign="baseline" style="math">=</text>
 <text matrix="1 0 0 1 -197.946 -42.3983" transformations="translations" pos="500.539 441.04" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
 <group matrix="1 0 0 1 -368.58 49.734">
 <text matrix="1 0 0 1 -16.0549 -147.805" transformations="translations" pos="728.975 470.361" stroke="black" type="label" width="169.536" height="85.7328" depth="73.944" valign="baseline" size="small" style="math">\begin{matrix}
@@ -30421,7 +30421,7 @@ h
 </group>
 <text matrix="1 0 0 1 29.5875 -38.2018" transformations="translations" pos="500.539 441.04" stroke="black" type="label" width="21.6972" height="16.2736" depth="2.324" valign="baseline" style="math">\times</text>
 <text matrix="1 0 0 1 -195.973 70.833" transformations="translations" pos="240.135 325.635" stroke="black" type="label" width="14.3444" height="13.4316" depth="0.196" valign="baseline" style="math">u</text>
-<text matrix="1 0 0 1 -637.495 -149.933" transformations="translations" pos="733.235 344.973" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" style="math">=</text>
+<text matrix="1 0 0 1 -637.495 -149.933" transformations="translations" pos="733.235 344.973" stroke="black" type="label" width="21.6972" height="10.3208" depth="0" valign="baseline" style="math">=</text>
 <path matrix="0.880387 0 0 0.310354 -356.12 285.991" stroke="black">
 564.853 407.432 m
 564.853 361.62 l
@@ -30431,7 +30431,7 @@ h
 </path>
 <text matrix="0.880387 0 0 0.310354 -356.751 233.698" transformations="translations" pos="622.036 387.387" stroke="black" type="label" width="26.0344" height="22.5764" depth="0" valign="baseline" style="math">h^T</text>
 <text matrix="0.880387 0 0 0.310354 -122.447 146.332" transformations="translations" pos="622.036 387.387" stroke="black" type="label" width="16.1392" height="17.7884" depth="0" valign="baseline" style="math">A</text>
-<text matrix="0.880387 0 0 0.310354 22.4555 145.442" transformations="translations" pos="622.036 387.387" stroke="black" type="label" width="11.4168" height="11.5128" depth="0.168" valign="baseline" style="math">e</text>
+<text matrix="0.880387 0 0 0.310354 22.4555 145.442" transformations="translations" pos="622.036 387.387" stroke="black" type="label" width="13.3196" height="13.4316" depth="0.196" valign="baseline" style="math">e</text>
 <text matrix="1 0 0 1 -194.702 -124.614" transformations="translations" pos="240.135 325.635" stroke="black" type="label" width="14.3444" height="13.4316" depth="0.196" valign="baseline" style="math">u</text>
 <group>
 <path matrix="0.972894 0 0 1.02435 -204.754 -14.0346" stroke="black">
@@ -30442,7 +30442,7 @@ h
 h
 </path>
 <text matrix="1 0 0 1 51.2125 206.16" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_1</text>
-<text matrix="1 0 0 1 52.1503 162.546" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="30.2988" height="12.4096" depth="4.172" valign="baseline" size="small" style="math">\alpha_2</text>
+<text matrix="1 0 0 1 52.1503 162.546" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_2</text>
 <text matrix="1 0 0 1 52.8996 91.1555" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="24.2016" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_\ell</text>
 <text matrix="1 0 0 1 46.7997 180.346" transformations="translations" pos="554.141 170.319" stroke="black" type="label" width="6.036" height="36.3048" depth="0.168" valign="baseline" size="small" style="math">\vdots</text>
 <path matrix="-0.337278 0 0 0.460234 799.373 325.119" fill="CB dark red" opacity="60%" stroke-opacity="opaque">
@@ -30474,7 +30474,7 @@ h
 </path>
 <text matrix="1 0 0 1 -232.994 -4.05981" transformations="translations" pos="265.713 55.2633" stroke="black" type="label" width="577.514" height="20.0172" depth="4.48" valign="baseline">Run DCF on every (public) non-zero coordinate of $h$</text>
 <text matrix="1 0 0 1 -221.897 -185.874" transformations="translations" pos="240.135 325.635" stroke="black" type="label" width="67.5192" height="16.2736" depth="2.324" valign="baseline" style="math">w + v</text>
-<text matrix="1 0 0 1 -630.014 -203.397" transformations="translations" pos="733.235 344.973" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" style="math">=</text>
+<text matrix="1 0 0 1 -630.014 -203.397" transformations="translations" pos="733.235 344.973" stroke="black" type="label" width="21.6972" height="10.3208" depth="0" valign="baseline" style="math">=</text>
 <path matrix="1.87539 0 0 0.303984 -914.041 29.8465" stroke="black">
 564.853 407.432 m
 564.853 361.62 l
@@ -30504,7 +30504,7 @@ h
 h
 </path>
 <text matrix="1 0 0 1 -391.06 -77.1372" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_1</text>
-<text matrix="1 0 0 1 -335.439 -77.1372" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="30.2988" height="12.4096" depth="4.172" valign="baseline" size="small" style="math">\alpha_2</text>
+<text matrix="1 0 0 1 -335.439 -77.1372" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_2</text>
 <text matrix="1 0 0 1 -286.56 -77.1372" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_3</text>
 <text matrix="1 0 0 1 -237.713 -77.1372" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_4</text>
 <text matrix="1 0 0 1 -177.687 -76.1412" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="47.5056" height="10.6368" depth="5.568" valign="baseline" size="small" style="math">\alpha_{\ell - 1}</text>
@@ -30544,7 +30544,7 @@ h
 h
 </path>
 <text matrix="1 0 0 1 -394.963 -19.1032" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_1</text>
-<text matrix="1 0 0 1 -339.342 -17.1223" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="30.2988" height="12.4096" depth="4.172" valign="baseline" size="small" style="math">\alpha_2</text>
+<text matrix="1 0 0 1 -339.342 -17.1223" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_2</text>
 <text matrix="1 0 0 1 -290.463 -18.3655" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_3</text>
 <text matrix="1 0 0 1 -241.616 -16.9889" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="25.9704" height="10.6368" depth="3.576" valign="baseline" size="small" style="math">\alpha_4</text>
 <text matrix="1 0 0 1 -181.59 -16.4947" transformations="translations" pos="543.307 239.414" stroke="black" type="label" width="47.5056" height="10.6368" depth="5.568" valign="baseline" size="small" style="math">\alpha_{\ell - 1}</text>
@@ -30597,7 +30597,7 @@ h
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 -3.41295 -63.7598" transformations="translations" pos="143.946 263.828" stroke="black" type="label" width="409.742" height="20.3112" depth="6.12" valign="baseline" size="small" style="math">w := H \cdot (FullEval(k_0^1) + ... + FullEval(k_0^\ell))</text>
-<text matrix="1 0 0 1 -389.629 -116.322" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small">\begin{tikzpicture}
+<text matrix="1 0 0 1 -389.629 -116.322" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline" size="small">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 3.94483 -103.123" transformations="translations" pos="143.946 263.828" stroke="black" type="label" width="592.309" height="23.6964" depth="7.14" valign="baseline" size="small" style="math">v := H \cdot (FullEval(k_1^1) + ... + FullEval(k_1^\ell)), u := H \cdot e</text>
@@ -30632,7 +30632,7 @@ $
 <text matrix="1 0 0 1 -60.5448 208.033" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.8224" depth="0" valign="baseline">\begin{tikzpicture}
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 230.146 206.008" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline">\begin{tikzpicture}
+<text matrix="1 0 0 1 230.146 206.008" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 -4.67173 -6.72713" transformations="translations" pos="423.273 483.701" stroke="black" type="label" width="231.042" height="22.9404" depth="6.972" valign="baseline" style="math">{\sf Expand}(k^0) \mapsto \alpha, y^0</text>
@@ -30644,7 +30644,7 @@ $
 <text matrix="1 0 0 1 -400.267 -215.239" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.8224" depth="0" valign="baseline">\begin{tikzpicture}
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 -398.639 -147.639" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline">\begin{tikzpicture}
+<text matrix="1 0 0 1 -398.639 -147.639" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 0 -37.9661" transformations="translations" pos="79.4954 160.818" stroke="black" type="label" width="255.158" height="22.9544" depth="7.756" valign="baseline" style="math">f^1(x) = G_{x_1 x_2 x_3} + \sum c^1_i</text>
@@ -30657,7 +30657,7 @@ B_j + c_{j+1}^1 + ... + c_{m}^1 &amp; x \neq \alpha
 \end{cases}
 $</text>
 <group matrix="1 0 0 1 -0.80804 58.1514">
-<text matrix="1 0 0 1 -425.429 -58.0563" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline">\begin{tikzpicture}
+<text matrix="1 0 0 1 -425.429 -58.0563" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 -11.8029 -22.2842" transformations="translations" pos="59.3846 235.68" stroke="black" type="label" width="87.29" height="22.946" depth="0.196" valign="baseline" style="math">k^1 := G</text>
@@ -30791,7 +30791,7 @@ h
 <text layer="alpha" matrix="1 0 0 1 -374.464 201.145" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.8224" depth="0" valign="baseline" size="small">\begin{tikzpicture}
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 -43.607 201.554" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small">\begin{tikzpicture}
+<text matrix="1 0 0 1 -43.607 201.554" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline" size="small">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 -18.7344 -1.71123" transformations="translations" pos="25.1823 402.264" stroke="black" type="label" width="169.214" height="19.3632" depth="6.12" valign="baseline" size="small" style="math">\Delta \in \FF_{2^\secparam}, \vecv \in \FF_{2^\secparam}^N</text>
@@ -30853,7 +30853,7 @@ h
 <text matrix="1 0 0 1 -6.13849 45.0339" transformations="translations" pos="10.5219 169.581" stroke="black" type="label" width="261.991" height="20.2032" depth="6.12" valign="baseline" size="small" style="math">K_0^i := \bigoplus G_{*0}, K_1^i := \bigoplus G_{*1}</text>
 <text matrix="1 0 0 1 -38.525 49.6052" transformations="translations" pos="151.731 207.245" stroke="black" type="label" width="125.141" height="17.9352" depth="5.976" valign="baseline" size="small">For $i \in [1, n]$ </text>
 <text matrix="1 0 0 1 89.9477 43.1272" transformations="translations" pos="9.10903 133.01" stroke="black" type="label" width="148.891" height="20.2032" depth="6.12" valign="baseline" size="small" style="math">c_i := K_0^i \xor \key[r_i]</text>
-<text matrix="1 0 0 1 -85.5644 -16.1494" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline" size="small">\begin{tikzpicture}
+<text matrix="1 0 0 1 -85.5644 -16.1494" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline" size="small">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 298.489 -220.9" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="27.8448" height="15.2592" depth="3.576" valign="baseline" size="small">\Party[1]</text>
@@ -30882,7 +30882,7 @@ h
 <text matrix="1 0 0 1 -7.81706 -2.32512" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="11.3112" height="11.4432" depth="0" valign="baseline" size="small">\vecv</text>
 </group>
 <text matrix="1 0 0 1 -12.889 42.9109" transformations="translations" pos="747.16 383.846" stroke="black" type="label" width="38.5224" height="16.6056" depth="1.992" valign="baseline" size="small" style="math"> \times \Delta</text>
-<text matrix="1 0 0 1 -74.344 42.1756" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" size="small" style="math">=</text>
+<text matrix="1 0 0 1 -74.344 42.1756" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="21.6972" height="10.3208" depth="0" valign="baseline" size="small" style="math">=</text>
 <group matrix="1 0 0 1 -63.0932 48.431">
 <path matrix="1 0 0 1 53.4211 -0.227929" stroke="black" pen="heavier">
 576.64 472.703 m
@@ -30943,7 +30943,7 @@ h
 <text layer="alpha" matrix="1 0 0 1 -374.464 201.145" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.8224" depth="0" valign="baseline">\begin{tikzpicture}
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 -43.607 201.554" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline">\begin{tikzpicture}
+<text matrix="1 0 0 1 -43.607 201.554" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 -18.7344 -1.71123" transformations="translations" pos="25.1823 402.264" stroke="black" type="label" width="148.812" height="19.3608" depth="3.048" valign="baseline" size="small" style="math">\Delta \in \mathbb{K}, \vecv \in \mathbb{K}^N</text>
@@ -30954,7 +30954,7 @@ h
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 13.5836 -204.182" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline">\Party[0]</text>
-<text matrix="1 0 0 1 3.27573 -1.79086" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline">\begin{tikzpicture}
+<text matrix="1 0 0 1 3.27573 -1.79086" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 387.329 -206.541" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="27.8448" height="15.2592" depth="3.576" valign="baseline">\Party[1]</text>
@@ -31066,7 +31066,7 @@ h
 <text matrix="1 0 0 1 -7.81706 -2.32512" transformations="translations" pos="586.631 383.78" stroke="black" type="label" width="11.3112" height="11.4432" depth="0" valign="baseline" size="small">\vecv</text>
 </group>
 <text matrix="1 0 0 1 -12.889 42.9109" transformations="translations" pos="747.16 383.846" stroke="black" type="label" width="38.5224" height="16.6056" depth="1.992" valign="baseline" size="small" style="math"> \times \Delta</text>
-<text matrix="1 0 0 1 -74.344 42.1756" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="18.5976" height="8.8464" depth="0" valign="baseline" size="small" style="math">=</text>
+<text matrix="1 0 0 1 -74.344 42.1756" transformations="translations" pos="677.696 389.106" stroke="black" type="label" width="21.6972" height="10.3208" depth="0" valign="baseline" size="small" style="math">=</text>
 <group matrix="1 0 0 1 -63.0932 48.431">
 <path matrix="1 0 0 1 53.4211 -0.227929" stroke="black" pen="heavier">
 576.64 472.703 m
@@ -31154,7 +31154,7 @@ h
 <text matrix="1 0 0 1 66.0053 196.865" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.8224" depth="0" valign="baseline">\begin{tikzpicture}
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 396.862 197.274" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline">\begin{tikzpicture}
+<text matrix="1 0 0 1 396.862 197.274" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 421.735 -5.99116" transformations="translations" pos="25.1823 402.264" stroke="black" type="label" width="148.812" height="19.3608" depth="3.048" valign="baseline" size="small" style="math">\Delta \in \mathbb{K}, \vecv \in \mathbb{K}^N</text>
@@ -31185,7 +31185,7 @@ h
 <text matrix="1 0 0 1 -307.716 -28.3657" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.8224" depth="0" valign="baseline">\begin{tikzpicture}
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 142.482 -27.5143" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline">\begin{tikzpicture}
+<text matrix="1 0 0 1 142.482 -27.5143" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 68.2811 -234.188" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline">\Party[0]</text>
@@ -31223,7 +31223,7 @@ G_{x} &amp; x \ne \alpha \\
 <text layer="alpha" matrix="1 0 0 1 -337.777 202.534" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.8224" depth="0" valign="baseline">\begin{tikzpicture}
 \node [alice] (alice) {};
 \end{tikzpicture}</text>
-<text matrix="1 0 0 1 -6.91996 202.943" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="29.0688" height="37.9056" depth="0" valign="baseline">\begin{tikzpicture}
+<text matrix="1 0 0 1 -6.91996 202.943" transformations="translations" pos="432.491 256.767" stroke="black" type="label" width="33.9136" height="44.2232" depth="0" valign="baseline">\begin{tikzpicture}
 \node [bob,mirrored] (bob) {};
 \end{tikzpicture}</text>
 <text matrix="1 0 0 1 38.22 -3.28837" transformations="translations" pos="7.24005 477.795" stroke="black" type="label" width="32.4856" height="17.8024" depth="4.172" valign="baseline">\Party[0]</text>
