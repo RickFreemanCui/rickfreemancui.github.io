@@ -5,3 +5,31 @@
 :EXPORT_FILE_NAME: my-first-post
 :END:
 This is my post body
+
+* DONE My first paper
+:PROPERTIES:
+:EXPORT_FILE_NAME: first_paper
+:EXPORT_HUGO_SECTION: paper
+:END:
+My first paper is about MPC in multi heads
+
+* DONE My first note
+:PROPERTIES:
+:EXPORT_FILE_NAME: first_note
+:EXPORT_HUGO_SECTION: note
+:END:
+My first note is about the CIS 2019 winter school
+
+* DONE My first talk
+:PROPERTIES:
+:EXPORT_FILE_NAME: first_talk
+:EXPORT_HUGO_SECTION: talk
+:END:
+My first talk is about memory-hard functions but they are kind of lost
+
+* DONE My first misc
+:PROPERTIES:
+:EXPORT_FILE_NAME: first_misc
+:EXPORT_HUGO_SECTION: misc
+:END:
+My first misc is proabably clarify my CV

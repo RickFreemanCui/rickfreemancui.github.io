@@ -1,0 +1,25 @@
+#+HUGO_BASE_DIR: ../../hugo
+#+HUGO_SECTION: Coding
+#+HUGO_CATEGORIES: Coding
+#+HUGO_TYPE: post
+#+TITLE: Advent of code (2023)
+#+DATE: <2023-12-02 Sat>
+#+AUTHOR: Dominik Schrempf
+#+EMAIL: dominik.schrempf@gmail.com
+#+DESCRIPTION: Solutions in Haskell to the Advent of code, 2023
+#+KEYWORDS: "Advent of code" Haskell Puzzles Fun
+#+LANGUAGE: en
+
+/Alle Jahre wieder .../
+
+I am not sure how far I get this year, but writing Haskell is just too much fun.
+Have a look at [[https://github.com/dschrempf/aoc23][my solutions to the Advent of code, 2023]].
+
+Cheers!
+
+PS: I even added automatic fetching of the full input as well as the samples
+(see [[https://github.com/dschrempf/aoc23/blob/main/app/Fetch.hs][Fetch.hs]]). For example,
+#+BEGIN_SRC sh :exports code
+cabal run fetch 1    # Fetch full input of day one.
+cabal run fetch 1 1  # Fetch sample one of day one.
+#+END_SRC

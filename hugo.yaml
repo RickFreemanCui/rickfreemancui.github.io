@@ -1,4 +1,65 @@
-baseURL: https://example.org/
+baseURL: https://rickfreemancui.github.io
 languageCode: en-us
-title: My New Hugo Site
+title: Hongrui Cui's Homepage
 theme: ["PaperMod"]
+
+disqusShortname: ""
+MetaDataFormat: yaml
+
+paginate: 30
+outputs:
+  home:
+    - HTML
+    - JSON
+permalinks:
+  post: /blog/:year/:month/:day/:title/
+taxonomies:
+  category: categories
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: false
+    noClasses: true
+    style: tango
+    tabWidth: 2
+  goldmark:
+    renderer:
+      unsafe: true
+params:
+  author:
+    name: Hongrui Cui
+  defaultDescription: Cryptography.
+  defaultKeywords: Multiparty Computation, Cryptography, Post-Quantum
+  tagline: ""
+  github: https://github.com/freemanrickcui
+  bitbucket: ""
+  stackOverflow: https://www.stackoverflow.com/users/8865477/rick-freeman
+  linkedin: ""
+  googleplus: ""
+  facebook: ""
+  youtube: ""
+  orcid: https://orcid.org/0000-0002-6203-413X
+  googleScholar: https://scholar.google.com/citations?user=bWNvN0UAAAAJ
+  flattr: ""
+  email: mailto:freemanrickcui@outlook.com
+  gpgkey: /gpg_public_key.txt
+  rss: ""
+  privacyNotice: /privacy/
+menu:
+  main:
+    - url: /talk/
+      name: Talk
+      weight: 2
+    - url: /note/
+      name: Note
+      weight: 3
+    - url: /paper/
+      name: Paper
+      weight: 4
+    - url: /misc/
+      name: Misc
+      weight: 5

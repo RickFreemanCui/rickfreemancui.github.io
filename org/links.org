@@ -1,0 +1,107 @@
+#+HUGO_BASE_DIR: ../hugo
+#+HUGO_SECTION: ./
+#+HUGO_MENU: :menu about :weight 1 :name Links
+#+HUGO_AUTO_SET_LASTMOD: t
+#+TITLE: Links to newspaper articles
+#+DATE: <2018-06-17 Sun>
+#+AUTHOR: Dominik Schrempf
+#+EMAIL: dominik.schrempf@gmail.com
+#+DESCRIPTION: Interesting links.
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+OPTIONS: num:nil
+
+* Deutsch
+[2022-09-17 Sat] [[https://www.derstandard.at/story/2000139163806/strompreisbremse-ja-nicht-auf-etwas-verzichten-muessen][Strompreisbremse: Ja nicht auf etwas verzichten müssen!]],
+derStandard. Die Zukunft unserer Kinder scheint egal zu sein. Wir wollen jetzt
+billigen Strom. Österreich hängt kommenden Generationen mit der Strompreisbremse
+eine gewaltige Schuldenlast um.
+
+[2021-05-29 Sat] [[https://www.derstandard.at/story/2000127007319/zehn-jahre-an-der-macht-das-orban-regime-der-guenstlinge][Elf Jahre an der Macht: Das Orbán-Regime der Günstlinge]],
+derStandard. Viktor Orbán hat sich auf Kosten Ungarns mit gezielten
+Grenzüberschreitungen die unumschränkte Macht gesichert.
+
+[2019-08-17 Sat] [[https://www.derstandard.at/story/2000107463546/laerm-je-schneller-desto-lauter][Lärm: Je schneller, desto LAUTER!!!]], derStandard. Wo kann man
+noch Ruhe finden?
+
+[2017-11-17 Fri] [[https://derstandard.at/2000067737827/15-000-Forscher-unterstuetzen-dramatische-Warnung-an-die-Menschheit][Appell für Umweltschutz: "Warnung an Menschheit" von 15.000
+Forschern]], derStandard. In acht von neun entscheidenden Problemfeldern hat es
+seit 1992 Rückschritte gegeben.
+   
+[2017-11-13 Mon] [[https://derstandard.at/2000067666753/Schriftsteller-Elsberg-ueber-CRISPRCas9-Was-wenn-Gott-sich-geirrt-hat][Schriftsteller Elsberg über CRISPR/Cas9: Was, wenn Gott sich
+geirrt hat?]], derStandard. In der postfaktischen Debatte über Gentechnik wird
+vermengt, was man auseinanderhalten sollte.
+   
+[2017-11-06 Mon] [[https://derstandard.at/2000067258484/Es-gibt-zu-viele-Messenger-und-einen-klar-besten-Signal][Es gibt zu viele Messenger – und einen klar besten: Signal]],
+derStandard. Nutzer sprechen mittlerweile über dutzende verschiedene Plattformen
+miteinander, am klügsten wäre jedoch die Einigung auf Signal.
+    
+* English
+[2023-10-20 Fri] [[https://www.tweag.io/blog/2019-09-06-why-haskell-is-important/][Why Haskell is important]], TWEAG, Marko Karpov.
+
+[2022-09-01 Thu] [[https://www.nature.com/articles/s41558-022-01461-y][Civil disobedience by scientists helps press for urgent climate
+action]]; nature climate change. A matching article on The Guardian: [[https://www.theguardian.com/environment/2022/aug/29/scientists-call-on-colleagues-to-protest-climate-crisis-with-civil-disobedience][Scientists
+call on colleagues to protest climate crisis with civil disobedience]]. Maybe
+also check out the [[https://rebellion.global/][Extinction Rebellion]].
+
+[2021-01-11 Mon] [[https://www.theatlantic.com/magazine/archive/2018/10/poland-polarization/568324/][Polarization in Poland: A Warning From Europe]], TheAtlantic.
+
+[2020-04-29 Wed] [[https://www.nature.com/articles/d41586-020-01266-z][Pseudoscience and COVID-19 — we’ve had enough already]], Nature.
+#+begin_quote
+There is some evidence that alternative treatments and placebo effects can
+relieve distress — a common justification for tolerating unproven alternative
+treatments. But it’s inappropriate to deceive people (even for their benefit)
+with magical thinking, and it is inappropriate for scientists to let such
+misinformation go unremarked.
+#+end_quote
+
+[2019-08-30 Fri] [[https://www.theatlantic.com/magazine/archive/2016/05/my-secret-shame/476415/][The Secret Shame of Middle-Class Americans]], TheAtlantic. Nearly
+half of Americans would have trouble finding $400 to pay for an emergency. I’m
+one of them.
+
+[2017-06-27 Tue] [[https://www.theguardian.com/science/2017/jun/27/profitable-business-scientific-publishing-bad-for-science][Is the staggeringly profitable business of scientific
+publishing bad for science?]], TheGuardian. It is an industry like no other,
+with profit margins to rival Google – and it was created by one of Britain’s
+most notorious tycoons: Robert Maxwell.
+
+* Español
+[2022-06-16 Thu] [[https://elpais.com/salud-y-bienestar/2022-06-16/no-son-tus-hijos-no-es-tu-jefe-es-el-sistema-asi-se-genera-el-agotamiento-o-burnout-parental.html][No son tus hijos, no es tu jefe; es el sistema. Así se genera
+el agotamiento o ‘burnout’ parental]], elPaís. Los tabúes sobre la maternidad
+impiden que muchas mujeres sepan qué les ocurre o que sientan que pueden hablar
+sobre ello con los demás.
+
+[2021-12-09 Thu] [[https://elpais.com/sociedad/2021-12-09/asi-consigue-un-laboratorio-multiplicar-por-1000-el-precio-de-un-medicamento.html][Así consigue un laboratorio multiplicar por 1.000 el precio de
+un medicamento]], elPaís. Leadiant Biosciences ha subido de 14 céntimos a 140
+euros la pastilla del tratamiento de una enfermedad rara aprovechándose del
+monopolio concedido por la UE.
+
+[2021-05-31 Mon] [[https://elpais.com/eps/2021-05-29/urbanismo-feminista-ciudad-feliz.html][Viena, el éxito del urbanismo feminista]], elPaís. A mediados del
+ siglo pasado, un grupo de hombres de clase media y conductores definieron las
+ bases urbanísticas de las ciudades. Como respuesta surgió el urbanismo
+ feminista, modelo que pone a las personas en el centro. Viena lleva décadas
+ aplicándolo y ahora es una de las ciudades más agradables y verdes del mundo,
+ también una de las mejores para vivir.
+
+[2020-12-17 Thu] [[https://elpais.com/ideas/2020-12-16/el-buen-periodismo-requiere-independencia.html]["La independencia periodística, el mejor negocio de los
+medios"]], elPaís. La independencia es el valor más preciado para un medio de
+calidad.
+
+[2020-04-08 Wed] [[https://elpais.com/ciencia/2020-04-08/somos-una-europa-unida-o-no-la-unica-respuesta-posible-es-ayudar-a-los-paises-que-lo-necesitan.html]["¿Somos una Europa Unida o no? La única respuesta posible es
+ayudar a los países que lo necesitan"]], elPaís. El jefe de la ciencia europea
+dimite en medio de la crisis desatada por el nuevo coronavirus.
+
+[2018-09-04 Tue] [[https://elpais.com/elpais/2018/09/03/ciencia/1535974124_908508.html][El genetista italiano que desmontó el concepto de raza]], elPaís.
+“El racismo es un antiguo flagelo de la humanidad”. “Pensamos que la ciencia sea
+objetiva. La ciencia está modelada por la sociedad porque es una actividad
+humana productiva que necesita tiempo y dinero, pues está guiada y dirigida por
+aquellas fuerzas que en el mundo ejercen el control sobre el dinero y sobre el
+tiempo. Las fuerzas sociales y económicas determinan en larga medida lo que la
+ciencia hace y cómo lo hace”.
+
+[2016-09-22 Thu] [[https://elpais.com/cultura/2016/09/15/actualidad/1473939710_796979.html][“A veces, hasta los paranoicos tenemos razón”]], elPaís. Los que
+me preocupan son todos esos jóvenes ignorantes que pasan de todo porque dicen
+que no tienen nada que ocultar. Es ese tipo de gente que no se preocupa por el
+mundo en el que vive, porque se violen los derechos, las libertades que muchos
+antes defendieron en la Constitución. Me preocupa la pasividad que veo a mi
+alrededor.

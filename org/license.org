@@ -1,0 +1,15 @@
+#+HUGO_BASE_DIR: ../hugo
+#+HUGO_SECTION: ./
+#+HUGO_TYPE: page
+#+TITLE: License
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+OPTIONS: num:nil
+
+I license the content of the website under the [[https://github.com/dschrempf/blog/blob/master/LICENSE][GNU General Public License v3.0]].
+
+I build the website with [[https://www.gnu.org/software/emacs/][Emacs]], [[https://orgmode.org/][Org Mode]], [[https://gohugo.io/][Hugo]], and [[https://ox-hugo.scripter.co/][ox-hugo]]. I use the theme
+[[https://github.com/dschrempf/skeria][Skeria]]. Please refer to the licenses of these projects on the linked websites.
+
+I provide the [[https://github.com/dschrempf/blog][source code]] of this homepage on GitHub.

@@ -1,0 +1,33 @@
+#+HUGO_BASE_DIR: ../hugo
+#+HUGO_SECTION: ./
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_TYPE: page
+#+TITLE: Privacy notice
+#+DATE: <2021-12-14 Tue>
+#+AUTHOR: Dominik Schrempf
+#+EMAIL: dominik.schrempf@gmail.com
+#+DESCRIPTION: Privacy notice.
+#+KEYWORDS: "Privacy notice" Blog Linux Emacs Python Haskell Music
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+OPTIONS: num:nil
+
+Personally, I do not collect any data.
+
+However:
+- This page is hosted by GitHub Pages which collects some data. Please see the
+  [[https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement][privacy policy of GitHub]].
+- When accessing the website, you load some static yet external libraries:
+  - Website content: [[https://github.com/mathjax/MathJax][MathJax]], and [[https://fontawesome.com/][Font Awesome Free]];
+  - Search: [[https://jquery.com/][JQuery]], [[https://markjs.io/][MarkJs]], and [[https://fusejs.io/][FuseJs]].
+
+#+begin_export html
+If you have questions, please contact me: &nbsp;
+<span class="icons-item"> <a href="https://github.com/dschrempf" target="_blank"><i class="fab fa-github"></i></a></span>
+<span class="icons-item"> <a href="https://www.stackoverflow.com/users/3536806" target="_blank"><i class="fab fa-stack-overflow fa-1x"></i></a></span>
+<span class="icons-item"> <a href="https://fosstodon.org/@dschrempf" target="_blank"><i class="fab fa-mastodon fa-1x"></i></a></span>
+<span class="icons-item"> <a href="https://orcid.org/0000-0001-8865-9237" target="_blank"><i class="fab fa-orcid fa-1x"></i></a></span>
+<span class="icons-item"> <a href="mailto:dominik.schrempf@gmail.com"><i class="fas fa-envelope fa-1x"></i></a></span>
+<span class="icons-item"> <a href="/gpg_public_key.txt"><i class="fas fa-key fa-1x"></i></a></span>.
+#+end_export
