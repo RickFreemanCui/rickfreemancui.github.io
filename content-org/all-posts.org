@@ -37,7 +37,7 @@ My first misc is proabably clarify my CV
 * DONE Hongrui Cui
 :PROPERTIES:
 :EXPORT_FILE_NAME: about
-:EXPORT_HUGO_SECTION: /
+:EXPORT_HUGO_SECTION: about
 :EXPORT_HUGO_MENU: :menu about :weight 6 :name About
 :EXPORT_DATE: <2024-02-27 Tue>
 :EXPORT_AUTHOR: Hongrui Cui
