@@ -2,6 +2,7 @@
 title = "Hongrui Cui"
 author = ["Hongrui Cui"]
 date = 2024-02-27T00:00:00+08:00
+type = "page"
 draft = false
 [menu]
   [menu.about]
