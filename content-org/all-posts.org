@@ -33,3 +33,40 @@ My first talk is about memory-hard functions but they are kind of lost
 :EXPORT_HUGO_SECTION: misc
 :END:
 My first misc is proabably clarify my CV
+
+* DONE Hongrui Cui
+:PROPERTIES:
+:EXPORT_FILE_NAME: about
+:EXPORT_HUGO_SECTION: /
+:EXPORT_HUGO_MENU: :menu about :weight 6 :name About
+:EXPORT_DATE: <2024-02-27 Tue>
+:EXPORT_AUTHOR: Hongrui Cui
+:EXPORT_EMAIL: freemanrickcui@outlook.com
+:END:
+
+#+begin_export html
+<span class="icons-item"> <a href="https://github.com/freemanrickcui" target="_blank"><i class="fab fa-github"></i></a></span>
+<span class="icons-item"> <a href="https://www.stackoverflow.com/users/8865477/rick-freeman" target="_blank"><i class="fab fa-stack-overflow fa-1x"></i></a></span>
+<span class="icons-item"> <a href="https://orcid.org/0000-0002-6203-413X" target="_blank"><i class="fab fa-orcid fa-1x"></i></a></span>
+<span class="icons-item"> <a href="https://scholar.google.com/citations?user=bWNvN0UAAAAJ" target="_blank"><i class="fab fa-google fa-1x"></i></a></span>
+<span class="icons-item"> <a href="mailto:freemanrickcui@outlook.com"><i class="fas fa-envelope fa-1x"></i></a></span>
+<span class="icons-item"> <a href="/gpg_public_key.txt"><i class="fas fa-key fa-1x"></i></a></span>
+#+end_export
+Ph.D. Student in Cryptography\\
+[[https://crypto.sjtu.edu.cn/][LATTICE Group, Shanghai Jiao Tong University]]
+
+* Interests
+- Theoretical Cryptography
+- Multiparty Computation
+- MPC-in-the-Head
+
+* Education
+- MSc in Computer Science, Shanghai Jiao Tong University, 2022
+- BSc in Information Security, Shanghai Jiao Tong University, 2019
+
+* About
+I am a second-year Ph.D. student majoring in Cryptography at SJTU. My
+past projects include MPC-in-the-Head, COT-AG, and ReSolveD. I am very
+interested in objects that are both theoretically interesting and of
+practical significance.
+
