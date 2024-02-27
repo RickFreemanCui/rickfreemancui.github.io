@@ -19,3 +19,24 @@ draft = false
 
 Ph.D. Student in Cryptography<br />
 [LATTICE Group, Shanghai Jiao Tong University](https://crypto.sjtu.edu.cn/)
+
+
+## Interests {#interests}
+
+-   Theoretical Cryptography
+-   Multiparty Computation
+-   MPC-in-the-Head
+
+
+## Education {#education}
+
+-   MSc in Computer Science, Shanghai Jiao Tong University, 2022
+-   BSc in Information Security, Shanghai Jiao Tong University, 2019
+
+
+## About {#about}
+
+I am a second-year Ph.D. student majoring in Cryptography at SJTU. My
+past projects include MPC-in-the-Head, COT-AG, and ReSolveD. I am very
+interested in objects that are both theoretically interesting and of
+practical significance.
