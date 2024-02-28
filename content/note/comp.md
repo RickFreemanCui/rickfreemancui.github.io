@@ -610,12 +610,14 @@ hard as_ computing \\(L\\). We introduce two notions:
 -   We say \\(L\\) is \\(\mathbf{NP}\\) -complete if \\(L\in\mathbf{NP}\\) and \\(L\\) is
     \\(\mathbf{NP}\\)-hard.
 
-For this lecture and the next one, we answer the question "is there an example
-of \\(\mathbf{NP}\\) -complete" problem? First of all, a natural idea may arise from
-the certificate-based definition of \\(\mathbf{NP}\\) and universal Turing Machine.
-Consider the following language: \\[\mathtt{TMSAT} :=
-\\{{\langle{\alpha,x,1^n,1^t}\rangle|\exists u\in\\{0,1\\}^{n}\text{ s.t. }
-\mathbb{M}\_{\alpha}(x,u) \text{ outputs 1 in t stpes}}\\}\\]
+For this lecture and the next one, we answer the question "is there an
+example of \\(\mathbf{NP}\\) -complete" problem? First of all, a natural
+idea may arise from the certificate-based definition of \\(\mathbf{NP}\\)
+and universal Turing Machine.  Consider the following language:
+
+\\[\mathtt{TMSAT} := \\{{\langle{\alpha,x,1^n,1^t}\rangle|\exists
+u\in\\{0,1\\}^{n}\text{ s.t. } \mathbb{M}\_{\alpha}(x,u) \text{ outputs 1
+in t stpes}}\\} \\]
 
 Clearly any language in \\(\mathbf{NP}\\) can be Karp reduced to
 \\(\texttt{TMSAT}\\).
@@ -2045,7 +2047,7 @@ We will use several graph products to explicitly construct expander graph.
     rotation matrix, and finally one more step on \\(H\\). Using the parallel walk
     view of tensor product might be helpful here.
 
-    <a id="org2f4f87c"></a>
+    <a id="org1a29e3a"></a>
 
     <asset/zig-zag.eps>
 
