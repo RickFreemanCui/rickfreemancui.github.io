@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Talks on Hongrui Cui&#39;s Homepage</title>
+    <link>http://localhost:1313/talk/</link>
+    <description>Recent content in Talks on Hongrui Cui&#39;s Homepage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/talk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Authenticated Garbling from Compressed Randomness</title>
+      <link>http://localhost:1313/talk/dilo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/talk/dilo/</guid>
+      <description>This is a Crypto 2022 paper that describes how to construct authenticated garbled circuit using correlations that allow efficient PCGS (e.g., MT, VOLE). Using the AGC, we can run actively secure 2PC afterwards.
+This work inspired us to conduct a follow-up work Authenticated Garbling From Correlated OT.
+Here is the slides I have prepared Slides.</description>
+    </item>
+    <item>
+      <title>Fully Linear PCP</title>
+      <link>http://localhost:1313/talk/flpcp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/talk/flpcp/</guid>
+      <description>This is a Crypto 2019 paper by Boneh et al. In this paper the authors utilize the fact that the verifier can only make linear queries to the instance string and the PCP/IOP proof string in order to make a decision. Building on this property, we can design proof systems that allow proving statements that are shared among multiple verifiers. This proof system in particular appear useful for the GMW transformation, which is the topic of another talk.</description>
+    </item>
+    <item>
+      <title>My first talk</title>
+      <link>http://localhost:1313/talk/first_talk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/talk/first_talk/</guid>
+      <description>My first talk is about memory-hard functions but they are kind of lost</description>
+    </item>
+    <item>
+      <title>PCG for Garbled Circuit Correlations</title>
+      <link>http://localhost:1313/talk/gcpcgpcf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/talk/gcpcgpcf/</guid>
+      <description>This is a Eurocrypt 2023 submission that describes the application of EA-LPN in constructing PCF for garbled circuit correlations. They also present three applications of their construction, albeit not very convincing in their practical values.
+I gave a talk about this paper and also discussed the merit of it at &amp;lt;2024-02-27 Tue&amp;gt;. Here is the ipe source.</description>
+    </item>
+    <item>
+      <title>Ring-LPN PCG</title>
+      <link>http://localhost:1313/talk/ring_lpn_pcg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/talk/ring_lpn_pcg/</guid>
+      <description>The \( n^2 \) computational overhead of PCGs for the OLE/MT correlation has long been a trouble and only recently have we come up with some creative solution (for authenticated triples over \( \mathbb{F}_2 \)).
+This is a Crypto 2020 paper that shows how to create such a correlation over \( \mathbb{F}_{2^{\rho}} \) using Ring-LPN. I recall giving talks about this construction in various occacions but the details have been lost now.</description>
+    </item>
+    <item>
+      <title>Sublinear GMW</title>
+      <link>http://localhost:1313/talk/sublinear_gmw/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/talk/sublinear_gmw/</guid>
+      <description>This is a follow-up work of Fully Linear PCP.
+LATTICE group meeting at &amp;lt;2021-10-27 Wed&amp;gt; Slides Meeting with Huawei at &amp;lt;2021-11-18 Thu&amp;gt; Slides </description>
+    </item>
+  </channel>
+</rss>

@@ -29,9 +29,19 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+    extensions:
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+        enable: true
 params:
-  author:
-    name: Hongrui Cui
   defaultDescription: Cryptography.
   defaultKeywords: Multiparty Computation, Cryptography, Post-Quantum
   tagline: ""
@@ -49,8 +59,12 @@ params:
   gpgkey: /gpg_public_key.txt
   rss: ""
   privacyNotice: /privacy/
+  math: true
 menu:
   main:
+    - url: /about/
+      name: About
+      weight: 6
     - url: /talk/
       name: Talk
       weight: 5

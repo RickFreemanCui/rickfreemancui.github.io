@@ -1,6 +1,5 @@
 +++
 title = "My first note"
-author = ["Freeman Rick"]
 draft = false
 +++
 

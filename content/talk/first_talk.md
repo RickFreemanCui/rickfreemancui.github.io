@@ -1,6 +1,5 @@
 +++
 title = "My first talk"
-author = ["Freeman Rick"]
 draft = false
 +++
 

@@ -1,14 +1,8 @@
 +++
-title = "Hongrui Cui"
-author = ["Hongrui Cui"]
+title = "Hongrui's Personal Information"
 date = 2024-02-27T00:00:00+08:00
 type = "page"
 draft = false
-[menu]
-  [menu.about]
-    identifier = "hongrui-cui"
-    weight = 6
-    name = "About"
 +++
 
 <span class="icons-item"> <a href="https://github.com/freemanrickcui" target="_blank"><i class="fab fa-github"></i></a></span>

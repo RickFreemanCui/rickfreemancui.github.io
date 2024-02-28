@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>My New Hugo Site</title>
+<title>Hongrui Cui&#39;s Homepage</title>
 
 <meta name="description" content="">
 <meta name="author" content="">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml">
+<link rel="alternate" type="application/json" href="http://localhost:1313/index.json">
 <link rel="alternate" hreflang="en" href="http://localhost:1313/">
 <noscript>
     <style>
@@ -58,6 +58,49 @@
 
     </style>
 </noscript>
+<script type="text/javascript" async
+    src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\[\[', '\]\]']],
+                processEscapes: true,
+                processEnvironments: true,
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                TeX: {
+                    equationNumbers: { autoNumber: "AMS" },
+                    extensions: ["AMSmath.js", "AMSsymbols.js"]
+                }
+            },
+            "HTML-CSS": {
+                availableFonts: ["Arial", "TeX"],
+                preferredFont: "TeX",
+                webFont: "TeX"
+            }
+        });
+
+        MathJax.Hub.Queue(function () {
+            
+            
+            
+            var all = MathJax.Hub.getAllJax(), i;
+            for (i = 0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+<style>
+    code.has-jax {
+        font: inherit;
+        font-size: 100%;
+        background: inherit;
+        border: inherit;
+        color: #515151;
+    }
+</style>
+
+
 </head>
 
 <body class="list" id="top">
@@ -75,7 +118,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <a href="http://localhost:1313/" accesskey="h" title="Hongrui Cui&#39;s Homepage (Alt + H)">Hongrui Cui&#39;s Homepage</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -102,14 +145,122 @@
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/misc/" title="Misc">
+                    <span>Misc</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/paper/" title="Paper">
+                    <span>Paper</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/note/" title="Note">
+                    <span>Note</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/talk/" title="Talk">
+                    <span>Talk</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
 <main class="main"> 
+
+<article class="first-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Authenticated Garbling from Compressed Randomness
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This is a Crypto 2022 paper that describes how to construct authenticated garbled circuit using correlations that allow efficient PCGS (e.g., MT, VOLE). Using the AGC, we can run actively secure 2PC afterwards.
+This work inspired us to conduct a follow-up work Authenticated Garbling From Correlated OT.
+Here is the slides I have prepared Slides.</p>
+  </div>
+  <footer class="entry-footer"></footer>
+  <a class="entry-link" aria-label="post link to Authenticated Garbling from Compressed Randomness" href="http://localhost:1313/talk/dilo/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Fully Linear PCP
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This is a Crypto 2019 paper by Boneh et al. In this paper the authors utilize the fact that the verifier can only make linear queries to the instance string and the PCP/IOP proof string in order to make a decision. Building on this property, we can design proof systems that allow proving statements that are shared among multiple verifiers. This proof system in particular appear useful for the GMW transformation, which is the topic of another talk....</p>
+  </div>
+  <footer class="entry-footer"></footer>
+  <a class="entry-link" aria-label="post link to Fully Linear PCP" href="http://localhost:1313/talk/flpcp/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">My first talk
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>My first talk is about memory-hard functions but they are kind of lost</p>
+  </div>
+  <footer class="entry-footer"></footer>
+  <a class="entry-link" aria-label="post link to My first talk" href="http://localhost:1313/talk/first_talk/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">PCG for Garbled Circuit Correlations
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This is a Eurocrypt 2023 submission that describes the application of EA-LPN in constructing PCF for garbled circuit correlations. They also present three applications of their construction, albeit not very convincing in their practical values.
+I gave a talk about this paper and also discussed the merit of it at &lt;2024-02-27 Tue&gt;. Here is the ipe source.</p>
+  </div>
+  <footer class="entry-footer"></footer>
+  <a class="entry-link" aria-label="post link to PCG for Garbled Circuit Correlations" href="http://localhost:1313/talk/gcpcgpcf/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Ring-LPN PCG
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The \( n^2 \) computational overhead of PCGs for the OLE/MT correlation has long been a trouble and only recently have we come up with some creative solution (for authenticated triples over \( \mathbb{F}_2 \)).
+This is a Crypto 2020 paper that shows how to create such a correlation over \( \mathbb{F}_{2^{\rho}} \) using Ring-LPN. I recall giving talks about this construction in various occacions but the details have been lost now....</p>
+  </div>
+  <footer class="entry-footer"></footer>
+  <a class="entry-link" aria-label="post link to Ring-LPN PCG" href="http://localhost:1313/talk/ring_lpn_pcg/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Sublinear GMW
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>This is a follow-up work of Fully Linear PCP.
+LATTICE group meeting at &lt;2021-10-27 Wed&gt; Slides Meeting with Huawei at &lt;2021-11-18 Thu&gt; Slides </p>
+  </div>
+  <footer class="entry-footer"></footer>
+  <a class="entry-link" aria-label="post link to Sublinear GMW" href="http://localhost:1313/talk/sublinear_gmw/"></a>
+</article>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="http://localhost:1313/">My New Hugo Site</a></span>
+    <span>&copy; 2024 <a href="http://localhost:1313/">Hongrui Cui&#39;s Homepage</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
@@ -121,6 +272,8 @@
         <path d="M12 6H0l6-6z" />
     </svg>
 </a>
+
+
 
 <script>
     let menu = document.getElementById('menu')
