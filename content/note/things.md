@@ -6,11 +6,17 @@ draft = false
 
 ## 外滩大会 2020 {#外滩大会-2020}
 
-<span class="timestamp-wrapper"><span class="timestamp">[2020-09-24 四 09:00]&#x2013;[2020-09-24 四 18:00]</span></span>本来以为是像CIS一样的讲座形式，但是变成了集会一样的
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2020-09-24 四 09:00&gt;&#x2013;&lt;2020-09-24 四 18:00&gt;</span></span>本来以为是像CIS一样的讲座形式，但是变成了集会一样的
 体验。人特别多，而且我们的票无法进入主会场。分会场倒是有很多抽奖环节，仇同学助力，
 我拿到了一个可以无线充电的移动电源，rather fancy。
 
-[入口](/ox-hugo/IMG_6681.jpg) [地图](/ox-hugo/IMG_6682.jpg)
+<a id="figure--fig:bund-2020-outside"></a>
+
+{{< figure src="/ox-hugo/IMG_6681.jpg" caption="<span class=\"figure-number\">Figure 1: </span>会场外" >}}
+
+<a id="figure--fig:bund-2020-map"></a>
+
+{{< figure src="/ox-hugo/IMG_6682.jpg" caption="<span class=\"figure-number\">Figure 2: </span>地图" >}}
 
 早晨先喝了一杯百分号的咖啡，然后看到了附近在展一辆 VW Type 2，似乎就是[那个视频](https://www.youtube.com/watch?v=d6m08InT8Oo)里
 面所谓的“Kombi”（Kombinationskraftwagen）。
