@@ -86,7 +86,7 @@ is its finite alphabet, \\(Q\\) is its finite state sets, and
 \\(\delta:Q\times\Gamma^{k}\to Q \times \Gamma^{k-1}\times \\{L,S,R\\}^{k}\\)
 is its transition function. It should be noted that without loss of
 generality we assume \\(q\_\text{start},q\_\text{halt}\in Q\\) and
-\\(\\{{0,1,\triangleleft,\boxempty}\\}\subset \Gamma\\).
+\\(\\{{0,1,\triangleleft,\Box}\\}\subset \Gamma\\).
 
 It is clear that the full configuration of a Turing Machine consists of
 its 1. state, 2. contents of working tapes, and 3. head position. (As we
@@ -756,9 +756,9 @@ Let \\(L\in\mathbf{NP}\\) has verifier \\(\mathbb{M}\\), with running time
 verification process on \\(\mathbb{M}\\). The computation can be represented
 by a sequence of snapshots \\(z\_1,\ldots,z\_{T(|x|+p(|x|))}\\), where without
 loss of generality we let
-\\(z\_1=\langle{q\_{start},\triangleleft,\boxempty,\ldots,\boxempty}\rangle\\)
+\\(z\_1=\langle{q\_{start},\triangleleft,\Box,\ldots,\Box}\rangle\\)
 and
-\\(z\_{T(|x|+p(|x|))}=\langle{q\_{halt},\triangleleft,1,\boxempty,\ldots,\boxempty}\rangle\\)
+\\(z\_{T(|x|+p(|x|))}=\langle{q\_{halt},\triangleleft,1,\Box,\ldots,\Box}\rangle\\)
 to be constant. We also make the assumption that \\(\mathbb{M}\\) is
 oblivious.
 
@@ -2047,7 +2047,7 @@ We will use several graph products to explicitly construct expander graph.
     rotation matrix, and finally one more step on \\(H\\). Using the parallel walk
     view of tensor product might be helpful here.
 
-    <a id="org1a29e3a"></a>
+    <a id="org5ae317a"></a>
 
     <asset/zig-zag.eps>
 
