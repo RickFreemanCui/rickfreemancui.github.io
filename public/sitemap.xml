@@ -49,5 +49,11 @@
     <loc>http://localhost:1313/talk/sublinear_gmw/</loc>
   </url><url>
     <loc>http://localhost:1313/talk/</loc>
+  </url><url>
+    <loc>http://localhost:1313/misc/things/</loc>
+  </url><url>
+    <loc>http://localhost:1313/note/provsec/</loc>
+  </url><url>
+    <loc>http://localhost:1313/note/comp/</loc>
   </url>
 </urlset>
