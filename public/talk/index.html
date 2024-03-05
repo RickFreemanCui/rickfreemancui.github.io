@@ -195,6 +195,19 @@ Here is the slides I have prepared Slides.</p>
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Efficient Random Vector Commitment from AES
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Since random vector commitment is used extensively in MPCitH and VOLEitH applications, with some of them being post quantum signatures, which is efficiency sensitive (e.g. TLS needs fast authentications for smooth browsing experience), it’s a natural question to optimize this component.
+One possible way to do this is to replace the cryptograhpic hash function invocation at the bottom layer of the GGM tree with AES-based hash functions which are relatively lightweight when the key is fixed....</p>
+  </div>
+  <footer class="entry-footer"></footer>
+  <a class="entry-link" aria-label="post link to Efficient Random Vector Commitment from AES" href="http://localhost:1313/talk/vc-aes/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Fully Linear PCP
     </h2>
   </header>

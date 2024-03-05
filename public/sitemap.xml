@@ -16,6 +16,8 @@
   </url><url>
     <loc>http://localhost:1313/categories/category1/</loc>
   </url><url>
+    <loc>http://localhost:1313/talk/vc-aes/</loc>
+  </url><url>
     <loc>http://localhost:1313/talk/flpcp/</loc>
   </url><url>
     <loc>http://localhost:1313/paper/resolved/</loc>

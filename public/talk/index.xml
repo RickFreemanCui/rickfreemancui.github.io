@@ -17,6 +17,14 @@ This work inspired us to conduct a follow-up work Authenticated Garbling From Co
 Here is the slides I have prepared Slides.</description>
     </item>
     <item>
+      <title>Efficient Random Vector Commitment from AES</title>
+      <link>http://localhost:1313/talk/vc-aes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/talk/vc-aes/</guid>
+      <description>Since random vector commitment is used extensively in MPCitH and VOLEitH applications, with some of them being post quantum signatures, which is efficiency sensitive (e.g. TLS needs fast authentications for smooth browsing experience), it&amp;rsquo;s a natural question to optimize this component.
+One possible way to do this is to replace the cryptograhpic hash function invocation at the bottom layer of the GGM tree with AES-based hash functions which are relatively lightweight when the key is fixed.</description>
+    </item>
+    <item>
       <title>Fully Linear PCP</title>
       <link>http://localhost:1313/talk/flpcp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
