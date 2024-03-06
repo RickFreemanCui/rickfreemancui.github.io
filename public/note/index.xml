@@ -19,7 +19,7 @@
       <link>http://localhost:1313/note/provsec/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/note/provsec/</guid>
-      <description>BASIC INFORMATION This is the notes of the course ``Provable Security&amp;rsquo;&amp;rsquo;. The first few courses will be taught online. While subsequent courses are still unsettled.
+      <description>BASIC INFORMATION This is the notes of the course &amp;ldquo;Provable Security&amp;rdquo;. The first few courses will be taught online. While subsequent courses are still unsettled.
 I took this course last year, and I am pretty confident about my grasp of basic concepts like universal hash function, GL theorem, basic PRG, PRF constructions, etc. But contents like CRHF and PRP are still rather alien to me, so in this course I will review the previous contents and try to master the missing pieces.</description>
     </item>
     <item>

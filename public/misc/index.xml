@@ -12,7 +12,9 @@
       <link>http://localhost:1313/misc/first_misc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/misc/first_misc/</guid>
-      <description>My first misc is proabably clarify my CV</description>
+      <description>My first misc is proabably clarify my CV
+Reference to Custom ID
+Cusom ID Test This is the content of a subtree with custom id.</description>
     </item>
     <item>
       <title>Things I Have Found Worth Noting</title>
