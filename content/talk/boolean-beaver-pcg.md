@@ -12,6 +12,8 @@ Beaver triples remains MASCOT-type COT-based protocols, which has
 communication of \\(O(N^2 m)\\) for generating \\(m\\) triples among \\(N\\)
 parties.
 
+I guess this is a follow-up of [Ring-LPN Talk]({{< relref "ring_lpn_pcg" >}}).
+
 There has been a number of works (<a href="#citeproc_bib_item_1">Bombar et al. 2024</a>, <a href="#citeproc_bib_item_2">2023</a>; <a href="#citeproc_bib_item_3">Boyle et al. 2022</a>, <a href="#citeproc_bib_item_5">2020b</a>, <a href="#citeproc_bib_item_4">2020a</a>) trying to change the
 status quo, with the ultimate goal of creating a concretely efficient
 end-to-end MPC protocol. I made some [slides](/ox-hugo/FOLEAGE-DPF.pdf) about them.
