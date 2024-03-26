@@ -40,6 +40,8 @@
   </url><url>
     <loc>http://localhost:1313/paper/</loc>
   </url><url>
+    <loc>http://localhost:1313/talk/boolean-beaver-pcg/</loc>
+  </url><url>
     <loc>http://localhost:1313/talk/gcpcgpcf/</loc>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>

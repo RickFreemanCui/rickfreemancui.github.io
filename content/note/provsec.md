@@ -1,35 +1,7 @@
 +++
 title = "可证明安全理论笔记"
-author = ["崔泓睿"]
 draft = false
 +++
-
-## BASIC INFORMATION {#basic-information}
-
-This is the notes of the course "Provable Security". The first few
-courses will be taught online. While subsequent courses are still
-unsettled.
-
-I took this course last year, and I am pretty confident about my grasp
-of basic concepts like universal hash function, GL theorem, basic PRG,
-PRF constructions, etc. But contents like CRHF and PRP are still
-rather alien to me, so in this course I will review the previous
-contents and try to master the missing pieces.  Also it is desireable
-to incopreate the previous notes and complete the notes altogegher.
-
-<div class="table-caption">
-  <span class="table-number">Table 1:</span>
-  Basic Information
-</div>
-
-| TEACHER     | 郁昱，刘振                        |
-|-------------|------------------------------|
-| LOCATION    | 陈瑞球楼108                       |
-| CODE        | C033728200203300M01               |
-| ZOOM NUMBER | 284739677                         |
-| ZOOM CODE   | 09333040                          |
-| LINK        | <https://zoom.com.cn/j/284739677> |
-
 
 ## Homework {#homework}
 
@@ -63,33 +35,26 @@ Existence of independent code [here](#19-20-2-L2).
 
 For an event \\(E\\), we use the indicator function
 
-\begin{equation}
-I(E) =
-\begin{cases}
-1 & E\\\\
-0 & \bar{E}
-\end{cases}\enspace.
-\end{equation}
+\\[ I(E) = \begin{cases} 1 & E\\\ 0 & \bar{E} \end{cases}\enspace.  \\]
 
 Fix an \\(i\\), we bound the probability
 
-\\[ p = \mathcal{P}r\_{C}[\mathcal{P}r\_{r\leftarrow R\_i^m}[Cr = 0] >
+\\[ p = \Pr\_{C}[\Pr\_{r\leftarrow R\_i^m}[Cr = 0] >
 \frac{1+\zeta}{2^n}].  \\]
 
 First we expand the inner probability expression
 
-\begin{equation}
-p = \mathcal{P}r\_C[\frac{1}{\binom{m}{i}} (\sum\_{r^{\prime}: |r^{\prime}| =
-i}I(Cr^{\prime} = 0)) > \frac{1+\zeta}{2^n}]. \end{equation}
+\\[ p = \Pr\_C[\frac{1}{\binom{m}{i}} (\sum\_{r^{\prime}: |r^{\prime}| =
+i}I(Cr^{\prime} = 0)) > \frac{1+\zeta}{2^n}]. \\]
 
 And then we transform the form to facilitate Chebyshev's Inequality. (It is easy
 to observe that \\(\mathsf{E}\_{C}[I(Cr=0)] = \frac{1}{2^n}\\).)
 
 \begin{align\*}
-p &= \mathcal{P}r\_C[(\sum\_{r^{\prime}: |r^{\prime}| = i}I(Cr^{\prime} = 0)) -
+p &= \Pr\_C[(\sum\_{r^{\prime}: |r^{\prime}| = i}I(Cr^{\prime} = 0)) -
 \frac{\binom{m}{i}}{2^n} > \binom{m}{i} \frac{\zeta}{2^n}] \\\\
  &\le
-\mathcal{P}r\_C[\left| (\sum\_{r^{\prime}: |r^{\prime}| = i}I(Cr^{\prime} = 0)) -
+\Pr\_C[\left| (\sum\_{r^{\prime}: |r^{\prime}| = i}I(Cr^{\prime} = 0)) -
 \frac{\binom{m}{i}}{2^n} \right| > \binom{m}{i} \frac{\zeta}{2^n}] \\\\
  &\le
  \frac{\underset{C}{Var}{(\sum\_{r^{\prime}: |r^{\prime}| = i}I(Cr^{\prime} = 0))}}
@@ -101,10 +66,9 @@ Notice that for distinct \\(r\_1\\) and \\(r\_2\\), the random variable \\(I(C r
 same distribution as either of them. This means we can further expand the
 expression as
 
-\begin{equation}
-p \le \frac{ \sum\_{r^{\prime}: |r^{\prime}| = i}\underset{C}{Var}{(I(Cr^{\prime}
-= 0))}}{(\binom{m}{i} {\frac{\zeta}{2^n}})^2}\enspace.
-\end{equation}
+\\[ p \le \frac{ \sum\_{r^{\prime}: |r^{\prime}| =
+i}\underset{C}{Var}{(I(Cr^{\prime} = 0))}}{(\binom{m}{i}
+{\frac{\zeta}{2^n}})^2}\enspace. \\]
 
 Since once \\(r\\) is fixed, \\(I(Cr = 0)\\) follows the Bernoulli distribution with
 \\(\mu = \frac{1}{2^n}\\), we can further write the expression as
@@ -236,7 +200,7 @@ to get all the state information it needs, ergo the state need not to be passed.
 
 -   The advantage of the adversary here is defined as the probability
 
-\\(\mathcal{P}r[\mathsf{PrivK}^{eav}\_{\mathsf{A,\mathcal{P}i}}] - 1/2\\).
+\\(\Pr[\mathsf{PrivK}^{eav}\_{\mathsf{A,\mathcal{P}i}}] - 1/2\\).
 
 
 #### Statistical Security {#statistical-security}
@@ -244,8 +208,8 @@ to get all the state information it needs, ergo the state need not to be passed.
 There are two ways to define statistical security (i.e. \\(\varepsilon\\) -secure),
 and they are equivalent. Note that in the indistinguishability experiment
 version of the definition, the probability \\[
-\mathcal{P}r[\mathsf{PrivK}^{eav}\_{\mathsf{A,\mathcal{P}i}}] < 1/2 + \varepsilon/2 \\] implies \\[
-1/2 - \varepsilon/2 < \mathcal{P}r[\mathsf{PrivK}^{eav}\_{\mathsf{A,\mathcal{P}i}}] < 1/2 +
+\Pr[\mathsf{PrivK}^{eav}\_{\mathsf{A,\mathcal{P}i}}] < 1/2 + \varepsilon/2 \\] implies \\[
+1/2 - \varepsilon/2 < \Pr[\mathsf{PrivK}^{eav}\_{\mathsf{A,\mathcal{P}i}}] < 1/2 +
 \varepsilon/2.\\] This is because if the upper bound of the success probability
 is bounded, then the lower bound must follow the same margin. If not, negate the
 distinguisher with very low success probability will get an adversary that
@@ -258,7 +222,7 @@ secure_. Vernam's Cipher (One-time pad) is such a cipher.
 #### Statistical Distance (SD) {#statistical-distance--sd}
 
 The definition of statistical distance is as follows: \\[ \mathsf{SD}(X,Y)
-\overset{\text{def}}{=} 1/2 \sum\_x{|\mathcal{P}r[X=x]-\mathcal{P}r[Y=x]|}, \\]
+\overset{\text{def}}{=} 1/2 \sum\_x{|\Pr[X=x]-\Pr[Y=x]|}, \\]
 
 and we say \\(X\\) is \\(\varepsilon\\) -close to \\(Y\\) if \\(\mathsf{SD}(X,Y) <
 \varepsilon\\).
@@ -268,16 +232,16 @@ distributions with limited statistical distance. For random variables \\(X\\) an
 \\(Y\\) defined over set \\(\mathcal{S}\\), and for any distinguisher \\(\mathsf{D} :
 \mathcal{S} \rightarrow \\{0,1\\}\\), we have
 
-\\[ \left| \mathcal{P}r[\mathsf{D}(X)=1]-\mathcal{P}r[\mathsf{D}(Y)=1] \right| \leq \mathsf{SD}(X,Y). \\]
+\\[ \left| \Pr[\mathsf{D}(X)=1]-\Pr[\mathsf{D}(Y)=1] \right| \leq \mathsf{SD}(X,Y). \\]
 The proof is actually not hard, since the distinguisher \\(\mathsf{D}\\) is
 all-powerful, we can think of it as deterministic, and therefore (w.l.o.g. we
-assume \\(\mathcal{P}r[\mathsf{D}(X)=1]\geq\mathcal{P}r[\mathsf{D}(Y)=1]\\))
+assume \\(\Pr[\mathsf{D}(X)=1]\geq\Pr[\mathsf{D}(Y)=1]\\))
 
 \begin{align\*}
-|\mathcal{P}r[\mathsf{D}(X)=1]-\mathcal{P}r[\mathsf{D}(Y)=1]| &=
-|\sum\_{x\in S:\mathsf{D}(x)=1}{\mathcal{P}r[X=x]-\mathcal{P}r[Y=x]} |\\\\
-&\leq |\sum\_{x\in S:\mathsf{D}(x)=1 \cap S:\mathcal{P}r[X=x]\geq\mathcal{P}r[Y=x]} {\mathcal{P}r[X=x]-\mathcal{P}r[Y=x]}|\\\\
- &\leq |\sum\_{x\in S:\mathcal{P}r[X=x]\geq\mathcal{P}r[Y=x]}{\mathcal{P}r[X=x]-\mathcal{P}r[Y=x]} |\\\\
+|\Pr[\mathsf{D}(X)=1]-\Pr[\mathsf{D}(Y)=1]| &=
+|\sum\_{x\in S:\mathsf{D}(x)=1}{\Pr[X=x]-\Pr[Y=x]} |\\\\
+&\leq |\sum\_{x\in S:\mathsf{D}(x)=1 \cap S:\Pr[X=x]\geq\Pr[Y=x]} {\Pr[X=x]-\Pr[Y=x]}|\\\\
+ &\leq |\sum\_{x\in S:\Pr[X=x]\geq\Pr[Y=x]}{\Pr[X=x]-\Pr[Y=x]} |\\\\
  &=\mathsf{SD}(X,Y)\enspace.
 \end{align\*}
 
@@ -312,7 +276,7 @@ The proof is as follows, fix message \\(m\_0, m\_1 \in \\{0,1\\}^n\\), \\(m\_0 \
 We have for any distinguisher \\(\mathsf{D}\\),
 
 \begin{align\*}
-|\mathcal{P}r[\mathsf{D}(m\_0 \oplus \tilde{K})=1] - \mathcal{P}r[\mathsf{D}(m\_1 \oplus \tilde{K})=1]| &\leq \mathsf{SD}(m\_0 \oplus \tilde{K}, m\_1 \oplus \tilde{K})\\\\
+|\Pr[\mathsf{D}(m\_0 \oplus \tilde{K})=1] - \Pr[\mathsf{D}(m\_1 \oplus \tilde{K})=1]| &\leq \mathsf{SD}(m\_0 \oplus \tilde{K}, m\_1 \oplus \tilde{K})\\\\
 &\leq \mathsf{SD}(m\_0 \oplus \tilde{K},m\_0 \oplus U\_n) + \mathsf{SD}(m\_1 \oplus
 \tilde{K},m\_0 \oplus U\_n)\\\\
 &\leq \mathsf{SD}(\tilde{K}, U\_n) +
@@ -324,19 +288,19 @@ We have for any distinguisher \\(\mathsf{D}\\),
 #### Unpredictability and Min-Entropy {#unpredictability-and-min-entropy}
 
 Definition for unpredictability is as follows, a random variable \\(X\\) is
-\\(\varepsilon\\) -unpredictable if for any algorithm \\(A\\), we have \\(\mathcal{P}r[A(1^n) = X]
+\\(\varepsilon\\) -unpredictable if for any algorithm \\(A\\), we have \\(\Pr[A(1^n) = X]
 \leq \varepsilon\\).
 
 Min-entropy is defined as \\[ \mathbf{H}\_{\infty}(X)\overset{\text{def}}{=}
--\log(\max\_{x\in \mathcal{X}}\mathcal{P}r[X=x]).\\]
+-\log(\max\_{x\in \mathcal{X}}\Pr[X=x]).\\]
 
 There are also average min-entropy and conditional unpredictability definitions.
 For joint random variable \\((X,Z)\\), we say that \\(X\\) is \\(\varepsilon\\)
 -unpredictable given \\(Z\\) if for every algorithm \\(A\\) it holds that
-\\(\mathcal{P}r[A(1^n,Z)=X]\leq \varepsilon\\). While the average min-entropy of \\(X\\)
+\\(\Pr[A(1^n,Z)=X]\leq \varepsilon\\). While the average min-entropy of \\(X\\)
 conditioned on \\(Z\\), denoted by \\(\mathbf{H}\_{\infty}(X|Z)\\), is defined by \\[
 \mathbf{H}\_{\infty}(X|Z) \overset{\text{def}}{=} \mathop{\mathbb{E}}\_{z
-\leftarrow Z}(\max\_{x\in \mathcal{X}} \mathcal{P}r[X=x|Z=z]). \\]
+\leftarrow Z}(\max\_{x\in \mathcal{X}} \Pr[X=x|Z=z]). \\]
 
 It holds that a random variable \\(X\\) is \\(\varepsilon\\) -unpredictable if and only
 if its min-entropy \\(\mathbf{H}\_{\infty}(X) \geq \log(1/\varepsilon)\\).
@@ -377,7 +341,7 @@ The definition of universal hash function is as follows. \\(\mathcal{H}
 \subseteq \\{0,1\\}^l\rightarrow\\{0,1\\}^t\\) is a family of universal hash
 function if for any distinct \\(x\_1,x\_2\in \\{0,1\\}^l\\), it holds that
 
-\\[ \mathcal{P}r\_{h\overset{\\$}{\leftarrow}\mathcal{H}}[h(x\_1)=h(x\_2)]
+\\[ \Pr\_{h\overset{\\$}{\leftarrow}\mathcal{H}}[h(x\_1)=h(x\_2)]
 \leq 2^{-t}.\\]
 
 For example, \\(\mathcal{H}=\\{h\_a:h\_a(x)\overset{\text{def}}{=}(a \cdot
@@ -435,34 +399,34 @@ handout2
     \\(\mathcal{H}\\).
 
     The proof is as follows. By \\(\mathbf{H}\_\infty(X|Z) \geq k\\), we have that \\[
-    \mathop{\mathbb{E}}\_{z \leftarrow Z}(\max\_{x\in \mathcal{X}} \mathcal{P}r[X=x|Z=z]) \le
+    \mathop{\mathbb{E}}\_{z \leftarrow Z}(\max\_{x\in \mathcal{X}} \Pr[X=x|Z=z]) \le
     2^{-k}.\\] Now lets analyze the statistical distance (let \\(S=\\{0,1\\}^{k-d}\\)),
 
     \begin{align\*}
     \mathsf{SD}&(H(X),U\_{k-d}|H,Z) =
     \mathsf{SD}((H(X),H,Z),(U\_{k-d},H,Z))\\\\
     &=1/2\cdot\sum\_{h\in\mathcal{H},z\in
-    Z,s\in S}|\mathcal{P}r[H(X)=s\land H=h\land Z=z]-\mathcal{P}r[U\_{k-d}=s\land H=h\land
+    Z,s\in S}|\Pr[H(X)=s\land H=h\land Z=z]-\Pr[U\_{k-d}=s\land H=h\land
     Z=z]|\\\\
     &=1/2\cdot\sum\_{h\in\mathcal{H},z\in Z,s\in
-    S}|1/|\mathcal{H}|\cdot(\mathcal{P}r[h(X)=s|Z=z]\cdot\mathcal{P}r[Z=z]-1/|S|\cdot\mathcal{P}r[Z=z])|\\\ &=1/2\cdot\sum\_{h\in\mathcal{H},s\in
+    S}|1/|\mathcal{H}|\cdot(\Pr[h(X)=s|Z=z]\cdot\Pr[Z=z]-1/|S|\cdot\Pr[Z=z])|\\\ &=1/2\cdot\sum\_{h\in\mathcal{H},s\in
     S}|\frac{1}{\sqrt{|\mathcal{H}||S|}}|\cdot|\sum\_{z\in
-    Z}(\frac{\sqrt{|S|}}{\sqrt{|\mathcal{H}|}}\cdot(\mathcal{P}r[h(X)=s\land
-    Z=z]-1/|S|\cdot\mathcal{P}r[Z=z]))|\\\\
+    Z}(\frac{\sqrt{|S|}}{\sqrt{|\mathcal{H}|}}\cdot(\Pr[h(X)=s\land
+    Z=z]-1/|S|\cdot\Pr[Z=z]))|\\\\
      &\leq1/2\cdot\left( \sum\_{h\in\mathcal{H},s\in
     S}(\sum\_{z\in
-    Z}\mathcal{P}r[Z=z]^2(\frac{|S|}{|\mathcal{H}|}\mathcal{P}r[h(X)=s|Z=z]^2-\frac{2\mathcal{P}r[h(X)=s|Z=z]}{|\mathcal{H}|}+\frac{1}{|S||\mathcal{H}|}))
+    Z}\Pr[Z=z]^2(\frac{|S|}{|\mathcal{H}|}\Pr[h(X)=s|Z=z]^2-\frac{2\Pr[h(X)=s|Z=z]}{|\mathcal{H}|}+\frac{1}{|S||\mathcal{H}|}))
     \right)^{1/2}\\\\
      &=1/2\cdot\left(\sum\_{z\in
-    Z}\mathcal{P}r[Z=z]^2[(\sum\_{h\in\mathcal{H},s\in
-    S}\frac{|S|}{|\mathcal{H}|}\mathcal{P}r[h(X)=s|Z=z]^2)-1]\right)^{1/2}\\\\
+    Z}\Pr[Z=z]^2[(\sum\_{h\in\mathcal{H},s\in
+    S}\frac{|S|}{|\mathcal{H}|}\Pr[h(X)=s|Z=z]^2)-1]\right)^{1/2}\\\\
      &\leq
-    1/2\cdot\left(\sum\_{z\in Z}\mathcal{P}r[Z=z]^2\cdot\max\_{x\in
-    X}\mathcal{P}r[X=x|Z=z]\cdot|S|\right)^{1/2}\\\\
+    1/2\cdot\left(\sum\_{z\in Z}\Pr[Z=z]^2\cdot\max\_{x\in
+    X}\Pr[X=x|Z=z]\cdot|S|\right)^{1/2}\\\\
      &\leq 2^{-d/2-1}.
     \end{align\*}
 
-    The final inequality relies on the fact that \\(\mathcal{P}r[Z=z]^2\leq\mathcal{P}r[Z=z]\\).
+    The final inequality relies on the fact that \\(\Pr[Z=z]^2\leq\Pr[Z=z]\\).
 
 <!--list-separator-->
 
@@ -493,7 +457,7 @@ handout2
 
     For random variable \\(X\\), define the collision probability
 
-    \\[ \mathsf{CP}(X)\overset{\text{def}}{=}\sum\_x{\mathcal{P}r[X=x]^2}\enspace, \\]
+    \\[ \mathsf{CP}(X)\overset{\text{def}}{=}\sum\_x{\Pr[X=x]^2}\enspace, \\]
 
     and collision entropy
 
@@ -503,13 +467,13 @@ handout2
     there exists some \\(Y\\) with \\(\mathbf{H}\_\infty(Y)\ge k-\log(1/\delta)\\)
     such that \\(\mathsf{SD}(X,Y)\leq \delta\\).
 
-    First observe that \\(\sum\_x{\mathcal{P}r[X=x]^2}\le 2^{-k}\\) implies
+    First observe that \\(\sum\_x{\Pr[X=x]^2}\le 2^{-k}\\) implies
     \\(\mathbf{H}\_0(X)\ge k\\), which implies \\(|\mathcal{X}|\ge 2^k\\) (the
-    sample space). Then define the set \\(S:=\\{x|\mathcal{P}r[X=x]\le 1/\delta \cdot
+    sample space). Then define the set \\(S:=\\{x|\Pr[X=x]\le 1/\delta \cdot
     2^{-k}\\}\\). Define the distribution \\(Y\\) such that for every \\(x\in
-    \mathcal{X}\setminus S\\), \\(\mathcal{P}r[Y=x]=1/\delta \cdot 2^{-k}\\).  And
+    \mathcal{X}\setminus S\\), \\(\Pr[Y=x]=1/\delta \cdot 2^{-k}\\).  And
     distribute the difference between \\(X\\) in to the values \\(x\in S\\) on top
-    of \\(\mathcal{P}r[X=x]\\) while keeping \\(\mathcal{P}r[Y=x]\le 1/\delta\cdot 2^{-k}\\). This
+    of \\(\Pr[X=x]\\) while keeping \\(\Pr[Y=x]\le 1/\delta\cdot 2^{-k}\\). This
     is possible since \\(|\mathcal{X}|\ge 2^k\\). The resulting distribution
     will have statistical distance less than \\(\delta\\).
 
@@ -553,23 +517,23 @@ proof is as follows (for convenience I denote the set \\(\\{0,1\\}^{k-d}\\) by \
 \begin{align\*}
 \mathsf{SD}&(H(X),U\_{k-d}|H) =
 \mathsf{SD}((H(X),H),(U\_{k-d},H))\\\\
- &=1/2\sum\_{s\in\\{0,1\\}^{k-d},h\in\mathcal{H}}|\mathcal{P}r[H(X)=s\land H=h]-
- \mathcal{P}r[U\_{k-d}=s\land H=h]|\\\\
+ &=1/2\sum\_{s\in\\{0,1\\}^{k-d},h\in\mathcal{H}}|\Pr[H(X)=s\land H=h]-
+ \Pr[U\_{k-d}=s\land H=h]|\\\\
  &=1/2\sum\_{h\in\mathcal{H}}1/|\mathcal{H}|\cdot\sum\_{s\in S} |
- \mathcal{P}r[H(X)=s|H=h]-1/|S||\\\\
+ \Pr[H(X)=s|H=h]-1/|S||\\\\
  &=1/2\sum\_{s\in\\{0,1\\}^{k-d},h\in\mathcal{H}}
  \frac{1}{\sqrt{|S||\mathcal{H}|}}
  \cdot|\frac{\sqrt{|S|}}{\sqrt{|\mathcal{H}|}}
- (\mathcal{P}r[H(X)=s|H=h]-1/|S|)|\\\\
+ (\Pr[H(X)=s|H=h]-1/|S|)|\\\\
  &=1/2(\sum\_{s\in\\{0,1\\}^{k-d},h\in\mathcal{H}}
  \frac{|S|}{|\mathcal{H}|}
- (\mathcal{P}r[H(X)=s|H=h]^2-2\mathcal{P}r[H(X)=s|H=h]/|S|+1/|S|^2))^{1/2}\\\\
+ (\Pr[H(X)=s|H=h]^2-2\Pr[H(X)=s|H=h]/|S|+1/|S|^2))^{1/2}\\\\
  &=1/2((\sum\_{s\in\\{0,1\\}^{k-d},h\in\mathcal{H}}
  \frac{|S|}{|\mathcal{H}|}
- \mathcal{P}r[H(X)=s|H=h]^2)-1)^{1/2}\\\\
+ \Pr[H(X)=s|H=h]^2)-1)^{1/2}\\\\
  &=1/2(|S|(\sum\_{h\in\mathcal{H}}
  \frac{1}{|\mathcal{H}|}\sum\_{s\in S}
- \mathcal{P}r[H(X)=s|H=h]^2)-1)^{1/2}
+ \Pr[H(X)=s|H=h]^2)-1)^{1/2}
 \end{align\*}
 
 In this step, we should consider the meaning of the quadratic probability term.
@@ -592,12 +556,12 @@ For convenience, denote \\(\mathbf{Collide}\\) the event that such collision hap
 (the sample space is \\(S\times\mathcal{H}\\)), we have
 
 \begin{align\*}
-\mathcal{P}r[\mathbf{Collide}] &= \mathcal{P}r[X\_1= X\_2]\cdot
- \mathcal{P}r[\mathbf{Collide}|X\_1=X\_2]+\mathcal{P}r[X\_1\neq X\_2]\cdot
- \mathcal{P}r[\mathbf{Collide}|X\_1\neq X\_2]\\\\
- &\leq \mathcal{P}r[X\_1=X\_2]+\mathcal{P}r[\mathbf{Collide}|X\_1\neq X\_2]\\\\
- &\leq \sum\_{s\in S}\mathcal{P}r[X\_1=s]^2+2^{^{-k+d}}\\\\
- &\leq \max\_{s\in S}\mathcal{P}r[X=s] + 2^{^{-k+d}}\\\\
+\Pr[\mathbf{Collide}] &= \Pr[X\_1= X\_2]\cdot
+ \Pr[\mathbf{Collide}|X\_1=X\_2]+\Pr[X\_1\neq X\_2]\cdot
+ \Pr[\mathbf{Collide}|X\_1\neq X\_2]\\\\
+ &\leq \Pr[X\_1=X\_2]+\Pr[\mathbf{Collide}|X\_1\neq X\_2]\\\\
+ &\leq \sum\_{s\in S}\Pr[X\_1=s]^2+2^{^{-k+d}}\\\\
+ &\leq \max\_{s\in S}\Pr[X=s] + 2^{^{-k+d}}\\\\
  &\leq 2^{-k}+2^{-k+d}\enspace.
 \end{align\*}
 
@@ -606,7 +570,7 @@ Putting this into the previous equation, we have
 \begin{align\*}
 \mathsf{SD}(H(X),U\_{k-d}|H) &\leq
  1/2 (|S|(\sum\_{h\in\mathcal{H}}\frac{1}{|\mathcal{H}|}
- \sum\_{s\in S}\mathcal{P}r[H(X)=s|H=h]^2)-1)^{1/2}\\\\
+ \sum\_{s\in S}\Pr[H(X)=s|H=h]^2)-1)^{1/2}\\\\
  &=1/2(2^{k-d}(2^{-k}+2^{-k+d})-1)^{1/2}\\\\
  &=2^{-d/2-1}\enspace.
 \end{align\*}
@@ -618,7 +582,7 @@ And that completes the proof.
 -  Other Points that Arise in the Proof
 
     The above was exactly as explained in the lecture, except for one detail. I
-    think the probability \\(\mathcal{P}r[X\_1=X\_2]\\) can be enlarged pretty easily by writing it
+    think the probability \\(\Pr[X\_1=X\_2]\\) can be enlarged pretty easily by writing it
     in the quadratic form and enlarging every term to a probability times the
     maximumly possible probability, and nothing is wrong with this notion. However,
     in the lecture, a different approach is used. In particular, Prof. Yu first
@@ -651,7 +615,7 @@ And that completes the proof.
     \text{H}\_0(X)\ge\text{H}\_1(X)\ge\text{H}\_2(X)\ge\ldots\ge\text{H}\_\infty(X). \\]
     The equality holds when \\(X\\) is uniformly random. From this fact we can easily
     derive that in the proof of leftover hash lemma, we have \\[
-    \mathcal{P}r[X\_1=X\_2]=2^{-\text{H}\_2(X)}\le 2^{-\text{H}\_\infty(X)}=2^{-k}. \\] And that
+    \Pr[X\_1=X\_2]=2^{-\text{H}\_2(X)}\le 2^{-\text{H}\_\infty(X)}=2^{-k}. \\] And that
     is the second way to derive the probability, which seems more natural. In fact,
     the requirement on min-entropy in the lemma can be relaxed to requiring the
     random variable \\(X\\) have collision entropy at least \\(k\\).
@@ -696,7 +660,7 @@ The two parties of communication share a \\(2n\\) bit secret, denoted by
 \\(W=(W\_1,W\_2)\\), of which some information \\(Z\\) is leaked to an adversary. The
 average min-entropy of \\(W\\) conditioned on \\(Z\\) is at least \\(n+t\\), namely,
 \\(\text{H}\_\infty(W|Z) \ge n+t\\). It can be proved that in this scheme, for any
-message \\(m\\), the adversary's success probability \\[ \mathcal{P}r\_{(w\_1,w\_2)\gets W,z\gets
+message \\(m\\), the adversary's success probability \\[ \Pr\_{(w\_1,w\_2)\gets W,z\gets
 Z}[m^\prime=A(m,\sigma,z):m\ne m^\prime\land\sigma^\prime=w\_1+m^\prime\cdot
 w\_2]\le 2^{-t}. \\] However, as Prof. Yu mentioned in his lecture, the
 min-entropy of the shared secret is at least \\(n+t\\) bits, while the constructed
@@ -761,12 +725,12 @@ randomness in \\(A\_1\\), state information (e.g. random coin used) is passed f
 (\mathsf{Gen},\mathsf{Enc},\mathsf{Dec})\\) has indistinguishable encryptions in
 the presence of an eavesdropper if for all \\(\mathsf{PPT}\\) adversaries \\(A\\), there
 exists a negligible function \\(negl(\cdot)\\) such that
-\\(\mathcal{P}r[\mathsf{PrivK}\_{A,\mathcal{P}i}^{eav}=1]\le 1/2 + negl(\kappa)\\), the probability is
+\\(\Pr[\mathsf{PrivK}\_{A,\mathcal{P}i}^{eav}=1]\le 1/2 + negl(\kappa)\\), the probability is
 over the choice of key \\(k\\), bit \\(b\\), randomness used in the encryption, and
 randomness used in \\(A\\). An alternative way of defining this is to state that for
 all \\(\mathsf{PPT}\\) adversaries \\(A\\), there exists a negligible function
 \\(negl(\cdot)\\) such that
-\\(\mathcal{P}r[D(1^\kappa,\mathsf{Enc}\_k(m\_0),state)=1]-\mathcal{P}r[D(1^\kappa,\mathsf{Enc}\_k(m\_1),state)=1]\le
+\\(\Pr[D(1^\kappa,\mathsf{Enc}\_k(m\_0),state)=1]-\Pr[D(1^\kappa,\mathsf{Enc}\_k(m\_1),state)=1]\le
 negl(\kappa)\\), where \\((m\_0,m\_1,state)\gets A\_1(1^\kappa)\\). The proof is similar
 to the one in the previous lecture. One point to note though, is that in the
 previous proof, \\(m\_0\\) and \\(m\_1\\) are arbitrary so long as they are not identical.
@@ -783,7 +747,7 @@ outputs a string of length \\(l(n)>n\\). We say that \\(g\\) is a pseudorandom
 generator (PRG) if for all \\(\mathsf{PPT}\\) distinguishers \\(D\\), there
 exists a negligible function \\(negl(\cdot)\\) such that
 
-\\[ |\mathcal{P}r[D(g(U\_n)=1)-\mathcal{P}r[D(U\_{l(n)})=1]|\leq \mathsf{negl}(n), \\]
+\\[ |\Pr[D(g(U\_n)=1)-\Pr[D(U\_{l(n)})=1]|\leq \mathsf{negl}(n), \\]
 
 where the probability is take over the random coins used by \\(D\\) and
 \\(U\_n\\) (respectively \\(U\_{l(n)}\\)). The difference between the output and
@@ -812,7 +776,7 @@ input lengths \\(l(n)-n\\) is called the stretch factor of \\(g\\).
     g(\\{0,1\\}^n)\\), then the advantage of the adversary is
 
     \begin{align\*}
-    \mathcal{P}r[D(g(U\_n))=1]-\mathcal{P}r[D(U\_{l(n)})=1] &= 1 - |g(\\{0,1\\}^n)|/2^{l(n)}\\\\
+    \Pr[D(g(U\_n))=1]-\Pr[D(U\_{l(n)})=1] &= 1 - |g(\\{0,1\\}^n)|/2^{l(n)}\\\\
      &\ge 1-2^{n-l(n)}\\\\
      &\ge 1/2\enspace.
     \end{align\*}
@@ -837,7 +801,7 @@ input lengths \\(l(n)-n\\) is called the stretch factor of \\(g\\).
     The proof is actually rather simple. Suppose that the result does not hold, then
     by contradiction, there exists a distinguisher \\(D\\) that runs in time at most
     \\(t-T\\), and distinguishes the two distributions with probability larger than
-    \\(\varepsilon\\), namely \\[ |\mathcal{P}r[D(f(X))=1]-\mathcal{P}r[D(f(Y))=1]|>\varepsilon. \\] This
+    \\(\varepsilon\\), namely \\[ |\Pr[D(f(X))=1]-\Pr[D(f(Y))=1]|>\varepsilon. \\] This
     already implies contradiction to the assumption. In order to see this, consider
     a distinguisher \\(D^\prime(\cdot)=D(f(\cdot))\\). This distinguisher will run in
     time at most \\(t\\), but will distinguish \\(X\\) and \\(Y\\) with probability greater than
@@ -921,8 +885,8 @@ distinguisher \\(D\\) with running time no more than \\(t-q\cdot\mathsf{poly}(n)
 advantage of \\(D\\) distinguishing $H_0 and \\(H\_q\\) is
 
 \begin{align\*}
- |\mathcal{P}r[D(H\_0)=1]-\mathcal{P}r[D(H\_q)=1]| &\leq
- \sum\_{i=1}^q|\mathcal{P}r[D(H\_{i-1})=1]-\mathcal{P}r[D(H\_i)=1]|\\\\
+ |\Pr[D(H\_0)=1]-\Pr[D(H\_q)=1]| &\leq
+ \sum\_{i=1}^q|\Pr[D(H\_{i-1})=1]-\Pr[D(H\_i)=1]|\\\\
  &\leq q\cdot\varepsilon\enspace,
 \end{align\*}
 
@@ -960,19 +924,19 @@ collision-entropy \\(\mathbf{H}\_2(X)\geq k\\), \\(\forall\delta: 0< \delta
 
 The answer to this question is given in the note of lecture 2. I think
 Prof. Yu's answer implies that the rest of the set
-\\(S:=\\{x|\mathcal{P}r[X=x]>1/\delta\cdot2^{-k}\\}\\) can be ignored in the
+\\(S:=\\{x|\Pr[X=x]>1/\delta\cdot2^{-k}\\}\\) can be ignored in the
 distribution of \\(Y\\). However, I think this will make the question
 rather disappointing, since constructing another distribution over the
 exact sample space of \\(X\\) seems like a stronger guarantee. This is why
 I argued about the upper bound of minimum probability in the previous
 answer. This guarantees that when putting the extra probability to the
 probability over the set \\(S\\), there exists an assignment that does not
-exceed the maximum probability requirement \\(\mathcal{P}r[Y=x]\le
+exceed the maximum probability requirement \\(\Pr[Y=x]\le
 1/\delta\cdot2^{-k}\\).
 
-Another point to note is that the result \\(\mathcal{P}r[X\in S]<\delta\\) can be treated as
+Another point to note is that the result \\(\Pr[X\in S]<\delta\\) can be treated as
 the result of Markov's inequality. This is because we can treat the collision
-probability as the expectation of random variable \\(\mathcal{P}r[X]\\), which is no more
+probability as the expectation of random variable \\(\Pr[X]\\), which is no more
 than \\(2^{-k}\\). And ergo the result.
 
 
@@ -988,7 +952,7 @@ Prof. Liu's lecture. Namely, given a function family
 -   Hard-to-Invert: for every \\(\mathsf{PPT} A\\), there exists a
     negligible function \\(negl(\cdot)\\) such that
 
-    \\[ \mathcal{P}r\_{X\gets U\_n,x^\prime\gets A(1^n,f(X))}[f(x)=f(x^\prime)]\le
+    \\[ \Pr\_{X\gets U\_n,x^\prime\gets A(1^n,f(X))}[f(x)=f(x^\prime)]\le
       negl(n). \\]
 
 Despite the similarity, Prof. Yu did argued in the handout that the
@@ -1041,7 +1005,7 @@ The definition of hard-core predicate is as follows. A polynomial-time
 computable predicate \\(h\_c:\\{0,1\\}^n\to \\{0,1\\}\\) is called a hard-core
 predicate of a function \\(f\\) if for every \\(\mathsf{PPT}\\) algorithm \\(A\\),
 there exists a negligible function \\(negl(\cdot)\\) such that \\[
-\mathcal{P}r\_{X\gets U\_n}[A(1^n,f(X)=h\_c(X)]\leq 1/2+negl(n), \\] where the
+\Pr\_{X\gets U\_n}[A(1^n,f(X)=h\_c(X)]\leq 1/2+negl(n), \\] where the
 probability is take over the choice of \\(X\\) and the random coins of
 \\(A\\).
 
@@ -1065,16 +1029,13 @@ remove the loss in running time limit. The proof is as follows.
 Suppose by contradiction, there is a \\(\mathsf{PPT}\\) adversary \\(A\\) of
 running time \\(t(n)\\) that can distinguish pseudorandomness such that
 
-\begin{equation\*}
-\mathcal{P}r\_{X\gets U\_n}[A(f(X),h\_c(X))=1]-
-\mathcal{P}r\_{X\_1\gets U\_{n}, X\_2\gets U\_1}[A(X\_1,X\_2)=1]>
-\varepsilon(n)\enspace.
-\end{equation\*}
+\\[ \Pr\_{X\gets U\_n}[A(f(X),h\_c(X))=1]- \Pr\_{X\_1\gets U\_{n}, X\_2\gets
+U\_1}[A(X\_1,X\_2)=1]> \varepsilon(n)\enspace.  \\]
 
 Observe the latter probability can be written as \\[
-1/2\cdot\mathcal{P}r[A(X\_1,h\_c(X\_1))] + 1/2\cdot\mathcal{P}r[A(X\_1,1\oplus h\_c(X\_1))],
-\\] which means \\[ 1/2\cdot\mathcal{P}r\_{X\gets
-U\_n}[A(f(X),h\_c(X))=1]-1/2\cdot\mathcal{P}r[A(X\_1,1\oplus
+1/2\cdot\Pr[A(X\_1,h\_c(X\_1))] + 1/2\cdot\Pr[A(X\_1,1\oplus h\_c(X\_1))],
+\\] which means \\[ 1/2\cdot\Pr\_{X\gets
+U\_n}[A(f(X),h\_c(X))=1]-1/2\cdot\Pr[A(X\_1,1\oplus
 h\_c(X\_1))]>\varepsilon(n)\enspace. \\] Now construct a \\(\mathsf{PPT}\\)
 algorithm \\(D\\) that computes the hardcode bit of input, given the
 output of the one-way permutation. After \\(D\\) gets its input \\(f(X)\\), it
@@ -1085,11 +1046,11 @@ output \\(1\oplus b\\).
 The probability that \\(D\\) succeed is as follows,
 
 \begin{align\*}
-\mathcal{P}r\_{X,b,r}[\text{D wins}]&=\mathcal{P}r[b=h\_c(X)]\cdot
- \mathcal{P}r[b^\prime=1|b=h\_c(X)]+\mathcal{P}r[b=1\oplus h\_c(X)]\cdot
- \mathcal{P}r[b^\prime=0|b=1\oplus h\_c(X)]\\\\
- &=1/2\cdot\mathcal{P}r[A(f(X),h\_c(X))=1]+
- 1/2\cdot(1-\mathcal{P}r[A(f(X),1\oplus h\_c(X))=1])\\\\
+\Pr\_{X,b,r}[\text{D wins}]&=\Pr[b=h\_c(X)]\cdot
+ \Pr[b^\prime=1|b=h\_c(X)]+\Pr[b=1\oplus h\_c(X)]\cdot
+ \Pr[b^\prime=0|b=1\oplus h\_c(X)]\\\\
+ &=1/2\cdot\Pr[A(f(X),h\_c(X))=1]+
+ 1/2\cdot(1-\Pr[A(f(X),1\oplus h\_c(X))=1])\\\\
  &>1/2 + \varepsilon(n)\enspace.
  \end{align\*}
 
@@ -1104,7 +1065,7 @@ And that contradicts the assumption that \\(h\_c(\cdot)\\) is a
     implies pseudorandomness. Actually the result works in the other direction as
     well. Namely, for a pseudorandom generator \\(g:\\{0,1\\}^n\to\\{0,1\\}^{l(n)}\\),
     \\(\forall i \in [l(n)-1]\\), \\(\forall \mathsf{PPT} A\\), there exists a negligible
-    function \\(negl(\cdot)\\), such that \\[ \mathcal{P}r\_{X\gets
+    function \\(negl(\cdot)\\), such that \\[ \Pr\_{X\gets
     U\_n}[A(f(X)\_{[1:i]})=f(X)\_{[i+1]}] \le 1/2 + negl(n). \\] This is actually quite
     trivial (which I failed to realize after it was brought up in class, when
     Prof. Yu noticed me mumbling, as if I knew how to prove it, but it turned out I
@@ -1113,7 +1074,7 @@ And that contradicts the assumption that \\(h\_c(\cdot)\\) is a
     the construction of pseudorandom distinguisher \\(D\\), apply the first \\(i\\) bits of
     the input to \\(A\\) and output \\(1\\) if the predicted bit equals \\(f(X)\_{[i+1]}\\). The
     probability of \\(D\\) outputting \\(1\\) in the case of real randomness is \\(1/2\\), and
-    in the pseudorandom case, it is \\(\mathcal{P}r\_{X\gets
+    in the pseudorandom case, it is \\(\Pr\_{X\gets
     U\_n}[A(f(X)\_{[1:i]})=f(X)\_{[i+1]}]\\). It is obvious that the advantage of the
     adversary is non-negligible.
 
@@ -1146,23 +1107,23 @@ There is one remaining problem to be solved. I think the number of guesses
 guaranteed).
 
 The proof is as follows. Suppose by contradiction there exists a \\(\mathsf{PPT}\\)
-algorithm \\(A\\) such that \\[ \mathcal{P}r\_{x\gets U\_n,r\gets
+algorithm \\(A\\) such that \\[ \Pr\_{x\gets U\_n,r\gets
 U\_n}[A(f(x),r)=\mathsf{gl}(x,r)]>1/2+\varepsilon(n), \\] where the probability is
 taken over the choice of \\(x, r​\\) and the internal random coins of \\(A​\\). We first
 argue there exists a set \\(S​\\) of size \\(|S| \ge \varepsilon(n)/2​\\) such that
-\\(\forall x \in S, \mathcal{P}r\_{r\gets
+\\(\forall x \in S, \Pr\_{r\gets
 U\_n}[A(f(x),r)=\mathsf{gl}(x,r)]>1/2+\varepsilon(n)/2​\\). This is due to Markov's
 inequality (not the normal form, since the direction of inequality is inversed).
 Note that
 
 \begin{align\*}
-\mathcal{P}r\_{x\gets U\_n,r\gets U\_n}[A(f(x),r)=\mathsf{gl}(x,r)]
-&=\sum\_{x}\mathcal{P}r[X=x]\cdot\mathcal{P}r\_{r\gets U\_n}[A(f(x),r)=\mathsf{gl}(x,r)]\\\\
- &\le\mathcal{P}r[X\not\in S]\cdot(1/2+\varepsilon(n)/2)+\mathcal{P}r[X\in S]\\\\
- &\le 1/2+\varepsilon(n)/2 +\mathcal{P}r[X\in S]\enspace,
+\Pr\_{x\gets U\_n,r\gets U\_n}[A(f(x),r)=\mathsf{gl}(x,r)]
+&=\sum\_{x}\Pr[X=x]\cdot\Pr\_{r\gets U\_n}[A(f(x),r)=\mathsf{gl}(x,r)]\\\\
+ &\le\Pr[X\not\in S]\cdot(1/2+\varepsilon(n)/2)+\Pr[X\in S]\\\\
+ &\le 1/2+\varepsilon(n)/2 +\Pr[X\in S]\enspace,
 \end{align\*}
 
-which means \\(\mathcal{P}r[X\in S]\ge \varepsilon(n)/2\\). Conditioned on
+which means \\(\Pr[X\in S]\ge \varepsilon(n)/2\\). Conditioned on
 \\(X\in S\\), we construct the following efficient algorithm that can invert \\(f\\)
 given \\(f(x):x\in S\\) with probability no less than \\(\varepsilon(n)^2/16n\\) (in the
 handout this is \\(\varepsilon(n)^2/8n\\) but I think that might have a tiny
@@ -1202,30 +1163,30 @@ probability that voting on bit \\(x\_j\\) succeeds. Recall that we have
 already proved
 
 \begin{align\*}
-\mathcal{P}r\_{X\gets U\_n}[A^\prime(f(X)) = X]&\ge\mathcal{P}r\_{X\gets U\_n}[X\in S]\cdot\min\_{x\in
-S}\mathcal{P}r[A^\prime(x)=x]\\\\
+\Pr\_{X\gets U\_n}[A^\prime(f(X)) = X]&\ge\Pr\_{X\gets U\_n}[X\in S]\cdot\min\_{x\in
+S}\Pr[A^\prime(x)=x]\\\\
  &\ge \varepsilon(n)/2 \cdot\varepsilon(n)^2/8n
  \cdot\min\_{x\in S}
- \mathcal{P}r[x^\prime\_1=x\_1\land x^\prime\_2=x\_2\land\ldots\land x^\prime\_n=x\_n]\\\\
+ \Pr[x^\prime\_1=x\_1\land x^\prime\_2=x\_2\land\ldots\land x^\prime\_n=x\_n]\\\\
  &=\varepsilon(n)/2 \cdot\varepsilon(n)^2/8n\cdot
  (1- \min\_{x\in S}
- \mathcal{P}r[x^\prime\_1\ne x\_1\lor x^\prime\_2\ne x\_2
+ \Pr[x^\prime\_1\ne x\_1\lor x^\prime\_2\ne x\_2
  \lor\ldots\lor x^\prime\_n\ne x\_n])\\\\
  &\ge\varepsilon(n)/2 \cdot\varepsilon(n)^2/8n\cdot
- (1- \sum\_{i\in[n]}\mathcal{P}r[x^\prime\_i\ne x\_i])\enspace,
+ (1- \sum\_{i\in[n]}\Pr[x^\prime\_i\ne x\_i])\enspace,
 \end{align\*}
 
 where from the second line the probability is conditioned on all \\(\sigma^i\\)'s
 are correct guesses and the last inequality is from union bound and the
 requirement of \\(x\\) is from the previous equation. It suffices to prove for any
-\\(x\in S\\), \\(\mathcal{P}r[x^\prime\_i\ne x\_i]\le 1/2n\\) for all \\(i\in [n]\\), and we will prove
+\\(x\in S\\), \\(\Pr[x^\prime\_i\ne x\_i]\le 1/2n\\) for all \\(i\in [n]\\), and we will prove
 it below.
 
 Note that in the third step of \\(A^\prime\\), if the \\(j^{\text{th}}\\) bit of \\(x\\) is
 \\(0\\), then adding \\(e\_j\\) to \\(r^{\mathcal{I}}\\) does not change the hard-core bit,
 and the output \\(v\_j^{\mathcal{I}}\\) will be \\(0\\). On the other hand, if \\(x\_j = 1\\),
 then the output will be inverted and \\(v\_j^{\mathcal{I}}=1\\). This means \\[
-\mathcal{P}r[v\_j^{\mathcal{I}}\text{ is correct}] = \mathcal{P}r[A(f(x),r^{\mathcal{I}}) =
+\Pr[v\_j^{\mathcal{I}}\text{ is correct}] = \Pr[A(f(x),r^{\mathcal{I}}) =
 \mathsf{gl}(x,r^\mathcal{I})] \ge1/2+\varepsilon(n)/2. \\] Let \\(m = 2^{l}-1 >
 2n/\varepsilon(n)^2\\), which is the number of candidates for the majority voting,
 and denote \\(\mathsf{E}^\mathcal{I}\\) be the event that \\(v\_j^{\mathcal{I}}\\) is
@@ -1234,10 +1195,10 @@ pairwise independent. Now we analyze the probability of the event that less than
 half of the \\(v\_j^{\mathcal{I}}\\)'s are correct, which is
 
 \begin{align\*}
-\mathcal{P}r[\sum\_{\mathcal{I}\in[l]}\mathsf{E}^{\mathcal{I}}<m/2] &=
-\mathcal{P}r[\sum\_{\mathcal{I}\in[l]}\mathsf{E}^{\mathcal{I}}-m\mu<m/2-m\mu]\\\\
- &\le\mathcal{P}r[\sum\_{\mathcal{I}\in[l]}\mathsf{E}^{\mathcal{I}}-m\mu<-m\cdot\varepsilon(n)/2]\\\\
- &\le\mathcal{P}r[|\sum\_{\mathcal{I}\in[l]}\mathsf{E}^{\mathcal{I}}-m\mu|>m\cdot\varepsilon(n)/2]\\\\
+\Pr[\sum\_{\mathcal{I}\in[l]}\mathsf{E}^{\mathcal{I}}<m/2] &=
+\Pr[\sum\_{\mathcal{I}\in[l]}\mathsf{E}^{\mathcal{I}}-m\mu<m/2-m\mu]\\\\
+ &\le\Pr[\sum\_{\mathcal{I}\in[l]}\mathsf{E}^{\mathcal{I}}-m\mu<-m\cdot\varepsilon(n)/2]\\\\
+ &\le\Pr[|\sum\_{\mathcal{I}\in[l]}\mathsf{E}^{\mathcal{I}}-m\mu|>m\cdot\varepsilon(n)/2]\\\\
  &\le \frac{Var(\sum\_{\mathcal{I}\in[l]}\mathsf{E}^{\mathcal{I}})}
  {(m\cdot\varepsilon(n)/2)^2}.
 \end{align\*}
@@ -1251,7 +1212,7 @@ The last inequality is due to Chebyshev's inequality. Note that since each two
 Bringing that to the equation above, we have
 
 \begin{align\*}
-\mathcal{P}r[\sum\_{\mathcal{I}\in[l]}\mathsf{E}^{\mathcal{I}}<m/2] &\le
+\Pr[\sum\_{\mathcal{I}\in[l]}\mathsf{E}^{\mathcal{I}}<m/2] &\le
 \frac{Var(\sum\_{\mathcal{I}\in[l]}\mathsf{E}^{\mathcal{I}})}{(m\cdot\varepsilon(n)/2)^2}\\\ &\le\frac{m\cdot1/4}{m^2\cdot\varepsilon(n)^2\cdot1/4}\\\ &\le\frac{1}{2n/\varepsilon(n)^2\cdot\varepsilon(n)^2}\\\ &=1/2n.
 \end{align\*}
 
@@ -1320,15 +1281,15 @@ from KL book.
 
     Assuming \\(f:\\{0,1\\}^n\to\\{0,1\\}^{l(n)}​\\) is a one-way function (family), it
     follows from one-wayness that for all \\(\mathsf{PPT}​\\) algorithm \\(A​\\), there exists
-    a negligible function \\(negl(\cdot)​\\) such that \\[ \mathcal{P}r\_{X\gets U\_n,x^\prime\gets
+    a negligible function \\(negl(\cdot)​\\) such that \\[ \Pr\_{X\gets U\_n,x^\prime\gets
     A(f(X))}[f(x^\prime)=f(X)] < negl(n). \\] Now construct another function
     \\(f^\prime:\\{0,1\\}^n\to\\{0,1\\}^{l(n)}\\) that behaves exactly like \\(f\\) except on
     \\(x=0^n\\), where it outputs \\(0^{l(n)}\\). For any \\(\mathsf{PPT}\\) algorithm \\(A\\), the
     success probability of inverting \\(f^\prime\\) is
 
     \begin{align\*}
-    \mathcal{P}r\_{X\gets U\_n,x^\prime\gets
-    A(f^\prime(X))}[f^\prime(x^\prime)=f^\prime(X)]\leq2^{-n}+\mathcal{P}r\_{X\gets
+    \Pr\_{X\gets U\_n,x^\prime\gets
+    A(f^\prime(X))}[f^\prime(x^\prime)=f^\prime(X)]\leq2^{-n}+\Pr\_{X\gets
     U\_n,x^\prime\gets A(f(X))}[f(x^\prime)=f(X)]\enspace,
     \end{align\*}
 
@@ -1447,9 +1408,7 @@ useful tools in TCS in general.
 Godel prize topics:
 
 -   Natural proof -- problems that are hard to prove or disprove,
-    natural proof
-
-proves that the proof itself is hard.
+    natural proof proves that the proof itself is hard.
 
 Cryptography is not all like mathematics. In crypto, people are only
 concerned with moderate problems, and efficient algorithms.
@@ -1476,22 +1435,20 @@ verison is more versatile.
 
 #### Basic primitives: {#basic-primitives}
 
--   one-way function: for randomly chosen pre-image, it is hard to find any
-
-pre-image correponding to the image.
-
+-   one-way function: for randomly chosen pre-image, it is hard to find
+    any pre-image correponding to the image.
 -   pseudorandom generator: randomness amplification
 -   pseudorandom function: PRG, but even better
 
 
 #### Some basic tasks: {#some-basic-tasks}
 
--   encryption: transformation of message that protects message against evasdroppers
--   MAC/Signature: protect message integrity the previous is the symmetric case
-
-while the latter one is public-key case
-
--   Secure computation: protect input privacy while preserving functionality
+-   encryption: transformation of message that protects message against
+    evasdroppers
+-   MAC/Signature: protect message integrity the previous is the
+    symmetric case while the latter one is public-key case
+-   Secure computation: protect input privacy while preserving
+    functionality
 
 
 #### Applications: {#applications}
@@ -1523,9 +1480,8 @@ beforehand.
 -  Properties:
 
     -   Correctness: BPP or P
-    -   Security: passive or active, computaitonally bounded or unbounded (not like
-
-    oracles)
+    -   Security: passive or active, computaitonally bounded or unbounded
+        (not like oracles)
 
 <!--list-separator-->
 
@@ -1585,7 +1541,8 @@ The dawn of modern cryptogrphy: DH, RSA.
 
 Decisional DH assumption: \\((g^x, g^y, g^{xy}) \sim (g^x, g^y, g^z)\\)
 
-Pseudorandomness to break shannon's barrier: BMY generator (hybrid argument)
+Pseudorandomness to break shannon's barrier: BMY generator (hybrid
+argument)
 
 
 #### The hierarchy of cryptography {#the-hierarchy-of-cryptography}
@@ -1596,19 +1553,21 @@ Pseudorandomness to break shannon's barrier: BMY generator (hybrid argument)
 -   Minicrypt: exists OWF
 -   Cryptomania: exists PKC and MPC
 
-One-way functions: the minimal assumption for cryptography. Notice this is in
-the average case sense. HILL theorem states that OWF implies PRG.
+One-way functions: the minimal assumption for cryptography. Notice
+this is in the average case sense. HILL theorem states that OWF
+implies PRG.
 
 
 #### Not all cryptographic primitive has secret {#not-all-cryptographic-primitive-has-secret}
 
 CRHF: hard to find collision for a random instance of hash function.
-\\[\mathcal{P}r\_{h\gets H}[A(h)=(x,x^\prime): x\neq x^\prime, h(x) =
+\\[\Pr\_{h\gets H}[A(h)=(x,x^\prime): x\neq x^\prime, h(x) =
 h(x^\prime)]\\]
 
 Practical instantiations of CRHF: MD5, SHA1, SHA256, SHA3
 
-But what about a family of algorithms? This is due to definitional problems.
+But what about a family of algorithms? This is due to definitional
+problems.
 
 
 #### Two party computation {#two-party-computation}
@@ -1656,7 +1615,7 @@ Bob (the sender): \\(s\_1,e\_1\gets B\_\mu^n\\) \\(c\_1 = a\cdot s\_1 + e\_1\\),
 Security is easy to prove since all the messages are LPN instances or
 hard core bits.
 
-Piling-up lemma: for \\(x,y\gets B\_\mu^{2n}\\): \\(\mathcal{P}r[x^T\cdot y =
+Piling-up lemma: for \\(x,y\gets B\_\mu^{2n}\\): \\(\Pr[x^T\cdot y =
 0]\ge 1/2 + 2^{O(-n\mu^2)}\\).
 
 
@@ -1742,29 +1701,25 @@ Proof hard to prove
 
 -  Examples
 
-    1.  Shows the number of primes are infinite
+    1.  Shows the number of primes are infinite Use simple proof technique
+    2.  For sequentially ordered primes \\(p\_1,\ldots,p\_n\\), is \\(p\_1\cdot p\_2
+           \cdot \ldots \cdot p\_n \pm 1\\) prime as well?  No, the prime list is
+        not complete. Related problems are twin prime conjecture.
+    3.  Binary linear code. A binary (m,n)-code has dimension n and length
+        m. The generator matrix is of size n by m.
 
-    Use simple proof technique
+    Nearest Codeword Problem (NCP): given the generator matrix C and noisy
+    codeword \\(t^T = s^T \cdot C + x^T\\). Noise x is limited by its hamming
+    weight which is exactly \\(d\\). The solution is \\(s^\prime\\) such that
 
-    1.  For sequentially ordered primes \\(p\_1,\ldots,p\_n\\), is
+    \\[ s^T \cdot C + x^T = s^{\prime T} \cdot C + x^{\prime T} \\]
 
-    \\(p\_1\cdot p\_2 \cdot \ldots \cdot p\_n \pm 1\\) prime as well?
+    Show most linear codes have unique decoding when codeword length \\(m\\)
+    is large enough.
 
-    No, the prime list is not complete. Related problems are twin prime conjecture.
+    {{< figure src="/ox-hugo/NCP_LPN.png" caption="<span class=\"figure-number\">Figure 5: </span>Proof of Unique Decoding of LPN" >}}
 
-    1.  Binary linear code
-
-    A binary (m,n)-code has dimension n and length m. The generator matrix is of
-    size n by m.
-
-    Nearest Codeword Problem (NCP): given the generator matrix C and noisy codeword
-    \\(t^T = s^T \cdot C + x^T\\). Noise x is limited by its hamming weight which is
-    exactly \\(d\\). The solution is \\(s^\prime\\) such that \\[ s^T \cdot C + x^T =
-    s^{\prime T} \cdot C + x^{\prime T} \\]
-
-    Show most linear codes have unique decoding when codeword length m is large
-    enough. ![](/ox-hugo/NCP_LPN.png) This is an example of existential
-    probablistic proof.
+    This is an example of existential probablistic proof.
 
 
 #### Notations on rv's and sets {#notations-on-rv-s-and-sets}
@@ -1803,13 +1758,8 @@ success probability is some inverse of **super-polynomial** function.
 A function \\(f\\) is superpolynomial if for every constant \\(c>0\\) and all
 sufficiently large \\(n\\) we have \\(f(n) > n^c\\).
 
-Negligible function is the inverse of some superpolynomial.
-
-<!--list-separator-->
-
--  Examples
-
-    Like \\(2^{n/2}\\), \\(n^{\log n}\\)
+Negligible function is the inverse of some
+superpolynomial. E.g. \\(2^{n/2}\\), \\(n^{\log n}\\)
 
 
 #### Overwhelming and non-negligible {#overwhelming-and-non-negligible}
@@ -1819,21 +1769,20 @@ overwhelming
 
 non-negligible
 : not negligible (larger than some polynomial for
-
-infinitely-many n's)
+    infinitely-many n's)
 
 noticible
 : larger than some inverse of polynomial
 
-example of non-negligible but non-noticible function: "punch-out" function at
-all even / odd points.
+Example of non-negligible but non-noticible function: "punch-out"
+function at all even / odd points.
 
 
-#### asymptotic functions {#asymptotic-functions}
+#### Asymptotic functions {#asymptotic-functions}
 
 big-oh notations.
 
-| asymptotic   | meaning    |
+| Asymptotic   | Meaning    |
 |--------------|------------|
 | \\(o\\)      | \\(\leq\\) |
 | \\(\omega\\) | \\(\geq\\) |
@@ -1855,7 +1804,7 @@ Usual mathematical objects are functions of the security parameter.
 
 Union Bound:
 
-Markov Bound: \\(\mathcal{P}r[X \ge \delta \mathbb{E}[X] ]\le 1/\delta\\)
+Markov Bound: \\(\Pr[X \ge \delta \mathbb{E}[X] ]\le 1/\delta\\)
 
 
 #### Chebyshev's Inequality {#chebyshev-s-inequality}
@@ -1876,9 +1825,9 @@ Extreme cases: \\(\mu = 0\\) nothing changes; one \\(\mu = 1/2\\) then the resul
 random.
 
 Fact 1.
-: For any \\(0\le x \le 1\\) it holds that \\(\log\_2 (1+x) \ge x\\)
+: For any \\(0\le x \le 1\\) it holds that \\(\log\_2 (1+x) \ge
+      x\\).  For any \\(x > -1\\) we have \\(\log (1+x) \le x / \ln 2\\)
 
-For any \\(x > -1\\) we have \\(\log (1+x) \le x / \ln 2\\)
 
 Fact 2.
 : Binominal approximation
@@ -1892,8 +1841,8 @@ Fact 2.
 
 ### How to do last lecture's homework {#how-to-do-last-lecture-s-homework}
 
-If C is a random matrix, then Cr is uniformly random. The answer will not be
-distributed today, though.
+If C is a random matrix, then Cr is uniformly random. The answer will
+not be distributed today, though.
 
 
 ### Statistical distance / indistinguishability and the LHL {#statistical-distance-indistinguishability-and-the-lhl}
@@ -1903,9 +1852,8 @@ First define the indistinguishability experiment.
 There are three levels of security:
 
 Unconditionally secure / information-theoretically secure
-: advantage has
-
-zero advantage
+: advantage
+    has zero advantage
 
 Statistically secure
 : adversary has negligible advantage
@@ -1915,13 +1863,14 @@ Computationally secure
 
 The experiment here is about private key encryption
 
-{{< figure src="/ox-hugo/PrivK.png" caption="<span class=\"figure-number\">Figure 5: </span>Private Key Encryption Experiment" >}}
+{{< figure src="/ox-hugo/PrivK.png" caption="<span class=\"figure-number\">Figure 6: </span>Private Key Encryption Experiment" >}}
 
-The adversary's advantage is \\(\mathsf{Adv}{eav}{\mathcal{A},\mathcal{P}i} =
-\mathcal{P}r[b^\prime = b] -1/2\\) Notice here the adversary is considered to be
-all-powerful, and so it can determine which random coin is the most
-advantageous, and so it doesnot has to be a randomized algorithm, or to keep
-state information.
+The adversary's advantage is
+\\(\mathsf{Adv}{eav}{\mathcal{A},\mathcal{P}i} = \Pr[b^\prime = b] -1/2\\)
+Notice here the adversary is considered to be all-powerful, and so it
+can determine which random coin is the most advantageous, and so it
+doesnot has to be a randomized algorithm, or to keep state
+information.
 
 The above algorithm can also be transformed into an indistinguishability game,
 such that the same \\(\varepsilon\\) is still the bound. We can use conditional
@@ -1939,41 +1888,40 @@ any adversary's advantage is zero.
 
 For two distributions X,Y, the statistical distance is defined as:
 
-\\[\mathsf{SD}(X,Y):=1/2 \sum\_x \left|\mathcal{P}r[X=x]-\mathcal{P}r[Y=x]\right|\\]
+\\[\mathsf{SD}(X,Y):=1/2 \sum\_x \left|\Pr[X=x]-\Pr[Y=x]\right|\\]
 
-And we can define conditional statistical
-distance \\(\mathsf{SD}(X,Y|Z):= \mathsf{SD}((X,Z),(Y,Z))\\).
+And we can define conditional statistical distance
+\\(\mathsf{SD}(X,Y|Z):= \mathsf{SD}((X,Z),(Y,Z))\\).
 
-The 1/2 in the definition is to normalize the output to the range of [0,1].
+The 1/2 in the definition is to normalize the output to the range of
+[0,1].
 
-SD provides a upper bound of the advantage of distinguishing two distributions.
-This can be seen as \\(D\\) defines a distribution on the support. The best we can
-do is to let it maximize the success probability (in the distinguishing game) on
-every input.
+SD provides a upper bound of the advantage of distinguishing two
+distributions.  This can be seen as \\(D\\) defines a distribution on the
+support. The best we can do is to let it maximize the success
+probability (in the distinguishing game) on every input.
 
 SD is a metric since it has:
 
 -   non-negativity
 -   identity of indiscernibles
 -   symmetry
--   \\(\mathsf{SD}(X,Z) \leq \mathsf{SD}(X,Y) + \mathsf{SD}(Y,Z)\\)
-
-Furthermore, it has the following property:
-
-no greater than one
-: the equality holds when supports of \\(X,Y\\) are disjoint.
-
-replacement
-: for every function \\(f\\), \\(\mathsf{SD}(f(X),f(Y))\leq\mathsf{SD}(X,Y)\\)
+-   \\(\mathsf{SD}(X,Z) \leq \mathsf{SD}(X,Y) +
+      \mathsf{SD}(Y,Z)\\) Furthermore, it has the following property:
+-   the equality holds when supports of \\(X,Y\\) are
+    disjoint.
+-   for every function \\(f\\),
+    \\(\mathsf{SD}(f(X),f(Y))\leq\mathsf{SD}(X,Y)\\)
 
 
 #### Statistical Security for OTP {#statistical-security-for-otp}
 
-An application of replacement lemma can prove the indistinguishability when
-replacing the key distribution from uniformly random to statistically close to
-uniformly random. This can be understood intuitively by that the two ciphertexts
-are both \\(\varepsilon\\) close to the uniform distribution, and they are at most
-\\(2\varepsilon\\) far away.
+An application of replacement lemma can prove the indistinguishability
+when replacing the key distribution from uniformly random to
+statistically close to uniformly random. This can be understood
+intuitively by that the two ciphertexts are both \\(\varepsilon\\) close
+to the uniform distribution, and they are at most \\(2\varepsilon\\) far
+away.
 
 
 ### Entropy {#entropy}
@@ -1985,18 +1933,20 @@ Renyi entropy of order \\(\alpha \ge 0\\) and \\(\alpha \ne 1\\) is defined as:
 : we have max-entropy;
 
 \\(\alpha = 2\\)
-: we have collision entropy, i.e. \\(-\log(\sum\_i p\_i^2)\\);
+: we have collision entropy, i.e. \\(-\log(\sum\_i
+      p\_i^2)\\);
 
 \\(\alpha \to 1\\)
 : it converges to Shannon entropy;
 
 \\(\alpha \to \infty\\)
-: we have min-entropy, minus log of the maximum entropy.
+: we have min-entropy, minus log of the maximum
+    probability.
 
-A classical example: a key that has 1/2 probability to take all zeros, and the
-other cases uniform over all other possibilities. It has about n/2 Shannon
-entropy, but still a very bad key source. We should instead focus on
-min-entropy.
+A classical example: a key that has 1/2 probability to take all zeros,
+and the other cases uniform over all other possibilities. It has about
+n/2 Shannon entropy, but still a very bad key source. We should
+instead focus on min-entropy.
 
 
 ### Two lemmas about indistinguishability {#two-lemmas-about-indistinguishability}
@@ -2013,39 +1963,40 @@ min-entropy.
 
 X is \\(\epsilon\\) -unpredictable conditioned on \\(Z\\) means that
 
-\\[\mathcal{P}r[\mathcal{A}(1^n, Z) = X]\le \varepsilon\\]
+\\[\Pr[\mathcal{A}(1^n, Z) = X]\le \varepsilon\\]
 
 And its entropic counterpart:
 
-\\[H\_{\infty}(X|Z):=-\log(\mathbb{E}[\max\_x{\mathcal{P}r[X=x|Z=z]}])\\]
+\\[H\_{\infty}(X|Z):=-\log(\mathbb{E}[\max\_x{\Pr[X=x|Z=z]}])\\]
 
 
 ### Randomness Extractors {#randomness-extractors}
 
-Since min-entropy is not so good, can we extract unifrom randomness from flawed
-sources? This is called a randomness extractor.
+Since min-entropy is not so good, can we extract unifrom randomness
+from flawed sources? This is called a randomness extractor.
 
 Unfortunately, a deterministic randomness extractor does not exist.
 
-So, extractors must be probablistic. \\((n,k,m,d,\varepsilon)\\) extractor. Invest
-d-bit randomness, when input is n-bit with k-bit min-entropy, the output is
-\\(varepsilon\\) close to \\(U\_m\\).
+So, extractors must be probablistic. \\((n,k,m,d,\varepsilon)\\)
+extractor. Invest d-bit randomness, when input is n-bit with k-bit
+min-entropy, the output is \\(varepsilon\\) close to \\(U\_m\\).
 
 
 ### Universal Hash Functions {#universal-hash-functions}
 
 A family of hash functions \\(H\subseteq \\{h:\\{0,1\\}^l\to\\{0,1\\}^t\\}\\) is
-called unifersal hash function if for every pair of distinct input \\(x\_1,x\_2\\), we
-have \\[\mathcal{P}r[h(x\_1) = h(x\_2):h\leftarrow H]\le 1/2^t\\] A trivial example of hash
-function based on multiplication over finite field \\(\mathbb{F}\_2^n\\).
+called unifersal hash function if for every pair of distinct input
+\\(x\_1,x\_2\\), we have \\[\Pr[h(x\_1) = h(x\_2):h\leftarrow H]\le 1/2^t\\] A
+trivial example of hash function based on multiplication over finite
+field \\(\mathbb{F}\_2^n\\).
 
 
 ### Leftover Hash Lemma {#leftover-hash-lemma}
 
 For any integer \\(d \le k \le l\\), let \\(H\subseteq
-\\{h:\\{0,1\\}^l\to\\{0,1\\}^{k-d}\\}\\) be a family of universal hash functions,
-then for any r.v. \\(X\\) defined over \\(\\{0,1\\}^l\\) with min-entropy at least
-k-bit, then it holds that
+\\{h:\\{0,1\\}^l\to\\{0,1\\}^{k-d}\\}\\) be a family of universal hash
+functions, then for any r.v. \\(X\\) defined over \\(\\{0,1\\}^l\\) with
+min-entropy at least k-bit, then it holds that
 
 \\[\mathsf{SD}(H(X),U\_{k-d}|H) \leq 2^{-1-d/2}\\]
 
@@ -2054,10 +2005,11 @@ The proof is deferred to the next lecture.
 
 ### Privacy Amplification {#privacy-amplification}
 
-This is an application of LHL. Say Alice and Bob shares non-perfect source, they
-can publicly sample a random hash function, and then transform their imperfect
-randomness into randomness that is statistically close to uniform random. This
-can then subsequently used as, say private key.
+This is an application of LHL. Say Alice and Bob shares non-perfect
+source, they can publicly sample a random hash function, and then
+transform their imperfect randomness into randomness that is
+statistically close to uniform random. This can then subsequently used
+as, say private key.
 
 
 ## Lecture 4 {#lecture-4}
@@ -2069,11 +2021,13 @@ Two definitions (interactive game or indistinguishability plain) of
 indistinguishability is equivalent. All of them can be generalized to
 computational sense.
 
-Statistical distance: difference between two distributions. The greatest
-advantage is to output 1 every time \\(\mathcal{P}r[X=x] > \mathcal{P}r[Y=x]\\), which is SD.
+Statistical distance: difference between two distributions. The
+greatest advantage is to output 1 every time \\(\Pr[X=x] > \Pr[Y=x]\\),
+which is SD.
 
-Statistical secure OTP: using randomness statistically close to uniform to
-replace the random key. The advantage is times 2 since we uses a hybrid.
+Statistical secure OTP: using randomness statistically close to
+uniform to replace the random key. The advantage is times 2 since we
+uses a hybrid.
 
 Entropy: Renyi Entropy
 
@@ -2094,7 +2048,8 @@ Biased towards 1
 Bit-vector XOR
 : still independent
 
-\\[\mathsf{SD}(\mathop\oplus\_i X\_i, U\_n) = 1/2 \prod\_i (2\mathsf{SD}(X\_i, U\_n))\\]
+\\[\mathsf{SD}(\mathop\oplus\_i X\_i, U\_n) = 1/2 \prod\_i
+(2\mathsf{SD}(X\_i, U\_n))\\]
 
 
 #### Randomness Extractors {#randomness-extractors}
@@ -2110,7 +2065,7 @@ it holds that
 
 \\[\mathsf{SD}(H(X),U\_{k-s} | H) \le 2^{-1-d/2}\\]
 
-Proof. Using Cauchy Inequality, then collision probability, and finally
+**Proof.** Using Cauchy Inequality, then collision probability, and finally
 collision entropy is big enough (\\(\geq k\\)).
 
 In some proof the \\(1/2\\) coefficient is skipped for simplicity.
@@ -2118,34 +2073,37 @@ In some proof the \\(1/2\\) coefficient is skipped for simplicity.
 
 #### Conditional LHL {#conditional-lhl}
 
-chain rule of min-entropy: for any \\(Z\in\\{0,1\\}^L\\), we have \\[\mathbf{H}\_{\infty}(Z)
-\ge \mathbf{H}\_{\infty}(X) - L\\]
+Chain rule of min-entropy: for any \\(Z\in\\{0,1\\}^L\\), we have
 
-Proof 1. Suppose contradiction, first guess Z, whose success probability is more
-than \\(1/2^L\\), and then use this as leakage to guess \\(X\\), which will have success
-probability greater than \\(2^{-\mathbf{H}\_{\infty}(X)}\\)
+\\[\mathbf{H}\_{\infty}(Z) \ge \mathbf{H}\_{\infty}(X) - L\\]
 
-Proof 2. Consider probability distribution of \\(X\\). It holds that the maximum
-probability of \\(X\\) satisfies that \\(\sup\_x\mathcal{P}r[X=x] = 2^{-\mathbf{H}\_{\infty}(X)}\\), then
-consider conditioning on a \\(L\\) -bit leakage. The best this leakage can do is to
-"shrink" the table by \\(2^L\\), which is our case.
+Proof 1. Suppose contradiction, first guess Z, whose success
+probability is more than \\(1/2^L\\), and then use this as leakage to
+guess \\(X\\), which will have success probability greater than
+\\(2^{-\mathbf{H}\_{\infty}(X)}\\)
+
+Proof 2. Consider probability distribution of \\(X\\). It holds that the
+maximum probability of \\(X\\) satisfies that \\(\sup\_x\Pr[X=x] =
+2^{-\mathbf{H}\_{\infty}(X)}\\), then consider conditioning on a \\(L\\) -bit
+leakage. The best this leakage can do is to "shrink" the table by
+\\(2^L\\), which is our case.
 
 We can further extend LHL to the case with leakage.
 
 
 #### Exericise {#exericise}
 
-Equivalence between collision entropy and min-entropy Consider any \\(X\\) such that
-\\(H\_2(X)\ge k\\) and \\(0<\delta<1\\). We have
+Equivalence between collision entropy and min-entropy Consider any \\(X\\)
+such that \\(H\_2(X)\ge k\\) and \\(0<\delta<1\\). We have
 
 
 ### Computational Security {#computational-security}
 
-If we are constrained in information-theoretic world, then pkc is impossible. So
-we need computational security.
+If we are constrained in information-theoretic world, then pkc is
+impossible. So we need computational security.
 
-E is \\((t,\epsilon)\\) secure if any \\(A\\) less than time \\(t\\) has advantage at most
-\\(\epsilon\\).
+E is \\((t,\epsilon)\\) secure if any \\(A\\) less than time \\(t\\) has advantage
+at most \\(\epsilon\\).
 
 Perfect security
 : \\(t = \infty\\), \\(\epsilon = 0\\)
@@ -2154,7 +2112,8 @@ Statistical Security
 : \\(t = \infty\\), \\(\epsilon = n^{-\omega(1)}\\)
 
 Computational Security
-: \\(t=n^{\omega{1}}\\), \\(\epsilon = n^{-\omega(1)}\\)
+: \\(t=n^{\omega{1}}\\), \\(\epsilon =
+      n^{-\omega(1)}\\)
 
 Requirements (asympototic):
 
@@ -2162,14 +2121,13 @@ Efficiency
 : all algorithms must be poly time
 
 Security
-: for any efficient adversary, the success prob. of it must be
-
-bounded by some negligible function.
+: for any efficient adversary, the success probability of
+    it must be bounded by some negligible function.
 
 Efficiency (slightly stronger)
 : \\(t=n^{\omega(1)}\\),
-    \\(\epsilon = n^{-\omega(1)}\\) this implies the second one. But the second one
-    strictly does not imply this one.
+    \\(\epsilon=n^{-\omega(1)}\\) this implies the second one. But the
+    second one strictly does not imply this one.
 
 
 #### Private-Key Encryption {#private-key-encryption}
@@ -2179,37 +2137,40 @@ Three algorithms: KeyGen, Enc, Dec.
 Implications of indistinguishability:
 
 1.  Impossible to guess any one-bit.
-2.  Impossible to compute any poly-time function of any efficiently samplable
-    \\(m\\).
+2.  Impossible to compute any poly-time function of any efficiently
+    samplable \\(m\\).
 3.  Semantic Security. For any efficient auxiliary information \\(h\\) and
-    efficiently function \\(f\\). No efficiently sampable \\(m\\) can be learned \\(f(m)\\)
-    from its encryption with more advantage than without the encryption.
+    efficiently function \\(f\\). No efficiently sampable \\(m\\) can be
+    learned \\(f(m)\\) from its encryption with more advantage than without
+    the encryption.
 
 
 ### Pseudorandom Generator (PRG) {#pseudorandom-generator--prg}
 
-PRG is **an** algorithm \\(g:\\{0,1\\}^n\to\\{0,1\\}^l\\) and \\(l>n\\) such that for any
-efficient \\(D\\) we have:
+PRG is **an** algorithm \\(g:\\{0,1\\}^n\to\\{0,1\\}^l\\) and \\(l>n\\) such that
+for any efficient \\(D\\) we have:
 
-\\[|\mathcal{P}r[D(g(U\_n))] - \mathcal{P}r[D(U\_l)] | = \mathsf{negl}\\]
+\\[|\Pr[D(g(U\_n))] - \Pr[D(U\_l)] | = \mathsf{negl}\\]
 
-We can generalize it a bit by \\((t,\varepsilon)\\) i.e. quantifying the running
-time.
+We can generalize it a bit by \\((t,\varepsilon)\\) i.e. quantifying the
+running time.
 
 
 #### Useful Lemmas {#useful-lemmas}
 
 Replacement Lemma
-: If X, Y are \\((t, \varepsilon)\\) indistinguishable, and \\(f\\)
-    is \\(T\\) computable, then \\(f(X)\\), \\(f(Y)\\) are \\((t-T, \varepsilon)\\) ind.
+: If X, Y are \\((t, \varepsilon)\\)
+    indistinguishable, and \\(f\\) is \\(T\\) computable, then \\(f(X)\\), \\(f(Y)\\)
+    are \\((t-T, \varepsilon)\\) ind.
 
-Notice that here if we take \\(t = \infty\\) we have
-\\(\mathsf{SD}(X,Y) \geq \mathsf{SD} (f(X), f(Y))\\)
+Notice that here if we take \\(t = \infty\\) we have \\(\mathsf{SD}(X,Y)
+\geq \mathsf{SD} (f(X), f(Y))\\)
 
 Switching Lemma
-: If \\(X\_1\\), \\(X\_2\\), \\(\ldots\\), \\(X\_m\\) satisfies that for any
-    \\(1\le i \le m\\), \\((t\_i, \epsilon\_i)\\) ind. then \\(X\_1\\) and \\(X\_m\\) are \\((t,
-      \epsilon)\\) ind. where \\(t = \min\_i{t\_i}\\) and \\(\epsilon = \sum\_i \epsilon\_i\\).
+: If \\(X\_1\\), \\(X\_2\\), \\(\ldots\\), \\(X\_m\\) satisfies that
+    for any \\(1\le i \le m\\), \\((t\_i, \epsilon\_i)\\) ind. then \\(X\_1\\) and
+    \\(X\_m\\) are \\((t, \epsilon)\\) ind. where \\(t = \min\_i{t\_i}\\) and \\(\epsilon
+      = \sum\_i \epsilon\_i\\).
 
 The minimum time needs to be considered.
 
@@ -2218,31 +2179,35 @@ The minimum time needs to be considered.
 
 Sequential composition of PRG.
 
-If PRG is (\\(t\\), \\(\epsilon\\)) secure with stretch \\(s\\) then we can construct PRG
-that is (\\(t-q\cdot\mathsf{poly}\\), \\(q\cdot \epsilon\\)) secure with stretch \\(q\cdot s\\).
+If PRG is (\\(t\\), \\(\epsilon\\)) secure with stretch \\(s\\) then we can
+construct PRG that is (\\(t-q\cdot\mathsf{poly}\\), \\(q\cdot \epsilon\\))
+secure with stretch \\(q\cdot s\\).
 
-Consider \\(q-1\\) hybrid states that interpolates between total pesudorandom and
-ture randomness. We achieve this by replacing the previous \\(i\cdot s +n\\) blocks
-with true randomness. Then any subsequent hybirds are bounded by \\(t-q\mathsf{poly}\\),
-\\(\epsilon\\) ind. The two ends are therefore (\\(t-q\cdot \mathsf{poly}\\), \\(q\varepsilon\\))
-ind.
+Consider \\(q-1\\) hybrid states that interpolates between total
+pesudorandom and ture randomness. We achieve this by replacing the
+previous \\(i\cdot s +n\\) blocks with true randomness. Then any
+subsequent hybirds are bounded by \\(t-q\mathsf{poly}\\), \\(\epsilon\\)
+ind. The two ends are therefore (\\(t-q\cdot \mathsf{poly}\\),
+\\(q\varepsilon\\)) ind.
 
 
 ## Lecture 5 {#19-20-2-L5}
 
-PRG-based fixed encryption: use PRG-generated pseudorandomness to implement OTP.
-Now the security is computational rather than perfect or statistical.
+PRG-based fixed encryption: use PRG-generated pseudorandomness to
+implement OTP.  Now the security is computational rather than perfect
+or statistical.
 
-Both perfect and statistical security are "trivial". It is in the sense that key
-space must be larger than message space. For statistical security there is
-similar result.
+Both perfect and statistical security are "trivial". It is in the
+sense that key space must be larger than message space. For
+statistical security there is similar result.
 
-A proof using hybrid-like argument shows that the advantage of distinguishing
-(any) two ciphertexts is bounded by \\(2\varepsilon(n)\\) where \\(\epsilon(n)\\) is the
-advantage of distinguishing \\(g(U\_n)\\) and \\(U\_l\\).
+A proof using hybrid-like argument shows that the advantage of
+distinguishing (any) two ciphertexts is bounded by \\(2\varepsilon(n)\\)
+where \\(\epsilon(n)\\) is the advantage of distinguishing \\(g(U\_n)\\) and
+\\(U\_l\\).
 
-Homework: Decisional LPN with constant noise rate \\(\mu=1/4\\) and query \\(q=2n\\).
-How to construct a PRG?
+Homework: Decisional LPN with constant noise rate \\(\mu=1/4\\) and query
+\\(q=2n\\).  How to construct a PRG?
 
 
 ### One-Way Functions and Permutations {#one-way-functions-and-permutations}
@@ -2255,91 +2220,107 @@ Easy to compute
 : computable by a poly-time turing machine
 
 hard to invert
-: **randomly** sample a pre-image, it is hard (super-polynomial)
-    complexity to come up with a \\(x^prime\\) given \\(y = f(x)\\) such that \\(f(x^\prime)
-      = y\\).
+: **randomly** sample a pre-image, it is hard
+    (super-polynomial) complexity to come up with a \\(x^prime\\) given \\(y =
+      f(x)\\) such that \\(f(x^\prime) = y\\).
 
-    Note here hardness is defined with repect to coming up with any one satisfying
-    preimage, not the exact preimage, since the function might be lossy. I.d.
-    input information is much larger than output information.
+    Note here hardness is defined with repect to coming up with any one
+    satisfying preimage, not the exact preimage, since the function
+    might be lossy. I.d.  input information is much larger than output
+    information.
 
-Candidate OWFs
 
--   Integer factorization
--   Subset-sum problem
--   Notice how non-discrete version is actually easy.
+#### Candidate OWFs {#candidate-owfs}
+
+Integer factorization
+: RSA-type
+
+Subset-sum problem
+: Very Similar to LPN
+
+Discrete\* logarithm
+: Notice how non-discrete version is actually
+    easy.
 
 
 ### Hardcore Predicate {#hardcore-predicate}
 
-By definition, a one-way function is hard-to-invert. Some information about the
-preimage must be hard to get in some way.
+By definition, a one-way function is hard-to-invert. Some information
+about the preimage must be hard to get in some way.
 
 Hardcore predicate formalizes this intuition.
 
-A hardcore predicate \\(h\_c:\\{0,1\\}^n\to\bin\\) is called a hard core
-predicate of a function \\(f:\\{0,1\\}^n\to\\{0,1\\}^l\\) if for every ppt \\(\mathcal{A}\\),
-we have \\[ \mathcal{P}r\_{x\leftarrow U\_n}[\mathcal{A}(f(x)) = h\_c(x)] = 1/2 + \mathsf{negl}.\\]
+A hardcore predicate \\(h\_c:\\{0,1\\}^n\to\\{0,1\\}\\) is called a hard core
+predicate of a function \\(f:\\{0,1\\}^n\to\\{0,1\\}^l\\) if for every ppt
+\\(\mathcal{A}\\), we have \\[ \Pr\_{x\leftarrow U\_n}[\mathcal{A}(f(x)) =
+h\_c(x)] = 1/2 + \mathsf{negl}.\\]
 
-Result: one-way permutation + hardcore predicate -&gt; pseudorandom generator. Or:
-Next-bit unpredictability implies pseudorandomness.
+Result: one-way permutation + hardcore predicate -&gt; pseudorandom
+generator. Or: Next-bit unpredictability implies pseudorandomness.
 
-Exercise proof: How the existence of hardcore predicate implies one-wayness.
-Notice that when inversion algorithm fails, we need to output a random bit to
-guess the hard-core predicate to preserve non-negative advantage.
+Exercise proof: How the existence of hardcore predicate implies
+one-wayness.  Notice that when inversion algorithm fails, we need to
+output a random bit to guess the hard-core predicate to preserve
+non-negative advantage.
 
-Statement. Suppose the probability of predicting \\(h\_c(x)\\) from \\(f(x): x\leftarrow
-U\_n\\) is \\(1/2 + \epsilon\\) for any t-time adversary, then \\((f(U\_n),h\_c(U\_n))\\) and
-\\(U\_{n+1}\\) is \\(t/2\\), \\(\varepsilon\\) indistinguishable.
+Statement. Suppose the probability of predicting \\(h\_c(x)\\) from \\(f(x):
+x\leftarrow U\_n\\) is \\(1/2 + \epsilon\\) for any t-time adversary, then
+\\((f(U\_n),h\_c(U\_n))\\) and \\(U\_{n+1}\\) is \\(t/2\\), \\(\varepsilon\\)
+indistinguishable.
 
-Proof. Suppose there is a distinguisher \\(D\\) contradicting the assumption, then
-we can conclude that \\[\mathcal{P}r[D(U\_n),h\_c(U\_n)] - \mathcal{P}r[D(U\_n),1-h\_c(U\_n)] \ge
-2\varepsilon\\]
+**Proof.** Suppose there is a distinguisher \\(D\\) contradicting the
+assumption, then we can conclude that \\[\Pr[D(U\_n),h\_c(U\_n)] -
+\Pr[D(U\_n),1-h\_c(U\_n)] \ge 2\varepsilon\\]
 
 Then we design another algorithm \\(D^\prime(y)\\) that computes \\(b\_1 =
-D^\prime(y,1)\\) and \\(b\_0 = D^\prime(y,0)\\). It outputs 1 if \\(b\_1 > b\_0\\) and 0 if
-\\(b\_0 > b\_1\\) and random bit otherwise. We claim that the success probability of
-this algorithm is \\(\varepsilon\\)
+D^\prime(y,1)\\) and \\(b\_0 = D^\prime(y,0)\\). It outputs 1 if \\(b\_1 > b\_0\\)
+and 0 if \\(b\_0 > b\_1\\) and random bit otherwise. We claim that the
+success probability of this algorithm is \\(\varepsilon\\)
 
-This statement is proved in 1982, but general hardcore construction for any owf
-did not appear until 1989 (Golereich-Levin).
+This statement is proved in 1982, but general hardcore construction
+for any owf did not appear until 1989 (Golereich-Levin).
 
 
 ### Proof of Goldreich-Levin Theorem {#proof-of-goldreich-levin-theorem}
 
-First recall the statement of GL theorem: for any oneway function \\[ f\_n :
-\\{0,1\\}^n \to \\{0,1\\}^l,\\] we have the following hardcore predicate \\(h\_c\\)
-for \\(f^\prime\\)
+First recall the statement of GL theorem: for any oneway function
+
+\\[ f\_n : \\{0,1\\}^n \to \\{0,1\\}^l,\\]
+
+we have the following hardcore predicate \\(h\_c\\) for \\(f^\prime\\)
 
 \begin{align\*}
-f^\prime(x,r) &= f(x), r\\\ h\_c(x,r) &= r^T \cdot x. \end{align\*}
+f^\prime(x,r) &= f(x), r\\\ h\_c(x,r) &= r^T \cdot x.
+\end{align\*}
 
 Technical roadmap:
 
--   First prove the size of set
-    \\[S: \mathcal{P}r\_r[\mathcal{A}(f(x),r) = h\_c(x,r)] \ge 1/2 +\epsilon /2\\] is at least
-    \\(\epsilon /2\\).
+-   First prove the size of set \\[S: \Pr\_r[\mathcal{A}(f(x),r) =
+      h\_c(x,r)] \ge 1/2 +\epsilon /2\\] is at least \\(\epsilon /2\\).
 
-    Using Markov argument. \\[1/2 + \epsilon \le \mathcal{P}r\_{x,r}[\mathcal{A}(f(x),r) =
-      h\_c(x,r)]\le 1\cdot p + (1/2+\epsilon/2)\cdot (1-p),\\]
+    Using Markov argument.
+
+    \\[1/2 + \epsilon \le \Pr\_{x,r}[\mathcal{A}(f(x),r) = h\_c(x,r)]\le
+      1\cdot p + (1/2+\epsilon/2)\cdot (1-p),\\]
 
     Which implies \\(p \ge \epsilon /2\\)
--   Then design an algorithm \\(\mathcal{A}^\prime\\) that invert \\(f(x)\\) with probability
-    at least \\(\epsilon^3/(8n)\\).
+-   Then design an algorithm \\(\mathcal{A}^\prime\\) that invert \\(f(x)\\)
+    with probability at least \\(\epsilon^3/(8n)\\).
 
     The trick here is using pair-wise independence. Let \\(l\\) be a small enough
     "row" sample number. \\(l = \ceil{\log(2n/\epsilon^2 + 1)}\\).
 
-    Define \\(\sigma^i \leftarrow \\{0,1\\}^n\\) and \\(\tau^i \leftarrow \bin\\) for
-    \\(i\in[l]\\). Then let \\(\tau^i\\) be the guess of \\(h\_c(x, \sigma\_i)\\). Notice that
-    since we choose \\(l\\) small enough, the success probability \\[1/2^l \ge
-      \epsilon^2/(4n)\\] is just fine.
+    Define \\(\sigma^i \leftarrow \\{0,1\\}^n\\) and \\(\tau^i \leftarrow
+      \\{0,1\\}\\) for \\(i\in[l]\\). Then let \\(\tau^i\\) be the guess of \\(h\_c(x,
+      \sigma\_i)\\). Notice that since we choose \\(l\\) small enough, the
+    success probability \\[1/2^l \ge \epsilon^2/(4n)\\] is just fine.
 
     Now define \\(I\\) to be any non-empty subset of \\([l]\\) and
 
     \begin{align\*}
     r^I &= \mathop{\oplus}\_{i\in I}\sigma^i\\\ \tau^I &= \mathop{\oplus}\_{i\in
-    I}\tau^i \end{align\*}
+    I}\tau^i
+    \end{align\*}
 
 Then let
 
@@ -2350,12 +2331,13 @@ v\_j^I &:= \tau^I \oplus \mathcal{A}(y, r^I\oplus e\_j)\\\\
 
 Then do a majority voting on \\(2^{l}-1\\) candidates to determine \\(x\_j\\).
 
-Conditioned on all the guesses are correct, we then bound the probability that
-there exists one vote that is wrong. First use a union bound. Then for any \\(j\\)
-voting output \\(x\_j^\prime \ne x\_j\\) indicates that the number of correct vote is
-less than \\(m/2\\) where \\(m = 2^l - 1\\). Now by chebyshev inequality, the mean is
-\\(m/2 + \epsilon m/2\\), this probability is bounded by \\(Var/(\epsilon m /2)^2\\).
-Since the votes are **pair-wise** independent, we can conclude that this
+Conditioned on all the guesses are correct, we then bound the
+probability that there exists one vote that is wrong. First use a
+union bound. Then for any \\(j\\) voting output \\(x\_j^\prime \ne x\_j\\)
+indicates that the number of correct vote is less than \\(m/2\\) where \\(m
+= 2^l - 1\\). Now by chebyshev inequality, the mean is \\(m/2 + \epsilon
+m/2\\), this probability is bounded by \\(Var/(\epsilon m /2)^2\\).  Since
+the votes are **pair-wise** independent, we can conclude that this
 probability is bounded by \\(1/2n\\).
 
 
@@ -2363,23 +2345,25 @@ probability is bounded by \\(1/2n\\).
 
 One-way functions imply pseudorandom generator. [HILL99]
 
-What we actually proved is a decoding algorithm that convert \\(\epsilon\\)
-advangage in distinguishing hardcore predicate into \\(\epsilon^3/(16n)\\) advantage
-in decoding.
+What we actually proved is a decoding algorithm that convert
+\\(\epsilon\\) advangage in distinguishing hardcore predicate into
+\\(\epsilon^3/(16n)\\) advantage in decoding.
 
 
 ### Exercises {#19-20-2-L5-Ex}
 
 Show the equivalence between Computational-LPN and Decisional-LPN.
 
-Solution: Given LPN sample (\\(a\\), \\(b\\)), add uniformly random \\(r\leftarrow\bin\\)
-to first bit of \\(a\\) i.e. output (\\(a + e\_{1}\cdot r\\), \\(b\\)).
+Solution: Given LPN sample (\\(a\\), \\(b\\)), add uniformly random
+\\(r\leftarrow\\{0,1\\}\\) to first bit of \\(a\\) i.e. output (\\(a + e\_{1}\cdot
+r\\), \\(b\\)).
 
 -   When \\(s\_{1} = 0\\) the output is LPN sample,
 -   When \\(s\_{1} = 1\\) the output is random sample.
 
 So we transformed a distinguisher for DLPN to an algorithm that solves
-Search-LPN (first bit). We can then continue to solve for the rest of bits.
+Search-LPN (first bit). We can then continue to solve for the rest of
+bits.
 
 
 ## Lecture 6 {#lecture-6}
@@ -2389,117 +2373,136 @@ Basing Pseudorandom Generators on Regular One-way Functions
 
 ### PRG from Regular OWF {#prg-from-regular-owf}
 
-Definition: \\(f:\\{0,1\\}^{n}\to\\{0,1\\}^{m}\\) is an \\(\epsilon\\)-OWF if for all
-polynomial adversary's inversion probability is smaller than \\(\epsilon\\): \\[
-\mathcal{P}r\_{x\leftarrow U\_{n}}[A(1^{n}, f(x))\in f^{-1}(f(x))] \le \epsilon \\]
+Definition: \\(f:\\{0,1\\}^{n}\to\\{0,1\\}^{m}\\) is an \\(\epsilon\\)-OWF if
+for all polynomial adversary's inversion probability is smaller than
+\\(\epsilon\\):
 
-Folklore: OWFs can be assumed to be length-preserving, i.e. \\(m = n\\): If \\(m > n\\)
-then pad zeros to input; if \\(m < n\\) then pad zeros to output.
+\\[ \Pr\_{x\leftarrow U\_{n}}[A(1^{n}, f(x))\in f^{-1}(f(x))] \le
+\epsilon \\]
+
+Folklore: OWFs can be assumed to be length-preserving, i.e. \\(m = n\\):
+If \\(m > n\\) then pad zeros to input; if \\(m < n\\) then pad zeros to
+output.
 
 
 #### Regular OWF {#regular-owf}
 
-Preimage size \\(\alpha = |f^{-1}(y)|\\) (to which we refer as regularity) is fixed.
-We can further divide it into known-regular and unknown-regular.
+Preimage size \\(\alpha = |f^{-1}(y)|\\) (to which we refer as regularity)
+is fixed.  We can further divide it into known-regular and
+unknown-regular.
 
 
 #### PRG {#prg}
 
-Usual parameterized definition: advantage at most \\(\epsilon\\) when running time
-is limited to \\(t\\).
+Usual parameterized definition: advantage at most \\(\epsilon\\) when
+running time is limited to \\(t\\).
 
-The PRG introduced in previous lecture (the BM-Y Generator) relies on one-way
-permutations. In this lecture, we want to extend it into regular one-way
-function. Of course, the ultimate goal is PRG from **any** one-way function, but
-it seems a little bit too involved for this lecture.
+The PRG introduced in previous lecture (the BM-Y Generator) relies on
+one-way permutations. In this lecture, we want to extend it into
+regular one-way function. Of course, the ultimate goal is PRG from
+**any** one-way function, but it seems a little bit too involved for
+this lecture.
 
 
 #### Entropy {#entropy}
 
-Min entropy measures unpredictability. Conditional entropy is expectation on the
-conditional maximum entropy.
+Min entropy measures unpredictability. Conditional entropy is
+expectation on the conditional maximum entropy.
 
 Min Entropy
-: \\(\mathbf{H}\_{\infty}(X) := -\log \max\_{x} \mathcal{P}r[X=x]\\)
+: \\(\mathbf{H}\_{\infty}(X) := -\log \max\_{x} \Pr[X=x]\\)
 
 Average Min Entropy
-: \\( \mathbf{H}\_{\infty}(Z) := -\log \mathsf{E}\_{z}[\max\_{x}\mathcal{P}r[X=x|Z=z]]\\)
+: \\( \mathbf{H}\_{\infty}(Z) := -\log
+      \mathsf{E}\_{z}[\max\_{x}\Pr[X=x|Z=z]]\\)
 
-The condition \\(Z\\) can be understood as leakage: if \\(\mathbf{H}\_{\infty}(Z) \ge k\\) then
-\\[\mathcal{P}r\_{X,Z}[A(z) = x]\le 2^{{-k}}\\]
+The condition \\(Z\\) can be understood as leakage: if
+\\(\mathbf{H}\_{\infty}(Z) \ge k\\) then \\[\Pr\_{X,Z}[A(z) = x]\le
+2^{{-k}}\\]
 
-Consider the game of guessing randomly sampled \\(x\\) given \\(f(x)\\) -- modified
-inversion game (but succeed only if \\(x^{\prime}\\) is exactly the sampled \\(x\\)).
+Consider the game of guessing randomly sampled \\(x\\) given \\(f(x)\\) --
+modified inversion game (but succeed only if \\(x^{\prime}\\) is exactly
+the sampled \\(x\\)).
 
 We can relax \\(A\\) to PPT to get **pseudo-entropy**.
 
-The unpredictable pseudoentropy is thus defined as \\[H\_{u}(X|Z) = -\log
-\max\_{A}\mathcal{P}r\_{x,z}[x = A(z)].\\]
+The unpredictable pseudoentropy is thus defined as
 
-Consider a \\(2^{k}\\)-regular \\(\epsilon\\)-regular OWF. We have \\[H\_{u}(X|f(X)) =
-\log{1/\epsilon} + k.\\]
+\\[H\_{u}(X|Z) = -\log \max\_{A}\Pr\_{x,z}[x = A(z)].\\]
+
+Consider a \\(2^{k}\\)-regular \\(\epsilon\\)-regular OWF. We have
+
+\\[H\_{u}(X|f(X)) = \log{1/\epsilon} + k.\\]
 
 
 #### Statistical and Computational Distance {#statistical-and-computational-distance}
 
-Statistical distance is the maximum distinguishing probability of **any**
-algorithm distinguishing two distributions.
+Statistical distance is the maximum distinguishing probability of
+**any** algorithm distinguishing two distributions.
 
-\\[\mathsf{SD}(X,Y) := \max\_{D}\left|\mathcal{P}r[D(X)= 1] - \mathcal{P}r[D(Y) = 1]\right|,\\]
+\\[\mathsf{SD}(X,Y) := \max\_{D}\left|\Pr[D(X)= 1] - \Pr[D(Y) =
+1]\right|,\\]
 
 Here \\(D\\) can be unbounded.
 
-Computational distance is the result when relaxing the algorithm to PPT.
+Computational distance is the result when relaxing the algorithm to
+PPT.
 
-\\[\mathsf{CD}(X,Y) := \max\_{D}\left|\mathcal{P}r[D(X) = 1] - \mathcal{P}r[D(Y) = 1]\right|,\\]
+\\[\mathsf{CD}(X,Y) := \max\_{D}\left|\Pr[D(X) = 1] - \Pr[D(Y) =
+1]\right|,\\]
 
 here \\(D\\) is limited to PPT.
 
 
 #### Randomness Extraction {#randomness-extraction}
 
-In short LHL and GL-theorem are both randomness extractors. The former one is
-statistical while the latter one is computational.
+In short LHL and GL-theorem are both randomness extractors. The former
+one is statistical while the latter one is computational.
 
-Leftover Hash Lemma: Let (\\(X\\), \\(Z\\)) be any r.v. with \\(\mathbf{H}\_{\infty}(Z) = k\\) and
-let \\(h:\\{0,1\\}^{n} \to \\{0,1\\}^{k-d}\\) be a (family of) universal hash
-function, then we have
+Leftover Hash Lemma: Let (\\(X\\), \\(Z\\)) be any r.v. with
+\\(\mathbf{H}\_{\infty}(Z) = k\\) and let \\(h:\\{0,1\\}^{n} \to \\{0,1\\}^{k-d}\\)
+be a (family of) universal hash function, then we have
 
 \\[\mathsf{SD}((h, Z, h(x)), (h, Z, U\_{k-d})) \leq 2^{-d/2}.\\]
 
-Goldreich-Levin Theorem: Let (\\(X\\), \\(Z\\)) be any r.v. with \\(H\_{u}(X|Z) = k\\) then
-there exists efficient hash \\(h: \\{0,1\\}^{n}\to \\{0,1\\}^{L = O(k)}\\) such that
+Goldreich-Levin Theorem: Let (\\(X\\), \\(Z\\)) be any r.v. with \\(H\_{u}(X|Z) =
+k\\) then there exists efficient hash \\(h: \\{0,1\\}^{n}\to \\{0,1\\}^{L =
+O(k)}\\) such that
 
 \\[\mathsf{CD}((h, Z, h(x)), (h, Z, U\_{L})) \leq 2^{-\Omega{k}}\\]
 
-Normally we have \\(k = \omega{k}\\) (at least superpolynomial hardness), so the
-computational distance is negligible.
+Normally we have \\(k = \omega{k}\\) (at least superpolynomial hardness),
+so the computational distance is negligible.
 
 
 #### Pseudoentropy of regular OWF {#pseudoentropy-of-regular-owf}
 
-What is the UP of \\(X\\) given \\(f(X)\\) if \\(f\\) is a regular \\(\epsilon\\) OWF with
-regularity \\(\alpha = 2^{k}\\)
+What is the UP of \\(X\\) given \\(f(X)\\) if \\(f\\) is a regular \\(\epsilon\\) OWF
+with regularity \\(\alpha = 2^{k}\\)
 
-The min-entropy is clearly \\(k\\) bits, but computationally speaking, we can do
-better.
+The min-entropy is clearly \\(k\\) bits, but computationally speaking, we
+can do better.
 
-Claim: \\(H\_{u}(X|f(X)) = k + \log{1/\epsilon}\\), where \\[ \mathcal{P}r\_{{X}}[A(f(X)) \in
-f^{-1}(f(X))] \le \epsilon \\] And therefore \\[ \mathcal{P}r\_{{X}}[A(f(X)) = X] \le
-2^{-k}\epsilon \\]
+Claim: \\(H\_{u}(X|f(X)) = k + \log{1/\epsilon}\\), where
 
-We can understand it in this way. Let event "A succeeds" denotes the event that
-\\(A\\) successfully guesses the exact preimage. Then we have
+\\[ \Pr\_{{X}}[A(f(X)) \in f^{-1}(f(X))] \le \epsilon \\]
+
+And therefore
+
+\\[ \Pr\_{{X}}[A(f(X)) = X] \le 2^{-k}\epsilon \\]
+
+We can understand it in this way. Let event "A succeeds" denotes the
+event that \\(A\\) successfully guesses the exact preimage. Then we have
 
 \begin{align\*}
-\mathcal{P}r[\text{A succeeds}] &= \mathcal{P}r[\text{A outputs coset}\land\text{A hits}] \\\\
-&= \mathcal{P}r[\text{A outputs coset}]\cdot \mathcal{P}r[\text{A hits}| \text{A outputs coset}] \\\\
-&= 2^{-k} \cdot \mathcal{P}r[\text{A outputs coset}]\enspace,
+\Pr[\text{A succeeds}] &= \Pr[\text{A outputs coset}\land\text{A hits}] \\\\
+&= \Pr[\text{A outputs coset}]\cdot \Pr[\text{A hits}| \text{A outputs coset}] \\\\
+&= 2^{-k} \cdot \Pr[\text{A outputs coset}]\enspace,
 \end{align\*}
 
-where by "A outputs coset" I mean the event A's output is in \\(f^{-1}(f(x))\\). The
-last equality holds since when A output something in that set, the probability
-it succeeds is exactly \\(2^{-k}\\).
+where by "A outputs coset" I mean the event A's output is in
+\\(f^{-1}(f(x))\\). The last equality holds since when A output something
+in that set, the probability it succeeds is exactly \\(2^{-k}\\).
 
 
 #### PRGs from Known Regular OWFs {#prgs-from-known-regular-owfs}
@@ -2510,30 +2513,37 @@ We have an alternative 3-line proof.
 
 Assumption: \\(f\\) is \\(\epsilon\\)-one-way and \\(2^{k}\\) regular
 
-1.  Hash \\(f(X)\\) to extract \\(n-k\\) bit (\\(h\_{1}(f(X))\\)), since \\(\mathbf{H}\_{\infty}(f(X)) = n-k\\) (note that
-    we ignored entropy loss)
-2.  Hash \\(X\\) to extract \\(k\\) bits (\\(h\_{2}(X)\\)), since \\(\mathbf{H}\_{\infty}(X|f(X)) = k\\) (once again,
-    entropy loss ignored.)
-3.  The key. Using chain rule \\(H\_{u}(X|f(X)) = k + \log(1/\epsilon)\\) then
-    \\[H\_{u}(X|f(X), h\_{2}(X)) \ge \log{1/\epsilon},\\] Now extract
+1.  Hash \\(f(X)\\) to extract \\(n-k\\) bit (\\(h\_{1}(f(X))\\)), since
+    \\(\mathbf{H}\_{\infty}(f(X)) = n-k\\) (note that we ignored entropy
+    loss)
+2.  Hash \\(X\\) to extract \\(k\\) bits (\\(h\_{2}(X)\\)), since
+    \\(\mathbf{H}\_{\infty}(X|f(X)) = k\\) (once again, entropy loss
+    ignored.)
+3.  The key. Using chain rule \\(H\_{u}(X|f(X)) = k + \log(1/\epsilon)\\)
+    then
+
+    \\[H\_{u}(X|f(X), h\_{2}(X)) \ge \log{1/\epsilon},\\]
+
+    Now extract
     \\(O(\log(1/\epsilon))\\) bits using hard-core function \\(h\_{c}\\).
 
 It is clear that the third step is crucial for gaining stretch.
 
-Finally, use a hybrid argument to prove combined distribution is pseudorandom.
-In particular, since it took me a while to see it clear, I might as well write
-down for possible future reference.
+Finally, use a hybrid argument to prove combined distribution is
+pseudorandom.  In particular, since it took me a while to see it
+clear, I might as well write down for possible future reference.
 
-Proposition: (\\(h\_{1}(f(X))\\), \\(h\_{2}(X)\\), \\(h\_{c}(X)\\), \\(h\_{1}\\), \\(h\_{2}\\), \\(h\_{c}\\))
-is pseudorandom.
+Proposition: (\\(h\_{1}(f(X))\\), \\(h\_{2}(X)\\), \\(h\_{c}(X)\\), \\(h\_{1}\\), \\(h\_{2}\\),
+\\(h\_{c}\\)) is pseudorandom.
 
-Proof. Consider hybrid distribution \\[H\_{1} := (h\_{1}(f(X)), h\_{2}(X), U\_{L},
-h\_{1}, h\_{2}, h\_{c})\\]
+**Proof.** Consider hybrid distribution \\[H\_{1} := (h\_{1}(f(X)), h\_{2}(X),
+U\_{L}, h\_{1}, h\_{2}, h\_{c})\\]
 
 By GL-theorem, we have
 
 \begin{align\*}
-\mathsf{CD}(h\_{c}(X)), U\_{L} | f(X), h\_{2}(X), h\_{2}, h\_{c}) &\le 2^{-\Omega(L)}\\\\
+\mathsf{CD}(h\_{c}(X)), U\_{L} | f(X), h\_{2}(X), h\_{2}, h\_{c})
+&\le 2^{-\Omega(L)}\\\\
 &\le\Omega(\epsilon)
 \end{align\*}
 
@@ -2549,8 +2559,8 @@ By leftover hash lemma, we have
 \mathsf{SD}(h\_{2}(X), U\_{k} | h\_{2}, f(X)) \leq 2^{-d/2}
 \end{align\*}
 
-For some properly chosen \\(d\\) to be super logarithmic. This implies hybird 1 and
-hybrid 2 are indistinghishable.
+For some properly chosen \\(d\\) to be super logarithmic. This implies
+hybird 1 and hybrid 2 are indistinghishable.
 
 Finally, consider Hybrid distribution 3
 
@@ -2562,14 +2572,15 @@ By leftover hash lemma, we have
 \mathsf{SD}(h\_{1}(f(X)), U\_{n-k} | h\_{1}) \leq 2^{{-d/2}}
 \end{align\*}
 
-Once again, for some properly chosen \\(d\\). This implies hybrid 2 and hybrid 3 are
-indistinguishable. Altogether, this concludes the proof.
+Once again, for some properly chosen \\(d\\). This implies hybrid 2 and
+hybrid 3 are indistinguishable. Altogether, this concludes the proof.
 
-The construction is optimum because it only calls \\(f\\) once and seed length is
-linear in \\(n\\).
+The construction is optimum because it only calls \\(f\\) once and seed
+length is linear in \\(n\\).
 
-Multi-bit GL-Theorem is indeed worth investigating. From a facile result it
-seems that \\(h\_{c}(x)\\) is \\(2^{m} (n\epsilon)^{1/3}\\) close to \\(U\_{m}\\).
+Multi-bit GL-Theorem is indeed worth investigating. From a facile
+result it seems that \\(h\_{c}(x)\\) is \\(2^{m} (n\epsilon)^{1/3}\\) close to
+\\(U\_{m}\\).
 
 
 #### PRGs from unknown-regular OWFs {#prgs-from-unknown-regular-owfs}
@@ -2579,31 +2590,34 @@ The randomized iterate (CRYPTO 2006). The proof is again, too complex.
 
 #### Lower Bounds (FOCS12) {#lower-bounds--focs12}
 
-Any black-box construction of PRG must make \\(\Omega(n/\log n)\\) calls to the OWF
-to make PRG.
+Any black-box construction of PRG must make \\(\Omega(n/\log n)\\) calls
+to the OWF to make PRG.
 
 
 #### PRG from unknown-regular OWFs {#prg-from-unknown-regular-owfs}
 
-Assumption: \\(f\\) is \\(\epsilon\\) regular and \\(2^{k}\\) regular (but \\(k\\) is unknown).
+Assumption: \\(f\\) is \\(\epsilon\\) regular and \\(2^{k}\\) regular (but \\(k\\) is
+unknown).
 
-Let \\(Y\\) be the range of OWF, we define \\(\bar{f}\\) that is \\(2^{n}\\)-regular.
+Let \\(Y\\) be the range of OWF, we define \\(\bar{f}\\) that is
+\\(2^{n}\\)-regular.
 
 \begin{align\*}
 \bar{f}: Y \times \\{0,1\\}^{n} &\to Y \\\\
 \bar{f}:(y,r) &\mapsto f(y\oplus r)
 \end{align\*}
 
-If we call the vanilla construction for regular OWFs, then there is a problem.
+If we call the vanilla construction for regular OWFs, then there is a
+problem.
 
 To sample \\(Y\\) we need \\(n\\) bit, this makes the stretch negative.
 
 To make it positive, we need to iterate it using hybrid argument.
 
-This means we have to iterate \\(\frac{n}{\log{1/\epsilon}}\\) times to get a
-positive stretch, which is tight (from FOCS 2012, BB constructions of PRG
-requires \\(\Omega(n / \log(1/\epsilon))\\) OWF calls and \\(\Omega(n / \log n)\\) calls
-in general.)
+This means we have to iterate \\(\frac{n}{\log{1/\epsilon}}\\) times to
+get a positive stretch, which is tight (from FOCS 2012, BB
+constructions of PRG requires \\(\Omega(n / \log(1/\epsilon))\\) OWF calls
+and \\(\Omega(n / \log n)\\) calls in general.)
 
 
 ### Pseudorandom Function {#pseudorandom-function}
@@ -2612,18 +2626,19 @@ Security under CPA.
 
 Adversary has oracle access to the encryption algorithm.
 
-We can achieve CPA security (Secret-Key) from PRFs. The definition of \\(\prf\\) is
-a family of keyed functions that is indistinguishable from random function given
-oracle access.
+We can achieve CPA security (Secret-Key) from PRFs. The definition of
+\\(\prf\\) is a family of keyed functions that is indistinguishable from
+random function given oracle access.
 
-An alternative definition is the distinguishing probability of any polynomial
-points is negligible.
+An alternative definition is the distinguishing probability of any
+polynomial points is negligible.
 
-Is the two definition equivalent? Prof. Yu later changed this definition so that
-the query does not depend on previous query results. This is clearly weaker. But
-I think the "forall" type is equivalent. NOPE, you are trolled. In the
-non-adaptive defintion, the query is independent on the key choice. The **weak**
-PRF definition typically follows this syntax.
+Is the two definition equivalent? Prof. Yu later changed this
+definition so that the query does not depend on previous query
+results. This is clearly weaker. But I think the "forall" type is
+equivalent. NOPE, you are trolled. In the non-adaptive defintion, the
+query is independent on the key choice. The **weak** PRF definition
+typically follows this syntax.
 
 
 ### Why Pseudorandom {#why-pseudorandom}
@@ -2635,85 +2650,102 @@ From PRF we immediately get a CPA-based encryption.
 
 ### The GGM Construction of PRF {#the-ggm-construction-of-prf}
 
-Let \\(g\\) be a length-doubling PRG, then we seek to construct a PRF from this \\(g\\).
-Input \\(x\\) determines a path from root (the key) to leaf (the output).
+Let \\(g\\) be a length-doubling PRG, then we seek to construct a PRF from
+this \\(g\\).  Input \\(x\\) determines a path from root (the key) to leaf
+(the output).
 
 \\(g(x) = g\_{1}(x) || g\_{2}(x)\\)
 
-Parallel repetitiion of the PRG is still a PRG from a standard hybrid argument.
+Parallel repetitiion of the PRG is still a PRG from a standard hybrid
+argument.
 
 
 #### First Attempt: Shallow GGM Tree {#first-attempt-shallow-ggm-tree}
 
-Consider a \\(l = O(\log n)\\) depth tree. Then we can argue the stronger result
-that the range concatenated is pseudorandom. The proof is a hybird argument by
-replacing from layer 1 to layer \\(l\\) by uniform random. Since generating the
-whole tree takes only polynomial time and the width of any layer is at most
-polynomial, the proof follows by a standard hybrid argument.
+Consider a \\(l = O(\log n)\\) depth tree. Then we can argue the stronger
+result that the range concatenated is pseudorandom. The proof is a
+hybird argument by replacing from layer 1 to layer \\(l\\) by uniform
+random. Since generating the whole tree takes only polynomial time and
+the width of any layer is at most polynomial, the proof follows by a
+standard hybrid argument.
 
-But we need not to prove such a strong case. We can instead replace the oracle.
+But we need not to prove such a strong case. We can instead replace
+the oracle.
 
 
 #### The General Case of GGM {#the-general-case-of-ggm}
 
-Theorem: If \\(g\\) is a (\\(t\\), \\(\epsilon\\))-\\(\prg\\) and \\(g\\) is computable in
-\\(t\_{g}\\), then \\(F\\) is a (\\(t^{\prime} = t/O(nt\_{g})\\), \\(\epsilon n
+Theorem: If \\(g\\) is a (\\(t\\), \\(\epsilon\\))-\\(\prg\\) and \\(g\\) is computable
+in \\(t\_{g}\\), then \\(F\\) is a (\\(t^{\prime} = t/O(nt\_{g})\\), \\(\epsilon n
 t^{\prime}\\))-\\(\prf\\).
 
-We then construct \\(n\\) hybrids where \\(H\_{i}\\) is the previous \\(i\\) layers replaced
-by uniform random. Clearly \\(H\_{0}\\) is the \\(F\\) distribution and \\(H\_{n}\\) is
-uniformly random.
+We then construct \\(n\\) hybrids where \\(H\_{i}\\) is the previous \\(i\\) layers
+replaced by uniform random. Clearly \\(H\_{0}\\) is the \\(F\\) distribution
+and \\(H\_{n}\\) is uniformly random.
 
-The \\(t^{\prime}\\) term in the statment trolled me for a while, before I tried to
-prove it myself and I realized that it is a clever choice of parameter to enable
-a simpler result.
+The \\(t^{\prime}\\) term in the statment trolled me for a while, before I
+tried to prove it myself and I realized that it is a clever choice of
+parameter to enable a simpler result.
 
-In particular, we need \\(O(t^{\prime})\\) samples (\\(2n\\) pseudorandom / random
-bits), and simulation of the oracle takes \\(O(t^{\prime} n t\_{g}\\) overhead.
-Altogether, this implies \\(t^{\prime} + O(t^{\prime} t\_{g} n)\\) time algorithm for
-\\(t^{\prime}\\) samples. (Since for advantage, we have no trouble, it is skipped.)
-We now need to have \\(t^{\prime} + O(t^{\prime} t\_{g} n) < t - t^{\prime} t\_{g}\\)
-to make use of the \\(t\\) bound. By setting \\(t^{\prime} = t / O(n t\_{g})\\) we can
+In particular, we need \\(O(t^{\prime})\\) samples (\\(2n\\) pseudorandom /
+random bits), and simulation of the oracle takes \\(O(t^{\prime} n
+t\_{g}\\) overhead.  Altogether, this implies \\(t^{\prime} + O(t^{\prime}
+t\_{g} n)\\) time algorithm for \\(t^{\prime}\\) samples. (Since for
+advantage, we have no trouble, it is skipped.)  We now need to have
+\\(t^{\prime} + O(t^{\prime} t\_{g} n) < t - t^{\prime} t\_{g}\\) to make
+use of the \\(t\\) bound. By setting \\(t^{\prime} = t / O(n t\_{g})\\) we can
 get this result.
 
 
 #### Exercise: Domain Extension for PRFs {#19-20-2-L6-Ex}
 
-Levin's Trick: For any \\(l\le n \in \NN\\), let \\(R\_{1}\\) be a random function
-distribution over \\(\\{0,1\\}^{l}\to\\{0,1\\}^{n}\\) and \\(H\\) be a family of UHF
-from \\(n\\) to \\(l\\), then argue that \\(R\_{1}(H\_{{1}}(\cdot))\\) is indistinguishable
-from \\(n\\) to \\(n\\) random function.
+Levin's Trick: For any \\(l\le n \in \mathbb{N}\\), let \\(R\_{1}\\) be a
+random function distribution over \\(\\{0,1\\}^{l}\to\\{0,1\\}^{n}\\) and \\(H\\)
+be a family of UHF from \\(n\\) to \\(l\\), then argue that
+\\(R\_{1}(H\_{{1}}(\cdot))\\) is indistinguishable from \\(n\\) to \\(n\\) random
+function.
 
-Proof (informal). Consider an adversary that makes at most \\(q\\) queries to the
-oracle, when non of the \\(q\\) queries collide, the output distribution is exactly
-the same in \\(R\_{1}\circ H\_{1}\\) as in \\(R\\). So if we managed to argue this event
-happens with probability \\(1-\epsilon\\) then the advantage between distinguishing
-these two oracles are at most \\(\epsilon\\).
+Proof (informal). Consider an adversary that makes at most \\(q\\) queries
+to the oracle, when non of the \\(q\\) queries collide, the output
+distribution is exactly the same in \\(R\_{1}\circ H\_{1}\\) as in \\(R\\). So
+if we managed to argue this event happens with probability
+\\(1-\epsilon\\) then the advantage between distinguishing these two
+oracles are at most \\(\epsilon\\).
 
-Consider the event that collision do happen. We denote \\(\text{Collide}\_{i}\\) the
-event that the \\(i^{\text{th}}\\) query becomes the first collision. It follows
-from union bound that \\[\mathcal{P}r[\text{Collide}] \le
-\sum\_{i}\mathcal{P}r[\text{Collide}\_{i}]\\] Where the probability is over random choice of
-\\(R\_{1}\\), \\(H\_{1}\\), and the querying algorithm. The observation here is that when
-\\(\text{Collide}\_{i}\\) occurs, the first \\(i-1\\) oracle outputs are independently
-random. And thus the information of \\(H\_{1}\\) has not increased from these
-outputs. Therefore, \\[\text{Collide}\_{i} \le \frac{i-1}{2^{l}}\\] From another
-union bound using the uniform hash property.
+Consider the event that collision do happen. We denote
+\\(\text{Collide}\_{i}\\) the event that the \\(i^{\text{th}}\\) query becomes
+the first collision. It follows from union bound that
 
-Altogether, this implies \\[\mathcal{P}r[\text{Collide}] \le \frac{q^{2}}{2^{l+1}},\\]
+\\[\Pr[\text{Collide}] \le \sum\_{i}\Pr[\text{Collide}\_{i}]\\]
+
+Where the probability is over random choice of \\(R\_{1}\\), \\(H\_{1}\\), and
+the querying algorithm. The observation here is that when
+\\(\text{Collide}\_{i}\\) occurs, the first \\(i-1\\) oracle outputs are
+independently random. And thus the information of \\(H\_{1}\\) has not
+increased from these outputs. Therefore,
+
+\\[\text{Collide}\_{i} \le \frac{i-1}{2^{l}}\\]
+
+From another union bound using the uniform hash property.
+
+Altogether, this implies
+
+\\[\Pr[\text{Collide}] \le \frac{q^{2}}{2^{l+1}},\\]
+
 Which is arguably good enough when \\(l\\) is not too small (e.g. \\(1/2n\\)).
 
 <!--list-separator-->
 
 -  Bibliography
 
-    I did some research for a more rigorous proof, and all references point to a
-    paper by Levin in Combinatorica 1987: [One way functions and pseudorandom
-    generator](https://link.springer.com/article/10.1007/BF02579323). But it seems that from Nico's paper in CRYPTO 2015 --- [Efficient
-    pseudorandom functions via on-the-fly adaption](https://link.springer.com/chapter/10.1007%2F978-3-662-47989-6_16) that this results can be improved
-    when \\(l\\) is not big enough. The original paper is scanned and is in terrible
-    readability. So I may only consider reading it after I confirmed that my
-    aforementioned proof is incomplete.
+    I did some research for a more rigorous proof, and all references
+    point to a paper by Levin in Combinatorica 1987: [One way functions and
+    pseudorandom generator](https://link.springer.com/article/10.1007/BF02579323). But it seems that from Nico's paper in
+    CRYPTO 2015 --- [Efficient pseudorandom functions via on-the-fly
+    adaption](https://link.springer.com/chapter/10.1007%2F978-3-662-47989-6_16) that this results can be improved when \\(l\\) is not big
+    enough. The original paper is scanned and is in terrible
+    readability. So I may only consider reading it after I confirmed that
+    my aforementioned proof is incomplete.
 
 
 ## Lecture 7 {#lecture-7}
@@ -2721,9 +2753,9 @@ Which is arguably good enough when \\(l\\) is not too small (e.g. \\(1/2n\\)).
 
 ### PRF {#prf}
 
-PRF from PRG using GGM tree. Two proofs, the first one is a strong result, but
-with limitation. The second one relaxed the result, but is able to prove
-polynomial depth results.
+PRF from PRG using GGM tree. Two proofs, the first one is a strong
+result, but with limitation. The second one relaxed the result, but is
+able to prove polynomial depth results.
 
 
 ### Pseudorandom functions in almost constant depth from low-noise LPN {#pseudorandom-functions-in-almost-constant-depth-from-low-noise-lpn}
@@ -2734,24 +2766,28 @@ Search LPN
 : given a, \\(y = ax+e\\), find out \\(x\\)
 
 Decisional LPN
-: distinguish \\((a, y)\\) with \\(a, U\_{q}\\)
-
-The two versions are polynomially equivalent.
+: distinguish \\((a, y)\\) with \\(a, U\_{q}\\) The two
+    versions are polynomially equivalent.
 
 Another fact. LPN and Hermite normal forms are equivalent.
 
 -   LPN \\(\le\\) HLPN, we have a \\(n\\) loss in query complexity
--   HLPN \\(\le\\) LPN, add uniform secret to LPN sample. No loss whatsoever and noise can be arbitrary.
+-   HLPN \\(\le\\) LPN, add uniform secret to LPN sample. No loss
+    whatsoever and noise can be arbitrary.
 
 In the following construction, we assume \\(x,e\\) are both Bernoulli.
 
 
 #### Hardness of LPN {#hardness-of-lpn}
 
-Worst case hardness: decoding linear code Average-case hardness: BKW algorithm
+Worst case hardness: decoding linear code Average-case hardness: BKW
+algorithm
 
--   For constant noise \\(\mu\\) BKW: \\(t = q = 2^{O(n/\log n)}\\). Vadim's tradeoff: \\(t = 2^{O(n/\log\log n)}\\), \\(q = n^{1 + \epsilon}\\). For \\(q = O(n)\\), the best algorithm is \\(t = 2^{{O(n)}}\\).
--   For low noise LPN \\(\mu = n^{-c}\\). The best algorithm has \\(t = poly(n,q)e^{n^{1-c}}\\).
+-   For constant noise \\(\mu\\) BKW: \\(t = q = 2^{O(n/\log n)}\\). Vadim's
+    tradeoff: \\(t = 2^{O(n/\log\log n)}\\), \\(q = n^{1 + \epsilon}\\). For
+    \\(q = O(n)\\), the best algorithm is \\(t = 2^{{O(n)}}\\).
+-   For low noise LPN \\(\mu = n^{-c}\\). The best algorithm has \\(t =
+      poly(n,q)e^{n^{1-c}}\\).
 
 
 #### Related Works {#related-works}
@@ -2761,34 +2797,37 @@ LPN to PRG, PRF, CCA PKE, etc.
 
 #### Main Results {#main-results}
 
--   Polynomial-stretch PRG in \\(\AC\_{0} \mod 2\\)
--   PRF in \\(\tilde{\AC\_{0}} \mod 2\\) (depth is \\(\omega(1)\\))
-
-Infeasibility result: quasi-polynomial hard PRF in \\(\AC\_0\\) is impossible.
+-   Polynomial-stretch PRG in \\(\mathcal{AC}\_{0} \mod 2\\)
+-   PRF in \\(\tilde{\mathcal{AC}\_{0}} \mod 2\\) (depth is \\(\omega(1)\\))
+    Infeasibility result: quasi-polynomial hard PRF in
+    \\(\mathcal{AC}\_0\\) is impossible.
 
 
 #### Notions {#notions}
 
 In this result, we consider randomized PRG, PRF.
 
-We consider shared random matrix \\(A\\). This will incur a security loss from
-hybrid argument (the secret now is a matrix rather than a vector).
+We consider shared random matrix \\(A\\). This will incur a security
+loss from hybrid argument (the secret now is a matrix rather than a
+vector).
 
 Randomized PRF in this work is weak PRF.
 
 
 #### PRG {#prg}
 
-We use an sampler/extractor to convert almost all entropy of input w into
-Bernoulli-like noise \\(x,e\\).
+We use an sampler/extractor to convert almost all entropy of input
+\\(w\\) into Bernoulli-like noise \\(x,e\\).
 
-Assume noise \\(\mu = 2^{-i}\\) for \\(i\in\NN\\). For \\(\mu = n^{-c}\\) (\\(i = c\log
-n\\)), Shannon entropy of \\(Ber\_{\mu}\\) \\(\approx \mu\log(1/\mu)\\).
+Assume noise \\(\mu = 2^{-i}\\) for \\(i\in\mathbb{N}\\). For \\(\mu =
+n^{-c}\\) (\\(i = c\log n\\)), Shannon entropy of \\(Ber\_{\mu}\\) \\(\approx
+\mu\log(1/\mu)\\).
 
 This is very wastful for randomness. There are two solutions
 
 1.  [Applebaum et al. 09], recycle randomness from \\(r\\).
-2.  [Yu Zhang 16], first use a **pairwise** independent hash function to expand randomness, then use AND to sample noise.
+2.  [Yu Zhang 16], first use a **pairwise** independent hash function to
+    expand randomness, then use AND to sample noise.
 
 Theorem: Let \\(h\_1, h\_2, \ldots, h\_q\\) be 2-wise independent hash function, for
 any source \\(w\\) of collision entropy \\(\lambda\\), and any constant \\(0 < \delta
@@ -2808,18 +2847,20 @@ input of size n
 We assume there is a PRG with \\(n\\)-bit input and \\(n^2\\)-bit output. (i.e. a
 synthesizer ?)
 
-1.  Use GGM construction of depth \\(d = \omega(1)\\) to get a PRF of input size \\(\omega(\log n)\\)
-2.  Domain extension from \\(\\{0,1\\}^{n}\\) to \\(\\{0,1\\}^{\omega{\log n}}\\) using **generalized** levin's trick.
+1.  Use GGM construction of depth \\(d = \omega(1)\\) to get a PRF of
+    input size \\(\omega(\log n)\\)
+2.  Domain extension from \\(\\{0,1\\}^{n}\\) to \\(\\{0,1\\}^{\omega{\log
+       n}}\\) using **generalized** levin's trick.
 
 
 ### Pseudorandom Permutation {#pseudorandom-permutation}
 
-Definition. ![](/ox-hugo/PRP.png)
+{{< figure src="/ox-hugo/PRP.png" caption="<span class=\"figure-number\">Figure 7: </span>Definition of Pesuro-Random Permutation" >}}
 
 This definition follows a common paradigm in cryptography: efficient
 approximation of ideal world from real world.
 
-Feistel Networks: from PRF to PRP ![](/ox-hugo/feistel.png)
+{{< figure src="/ox-hugo/feistel.png" caption="<span class=\"figure-number\">Figure 8: </span>Feistel Networks: from PRF to PRP" >}}
 
 The feature here is that both the permutation and its inverse are efficiently
 computable. And it can be easily concatenated.
@@ -2864,22 +2905,26 @@ gap (luckily not too big) between PRF and PRP.
 Lemma. A (\\(t\\), \\(\epsilon\\), \\(q\\))-secure PRP on n-bits is a (\\(t\\),
 \\(\epsilon + \frac{O(q^2)}{2^n}\\), \\(q\\))-PRF.
 
-Proof.
+**Proof.**
 
--   Any (t, q)-Adv distinguishes PRP from RP with advantage \\(\le \epsilon\\).
--   Any (\\(\infty\\), q)-Adv distinguishes RP from RF with advantage \\(O(q^{2}/2^{n})/\\).
+-   Any (t, q)-Adv distinguishes PRP from RP with advantage
+    \\(\leq\epsilon\\).
+-   Any (\\(\infty\\), q)-Adv distinguishes RP from RF with advantage
+    \\(O(q^{2}/2^{n})/\\).
 
 
 ### Mode of Operation {#mode-of-operation}
 
-Direct use of a block cipher is not recommended. Message are a multiple of the
-cipher block size in length. The solution is different mode of operations.
+Direct use of a block cipher is not recommended. Message are a
+multiple of the cipher block size in length. The solution is different
+mode of operations.
 
 -   ECB (insecure)
 -   Cipher Block Chaining
 -   Cipher Feedback
 -   Output Feedback
--   Counter (the difference from \\(r, \prf\_{k}( r)   \oplus x\\) is that CTR hash shorter ct, but is stateful)
+-   Counter (the difference from \\(r, \prf\_{k}( r) \oplus x\\) is that CTR
+    hash shorter ct, but is stateful)
 
 
 ### Pseudoentropy and Pseudorandomness Extraction {#pseudoentropy-and-pseudorandomness-extraction}
@@ -2887,10 +2932,14 @@ cipher block size in length. The solution is different mode of operations.
 Two types of Pseudoentropy.
 
 HILL pseudoentropy
-: X has k bit HILL pentropy if it is indistinguishable in the non-uniform model from a k-bit unpredictable (unconditional) distribution.
+: X has k bit HILL pentropy if it is
+    indistinguishable in the non-uniform model from a k-bit
+    unpredictable (unconditional) distribution.
 
 Metric-type pseudoentropy
-: X has k bit Metrix type pseudoentropy if for every circuit D of size s there exists a distribution of at least k-bit min-entropy that is indistinghishable by \\(D\\) from \\(X\\).
+: X has k bit Metrix type pseudoentropy
+    if for every circuit D of size s there exists a distribution of at
+    least k-bit min-entropy that is indistinghishable by \\(D\\) from \\(X\\).
 
 
 ## Lecture 8 {#lecture-8}
@@ -2902,67 +2951,76 @@ Pseudoentropy and pseudorandomness extraction.
 
 HILL and metric-type pesudoentropy.
 
-1.  HILL pseudoentropy.
-    We say \\(X\\) has HILL pseudoentropy \\(k\\) if there exists a distribution
-    \\(Y\\) where \\(\mathbf{H}\_{\infty}(Y) \ge k\\) and \\(\mathsf{CD}(X, Y) \leq \epsilon\\).
-2.  Metric-type pseudoentropy.
-    We say \\(X\\) has metric-type pseudoentropy \\(k\\) if for every circuit \\(D\\)
-    of size \\(s\\) there exists a distribution \\(Y\\) with \\(\mathbf{H}\_{\infty}(Y) \ge k\\)
+1.  HILL pseudoentropy.  We say \\(X\\) has HILL pseudoentropy \\(k\\) if
+    there exists a distribution \\(Y\\) where \\(\mathbf{H}\_{\infty}(Y)
+       \ge k\\) and \\(\mathsf{CD}(X, Y) \leq \epsilon\\).
+2.  Metric-type pseudoentropy.  We say \\(X\\) has metric-type
+    pseudoentropy \\(k\\) if for every circuit \\(D\\) of size \\(s\\) there
+    exists a distribution \\(Y\\) with \\(\mathbf{H}\_{\infty}(Y) \ge k\\)
     and \\(\delta^D(X, Y) \le \epsilon\\).
 
-Borak proved 2 implies 1 using von Neumman's Min-Max theorem. The idea is to
-prove after exchanging the quantifiers, the result is to some extent,
-equivalent.
+Borak proved 2 implies 1 using von Neumman's Min-Max theorem. The idea
+is to prove after exchanging the quantifiers, the result is to some
+extent, equivalent.
 
 
 ### Pseudoentropy of PRG conditioned on leakage {#pseudoentropy-of-prg-conditioned-on-leakage}
 
-If \\(\prg : \\{0,1\\}^n \to \\{0,1\\}^m\\) and \\(f : \\{0,1\\}^n \to
-\\{0,1\\}^{\lambda}\\) ![](/ox-hugo/prg_pseudoentropy.png)
+If \\(\mathsf{PRG} : \\{0,1\\}^n \to \\{0,1\\}^m\\) and \\(f : \\{0,1\\}^n \to
+\\{0,1\\}^{\lambda}\\)
 
-Without leakage, the pseudoentropy of PRG output is trivial. We want to prove
-similar result conditioned on arbitrary leakage.
+{{< figure src="/ox-hugo/prg_pseudoentropy.png" caption="<span class=\"figure-number\">Figure 9: </span>Peduroentropy of PRG" >}}
 
-Why do we use probability instead of plain assertion? The reason is that some
-leakage can be drastic. Using probability we can bypass this limitation. E.g.
-the leakage function \\(f\\) is the hamming weight of input. If we observed that
-\\(f(x) = 0\\), then it holds that \\(x = 0\\).
+Without leakage, the pseudoentropy of PRG output is trivial. We want
+to prove similar result conditioned on arbitrary leakage.
 
-From the previous lemma 7, we only have to prove equation (4), which is a
-seemingly weaker (and hopefully easier to prove) result.
+Why do we use probability instead of plain assertion? The reason is
+that some leakage can be drastic. Using probability we can bypass this
+limitation. E.g.  the leakage function \\(f\\) is the hamming weight of
+input. If we observed that \\(f(x) = 0\\), then it holds that \\(x = 0\\).
 
-This lecture is based on a FOCS 2008 paper: \*Leakage Resilient Cryptography\*这是一篇经典论文，贡献是
+From the previous lemma 7, we only have to prove equation (4), which
+is a seemingly weaker (and hopefully easier to prove) result.
+
+This lecture is based on a FOCS 2008 paper: **Leakage Resilient
+Cryptography** 这是一篇经典论文，贡献是
 
 1.  结论非常庞大，而且它试图通过理论的方法解决实际密码实现上的问题
 2.  证明过程中的一个结论是 Dense Model Theorem, 它与Green-Tao定理存在着联系
 
-    Green-Tao: 质数包含所有长度的等差数列，即给定\\(\ell\\)，存在差为\\(\ell\\)的素数等差数列
+    Green-Tao: 质数包含所有长度的等差数列，即给定\\(\ell\\)，存在差为
+    \\(\ell\\)的素数等差数列
 
     我们使用集合上的Dense Model Theorem。
 
-Proof overview. ![](/ox-hugo/proof_stoc_2008.png)
+**Proof overview.**
+
+{{< figure src="/ox-hugo/proof_stoc_2008.png" caption="<span class=\"figure-number\">Figure 10: </span>Simplified Proof" >}}
 
 First consider the complement of the event, what we want to prove is ...
 
-One tricky part is that you can assume a 0-1 distinguisher can output one real
-number. This special type of distinguisher can be implied by standard
-distinguishers, by apprximating the probability \\(\mathcal{P}r[D=1]\\).
+One tricky part is that you can assume a 0-1 distinguisher can output
+one real number. This special type of distinguisher can be implied by
+standard distinguishers, by apprximating the probability \\(\Pr[D=1]\\).
 
-Anyway, the proof showed that PRG is still secure under leakage. In particular,
-we have for a \\(\prg\\), there exists a high-entropy \\(Y\\) such that \\(\prg(X),
-f(X)\\) is indistinguishable from \\(Y, f(Y)\\). We can therefore use an extractor
-to extract randomness from \\(Y | f(Y)\\). This means that even for leaky source,
-we can extract randomness from PRG's output using randomness extractor (e.g.
-universal hash function).
+Anyway, the proof showed that PRG is still secure under leakage. In
+particular, we have for a \\(\mathsf{PRG}\\), there exists a
+high-entropy \\(Y\\) such that \\(\mathsf{PRG}(X), f(X)\\) is
+indistinguishable from \\(Y, f(Y)\\). We can therefore use an extractor
+to extract randomness from \\(Y | f(Y)\\). This means that even for
+leaky source, we can extract randomness from PRG's output using
+randomness extractor (e.g. universal hash function).
 
 
 ### Non-Uniform Key wPRF {#non-uniform-key-wprf}
 
 For a weak PRF, if we choose key to be slightly non-uniform, will the output
-still be pseudorandom? ![](/ox-hugo/wPRF_leak.png)
+still be pseudorandom?
 
-If you are interested, please refer to STOC 2008, EC 2009 (a simplified proof is
-presented in TCC 2013).
+{{< figure src="/ox-hugo/wPRF_leak.png" caption="<span class=\"figure-number\">Figure 11: </span>Non-uniform High-min-entropy Key in PRG Application" >}}
+
+If you are interested, please refer to STOC 2008, EC 2009 (a
+simplified proof is presented in TCC 2013).
 
 
 ### Exercises {#exercises}
@@ -2974,14 +3032,15 @@ Independent code: \\(k\\)-independent and \\(k = n\\) means that the code
 \\(C\\) is MDS code, which is trivial for \\(\mathbb{F}\_2\\), so typically
 we have \\(k < n\\).
 
-We relex the condition to proving a good enough probability over the choice of
-\\(C\\).
+We relex the condition to proving a good enough probability over the
+choice of \\(C\\).
 
-We first expand the probability in to summation over \\(r\\), and then observe
-that for random \\(C\\), since \\(r\\) is pair-wise disjoint, the r.v. \\(Cr\_1\\) and
-\\(Cr\_2\\) are independent for any \\(r\_1 \ne r\_2\\). Notice that altogether they
-are not independent (consider \\(r\_3 = r\_1 + r\_2\\)). We can then use Chebyshev's
-inequality to get the result.
+We first expand the probability in to summation over \\(r\\), and then
+observe that for random \\(C\\), since \\(r\\) is pair-wise disjoint, the
+r.v. \\(Cr\_1\\) and \\(Cr\_2\\) are independent for any \\(r\_1 \ne
+r\_2\\). Notice that altogether they are not independent (consider \\(r\_3
+= r\_1 + r\_2\\)). We can then use Chebyshev's inequality to get the
+result.
 
 
 #### One-Time MAC {#one-time-mac}
@@ -2997,9 +3056,9 @@ Use Markov inequality.
 #### PRG from LPN {#prg-from-lpn}
 
 One trick --- flattening Shannon entropy. For \\(H(w) = a\\), we have
-\\(\minentropy{w\_1, w\_2, \ldots, w\_n} \approx na\\). The definition-based
-conditional min-entorpy is somewhat pessimistic. The flattneing trick can be
-userful here.
+\\(\minentropy{w\_1, w\_2, \ldots, w\_n} \approx na\\). The
+definition-based conditional min-entorpy is somewhat pessimistic. The
+flattneing trick can be userful here.
 
 
 ## Lecture 9 {#lecture-9}
@@ -3021,26 +3080,27 @@ whp. \\(\frac{3n}{2} - \lambda\\) 2-bit pairs that have \\(\log 3\\) entropy.
 Procedure:
 
 -   First sample \\(x, e\\) from \\(4n\\)-bit uniform randomness.
--   Then output \\(A x + e\\), and use randomness extractor to extract \\(2n + \lambda\\) bits.
+-   Then output \\(A x + e\\), and use randomness extractor to extract
+    \\(2n + \lambda\\) bits.
 
 
 #### Search-LPN and Decision-LPN {#search-lpn-and-decision-lpn}
 
-From Decision-LPN to Search-LPN: Compute \\(x\\) and accept iff. the hamming
-weight of \\(y - Ax\\) is small.
+From Decision-LPN to Search-LPN: Compute \\(x\\) and accept iff. the
+hamming weight of \\(y - Ax\\) is small.
 
-If input \\(A, y\\) follows LPN distribution, the algorithm will accept whp. If
-the input follows uniform distribution, then from the fact that
+If input \\(A, y\\) follows LPN distribution, the algorithm will accept
+whp. If the input follows uniform distribution, then from the fact
+that
 
-\begin{equation\*}
-\mathcal{P}r\_{A, y} [ \exists s, |y - As| \le \lambda ] \le
- 2^{ -m + n + \lambda \log(m) },
-\end{equation\*}
+\\[ \Pr\_{A, y} [ \exists s, |y - As| \le \lambda ] \le 2^{ -m + n +
+\lambda \log(m) }, \\]
 
 we conclude that the probability the algorithm accept is bounded
 by the previous negligible probability.
 
-From Search-LPN to Decision-LPN: There are at least three very related methods.
+**From Search-LPN to Decision-LPN:** There are at least three very
+related methods.
 
 The first one is the most "orthodox" one. Construct hybrid \\(H\_0\\),
 \\(H\_1\\), \\(\ldots\\), \\(H\_q\\). \\(H\_0\\) is the LPN distribution, and
@@ -3049,25 +3109,27 @@ from the one-wayness of LPN, changing \\(a\_i^T x\\) to \\(U\_1\\) is
 indistinguishable. So by hybrid argument we can conclude that \\(H\_0\\)
 and \\(H\_q\\) are indistinguishable.
 
-Or we can follow the second way: using the LWE-like solver, solving the secret
-bit-by-bit.
+Or we can follow the second way: using the LWE-like solver, solving
+the secret bit-by-bit.
 
-Finally, we can use a very unorthodox method, without hybrid argument. Suppose
-there is a distinguisher that distinguishes LPN distribution and uniform
-distribution, then we can construct an algorithm that on input \\(A, Ax+e, r\\),
-output \\(r^T, x\\) with high probability. And from GL-theorem's proof (the list
-decoding algorithm), this implies a solver for \\(x\\).
+Finally, we can use a very unorthodox method, without hybrid
+argument. Suppose there is a distinguisher that distinguishes LPN
+distribution and uniform distribution, then we can construct an
+algorithm that on input \\(A, Ax+e, r\\), output \\(r^T, x\\) with high
+probability. And from GL-theorem's proof (the list decoding
+algorithm), this implies a solver for \\(x\\).
 
-How to do that? First samples \\(u \leftarrow \\{0,1\\}^q\\), and then let \\(\bar{A}
-= A - u\cdot r^T\\). Observe that
+How to do that? First samples \\(u \leftarrow \\{0,1\\}^q\\), and then let
+\\(\bar{A} = A - u\cdot r^T\\). Observe that
 
 \begin{align}
  A x + e &= (\bar{A} + u r^T) x + e \\\\
  & = \bar{A} x + e + u (r^T x)\enspace.
 \end{align}
 
-So when \\(r^Tx = 0\\), \\(Ax + e\\) follows LPN distribution with \\(\bar{A}\\) as
-public matrix, whereas when \\(r^T x = 1\\) output is random.
+So when \\(r^Tx = 0\\), \\(Ax + e\\) follows LPN distribution with
+\\(\bar{A}\\) as public matrix, whereas when \\(r^T x = 1\\) output is
+random.
 
 And thus \\(\bar{A}, y = Ax+e\\) follows
 
@@ -3079,32 +3141,31 @@ This implies an effective distinguisher for the GL-hardcore.
 
 #### Domain Extension {#domain-extension}
 
-Conditioned on no collision at \\(R\_1\\), the two distributions are identical. So
-we only have to bound the probability of collision. And the probability is just
-a birthday attack bound. As a matter of details, I think the probability should
-be computed as
+Conditioned on no collision at \\(R\_1\\), the two distributions are
+identical. So we only have to bound the probability of collision. And
+the probability is just a birthday attack bound. As a matter of
+details, I think the probability should be computed as
 
-\begin{equation}
-\mathcal{P}r[\neg \text{Collision}] \ge (1) (1 - \frac{1}{2^l}) (1 - \frac{2}{2^l})\ldots
-(1 - \frac{q-1}{2^l}) = 1 - O(\frac{q^2}{2^{l+1}})\enspace,
-\end{equation}
+\\[ \Pr[\neg \text{Collision}] \ge (1) (1 - \frac{1}{2^l}) (1 -
+\frac{2}{2^l})\ldots (1 - \frac{q-1}{2^l}) = 1 -
+O(\frac{q^2}{2^{l+1}})\enspace, \\]
 
-whereas I am
-not sure how to formulate the \\(\binom{q}{2}\\)-pair bound, since collision can
-occur at each level.
+whereas I am not sure how to formulate the \\(\binom{q}{2}\\)-pair
+bound, since collision can occur at each level.
 
-One tricky part is that after query, the hash function \\(h\\) can be made public.
-So the attack can be made a two-stage process. First the attacker is given
-oracle access to a PRF (\\(R^{\prime} = R \circ H\\)), and in the second stage,
-the attacker is given the transcript of the attack, along with the hash
-function. This is clearly a relaxation, but does not affect security.
+One tricky part is that after query, the hash function \\(h\\) can be
+made public.  So the attack can be made a two-stage process. First the
+attacker is given oracle access to a PRF (\\(R^{\prime} = R \circ H\\)),
+and in the second stage, the attacker is given the transcript of the
+attack, along with the hash function. This is clearly a relaxation,
+but does not affect security.
 
 
 ### CRHF and UOWHF {#crhf-and-uowhf}
 
-U(OW)HF is an one-way version of UHF. CRHF is considered to be the strongest
-primitive in symmetric cryptography, although no black-box construction based on
-OWF exists.
+U(OW)HF is an one-way version of UHF. CRHF is considered to be the
+strongest primitive in symmetric cryptography, although no black-box
+construction based on OWF exists.
 
 
 #### Collision Resistance Hash Function {#collision-resistance-hash-function}
@@ -3112,23 +3173,24 @@ OWF exists.
 CRHF is a family of Hash funcitons such that:
 
 Efficient
-: polynomial computable sampling and evaluation algorithms
+: polynomial computable sampling and evaluation
+    algorithms
 
 Shrinking
 : opposite to stretching
 
 Collision Resistant
-: given random instance, any PPT adversary cannot find a collision
+: given random instance, any PPT adversary
+    cannot find a collision
 
-\begin{equation}
-\mathcal{P}r\_{g\leftarrow G; (x, x^{\prime}) \gets A(1^n, g)} [x\ne x^{\prime}\land g(x) =
-g(x^{\prime})] = \mathsf{negl}\end{equation}
+\\[ \Pr\_{g\leftarrow G; (x, x^{\prime}) \gets A(1^n, g)} [x\ne
+x^{\prime}\land g(x) = g(x^{\prime})] = \mathsf{negl} \\]
 
-Birthday attack. Use \\(2^{\frac{m}{2}}\\) time to find from \\(2^m\\)-output domain
-a collision with a constant probability (since the collision probability with
-random output among \\(2^m\\) and \\(q\\) queries is \\(\Theta(\frac{q^2}{2^m})\\)).
-This implies that any CRHF with output size \\(m\\) has security no more than
-\\(\frac{m}{2}\\).
+Birthday attack. Use \\(2^{\frac{m}{2}}\\) time to find from
+\\(2^m\\)-output domain a collision with a constant probability (since
+the collision probability with random output among \\(2^m\\) and \\(q\\)
+queries is \\(\Theta(\frac{q^2}{2^m})\\)).  This implies that any CRHF
+with output size \\(m\\) has security no more than \\(\frac{m}{2}\\).
 
 Practical examples:
 
@@ -3141,7 +3203,8 @@ SHA1
 SHA256
 : output 256bits, unlikely to break
 
-Theoretically black-box construction of CRHF based on OWF is impossible.
+Theoretically black-box construction of CRHF based on OWF is
+impossible.
 
 
 #### Universal One-Way Hash Function {#universal-one-way-hash-function}
@@ -3155,74 +3218,74 @@ Shrinking
 : opposite to stretching
 
 Target Collision Resistant
-: given random instance, a target, any PPT adversary cannot find a collision.
-    For any \\(x\in \\{0,1\\}^n\\),
+: given random instance, a target, any
+    PPT adversary cannot find a collision.  For any \\(x\in \\{0,1\\}^n\\),
 
-\begin{equation}
-\mathcal{P}r\_{g\leftarrow G; x^{\prime}\gets A(1^n, g,x))} [x\ne x^{\prime}\land g(x) =
-g(x^{\prime})] = \mathsf{negl}. \end{equation}
+\\[ \Pr\_{g\leftarrow G; x^{\prime}\gets A(1^n, g,x))} [x\ne
+x^{\prime}\land g(x) = g(x^{\prime})] = \mathsf{negl}. \\]
 
-TCR limits the form of collison (by setting a "target"), so it is a weaker
-version of CR.
+TCR limits the form of collison (by setting a "target"), so it is a
+weaker version of CR.
 
-TCR is equivalent to another notion called TCR2. In this definition, the target
-\\(x\\) is chosen uniformly at random. That TCR implies TCR2 is trivial, while in
-the opposite direction, we can construct a TCR hash from a TCR2 hash, by adding
-\\(n\\)-bit to function description, and xoring \\(a\\) with input before every
-evaluation. That is, \\(g^{\prime}(x) = g(x \oplus a)\\).
+TCR is equivalent to another notion called TCR2. In this definition,
+the target \\(x\\) is chosen uniformly at random. That TCR implies TCR2
+is trivial, while in the opposite direction, we can construct a TCR
+hash from a TCR2 hash, by adding \\(n\\)-bit to function description,
+and xoring \\(a\\) with input before every evaluation. That is,
+\\(g^{\prime}(x) = g(x \oplus a)\\).
 
-The reduction is trivial. Suppose there exists a target \\(a\\) that allows an
-algorithm \\(A\\) finds collision with non-negligible probability, then we can
-first ask TCR2 challenger for a hash function \\(g\\) and target \\(x\\), then send
-to algorithm \\(A\\) \\(g\_{x \oplus a}\\) and \\(a\\). If such a collision \\(b\\) is
-found, it holds that \\(g(x) = g(x \oplus a \oplus b)\\).
+The reduction is trivial. Suppose there exists a target \\(a\\) that
+allows an algorithm \\(A\\) finds collision with non-negligible
+probability, then we can first ask TCR2 challenger for a hash function
+\\(g\\) and target \\(x\\), then send to algorithm \\(A\\) \\(g\_{x \oplus
+a}\\) and \\(a\\). If such a collision \\(b\\) is found, it holds that
+\\(g(x) = g(x \oplus a \oplus b)\\).
 
-UOWHF is good enough for digital signatures, and it is implied from OWF. This
-concept, together with a reduction from OWP, was presented by Naor and Yung.
+UOWHF is good enough for digital signatures, and it is implied from
+OWF. This concept, together with a reduction from OWP, was presented
+by Naor and Yung.
 
 UOWHF can be seen as dual to PRG.
 
 
 ### UOWHF from OWP {#uowhf-from-owp}
 
-Let \\(f: \\{0,1\\}^n \to \\{0,1\\}^n\\) be any (\\(t\\), \\(\epsilon\\))-one-way
-permutation, and \\(H\\) be a family of universal hash permutations over
-\\(\\{0,1\\}^n\\),
+Let \\(f: \\{0,1\\}^n \to \\{0,1\\}^n\\) be any (\\(t\\),
+\\(\epsilon\\))-one-way permutation, and \\(H\\) be a family of universal
+hash permutations over \\(\\{0,1\\}^n\\),
 
-\begin{equation}
-H = \\{ h:\\{0,1\\}^n \to \\{0,1\\}^{n} | h(y) := h\cdot y, h\ne {\bf 0}, y\in
-GF(2^n) \\}\enspace,
-\end{equation}
+\\[ H = \\{ h:\\{0,1\\}^n \to \\{0,1\\}^{n} | h(y) := h\cdot y, h\ne {\bf
+0}, y\in GF(2^n) \\}\enspace, \\]
 
-let \\(\mathsf{trunc}\\) be the function that truncates
-the last bit of its \\(n\\)-bit input. Then we argue that
+let \\(\mathsf{trunc}\\) be the function that truncates the last bit of
+its \\(n\\)-bit input. Then we argue that
 
-\begin{equation}
-G := \\{ (\mathsf{trunc} \circ h \circ f) | h\in H \\}
-\end{equation}
+\\[G := \\{ (\mathsf{trunc} \circ h \circ f) | h\in H \\}\\]
 
-is a family
-of (\\(t - n^{O(1)}\\), \\(\epsilon\\)) UOWHF with 1bit shrinkage.
+is a family of (\\(t - n^{O(1)}\\), \\(\epsilon\\)) UOWHF with 1bit
+shrinkage.
 
 
 #### Proof {#proof}
 
-We can construct an inversion algorithm for OWP based on
-Collision finder of TCR2. The key is that we can "program" the hash function in
+We can construct an inversion algorithm for OWP based on Collision
+finder of TCR2. The key is that we can "program" the hash function in
 the middle to meet our need.
 
-Given input \\(y\\), we first samples \\(x^{\prime} \leftarrow \\{0,1\\}^n\\). With
-probability \\(\frac{1}{2^n}\\) we can success at this step (\\(f(x^{\prime} =
-y\\)). If not, we continue by computing \\(h = (00\ldots 01)\cdot (y -
-x^{\prime})^{-1}\\). Notice that this implies j\begin{equation} \mathsf{trunc}
-&circ; h &circ; \underbrace{f (x)}<sub>y</sub> = \mathsf{trunc} &circ; h &circ; f
-(x<sup>&prime;</sup>)\enspace,
-\end{equation}
-and since \\(x^{\prime} \\) and \\(x\\) are iid, \\(h\\)
-is indeed random. If the inversion algorithm has probability \\(\epsilon\\) when
-the input is \\(h, x^{\prime}\\), then with the same probability we can find \\(x\\)
-since the hash function is \\(2\\)-regular. Altogether, we obtain a OWP inverter
-that succeed with at least \\(\epsilon\\) probability.
+Given input \\(y\\), we first samples \\(x^{\prime} \leftarrow
+\\{0,1\\}^n\\). With probability \\(\frac{1}{2^n}\\) we can success at this
+step (\\(f(x^{\prime} = y\\)). If not, we continue by computing \\(h =
+(00\ldots 01)\cdot (y - x^{\prime})^{-1}\\). Notice that this implies
+
+\\[ \mathsf{trunc} \circ h \circ \underbrace{f (x)}\_{y} =
+\mathsf{trunc} \circ h \circ f (x^{\prime})\enspace, \\]
+
+and since \\(x^{\prime} \\) and \\(x\\) are iid, \\(h\\) is indeed
+random. If the inversion algorithm has probability \\(\epsilon\\) when
+the input is \\(h, x^{\prime}\\), then with the same probability we can
+find \\(x\\) since the hash function is \\(2\\)-regular. Altogether, we
+obtain a OWP inverter that succeed with at least \\(\epsilon\\)
+probability.
 
 
 ### Merkle-Damgard Domain Extension for CRHFs and UOWHFs {#merkle-damgard-domain-extension-for-crhfs-and-uowhfs}
@@ -3231,19 +3294,16 @@ that succeed with at least \\(\epsilon\\) probability.
 
 Let
 
-\begin{equation}
-G \subseteq \\{ g: \\{0,1\\}^n \to \\{0,1\\}^{n-s} \\}
-\end{equation}
+\\[G \subseteq \\{ g: \\{0,1\\}^n \to \\{0,1\\}^{n-s} \\} \\]
 
-for each
-\\(g : (x\_i,r\_i) \to x\_{i+1}\\), where \\(x\_i, x\_{i+1} \in \\{0,1\\}^{n-s}\\), \\(r\_i
-\in \\{0,1\\}^s\\), be a (\\(t\\), \\(\epsilon\\))-secure CRHF, and for any \\(q \in
-\NN\\) define \\(G^q \subseteq \\{0,1\\}^{n + (q-1) s} \to \\{0,1\\}^{n-s}, g\in
-G\\) where
+for each \\(g : (x\_i,r\_i) \to x\_{i+1}\\), where \\(x\_i, x\_{i+1} \in
+\\{0,1\\}^{n-s}\\), \\(r\_i \in \\{0,1\\}^s\\), be a (\\(t\\),
+\\(\epsilon\\))-secure CRHF, and for any \\(q \in \mathbb{N}\\) define
+\\(G^q \subseteq \\{0,1\\}^{n + (q-1) s} \to \\{0,1\\}^{n-s}, g\in G\\)
+where
 
-\begin{equation}
-g^q(x\_{1}, r\_1, r\_2, \ldots, r\_q) = g(\ldots g(g(x\_1, r\_1), r\_2), \ldots, r\_q).
-\end{equation}
+\\[ g^q(x\_{1}, r\_1, r\_2, \ldots, r\_q) = g(\ldots g(g(x\_1, r\_1), r\_2),
+\ldots, r\_q).  \\]
 
 Then we have (\\(t - q t\_g\\), \\(\epsilon\\))-CRHF.
 
@@ -3252,10 +3312,11 @@ Then we have (\\(t - q t\_g\\), \\(\epsilon\\))-CRHF.
 
 #### Proof {#proof}
 
-From the "bigger" collision we can find a smaller collison at
-the \\(i^{th}\\) level such that \\(g(x\_i, r\_i) = g(x^{\prime}\_i, r^{\prime}\_i)\\)
-and \\((x\_i, r\_i) \ne (x\_i^{\prime}, r\_i^{\prime})\\). And that contradicts the
-assumption that \\(g\\) is CRHF. The time loss is incurred at the checking step.
+From the "bigger" collision we can find a smaller collison at the
+\\(i^{th}\\) level such that \\(g(x\_i, r\_i) = g(x^{\prime}\_i,
+r^{\prime}\_i)\\) and \\((x\_i, r\_i) \ne (x\_i^{\prime},
+r\_i^{\prime})\\). And that contradicts the assumption that \\(g\\) is
+CRHF. The time loss is incurred at the checking step.
 
 Merkle-Damgard Domain Extension for UOWHFs.
 
@@ -3263,20 +3324,16 @@ Merkle-Damgard Domain Extension for UOWHFs.
 
 Let
 
-\begin{equation}
-G \subseteq \\{ g: \\{0,1\\}^n \to \\{0,1\\}^{n-s} \\}
-\end{equation}
+\\[ G \subseteq \\{ g: \\{0,1\\}^n \to \\{0,1\\}^{n-s} \\} \\]
 
-for each
-\\(g : (x\_i,r\_i) \to x\_{i+1}\\), where \\(x\_i, x\_{i+1} \in \\{0,1\\}^{n-s}\\), \\(r\_i
-\in \\{0,1\\}^s\\), be a (\\(t\\), \\(\epsilon\\))-secure UOWHF, and for any \\(q \in
-\NN\\) define \\(G^q \subseteq \\{0,1\\}^{n + (q-1) s} \to \\{0,1\\}^{n-s}\\),
-\\(g\_{1}, g\_2, \ldots, g\_q \in G\\) where
+for each \\(g : (x\_i,r\_i) \to x\_{i+1}\\), where \\(x\_i, x\_{i+1} \in
+\\{0,1\\}^{n-s}\\), \\(r\_i \in \\{0,1\\}^s\\), be a (\\(t\\),
+\\(\epsilon\\))-secure UOWHF, and for any \\(q \in \mathbb{N}\\) define
+\\(G^q \subseteq \\{0,1\\}^{n + (q-1) s} \to \\{0,1\\}^{n-s}\\), \\(g\_{1},
+g\_2, \ldots, g\_q \in G\\) where
 
-\begin{equation}
-g^q(x\_{1}, r\_1, r\_2, \ldots, r\_q) = g\_q(\ldots g\_2(g\_1(x\_1, r\_1), r\_2), \ldots,
-r\_q)\enspace.
-\end{equation}
+\\[ g^q(x\_{1}, r\_1, r\_2, \ldots, r\_q) = g\_q(\ldots g\_2(g\_1(x\_1, r\_1),
+r\_2), \ldots, r\_q)\enspace.  \\]
 
 Then we have (\\(t - q t\_g\\), \\(q \epsilon \\))-UOWHF.
 
@@ -3285,66 +3342,75 @@ Then we have (\\(t - q t\_g\\), \\(q \epsilon \\))-UOWHF.
 
 #### Proof {#proof}
 
-This proof is somewhat tricker than the previous proof, since
-we have to embed the target into it. Using the TCR (instead of TCR2) definition,
-we can settle with arguing **existential** property, but throughout the proof one
-must beware that the target \\(y\\) must be independent of the UOWHF function
-(this is probabilty the reason behind \\(q\\)-many independent hash functions in
-the definition).
+This proof is somewhat tricker than the previous proof, since we have
+to embed the target into it. Using the TCR (instead of TCR2)
+definition, we can settle with arguing **existential** property, but
+throughout the proof one must beware that the target \\(y\\) must be
+independent of the UOWHF function (this is probabilty the reason
+behind \\(q\\)-many independent hash functions in the definition).
 
-Suppose through contradiction, there exists an algorithm running in \\(t -
-qt\_g\\)-time and a target \\(y = (x\_1, r\_1, \ldots, r\_q)\\) such that
+Suppose through contradiction, there exists an algorithm running in
+\\(t - qt\_g\\)-time and a target \\(y = (x\_1, r\_1, \ldots, r\_q)\\) such
+that
 
-\begin{equation\*}
-\mathcal{P}r\_{g\_1,g\_2,\ldots,g\_q \leftarrow G; y^{\prime} \gets A(y, g\_1, \ldots, g\_q)} [y
-\ne y^{\prime} \land g^q(y) = g^q(y^{\prime})] \ge q\epsilon\enspace,
-\end{equation\*}
+\\[ \Pr\_{g\_1,g\_2,\ldots,g\_q \leftarrow G; y^{\prime} \gets A(y, g\_1,
+\ldots, g\_q)} [y \ne y^{\prime} \land g^q(y) = g^q(y^{\prime})] \ge
+q\epsilon\enspace, \\]
 
-We can find a \\(t\\)-time algorithm \\(A^{\prime}\\) and target \\((x\_i^{\*},
-r\_i^{\*})\\) finds with at least \\(\epsilon\\)-probability. First consider a random
-index \\(i^{\*} \leftarrow [q]\\), random hash functions \\(g\_1, \ldots, g\_{i^{\*} - 1}
-\leftarrow G\\), and define \\(x\_i^{\*}, r\_i^{\*} = g^{i^{\*} - 1} (x\_1, r\_1, \ldots,
-r\_{i^{\*} - 1}\\). Now we let \\(g\_{i^{\*}} = g\\) which is the algorithm
-\\(A^{\prime}\\)'s input, and sample the rest hash functions at random.
+We can find a \\(t\\)-time algorithm \\(A^{\prime}\\) and target
+\\((x\_i^{\star}, r\_i^{\star})\\) finds with at least
+\\(\epsilon\\)-probability. First consider a random index \\(i^{\star}
+\leftarrow [q]\\), random hash functions \\(g\_1, \ldots, g\_{i^{\star} -
+1} \leftarrow G\\), and define \\(x\_i^{\star}, r\_i^{\star} =
+g^{i^{\star} - 1} (x\_1, r\_1, \ldots, r\_{i^{\star} - 1})\\). Now we let
+\\(g\_{i^{\star}} = g\\) which is the algorithm \\(A^{\prime}\\)'s input,
+and sample the rest hash functions at random.
 
-By the assumption, since our definition of \\(q\\) hash functions follows the
-uniform distribution over \\(G^q\\), with probability \\(q\epsilon\\) the algorithm
-\\(A\\) will return a collison \\(y^{\prime}\\). And since the index \\(i^{\*}\\) is
-independent with \\(A\\)'s input, with probability at least \\(\frac{1}{q}\\), the
-collision will occur at position \\(i^{\*}\\). Id est, we can get
-\\(x\_{i^{\*}}^{\prime}, r\_{i^{\*}}^{\prime}\\) that constitutes a collision for the
-hash function \\(g\\). Formally, we have
+By the assumption, since our definition of \\(q\\) hash functions
+follows the uniform distribution over \\(G^q\\), with probability
+\\(q\epsilon\\) the algorithm \\(A\\) will return a collison
+\\(y^{\prime}\\). And since the index \\(i^{\star}\\) is independent with
+\\(A\\)'s input, with probability at least \\(\frac{1}{q}\\), the
+collision will occur at position \\(i^{\star}\\). Id est, we can get
+\\(x\_{i^{\star}}^{\prime}, r\_{i^{\star}}^{\prime}\\) that constitutes a
+collision for the hash function \\(g\\). Formally, we have
 
 \begin{align\*}
-& \mathcal{P}r\_{ i^{\*} \leftarrow [q]; g \leftarrow G; (x^{\prime}\_{i^{\*}}, r^{\prime}\_{i^{\*}})
-\gets A(x\_{i^{\*}}, r\_{i^{\*}}) } [(x^{\prime}\_{i^{\*}}, r^{\prime}\_{i^{\*}}) \ne
-(x\_{i^{\*}}, r\_{i^{\*}}) \land g(x\_{i^{\*}}, r\_{i^{\*}}) = g(x^{\prime}\_{i^{\*}},
-r^{\prime}\_{i^{\*}})] \\\\
-& \ge \mathcal{P}r\_{\vec{g} \leftarrow G^q; y^{\prime} \leftarrow
+& \Pr\_{ i^{\star} \leftarrow [q]; g \leftarrow G;
+(x^{\prime}\_{i^{\star}}, r^{\prime}\_{i^{\star}})
+\gets A(x\_{i^{\star}}, r\_{i^{\star}}) }
+[(x^{\prime}\_{i^{\star}}, r^{\prime}\_{i^{\star}}) \neq
+(x\_{i^{\star}}, r\_{i^{\star}}) \land
+g(x\_{i^{\star}}, r\_{i^{\star}}) = g(x^{\prime}\_{i^{\star}},
+r^{\prime}\_{i^{\star}})] \\\\
+& \ge \Pr\_{\vec{g} \leftarrow G^q; y^{\prime} \leftarrow
 A^{\prime}(\vec{g})} [y \ne y^{\prime} \land g^q(y) = g^q(y^{\prime})] \cdot
-\mathcal{P}r\_{i^{\*} \leftarrow [q]} [i = i^{\*}] \\\\
+\Pr\_{i^{\star} \leftarrow [q]} [i = i^{\star}] \\\\
  & \ge q\epsilon \cdot \frac{1}{q} \\\\
  & = \epsilon\enspace.
 \end{align\*}
 
-Finally, since in the above argument, the target \\(x\_{i^{\*}}, r\_{i^{\*}}\\) only
-depends on \\(y\\) and random choice of \\(i^{\*}\\) and \\(g\_1, g\_2, \ldots,
-g\_{i^{\*} - 1}\\), we conclude by average argument there exists one specific
-target that has more than &epsilon; advantage.
+Finally, since in the above argument, the target \\(x\_{i^{\star}},
+r\_{i^{\star}}\\) only depends on \\(y\\) and random choice of
+\\(i^{\star}\\) and \\(g\_1, g\_2, \ldots, g\_{i^{\star} - 1}\\), we conclude
+by average argument there exists one specific target that has more
+than &epsilon; advantage.
 
 
 #### Remarks {#remarks}
 
-It seems that if we use only one hash function in the
-construction, the target throughout the argument will be dependent on the hash
-function itself, rendering the final averaing argument invalid. It is definitely
-an obstacle, whether or not its an artifact I currently have no idea.
+It seems that if we use only one hash function in the construction,
+the target throughout the argument will be dependent on the hash
+function itself, rendering the final averaing argument invalid. It is
+definitely an obstacle, whether or not its an artifact I currently
+have no idea.
 
 
 ### Merkle-Damgard Tree --- More Efficient Domain Extension {#merkle-damgard-tree-more-efficient-domain-extension}
 
-If we have a length-halving function, then we can use an "inverse" GGM tree. One
-caveat is that this tree has depth \\(O(\log n)\\) whereas GGM has linear depth.
+If we have a length-halving function, then we can use an "inverse" GGM
+tree. One caveat is that this tree has depth \\(O(\log n)\\) whereas GGM
+has linear depth.
 
 
 ## Lecture 10 {#lecture-10}
@@ -3352,46 +3418,51 @@ caveat is that this tree has depth \\(O(\log n)\\) whereas GGM has linear depth.
 
 ### Continuing on hash functions {#continuing-on-hash-functions}
 
-CRHF is a very natural definition, but no black-box construction based on OWF of
-CRHF seems possible. UOWHF has a weaker definition, but still strong enough to
-support many applications, including:
+CRHF is a very natural definition, but no black-box construction based
+on OWF of CRHF seems possible. UOWHF has a weaker definition, but
+still strong enough to support many applications, including:
 
 -   Digital signatures
 -   Cramer-Shoup PKE scheme
 -   Statistical hiding commitment
 
-It should be noted that both UOWHFs and CRHFs are families of functions, rather
-than a single one.
+It should be noted that both UOWHFs and CRHFs are families of
+functions, rather than a single one.
 
-We have a simple, effective generic construction based on OWP and UHF. Quite
-like the complimentary to the OWP based stretch-1 PRG construction.
+We have a simple, effective generic construction based on OWP and
+UHF. Quite like the complimentary to the OWP based stretch-1 PRG
+construction.
 
 Domain extension, in the inverse direction.
 
-In the tree-like construction for UOWHF, one still have to use different
-functions in different layers. Though there has not been any proof against using
-the same hash function every layer, doing so would render the regular proof
-invalid, since we have to embed a target (either **some** target in the TCR
-definition or a random target in the TCR2 definition) into the challenge target,
-this target has to be independent with the instance \\(g\\).
+In the tree-like construction for UOWHF, one still have to use
+different functions in different layers. Though there has not been any
+proof against using the same hash function every layer, doing so would
+render the regular proof invalid, since we have to embed a target
+(either **some** target in the TCR definition or a random target in the
+TCR2 definition) into the challenge target, this target has to be
+independent with the instance \\(g\\).
 
-Specifically, if we use the instance \\(g\\) in every layer of the challenge
-instance, there is a (seemingly) inherent correlation between \\(g\\) and the
-challenge target \\(t^{\*}\\). On the other hand, if we use independent hashes
-every layer, we can guess one instance \\(i^{\*}\\) and embed the input hash
-instance \\(g\\) into that layer. In this case, success happens when the output
-collision position coincides with our guess, and the collision target now will
-only depend on \\(y\\) and random choice independent of \\(g\\). An averaging
-argument can then be applied to argue the existence of some valid target.
+Specifically, if we use the instance \\(g\\) in every layer of the
+challenge instance, there is a (seemingly) inherent correlation
+between \\(g\\) and the challenge target \\(t^{\*}\\). On the other hand,
+if we use independent hashes every layer, we can guess one instance
+\\(i^{\star}\\) and embed the input hash instance \\(g\\) into that
+layer. In this case, success happens when the output collision
+position coincides with our guess, and the collision target now will
+only depend on \\(y\\) and random choice independent of \\(g\\). An
+averaging argument can then be applied to argue the existence of some
+valid target.
 
 
 ### Extension to UOWHF {#extension-to-uowhf}
 
-(Almost) Optimal Constructions of UOWHFs from 1-to-1, Regular One way Functions
-and Beyond.
+(Almost) Optimal Constructions of UOWHFs from 1-to-1, Regular One way
+Functions and Beyond.
 
-As Prof. Lai pointed out, in some decsipline, 1-to-1 means bijective. So to
-clearify the notation, the term "1-to-1" means injective in this lecture.
+As Prof. Lai pointed out, in some decsipline, 1-to-1 means
+bijective. So to clearify the notation, the term "1-to-1" means
+injective in this lecture.
 
 CHRFs are UOWHFs, but OWFs imply UOWHFs but not CRHFs.
 
@@ -3437,17 +3508,17 @@ CHRFs are UOWHFs, but OWFs imply UOWHFs but not CRHFs.
 
 ### Duality Between PRGs and UOWHFs {#duality-between-prgs-and-uowhfs}
 
-From length-\\(n\\) OWF, we can have PRG with input length \\(\tilde{O}(n^3)\\). Or
-UOWHF with output length \\(\tilde{O}(n^7)\\).
+From length-\\(n\\) OWF, we can have PRG with input length
+\\(\tilde{O}(n^3)\\). Or UOWHF with output length \\(\tilde{O}(n^7)\\).
 
-It seems like the PRG line is already pushed to the limit. In an annecdote, Yu
-met with Zheng (a la [YZ12]) in a 2013 meeting, where Zheng informed him after
-this work with PRG, he decided to ditch theory and instead work in industry
-(Google).
+It seems like the PRG line is already pushed to the limit. In an
+annecdote, Yu met with Zheng (a la [YZ12]) in a 2013 meeting, where
+Zheng informed him after this work with PRG, he decided to ditch
+theory and instead work in industry (Google).
 
 <a id="figure--fig:label"></a>
 
-{{< figure src="/ox-hugo/overview.png" caption="<span class=\"figure-number\">Figure 6: </span>Overview of this work" >}}
+{{< figure src="/ox-hugo/overview.png" caption="<span class=\"figure-number\">Figure 12: </span>Overview of this work" >}}
 
 
 ### Universal Hashing {#universal-hashing}
@@ -3463,10 +3534,9 @@ Leftover hash lemma
 
 Injective hash lemma
 : For any \\(X \in \\{0,1\\}^n\\) with \\(H\_0(X)
-      \le m - d\\), we have \\(\mathcal{P}r\_{h\leftarrow H, x\leftarrow X}[
-      \exists x^{\prime} \ne x: h(x) = h(x^{\prime} ] \le
-      2^{-\Omega(d)}\\). This can be proved using a simple union bound on
-    \\(x^{\prime}\\).
+      \le m - d\\), we have \\(\Pr\_{h\leftarrow H, x\leftarrow X}[ \exists
+      x^{\prime} \ne x: h(x) = h(x^{\prime} ] \le 2^{-\Omega(d)}\\). This
+    can be proved using a simple union bound on \\(x^{\prime}\\).
 
 
 ### Original UOWHFs from OWP {#original-uowhfs-from-owp}
@@ -3491,8 +3561,8 @@ We can adapt the proof for the original 1-bit shrinkage construction
 to this case. First we make a guess \\(x \leftarrow \\{0,1\\}^n\\) and
 returns if the guess is correct. Or else, we guess \\(v =
 0\ldots0\bar{v}, \bar{v} \leftarrow \\{0,1\\}^s\\) and compute \\(h =
-(y^{\*} - f(x))^{-1} v\\). After that, we send \\(g = \mathsf{trunc} \circ
-h \circ f\\) and \\(x\\) to \\(A\\) and receives its result
+(y^{\*} - f(x))^{-1} v\\). After that, we send \\(g = \mathsf{trunc}
+\circ h \circ f\\) and \\(x\\) to \\(A\\) and receives its result
 \\(x^{\prime}\\). Notice that we have \\( h \cdot (f(x) - f(x^{\prime})
 \ne 0\\). So if it happens that the choice of \\(v\\) makes this
 \\(x^{\prime}\\) the preimage of \\(y^{\*}\\) with probability
@@ -3504,8 +3574,8 @@ h \circ f\\) and \\(x\\) to \\(A\\) and receives its result
 
 #### Assumption {#assumption}
 
-(\\(t\\), \\(\epsilon\\))-1-to-1 OWF \\(f : \\{0,1\\}^n \to \\{0,1\\}^l\\) (\\(l
-> n\\))
+(\\(t\\), \\(\epsilon\\))-1-to-1 OWF \\(f : \\{0,1\\}^n \to \\{0,1\\}^l\\)
+((\\(l > n\\))
 
 
 #### Tools {#tools}
@@ -3519,9 +3589,10 @@ UHF \\(H\_0\\), \\(\ldots\\), \\(H\_{l - n}\\), where \\(H\_i : \\{ h\_i :
 \\(G : \\{h\_{l-n} \circ \ldots \circ h\_0 \circ f\\}\\) is a family of
 (\\(t - n^{O(1)}\\), \\(\epsilon\\))-UOWHFs.
 
-Use \\(l - n + 1\\) independent hash functions to shrink \\(f(x)\\) where \\(f :
-\\{0,1\\}^n \to \\{0,1\\}^l\\) is a OWF. But the excessive use of hash function seems to be
-an artifact of its proof. But right now I have yet found out how to prove it.
+Use \\(l - n + 1\\) independent hash functions to shrink \\(f(x)\\) where
+\\(f : \\{0,1\\}^n \to \\{0,1\\}^l\\) is a OWF. But the excessive use of
+hash function seems to be an artifact of its proof. But right now I
+have yet found out how to prove it.
 
 
 ### Construction 1: UOWHFs from 1-to-1 OWFs {#construction-1-uowhfs-from-1-to-1-owfs}
@@ -3540,8 +3611,8 @@ Truncating function \\(\mathsf{trunc} : \\{0,1\\}^l \to \\{0,1\\}^{n-s}\\)
 
 #### Statement {#statement}
 
-\\(G : \\{ \mathsf{trunc} \circ h \circ f : h\in H\\} \\) is a
-family of (\\(t - n^{O(1)}\\), \\(2^{s+1} \epsilon\\))-UOWHFs.
+\\(G : \\{ \mathsf{trunc} \circ h \circ f : h\in H\\} \\) is a family of
+(\\(t - n^{O(1)}\\), \\(2^{s+1} \epsilon\\))-UOWHFs.
 
 
 #### Proof {#proof}
@@ -3583,8 +3654,8 @@ Cryptomania
     multiparty computation 安全多方计算
 
 Obfustopia
-: \\(\exists\\) fully homomorphic encryption ( 全同态加密
-    ) &amp; obfuscation 混淆
+: \\(\exists\\) fully homomorphic encryption ( 全同态加密)
+    &amp; obfuscation 混淆
 
 
 #### \\(\mathcal{NP}\\) vs. OWF {#mathcal-np-vs-dot-owf}
@@ -3616,22 +3687,23 @@ average-case LPN.
 
     \\[ (BA, Be) \approx\_s (U^{q \times n}, Ber\_{\mu}^q). \\]
 
-    There is however a [simpler proof](https://eprint.iacr.org/2020/870) using Vazirani's XOR lemma, that I have proof
-    read but have yet finished. I have already read Vazirani's XOR lemma, perhaps I
-    should read it.
+    There is however a [simpler proof](https://eprint.iacr.org/2020/870) using Vazirani's XOR lemma, that I
+    have proof read but have yet finished. I have already read Vazirani's
+    XOR lemma, perhaps I should read it.
 
 
 #### Hardness of NCP and LPN {#hardness-of-ncp-and-lpn}
 
-It seems that worst case NCP has time complexity \\(\mathsf{poly}(n) \cdot e^{\mu n}\\).
-For average LPN, the BKW algorithm gives \\(2^{O(\frac{n}{\log n})}\\) complexity.
-So it seems that worst case NCP is indeed very hard.
+It seems that worst case NCP has time complexity \\(\mathsf{poly}(n)
+\cdot e^{\mu n}\\).  For average LPN, the BKW algorithm gives
+\\(2^{O(\frac{n}{\log n})}\\) complexity.  So it seems that worst case
+NCP is indeed very hard.
 
 
 #### Cryptographic Hashing from LPN {#cryptographic-hashing-from-lpn}
 
-Construct a intermediate problem \\(\mathsf{bSVP}\\) that is the analogue to SIS
-problem. We then construct an Expand function that is
+Construct a intermediate problem \\(\mathsf{bSVP}\\) that is the
+analogue to SIS problem. We then construct an Expand function that is
 
 1.  1-to-1
 2.  output sparse 0-1 vector
@@ -3643,22 +3715,22 @@ We can then directly get a CRHF.
 
 -  Expand
 
-    The expand function is very easy. For \\(L\cdot t\\) bit input,
-    the function expand it to \\(2^L \cdot t\\) bit output, by first partition the
-    input into \\(t\\) \\(L\\)-bit blocks, translate each block into "one-hot" encoding,
-    and then output. The output has exactly \\(t\\) ones, and by definition it is an
-    injective map.
+    The expand function is very easy. For \\(L\cdot t\\) bit input, the
+    function expand it to \\(2^L \cdot t\\) bit output, by first partition
+    the input into \\(t\\) \\(L\\)-bit blocks, translate each block into
+    "one-hot" encoding, and then output. The output has exactly \\(t\\)
+    ones, and by definition it is an injective map.
 
 
 #### LPN Implies bSVP {#lpn-implies-bsvp}
 
-Suppose we have a bSVP solver \\(O\\), we can construct a distringuisher \\(A^O(A,
-y)\\).
+Suppose we have a bSVP solver \\(O\\), we can construct a distringuisher
+\\(A^O(A, y)\\).
 
-We can first find a solution \\(x\\) to \\(A^T\\), them determine which is the case
-by the bias of \\(y^Tx\\). If \\(y\\) is uniform, then \\(y^Tx\\) is also uniformly
-random. Otherwise, \\(y^Tx\\) has biased Bernoulli distribution from piling up
-lemma.
+We can first find a solution \\(x\\) to \\(A^T\\), them determine which is
+the case by the bias of \\(y^Tx\\). If \\(y\\) is uniform, then \\(y^Tx\\)
+is also uniformly random. Otherwise, \\(y^Tx\\) has biased Bernoulli
+distribution from piling up lemma.
 
 This reminds me of knapsack LPN problem.
 
@@ -3673,8 +3745,8 @@ T-hard (\\(n\\), \\(\mu\\), \\(m\\))-LPN implies \\(\sqrt{T}\\)-hard CRH
 
 </div>
 
-I wonder if Knapsack-LPN can be used to construct a CRHF **and** how this theorem
-is proved.
+I wonder if Knapsack-LPN can be used to construct a CRHF **and** how
+this theorem is proved.
 
 
 ### Overcoming Weak Expectations {#overcoming-weak-expectations}
@@ -3688,7 +3760,9 @@ Clever
 : Design \\(P\\) so that it can withstand weak randomness
 
 Modular
-: Design key deriviation function \\(h : \\{0,1\\}^n \to \\{0,1\\}^m\\) subject to \\(R = h(X)\\)  is good for \\(P\\). The goal is to assume little-to-nothing about \\(P\\).
+: Design key deriviation function \\(h : \\{0,1\\}^n \to
+      \\{0,1\\}^m\\) subject to \\(R = h(X)\\) is good for \\(P\\). The goal is
+    to assume little-to-nothing about \\(P\\).
 
 Dumb
 : Use \\(R = X\\) and hope for the best.
@@ -3701,35 +3775,39 @@ Fix \\(P\\) and any "legal" \\(A\\) Let \\(f( r)\\) be the advantage of \\(A\\) 
 
 -   Unpredictability apps: \\(f( r) \in [0,1]\\)
 -   Indistinguishability apps: \\(f( r) \in [-\frac{1}{2}, \frac{1}{2}]\\)
--   In the ideal world, the advantage of \\(A\\) is \\(|E(f(U\_m))| = |\sum\_r \frac{1}{2^m} f( r)|\\)
--   In the real world, the advantage of \\(A\\) is \\(|E(f( R))| = |\sum\_r p( r) \cdot f( r) |\\)
+-   In the ideal world, the advantage of \\(A\\) is \\(|E(f(U\_m))|
+      = |\sum\_r \frac{1}{2^m} f( r)|\\)
+-   In the real world, the advantage of \\(A\\) is \\(|E(f( R))| = |\sum\_r
+      p( r) \cdot f( r) |\\)
 
 
 #### Simple Case {#simple-case}
 
-For unpredictability application, we have any (\\(t\\), \\(\epsilon\\))-secure \\(P\\)
-in the ideal model is also (\\(t\\), \\(\ 2^d \cdot epsilon\\))-secure in the
-\\(m-d\\)-real model.
+For unpredictability application, we have any (\\(t\\),
+\\(\epsilon\\))-secure \\(P\\) in the ideal model is also (\\(t\\), \\(\ 2^d
+\cdot epsilon\\))-secure in the \\(m-d\\)-real model.
 
 <!--list-separator-->
 
 -  Proof
 
-    \\(E\_r(p( r)\cdot f( r)) \le 2^m \frac{1}{2^{m-d}} \sum\_r
-    \frac{1}{2^m} f( r) = 2^d E(f(U\_m))\\).
+    \\(E\_r(p( r)\cdot f( r)) \le 2^m \frac{1}{2^{m-d}} \sum\_r \frac{1}{2^m}
+    f( r) = 2^d E(f(U\_m))\\).
 
-    Notice that we used the fact \\(f( r)\\) is non-negative throughout the proof.
+    Notice that we used the fact \\(f( r)\\) is non-negative throughout the
+    proof.
 
 
 #### Indistinguishablility Application {#indistinguishablility-application}
 
-The paper introduced a square security notation, but I have yet grasped it.
+The paper introduced a square security notation, but I have yet
+grasped it.
 
 
 ## Lecture 11 {#lecture-11}
 
-From this lecture through the next three or four lectures, Prof. Liu will take
-on this lecture. 两节课讲一下现代密码学的主要原则，然后在之后讲IBE，ABE，FHE等内容，再讲一两个证明。
+From this lecture through the next three or four lectures, Prof. Liu
+will take on this lecture. 两节课讲一下现代密码学的主要原则，然后在之后讲IBE，ABE，FHE等内容，再讲一两个证明。
 
 
 ### Outline {#outline}
@@ -3748,16 +3826,18 @@ on this lecture. 两节课讲一下现代密码学的主要原则，然后在之
 
 Crypto &asymp; Cryptography + Cryptanalysis
 
-Usually cryptanalysis is very important in symmetric-key cryptography (e.g. Hash
-function, secret-key cryptography).
+Usually cryptanalysis is very important in symmetric-key cryptography
+(e.g. Hash function, secret-key cryptography).
 
 
 ### The Basis Goals of Cryptography {#the-basis-goals-of-cryptography}
 
--   Enabling parties to communicate over an open communiation channel in a secure (confidentiality, integrity) way.
+-   Enabling parties to communicate over an open communiation channel in
+    a secure (confidentiality, integrity) way.
 -   Cryptogrpahic primintives
     -   **Secrecy / Confidentiality:** SKE / PKE
-    -   **Integrity / Authenticity:** MAC / PKE, using Hash Function (this primitive is keyless, isn't there public coins?)
+    -   **Integrity / Authenticity:** MAC / PKE, using Hash Function (this
+        primitive is keyless, isn't there public coins?)
 
 
 ### Private Key Encryption {#private-key-encryption}
@@ -3774,13 +3854,14 @@ Only sender and receiver can compute and verify MAC.
 
 Modern provable security is (arguably) more biased towards PKC.
 
-In pure symmetric crypto, people typically use a centralized online key
-distribution server to handle session key establishment requests. Whereas in
-public key setting, one can use certificates to do this.
+In pure symmetric crypto, people typically use a centralized online
+key distribution server to handle session key establishment
+requests. Whereas in public key setting, one can use certificates to
+do this.
 
 In 1976, W. Diffie and M. Hellman purposed a paper "New Directions in
-Cryptography" to motivate simplifaction of key distribution and management in
-symmetric-key cryptography.
+Cryptography" to motivate simplifaction of key distribution and
+management in symmetric-key cryptography.
 
 
 ### Digital Signature {#digital-signature}
@@ -3815,30 +3896,30 @@ Syntax: three algorithms
 -   \\(Enc(k, m) \to c\\)
 -   \\(Dec(k, c) \to m\\)
 
-We can then define key space \\(\mathcal{K}\\), messsage space \\(\mathcal{m}\\) and
-correctness of private-key encryption.
+We can then define key space \\(\mathcal{K}\\), messsage space
+\\(\mathcal{m}\\) and correctness of private-key encryption.
 
 Key space for single-table substitution: \\(26!\\)
 
 
 ### Kerckhoff's Principle {#kerckhoff-s-principle}
 
-Security only depends on secrecy of key, rather than the algorithm. The
-rationale behind this principle is that changing keys is much easier than
-changing algorithms. So to be more complete, cryptographic designs should be
-made completely public.
+Security only depends on secrecy of key, rather than the
+algorithm. The rationale behind this principle is that changing keys
+is much easier than changing algorithms. So to be more complete,
+cryptographic designs should be made completely public.
 
-Moreover, it feels safer after witnessing every one around the globe failed to
-break a published cryptographic scheme.
+Moreover, it feels safer after witnessing every one around the globe
+failed to break a published cryptographic scheme.
 
-So It appears there are indeed people who believe that algorithms should be kept
-secret (at least in the civilian application).
+So It appears there are indeed people who believe that algorithms
+should be kept secret (at least in the civilian application).
 
 
 ### Brute-Force {#brute-force}
 
-At least the key space should be large enough to make exhaust-search attack
-infeasible. But note that this is not sufficient.
+At least the key space should be large enough to make exhaust-search
+attack infeasible. But note that this is not sufficient.
 
 
 ### Principles of Modern Cryptography {#principles-of-modern-cryptography}
@@ -3846,11 +3927,13 @@ infeasible. But note that this is not sufficient.
 
 #### Principle 1 {#principle-1}
 
-Formal Definitions, provides what threats are in scope and what security
-guarantees are desired. Security guarantee and threat model.
+Formal Definitions, provides what threats are in scope and what
+security guarantees are desired. Security guarantee and threat model.
 
--   Security gurantee --- semantic security, not a bit of additional information is leaked
--   Threat model --- Ciphertext-only attack, known-plaintext attack, chosen-plaintext attack, chosen-ciphertext attack.
+-   Security gurantee --- semantic security, not a bit of additional
+    information is leaked
+-   Threat model --- Ciphertext-only attack, known-plaintext attack,
+    chosen-plaintext attack, chosen-ciphertext attack.
 
 
 ## Lecture 12 {#lecture-12}
@@ -3859,12 +3942,14 @@ guarantees are desired. Security guarantee and threat model.
 ### 现代密码学的原则 {#现代密码学的原则}
 
 明确定义
-: 包括正确性、安全性的定义(threat model, security guarantee)
+: 包括正确性、安全性的定义(threat model, security
+    guarantee)
 
 精确的假设
 : 由于需要使用计算安全性，而统计意义上的安全性很难得到
-    We are almost entirely talked away from using **ad hoc** assumptions. Though
-    this principle has nothing to do with the content of assumptions.
+    We are almost entirely talked away from using **ad hoc**
+    assumptions. Though this principle has nothing to do with the
+    content of assumptions.
 
 安全性证明
 : 定义与假设允许我们分析，安全保证能否在相应的模型下被假设蕴含，这就是安全性证明的功能
@@ -3872,20 +3957,22 @@ guarantees are desired. Security guarantee and threat model.
 
 ### Provable Security and Real-World Security {#provable-security-and-real-world-security}
 
-The **art** part of modern cryptography: rigorous approach leaves room for
-creativity in:
+The **art** part of modern cryptography: rigorous approach leaves room
+for creativity in:
 
--   Developing definitions suited to contemporary applications and environments (e.g. CCA, UC)
+-   Developing definitions suited to contemporary applications and
+    environments (e.g. CCA, UC)
 -   Proposing new mathematical assumptions (e.g. Coppersmith, Shor)
--   Designing new primitives (e.g. IBE a la Shamir, PKE a la Diffie and Hellman)
+-   Designing new primitives (e.g. IBE a la Shamir, PKE a la Diffie and
+    Hellman)
 -   Constructing novel schemes and proving them secure
 -   Attacking deployed cryptosystems
 
 
 ### Provable Security and Real-World Security {#provable-security-and-real-world-security}
 
-A proof of security is always relative to the definition being considered and
-the assumptions being used.
+A proof of security is always relative to the definition being
+considered and the assumptions being used.
 
 The proof may be irrelevant if
 
@@ -3927,24 +4014,26 @@ Cyclic Group
 
 ### Primes {#primes}
 
-Generating large primes --- a probablistic method. Sample a random large enough
-number, using a conjecture we can argue that with large probability we can
-actually get a prime number, if we repeat the process a small number of times.
-The primality test can be a \coRP algorithm.
+Generating large primes --- a probablistic method. Sample a random
+large enough number, using a conjecture we can argue that with large
+probability we can actually get a prime number, if we repeat the
+process a small number of times.  The primality test can be a **coRP**
+algorithm.
 
 
 ### Discrete Logarithm Assumption {#discrete-logarithm-assumption}
 
-We always work on finite groups. The groupgen algorithm generates algorithms for
-"translation" in \\(\mathbb{G}\\). Theoretically, a GroupGen algorithm is related
-to the instance of DL, CDH, DDH instance, but in practice we can simply choose
-NIST recommended standard values.
+We always work on finite groups. The groupgen algorithm generates
+algorithms for "translation" in \\(\mathbb{G}\\). Theoretically, a
+**GroupGen** algorithm is related to the instance of DL, CDH, DDH
+instance, but in practice we can simply choose NIST recommended
+standard values.
 
 An Example GenGroup Algorithm
 
 -   Generate a uniform n-bit prime \\(q\\)
 -   Choose a \\(l\\)-bit prime \\(p\\) such that \\(q | (p - 1)\\)
--   Choose a uniform \\(h \leftarrow \ZZ\_p^{\*}\\)
+-   Choose a uniform \\(h \leftarrow \mathbb{Z}\_p^{\*}\\)
 -   Set \\(g = h^{\frac{p - 1}{q}}\\)
 -   Output \\(g, q, p\\)
 
@@ -3963,14 +4052,15 @@ Simply \\(h^{-1} = h^{q - 1}\\).
 
 CPA / CCA threat model and IND / SS security guarantee.
 
-Trick: if the fine-defined constraint, e.g. challenge ciphertext cannot be
-further queried, is not used, then the proof itself is most certainly useless.
+Trick: if the fine-defined constraint, e.g. challenge ciphertext
+cannot be further queried, is not used, then the proof itself is most
+certainly useless.
 
 
 ## Lecture 13 {#lecture-13}
 
-Some kind of code: 787228. Last lecture we have covered public key encryption.
-This lecture we will continue with digital signature.
+Some kind of code: 787228. Last lecture we have covered public key
+encryption.  This lecture we will continue with digital signature.
 
 
 ### Digital Signature {#digital-signature}
@@ -3979,15 +4069,17 @@ Patches need to be verified publicly.
 
 Properties:
 
-1.  Correctness.
-    \\(\verify (pk, m, \sig (sk, m)) = 1\\) for every \\(m\\)
+1.  Correctness.  \\(\mathsf{Verify} (pk, m, \mathsf{Sign} (sk, m)) =
+       1\\) for every \\(m\\)
 
 2.  Security (EUF).
     -   **Security guarantee:** non-forgeability
-    -   **Threat model:** signing oracle, the advantage is just the success probability of forgery.
+    -   **Threat model:** signing oracle, the advantage is just the success
+        probability of forgery.
 
-Extension: strong unforgeability, which means challenge (\\(m\\), \\(\sigma\\)) pair
-needs to be unique, rather than \\(m\\) has to be unique.
+Extension: strong unforgeability, which means challenge (\\(m\\),
+\\(\sigma\\)) pair needs to be unique, rather than \\(m\\) has to be
+unique.
 
 
 ### Example {#example}
@@ -3995,35 +4087,38 @@ needs to be unique, rather than \\(m\\) has to be unique.
 **DSA and \*ECDSA** both are included in the current Digital Signature
 Standard, issued by NIST.
 
-Although ECDSA is no longer the recommended DS standard, it is still considered
-more efficient and have at least the same security level as RSA signatures. In
-ECDSA, the group parameter can be shared, whereas in RSA the encryption modulus
-cannot be shared.
+Although ECDSA is no longer the recommended DS standard, it is still
+considered more efficient and have at least the same security level as
+RSA signatures. In ECDSA, the group parameter can be shared, whereas
+in RSA the encryption modulus cannot be shared.
 
-Syntax: A group generation algorithm that generates the description of a cyclic
-group, its order and a generator. An example is to generate the
-prime-\\(q\\)-order subgroup of a larger multiplicative group \\(\ZZ\_p^{\*}\\).
+Syntax: A group generation algorithm that generates the description of
+a cyclic group, its order and a generator. An example is to generate
+the prime-\\(q\\)-order subgroup of a larger multiplicative group
+\\(\mathbb{Z}\_p^{\*}\\).
 
 -   \\(KeyGen(1^n) \to (pk, sk)\\)
 
-The group parameter can be considered public. In practice, this algorithm can
-just sample a private order and output \\(pk = \mbox{group}, g^x\\) and \\(sk =
-x\\).
+The group parameter can be considered public. In practice, this
+algorithm can just sample a private order and output \\(pk =
+\mbox{group}, g^x\\) and \\(sk = x\\).
 
-Also, two functions \\(H: \\{0,1\\}^{\*} \to \ZZ\_q\\) and \\(F: \mathbb{G} \to \ZZ\_q\\)
-are included in the public key as auxiliary information.
+Also, two functions \\(H: \\{0,1\\}^{\*} \to \mathbb{Z}\_q\\) and \\(F:
+\mathbb{G} \to \mathbb{Z}\_q\\) are included in the public key as
+auxiliary information.
 
--   \\(\sig(sk, m) \to c\\)
-    First hash the message to \\(\mu = H(m) \\), and then sample \\(k \leftarrow
-      \ZZ\_q\\). Then compute \\(r =F(g^k) \\), and \\(s = k^{-1} (\mu + xr)\\). If \\(r =
-      0\\) or \\(s = 0\\), sample \\(k\\) again and repeat. Output \\(\sigma = (r, s)\\).
--   \\(\verify(pk, m, \sigma) \to \bin\\)
-    Output 1 iff. \\(r = F(g^{H(m) s^{-1}} y^{r s^{-1}})\\).
+-   \\(\mathsf{Sign}(sk, m) \to c\\) First hash the message to \\(\mu =
+      H(m) \\), and then sample \\(k \leftarrow \mathbb{Z}\_q\\). Then compute
+    \\(r =F(g^k) \\), and \\(s = k^{-1} (\mu + xr)\\). If \\(r = 0\\) or \\(s =
+      0\\), sample \\(k\\) again and repeat. Output \\(\sigma = (r, s)\\).
+-   \\(\verify(pk, m, \sigma) \to \\{0,1\\}\\) Output 1 iff. \\(r = F(g^{H(m)
+      s^{-1}} y^{r s^{-1}})\\).
 
-Security: to prove the euf-cma security of DSA / ECDSA, the function \\(F, H\\)
-should be modelled as random oracle. \\(H\\) can sometimes be considered as a
-random oracle, \\(F\\) is completely not like a hash function. In DSA, \\(F\\) is
-just modulo \\(q\\); In ECDSA, \\(F\\) is the first coordinate modulo \\(q\\).
+Security: to prove the euf-cma security of DSA / ECDSA, the function
+\\(F, H\\) should be modelled as random oracle. \\(H\\) can sometimes be
+considered as a random oracle, \\(F\\) is completely not like a hash
+function. In DSA, \\(F\\) is just modulo \\(q\\); In ECDSA, \\(F\\) is the
+first coordinate modulo \\(q\\).
 
 
 ### Hash Function {#hash-function}
@@ -4032,15 +4127,15 @@ Syntax: \\(H: \\{0,1\\}^n \to \\{0,1\\}^{l(n)}\\).
 
 Security guarantee: collision-resistant.
 
-Weaker Security: second-preimage or target-collision resistance: given a uniform
-\\(x\\) it is infeasible to find \\(x^{\prime}\\) such that \\(x\\) and \\(x^{\prime}\\)
-collides.
+Weaker Security: second-preimage or target-collision resistance: given
+a uniform \\(x\\) it is infeasible to find \\(x^{\prime}\\) such that
+\\(x\\) and \\(x^{\prime}\\) collides.
 
-Preimage resistance: given a uniform target \\(y\\) it is infeasible to find \\(x\\)
-such that \\(y = H(x)\\).
+Preimage resistance: given a uniform target \\(y\\) it is infeasible to
+find \\(x\\) such that \\(y = H(x)\\).
 
-Birthday attack: an upper bound on the security of \\(l(n)\\)-long is \\(l(n) /
-2\\).
+Birthday attack: an upper bound on the security of \\(l(n)\\)-long is
+\\(l(n) / 2\\).
 
 Popular Crypto Hashes:
 
@@ -4059,29 +4154,30 @@ SHA3
 
 ### Hybrid Encryption {#hybrid-encryption}
 
-Encapsulate a symmetric session key from public key encryption, and then use
-this session key to encrypt subsequent data.
+Encapsulate a symmetric session key from public key encryption, and
+then use this session key to encrypt subsequent data.
 
-KEM / DEM are a new pair of primitives to capture / simplify hybrid encryption
-method.
+KEM / DEM are a new pair of primitives to capture / simplify hybrid
+encryption method.
 
 
 #### Key Encapsulation Method {#key-encapsulation-method}
 
 Syntax: there are three algorithms \\(KeyGen\\), \\(Encap\\), \\(Decap\\)
 
-The CPA security is defined as follows. The challenge text is a ciphertext and a
-key. If \\(b = 0\\), the ciphertext is the encryption of the key; if \\(k = 1\\),
-the key and the ciphertext are independent. The adversary guesses the value
-\\(b\\).
+The CPA security is defined as follows. The challenge text is a
+ciphertext and a key. If \\(b = 0\\), the ciphertext is the encryption
+of the key; if \\(k = 1\\), the key and the ciphertext are
+independent. The adversary guesses the value \\(b\\).
 
 The CCA security is defined by adding a decryption oracle.
 
 
 #### Example {#example}
 
-El Gamal-like KEM: actually I think it is more like DH-key exchange. Up on
-agreeing \\(g^{xy}\\), both sides hash this value to produce a key.
+El Gamal-like KEM: actually I think it is more like DH-key
+exchange. Up on agreeing \\(g^{xy}\\), both sides hash this value to
+produce a key.
 
 
 ## Lecture 14 {#lecture-14}
@@ -4098,26 +4194,30 @@ From security model and construction, derive a security proof.
 
 ### Motivation of Idenity-based Encryption {#motivation-of-idenity-based-encryption}
 
-Public key cryptogrpahy **partly** solved the key distribution nuisance in
-symmetric key cryptography, but PKI is still somewhat troublesome. So key
-distribution should not be considered completely solved in PKC.
+Public key cryptogrpahy **partly** solved the key distribution nuisance
+in symmetric key cryptography, but PKI is still somewhat
+troublesome. So key distribution should not be considered completely
+solved in PKC.
 
 
 ### Introduction to IBE {#introduction-to-ibe}
 
 Certification issuing is not free.
 
-Adi Shamir introduced IBE in 1984. The application scenario is one-time key
-distribution in a large system (e.g. bank and multinational corporation).
+Adi Shamir introduced IBE in 1984. The application scenario is
+one-time key distribution in a large system (e.g. bank and
+multinational corporation).
 
-One generalization is that an arbitrary string can be used as the public key.
+One generalization is that an arbitrary string can be used as the
+public key.
 
 
 ### The concept of Identity-based Cryptography {#the-concept-of-identity-based-cryptography}
 
 -   Introduced by A. Shamir in 1984
 -   Identity-based Signature Scheme was proposed in 1987
--   The first usable identity-based encryption shcemes were purposed in 2001 from pairing and QR
+-   The first usable identity-based encryption shcemes were purposed in
+    2001 from pairing and QR
 
 
 ### Correctness {#correctness}
@@ -4135,7 +4235,9 @@ IND-ID-CCA: Define two oracles
 And a number of restrictions:
 
 1.  The challenge identity must not be previously queried to \\(OKeyGen\\)
-2.  After challenge phase, the adversary must not query \\(OKeyGen\\) with \\(id^{\*}\\) or query \\(ODec\\) with \\(id^{\*}, c^{\*}\\).
+2.  After challenge phase, the adversary must not query \\(OKeyGen\\)
+    with \\(id^{\star}\\) or query \\(ODec\\) with \\(id^{\star},
+       c^{\star}\\).
 
 
 ### Construction {#construction}
@@ -4143,30 +4245,34 @@ And a number of restrictions:
 
 #### Underlying Mathematics {#underlying-mathematics}
 
-Bilinear Map Groups: Let \\(G\\) and \\(G\_T\\) be two cyclic groups of order \\(p\\)
-and \\(q\\), then a map \\(e: G \times G \mapsto G\_T\\) is a bilinear map if
+Bilinear Map Groups: Let \\(G\\) and \\(G\_T\\) be two cyclic groups of
+order \\(p\\) and \\(q\\), then a map \\(e: G \times G \mapsto G\_T\\) is a
+bilinear map if
 
 Bilinear
-: for all \\(u, v \in G\\) and \\(a, b \in \ZZ\\) it holds that \\(e(u^a, v^b) = e(u, v)^{ab}\\).
+: for all \\(u, v \in G\\) and \\(a, b \in \mathbb{Z}\\) it
+    holds that \\(e(u^a, v^b) = e(u, v)^{ab}\\).
 
 Non-degenerate
 : \\(e (g, g) \ne q\_{G\_T}\\).
 
-We say \\(G\\) is a bilinear group if the group operation in \\(G\\) can be computed
-efficiently and there exists a group \\(G\_T\\) and an efficiently computable
-bilinear map \\(e: G \times G \to G\_T\\) as above.
+We say \\(G\\) is a bilinear group if the group operation in \\(G\\) can
+be computed efficiently and there exists a group \\(G\_T\\) and an
+efficiently computable bilinear map \\(e: G \times G \to G\_T\\) as
+above.
 
-We let \\(GenGroup\\) a group generation algorithm that generates \\(G, G\_T, p, q,
-e\\).
+We let \\(GenGroup\\) a group generation algorithm that generates \\(G,
+G\_T, p, q, e\\).
 
-BDH assumption: It is hard to compute \\(e(g, g)^{abc}\\) given random \\(g, g^a,
-g^b, g^c\\).
+BDH assumption: It is hard to compute \\(e(g, g)^{abc}\\) given random
+\\(g, g^a, g^b, g^c\\).
 
 
 #### Original Construciton {#original-construciton}
 
-The original construction satisfies IND-ID-CCA security in the RO model. Some
-considered selective IND-sID-CCA security in the standard model.
+The original construction satisfies IND-ID-CCA security in the RO
+model. Some considered selective IND-sID-CCA security in the standard
+model.
 
 A number of subsequent works improved the security.
 
@@ -4185,19 +4291,22 @@ The PKG can read any ciphertexts. This can introduce
 
 ECDSA is the key algorithm to ensure Bitcoin's functionality.
 
-In Bitcoin, transaction is authenticated by ECDSA. A wallet is the database of
-pk / sk pairs. In Bitcoin and other cryptocurrency, it is a desireable thing to
-have deterministic wallets.
+In Bitcoin, transaction is authenticated by ECDSA. A wallet is the
+database of pk / sk pairs. In Bitcoin and other cryptocurrency, it is
+a desireable thing to have deterministic wallets.
 
 Advantages of Deterministic Wallet
 
--   Low-maintenance wallets with easy backup and recovery (just backup the seed)
--   Freshly generated cold addresses (cold means never been on the Internet)
+-   Low-maintenance wallets with easy backup and recovery (just backup
+    the seed)
+-   Freshly generated cold addresses (cold means never been on the
+    Internet)
 -   Trustless audit
--   Hierarchical wallet allowing a treasurer to allocate funds to departments
+-   Hierarchical wallet allowing a treasurer to allocate funds to
+    departments
 
-Though it should be noted that the treasurer use case and auditor use case
-cannot be used together.
+Though it should be noted that the treasurer use case and auditor use
+case cannot be used together.
 
 Stealth address and determinstic wallet.
 
@@ -4214,27 +4323,28 @@ Cryptographically, not very sound.
 
 Wallet: managing the keys from the wallet owner.
 
-Stealth address: to send money to a certain publicly visible master key in such
-a way that this key does not appear in the ledger at all, so that users' privacy
-gets more protection.
+Stealth address: to send money to a certain publicly visible master
+key in such a way that this key does not appear in the ledger at all,
+so that users' privacy gets more protection.
 
 Stealth address can serve as wallet, as a matter of fact.
 
 
 ### Monero {#monero}
 
-| The Payer                | The public           | The Payee              |
-|--------------------------|----------------------|------------------------|
-|                          | A = aG, B = bG       | \\((a,b)\in\ZZ\_p^2\\) |
-| \\(r\leftarrow \ZZ\_p\\) | \\(R = rG\\)         | \\(s = H(aR) + b\\)    |
-|                          | \\(S = H(rA)G + B\\) |                        |
+| The Payer                       | The public           | The Payee                     |
+|---------------------------------|----------------------|-------------------------------|
+|                                 | A = aG, B = bG       | \\((a,b)\in\mathbb{Z}\_p^2\\) |
+| \\(r\leftarrow \mathbb{Z}\_p\\) | \\(R = rG\\)         | \\(s = H(aR) + b\\)           |
+|                                 | \\(S = H(rA)G + B\\) |                               |
 
 For each transaction, the payer uses a different \\(r\\).
 
 Properties (intuitive)
 
 Privacy
-: Each coin receiving address is freshly generated, with random \\(r\\)
+: Each coin receiving address is freshly generated, with
+    random \\(r\\)
 
 Security
 : Only the payee knows \\(b\\)
@@ -4249,8 +4359,8 @@ Enhanced Security and Convenience
 
 #### Problem {#problem}
 
-If one secret key is compromised, the master secret key may
-be compromised.
+If one secret key is compromised, the master secret key may be
+compromised.
 
 
 #### Rationale of the Problem {#rationale-of-the-problem}
@@ -4264,7 +4374,8 @@ Functionality
 
 #### Correctness {#correctness}
 
-Checking transaction and signature verification algorithms are both correct
+Checking transaction and signature verification algorithms are both
+correct
 
 
 #### Unforgeability {#unforgeability}
@@ -4272,9 +4383,9 @@ Checking transaction and signature verification algorithms are both correct
 Three oracles: verification key adding oracle, signing key corruption oracle,
 and signing oracle.
 
-Notice that **signing key corruption** orecle, designed to take care of signing
-key corruption, is not considered in Monero. That is way Monero has the
-aforementioned problem.
+Notice that **signing key corruption** orecle, designed to take care of
+signing key corruption, is not considered in Monero. That is way
+Monero has the aforementioned problem.
 
 
 ### Commitment Schemes {#commitment-schemes}
@@ -4305,38 +4416,40 @@ In this lecture we are talking about FHE.
 
 ### Application {#application}
 
-Secure cloud computing. Securely deligate processing of data without giving away
-access to it.
+Secure cloud computing. Securely deligate processing of data without
+giving away access to it.
 
 
 ### Definition {#definition}
 
-Homomorphism: We can apply some class of function \\(f\\) to \\(Enc(m)\\) to get
-\\(Enc(f(m))\\).
+Homomorphism: We can apply some class of function \\(f\\) to \\(Enc(m)\\)
+to get \\(Enc(f(m))\\).
 
 
 ### First Attempt: RSA {#first-attempt-rsa}
 
-RSA satisfies multiplicative homomorphism. The "plain" RSA satisfies that after
-multiplying two ciphertexts, we get the ciphertext of multiplying two
-plaintexts.
+RSA satisfies multiplicative homomorphism. The "plain" RSA satisfies
+that after multiplying two ciphertexts, we get the ciphertext of
+multiplying two plaintexts.
 
 
 ### Homomorphism on Arbitrary Operation {#homomorphism-on-arbitrary-operation}
 
 AND, XOR is Turing-complete.
 
-The first breakthough is ascribed to Craig Gentry. ACM best doctoral paper.
-![](/ox-hugo/FHE.png)
+The first breakthough is ascribed to Craig Gentry. ACM best doctoral
+paper.
+
+{{< figure src="/ox-hugo/FHE.png" caption="<span class=\"figure-number\">Figure 13: </span>Development of Gentry's Work as of 2020" >}}
 
 
 ### Mechanism Behind HE {#mechanism-behind-he}
 
-What objects support addition and multiplication? polynomials, matrices, and
-integers.
+What objects support addition and multiplication? polynomials,
+matrices, and integers.
 
-Today we use [GHDV09] as an example, which may seems a bit untidy, but still
-good enough to demonstrate the basic ideas of HE.
+Today we use [GHDV09] as an example, which may seems a bit untidy, but
+still good enough to demonstrate the basic ideas of HE.
 
 The construction of [GHDV09]:
 
@@ -4345,21 +4458,23 @@ Secret Key
 
 Encrypt a bit \\(b\\)
     -   Pick a random large multiple of \\(p\\), \\(q \cdot p\\)
-    -   Pick a small \\(r\\) and let cipher text be \\(c = q\cdot p + 2r + b\\)
+    -   Pick a small \\(r\\) and let cipher text be \\(c=q\cdot p+2r+b\\)
 
 Decrypt a ciphertext \\(c\\)
 : first \\(\mod p\\) then \\(\mod 2\\)
 
-The noise is added to prevent GCD attacks in the IND-CPA game: GCD(\\(p \cdot
-q\_1\\), \\(p \cdot q\_2\\)) = \\(p\\). We rely on an "approximate-GCD" assumption.
+The noise is added to prevent GCD attacks in the IND-CPA game: GCD(\\(p
+\cdot q\_1\\), \\(p \cdot q\_2\\)) = \\(p\\). We rely on an "approximate-GCD"
+assumption.
 
-When we perform homomorphic multiplication, there will be a quadratic blow-up in
-noise. When the noise grows too big, and becomes bigger than \\(\frac{p}{2}\\)
-then decryption security will be violated.
+When we perform homomorphic multiplication, there will be a quadratic
+blow-up in noise. When the noise grows too big, and becomes bigger
+than \\(\frac{p}{2}\\) then decryption security will be violated.
 
-Now we can do a lot of additions and some multiplications. We have a "somewhat"
-homomorphic scheme. Enough to perform some low-multiplicative-depth tasks, like
-database search, spam filtering, etc.
+Now we can do a lot of additions and some multiplications. We have a
+"somewhat" homomorphic scheme. Enough to perform some
+low-multiplicative-depth tasks, like database search, spam filtering,
+etc.
 
 The last step is accomplished through bootstrapping.
 
@@ -4368,23 +4483,29 @@ The last step is accomplished through bootstrapping.
 
 Consider an "augmented decryption circuit"
 
-First decrypt \\(c\_1\\) and \\(c\_2\\) and them perform an NAND. We call this circuit
-\\(\hat{C}\\). The first layer of circuit \\(\hat{C}\\) has input \\(c\_1\\) (resp.
-\\(c\_2\\)) and \\(sk\\). If \\(\hat{C}\\) is in the evaluatable range of SHE, then
-Gentry shows that this SHE scheme actually implies a FHE scheme.
+First decrypt \\(c\_1\\) and \\(c\_2\\) and them perform an NAND. We call
+this circuit \\(\hat{C}\\). The first layer of circuit \\(\hat{C}\\) has
+input \\(c\_1\\) (resp.  \\(c\_2\\)) and \\(sk\\). If \\(\hat{C}\\) is in the
+evaluatable range of SHE, then Gentry shows that this SHE scheme
+actually implies a FHE scheme.
 
 The natural idea is that decryption will kill all noise, so we can use
-decryption circuit to reduce all noise. Only the secret key are encryption,
-since the ciphertext is already public. So the output only carries noise from
-encryption of secret key, which is fresh every time. To summarize, we thus have
-obtained a "refresh" operation.
+decryption circuit to reduce all noise. Only the secret key are
+encryption, since the ciphertext is already public. So the output only
+carries noise from encryption of secret key, which is fresh every
+time. To summarize, we thus have obtained a "refresh" operation.
 
 
 ### Issues Omitted {#issues-omitted}
 
--   The SWHE cannot correctly evaluate its decryption circuit, we have to "squash" this circuit by leaking some information of decryption key
--   Is it safe to encrypt the key by itself? The **circular security** assumption still seems not proven to this day. In this example its self-loop.
--   How to better control the noise accumulation? There are new scheme like GSW.
+-   The SWHE cannot correctly evaluate its decryption circuit, we have
+    to "squash" this circuit by leaking some information of decryption
+    key
+-   Is it safe to encrypt the key by itself? The **circular security**
+    assumption still seems not proven to this day. In this example its
+    self-loop.
+-   How to better control the noise accumulation? There are new scheme
+    like GSW.
 -   Is it practical? NO.
 
 
@@ -4393,18 +4514,21 @@ obtained a "refresh" operation.
 
 #### LWE {#lwe}
 
-Parameters: modulus \\(q\\), dimension \\(n\\), number of samples \\(m\\) Secret:
-uniformly random vector \\(s \in \ZZ^n\_q\\). Noise: \\(e\\) sampled from some
-distribution such that \\(|e| \ll q\\) whp
+Parameters: modulus \\(q\\), dimension \\(n\\), number of samples \\(m\\)
+Secret: uniformly random vector \\(s \in \mathbb{Z}^n\_q\\). Noise: \\(e\\)
+sampled from some distribution such that \\(|e| \ll q\\) whp
 
 
 #### Construction {#construction}
 
 Public key
-: \\(A, b = As + 2e\\), notice that here the multiple \\(2\\) is fine, since GCD(2, q) = 1, and we can reduce plain LWE to this version of "2LWE" by multiplying \\(2^{-1}\\) on both sides.
+: \\(A, b = As + 2e\\), notice that here the multiple
+    \\(2\\) is fine, since GCD(2, q) = 1, and we can reduce plain LWE to
+    this version of "2LWE" by multiplying \\(2^{-1}\\) on both sides.
 
 Encryption
-: Sample \\(t \leftarrow \\{0,1\\}^m\\) and \\(c = t A, t b + m\\).
+: Sample \\(t \leftarrow \\{0,1\\}^m\\) and \\(c = t A, t b +
+      m\\).
 
 
 #### Homomorphic Addition {#homomorphic-addition}
@@ -4434,8 +4558,9 @@ binary representation trick, i.e. publish encryption of \\(2^0s\_i\\),
 
 #### Issues Omitted {#issues-omitted}
 
-If we do not want to rely on circular security, we have to resort to limited
-multipliation depth, and the key length will be linear to the depth.
+If we do not want to rely on circular security, we have to resort to
+limited multipliation depth, and the key length will be linear to the
+depth.
 
 [BV14] presented some better noise management tricks, using a
 "sequentialization" technique.
@@ -4445,8 +4570,8 @@ multipliation depth, and the key length will be linear to the depth.
 
 In this chapter we discuss secure multiparty computation.
 
-First we construct an OT scheme based on PKE with obviously sampleable PKs. This
-property requires that
+First we construct an OT scheme based on PKE with obviously sampleable
+PKs. This property requires that
 
 1.  A sampling algorithm can sample pk identically distributed to the
     pk in real \\(KeyGen\\) algorithm

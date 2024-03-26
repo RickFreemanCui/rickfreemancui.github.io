@@ -19,8 +19,9 @@
       <link>http://localhost:1313/note/provsec/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/note/provsec/</guid>
-      <description>BASIC INFORMATION This is the notes of the course &amp;ldquo;Provable Security&amp;rdquo;. The first few courses will be taught online. While subsequent courses are still unsettled.
-I took this course last year, and I am pretty confident about my grasp of basic concepts like universal hash function, GL theorem, basic PRG, PRF constructions, etc. But contents like CRHF and PRP are still rather alien to me, so in this course I will review the previous contents and try to master the missing pieces.</description>
+      <description>Homework This section is dedicated to all homework and exercises throughout the lecture (along with their solutions of course).
+18-19-2 Lecture 2 Prove conditional LHL Non-existence of deterministic randomness extractor one-time message authentication code equivalence between min-entropy and collision entropy For solutions please refer to Here.
+18-19-2 Lecture 4 Improving advantage in GL-theorem proof,i.e., difference between guessing game (exact preimage) and inverting game (any satisfying preimage). Exercies 6.1 6.2 6.4 6.</description>
     </item>
     <item>
       <title>计算复杂性课程笔记</title>

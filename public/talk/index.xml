@@ -39,6 +39,14 @@ One possible way to do this is to replace the cryptograhpic hash function invoca
       <description>My first talk is about memory-hard functions but they are kind of lost</description>
     </item>
     <item>
+      <title>PCG for Boolean Beaver Triples</title>
+      <link>http://localhost:1313/talk/boolean-beaver-pcg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/talk/boolean-beaver-pcg/</guid>
+      <description>Generating Boolean Beaver triples has always been an intriguing problem. On one hand, Overdrive-type FHE-based solutions offers asympototically-good solutions, and for suitable field size the concrete efficiency is also considered state-of-the-art. On the other hand, the current best practice for generating authenticated Boolean Beaver triples remains MASCOT-type COT-based protocols, which has communication of \(O(N^2 m)\) for generating \(m\) triples among \(N\) parties.
+There has been a number of works (Bombar et al.</description>
+    </item>
+    <item>
       <title>PCG for Garbled Circuit Correlations</title>
       <link>http://localhost:1313/talk/gcpcgpcf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
