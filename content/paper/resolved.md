@@ -21,3 +21,5 @@ Asiacrypt 2023)
 This work is published as _ReSolveD: Shorter Signatures from Regular
 Syndrome Decoding and VOLE-in-the-Head, Public Key Cryptogrpahy 2024_
 [ePrint 2024/040](https://eprint.iacr.org/2024/040.pdf)
+
+I gave several talks about this project, summarized in [this post]({{< relref "resolved_talk" >}}).
