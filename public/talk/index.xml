@@ -6,7 +6,26 @@
     <description>Recent content in Talks on Hongrui Cui&#39;s Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 29 Apr 2024 00:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/talk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Digital Signature from Regular Syndrome Decoding and VOLEitH</title>
+      <link>http://localhost:1313/talk/resolved_talk/</link>
+      <pubDate>Mon, 29 Apr 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/talk/resolved_talk/</guid>
+      <description>This is a project that runs in the Lattice lab, starting from Dalao Hanlin, who first envisioned the possibility of substituting LWE-based cryptography with LPN (spoiler alert we currently do not know how to achieve this goal). A significant goal is to construct a digital signature a la Dilithium at least in terms of performance.
+Alas, the Fiat-Shamir with Abort technique does not work directly with LPN, although some folks have come up with variants of the LPN assumption to accommendate with this technqiue (e.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/talk/all-posts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/talk/all-posts/</guid>
+      <description>DONE My first post tag1@category1 This is my post body
+papers DONE MPC in Multi Heads This paper is about extending the classical [IKOS07] MPC in the Head framework to prove statements that are shared among multiple provers.
+This is somewhat dual to the distributed ZKP object. I gave a talk about this Crypto 2019 paper Fully Linear PCP
+Published as MPC-in-Multi-Heads: A Multi-Prover Zero-Knowledge Proof System. In European Symposium on Research in Computer Security (pp.</description>
+    </item>
     <item>
       <title>Authenticated Garbling from Compressed Randomness</title>
       <link>http://localhost:1313/talk/dilo/</link>
@@ -15,14 +34,6 @@
       <description>This is a Crypto 2022 paper that describes how to construct authenticated garbled circuit using correlations that allow efficient PCGS (e.g., MT, VOLE). Using the AGC, we can run actively secure 2PC afterwards.
 This work inspired us to conduct a follow-up work Authenticated Garbling From Correlated OT.
 Here is the slides I have prepared Slides.</description>
-    </item>
-    <item>
-      <title>Digital Signature from Regular Syndrome Decoding and VOLEitH</title>
-      <link>http://localhost:1313/talk/resolved_talk/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talk/resolved_talk/</guid>
-      <description>This is a project that runs in the Lattice lab, starting from Dalao Hanlin, who first envisioned the possibility of substituting LWE-based cryptography with LPN (spoiler alert we currently do not know how to achieve this goal). A significant goal is to construct a digital signature a la Dilithium at least in terms of performance.
-Alas, the Fiat-Shamir with Abort technique does not work directly with LPN, although some folks have come up with variants of the LPN assumption to accommendate with this technqiue (e.</description>
     </item>
     <item>
       <title>Efficient Random Vector Commitment from AES</title>

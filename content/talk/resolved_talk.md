@@ -1,5 +1,6 @@
 +++
 title = "Digital Signature from Regular Syndrome Decoding and VOLEitH"
+date = 2024-04-29T00:00:00+08:00
 draft = false
 +++
 
