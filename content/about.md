@@ -13,7 +13,7 @@ draft = false
 <span class="icons-item"> <a href="/gpg_public_key.txt"><i class="fas fa-key fa-1x"></i></a></span>
 
 Ph.D. Student in Cryptography<br />
-[LATTICE Group, Shanghai Jiao Tong University](https://crypto.sjtu.edu.cn/)
+[LATTICE Group](https://crypto.sjtu.edu.cn/), Shanghai Jiao Tong University
 
 
 ## Interests {#interests}
@@ -35,3 +35,5 @@ I am a second-year Ph.D. student majoring in Cryptography at SJTU. My
 past projects include MPC-in-the-Head, COT-AG, and ReSolveD. I am very
 interested in objects that are both theoretically interesting and of
 practical significance.
+
+Here's my [CV](https://drive.google.com/file/d/1OHIk9vPJTBRZzkZG-7tLxBqRtchvo_nS/view?usp=share_link).

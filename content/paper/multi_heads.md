@@ -11,4 +11,4 @@ this Crypto 2019 paper [Fully Linear PCP]({{< relref "flpcp" >}})
 
 Published as _MPC-in-Multi-Heads: A Multi-Prover Zero-Knowledge Proof
 System._ In European Symposium on Research in Computer Security
-(pp. 332-351). Springer, Cham. [PDF](https://link.springer.com/content/pdf/10.1007%2F978-3-030-88428-4_17.pdf)
+(pp. 332-351). Springer, Cham. [[<https://link.springer.com/content/pdf/10.1007%2>
