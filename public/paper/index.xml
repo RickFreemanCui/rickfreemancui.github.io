@@ -12,42 +12,83 @@
       <link>http://localhost:1313/paper/cot_ag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/paper/cot_ag/</guid>
-      <description>Inspired by [DILO22], we investigate what is the bare minimum we can achieve using the correlated OT functionality in actively secure two-party computation. We found that with the following two techniques
-block COT and compression idea of [DILO22] dual execution We can achieve constant (up to 5 bits per AND gate) overhead in terms of one-way communication compared to semi-honest half-gate [ZRE15].
-One-way Communication The one-way communication result is published as Actively Secure Half-Gates with Minimum Overhead under Duplex Networks.</description>
+      <description>&lt;p&gt;Inspired by [DILO22], we investigate what is the bare minimum we can
+achieve using the correlated OT functionality in actively secure
+two-party computation. We found that with the following two techniques&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;block COT and compression idea of [DILO22]&lt;/li&gt;
+&lt;li&gt;dual execution&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We can achieve constant (up to 5 bits per AND gate) overhead in terms of
+one-way communication compared to semi-honest half-gate [ZRE15].&lt;/p&gt;
+&lt;h2 id=&#34;one-way-communication&#34;&gt;One-way Communication&lt;/h2&gt;
+&lt;p&gt;The one-way communication result is published as &lt;em&gt;Actively Secure
+Half-Gates with Minimum Overhead under Duplex Networks. In Advances in
+Cryptology–EUROCRYPT 2023: 42nd Annual International Conference on the
+Theory and Applications of Cryptographic Techniques, Lyon, France,
+April 23–27, 2023, Proceedings, Part II (pp. 35-67). Cham: Springer
+Nature Switzerland.&lt;/em&gt; &lt;a href=&#34;https://link.springer.com/content/pdf/10.1007/978-3-031-30617-4_2.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>LPN-based Signature from VOLE in the Head</title>
       <link>http://localhost:1313/paper/resolved/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/paper/resolved/</guid>
-      <description>The VOLE in the Head framework demonstrates very competetive performance as compared to the traditional MPC in the Head framework. This has been demonstrated in the FAEST signature scheme (Crypto 2023).
-One natural ideal is to utilize this framework to prove other OWF, e.g. LPN-based. In this work, we apply the sketching technique of [BGI16] to prove that the LPN noise consists of a series of unit vectors, and then apply QuickSilver to prove the validity of LPN witness.</description>
+      <description>&lt;p&gt;The &lt;strong&gt;VOLE in the Head&lt;/strong&gt; framework demonstrates very competetive
+performance as compared to the traditional MPC in the Head
+framework. This has been demonstrated in the &lt;strong&gt;FAEST&lt;/strong&gt; signature scheme
+(Crypto 2023).&lt;/p&gt;
+&lt;p&gt;One natural ideal is to utilize this framework to prove other OWF,
+e.g. LPN-based. In this work, we apply the sketching technique of
+[BGI16] to prove that the LPN noise consists of a series of unit
+vectors, and then apply QuickSilver to prove the validity of LPN
+witness. After transforming the proof system under the VOLE in the
+Head framework from designated verifier to public verifier, we get a
+signature scheme called &lt;strong&gt;ReSolveD&lt;/strong&gt;. The scheme shows smaller signature
+size as compared to previous state-of-the-art &lt;strong&gt;SDitH&lt;/strong&gt; (Eurocrypt 2023,
+Asiacrypt 2023)&lt;/p&gt;</description>
     </item>
     <item>
       <title>MPC in Multi Heads</title>
       <link>http://localhost:1313/paper/multi_heads/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/paper/multi_heads/</guid>
-      <description>This paper is about extending the classical [IKOS07] MPC in the Head framework to prove statements that are shared among multiple provers.
-This is somewhat dual to the distributed ZKP object. I gave a talk about this Crypto 2019 paper Fully Linear PCP
-Published as MPC-in-Multi-Heads: A Multi-Prover Zero-Knowledge Proof System. In European Symposium on Research in Computer Security (pp. 332-351). Springer, Cham. [[https://link.springer.com/content/pdf/10.1007%2</description>
+      <description>&lt;p&gt;This paper is about extending the classical [IKOS07] MPC in the Head
+framework to prove statements that are shared among multiple provers.&lt;/p&gt;
+&lt;p&gt;This is somewhat dual to the distributed ZKP object. I gave a talk about
+this &lt;a href=&#34;http://localhost:1313/talk/flpcp/&#34;&gt;Crypto 2019 paper&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Published as &lt;em&gt;A Multi-Prover Zero-Knowledge Proof
+System.&lt;/em&gt; In European Symposium on Research in Computer Security
+(pp. 332-351). Springer, Cham. &lt;a href=&#34;https://link.springer.com/content/pdf/10.1007%2F978-3-030-88428-4_17.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Optimal One-time Signature</title>
       <link>http://localhost:1313/paper/cs_wots/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/paper/cs_wots/</guid>
-      <description>Hash-based signature is to be standardized by NIST &amp;lt;2024-02-28 Wed&amp;gt;. So it is a natural question to study whether the currently being standarized algorithm SPHINCS+ is indeed optimal.
-Towards this end, we discovered that the constant-sum encoding method that appear previously in the literature, is encoding-size-optimal among all tree-based one-time signature schemes. Moreover, by refuting a DAG-based construction [BM96] our scheme appears to be the optimal among all existing constructions.</description>
+      <description>&lt;p&gt;Hash-based signature is to be standardized by NIST &lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;&amp;lt;2024-02-28 三&amp;gt;&lt;/span&gt;&lt;/span&gt;. So
+it is a natural question to study whether the currently being standarized
+algorithm &lt;strong&gt;SPHINCS+&lt;/strong&gt; is indeed optimal.&lt;/p&gt;
+&lt;p&gt;Towards this end, we discovered that the constant-sum encoding method
+that appear previously in the literature, is encoding-size-optimal
+among all tree-based one-time signature schemes. Moreover, by refuting
+a DAG-based construction [BM96] our scheme appears to be the optimal
+among all existing constructions.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Simple GCZK</title>
       <link>http://localhost:1313/paper/simple_gczk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/paper/simple_gczk/</guid>
-      <description>In this paper we describe a simple GCZK protocol that works in the reverse order compared to [JKO16]. Here the prover is the garbler and the verifier use cut-and-choose to verify that the correct verification circuit is garbled. In this way, the protocol can be made public-coin.
-Published as A Simple Post-Quantum Non-interactive Zero-Knowledge Proof from Garbled Circuits. In International Conference on Information Security and Cryptology (pp. 269-280). Springer, Cham. PDF</description>
+      <description>&lt;p&gt;In this paper we describe a simple GCZK protocol that works in the
+reverse order compared to [JKO16]. Here the prover is the garbler and
+the verifier use cut-and-choose to verify that the correct
+verification circuit is garbled. In this way, the protocol can be made
+public-coin.&lt;/p&gt;
+&lt;p&gt;Published as &lt;em&gt;A Simple Post-Quantum Non-interactive Zero-Knowledge
+Proof from Garbled Circuits. In International Conference on
+Information Security and Cryptology (pp. 269-280). Springer, Cham.&lt;/em&gt;
+&lt;a href=&#34;https://eprint.iacr.org/2021/1068.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

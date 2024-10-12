@@ -13,81 +13,112 @@
       <link>http://localhost:1313/talk/resolved_talk/</link>
       <pubDate>Mon, 29 Apr 2024 00:00:00 +0800</pubDate>
       <guid>http://localhost:1313/talk/resolved_talk/</guid>
-      <description>This is a project that runs in the Lattice lab, starting from Dalao Hanlin, who first envisioned the possibility of substituting LWE-based cryptography with LPN (spoiler alert we currently do not know how to achieve this goal). A significant goal is to construct a digital signature a la Dilithium at least in terms of performance.
-Alas, the Fiat-Shamir with Abort technique does not work directly with LPN, although some folks have come up with variants of the LPN assumption to accommendate with this technqiue (e.</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/talk/all-posts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talk/all-posts/</guid>
-      <description>DONE My first post tag1@category1 This is my post body
-papers DONE MPC in Multi Heads This paper is about extending the classical [IKOS07] MPC in the Head framework to prove statements that are shared among multiple provers.
-This is somewhat dual to the distributed ZKP object. I gave a talk about this Crypto 2019 paper Fully Linear PCP
-Published as MPC-in-Multi-Heads: A Multi-Prover Zero-Knowledge Proof System. In European Symposium on Research in Computer Security (pp.</description>
+      <description>&lt;p&gt;This is a project that runs in the &lt;strong&gt;&lt;strong&gt;Lattice&lt;/strong&gt;&lt;/strong&gt; lab, starting
+from Dalao Hanlin, who first envisioned the possibility of substituting
+LWE-based cryptography with LPN (spoiler alert we currently do not know
+how to achieve this goal). A significant goal is to construct a digital
+signature a la Dilithium at least in terms of performance.&lt;/p&gt;
+&lt;p&gt;Alas, the &lt;strong&gt;Fiat-Shamir with Abort&lt;/strong&gt; technique does not work directly with
+LPN, although some folks have come up with variants of the LPN assumption
+to accommendate with this technqiue (e.g. (&lt;a href=&#34;#citeproc_bib_item_2&#34;&gt;“Durandal: A Rank Metric Based Signature Scheme SpringerLink” n.d.&lt;/a&gt;)). We
+consider the status quo unsatisfactory.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Authenticated Garbling from Compressed Randomness</title>
       <link>http://localhost:1313/talk/dilo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/talk/dilo/</guid>
-      <description>This is a Crypto 2022 paper that describes how to construct authenticated garbled circuit using correlations that allow efficient PCGS (e.g., MT, VOLE). Using the AGC, we can run actively secure 2PC afterwards.
-This work inspired us to conduct a follow-up work Authenticated Garbling From Correlated OT.
-Here is the slides I have prepared Slides.</description>
+      <description>&lt;p&gt;This is a Crypto 2022 paper that describes how to construct
+authenticated garbled circuit using correlations that allow efficient
+PCGS (e.g., MT, VOLE). Using the AGC, we can run actively secure 2PC
+afterwards.&lt;/p&gt;
+&lt;p&gt;This work inspired us to conduct a follow-up work &lt;a href=&#34;http://localhost:1313/paper/cot_ag/&#34;&gt;Authenticated Garbling From Correlated OT&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here is the slides I have prepared &lt;a href=&#34;http://localhost:1313/ox-hugo/Auth-GC-from-VOLE.pdf&#34;&gt;Slides&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Efficient Random Vector Commitment from AES</title>
       <link>http://localhost:1313/talk/vc-aes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/talk/vc-aes/</guid>
-      <description>Since random vector commitment is used extensively in MPCitH and VOLEitH applications, with some of them being post quantum signatures, which is efficiency sensitive (e.g. TLS needs fast authentications for smooth browsing experience), it&amp;rsquo;s a natural question to optimize this component.
-One possible way to do this is to replace the cryptograhpic hash function invocation at the bottom layer of the GGM tree with AES-based hash functions which are relatively lightweight when the key is fixed.</description>
+      <description>&lt;p&gt;Since random vector commitment is used extensively in MPCitH and
+VOLEitH applications, with some of them being post quantum signatures,
+which is efficiency sensitive (e.g. TLS needs fast authentications for
+smooth browsing experience), it&amp;rsquo;s a natural question to optimize
+this component.&lt;/p&gt;
+&lt;p&gt;One possible way to do this is to replace the cryptograhpic hash
+function invocation at the bottom layer of the GGM tree with AES-based
+hash functions which are relatively lightweight when the key is fixed.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fully Linear PCP</title>
       <link>http://localhost:1313/talk/flpcp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/talk/flpcp/</guid>
-      <description>This is a Crypto 2019 paper by Boneh et al. In this paper the authors utilize the fact that the verifier can only make linear queries to the instance string and the PCP/IOP proof string in order to make a decision. Building on this property, we can design proof systems that allow proving statements that are shared among multiple verifiers. This proof system in particular appear useful for the GMW transformation, which is the topic of another talk.</description>
+      <description>&lt;p&gt;This is a Crypto 2019 paper by Boneh et al. In this paper the authors
+utilize the fact that the verifier can only make linear queries to the
+instance string and the PCP/IOP proof string in order to make a
+decision. Building on this property, we can design proof systems that
+allow proving statements that are shared among multiple verifiers.
+This proof system in particular appear useful for the GMW transformation,
+which is the topic of another talk.&lt;/p&gt;</description>
     </item>
     <item>
       <title>My first talk</title>
       <link>http://localhost:1313/talk/first_talk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/talk/first_talk/</guid>
-      <description>My first talk is about memory-hard functions but they are kind of lost</description>
+      <description>&lt;p&gt;My first talk is about memory-hard functions but they are kind of lost&lt;/p&gt;</description>
     </item>
     <item>
       <title>PCG for Boolean Beaver Triples</title>
       <link>http://localhost:1313/talk/boolean-beaver-pcg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/talk/boolean-beaver-pcg/</guid>
-      <description>Generating Boolean Beaver triples has always been an intriguing problem. On one hand, Overdrive-type FHE-based solutions offers asympototically-good solutions, and for suitable field size the concrete efficiency is also considered state-of-the-art. On the other hand, the current best practice for generating authenticated Boolean Beaver triples remains MASCOT-type COT-based protocols, which has communication of \(O(N^2 m)\) for generating \(m\) triples among \(N\) parties.
-I guess this is a follow-up of Ring-LPN Talk.</description>
+      <description>&lt;p&gt;Generating Boolean Beaver triples has always been an intriguing
+problem.  On one hand, Overdrive-type FHE-based solutions offers
+asympototically-good solutions, and for suitable field size the
+concrete efficiency is also considered state-of-the-art. On the other
+hand, the current best practice for generating authenticated Boolean
+Beaver triples remains MASCOT-type COT-based protocols, which has
+communication of \(O(N^2 m)\) for generating \(m\) triples among \(N\)
+parties.&lt;/p&gt;
+&lt;p&gt;I guess this is a follow-up of &lt;a href=&#34;http://localhost:1313/talk/ring_lpn_pcg/&#34;&gt;Ring-LPN PCG&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>PCG for Garbled Circuit Correlations</title>
       <link>http://localhost:1313/talk/gcpcgpcf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/talk/gcpcgpcf/</guid>
-      <description>This is a Eurocrypt 2023 submission that describes the application of EA-LPN in constructing PCF for garbled circuit correlations. They also present three applications of their construction, albeit not very convincing in their practical values.
-I gave a talk about this paper and also discussed the merit of it at &amp;lt;2024-02-27 Tue&amp;gt;. Here is the ipe source.</description>
+      <description>&lt;p&gt;This is a Eurocrypt 2023 submission that describes the application of
+EA-LPN in constructing PCF for garbled circuit correlations. They also
+present three applications of their construction, albeit not very
+convincing in their practical values.&lt;/p&gt;
+&lt;p&gt;I gave a talk about this paper and also discussed the merit of it at
+&lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;&amp;lt;2024-02-27 二&amp;gt;&lt;/span&gt;&lt;/span&gt;. Here is the &lt;a href=&#34;Slides/GC-PCG-PCF.ipe&#34;&gt;ipe source&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ring-LPN PCG</title>
       <link>http://localhost:1313/talk/ring_lpn_pcg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/talk/ring_lpn_pcg/</guid>
-      <description>The \( n^2 \) computational overhead of PCGs for the OLE/MT correlation has long been a trouble and only recently have we come up with some creative solution (for authenticated triples over \( \mathbb{F}_2 \)).
-This is a Crypto 2020 paper that shows how to create such a correlation over \( \mathbb{F}_{2^{\rho}} \) using Ring-LPN. I recall giving talks about this construction in various occacions but the details have been lost now.</description>
+      <description>&lt;p&gt;The \( n^2 \) computational overhead of PCGs for the OLE/MT correlation
+has long been a trouble and only recently have we come up with some
+creative solution (for authenticated triples over \( \mathbb{F}_2 \)).&lt;/p&gt;
+&lt;p&gt;This is a Crypto 2020 paper that shows how to create such a
+correlation over \( \mathbb{F}_{2^{\rho}} \) using Ring-LPN. I recall
+giving talks about this construction in various occacions but the
+details have been lost now. &lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;&amp;lt;2024-02-28 三&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sublinear GMW</title>
       <link>http://localhost:1313/talk/sublinear_gmw/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/talk/sublinear_gmw/</guid>
-      <description>This is a follow-up work of Fully Linear PCP.
-LATTICE group meeting at &amp;lt;2021-10-27 Wed&amp;gt; Slides Meeting with Huawei at &amp;lt;2021-11-18 Thu&amp;gt; Slides </description>
+      <description>&lt;p&gt;This is a follow-up work of .&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;LATTICE group meeting at &lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;&amp;lt;2021-10-27 三&amp;gt; &lt;/span&gt;&lt;/span&gt; &lt;a href=&#34;http://localhost:1313/ox-hugo/Sublinear-GMW.pptx&#34;&gt;Slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Meeting with Huawei at &lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;&amp;lt;2021-11-18 四&amp;gt; &lt;/span&gt;&lt;/span&gt; &lt;a href=&#34;http://localhost:1313/ox-hugo/Sublinear-GMW-Huawei.pptx&#34;&gt;Slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

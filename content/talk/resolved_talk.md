@@ -26,9 +26,9 @@ I have given three talks about this topic:
 
 -   One in the group meeting last year (by that time we call the project
     SPED). [Slides](/ox-hugo/SPED.pdf)
--   One on AC 2023 at Guangzhou during Rump Session <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-12-06 Wed&gt;</span></span>
+-   One on AC 2023 at Guangzhou during Rump Session <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-12-06 三&gt;</span></span>
     [Slides](/ox-hugo/ReSolveD-AC23-RumpSession.pdf)
--   One on PKC 2024 at Syndey <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-04-16 Tue&gt;</span></span>.  [Slides](/ox-hugo/ReSolveD-PKC2024.pdf)
+-   One on PKC 2024 at Syndey <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-04-16 二&gt;</span></span>.  [Slides](/ox-hugo/ReSolveD-PKC2024.pdf)
 
 ## References
 

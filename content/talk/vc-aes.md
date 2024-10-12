@@ -23,5 +23,5 @@ optimization since AES being fast is largely due to the instruction
 set AES-NI.
 
 So Prof. Guo tries to tackle this problem using only AES. We are
-having an discussion about this topic at <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-03-06 Wed&gt;</span></span>. Here are
+having an discussion about this topic at <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-03-06 三&gt;</span></span>. Here are
 the [slides](/ox-hugo/AES-VC.pdf).

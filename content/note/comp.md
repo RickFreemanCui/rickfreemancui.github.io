@@ -858,7 +858,7 @@ relies on
     variables as proof.
 
 So Godel essentially palpicitated (or raised actually ) the famous question of
-\P vs. \NP.
+&para; vs. \NP.
 
 
 ### Berman-Hartmanis Conjecture {#berman-hartmanis-conjecture}
@@ -2047,7 +2047,7 @@ We will use several graph products to explicitly construct expander graph.
     rotation matrix, and finally one more step on \\(H\\). Using the parallel walk
     view of tensor product might be helpful here.
 
-    <a id="org5ae317a"></a>
+    <a id="org31f700f"></a>
 
     <asset/zig-zag.eps>
 
@@ -3223,6 +3223,10 @@ for x in lst:
 
 return cnt, cnt / len(lst)
 ```
+
+|    |       |
+|----|-------|
+| 40 | 0.625 |
 
 
 #### Closeness {#closeness}

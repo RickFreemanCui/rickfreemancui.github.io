@@ -8,7 +8,14 @@
 <title>计算复杂性课程笔记 | Hongrui Cui&#39;s Homepage</title>
 <meta name="keywords" content="">
 <meta name="description" content="This is my notes of the 18-19-1 course ``Computational Complexity&rsquo;&#39;.
-Lecture 1: Introduction Introduction This is the lecture note of Prof. Fu&rsquo;s Computational Complexity (not to be confused with the Computational Complexity: Advanced Topics in the second semester). As Prof. Fu is not following strictly the structure of the book, I consider it necessary to take notes of the essential contents taught in the lectures, and subsequently organized them as a series.">
+Lecture 1: Introduction
+Introduction
+This is the lecture note of Prof. Fu&rsquo;s Computational Complexity (not
+to be confused with the Computational Complexity: Advanced Topics in
+the second semester). As Prof. Fu is not following strictly the
+structure of the book, I consider it necessary to take notes of the
+essential contents taught in the lectures, and subsequently organized
+them as a series.">
 <meta name="author" content="崔泓睿">
 <link rel="canonical" href="http://localhost:1313/note/comp/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
@@ -198,22 +205,22 @@ elaborations based on reading from the book may also be added here.</p>
 <h4 id="auxiliary-course-information">Auxiliary Course Information<a hidden class="anchor" aria-hidden="true" href="#auxiliary-course-information">#</a></h4>
 <p>Information about the teaching assistant:</p>
 <table>
-<thead>
-<tr>
-<th>Name</th>
-<th>杨启哲</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Phone Number</td>
-<td>15901917102</td>
-</tr>
-<tr>
-<td>Email Address</td>
-<td><a href="mailto:spacepenguin9494@gmail.com">mailto:spacepenguin9494@gmail.com</a></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left">Name</th>
+          <th style="text-align: left">杨启哲</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Phone Number</td>
+          <td style="text-align: left">15901917102</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Email Address</td>
+          <td style="text-align: left"><a href="mailto:spacepenguin9494@gmail.com">mailto:spacepenguin9494@gmail.com</a></td>
+      </tr>
+  </tbody>
 </table>
 <p>Also homework will be handed down to us through email. I chose the
 school&rsquo;s email address to communicate with him.</p>
@@ -944,7 +951,7 @@ proof length</li>
 variables as proof.</li>
 </ol>
 <p>So Godel essentially palpicitated (or raised actually ) the famous question of
-\P vs. \NP.</p>
+¶ vs. \NP.</p>
 <h3 id="berman-hartmanis-conjecture">Berman-Hartmanis Conjecture<a hidden class="anchor" aria-hidden="true" href="#berman-hartmanis-conjecture">#</a></h3>
 <p>The conjecture is &ldquo;all NP-complete problems are polynomially isomorphic&rdquo;. By
 &ldquo;polynomially isomorphic&rdquo;, we mean there is a efficient isomorphism \(\sigma\)
@@ -1834,7 +1841,7 @@ with only self-loop on which random walk does nothing), then from the vertex
 labelling in \(H\) in this step, we can determine an edge in \(G\) through the
 rotation matrix, and finally one more step on \(H\). Using the parallel walk
 view of tensor product might be helpful here.</p>
-<p><a id="org5ae317a"></a></p>
+<p><a id="org31f700f"></a></p>
 <p>&lt;asset/zig-zag.eps&gt;</p>
 <p>There is a lemma regarding zig-zag product.</p>
 <p>Lemma. \((I_n \otimes J_D) \hat{A} (I_n \otimes J_D) = A \otimes J_D\)</p>
@@ -1891,34 +1898,34 @@ M &amp;= (\gamma_H I_n \otimes J_D + \lambda_H I_n \otimes E) \hat{A} (\gamma_H 
 <h3 id="expander-construction-i">Expander Construction I<a hidden class="anchor" aria-hidden="true" href="#expander-construction-i">#</a></h3>
 <p>Idea: use path product and zig-zag product to produce an expander graph family.</p>
 <table>
-<thead>
-<tr>
-<th></th>
-<th>Size</th>
-<th>Degree</th>
-<th>Expansion</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Path</td>
-<td>&ndash;</td>
-<td>up</td>
-<td>UP</td>
-</tr>
-<tr>
-<td>Tensor</td>
-<td>up</td>
-<td>up</td>
-<td>down</td>
-</tr>
-<tr>
-<td>ZigZag</td>
-<td>up</td>
-<td>DOWN</td>
-<td>down</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th style="text-align: left"></th>
+          <th style="text-align: left">Size</th>
+          <th style="text-align: left">Degree</th>
+          <th style="text-align: left">Expansion</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">Path</td>
+          <td style="text-align: left">&ndash;</td>
+          <td style="text-align: left">up</td>
+          <td style="text-align: left">UP</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Tensor</td>
+          <td style="text-align: left">up</td>
+          <td style="text-align: left">up</td>
+          <td style="text-align: left">down</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">ZigZag</td>
+          <td style="text-align: left">up</td>
+          <td style="text-align: left">DOWN</td>
+          <td style="text-align: left">down</td>
+      </tr>
+  </tbody>
 </table>
 <p>What we want is constant degree. Maybe we can use path product to get good expansion and zig-zag product to bring back degree.</p>
 <p>Let \(H\) be a (\(D^4\), \(D\), \(1/8\))-grpah constructed by brute force (maybe proved to exist using probabilistic method, where we will find a appropriate constant \(D\)). Define</p>
@@ -2611,7 +2618,21 @@ x \not\in L &amp;\implies \func{val}(f(x)) &lt; \rho.
 </span></span><span style="display:flex;"><span>        <span style="color:#000">cnt</span> <span style="color:#ce5c00;font-weight:bold">+=</span> <span style="color:#0000cf;font-weight:bold">1</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">return</span> <span style="color:#000">cnt</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">cnt</span> <span style="color:#ce5c00;font-weight:bold">/</span> <span style="color:#204a87">len</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">lst</span><span style="color:#000;font-weight:bold">)</span>
-</span></span></code></pre></div><h4 id="closeness">Closeness<a hidden class="anchor" aria-hidden="true" href="#closeness">#</a></h4>
+</span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th style="text-align: left"></th>
+          <th style="text-align: left"></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">40</td>
+          <td style="text-align: left">0.625</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="closeness">Closeness<a hidden class="anchor" aria-hidden="true" href="#closeness">#</a></h4>
 <p>For two functions \(f\), \(g\), we call \(f\) is \(\rho\)-close to \(g\), if \(\Pr_x [f(x) = g(x)] &gt; \rho\). Notice that if we restrict our attentions to \(f, g: \set{\pm 1}^n \to \set{\pm 1}\), then it is equivalent to \(\expsub{x}{f(x)g(x)} = f \circ g&gt; 1 - 2\rho\). If we set \(\rho = \frac{1}{2} + \epsilon\), this would be much clearer. We can further make further observations:</p>
 <ul>
 <li>If \(\Pr_{x, y}[f(x) f(y) = f(x \cdot y)] \ge \frac{1}{2} + \epsilon\), then \(f\) is \(2\epsilon\)-close to \(\chi_{\alpha}\), where \(\hat{f}_{\alpha}\) is \(f\)&rsquo;s largest Fourier coefficient.</li>

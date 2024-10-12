@@ -3,7 +3,7 @@ title = "Optimal One-time Signature"
 draft = false
 +++
 
-Hash-based signature is to be standardized by NIST <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-02-28 Wed&gt;</span></span>. So
+Hash-based signature is to be standardized by NIST <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-02-28 三&gt;</span></span>. So
 it is a natural question to study whether the currently being standarized
 algorithm **SPHINCS+** is indeed optimal.
 

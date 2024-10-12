@@ -11,4 +11,5 @@ allow proving statements that are shared among multiple verifiers.
 This proof system in particular appear useful for the GMW transformation,
 which is the topic of another talk.
 
-Also this work appear to be dual to our previous work [MPC in Multi Heads]({{< relref "multi_heads" >}})
+Also this work appear to be dual to our previous work
+multi-heads

@@ -7,11 +7,15 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Hongrui Cui&#39;s Homepage</title>
 <meta name="keywords" content="">
-<meta name="description" content="DONE My first post tag1@category1 This is my post body
-papers DONE MPC in Multi Heads This paper is about extending the classical [IKOS07] MPC in the Head framework to prove statements that are shared among multiple provers.
-This is somewhat dual to the distributed ZKP object.
-Published as MPC-in-Multi-Heads: A Multi-Prover Zero-Knowledge Proof System. In European Symposium on Research in Computer Security (pp. 332-351). Springer, Cham. PDF
-DONE Simple GCZK In this paper we describe a simple GCZK protocol that works in the reverse order compared to [JKO16].">
+<meta name="description" content="papers
+DONE MPC in Multi Heads
+This paper is about extending the classical [IKOS07] MPC in the Head
+framework to prove statements that are shared among multiple provers.
+This is somewhat dual to the distributed ZKP object. I gave a talk about
+this Crypto 2019 paper.
+Published as A Multi-Prover Zero-Knowledge Proof
+System. In European Symposium on Research in Computer Security
+(pp. 332-351). Springer, Cham. PDF">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/paper/all-posts/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
@@ -60,6 +64,49 @@ DONE Simple GCZK In this paper we describe a simple GCZK protocol that works in 
 
     </style>
 </noscript>
+<script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true,
+                processEnvironments: true,
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                TeX: {
+                    equationNumbers: { autoNumber: "AMS" },
+                    extensions: ["AMSmath.js", "AMSsymbols.js"]
+                }
+            },
+            "HTML-CSS": {
+                availableFonts: ["Arial", "TeX"],
+                preferredFont: "TeX",
+                webFont: "TeX"
+            }
+        });
+
+        MathJax.Hub.Queue(function () {
+            
+            
+            
+            var all = MathJax.Hub.getAllJax(), i;
+            for (i = 0; i < all.length; i += 1) {
+                all[i].SourceElement().parentNode.className += ' has-jax';
+            }
+        });
+    </script>
+
+<style>
+    code.has-jax {
+        font: inherit;
+        font-size: 100%;
+        background: inherit;
+        border: inherit;
+        color: #515151;
+    }
+</style>
+
+
 </head>
 
 <body class="" id="top">
@@ -144,14 +191,13 @@ DONE Simple GCZK In this paper we describe a simple GCZK protocol that works in 
 
 </div>
   </header> 
-  <div class="post-content"><h2 id="my-first-post"><span class="org-todo done DONE">DONE</span> My first post <span class="tag"><span class="tag1">tag1</span><span class="_category1">@category1</span></span><a hidden class="anchor" aria-hidden="true" href="#my-first-post">#</a></h2>
-<p>This is my post body</p>
-<h2 id="papers">papers<a hidden class="anchor" aria-hidden="true" href="#papers">#</a></h2>
+  <div class="post-content"><h2 id="papers">papers<a hidden class="anchor" aria-hidden="true" href="#papers">#</a></h2>
 <h3 id="multi_heads"><span class="org-todo done DONE">DONE</span> MPC in Multi Heads<a hidden class="anchor" aria-hidden="true" href="#multi_heads">#</a></h3>
 <p>This paper is about extending the classical [IKOS07] MPC in the Head
 framework to prove statements that are shared among multiple provers.</p>
-<p>This is somewhat dual to the distributed ZKP object.</p>
-<p>Published as <em>MPC-in-Multi-Heads: A Multi-Prover Zero-Knowledge Proof
+<p>This is somewhat dual to the distributed ZKP object. I gave a talk about
+this <a href="#flpcp">Crypto 2019 paper</a>.</p>
+<p>Published as <em>A Multi-Prover Zero-Knowledge Proof
 System.</em> In European Symposium on Research in Computer Security
 (pp. 332-351). Springer, Cham. <a href="https://link.springer.com/content/pdf/10.1007%2F978-3-030-88428-4_17.pdf">PDF</a></p>
 <h3 id="simple_gczk"><span class="org-todo done DONE">DONE</span> Simple GCZK<a hidden class="anchor" aria-hidden="true" href="#simple_gczk">#</a></h3>
@@ -186,9 +232,9 @@ Nature Switzerland.</em> <a href="https://link.springer.com/content/pdf/10.1007/
 We manage to achieve \( 2\kappa + \lambda + C \) bits per AND gate
 where \( \kappa \) is the computational security parameter and \(
 \lambda \) is the statistical security parameter. This work is
-available at <a href="https://eprint.iacr.org/2023/278">ePrint 2023/278</a></p>
+available at <a href="https://eprint.iacr.org/2023/278">ePrint 2023/278</a>.</p>
 <h3 id="cs_wots"><span class="org-todo done DONE">DONE</span> Optimal One-time Signature<a hidden class="anchor" aria-hidden="true" href="#cs_wots">#</a></h3>
-<p>Hash-based signature is to be standardized by NIST <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-02-28 Wed&gt;</span></span>. So
+<p>Hash-based signature is to be standardized by NIST <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-02-28 三&gt;</span></span>. So
 it is a natural question to study whether the currently being standarized
 algorithm <strong>SPHINCS+</strong> is indeed optimal.</p>
 <p>Towards this end, we discovered that the constant-sum encoding method
@@ -218,15 +264,135 @@ Asiacrypt 2023)</p>
 <p>This work is published as <em>ReSolveD: Shorter Signatures from Regular
 Syndrome Decoding and VOLE-in-the-Head, Public Key Cryptogrpahy 2024</em>
 <a href="https://eprint.iacr.org/2024/040.pdf">ePrint 2024/040</a></p>
+<p>I gave several talks about this project, summarized in <a href="#resolved_talk">this post</a>.</p>
 <h2 id="notes">Notes<a hidden class="anchor" aria-hidden="true" href="#notes">#</a></h2>
 <h3 id="first_note"><span class="org-todo done DONE">DONE</span> My first note<a hidden class="anchor" aria-hidden="true" href="#first_note">#</a></h3>
 <p>My first note is about the CIS 2019 winter school</p>
-<h2 id="talks">talks<a hidden class="anchor" aria-hidden="true" href="#talks">#</a></h2>
+<h2 id="talks">Talks<a hidden class="anchor" aria-hidden="true" href="#talks">#</a></h2>
 <h3 id="first_talk"><span class="org-todo done DONE">DONE</span> My first talk<a hidden class="anchor" aria-hidden="true" href="#first_talk">#</a></h3>
 <p>My first talk is about memory-hard functions but they are kind of lost</p>
+<h3 id="flpcp"><span class="org-todo done DONE">DONE</span> Fully Linear PCP<a hidden class="anchor" aria-hidden="true" href="#flpcp">#</a></h3>
+<p>This is a Crypto 2019 paper by Boneh et al. In this paper the authors
+utilize the fact that the verifier can only make linear queries to the
+instance string and the PCP/IOP proof string in order to make a
+decision. Building on this property, we can design proof systems that
+allow proving statements that are shared among multiple verifiers.
+This proof system in particular appear useful for the GMW transformation,
+which is the topic of another talk.</p>
+<p>Also this work appear to be dual to our previous work <a href="#multi_heads">MPC in Multi Heads</a></p>
+<h3 id="sublinear_gmw"><span class="org-todo done DONE">DONE</span> Sublinear GMW<a hidden class="anchor" aria-hidden="true" href="#sublinear_gmw">#</a></h3>
+<p>This is a follow-up work of <a href="#flpcp">Fully Linear PCP</a>.</p>
+<ul>
+<li>LATTICE group meeting at <span class="timestamp-wrapper"><span class="timestamp">&lt;2021-10-27 三&gt; </span></span> <a href="/ox-hugo/Sublinear-GMW.pptx">Slides</a></li>
+<li>Meeting with Huawei at <span class="timestamp-wrapper"><span class="timestamp">&lt;2021-11-18 四&gt; </span></span> <a href="/ox-hugo/Sublinear-GMW-Huawei.pptx">Slides</a></li>
+</ul>
+<h3 id="ring_lpn_pcg"><span class="org-todo done DONE">DONE</span> Ring-LPN PCG<a hidden class="anchor" aria-hidden="true" href="#ring_lpn_pcg">#</a></h3>
+<p>The \( n^2 \) computational overhead of PCGs for the OLE/MT correlation
+has long been a trouble and only recently have we come up with some
+creative solution (for authenticated triples over \( \mathbb{F}_2 \)).</p>
+<p>This is a Crypto 2020 paper that shows how to create such a
+correlation over \( \mathbb{F}_{2^{\rho}} \) using Ring-LPN. I recall
+giving talks about this construction in various occacions but the
+details have been lost now. <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-02-28 三&gt;</span></span></p>
+<p>Anyway, here is the slides I have prepared for a LATTICE group meeting
+at Dec. 2021 <a href="/ox-hugo/Ring-LPN%20PCG.pptx">Slides</a>.</p>
+<h3 id="dilo"><span class="org-todo done DONE">DONE</span> Authenticated Garbling from Compressed Randomness<a hidden class="anchor" aria-hidden="true" href="#dilo">#</a></h3>
+<p>This is a Crypto 2022 paper that describes how to construct
+authenticated garbled circuit using correlations that allow efficient
+PCGS (e.g., MT, VOLE). Using the AGC, we can run actively secure 2PC
+afterwards.</p>
+<p>This work inspired us to conduct a follow-up work <a href="#cot_ag">Authenticated Garbling From Correlated OT</a>.</p>
+<p>Here is the slides I have prepared <a href="/ox-hugo/Auth-GC-from-VOLE.pdf">Slides</a>.</p>
+<h3 id="gcpcgpcf"><span class="org-todo todo TODO">TODO</span> PCG for Garbled Circuit Correlations<a hidden class="anchor" aria-hidden="true" href="#gcpcgpcf">#</a></h3>
+<p>This is a Eurocrypt 2023 submission that describes the application of
+EA-LPN in constructing PCF for garbled circuit correlations. They also
+present three applications of their construction, albeit not very
+convincing in their practical values.</p>
+<p>I gave a talk about this paper and also discussed the merit of it at
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2024-02-27 二&gt;</span></span>. Here is the <a href="Slides/GC-PCG-PCF.ipe">ipe source</a>.</p>
+<h3 id="vc-aes"><span class="org-todo done DONE">DONE</span> Efficient Random Vector Commitment from AES<a hidden class="anchor" aria-hidden="true" href="#vc-aes">#</a></h3>
+<p>Since random vector commitment is used extensively in MPCitH and
+VOLEitH applications, with some of them being post quantum signatures,
+which is efficiency sensitive (e.g. TLS needs fast authentications for
+smooth browsing experience), it&rsquo;s a natural question to optimize
+this component.</p>
+<p>One possible way to do this is to replace the cryptograhpic hash
+function invocation at the bottom layer of the GGM tree with AES-based
+hash functions which are relatively lightweight when the key is fixed.</p>
+<p>Two groups of researchers have proposed similar solutions. Bui, Cong,
+and Delpech de Saint Guilhem proposed a CCR-hash-based construction
+which they instantiate with the [GKWY20] construction with a
+\(\lambda\)-bit permutation. The down-side is that AES only offers
+128-bit block size and they have to resort to Rijndael for higher
+security parameters, which kind of goes against the initial goal of
+optimization since AES being fast is largely due to the instruction
+set AES-NI.</p>
+<p>So Prof. Guo tries to tackle this problem using only AES. We are
+having an discussion about this topic at <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-03-06 三&gt;</span></span>. Here are
+the <a href="/ox-hugo/AES-VC.pdf">slides</a>.</p>
+<h3 id="boolean-beaver-pcg"><span class="org-todo done DONE">DONE</span> PCG for Boolean Beaver Triples<a hidden class="anchor" aria-hidden="true" href="#boolean-beaver-pcg">#</a></h3>
+<p>Generating Boolean Beaver triples has always been an intriguing
+problem.  On one hand, Overdrive-type FHE-based solutions offers
+asympototically-good solutions, and for suitable field size the
+concrete efficiency is also considered state-of-the-art. On the other
+hand, the current best practice for generating authenticated Boolean
+Beaver triples remains MASCOT-type COT-based protocols, which has
+communication of \(O(N^2 m)\) for generating \(m\) triples among \(N\)
+parties.</p>
+<p>I guess this is a follow-up of <a href="#ring_lpn_pcg">Ring-LPN PCG</a>.</p>
+<p>There has been a number of works (<a href="#citeproc_bib_item_2">Bombar et al. 2024</a>, <a href="#citeproc_bib_item_3">2023</a>; <a href="#citeproc_bib_item_4">Boyle et al. 2022</a>, <a href="#citeproc_bib_item_6">2020b</a>, <a href="#citeproc_bib_item_5">2020a</a>) trying to change the
+status quo, with the ultimate goal of creating a concretely efficient
+end-to-end MPC protocol. I made some <a href="/ox-hugo/FOLEAGE-DPF.pdf">slides</a> about them.</p>
+<h2 id="references">References<a hidden class="anchor" aria-hidden="true" href="#references">#</a></h2>
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Baum, Carsten, Lennart Braun, Cyprien Delpech De Saint Guilhem, Michael Klooß, Emmanuela Orsini, Lawrence Roy, and Peter Scholl. 2023. “Publicly Verifiable Zero-Knowledge and Post-Quantum Signatures from VOLE-in-the-Head.” In <i>Advances in Cryptology – CRYPTO 2023</i>, edited by Helena Handschuh and Anna Lysyanskaya, 14085:581–615. Cham: Springer Nature Switzerland. <a href="https://doi.org/10.1007/978-3-031-38554-4_19">https://doi.org/10.1007/978-3-031-38554-4_19</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Bombar, Maxime, Dung Bui, Geoffroy Couteau, Alain Couvreur, Clément Ducros, and Sacha Servan-Schreiber. 2024. “FOLEAGE: \$mathbb\\F\\\_4\$OLE-Based Multi-Party Computation for Boolean Circuits.”</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Bombar, Maxime, Geoffroy Couteau, Alain Couvreur, and Clément Ducros. 2023. “Correlated Pseudorandomness from the Hardness of Quasi-Abelian Decoding.”</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Boyle, Elette, Geoffroy Couteau, Niv Gilboa, Yuval Ishai, Lisa Kohl, Nicolas Resch, and Peter Scholl. 2022. “Correlated Pseudorandomness from Expand-Accumulate Codes.” In <i>Advances in Cryptology – CRYPTO 2022</i>, edited by Yevgeniy Dodis and Thomas Shrimpton, 13508:603–33. Cham: Springer Nature Switzerland. <a href="https://doi.org/10.1007/978-3-031-15979-4_21">https://doi.org/10.1007/978-3-031-15979-4_21</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>Boyle, Elette, Geoffroy Couteau, Niv Gilboa, Yuval Ishai, Lisa Kohl, and Peter Scholl. 2020a. “Efficient Pseudorandom Correlation Generators from Ring-LPN.” In <i>Advances in Cryptology – CRYPTO 2020</i>, edited by Daniele Micciancio and Thomas Ristenpart, 12171:387–416. Cham: Springer International Publishing. <a href="https://doi.org/10.1007/978-3-030-56880-1_14">https://doi.org/10.1007/978-3-030-56880-1_14</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_6"></a>———. 2020b. “Correlated Pseudorandom Functions from Variable-Density LPN.” In <i>2020 IEEE 61st Annual Symposium on Foundations of Computer Science (FOCS)</i>, 1069–80. Durham, NC, USA: IEEE. <a href="https://doi.org/10.1109/FOCS46700.2020.00103">https://doi.org/10.1109/FOCS46700.2020.00103</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_7"></a>“Durandal: A Rank Metric Based Signature Scheme SpringerLink.” n.d. https://link.springer.com/chapter/10.1007/978-3-030-17659-4\_25. Accessed October 17, 2023.</div>
+</div>
+<h3 id="resolved_talk"><span class="org-todo done DONE">DONE</span> Digital Signature from Regular Syndrome Decoding and VOLEitH<a hidden class="anchor" aria-hidden="true" href="#resolved_talk">#</a></h3>
+<p>This is a project that runs in the <strong><strong>Lattice</strong></strong> lab, starting
+from Dalao Hanlin, who first envisioned the possibility of substituting
+LWE-based cryptography with LPN (spoiler alert we currently do not know
+how to achieve this goal). A significant goal is to construct a digital
+signature a la Dilithium at least in terms of performance.</p>
+<p>Alas, the <strong>Fiat-Shamir with Abort</strong> technique does not work directly with
+LPN, although some folks have come up with variants of the LPN assumption
+to accommendate with this technqiue (e.g. (<a href="#citeproc_bib_item_7">“Durandal: A Rank Metric Based Signature Scheme SpringerLink” n.d.</a>)). We
+consider the status quo unsatisfactory.</p>
+<p>Luckily, the MPC-in-the-Head branch is constantly being optimized,
+with the state-of-the-art proposed under the name &ldquo;VOLE-in-the-Head&rdquo;
+(<a href="#citeproc_bib_item_1">Baum et al. 2023</a>) in Crypto 2023. We tried
+this new framework on the RSD problem at the first moment. Anyway, this
+framework proves to be effective when proving small circuits, and our work
+is summarized in a <a href="#resolved">PKC 2024 paper</a>.</p>
+<p>I have given three talks about this topic:</p>
+<ul>
+<li>One in the group meeting last year (by that time we call the project
+SPED). <a href="/ox-hugo/SPED.pdf">Slides</a></li>
+<li>One on AC 2023 at Guangzhou during Rump Session <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-12-06 三&gt;</span></span>
+<a href="/ox-hugo/ReSolveD-AC23-RumpSession.pdf">Slides</a></li>
+<li>One on PKC 2024 at Syndey <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-04-16 二&gt;</span></span>.  <a href="/ox-hugo/ReSolveD-PKC2024.pdf">Slides</a></li>
+</ul>
+<h2 id="references-1">References<a hidden class="anchor" aria-hidden="true" href="#references-1">#</a></h2>
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Baum, Carsten, Lennart Braun, Cyprien Delpech De Saint Guilhem, Michael Klooß, Emmanuela Orsini, Lawrence Roy, and Peter Scholl. 2023. “Publicly Verifiable Zero-Knowledge and Post-Quantum Signatures from VOLE-in-the-Head.” In <i>Advances in Cryptology – CRYPTO 2023</i>, edited by Helena Handschuh and Anna Lysyanskaya, 14085:581–615. Cham: Springer Nature Switzerland. <a href="https://doi.org/10.1007/978-3-031-38554-4_19">https://doi.org/10.1007/978-3-031-38554-4_19</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Bombar, Maxime, Dung Bui, Geoffroy Couteau, Alain Couvreur, Clément Ducros, and Sacha Servan-Schreiber. 2024. “FOLEAGE: \$mathbb\\F\\\_4\$OLE-Based Multi-Party Computation for Boolean Circuits.”</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Bombar, Maxime, Geoffroy Couteau, Alain Couvreur, and Clément Ducros. 2023. “Correlated Pseudorandomness from the Hardness of Quasi-Abelian Decoding.”</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Boyle, Elette, Geoffroy Couteau, Niv Gilboa, Yuval Ishai, Lisa Kohl, Nicolas Resch, and Peter Scholl. 2022. “Correlated Pseudorandomness from Expand-Accumulate Codes.” In <i>Advances in Cryptology – CRYPTO 2022</i>, edited by Yevgeniy Dodis and Thomas Shrimpton, 13508:603–33. Cham: Springer Nature Switzerland. <a href="https://doi.org/10.1007/978-3-031-15979-4_21">https://doi.org/10.1007/978-3-031-15979-4_21</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>Boyle, Elette, Geoffroy Couteau, Niv Gilboa, Yuval Ishai, Lisa Kohl, and Peter Scholl. 2020a. “Efficient Pseudorandom Correlation Generators from Ring-LPN.” In <i>Advances in Cryptology – CRYPTO 2020</i>, edited by Daniele Micciancio and Thomas Ristenpart, 12171:387–416. Cham: Springer International Publishing. <a href="https://doi.org/10.1007/978-3-030-56880-1_14">https://doi.org/10.1007/978-3-030-56880-1_14</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_6"></a>———. 2020b. “Correlated Pseudorandom Functions from Variable-Density LPN.” In <i>2020 IEEE 61st Annual Symposium on Foundations of Computer Science (FOCS)</i>, 1069–80. Durham, NC, USA: IEEE. <a href="https://doi.org/10.1109/FOCS46700.2020.00103">https://doi.org/10.1109/FOCS46700.2020.00103</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_7"></a>“Durandal: A Rank Metric Based Signature Scheme SpringerLink.” n.d. https://link.springer.com/chapter/10.1007/978-3-030-17659-4\_25. Accessed October 17, 2023.</div>
+</div>
 <h2 id="misc">misc<a hidden class="anchor" aria-hidden="true" href="#misc">#</a></h2>
 <h3 id="first_misc"><span class="org-todo done DONE">DONE</span> My first misc<a hidden class="anchor" aria-hidden="true" href="#first_misc">#</a></h3>
 <p>My first misc is proabably clarify my CV</p>
+<p>Reference to <a href="#test_id">Custom ID</a></p>
+<h4 id="test_id">Cusom ID Test<a hidden class="anchor" aria-hidden="true" href="#test_id">#</a></h4>
+<p>This is the content of a subtree with custom id.</p>
 <h2 id="about"><span class="org-todo done DONE">DONE</span> Hongrui&rsquo;s Personal Information<a hidden class="anchor" aria-hidden="true" href="#about">#</a></h2>
 <p><span class="icons-item"> <a href="https://github.com/freemanrickcui" target="_blank"><i class="fab fa-github"></i></a></span>
 <span class="icons-item"> <a href="https://www.stackoverflow.com/users/8865477/rick-freeman" target="_blank"><i class="fab fa-stack-overflow fa-1x"></i></a></span>
@@ -235,7 +401,7 @@ Syndrome Decoding and VOLE-in-the-Head, Public Key Cryptogrpahy 2024</em>
 <span class="icons-item"> <a href="mailto:freemanrickcui@outlook.com"><i class="fas fa-envelope fa-1x"></i></a></span>
 <span class="icons-item"> <a href="/gpg_public_key.txt"><i class="fas fa-key fa-1x"></i></a></span></p>
 <p>Ph.D. Student in Cryptography<br />
-<a href="https://crypto.sjtu.edu.cn/">LATTICE Group, Shanghai Jiao Tong University</a></p>
+<a href="https://crypto.sjtu.edu.cn/">LATTICE Group</a>, Shanghai Jiao Tong University</p>
 <h3 id="interests">Interests<a hidden class="anchor" aria-hidden="true" href="#interests">#</a></h3>
 <ul>
 <li>Theoretical Cryptography</li>
@@ -252,6 +418,7 @@ Syndrome Decoding and VOLE-in-the-Head, Public Key Cryptogrpahy 2024</em>
 past projects include MPC-in-the-Head, COT-AG, and ReSolveD. I am very
 interested in objects that are both theoretically interesting and of
 practical significance.</p>
+<p>Here&rsquo;s my <a href="https://drive.google.com/file/d/1OHIk9vPJTBRZzkZG-7tLxBqRtchvo_nS/view?usp=share_link">CV</a>.</p>
 
 
   </div>
@@ -276,6 +443,8 @@ practical significance.</p>
         <path d="M12 6H0l6-6z" />
     </svg>
 </a>
+
+
 
 <script>
     let menu = document.getElementById('menu')

@@ -14,15 +14,11 @@
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2024-02-27T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/talk/all-posts/</loc>
-  </url><url>
     <loc>http://localhost:1313/talk/dilo/</loc>
   </url><url>
     <loc>http://localhost:1313/paper/cot_ag/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/categories/category1/</loc>
   </url><url>
     <loc>http://localhost:1313/talk/vc-aes/</loc>
   </url><url>
@@ -38,8 +34,6 @@
   </url><url>
     <loc>http://localhost:1313/note/first_note/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/my-first-post/</loc>
-  </url><url>
     <loc>http://localhost:1313/talk/first_talk/</loc>
   </url><url>
     <loc>http://localhost:1313/note/</loc>
@@ -52,15 +46,11 @@
   </url><url>
     <loc>http://localhost:1313/talk/gcpcgpcf/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-  </url><url>
     <loc>http://localhost:1313/talk/ring_lpn_pcg/</loc>
   </url><url>
     <loc>http://localhost:1313/paper/simple_gczk/</loc>
   </url><url>
     <loc>http://localhost:1313/talk/sublinear_gmw/</loc>
-  </url><url>
-    <loc>http://localhost:1313/misc/things/</loc>
   </url><url>
     <loc>http://localhost:1313/note/provsec/</loc>
   </url><url>

@@ -12,24 +12,38 @@
       <link>http://localhost:1313/note/first_note/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/note/first_note/</guid>
-      <description>My first note is about the CIS 2019 winter school</description>
+      <description>&lt;p&gt;My first note is about the CIS 2019 winter school&lt;/p&gt;</description>
     </item>
     <item>
       <title>可证明安全理论笔记</title>
       <link>http://localhost:1313/note/provsec/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/note/provsec/</guid>
-      <description>Homework This section is dedicated to all homework and exercises throughout the lecture (along with their solutions of course).
-18-19-2 Lecture 2 Prove conditional LHL Non-existence of deterministic randomness extractor one-time message authentication code equivalence between min-entropy and collision entropy For solutions please refer to Here.
-18-19-2 Lecture 4 Improving advantage in GL-theorem proof,i.e., difference between guessing game (exact preimage) and inverting game (any satisfying preimage). Exercies 6.1 6.2 6.4 6.</description>
+      <description>&lt;h2 id=&#34;basic-information&#34;&gt;BASIC INFORMATION&lt;/h2&gt;
+&lt;p&gt;This is the notes of the course &amp;ldquo;Provable Security&amp;rdquo;. The first few
+courses will be taught online. While subsequent courses are still
+unsettled.&lt;/p&gt;
+&lt;p&gt;I took this course last year, and I am pretty confident about my grasp
+of basic concepts like universal hash function, GL theorem, basic PRG,
+PRF constructions, etc. But contents like CRHF and PRP are still
+rather alien to me, so in this course I will review the previous
+contents and try to master the missing pieces.  Also it is desireable
+to incopreate the previous notes and complete the notes altogegher.&lt;/p&gt;</description>
     </item>
     <item>
       <title>计算复杂性课程笔记</title>
       <link>http://localhost:1313/note/comp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/note/comp/</guid>
-      <description>This is my notes of the 18-19-1 course ``Computational Complexity&amp;rsquo;&#39;.
-Lecture 1: Introduction Introduction This is the lecture note of Prof. Fu&amp;rsquo;s Computational Complexity (not to be confused with the Computational Complexity: Advanced Topics in the second semester). As Prof. Fu is not following strictly the structure of the book, I consider it necessary to take notes of the essential contents taught in the lectures, and subsequently organized them as a series.</description>
+      <description>&lt;p&gt;This is my notes of the 18-19-1 course ``Computational Complexity&amp;rsquo;&#39;.&lt;/p&gt;
+&lt;h2 id=&#34;lecture-1-introduction&#34;&gt;Lecture 1: Introduction&lt;/h2&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;This is the lecture note of Prof. Fu&amp;rsquo;s &lt;em&gt;Computational Complexity&lt;/em&gt; (not
+to be confused with the &lt;em&gt;Computational Complexity: Advanced Topics&lt;/em&gt; in
+the second semester). As Prof. Fu is not following strictly the
+structure of the book, I consider it necessary to take notes of the
+essential contents taught in the lectures, and subsequently organized
+them as a series.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

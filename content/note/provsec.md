@@ -1,7 +1,35 @@
 +++
 title = "可证明安全理论笔记"
+author = ["崔泓睿"]
 draft = false
 +++
+
+## BASIC INFORMATION {#basic-information}
+
+This is the notes of the course "Provable Security". The first few
+courses will be taught online. While subsequent courses are still
+unsettled.
+
+I took this course last year, and I am pretty confident about my grasp
+of basic concepts like universal hash function, GL theorem, basic PRG,
+PRF constructions, etc. But contents like CRHF and PRP are still
+rather alien to me, so in this course I will review the previous
+contents and try to master the missing pieces.  Also it is desireable
+to incopreate the previous notes and complete the notes altogegher.
+
+<div class="table-caption">
+  <span class="table-number">Table 1:</span>
+  Basic Information
+</div>
+
+| TEACHER     | 郁昱，刘振                        |
+|-------------|------------------------------|
+| LOCATION    | 陈瑞球楼108                       |
+| CODE        | C033728200203300M01               |
+| ZOOM NUMBER | 284739677                         |
+| ZOOM CODE   | 09333040                          |
+| LINK        | <https://zoom.com.cn/j/284739677> |
+
 
 ## Homework {#homework}
 
@@ -481,7 +509,7 @@ handout2
 ## 18-19-2 Lecture 3 {#18-19-2-lecture-3}
 
 In this note, the content of this week's lecture on provable security by
-Prof. Yu is summarized, from the handout and my own note taken at the lecture.
+Prof. Yu is summarized, from the handout and my own note taken at the lecture.
 Additionally, I will try to prove the equivalence of semantic security and
 indistinguishability here.
 
@@ -660,12 +688,16 @@ The two parties of communication share a \\(2n\\) bit secret, denoted by
 \\(W=(W\_1,W\_2)\\), of which some information \\(Z\\) is leaked to an adversary. The
 average min-entropy of \\(W\\) conditioned on \\(Z\\) is at least \\(n+t\\), namely,
 \\(\text{H}\_\infty(W|Z) \ge n+t\\). It can be proved that in this scheme, for any
-message \\(m\\), the adversary's success probability \\[ \Pr\_{(w\_1,w\_2)\gets W,z\gets
+message \\(m\\), the adversary's success probability
+
+\\[ \Pr\_{(w\_1,w\_2)\gets W,z\gets
 Z}[m^\prime=A(m,\sigma,z):m\ne m^\prime\land\sigma^\prime=w\_1+m^\prime\cdot
-w\_2]\le 2^{-t}. \\] However, as Prof. Yu mentioned in his lecture, the
+w\_2]\le 2^{-t}. \\]
+
+However, as Prof. Yu mentioned in his lecture, the
 min-entropy of the shared secret is at least \\(n+t\\) bits, while the constructed
 scheme can only guarantee at least \\(t\\) bit of security (I do not know for sure
-such notion is correct, but from the \\(\varepsilon\\) -secure notion in the
+such notion is correct, but from the $&epsilon;$-secure notion in the
 previous lecture I am confident about that). In other words, there is a \\(n\\) bit
 _entropy loss._ He then stated by using pseudorandomness, such problem can be
 solved.
