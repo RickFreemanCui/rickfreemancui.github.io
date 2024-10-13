@@ -42,6 +42,33 @@ markup:
             - \)
         enable: true
 params:
+  profileMode:
+    enabled: true
+    title: "Hongrui's Homepage" # optional default will be site title
+    subtitle: "The Academic Homepage of Hongrui Cui (崔泓睿)"
+    imageUrl: "logo.png" # optional
+    imageTitle: "My Canonical Logo" # optional
+    imageWidth: 120 # custom size
+    imageHeight: 120 # custom size
+    buttons:
+      - name: Publication
+        url: "/paper"
+      - name: Talks
+        url: "/talk"
+      - name: Notes
+        url: "/note"
+      - name : About
+        url: "/about"
+
+  socialIcons: # optional
+    - name: "Github"
+      url: "https://github.com/freemanrickcui"
+    - name: "googleScholar"
+      url: "https://scholar.google.com/citations?user=bWNvN0UAAAAJ"
+    - name: "stackOverflow"
+      url: "https://www.stackoverflow.com/users/8865477/rick-freeman"
+    - name: "email"
+      url: "/misc/email"
   defaultDescription: Cryptography.
   defaultKeywords: Multiparty Computation, Cryptography, Post-Quantum
   tagline: ""
