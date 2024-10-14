@@ -69,8 +69,8 @@ params:
       url: "https://www.stackoverflow.com/users/8865477/rick-freeman"
     - name: "email"
       url: "mailto:rickfreeman@sjtu.edu.cn"
-    - name: "cv"
-      url: "cv.pdf"
+    - name: "CV"
+      url: "2024-10-14-cv-hongrui.pdf"
   defaultDescription: Cryptography.
   defaultKeywords: Multiparty Computation, Cryptography, Post-Quantum
   tagline: ""
@@ -84,7 +84,7 @@ params:
   orcid: https://orcid.org/0000-0002-6203-413X
   googleScholar: https://scholar.google.com/citations?user=bWNvN0UAAAAJ
   flattr: ""
-  email: mailto:freemanrickcui@outlook.com
+  email: mailto:rickfreeman@sjtu.edu.cn
   gpgkey: /gpg_public_key.txt
   rss: ""
   privacyNotice: /privacy/
