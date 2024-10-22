@@ -5,7 +5,7 @@ draft = false
 +++
 
 This is a project that runs in the ****Lattice**** lab, starting
-from Dalao Hanlin, who first envisioned the possibility of substituting
+from Hanlin Liu, who first envisioned the possibility of substituting
 LWE-based cryptography with LPN (spoiler alert we currently do not know
 how to achieve this goal). A significant goal is to construct a digital
 signature a la Dilithium at least in terms of performance.
