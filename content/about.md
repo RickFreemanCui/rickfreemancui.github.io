@@ -31,7 +31,7 @@ Ph.D. Student in Cryptography<br />
 
 ## About {#about}
 
-I am a second-year Ph.D. student majoring in Cryptography at SJTU. My
+I am a third-year Ph.D. student majoring in Cryptography at SJTU. My
 past projects include MPC-in-the-Head, COT-AG, and ReSolveD. I am very
 interested in objects that are both theoretically interesting and of
 practical significance.

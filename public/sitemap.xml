@@ -20,6 +20,8 @@
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
+    <loc>http://localhost:1313/misc/crypto_paepr_template/</loc>
+  </url><url>
     <loc>http://localhost:1313/talk/vc-aes/</loc>
   </url><url>
     <loc>http://localhost:1313/misc/email/</loc>
@@ -31,8 +33,6 @@
     <loc>http://localhost:1313/misc/</loc>
   </url><url>
     <loc>http://localhost:1313/paper/multi_heads/</loc>
-  </url><url>
-    <loc>http://localhost:1313/misc/first_misc/</loc>
   </url><url>
     <loc>http://localhost:1313/note/first_note/</loc>
   </url><url>

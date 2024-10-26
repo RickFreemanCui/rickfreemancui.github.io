@@ -181,11 +181,26 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">ListOT and PCF
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Here are my Slides.
+The design of PCF follows two paradigms in general.
+The “DPF&#43;LPN” approach, where one uses binary-tree-based DPF as FSS for point functions for comparison functions to generate correlations on sparse vectors (e.g. sparse COT, sparse VOLE), and then compress the correlation with an appropriate Learning Parity with Noise (LPN) assumption. Notice that we want to achieve super-polynomial “stretch” so that the LPN assumption must support a “fast” evaluation algorithm. Existing works uses Expand-Accumulate LPN (Boyle et al. 2022) assumption or the Variable-Density LPN assumption (Couteau and Ducros 2023; Boyle et al. 2020). Another line of work focuses on working with more expressive HSS/FSS and propose to use public key operation to generate each correlation. Notice that the LPN assumption only requires matrix-vector multiplication operation and is generally considered to be much “lighter” than public-key operations (e.g., exponentiation modulo an RSA modulus or lattice operations with superpolynomial modulus to noise ratio). The advantage of this line of work is that the constructions are very simple and elegant. One work by Orlandi et al. uses Pailliar to construct PCF for OT (Orlandi, Scholl, and Yakoubov 2021) while a recent work by Bui et al. uses Naor-Reingold PRF to achieve the same goal (Bui et al. 2024). One interesting observation is that the “public-key PCF” constructions can generate OT correlations directly, while constructions in the previous genre usually generate Correlated OT first. In Asiacrypt 2024, a new paradigm is proposed, trying to achieve a middle ground between the two genres (Couteau et al. 2024). The work builds on the framework of (Bui et al. 2024) but replaces the Naor-Reingold constrained PRF with a much simpler RO design. This brings the following changes:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-26 00:00:00 +0800 CST'>October 26, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to ListOT and PCF" href="http://localhost:1313/talk/listot_talk/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Digital Signature from Regular Syndrome Decoding and VOLEitH
     </h2>
   </header>
   <div class="entry-content">
-    <p>This is a project that runs in the Lattice lab, starting from Dalao Hanlin, who first envisioned the possibility of substituting LWE-based cryptography with LPN (spoiler alert we currently do not know how to achieve this goal). A significant goal is to construct a digital signature a la Dilithium at least in terms of performance.
+    <p>This is a project that runs in the Lattice lab, starting from Hanlin Liu, who first envisioned the possibility of substituting LWE-based cryptography with LPN (spoiler alert we currently do not know how to achieve this goal). A significant goal is to construct a digital signature a la Dilithium at least in terms of performance.
 Alas, the Fiat-Shamir with Abort technique does not work directly with LPN, although some folks have come up with variants of the LPN assumption to accommendate with this technqiue (e.g. (“Durandal: A Rank Metric Based Signature Scheme SpringerLink” n.d.)). We consider the status quo unsatisfactory.
 ...</p>
   </div>

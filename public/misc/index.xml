@@ -8,21 +8,20 @@
     <language>en-us</language>
     <atom:link href="http://localhost:1313/misc/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Email</title>
-      <link>http://localhost:1313/misc/email/</link>
+      <title>Cryptology Paper Template</title>
+      <link>http://localhost:1313/misc/crypto_paepr_template/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/misc/email/</guid>
-      <description>&lt;p&gt;You can reach me though the following email address.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/ox-hugo/email.png&#34;/&gt; 
-&lt;/figure&gt;</description>
-    </item>
-    <item>
-      <title>My first misc</title>
-      <link>http://localhost:1313/misc/first_misc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/misc/first_misc/</guid>
-      <description>&lt;p&gt;My first misc is proabably clarify my CV&lt;/p&gt;</description>
+      <guid>http://localhost:1313/misc/crypto_paepr_template/</guid>
+      <description>&lt;p&gt;I made a \(\LaTeX\) template for cryptologic research papers at &lt;a href=&#34;https://github.com/RickFreemanCui/Crypto-LaTeX-Template&#34;&gt;https://github.com/RickFreemanCui/Crypto-LaTeX-Template&lt;/a&gt;. It features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cryptobib/export&#34;&gt;Cryptobib&lt;/a&gt; as a submodule, which means that your can access the latest cryptobib in your project by running the &lt;code&gt;git pull&lt;/code&gt; commands.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Alex J. Malozemoff&amp;rsquo;s &lt;code&gt;crypto.sty&lt;/code&gt; macros, which offers common commands for typesetting functionalities, protocols, sets, finite fields, etc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Feel free to check it out.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -6,15 +6,28 @@
     <description>Recent content in Talks on Hongrui Cui&#39;s Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Apr 2024 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 26 Oct 2024 00:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/talk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ListOT and PCF</title>
+      <link>http://localhost:1313/talk/listot_talk/</link>
+      <pubDate>Sat, 26 Oct 2024 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/talk/listot_talk/</guid>
+      <description>&lt;p&gt;Here are my &lt;a href=&#34;http://localhost:1313/ox-hugo/Public%20Key%20PCF.pdf&#34;&gt;Slides.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The design of PCF follows two paradigms in general.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &amp;ldquo;DPF+LPN&amp;rdquo; approach, where one uses binary-tree-based DPF as FSS for point functions for comparison functions to generate correlations on sparse vectors (e.g. sparse COT, sparse VOLE), and then compress the correlation with an appropriate Learning Parity with Noise (LPN) assumption. Notice that we want to achieve super-polynomial &amp;ldquo;stretch&amp;rdquo; so that the LPN assumption must support a &amp;ldquo;fast&amp;rdquo; evaluation algorithm. Existing works uses Expand-Accumulate LPN (&lt;a href=&#34;#citeproc_bib_item_1&#34;&gt;Boyle et al. 2022&lt;/a&gt;) assumption or the Variable-Density LPN assumption (&lt;a href=&#34;#citeproc_bib_item_5&#34;&gt;Couteau and Ducros 2023&lt;/a&gt;; &lt;a href=&#34;#citeproc_bib_item_2&#34;&gt;Boyle et al. 2020&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Another line of work focuses on working with more expressive HSS/FSS and propose to use public key operation to generate each correlation. Notice that the LPN assumption only requires matrix-vector multiplication operation and is generally considered to be much &amp;ldquo;lighter&amp;rdquo; than public-key operations (e.g., exponentiation modulo an RSA modulus or lattice operations with superpolynomial modulus to noise ratio). The advantage of this line of work is that the constructions are very simple and elegant. One work by Orlandi et al. uses Pailliar to construct PCF for OT (&lt;a href=&#34;#citeproc_bib_item_6&#34;&gt;Orlandi, Scholl, and Yakoubov 2021&lt;/a&gt;) while a recent work by Bui et al. uses Naor-Reingold PRF to achieve the same goal (&lt;a href=&#34;#citeproc_bib_item_3&#34;&gt;Bui et al. 2024&lt;/a&gt;). One interesting observation is that the &amp;ldquo;public-key PCF&amp;rdquo; constructions can generate OT correlations directly, while constructions in the previous genre usually generate Correlated OT first.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In Asiacrypt 2024, a new paradigm is proposed, trying to achieve a middle ground between the two genres (&lt;a href=&#34;#citeproc_bib_item_4&#34;&gt;Couteau et al. 2024&lt;/a&gt;). The work builds on the framework of (&lt;a href=&#34;#citeproc_bib_item_3&#34;&gt;Bui et al. 2024&lt;/a&gt;) but replaces the Naor-Reingold constrained PRF with a much simpler RO design. This brings the following changes:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Digital Signature from Regular Syndrome Decoding and VOLEitH</title>
       <link>http://localhost:1313/talk/resolved_talk/</link>
       <pubDate>Mon, 29 Apr 2024 00:00:00 +0800</pubDate>
       <guid>http://localhost:1313/talk/resolved_talk/</guid>
       <description>&lt;p&gt;This is a project that runs in the &lt;strong&gt;&lt;strong&gt;Lattice&lt;/strong&gt;&lt;/strong&gt; lab, starting
-from Dalao Hanlin, who first envisioned the possibility of substituting
+from Hanlin Liu, who first envisioned the possibility of substituting
 LWE-based cryptography with LPN (spoiler alert we currently do not know
 how to achieve this goal). A significant goal is to construct a digital
 signature a la Dilithium at least in terms of performance.&lt;/p&gt;

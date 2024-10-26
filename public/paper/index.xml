@@ -66,14 +66,19 @@ System.&lt;/em&gt; In European Symposium on Research in Computer Security
       <link>http://localhost:1313/paper/cs_wots/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/paper/cs_wots/</guid>
-      <description>&lt;p&gt;Hash-based signature is to be standardized by NIST &lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;&amp;lt;2024-02-28 三&amp;gt;&lt;/span&gt;&lt;/span&gt;. So
+      <description>&lt;p&gt;Hash-based signature is to be standardized by NIST. So
 it is a natural question to study whether the currently being standarized
 algorithm &lt;strong&gt;SPHINCS+&lt;/strong&gt; is indeed optimal.&lt;/p&gt;
 &lt;p&gt;Towards this end, we discovered that the constant-sum encoding method
 that appear previously in the literature, is encoding-size-optimal
 among all tree-based one-time signature schemes. Moreover, by refuting
 a DAG-based construction [BM96] our scheme appears to be the optimal
-among all existing constructions.&lt;/p&gt;</description>
+among all existing constructions.&lt;/p&gt;
+&lt;p&gt;This work is published as &lt;em&gt;Revisiting the Constant-Sum Winternitz
+One-Time Signature with Applications to and XMSS. In: Handschuh, H.,
+Lysyanskaya, A. (eds) Advances in Cryptology –
+CRYPTO 2023. CRYPTO 2023. Lecture Notes in Computer Science,
+vol 14085. Springer, Cham.&lt;/em&gt; &lt;a href=&#34;https://link.springer.com/content/pdf/10.1007/978-3-031-38554-4_15.pdf&#34;&gt;PDF&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Simple GCZK</title>
