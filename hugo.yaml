@@ -6,7 +6,6 @@ theme: ["PaperMod"]
 disqusShortname: ""
 MetaDataFormat: yaml
 
-paginate: 30
 outputs:
   home:
     - HTML

@@ -4,16 +4,9 @@
     <title>Notes on Hongrui Cui&#39;s Homepage</title>
     <link>http://localhost:1313/note/</link>
     <description>Recent content in Notes on Hongrui Cui&#39;s Homepage</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.148.2</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/note/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>My first note</title>
-      <link>http://localhost:1313/note/first_note/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/note/first_note/</guid>
-      <description>&lt;p&gt;My first note is about the CIS 2019 winter school&lt;/p&gt;</description>
-    </item>
     <item>
       <title>可证明安全理论笔记</title>
       <link>http://localhost:1313/note/provsec/</link>

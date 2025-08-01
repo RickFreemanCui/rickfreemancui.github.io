@@ -4,7 +4,7 @@
     <title>Talks on Hongrui Cui&#39;s Homepage</title>
     <link>http://localhost:1313/talk/</link>
     <description>Recent content in Talks on Hongrui Cui&#39;s Homepage</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.148.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 26 Oct 2024 00:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/talk/index.xml" rel="self" type="application/rss+xml" />
@@ -74,13 +74,6 @@ decision. Building on this property, we can design proof systems that
 allow proving statements that are shared among multiple verifiers.
 This proof system in particular appear useful for the GMW transformation,
 which is the topic of another talk.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>My first talk</title>
-      <link>http://localhost:1313/talk/first_talk/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talk/first_talk/</guid>
-      <description>&lt;p&gt;My first talk is about memory-hard functions but they are kind of lost&lt;/p&gt;</description>
     </item>
     <item>
       <title>PCG for Boolean Beaver Triples</title>
