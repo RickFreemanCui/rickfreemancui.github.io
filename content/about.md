@@ -1,6 +1,6 @@
 +++
-title = "Hongrui's Personal Information"
-date = 2024-02-27T00:00:00+08:00
+title = "Hongrui Cui （崔泓睿）"
+date = 2025-11-06T00:00:00+08:00
 type = "page"
 draft = false
 +++
@@ -12,15 +12,29 @@ draft = false
 <span class="icons-item"> <a href="mailto:freemanrickcui@outlook.com"><i class="fas fa-envelope fa-1x"></i></a></span>
 <span class="icons-item"> <a href="/gpg_public_key.txt"><i class="fas fa-key fa-1x"></i></a></span>
 
-Ph.D. Student in Cryptography<br />
-[LATTICE Group](https://crypto.sjtu.edu.cn/), Shanghai Jiao Tong University
+I am a fourth-year Ph.D. candidate at [LATTICE Group](https://crypto.sjtu.edu.cn/), SJTU.
+My research interest lies in cryptography with the following features:
+
+-   Practically efficient or at least with efficiency in mind (so that they might have impact in real-world applications),
+-   Theoretically interesting (so that they might deepen our understanding of TCS).
+
+****Useful Links:****
+
+-   [DBLP](https://dblp.org/pid/270/7366.html)
+-   [Google Scholar](https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AKzYXQ0bl7R5nf2_R-hOJhmKNLW4UxVlnfWroPxa8Kcu41H4I7WjSF1uPHSxe9UZ39Lm1pwend-zLCjbSYyZoLho6ALi&user=bWNvN0UAAAAJ)
+-   [ORCID](https://orcid.org/0000-0002-6203-413X)
+-   [CV](https://drive.google.com/file/d/1OHIk9vPJTBRZzkZG-7tLxBqRtchvo_nS/view?usp=share_link)
+-   [Email]({{< relref "my_email" >}})
 
 
-## Interests {#interests}
+## Past Projects {#past-projects}
 
--   Theoretical Cryptography
--   Multiparty Computation
--   MPC-in-the-Head
+-   [Multi-Prover Zero-Knowledge]({{< relref "multi_heads" >}})
+-   [Activecly-secure 2PC with Bandwith as Half-Gate]({{< relref "cot_ag" >}})
+-   [Post-Quantum Digital Signature from Regular Syndrome Decoding]({{< relref "resolved" >}})
+-   [Simulatable Correlation Robust Hashing](https://eprint.iacr.org/2025/1818)
+-   [High Security CCR Hash and Vector Commitment from AES](https://eprint.iacr.org/2024/1271)
+-   [Memory-Efficient Pseudorandom Correlation Generator](https://eprint.iacr.org/2025/1660)
 
 
 ## Education {#education}
@@ -28,12 +42,6 @@ Ph.D. Student in Cryptography<br />
 -   MSc in Computer Science, Shanghai Jiao Tong University, 2022
 -   BSc in Information Security, Shanghai Jiao Tong University, 2019
 
-
-## About {#about}
-
-I am a third-year Ph.D. student majoring in Cryptography at SJTU. My
-past projects include MPC-in-the-Head, COT-AG, and ReSolveD. I am very
-interested in objects that are both theoretically interesting and of
-practical significance.
-
-Here's my [CV](https://drive.google.com/file/d/1OHIk9vPJTBRZzkZG-7tLxBqRtchvo_nS/view?usp=share_link).
+<a href="https://mapmyvisitors.com/web/1bvis" title="Visit tracker">
+  <img src="https://mapmyvisitors.com/map.png?d=aCHjpy99eAh9rtrgqorrE2moyoMHnjYAxkR_TvPqy0M&cl=ffffff" alt="Visitor Map"/>
+</a>

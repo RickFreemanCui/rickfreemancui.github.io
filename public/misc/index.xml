@@ -4,7 +4,7 @@
     <title>Miscs on Hongrui Cui&#39;s Homepage</title>
     <link>http://localhost:1313/misc/</link>
     <description>Recent content in Miscs on Hongrui Cui&#39;s Homepage</description>
-    <generator>Hugo -- 0.148.2</generator>
+    <generator>Hugo -- 0.151.2</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/misc/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -25,13 +25,30 @@
     </item>
     <item>
       <title>Email</title>
-      <link>http://localhost:1313/misc/email/</link>
+      <link>http://localhost:1313/misc/my_email/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/misc/email/</guid>
-      <description>&lt;p&gt;You can reach me though the following email address.&lt;/p&gt;
-&lt;figure&gt;
-    &lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/ox-hugo/email.png&#34;/&gt; 
-&lt;/figure&gt;</description>
+      <guid>http://localhost:1313/misc/my_email/</guid>
+      <description>&lt;p&gt;You can reach me via the following emails:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;strong&gt;rickfreeman [at] sjtu [dot] edu [dot] cn&lt;/strong&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;strong&gt;freemanrickcui [at] outlook [dot] com&lt;/strong&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For the outlook email, the following PGP public key can be used to secure your messages.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-nil&#34; data-lang=&#34;nil&#34;&gt;-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mDMEYwWKYBYJKwYBBAHaRw8BAQdAmdLSjWmnd2uipgR8J0l/PEwp/Z273rVIXz63
+kXU3xM60KEhvbmdydWkgQ3VpIDxmcmVlbWFucmlja2N1aUBvdXRsb29rLmNvbT6I
+mQQTFgoAQRYhBEs58EJYWaIOScnZ0hPPDSIOGs48BQJjBYpgAhsDBQkDwmcABQsJ
+CAcCAiICBhUKCQgLAgQWAgMBAh4HAheAAAoJEBPPDSIOGs48vT4BAMOLOmKGrUgd
+CiM7WmsZ70egOYbx0rGt+JXBmebzjI6ZAP9iV5J2NBKA5P0Qcl8CnRN/9ts2XwFe
+5Ze9eumAcrFAC7g4BGMFimASCisGAQQBl1UBBQEBB0A88806b0Ungz2t/JTfRz3+
+x/ydLTh6iB0GCkeWJvCdWQMBCAeIfgQYFgoAJhYhBEs58EJYWaIOScnZ0hPPDSIO
+Gs48BQJjBYpgAhsMBQkDwmcAAAoJEBPPDSIOGs48ksoA/jLfu3AMYxAAisL53zRu
++h0EziCMd3rRNSK8eoazE88SAP94lPowe7WtGK/ufdrkL9ld2ceNDr0LJ85iWGA/
+okQCAA==
+=0Kjo
+-----END PGP PUBLIC KEY BLOCK-----
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
   </channel>
 </rss>

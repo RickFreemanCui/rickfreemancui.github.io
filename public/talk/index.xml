@@ -4,7 +4,7 @@
     <title>Talks on Hongrui Cui&#39;s Homepage</title>
     <link>http://localhost:1313/talk/</link>
     <description>Recent content in Talks on Hongrui Cui&#39;s Homepage</description>
-    <generator>Hugo -- 0.148.2</generator>
+    <generator>Hugo -- 0.151.2</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 26 Oct 2024 00:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/talk/index.xml" rel="self" type="application/rss+xml" />
@@ -91,18 +91,6 @@ parties.&lt;/p&gt;
 &lt;p&gt;I guess this is a follow-up of &lt;a href=&#34;http://localhost:1313/talk/ring_lpn_pcg/&#34;&gt;Ring-LPN PCG&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>PCG for Garbled Circuit Correlations</title>
-      <link>http://localhost:1313/talk/gcpcgpcf/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/talk/gcpcgpcf/</guid>
-      <description>&lt;p&gt;This is a Eurocrypt 2023 submission that describes the application of
-EA-LPN in constructing PCF for garbled circuit correlations. They also
-present three applications of their construction, albeit not very
-convincing in their practical values.&lt;/p&gt;
-&lt;p&gt;I gave a talk about this paper and also discussed the merit of it at
-&lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;&amp;lt;2024-02-27 二&amp;gt;&lt;/span&gt;&lt;/span&gt;. Here is the &lt;a href=&#34;Slides/GC-PCG-PCF.ipe&#34;&gt;ipe source&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Ring-LPN PCG</title>
       <link>http://localhost:1313/talk/ring_lpn_pcg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -120,7 +108,7 @@ details have been lost now. &lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;sp
       <link>http://localhost:1313/talk/sublinear_gmw/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/talk/sublinear_gmw/</guid>
-      <description>&lt;p&gt;This is a follow-up work of .&lt;/p&gt;
+      <description>&lt;p&gt;This is a follow-up work of &lt;a href=&#34;http://localhost:1313/talk/flpcp/&#34;&gt;Fully Linear PCP&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;LATTICE group meeting at &lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;&amp;lt;2021-10-27 三&amp;gt; &lt;/span&gt;&lt;/span&gt; &lt;a href=&#34;http://localhost:1313/ox-hugo/Sublinear-GMW.pptx&#34;&gt;Slides&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Meeting with Huawei at &lt;span class=&#34;timestamp-wrapper&#34;&gt;&lt;span class=&#34;timestamp&#34;&gt;&amp;lt;2021-11-18 四&amp;gt; &lt;/span&gt;&lt;/span&gt; &lt;a href=&#34;http://localhost:1313/ox-hugo/Sublinear-GMW-Huawei.pptx&#34;&gt;Slides&lt;/a&gt;&lt;/li&gt;

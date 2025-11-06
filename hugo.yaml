@@ -43,8 +43,10 @@ markup:
 params:
   profileMode:
     enabled: true
-    title: "Hongrui's Homepage" # optional default will be site title
-    subtitle: "The Academic and Life Blogs of Hongrui Cui (崔泓睿)"
+    title: "Hongrui Cui （崔泓睿）" # optional default will be site title
+    subtitle: |
+        4-th year Ph.D. candidate at `LATTICE` group, SJTU.
+
     imageUrl: "logo.png" # optional
     imageTitle: "My Canonical Logo" # optional
     imageWidth: 120 # custom size
@@ -59,15 +61,18 @@ params:
       - name : About
         url: "/about"
 
+
   socialIcons: # optional
     - name: "Github"
       url: "https://github.com/RickFreemanCui"
     - name: "googleScholar"
       url: "https://scholar.google.com/citations?user=bWNvN0UAAAAJ"
-    - name: "stackOverflow"
-      url: "https://www.stackoverflow.com/users/8865477/rick-freeman"
+#    - name: "stackOverflow"
+#      url: "https://www.stackoverflow.com/users/8865477/rick-freeman"
+    - name: "orcid"
+      url: "https://orcid.org/0000-0002-6203-413X"
     - name: "email"
-      url: "mailto:rickfreeman@sjtu.edu.cn"
+      url: "/misc/my_email"
     - name: "CV"
       url: "2024-10-14-cv-hongrui.pdf"
   defaultDescription: Cryptography.
